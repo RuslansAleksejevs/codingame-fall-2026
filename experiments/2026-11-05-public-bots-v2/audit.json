@@ -1,0 +1,60 @@
+{
+  "as_of": "2026-11-05",
+  "provenance": "PROJECT_REPORTED",
+  "games": 200,
+  "unique_maps": 50,
+  "all_maps_match_across_seats_and_opponents": true,
+  "validated_own_decision_states": 6303,
+  "own_unit_conservation_failures_before_terminal": [],
+  "post_terminal_view_changes": [
+    {
+      "seed": 1012,
+      "opponent": "khoufou",
+      "seat": 0,
+      "before_end": 8,
+      "after_terminal_frame": 4
+    },
+    {
+      "seed": 1034,
+      "opponent": "khoufou",
+      "seat": 1,
+      "before_end": 5,
+      "after_terminal_frame": 1
+    }
+  ],
+  "post_terminal_explanation": "In two games Referee declares our defeat then still executes opponent ATTACK in terminal frame; damage is rendered but not flushed to summaries. Statistics count events before declared defeat; records preserved. Wins unaffected.",
+  "own_source_and_candidate_unchanged": true,
+  "source_sha256": "3045b35c774824d724340cb9f42be2fc156cd2c1dced476941f1d8d30e98df39",
+  "all_200_games_valid_without_action_errors_or_timeouts": true,
+  "own_units_killed_surrounded": 2261,
+  "own_units_killed_attack": 1043,
+  "surround_fraction_of_killed": 0.684322033898305,
+  "own_timing_us": {
+    "median": 375,
+    "p95": 598,
+    "max": 8388
+  },
+  "lacoz_self_reported_ms": {
+    "observations": 2597,
+    "median": 30,
+    "p95": 30,
+    "max": 36
+  },
+  "snapshot_file_sha256": {
+    "snapshots/BenchmarkMatch.java": "ef7020e1e023eaf77d4be7c3a92ffde8c3b00f748db2d86417e27758ef1055ea",
+    "snapshots/baseline-v2": "9b9e7afdf86f5fd0327fbfb5858f887b44fe3c8f829546276fb7eb7ef8c3f98f",
+    "snapshots/baseline-v2.cpp": "3045b35c774824d724340cb9f42be2fc156cd2c1dced476941f1d8d30e98df39",
+    "snapshots/benchmark_public.py": "b3b422090b00c1407f71aee08f7b0655e9af1e2ea304cacc55a70d6a72230cdd",
+    "snapshots/khoufou/PROVENANCE.json": "6a353149100211e8ce19b3c340eadc501042af45a172dda8a7c9215380ee7ea8",
+    "snapshots/khoufou/Player.java": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5",
+    "snapshots/khoufou/build/Player$Plan.class": "7a274f687779dcf4a6051d7d6688adb7a623ef4c4595769b85157d39acaf6c3a",
+    "snapshots/khoufou/build/Player$Triangle.class": "de824cb19313509d4eab80651488544fd6201615dbb35a470c8d29a3f4d1bc54",
+    "snapshots/khoufou/build/Player.class": "9894c57f9308829b0003ecc37998bf44bcffb26ea00d4a7c6d50af0f6889a0be",
+    "snapshots/lacoz/PROVENANCE.json": "d2edbbb4d44490917e0689256c048954188c89cd068a5a4f8c642bf8d6502088",
+    "snapshots/lacoz/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+  },
+  "cold_start_smoke_excluded_from_main_series": {
+    "file": "../2026-11-05-public-bots-smoke/lacoz.json",
+    "reason": "cold import of freshly installed NumPy/SciPy exceeded first-turn limit; warm import 0.296s, subsequent smoke completed normally"
+  }
+}

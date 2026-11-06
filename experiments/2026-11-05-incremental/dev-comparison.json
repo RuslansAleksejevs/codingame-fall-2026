@@ -1,0 +1,619 @@
+{
+  "as_of": "2026-11-06T04:39:27.769089+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "runs": {
+    "v2": {
+      "path": "${PROJECT_ROOT}/experiments/2026-11-05-public-bots-v2",
+      "source_sha256": "3045b35c774824d724340cb9f42be2fc156cd2c1dced476941f1d8d30e98df39",
+      "games": 200,
+      "unique_maps": 50,
+      "validated_decision_states": 6303,
+      "all_matches_valid": true,
+      "all_matches_error_free": true,
+      "statistics": {
+        "khoufou": {
+          "games": 100,
+          "results": {
+            "loss": 100
+          },
+          "clean_games": 100,
+          "clean_results": {
+            "loss": 100
+          },
+          "wins_with_opponent_errors": 0,
+          "own_error_games": 0,
+          "score_fraction": 0.0,
+          "seats": {
+            "0": {
+              "loss": 50
+            },
+            "1": {
+              "loss": 50
+            }
+          },
+          "errors": 0,
+          "secondary_metric_games": 100,
+          "total_decisions": 3806,
+          "median_decisions": 36.0,
+          "median_decisions_lost_games": 36.0,
+          "own_mean_spawned": 18.38,
+          "own_mean_captured": 22.82,
+          "opponent_mean_spawned": 43.43,
+          "opponent_mean_captured": 67.9,
+          "own_spawned_per_100_decisions": 48.29217025748817,
+          "own_captured_per_100_decisions": 59.957961114030475,
+          "own_surround_deaths_per_100_decisions": 31.89700472937467,
+          "own_attack_deaths_per_100_decisions": 17.94534944823962,
+          "own_units_killed_by_surround": 1214,
+          "own_units_killed_by_attack": 683,
+          "army_at_10": {
+            "games": 100,
+            "own": 8.77,
+            "opponent": 12.12
+          },
+          "own_plan_us": {
+            "median": 380.0,
+            "p95": 624,
+            "max": 8388
+          }
+        },
+        "lacoz": {
+          "games": 100,
+          "results": {
+            "loss": 100
+          },
+          "clean_games": 100,
+          "clean_results": {
+            "loss": 100
+          },
+          "wins_with_opponent_errors": 0,
+          "own_error_games": 0,
+          "score_fraction": 0.0,
+          "seats": {
+            "0": {
+              "loss": 50
+            },
+            "1": {
+              "loss": 50
+            }
+          },
+          "errors": 0,
+          "secondary_metric_games": 100,
+          "total_decisions": 2497,
+          "median_decisions": 25.0,
+          "median_decisions_lost_games": 25.0,
+          "own_mean_spawned": 11.64,
+          "own_mean_captured": 13.72,
+          "opponent_mean_spawned": 73.58,
+          "opponent_mean_captured": 87.09,
+          "own_spawned_per_100_decisions": 46.61593912695234,
+          "own_captured_per_100_decisions": 54.94593512214657,
+          "own_surround_deaths_per_100_decisions": 41.930316379655586,
+          "own_attack_deaths_per_100_decisions": 14.417300760913095,
+          "own_units_killed_by_surround": 1047,
+          "own_units_killed_by_attack": 360,
+          "army_at_10": {
+            "games": 100,
+            "own": 8.7,
+            "opponent": 20.96
+          },
+          "own_plan_us": {
+            "median": 367,
+            "p95": 549,
+            "max": 5817
+          }
+        }
+      }
+    },
+    "v3": {
+      "path": "${PROJECT_ROOT}/experiments/2026-11-05-incremental/v3-dev",
+      "source_sha256": "0b2d033bfda7282eaa31891f033124d680234e698dde714c21005fe2f9ac518f",
+      "games": 200,
+      "unique_maps": 50,
+      "validated_decision_states": 6916,
+      "all_matches_valid": true,
+      "all_matches_error_free": false,
+      "statistics": {
+        "khoufou": {
+          "games": 100,
+          "results": {
+            "loss": 92,
+            "win": 8
+          },
+          "clean_games": 100,
+          "clean_results": {
+            "loss": 92,
+            "win": 8
+          },
+          "wins_with_opponent_errors": 0,
+          "own_error_games": 0,
+          "score_fraction": 0.08,
+          "seats": {
+            "0": {
+              "loss": 46,
+              "win": 4
+            },
+            "1": {
+              "loss": 46,
+              "win": 4
+            }
+          },
+          "errors": 0,
+          "secondary_metric_games": 100,
+          "total_decisions": 4619,
+          "median_decisions": 40.0,
+          "median_decisions_lost_games": 38.5,
+          "own_mean_spawned": 31.93,
+          "own_mean_captured": 36.34,
+          "opponent_mean_spawned": 47.21,
+          "opponent_mean_captured": 70.75,
+          "own_spawned_per_100_decisions": 69.12751677852349,
+          "own_captured_per_100_decisions": 78.67503788698852,
+          "own_surround_deaths_per_100_decisions": 29.443602511366098,
+          "own_attack_deaths_per_100_decisions": 34.35808616583676,
+          "own_units_killed_by_surround": 1360,
+          "own_units_killed_by_attack": 1587,
+          "army_at_10": {
+            "games": 100,
+            "own": 10.29,
+            "opponent": 12.29
+          },
+          "own_plan_us": {
+            "median": 954,
+            "p95": 1714,
+            "max": 26962
+          }
+        },
+        "lacoz": {
+          "games": 100,
+          "results": {
+            "loss": 81,
+            "win": 19
+          },
+          "clean_games": 81,
+          "clean_results": {
+            "loss": 81
+          },
+          "wins_with_opponent_errors": 19,
+          "own_error_games": 0,
+          "score_fraction": 0.19,
+          "seats": {
+            "0": {
+              "loss": 41,
+              "win": 9
+            },
+            "1": {
+              "loss": 40,
+              "win": 10
+            }
+          },
+          "errors": 19,
+          "secondary_metric_games": 81,
+          "total_decisions": 2049,
+          "median_decisions": 25,
+          "median_decisions_lost_games": 25,
+          "own_mean_spawned": 13.123456790123457,
+          "own_mean_captured": 14.580246913580247,
+          "opponent_mean_spawned": 71.90123456790124,
+          "opponent_mean_captured": 85.19753086419753,
+          "own_spawned_per_100_decisions": 51.87896534895071,
+          "own_captured_per_100_decisions": 57.63787213274768,
+          "own_surround_deaths_per_100_decisions": 39.726695949243535,
+          "own_attack_deaths_per_100_decisions": 21.571498291849682,
+          "own_units_killed_by_surround": 814,
+          "own_units_killed_by_attack": 442,
+          "army_at_10": {
+            "games": 81,
+            "own": 9.530864197530864,
+            "opponent": 20.580246913580247
+          },
+          "own_plan_us": {
+            "median": 961,
+            "p95": 1859,
+            "max": 32070
+          }
+        }
+      }
+    },
+    "v4": {
+      "path": "${PROJECT_ROOT}/experiments/2026-11-05-incremental/v4-dev",
+      "source_sha256": "7a8f0437341c2e573e8c7a4b9d6b30456c20beed7263b0b769c925c103303c44",
+      "games": 200,
+      "unique_maps": 50,
+      "validated_decision_states": 5754,
+      "all_matches_valid": true,
+      "all_matches_error_free": false,
+      "statistics": {
+        "khoufou": {
+          "games": 100,
+          "results": {
+            "loss": 99,
+            "win": 1
+          },
+          "clean_games": 100,
+          "clean_results": {
+            "loss": 99,
+            "win": 1
+          },
+          "wins_with_opponent_errors": 0,
+          "own_error_games": 0,
+          "score_fraction": 0.01,
+          "seats": {
+            "0": {
+              "loss": 49,
+              "win": 1
+            },
+            "1": {
+              "loss": 50
+            }
+          },
+          "errors": 0,
+          "secondary_metric_games": 100,
+          "total_decisions": 3544,
+          "median_decisions": 34.0,
+          "median_decisions_lost_games": 34,
+          "own_mean_spawned": 15.98,
+          "own_mean_captured": 18.81,
+          "opponent_mean_spawned": 38.87,
+          "opponent_mean_captured": 62.26,
+          "own_spawned_per_100_decisions": 45.090293453724605,
+          "own_captured_per_100_decisions": 53.07562076749436,
+          "own_surround_deaths_per_100_decisions": 26.269751693002256,
+          "own_attack_deaths_per_100_decisions": 18.594808126410836,
+          "own_units_killed_by_surround": 931,
+          "own_units_killed_by_attack": 659,
+          "army_at_10": {
+            "games": 100,
+            "own": 7.49,
+            "opponent": 11.16
+          },
+          "own_plan_us": {
+            "median": 555.0,
+            "p95": 932,
+            "max": 25202
+          }
+        },
+        "lacoz": {
+          "games": 100,
+          "results": {
+            "loss": 99,
+            "win": 1
+          },
+          "clean_games": 99,
+          "clean_results": {
+            "loss": 99
+          },
+          "wins_with_opponent_errors": 1,
+          "own_error_games": 0,
+          "score_fraction": 0.01,
+          "seats": {
+            "0": {
+              "loss": 50
+            },
+            "1": {
+              "loss": 49,
+              "win": 1
+            }
+          },
+          "errors": 1,
+          "secondary_metric_games": 99,
+          "total_decisions": 2205,
+          "median_decisions": 22,
+          "median_decisions_lost_games": 22,
+          "own_mean_spawned": 9.83838383838384,
+          "own_mean_captured": 11.131313131313131,
+          "opponent_mean_spawned": 68.85858585858585,
+          "opponent_mean_captured": 80.41414141414141,
+          "own_spawned_per_100_decisions": 44.17233560090703,
+          "own_captured_per_100_decisions": 49.97732426303855,
+          "own_surround_deaths_per_100_decisions": 36.099773242630384,
+          "own_attack_deaths_per_100_decisions": 18.866213151927436,
+          "own_units_killed_by_surround": 796,
+          "own_units_killed_by_attack": 416,
+          "army_at_10": {
+            "games": 99,
+            "own": 7.474747474747475,
+            "opponent": 21.848484848484848
+          },
+          "own_plan_us": {
+            "median": 458.0,
+            "p95": 742,
+            "max": 2784
+          }
+        }
+      }
+    },
+    "v5": {
+      "path": "${PROJECT_ROOT}/experiments/2026-11-05-incremental/v5-dev",
+      "source_sha256": "ca25074f94f5d90a9ea0d6ad40fb85bdf9a2a907f8521377dd0bc74efa6fdf8a",
+      "games": 200,
+      "unique_maps": 50,
+      "validated_decision_states": 6345,
+      "all_matches_valid": true,
+      "all_matches_error_free": false,
+      "statistics": {
+        "khoufou": {
+          "games": 100,
+          "results": {
+            "loss": 93,
+            "win": 7
+          },
+          "clean_games": 100,
+          "clean_results": {
+            "loss": 93,
+            "win": 7
+          },
+          "wins_with_opponent_errors": 0,
+          "own_error_games": 0,
+          "score_fraction": 0.07,
+          "seats": {
+            "0": {
+              "loss": 47,
+              "win": 3
+            },
+            "1": {
+              "loss": 46,
+              "win": 4
+            }
+          },
+          "errors": 0,
+          "secondary_metric_games": 100,
+          "total_decisions": 3866,
+          "median_decisions": 34.0,
+          "median_decisions_lost_games": 32,
+          "own_mean_spawned": 28.04,
+          "own_mean_captured": 32.19,
+          "opponent_mean_spawned": 43.47,
+          "opponent_mean_captured": 68.07,
+          "own_spawned_per_100_decisions": 72.52974650801862,
+          "own_captured_per_100_decisions": 83.26435592343508,
+          "own_surround_deaths_per_100_decisions": 14.200724262803933,
+          "own_attack_deaths_per_100_decisions": 51.16399379203311,
+          "own_units_killed_by_surround": 549,
+          "own_units_killed_by_attack": 1978,
+          "army_at_10": {
+            "games": 100,
+            "own": 10.29,
+            "opponent": 12.29
+          },
+          "own_plan_us": {
+            "median": 674.0,
+            "p95": 1101,
+            "max": 7200
+          }
+        },
+        "lacoz": {
+          "games": 100,
+          "results": {
+            "loss": 99,
+            "win": 1
+          },
+          "clean_games": 98,
+          "clean_results": {
+            "loss": 98
+          },
+          "wins_with_opponent_errors": 1,
+          "own_error_games": 1,
+          "score_fraction": 0.01,
+          "seats": {
+            "0": {
+              "loss": 50
+            },
+            "1": {
+              "loss": 49,
+              "win": 1
+            }
+          },
+          "errors": 2,
+          "secondary_metric_games": 98,
+          "total_decisions": 2468,
+          "median_decisions": 25.0,
+          "median_decisions_lost_games": 25.0,
+          "own_mean_spawned": 13.755102040816327,
+          "own_mean_captured": 15.204081632653061,
+          "opponent_mean_spawned": 76.45918367346938,
+          "opponent_mean_captured": 91.8265306122449,
+          "own_spawned_per_100_decisions": 54.619124797406805,
+          "own_captured_per_100_decisions": 60.37277147487844,
+          "own_surround_deaths_per_100_decisions": 21.47487844408428,
+          "own_attack_deaths_per_100_decisions": 42.62560777957861,
+          "own_units_killed_by_surround": 530,
+          "own_units_killed_by_attack": 1052,
+          "army_at_10": {
+            "games": 98,
+            "own": 9.86734693877551,
+            "opponent": 21.214285714285715
+          },
+          "own_plan_us": {
+            "median": 521,
+            "p95": 1001,
+            "max": 4470
+          }
+        }
+      }
+    }
+  },
+  "increments": [
+    {
+      "before": "v2",
+      "after": "v3",
+      "opponents": {
+        "khoufou": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": 8.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            2.0,
+            15.0
+          ],
+          "games_improved": 8,
+          "games_worsened": 0,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": false
+        },
+        "lacoz": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": 19.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            11.0,
+            28.000000000000004
+          ],
+          "games_improved": 19,
+          "games_worsened": 0,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": false
+        }
+      },
+      "paired_without_errors": {
+        "khoufou": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": 8.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            2.0,
+            15.0
+          ],
+          "games_improved": 8,
+          "games_worsened": 0,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": true
+        },
+        "lacoz": {
+          "map_clusters": 47,
+          "paired_games": 81,
+          "score_change_percentage_points": 0.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            0.0,
+            0.0
+          ],
+          "games_improved": 0,
+          "games_worsened": 0,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": true
+        }
+      }
+    },
+    {
+      "before": "v3",
+      "after": "v4",
+      "opponents": {
+        "khoufou": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": -7.000000000000001,
+          "paired_map_bootstrap_95_percent_interval": [
+            -14.000000000000002,
+            -1.0
+          ],
+          "games_improved": 1,
+          "games_worsened": 8,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": false
+        },
+        "lacoz": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": -18.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            -27.0,
+            -10.0
+          ],
+          "games_improved": 1,
+          "games_worsened": 19,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": false
+        }
+      },
+      "paired_without_errors": {
+        "khoufou": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": -7.000000000000001,
+          "paired_map_bootstrap_95_percent_interval": [
+            -14.000000000000002,
+            -1.0
+          ],
+          "games_improved": 1,
+          "games_worsened": 8,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": true
+        },
+        "lacoz": {
+          "map_clusters": 47,
+          "paired_games": 80,
+          "score_change_percentage_points": 0.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            0.0,
+            0.0
+          ],
+          "games_improved": 0,
+          "games_worsened": 0,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": true
+        }
+      }
+    },
+    {
+      "before": "v3",
+      "after": "v5",
+      "opponents": {
+        "khoufou": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": -1.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            -8.0,
+            5.0
+          ],
+          "games_improved": 3,
+          "games_worsened": 4,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": false
+        },
+        "lacoz": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": -18.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            -27.0,
+            -10.0
+          ],
+          "games_improved": 1,
+          "games_worsened": 19,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": false
+        }
+      },
+      "paired_without_errors": {
+        "khoufou": {
+          "map_clusters": 50,
+          "paired_games": 100,
+          "score_change_percentage_points": -1.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            -8.0,
+            5.0
+          ],
+          "games_improved": 3,
+          "games_worsened": 4,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": true
+        },
+        "lacoz": {
+          "map_clusters": 46,
+          "paired_games": 79,
+          "score_change_percentage_points": 0.0,
+          "paired_map_bootstrap_95_percent_interval": [
+            0.0,
+            0.0
+          ],
+          "games_improved": 0,
+          "games_worsened": 0,
+          "method": "10,000 paired resamples of maps, keeping available paired seats together; draw=0.5; conditional on frozen opponents and observed runs",
+          "clean_only": true
+        }
+      }
+    }
+  ],
+  "interpretation": "Raw outcomes include timeouts. Strategy conclusions use clean game wins, with technical wins reported separately. Clean subsets may differ; paired clean comparisons use only shared clean matches. A zero bootstrap interval from all-zero observations is not proof of zero true effect."
+}

@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-11-05",
+  "provenance": "PROJECT_REPORTED",
+  "stages": [
+    "v2 frozen reference",
+    "v3 multiple SPAWN with same army target and income reserve",
+    "v4 used-triangle reset added to v3",
+    "v5 surround protection added to v4"
+  ],
+  "development_seeds": "1001:1050",
+  "seats": [
+    0,
+    1
+  ],
+  "opponents": [
+    "khoufou",
+    "lacoz"
+  ],
+  "reference": "../2026-11-05-public-bots-v2",
+  "validation_seeds": "2001:2050",
+  "primary_metric": "win/draw/loss, paired by map and seat",
+  "secondary_metrics": [
+    "captures and reinforcements",
+    "army at turn 10",
+    "casualties per turn",
+    "turn count (not sufficient evidence of strength)"
+  ],
+  "method": "original unchanged referee and opponents, serial execution, save every outcome including errors; freeze each source before its series; keep rejected variants",
+  "selection": "prefer validated wins; when all zero do not claim competitive improvement from survival alone",
+  "external_spend": 0,
+  "amendments": [
+    {
+      "as_of": "2026-11-05",
+      "provenance": "PROJECT_REPORTED",
+      "reason": "v4 reset regresses on completed development series: khoufou clean wins 8 to 1; Lacoz still zero clean wins. Do not compound this regression.",
+      "stages_now": [
+        "v2",
+        "v3=v2+multi-SPAWN",
+        "v4=v3+reset (rejected candidate)",
+        "v5=v3+surround protection"
+      ],
+      "comparisons": [
+        "v2:v3",
+        "v3:v4",
+        "v3:v5"
+      ],
+      "timing_policy": "retain original 1000/50ms limits and every result; report timeout wins separately from clean game wins; secondary metrics on clean games only; no claim of strategy improvement from opponent timeout"
+    }
+  ],
+  "validation_protocol": {
+    "variants": [
+      "v2",
+      "v3",
+      "v4",
+      "v5"
+    ],
+    "seeds": "2001:2050",
+    "games": 800,
+    "order": "interleaved per map/seat/opponent, rotating variant order",
+    "frozen_before_validation": true,
+    "reason": "confirm the individual effects on unseen maps; interleaving reduces time-of-run differences in local scheduling",
+    "interpretation": "primary strategy evidence: clean wins; report technical outcomes and own timeouts separately. Prefer simpler v3 unless protection shows a reproducible gain."
+  }
+}
