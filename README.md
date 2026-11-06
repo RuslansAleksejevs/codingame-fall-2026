@@ -4,7 +4,7 @@ A private working repository for a C++17 bot, a reproducible local arena and exp
 
 I work on this project through **Codex**. **Codex created this repository and makes changes to it**, including code, validation tools and documentation.
 
-[Contest](https://www.codingame.com/contests/fall-challenge-2026) · [Rules](docs/RULES.md) · [Incremental experiment report](experiments/2026-11-05-incremental/REPORT.md)
+[Contest](https://www.codingame.com/contests/fall-challenge-2026) · [Rules](docs/RULES.md) · [Latest ATTACK experiment](experiments/2026-11-05-attack/REPORT.md)
 
 ## Current baseline
 
@@ -20,6 +20,17 @@ Wins against khoufou; each set contains 50 maps played from both seats:
 | v5 — v3 + surround protection | 7/100 | 5/100 |
 
 None won against Lacoz under normal game conditions. Technical outcomes caused by timeouts are reported separately. The incremental experiment added 1, 400 matches; 200 control matches were retained from the preceding experiment. These are local measurements, not contest rankings. No contest submission has been made from this repository.
+
+## Latest experiment: ATTACK
+
+[Experimental v6](code/variants/v6-attack.cpp) adds one attack on an enemy stack of at least four, accounting for three consumed friendly units and the spent triangle before movement/spawning.
+
+| Opponent | v3 control | v6 + ATTACK |
+|---|---:|---:|
+| khoufou | 21/200 | 29/200 |
+| Lacoz | 0/200 | 0/200 |
+
+800 new measured games, identical historical maps and both seats, with both versions rerun together. No command errors or timeouts. The observed khoufou gain is +4 percentage points; the paired 95% interval is -0.5 to +8.5 points. **v6 remains experimental; the main bot stays v3.** Both seed sets were previously used, so this is not a fresh holdout. [Full report and reproducible records](experiments/2026-11-05-attack/REPORT.md).
 
 ## Layout
 

@@ -1,0 +1,17 @@
+{
+  "as_of": "2026-11-05",
+  "provenance": "PROJECT_REPORTED",
+  "baseline": "code/variants/v3-multispawn.cpp",
+  "candidate": "code/variants/v6-attack.cpp",
+  "only_strategy_change": "At most one ATTACK per turn: require an owned triangle with one unit per corner, at least six own units and a target stack of at least four enemies. Choose the largest reachable stack. Deduct the three units, cleared enemy stack and spent triangle before the v3 planner.",
+  "maps": {
+    "development": "1001:1050",
+    "previous_validation": "2001:2050",
+    "context": "Both sets have been used before; neither is a fresh holdout."
+  },
+  "match_protocol": "Rerun v3 and v6 interleaved on each identical map, seat and opponent; two seats; original fixed Lacoz and khoufou sources; 800 scheduled games total.",
+  "primary_metric": "Game wins excluding technical outcomes; paired clean change clustered by map; report timeouts separately.",
+  "selection": "Promote only if the paired runs support improvement without own command errors; preserve both outcomes.",
+  "tuning": "Freeze before the measured runs. Correctness smoke tests may precede them; no tuning on their outcomes.",
+  "external_spend": 0
+}

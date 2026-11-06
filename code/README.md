@@ -53,3 +53,9 @@ These tools measure local strength and correctness. They do not establish contes
 `analyze_incremental.py` checks complete schedules, map and source identity, separates technical outcomes, and computes paired map-level comparisons. Explicit `--pairs v2:v3 v3:v4 v3:v5` represents the earlier experiment's branches. Experimental variants are not automatically promoted to `bot.cpp`.
 
 See `opponents/public/README.md` and `variants/README.md` for provenance and variant details.
+
+## ATTACK experiment
+
+`variants/v6-attack.cpp` adds one optional attack to v3. It targets the largest adjacent enemy stack of at least four, requires six friendly units and one per triangle corner, then updates the planning state for the three-unit cost and spent triangle. `test_attack.py` checks legality and resource accounting; `audit_attack.py` checks every attack in recorded games.
+
+On 800 paired rerun games, khoufou wins increased from 21/200 to 29/200; Lacoz wins remained 0/200. The paired 95% interval for the khoufou change is -0.5 to +8.5 percentage points. v6 remains experimental and `bot.cpp` remains v3. See `experiments/2026-11-05-attack/REPORT.md`.

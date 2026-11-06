@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Interleave frozen variants on fresh paired maps; preserve every outcome."""
+"""Interleave frozen variants on paired maps; preserve every outcome."""
 import argparse
 from collections import Counter
 from datetime import datetime, timezone
@@ -18,6 +18,7 @@ def main():
     parser.add_argument('--variants',nargs='+',required=True,help='label=source.cpp')
     parser.add_argument('--seeds',required=True)
     parser.add_argument('--out',type=Path,required=True)
+    parser.add_argument('--map-context',choices=['fresh','reused'],default='fresh')
     args=parser.parse_args()
     root=args.out.resolve();root.mkdir(parents=True,exist_ok=False)
     lo,hi=map(int,args.seeds.split(':'));seeds=list(range(lo,hi+1))
@@ -53,7 +54,8 @@ def main():
                   'opponents':opponents,'commands':commands,
                   'environment':{k:ENV[k] for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS')},
                   'warmup':'one NumPy/SciPy import before all matches',
-                  'method':'fresh seeds; interleaved variants on each map/seat/opponent; rotated variant order; every outcome retained, including timeouts',
+                  'map_context':args.map_context,
+                  'method':args.map_context+' seeds; interleaved variants on each map/seat/opponent; rotated variant order; every outcome retained, including timeouts',
                   'external_spend':0,'live_contest_submission':False}
         save(out/'manifest.json',manifest)
         versions[label]={'out':out,'snap':snap,'commands':commands,'rows':[]}
@@ -62,7 +64,8 @@ def main():
     save(root/'schedule.json',{'as_of':datetime.now(timezone.utc).isoformat(),'variants':labels,'seeds':seeds,
                               'seats':[0,1],'opponents':['khoufou','lacoz'],
                               'order':'seed, seat, opponent; rotate variants by (seed_index+seat+opponent_index)%variant_count',
-                              'planned_games':len(seeds)*4*len(labels),'purpose':'independent confirmation of each feature; code frozen before looking at fresh maps'})
+                              'planned_games':len(seeds)*4*len(labels),'map_context':args.map_context,
+                              'purpose':'paired feature comparison; code frozen before this run; previous results on reused maps are already known'})
     completed=0
     for seed_index,seed in enumerate(seeds):
         for seat in (0,1):
