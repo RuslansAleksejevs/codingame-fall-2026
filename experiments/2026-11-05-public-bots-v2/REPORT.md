@@ -1,89 +1,87 @@
-# Публичные боты против нашего baseline-v2
+# Public bots versus baseline-v2
 
-Наш бот проиграл **все 200 партий**: 100 против khoufou и 100 против Lacoz. Ничьих нет. Основная серия прошла без ошибок команд, тайм-аутов и сбоев движка.
+The baseline lost **all 200 games**: 100 against khoufou and 100 against Lacoz, with no draws. The measured series had no command errors, timeouts or referee failures.
 
-Дата: 2026-11-05, America/Los_Angeles. Класс результатов: PROJECT_REPORTED. Источники: summary.json, matches.jsonl, audit.json и 200 полных записей *.json.gz в этой папке. Это реальные локальные партии, не рейтинг конкурса.
+Date: 2026-11-05, America/Los_Angeles. Classification: PROJECT_REPORTED. Sources: `summary.json`, archived `matches.jsonl`, `audit.json` and 200 complete game records. These are actual local matches, not contest rankings.
 
-## Кого скопировали
+## Frozen opponents
 
-Два наиболее содержательных публичных решения из нашего исследования; их статус как лучших ботов всего конкурса не подтверждён.
+These were the two most substantial public solutions found in the research; their standing among all contest entrants was not established.
 
-| Бот | Сохранённый исходник | Версия |
+| Bot | Source | Commit |
 |---|---|---|
 | [khoufou](https://github.com/khoufou/Codingame_2026-11_FallChallenge/blob/372c1cd6738d456513cb50705b98549eedfdfad8/Player.java) | Player.java | 372c1cd6738d456513cb50705b98549eedfdfad8 |
 | [Lacoz](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/bot.py) | bot.py | 7f1901834d2ffc16532e083edfec8cbdb5941ab6 |
 
-Копии находятся в code/opponents/public/, снимки использованных файлов — здесь в snapshots/. Исходники не правились. Git blob SHA сверены с GitHub, SHA256 и происхождение сохранены в PROVENANCE.json и manifest.json. Исполняемые пути ввода/вывода просмотрены перед запуском. Явная лицензия в репозиториях не найдена; копии использованы только для локального сравнения, не публиковались и не отправлялись как наше решение.
+Sources under `code/opponents/public/` and the experiment's `snapshots/` are unchanged. Git blob SHA was checked against GitHub; SHA256 and provenance are in PROVENANCE.json and manifest.json. Executable I/O paths were reviewed before running. No explicit license was found. Copies are used for local comparison in a private repository, not submitted as the project's solution.
 
-Наш код и кандидат submissions/baseline-v2.cpp также не менялись. SHA256 исходника: 3045b35c774824d724340cb9f42be2fc156cd2c1dced476941f1d8d30e98df39.
+The baseline and `submissions/baseline-v2.cpp` were unchanged. Source SHA256: `3045b35c774824d724340cb9f42be2fc156cd2c1dced476941f1d8d30e98df39`.
 
-## Как проверяли
+## Method
 
-- 50 карт, seed1001–1050; обе стартовые стороны против каждого соперника: 50 × 2 × 2 = 200 партий. Это 50 разных карт, а не 200 независимых карт. Совпадение карт между сторонами и соперниками проверено.
-- Замороженный бинарник нашего baseline-v2 из предыдущей проверенной серии. Новые карты не использовались для настройки его стратегии.
-- Оригинальный referee eulerscheZahl/TryAngle-Catch, commit b6913124a10de328316ff42906448a18cb948431; league3, все действия доступны. Движок не изменялся.
-- Лимиты исходного GameManager: 1000 мс на первый ответ, 50 мс далее. Подтверждены проверкой байткода core4.1.6. Игры шли последовательно; суммарное время запуска матчей около 3,93 минуты.
-- Java Temurin17.0.21+9; Python3.14.6, NumPy2.5.4, SciPy1.18.1 в отдельном окружении. BLAS/OMP ограничены одним потоком. Это локальная среда, не точная копия серверов CodinGame.
-- Первый пробный холодный запуск Python после установки библиотек превысил стартовый лимит. Он сохранён отдельно в experiments/2026-11-05-public-bots-smoke/lacoz.json. После загрузки библиотек импорт занял около 0,30 секунды, повторная пробная партия завершилась штатно. Основная серия запущена после этой проверки; все её 200 исходов учтены, ошибок не отбрасывали. Код соперника и лимиты не меняли.
+- Seeds1001–1050, both seats, both opponents: 50 × 2 × 2 = 200 games. Map identity across seats/opponents was checked. There are 50 distinct maps, not 200 independent maps.
+- Frozen baseline-v2 binary from the preceding validation. These maps were not used to tune its strategy.
+- Original unmodified referee b6913124a10de328316ff42906448a18cb948431, league3, all actions available.
+- GameManager limits: 1000 ms first answer, 50 ms thereafter, verified from core4.1.6 bytecode. Sequential matches; summed match-process time about 3.93 minutes.
+- Temurin17.0.21+9; Python3.14.6, NumPy2.5.4, SciPy1.18.1 in an isolated environment. BLAS/OMP use one thread. This is not an exact copy of CodinGame's servers.
+- A preliminary cold Python import exceeded the first-turn limit and was retained separately in `experiments/2026-11-05-public-bots-smoke/`. Warm import took about 0.30 seconds and the next smoke game ended normally. The measured series then retained every one of its 200 outcomes; neither opponent code nor time limits were changed.
 
-## Результаты
+## Results
 
-| Показатель | Против khoufou | Против Lacoz |
+| Metric | Against khoufou | Against Lacoz |
 |---|---:|---:|
-| Наши победы / ничьи / поражения | 0 / 0 / 100 | 0 / 0 / 100 |
-| Наши победы с первой / второй стороны | 0/50 / 0/50 | 0/50 / 0/50 |
-| Медиана числа наших ходов до поражения | 36 | 25 |
-| Диапазон числа наших ходов | 22–62 | 14–47 |
-| Новые юниты за партию, наш / чужой бот | 18,38 / 43,43 | 11,64 / 73,58 |
-| Захваты за партию, наш / чужой бот | 22,82 / 67,90 | 13,72 / 87,09 |
-| Армия в начале 10-го хода, наш / чужой бот | 8,77 / 12,12 | 8,70 / 20,96 |
-| Наши юниты, потерянные от окружения, за партию | 12,14 | 10,47 |
-| Наши юниты, потерянные от ATTACK, за партию | 6,83 | 3,60 |
-| Ошибки команд / тайм-ауты в основной серии | 0 / 0 | 0 / 0 |
+| Wins / draws / losses | 0 / 0 / 100 | 0 / 0 / 100 |
+| Wins from first / second seat | 0/50 / 0/50 | 0/50 / 0/50 |
+| Median own decisions before defeat | 36 | 25 |
+| Decision-count range | 22–62 | 14–47 |
+| Spawned units per game, own / opponent | 18.38 / 43.43 | 11.64 / 73.58 |
+| Captures per game, own / opponent | 22.82 / 67.90 | 13.72 / 87.09 |
+| Army at start of turn 10, own / opponent | 8.77 / 12.12 | 8.70 / 20.96 |
+| Own surrounding deaths per game | 12.14 | 10.47 |
+| Own ATTACK deaths per game | 6.83 | 3.60 |
+| Command errors / timeouts | 0 / 0 | 0 / 0 |
 
-Средние числа захватов включают повторные захваты. Подкрепления и потери посчитаны по успешным событиям движка, а не по запрошенным командам. «Число ходов» — число решений нашего бота, начиная с 1. До 10-го хода дошли все 100 партий каждой серии, поэтому сравнение армий на этом ходе не отбирает только долгие игры.
+Capture counts include recaptures. Reinforcements and losses count successful referee events, not requested commands. Decision counts start at one. All games reached turn 10, so that army comparison does not select only long games.
 
-Причины завершения против khoufou: доминирование соперника — 68, невозможность дальше получать очки — 20, потеря всех юнитов и треугольников — 12. Против Lacoz: невозможность дальше получать очки — 57, потеря всех юнитов и треугольников — 43. Все поражения досрочные. Значение -1 в итоговом счёте означает исключение игрока движком, поэтому средний такой счёт не используется как мера силы.
+Against khoufou, 68 losses ended by enemy domination, 20 by inability to score and 12 by losing all units/triangles. Against Lacoz, 57 ended by inability to score and 43 by complete loss of units/triangles. All losses were early. Final score -1 represents elimination; its mean is not used as a strength measure.
 
-Наше время вычисления плана: медиана 0,375 мс, p95 0,598 мс, максимум 8,388 мс. Это замер внутри нашего процесса, не полное серверное время ответа. Признаков того, что текущий результат ограничен скоростью вычислений, не найдено.
+Own planning time: median0.375 ms, p95 0.598 ms, maximum8.388 ms. These are internal process timings, not full server response times. No evidence of computation speed limiting this result was found.
 
-## Что видно по игре
+## Interpretation
 
-**Измерено:** khoufou создаёт в 2,36 раза больше подкреплений, Lacoz — в 6,32 раза. Уже к десятому ходу у Lacoz в среднем 21 юнит против наших 9. Из 3304 учтённых погибших наших юнитов 2261 потерян от окружения: **68,4%**. Прямые ATTACK дают остальные 31,6%. Наши окружения убили лишь 87 вражеских юнитов за всю серию.
+**Measured:** khoufou spawned 2.36 times as many units and Lacoz 6.32 times as many. By turn 10, Lacoz averaged about 21 units versus 9. Of 3, 304 counted own deaths, 2, 261 were caused by surrounding (**68.4%**); ATTACK accounted for 31.6%. Own surrounds killed only 87 enemy units across the series.
 
-**Видно из исходников:** наш бот выдаёт не более одной SPAWN за ход и не планирует освобождение использованных треугольников для повторного захвата. Соперники создают несколько подкреплений и специально освобождают такие треугольники. khoufou также планирует атаки и окружения; Lacoz использует поиск вариантов по времени и меняет дороги. В этих матчах Lacoz успешно добавил 502 и удалил 102 дороги.
+**Source observations:** baseline-v2 issues at most one SPAWN per turn and does not coordinate clearing spent triangles for reuse. Both opponents reinforce multiple times and clear spent triangles. khoufou also plans attacks and surrounds; Lacoz uses time-bounded search and road changes. Lacoz successfully added502 and removed102 roads in these matches.
 
-**Гипотеза:** главный кандидат на улучшение — темп роста армии и повторное использование треугольников, затем предотвращение окружений. Большая армия помогает соперникам забирать соседние вершины и лишать нас возможностей расширения. Однако вклад каждого механизма отдельно не измерен: по этим партиям нельзя доказать, что одна конкретная правка устранит разрыв.
+**Hypothesis:** army growth and triangle reuse are leading improvement candidates, followed by surrounding prevention. A larger army supports expansion and denies enemy control. These observations alone do not isolate any feature's causal contribution or prove one change would close the gap.
 
-Прежние 40/40 против адаптации простого авторского level1 показывали только превосходство над тем слабым ориентиром. Новая проверка выявила большой разрыв с двумя публичными решениями. Lacoz побеждает наш бот быстрее, но мы не играли соперниками друг против друга и не устанавливаем их общий рейтинг.
+The earlier40/40 result only established superiority over an adapted weak level1 opponent. Lacoz defeated this baseline faster, but the two public opponents were not played against one another and no overall ranking is claimed.
 
-## Проверка статистики
+## Audit and limitations
 
-audit.json подтверждает 200 корректных результатов и 6303 состояния перед решениями нашего бота: число юнитов из протокола просмотра совпадает с его stderr. Число юнитов перед объявлением поражения сверено с начальной армией, подкреплениями и потерями; расхождений нет. Все 200 процессов запуска завершились с кодом 0.
+`audit.json` confirms 200 valid results and 6, 303 decision states: viewer-protocol army counts match bot stderr. Units before declared defeat balance against initial units, spawns and losses. Every launcher exited0.
 
-В двух партиях против khoufou, seed1012/seat0 и seed1034/seat1, исходный referee после объявления нашего поражения ещё исполняет атаку соперника в завершающем кадре. Она уменьшает число нарисованных юнитов на 4, но уже не попадает в текстовый журнал событий. Поэтому статистика потерь относится к событиям до объявленного конца; на исходы это не влияет. Исходные записи сохранены.
+On khoufou seed 1012/seat0 and seed 1034/seat1, the original referee executes one additional attack in a terminal frame after announcing defeat. Four displayed units are removed without appearing in the text event summary. Loss statistics therefore refer to events before declared game end; outcomes are unaffected and complete records are retained.
 
-Фиксированные карты не гарантируют одинаковые решения Lacoz при повторе: его поиск ограничен временем. Статистика относится к этим версиям и этой локальной среде. Живой рейтинг, текущее место соперников и точное соответствие конкурсному IDE не измерялись.
+Fixed maps do not guarantee identical Lacoz decisions because its search is time-bounded. Conclusions apply to these versions and local runs. Live ranking, opponents' current positions and exact contest-IDE alignment were not measured.
 
-## Предлагаемый следующий шаг
+## Follow-up hypotheses
 
-Возможные следующие эксперименты:
+1. Allow multiple useful SPAWN commands and measure the isolated effect.
+2. Clear and recapture spent triangles; coordinate shared target corners.
+3. Estimate surrounding risk before movement.
 
-1. Разрешить несколько полезных SPAWN за ход и измерить эффект отдельно.
-2. Добавить освобождение и повторный захват использованных треугольников; согласовать цели на общих вершинах.
-3. Добавить простую оценку риска окружения перед движением.
+Compare each change with baseline-v2 and both opponents. Seeds1001–1050 become development maps; improved candidates need a separate new validation set. Deep search is not necessary to test these simple hypotheses.
 
-Каждую правку сравнивать с baseline-v2 и обоими публичными соперниками. Эти 50 карт теперь являются рабочими; окончательный результат улучшенной версии проверять на новых картах. Глубокий поиск пока не нужен для проверки перечисленных простых гипотез.
+## Reproduce and records
 
-## Повторение и файлы
-
-Подготовка окружения описана в code/opponents/public/README.md. Команда выполненной серии из корня проекта:
+Environment setup: `code/opponents/public/README.md`. Original command:
 
 ```sh
 python3 code/build_public.py
-python3 code/benchmark_public.py --seeds 1001:1050 --out experiments/2026-11-05-public-bots-v2
+python3 code/benchmark_public.py --seeds 1001: 1050 --out experiments/2026-11-05-public-bots-v2
 ```
 
-Для повтора указать новую папку --out: инструмент запрещает перезапись готового эксперимента. manifest.json хранит версии, команды и происхождение; matches.jsonl — параметры, исходы, действия и армии по ходам; summary.json — сводку; audit.json — проверки. snapshots/ содержит использованные исходники и бинарники; *-spec.json, *.log, *.json.gz — запуск и полную запись каждой партии.
+Use a new output directory when repeating. manifest.json contains versions, commands and provenance; matches.jsonl contains outcomes, actions and trajectories; summary.json aggregates results; audit.json records checks. Snapshots preserve sources; specs, logs and JSON.gz records are in `records.tar.gz`. Executable binaries are excluded from Git.
 
-Внешние платные расходы: 0. Отправок на платформу, публикаций и сообщений людям не было.
+Paid external cost: 0. This experiment made no contest submissions, public releases or messages to participants.

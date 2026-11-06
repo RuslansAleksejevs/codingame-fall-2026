@@ -1,45 +1,50 @@
-# TryAngle Catch: проверка игрового условия
+# TryAngle Catch: original game statement review
 
-as_of: 2026-11-05; доступ: PRIVATE.
+as_of: 2026-11-05; access: PRIVATE. Historical research note, preceding implementation.
 
-## Источники и границы проверки
+## Sources and scope
 
-- SOURCE_VERIFIED: https://www.codingame.com/contests/fall-challenge-2026 — просмотрена живая партия через View last battles; карта домов, дорог и треугольников.
-- SOURCE_VERIFIED: https://forum.codingame.com/t/fall-challenge-2026-no-wood-league-and-missing-input/208705 — изображение участника одновременно показывает заголовок Fall Challenge 2026 и заставку try {angle();} catch {}. Вместе с совпадением автора и живой партии установлена исходная игра TryAngle Catch.
-- SOURCE_VERIFIED: https://www.codingame.com/multiplayer/bot-programming/tryangle-catch — официальное условие и ссылка на демонстрацию полных правил.
-- SOURCE_VERIFIED: https://www.codingame.com/ide/demo/843364c35de5a48f4e0de3a6e0720b74d11b1a — открыт Level 4, League 4 / 4; прочитаны правила, команды, ввод и ограничения.
-- SOURCE_VERIFIED: https://github.com/eulerscheZahl/TryAngle-Catch — репозиторий судьи автора, указан в официальном условии. Код судьи не запускался.
+- SOURCE_VERIFIED: https://www.codingame.com/contests/fall-challenge-2026 — a live game was viewed through View last battles: houses, roads and triangles.
+- SOURCE_VERIFIED: https://forum.codingame.com/t/fall-challenge-2026-no-wood-league-and-missing-input/208705 — a participant screenshot shows both the Fall Challenge 2026 title and the try {angle();} catch {} splash screen. Together with the matching author and live game, this identified TryAngle Catch as the source game.
+- SOURCE_VERIFIED: https://www.codingame.com/multiplayer/bot-programming/tryangle-catch — official statement and link to the complete-rules demo.
+- SOURCE_VERIFIED: https://www.codingame.com/ide/demo/843364c35de5a48f4e0de3a6e0720b74d11b1a — Level 4, League 4/4; rules, commands, input and limits were read.
+- SOURCE_VERIFIED: https://github.com/eulerscheZahl/TryAngle-Catch — the author's referee repository, linked by the official statement. It had not yet been run at the time of this note.
 
-Полные правила прочитаны в публичной демоверсии исходной игры. Точный набор правил, лимиты и текущая лига личного конкурсного IDE ещё не сверены. Постоянная арена TryAngle Catch и временный конкурс — разные места отправки.
+The complete rules were read in the original game's public demo. Exact rules, limits and league in the personal contest IDE remained unverified. The permanent arena and temporary contest are separate submission destinations.
 
-## Игровые правила Level 4, пересказ
+## Level 4 mechanics
 
-Два игрока начинают с трёх юнитов. До 50 домов соединены дорогами. За ход юнит проходит одно ребро; команда с дальней целью автоматически идёт по кратчайшему пути.
-Дом контролируется большинством юнитов или окружением своими домами. Юниты, все соседние дома которых принадлежат сопернику, погибают.
-Треугольник — три попарно соединённых дома без дома внутри. Контроль трёх вершин и разрешение meCanCapture позволяют его захватить. Он остаётся нашим до использования или перехвата соперником, даже после ухода войск. Каждый свой треугольник даёт одно очко за ход.
+Two players start with three units each. Up to 50 houses are connected by roads. A unit moves one edge per turn; a command aimed farther away follows a shortest path automatically.
 
-Использованный треугольник становится нейтральным. Для повторного захвата нужно выполнить условие освобождения его домов от своих юнитов либо дождаться захвата соперником; ориентироваться на meCanCapture из входа. Одним треугольником выполняется одно действие:
-- SPAWN: новый юнит на одной из вершин, без дополнительной платы юнитами.
-- ATTACK: уничтожение всех вражеских юнитов на доме, соседнем с вершиной треугольника.
-- ADD_PATH или REMOVE_PATH: изменение дороги от вершины треугольника. Новая дорога не пересекает существующие и имеет длину не более 400.
-Последние три действия дополнительно расходуют по одному своему юниту на каждой вершине. Юнит должен находиться там весь ход, а не только прийти или появиться в этом ходу.
+A house is controlled by a unit majority or by surrounding control. Units whose neighboring houses are all enemy-controlled die. A triangle comprises three mutually connected houses with no house inside. Control of all three corners plus `meCanCapture` allows capture. Ownership persists after troops leave until the triangle is spent or recaptured by the opponent. Each owned triangle earns one point per turn.
 
-Порядок фаз: атаки, перемещения, появление юнитов, добавление дорог, удаление дорог, гибель окружённых, смена владельцев треугольников. Между игроками действия одного типа одновременны, внутри набора игрока обрабатываются последовательно.
+A spent triangle becomes neutral. Recapture requires clearing its houses of friendly units or an intervening enemy capture; rely on the input flag. Each triangle funds one action:
 
-Победа по большему накопленному счёту после 200 ходов; досрочная победа при контроле не менее 80% треугольников. Потеря всех юнитов и треугольников, неизвестная команда или превышение времени дают поражение. Ничья отдельно не проверена в коде судьи.
+- SPAWN: one new unit on a corner, with no additional unit cost.
+- ATTACK: remove all enemy units at a house neighboring a triangle corner.
+- ADD_PATH / REMOVE_PATH: change a road from a triangle corner. A new road cannot cross existing roads and must be at most 400 units long.
 
-## Интерфейс
+ATTACK and road changes additionally consume one friendly unit at each corner. Units must be available from the start of the turn; arrivals or freshly spawned units cannot pay this cost.
 
-Начальный ввод: houseCount, затем houseId houseX houseY для каждого дома.
-Каждый ход: myScore opponentScore; для каждого дома houseId myUnits opponentUnits; список дорог; список треугольников с owner/meCanCapture/opponentCanCapture; список допустимых новых дорог.
-owner: -1 нейтральный, 0 наш, 1 соперника. Флаги захвата: 0/1.
-Команды одной строкой через точку с запятой:
-- MOVE from to amount
-- SPAWN house1 house2 house3 (новый юнит на house1)
-- ATTACK house1 house2 house3 target
-- ADD_PATH house1 house2 house3 target
-- REMOVE_PATH house1 house2 house3 target
-- WAIT
-Лимиты демоверсии: 1000 мс первый ход, 50 мс остальные, максимум 200 ходов.
+Phase order: attacks, moves, spawns, road additions, road removals, surrounding deaths, triangle ownership changes. Corresponding actions are simultaneous between players, with each player's sequence processed in order.
 
-Бот не создан; игровые прогоны, отправки и платные вычисления не выполнялись. Просмотр чужой партии не является нашим экспериментом.
+The higher accumulated score wins after 200 turns; control of at least 80% of triangles wins early. Losing every unit and triangle, an unknown command or a timeout causes defeat. Tie behavior had not yet been checked in referee code at the time of this note.
+
+## Interface
+
+Initial input: `houseCount`, then `houseId houseX houseY` per house.
+
+Each turn: `myScore opponentScore`; `houseId myUnits opponentUnits` per house; roads; triangles with owner/meCanCapture/opponentCanCapture; legal new roads. Owner is -1 for neutral, 0 for self, 1 for opponent; capture flags are 0/1.
+
+Output one line with semicolon-separated commands:
+
+- `MOVE from to amount`
+- `SPAWN house1 house2 house3` (spawns at house1)
+- `ATTACK house1 house2 house3 target`
+- `ADD_PATH house1 house2 house3 target`
+- `REMOVE_PATH house1 house2 house3 target`
+- `WAIT`
+
+Demo limits: 1000 ms first turn, 50 ms thereafter, at most 200 turns.
+
+At this research stage no bot, local game run, submission or paid computation had been performed. Viewing another player's match is not an experiment by this project.

@@ -1,59 +1,58 @@
-# Первый простой бот: результат
+# First simple bot: validation result
 
-**40 побед из 40** на 20 новых картах с обеих стартовых сторон. Ничьи и поражения: 0.
-Дата: 2026-11-05. Класс: PROJECT_REPORTED. Источники: `summary.json`, `matches.json`, полные записи `seed*-seat*.json.gz` в этой папке.
+**40 wins from 40 games** on 20 fresh maps played from both starting seats. No draws or losses. Date: 2026-11-05. Classification: PROJECT_REPORTED. Sources: `summary.json`, `matches.json`, `audit.json` and complete `seed*-seat*.json.gz` records, restored from the adjacent archive.
 
-## Что проверяли
+## Evaluation setup
 
-Собственный бот C++17, версия v2. Только MOVE, SPAWN, WAIT: ближайшие треугольники, согласованное движение, охрана рядом с врагом и активное создание войск до поздней части партии.
+The project's C++17 v2 bot uses MOVE/SPAWN/WAIT: nearby triangle targets, coordinated movement, exposed-corner guards and active army growth until late game.
 
-Соперник — локальная C++-адаптация `config/level1/Boss.cs` автора игры eulerscheZahl. Его случайный генератор заменён на mt19937, отладочные рисунки удалены. Это простой ориентир, **не точная копия текущего босса CodinGame**.
+The opponent is a C++ adaptation of game author eulerscheZahl's `config/level1/Boss.cs`. C# Random was replaced with mt19937 and debug drawing removed. This is a simple reference opponent, **not an exact copy of the current CodinGame boss**.
 
-Оригинальный неизменённый движок TryAngle-Catch, commit `b6913124a10de328316ff42906448a18cb948431`, league3, все действия доступны. Оба тестируемых бота используют только MOVE/SPAWN/WAIT.
-Seed101–120 не использовались для выбора поправки v2. По две партии на карту; 20/20 побед с каждой стороны. Это 20 разных карт, не 40 независимых карт.
+The original unmodified TryAngle-Catch referee was used at commit `b6913124a10de328316ff42906448a18cb948431`, league3, with every action available. Both tested bots use only MOVE/SPAWN/WAIT.
 
-## Измерения
+Seeds101–120 were not used to choose the v2 change. Each seat won 20/20. These are 20 distinct maps, not 40 independent maps.
 
-| Показатель | Результат |
+## Measurements
+
+| Metric | Result |
 |---|---:|
-| Победы / ничьи / поражения | 40 / 0 / 0 |
-| Проверенные ходы нашего бота | 3 758 |
-| Ошибки команд нашего бота | 0 |
-| Ошибки команд соперника | 0 |
-| Тайм-ауты / сбои движка | 0 / 0 |
-| Медиана времени хода | 0,303 мс |
-| 95% ходов укладываются в | 0,596 мс |
-| Самый долгий ход | 2,889 мс |
-| Среднее число захватов за партию, включая повторные | 57,65 |
-| Среднее число созданных юнитов | 39,675 |
+| Wins / draws / losses | 40 / 0 / 0 |
+| Validated bot decisions | 3, 758 |
+| Own command errors | 0 |
+| Opponent command errors | 0 |
+| Timeouts / engine failures | 0 / 0 |
+| Median planning time | 0.303 ms |
+| 95th percentile planning time | 0.596 ms |
+| Maximum planning time | 2.889 ms |
+| Mean captures per game, including recaptures | 57.65 |
+| Mean spawned units | 39.675 |
 
-29 партий завершились досрочно: 16 из-за доминирования нашего бота, 12 из-за невозможности противника продолжать набирать очки, 1 из-за потери им всех юнитов и треугольников. Остальные 11 — победы по очкам после 200 ходов. Значение -1 в сырых результатах означает исключение игрока движком, а не накопленные игровые очки.
+29 games ended early: 16 by domination, 12 because the opponent could no longer score, and one because it lost all units and triangles. The other 11 were score wins after 200 turns. A raw result of -1 means engine elimination, not accumulated game points.
 
-Замер времени выполнен нашим процессом на Apple Silicon, при двух одновременно идущих локальных партиях; это не серверный замер CodinGame. Все сообщения обоих игроков и движка дополнительно просмотрены: ошибок нет, только штатные причины досрочного завершения. Подтверждение — `audit.json`.
+Timing was measured inside the bot on Apple Silicon with two concurrent local games, not on CodinGame's servers. All player and referee messages were audited: only normal game-ending messages, no errors. See `audit.json`.
 
-## Что улучшили
+## Earlier development comparison
 
-| Версия | Учебные карты, seed1–4, обе стороны | Изменение |
+| Version | Seeds1–4, both seats | Change |
 |---|---:|---|
-| v1 | 1 победа из 8 | Ранний предел армии 12 юнитов |
-| v2 | 8 побед из 8 | Предел до хода150 равен числу домов |
+| v1 | 1/8 wins | Early army cap of 12 |
+| v2 | 8/8 wins | Army cap equals the house count before turn 150 |
 
-Изменён только порог роста войск. После выбора v2 код заморожен, затем проведена отдельная проверка выше. Учебные результаты сохранены в соседних папках `2026-11-05-v1-dev` и `2026-11-05-v2-dev`.
+Only the army growth threshold changed. v2 was frozen before the separate validation above. Development results remain in `2026-11-05-v1-dev` and `2026-11-05-v2-dev`.
 
-## Ограничения и следующий шаг
+## Limits
 
-Бот не предсказывает ходы противника, не атакует и не меняет дороги. Этот соперник также не проверяет нашу устойчивость к атакам и изменению дорог. Сильные противники могут наказать за скопления войск и слабую оборону.
-Рейтинг и место в Fall Challenge неизвестны. Перед реальной отправкой надо сверить конкурсный IDE, ввод/лимиты и применимый регламент; отправка выполняется отдельно.
+The bot does not predict enemy moves, attack or alter roads. This opponent also does not test resilience to attacks or road changes. Strong opponents may exploit troop concentrations and weak defenses.
 
-Достаточный первый результат получен: бот захватывает территории, создаёт войска, набирает очки и корректно завершает партии. Дальше можно проверить его в конкурсном IDE или выбрать более сильного локального соперника.
+Fall Challenge ranking remains unknown. Before actual submission, verify the contest IDE, protocol, limits and applicable rules. Submission is a separate action. The initial objective was met: legal games, territory capture, reinforcement and scoring. Stronger local opponents or contest-IDE checks are subsequent steps.
 
-## Воспроизведение
+## Reproduce
 
-Из корня проекта:
+From the repository root, using the frozen v2 source as `code/bot.cpp` for this historical comparison:
 
 ```sh
 python3 code/build_local.py
-python3 code/run_matches.py --seeds 101:120 --out experiments/repeat-v2
+python3 code/run_matches.py --seeds 101: 120 --out experiments/repeat-v2
 ```
 
-Нужны JDK17, Maven и clang++; инструкция — `code/README.md`. Точные версии, команды, SHA256 и параметры — `manifest.json` и `matches.json`. Полные исходники и использованные бинарники сохранены здесь. Расход на платные сервисы: 0. Публикации и отправки на платформу не выполнялись.
+The current main bot may be newer; do not silently label its results v2. JDK17, Maven and clang++ are required; see `code/README.md`. Versions, commands, SHA256 and parameters are in `manifest.json` and archived `matches.json`. Sources and records are retained; historical binaries are excluded from Git and can be rebuilt. Paid external cost: 0. No contest submission or public release was performed by this experiment.

@@ -1,99 +1,101 @@
-# Обсуждения и публичные решения TryAngle Catch / Fall Challenge 2026
+# TryAngle Catch / Fall Challenge 2026: discussions and public solutions
 
+as_of: 2026-11-05. Historical research note, preceding the public-opponent benchmark.
 
-**Результат:** аналог Kaggle Discussions есть: форум CodinGame, темы Feedback & Strategies и post-mortem. Для текущей игры самые содержательные найденные материалы — два свежих репозитория участников с кодом и журналами экспериментов. Большого текущего форумного разбора стратегий не найдено.
+**Finding:** CodinGame has a Kaggle-like discussion channel through its forum, Feedback & Strategies threads and post-mortems. For this game, the richest material found was two recent participant repositories containing code and experiment logs. No large current strategy discussion was found on the forum.
 
-Классы сведений: SOURCE_VERIFIED — содержание прочитанного первоисточника; чужие рейтинги/победы при этом остаются заявлениями автора. PROJECT_REPORTED — наша проверка/анализ. HYPOTHESIS — предложенные улучшения нашего бота. Новые чужие боты не запускались; их результаты не являются нашей репликацией.
+SOURCE_VERIFIED means the cited primary source was read; upstream rankings and wins remain author-reported. PROJECT_REPORTED identifies local analysis. HYPOTHESIS identifies proposed experiments. Public bots had not yet been run at this research stage, so their reported results were not independent replications.
 
-## Где обсуждают
+## Discussion channels
 
-| Место | Что найдено | Значение |
+| Source | Observed contents | Relevance |
 |---|---|---|
-| [Spring2026 — Feedback & Strategies](https://forum.codingame.com/t/spring-challenge-2026-troll-farm-feedback-strategies/208241) | Участники описывают алгоритмы, неудачи, тестирование; встречаются простые эвристики, поиск и обучение | Прямой пример формата обмена решениями; это другая игра |
-| [Winter2026 — Feedbacks and Strategies](https://forum.codingame.com/t/winter-challenge-2026-feedbacks-and-strategies/208044) | Подробности beam search, MCTS, модели соперника, обучения и настройки параметров | Полезно как общий опыт, не готовая стратегия TryAngle |
-| [Тема TryAngle Catch](https://forum.codingame.com/t/community-puzzle-tryangle-catch/189038) | 5 публичных сообщений, 2021–2022: завершение игры с одним юнитом; просьба поделиться идеями без последующего ответа | Почти нет стратегического содержания |
-| [AI Rules](https://forum.codingame.com/t/fall-challenge-2026-ai-rules/208706) | 2 сообщения 2 ноября: вопрос об ИИ и положительный ответ участника | Не заменяет проверку полного регламента |
-| [Несовпадение лиг и условия](https://forum.codingame.com/t/fall-challenge-2026-no-wood-league-and-missing-input/208705) | 2 сообщения 2–3 ноября: названия лиг/список команд в описании расходятся с поведением IDE | Нельзя выводить доступность действий только из названия лиги |
-| [Зависшие игры](https://forum.codingame.com/t/fall-challenge-2026-games-not-running/208708) | 4 сообщения 3 ноября; в том числе пересказ ответа команды из Discord | Подтверждает наличие обсуждения текущего конкурса в Discord, но состояние сервиса на 5 ноября не устанавливает |
-| [Discord CodinGame](https://discord.com/invite/qAKXEEv) | Ссылка проверена через меню официальной страницы конкурса | Каналы и сообщения Discord в этом исследовании не читались |
+| [Spring2026 Feedback & Strategies](https://forum.codingame.com/t/spring-challenge-2026-troll-farm-feedback-strategies/208241) | Algorithms, failures, tests, simple heuristics, search and learning | Demonstrates solution sharing for another game |
+| [Winter2026 Feedbacks and Strategies](https://forum.codingame.com/t/winter-challenge-2026-feedbacks-and-strategies/208044) | Beam search, MCTS, opponent models, learning and parameter tuning | General experience, not a ready TryAngle strategy |
+| [TryAngle Catch thread](https://forum.codingame.com/t/community-puzzle-tryangle-catch/189038) | Five public posts, 2021–2022: ending with one unit and an unanswered request for ideas | Little strategy detail |
+| [AI Rules](https://forum.codingame.com/t/fall-challenge-2026-ai-rules/208706) | Two posts on November 2: a question about AI and a participant's affirmative answer | Not a substitute for the full official rules |
+| [League/statement mismatch](https://forum.codingame.com/t/fall-challenge-2026-no-wood-league-and-missing-input/208705) | Two posts on November 2–3 about league names/commands differing from IDE behavior | Do not infer action availability solely from league names |
+| [Games not running](https://forum.codingame.com/t/fall-challenge-2026-games-not-running/208708) | Four posts on November 3, including a paraphrase of a team response in Discord | Evidence of Discord discussion, not service status on November 5 |
+| [Official Discord invite](https://discord.com/invite/qAKXEEv) | Link verified through the official contest menu | Discord channels/history were not read |
 
-Источник строк — соответствующая публичная тема/страница; SOURCE_VERIFIED; as_of2026-11-05. Полные короткие темы прочитаны через публичный Discourse JSON, поскольку поисковик плохо их индексировал. Точный поиск фразы «fall challenge 2026» вернул три текущие темы выше. Это результат поиска на дату, а не доказательство отсутствия всех других публикаций.
+Each linked source was read; SOURCE_VERIFIED, 2026-11-05. Short threads were retrieved through public Discourse JSON because search indexing was weak. Exact forum search for “fall challenge 2026” returned the three current threads above. This is a dated search result, not proof that no other publications exist.
 
-Публикации кода есть, но культура отличается от каталога открытых notebooks. В Spring2026 автор игры просит делиться подходами без больших кусков кода, поскольку игра остаётся на постоянной арене. В [историческом ответе TwoSteps от 9.02.2017](https://forum.codingame.com/t/cg-stance-regarding-code-sharing-alts/2564/24) сказано, что публикацию кода не запрещают. Старый ответ и просьба конкретной темы не устанавливают полный регламент Fall2026.
+Code sharing exists but differs from an open notebook catalog. The Spring2026 game author asks for approaches without large code dumps because the game remains on the permanent arena. A [historical TwoSteps answer dated2017-02-09](https://forum.codingame.com/t/cg-stance-regarding-code-sharing-alts/2564/24) says publishing code is not prohibited. Neither an old reply nor one thread's request establishes the complete Fall2026 rules.
 
-## Два наиболее полезных репозитория с ботами
+## Main public bot repositories
 
-### 1. Lacoz/cg2026 — самый подробный найденный дневник
+### Lacoz/cg2026
 
-[Репозиторий](https://github.com/Lacoz/cg2026), изученный commit `7f1901834d2ffc16532e083edfec8cbdb5941ab6`. Создан 3 ноября, последний push на момент чтения — 5 ноября.
+[Repository](https://github.com/Lacoz/cg2026), examined commit `7f1901834d2ffc16532e083edfec8cbdb5941ab6`. Created November 3; latest observed push November 5.
 
-[Текущий Python-бот](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/bot.py) рассматривает каждого юнита отдельно и улучшает общий набор перемещений локальным поиском. Важные детали: общие вершины целей учитываются один раз; распределение войск может использовать минимизацию общей длины пути; есть совместное освобождение вершин потраченных треугольников, оценка угроз окружения/атаки и несколько SPAWN за ход. При риске потери важной общей вершины подкрепление иногда откладывается. Проверено чтением кода, а не только README. SOURCE_VERIFIED.
+The [Python bot](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/bot.py) considers individual units and improves a joint movement plan through local search. Shared corners are counted once; assignments can minimize total distance. It coordinates clearing spent triangles, estimates surrounding/attack threats, issues multiple SPAWN commands and sometimes delays spawning to preserve a critical shared corner. These observations come from code, not README alone (SOURCE_VERIFIED).
 
-[README](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/README.md) содержит дневник конкретных поражений, сравнения вариантов и неудачные идеи. Главный полезный урок: улучшение против своих ботов не обязательно помогает против реальных противников. Автор отдельно анализирует рост армии, гибель скоплений войск и ошибочную оценку угроз. Результаты автора независимо не воспроизводились.
+The [README](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/README.md) records specific losses, variant comparisons and failed ideas. A key lesson is that stronger self-play performance need not improve results against real opponents. The log discusses army growth, vulnerable stacks and faulty threat estimates. Its results were not independently reproduced at this stage.
 
-В [ranking.csv](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/ranking.csv) последняя запись — 2026-11-05 10:10 UTC, Gold252/356, общий252/788. Это сохранённая автором запись, не наша проверка живого рейтинга. Заголовок README всё ещё говорит Silver; внутри есть более поздняя секция Gold.
+The latest [ranking.csv](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/ranking.csv) entry was2026-11-05 10: 10 UTC: Gold 252/356, overall 252/788. This is an author's saved record, not a live leaderboard check. The README title still said Silver despite a later Gold section.
 
-**Ограничение:** README смешивает историю нескольких версий. Его старое утверждение о необходимости юнитов на всех углах для SPAWN неверно для проверенного исходного движка. Поэтому используем текущий код и первоисточник правил, а не копируем весь текст как руководство.
+**Caution:** README combines several historical versions. Its earlier claim that SPAWN requires troops at every corner is false for the checked original referee. Current source and authoritative mechanics are more reliable than treating the whole diary as current instructions.
 
-### 2. khoufou/Codingame_2026-11_FallChallenge — проще для понимания и сравнения
+### khoufou/Codingame_2026-11_FallChallenge
 
-[Репозиторий](https://github.com/khoufou/Codingame_2026-11_FallChallenge), commit `372c1cd6738d456513cb50705b98549eedfdfad8`. Создан 4 ноября, последний push на момент чтения — 5 ноября.
+[Repository](https://github.com/khoufou/Codingame_2026-11_FallChallenge), commit `372c1cd6738d456513cb50705b98549eedfdfad8`. Created November 4; latest observed push November 5.
 
-[Player.java](https://github.com/khoufou/Codingame_2026-11_FallChallenge/blob/372c1cd6738d456513cb50705b98549eedfdfad8/Player.java) содержит явные этапы: выгодные атаки, использование обречённых треугольников, окружение, захваты, освобождение потраченных треугольников, движение свободных войск, подкрепления. Цели ранжируются прежде всего по времени достижения. Уже назначенные на общую вершину войска уменьшают потребность других целей. Армия сравнивается с вражеской; при перевесе растёт приоритет продвижения. В коде есть ограничение обычного роста до6 SPAWN за ход и исключения для немедленной выгоды. SOURCE_VERIFIED.
+[Player.java](https://github.com/khoufou/Codingame_2026-11_FallChallenge/blob/372c1cd6738d456513cb50705b98549eedfdfad8/Player.java) has explicit stages: profitable attacks, spending doomed triangles, surrounding, capture, clearing spent triangles, free-troop movement and reinforcement. Targets prioritize arrival time. Already assigned troops on shared corners reduce other targets' demand. Relative army strength changes expansion priority. Normal growth is capped at six SPAWN commands per turn, with exceptions for immediate gains (SOURCE_VERIFIED).
 
-В [описании арены](https://github.com/khoufou/Codingame_2026-11_FallChallenge/blob/372c1cd6738d456513cb50705b98549eedfdfad8/tools/arena/README.md) опубликованы старые варианты бота, Java-переводы боссов и таблицы тестов. Автор сообщает примерно73–77% против своего boss3 в разных наборах по300 партий. Он прямо отмечает, что собственный движок не сравнивался с оригиналом партия за партией, а случайность боссов отличается от C#. Это полезный кандидат в соперники, но цифры пока чужие и локальные; конкурсное место не подтверждено.
+The [arena README](https://github.com/khoufou/Codingame_2026-11_FallChallenge/blob/372c1cd6738d456513cb50705b98549eedfdfad8/tools/arena/README.md) includes older bots, Java boss translations and test tables. It reports roughly73–77% against its own boss3 across different300-game sets. The author explicitly notes that the custom engine was not checked game-by-game against the original and boss randomness differs from C#. These are upstream local claims, not replicated results or verified contest positions.
 
-В том же журнале раннее безусловное наступление и некоторые варианты добавления дорог ухудшали результат. Мой вывод: сначала проверить экономику и распределение войск, а изменение графа рассматривать отдельным экспериментом, не считать его автоматически полезным.
+The same log reports regressions from early unconditional aggression and some road-addition variants. A reasonable hypothesis is to test economy and allocation first, and road changes separately rather than assuming they help.
 
-## Движки и инструменты
+## Referees and tooling
 
-| Репозиторий | Проверенное содержание | Что полезно нам |
+| Repository | Verified contents | Potential use |
 |---|---|---|
-| [eulerscheZahl/TryAngle-Catch](https://github.com/eulerscheZahl/TryAngle-Catch/tree/b6913124a10de328316ff42906448a18cb948431) | Оригинальный referee, правила, C#-боссы нескольких уровней | Уже используем. Есть более сильные боссы, чем наш соперник из level1 |
-| [adamadair/TryAngle-Catch-Brutal](https://github.com/adamadair/TryAngle-Catch-Brutal/tree/04dd154e604888ef85e5db4f466de60fef9a1605) | Fork оригинала: CLI, автономный JAR, случайный Go-бот, заметки о тестировании | Готовая оболочка для локальных матчей |
-| [adamadair/cgarena](https://github.com/adamadair/cgarena) | Go-арена: смена сторон, воспроизводимые карты, журналы, различение ошибок и проигрышей, интервалы доли побед | Возможная замена собственного запускающего скрипта при росте объёма тестов |
-| [mlomb/battle](https://github.com/mlomb/battle/tree/1d379275aac436249c62d9b9c5ed12b51fae50d8) | Инструменты сборки/турниров; reference JAR и C++-порт TryAngle, средство сравнения двух referee | Возможность ускорить большой набор партий; внедрение пока не нужно |
+| [eulerscheZahl/TryAngle-Catch](https://github.com/eulerscheZahl/TryAngle-Catch/tree/b6913124a10de328316ff42906448a18cb948431) | Original referee, statement, C# bosses | Existing local reference; stronger bosses than adapted level1 |
+| [adamadair/TryAngle-Catch-Brutal](https://github.com/adamadair/TryAngle-Catch-Brutal/tree/04dd154e604888ef85e5db4f466de60fef9a1605) | Original-engine fork with CLI, standalone JAR, random Go bot and testing notes | Ready local-match wrapper |
+| [adamadair/cgarena](https://github.com/adamadair/cgarena) | Go arena, seat swaps, reproducible maps, logs, error/loss separation and win intervals | Possible replacement launcher for larger experiments |
+| [mlomb/battle](https://github.com/mlomb/battle/tree/1d379275aac436249c62d9b9c5ed12b51fae50d8) | Build/tournament tools, reference JAR, C++ TryAngle port and referee comparison | Possible faster large-scale evaluation |
 
-SOURCE_VERIFIED — README, дерево файлов и ключевые исходники. Новый инструмент не установлен и не запущен.
+SOURCE_VERIFIED for README, trees and key sources. New tools were not installed or run in this research.
 
-У adamadair описана конкретная ловушка: его fork ждёт `-seed`, а cg-brutaltester передаёт `-d seed=...`; при таком сочетании обещанная одинаковая карта для смены сторон не получается. Это проблема этой связки по анализу автора, не утверждение о всех конфигурациях BrutalTester. Наш LocalMatch задаёт seed напрямую через `setSeed`, поэтому указанный конфликт форматов к нему не относится.
+adamadair documents a seed-argument mismatch: its fork expects `-seed`, while cg-brutaltester sends `-d seed=...`. In that combination, seat-swapped matches may not share a map. This is a specific reported integration issue, not a claim about every BrutalTester setup. LocalMatch sets seeds directly with `setSeed`, so it does not use that argument path.
 
-В [C++-referee mlomb](https://github.com/mlomb/battle/blob/1d379275aac436249c62d9b9c5ed12b51fae50d8/crates/battle/assets/cg-cpp/cg-2026-fall-tryangle-catch.cpp) заявлено сохранение особенностей Java-движка, включая генерацию карт и некоторые ошибки. В таблице проекта порт помечен validated; нами эквивалентность не проверялась. Он использует общие библиотеки проекта и не является самостоятельным файлом без зависимостей.
+The [mlomb C++ referee](https://github.com/mlomb/battle/blob/1d379275aac436249c62d9b9c5ed12b51fae50d8/crates/battle/assets/cg-cpp/cg-2026-fall-tryangle-catch.cpp) claims to preserve Java map generation and some quirks. The project's table marks it validated, but equivalence was not checked here. It depends on shared project libraries, not a standalone file.
 
-## Что отсеяно
+## Excluded findings
 
-- [waimanwong/FallChallenge2026](https://github.com/waimanwong/FallChallenge2026): в проверенном дереве `6566161ff6d0da0c21124c9f23268a9aed2b929e` только .gitignore, готового бота нет.
-- [Pingwi85/Fall_challenge_2026](https://github.com/Pingwi85/Fall_challenge_2026): поиск вернул репозиторий size0; содержательное решение не установлено.
-- [Riduidel/codingame](https://github.com/Riduidel/codingame/tree/a77a2461f0416c266e31a9c33e5becd45d44cd7d/multiplayer/fall-challenge-2026): модели ввода и заготовка Java; логика выбора ходов в прочитанном Playfield закомментирована. Не выдаём за законченного соперника.
-- [Zweer/codingame](https://github.com/Zweer/codingame/tree/3d955ea0fb3ecbdb5d95de0c4016acce5c761c52/src/06-multi/tryangle-catch): в папке игры только README с условием, несмотря на отметку выполнения в общем списке.
-- [abhijeet1999/TryAngle-Catch](https://github.com/abhijeet1999/TryAngle-Catch): HEAD совпадает с исходным `b691312`; новой стратегии не найдено.
+- [waimanwong/FallChallenge2026](https://github.com/waimanwong/FallChallenge2026), tree6566161ff6d0da0c21124c9f23268a9aed2b929e: only .gitignore, no bot.
+- [Pingwi85/Fall_challenge_2026](https://github.com/Pingwi85/Fall_challenge_2026): search reported size0; no substantial solution established.
+- [Riduidel/codingame](https://github.com/Riduidel/codingame/tree/a77a2461f0416c266e31a9c33e5becd45d44cd7d/multiplayer/fall-challenge-2026): input models and Java scaffold, with move-selection logic commented out in the examined Playfield.
+- [Zweer/codingame](https://github.com/Zweer/codingame/tree/3d955ea0fb3ecbdb5d95de0c4016acce5c761c52/src/06-multi/tryangle-catch): only a statement README in the game directory despite a completion mark in the global list.
+- [abhijeet1999/TryAngle-Catch](https://github.com/abhijeet1999/TryAngle-Catch): HEAD matched original b691312; no new strategy found.
 
-## Сверка советов с оригинальным движком
+## Cross-check against original mechanics
 
-SOURCE_VERIFIED: [SpawnTask.java](https://github.com/eulerscheZahl/TryAngle-Catch/blob/b6913124a10de328316ff42906448a18cb948431/src/main/java/engine/task/SpawnTask.java), [Triangle.java](https://github.com/eulerscheZahl/TryAngle-Catch/blob/b6913124a10de328316ff42906448a18cb948431/src/main/java/engine/Triangle.java), [старший Boss.cs](https://github.com/eulerscheZahl/TryAngle-Catch/blob/b6913124a10de328316ff42906448a18cb948431/config/level3/Boss.cs).
+SOURCE_VERIFIED: [SpawnTask.java](https://github.com/eulerscheZahl/TryAngle-Catch/blob/b6913124a10de328316ff42906448a18cb948431/src/main/java/engine/task/SpawnTask.java), [Triangle.java](https://github.com/eulerscheZahl/TryAngle-Catch/blob/b6913124a10de328316ff42906448a18cb948431/src/main/java/engine/Triangle.java), [level3 Boss.cs](https://github.com/eulerscheZahl/TryAngle-Catch/blob/b6913124a10de328316ff42906448a18cb948431/config/level3/Boss.cs).
 
-1. SPAWN вызывает `canUse(player,0)`: собственных войск на углах не требует. Атака/дороги имеют другую стоимость. Нужны подходящее владение и неиспользованный треугольник.
-2. Несколько SPAWN за ход допустимы. Ограничение «один» — выбор нашего простого бота.
-3. Повторное использование требует освобождения всех углов от собственных войск либо перехвата противником. Длительность цикла зависит от карты и действий; универсальное обещание ровно трёх ходов некорректно.
-4. Старший исходный босс использует оценку полного набора перемещений и до10000 случайных изменений плана, несколько SPAWN, ATTACK и ADD_PATH. Это существенный шаг выше нашего адаптированного level1.
+1. SPAWN uses `canUse(player, 0)`: no troops are required at the corners. Ownership and an unspent triangle are required; attacks/roads have a different cost.
+2. Multiple SPAWN commands are legal. The single-SPAWN limit belonged to the early baseline.
+3. Reuse requires all corners to become free of friendly units or an intervening enemy capture. Cycle length depends on the map and actions; it is not universally exactly three turns.
+4. The original senior boss evaluates joint movement plans with up to 10, 000 random modifications, multiple SPAWN, ATTACK and ADD_PATH. It is substantially more complex than the adapted level1 opponent.
 
-Уточнение названия предыдущего тестового соперника: точный источник — `config/level1/Boss.cs`. Наш файл исторически назван `wood1_port.cpp`, но имя лиги не было отдельно подтверждено; khoufou называет исходный level1 Wood2. В дальнейших сравнениях безопаснее писать «адаптация level1», отделяя уровень исходника от текущих названий конкурсных лиг. Результат40/40 и записи матчей от этого не меняются.
+The initial opponent's exact source is `config/level1/Boss.cs`. The historical filename `wood1_port.cpp` does not establish the current league name; khoufou calls original level1 Wood2. “Adapted level1” is the precise comparison label. This naming correction does not change the40/40 result or its records.
 
-## Что предложено для нашего бота
+## Testable hypotheses at this research stage
 
-
-| Приоритет | Наше текущее ограничение | Проверяемая гипотеза |
+| Priority | Baseline limitation | Experiment |
 |---|---|---|
-| 0 | Все40 побед получены против одного простого соперника | Добавить оригинальные level2/3 и отдельно найденный Java-бот; оставить исходный Java-referee как контроль |
-| 1 | Максимум один SPAWN за ход; предел армии равен числу домов | Несколько подкреплений при достаточном числе треугольников, потребности целей и армии противника |
-| 2 | `meCanCapture=0` исключается из целей; специального общего выхода нет | Планировать освобождение всех углов потраченного треугольника и последующий возврат |
-| 3 | Назначения разных целей используют отдельные войска | Общую вершину соседних треугольников обслуживать одним достаточным отрядом |
-| 4 | Враг считается в основном неподвижным, нет ATTACK | Считать фактические конечные позиции после одного шага; уменьшать уязвимые скопления и прогнозировать окружение |
+| 0 | All40 wins came against one weak opponent | Add original level2/3 and the public Java bot; retain original Java referee as control |
+| 1 | At most one SPAWN; army cap equals house count | Multiple reinforcements according to resources, targets and enemy army |
+| 2 | meCanCapture=0 targets ignored; no coordinated clearing | Clear all spent-triangle corners and return later |
+| 3 | Separate targets reserve separate troops | Share sufficient troops across neighboring target corners |
+| 4 | Mostly stationary enemy assumptions, no ATTACK | Evaluate one-step final positions, vulnerable stacks and surrounding threats |
 
-Проверять по одной гипотезе, на одинаковых картах с обеих сторон и с отдельными новыми картами. Помимо побед считать захваты/подкрепления за ход, повторное использование треугольников и причины гибели войск. Более глубокий поиск и дороги можно рассмотреть позже, если измерения покажут необходимость.
+Test one feature at a time on matched maps and both seats, then use new validation maps. Alongside wins, measure captures/spawns per turn, triangle reuse and causes of death. Deeper search and road changes can follow if measurements justify them.
 
-## Границы исследования
+## Scope limitations
 
-Использованы веб-поиск, прямой поиск форума, GitHub-поиск по названиям и коду, чтение деревьев/README/ключевых функций и сверка с оригинальным движком. Запросы и версии — в соседней папке `2026-11-05-community/`.
-Доступность индексируемых репозиториев не гарантирует полноту поиска. Закрытые репозитории и Discord-история не изучались. Лицензия у двух основных репозиториев ботов через метаданные GitHub не обнаружена; это публичные источники для анализа, не установленное разрешение на произвольное переиздание кода.
-Наш бот и кандидат на сдачу не менялись. Новых партий, отправок, сообщений участникам и платных вычислений не выполнялось.
+Methods: web search, direct forum search, GitHub name/code search, tree/README/key-function inspection and original-referee cross-checks. Query/version records remain in the local project research archive; they were not included in this repository export.
+
+Searchable public repositories do not establish exhaustive coverage. Private repositories and Discord history were not inspected. GitHub metadata did not identify a license for the two main bot repositories; public readability does not itself establish unrestricted republication rights.
+
+At this research stage the baseline and prepared candidate were unchanged. No new matches, submissions, participant messages or paid computations had been performed.

@@ -1,23 +1,21 @@
-# Последовательные варианты собственного бота
+# Isolated strategy variants
 
-
-| Вариант | Основа | Единственное изменение стратегии |
+| Variant | Base | Strategy change |
 |---|---|---|
-| v2 | experiments/2026-11-05-baseline-v2-validation/bot.cpp | Замороженный исходный контроль |
-| v3-multispawn.cpp | v2 | Несколько SPAWN за ход. Каждый треугольник расходуется один раз, прежние предел армии и резерв дохода сохранены |
-| v4-reset.cpp | v3 | Один использованный нейтральный треугольник освобождается до разрешения повторного захвата; входящие движения и новые юниты на его вершинах временно запрещены |
-| v5-protection.cpp | v3 | Коррекция конечных позиций ради снижения риска окружения; учитываются новые юниты, видимые силы и возможность усилить кольцо за один ход |
+| v2 | experiments/2026-11-05-baseline-v2-validation/bot.cpp | Frozen original control |
+| v3-multispawn.cpp | v2 | Multiple SPAWN commands per turn; each triangle spent once; original army cap and income reserve retained |
+| v4-reset.cpp | v3 | Empty one spent neutral triangle until recapture becomes legal; temporarily block incoming moves and spawns on its corners |
+| v5-protection.cpp | v3 | Adjust final positions to reduce surrounding risk, considering spawned units, visible forces and one-move enemy reinforcement |
+| v6-attack.cpp | v3 | One ATTACK on the largest reachable enemy stack of at least four; require six own units and one per triangle corner; account for three consumed units and the spent triangle before movement/spawning |
 
-v5 создан поверх v3, поскольку v4 ухудшил рабочий результат. Поэтому эффект защиты сравнивается с v3, а не с v4. В v5 до шести локальных поправок движения; оценка удерживает полезные захваты. Коэффициенты выбраны до его серии, по результатам карт не подбирались. ATTACK и изменение дорог в нашем коде не добавлялись.
+v5 branches from v3 because v4 reduced development performance. Protection is therefore compared with v3, not v4. v5 makes up to six local movement adjustments while retaining useful captures. Coefficients were fixed before its run, not tuned on measured outcomes. Road changes remain unimplemented.
 
-Каждый файл заморожен до своей серии. После запуска исходник не заменяется: для новой гипотезы нужен новый вариант и новая папка результатов. Основной code/bot.cpp получает только выбранную версию; прежние варианты сохраняются для сравнения.
-
-Одна серия, из корня проекта:
+Freeze each source before its measured run. Do not replace a source after observing its results; use a new variant and output folder. Promote a candidate to `code/bot.cpp` only when measurements support it, retaining older variants.
 
 ```sh
-python3 code/benchmark_public.py --source code/variants/v3-multispawn.cpp --label v3-multispawn --seeds 1001:1050 --out experiments/new-series
+python3 code/benchmark_public.py --source code/variants/v3-multispawn.cpp --label v3-multispawn --seeds 1001: 1050 --out experiments/new-series
 ```
 
-Для одновременного по плану, но последовательного по исполнению сравнения нескольких версий используется benchmark_ablation.py: варианты чередуются для каждой карты, стороны и соперника, порядок сдвигается между парами. В аргумент --variants передаются label=source.cpp. Анализ — analyze_incremental.py; --pairs v2:v3 v3:v4 v3:v5 задаёт правильные основания сравнения.
+`benchmark_ablation.py --variants label=source.cpp ...` schedules variants together but executes games sequentially, interleaving on each map/seat/opponent and rotating order. `analyze_incremental.py --pairs before:after ...` sets the correct comparison bases.
 
-Все исходы, включая тайм-ауты, сохраняются. Победы из-за ошибки соперника показываются отдельно и не считаются доказательством усиления игровой стратегии. Подробный план и результаты находятся в experiments/2026-11-05-incremental/.
+Keep all outcomes, including timeouts. Report wins caused by opponent errors separately; they do not establish greater strategic strength. Earlier plans and results are in `experiments/2026-11-05-incremental/`; ATTACK evaluation is in `experiments/2026-11-05-attack/`.

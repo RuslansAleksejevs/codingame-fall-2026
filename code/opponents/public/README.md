@@ -1,35 +1,35 @@
-# Публичные соперники для локальной проверки
+# Public opponents for local evaluation
 
-Скопированы только игровые исходники, отдельно от нашего решения. Код не менялся; Git blob SHA и SHA256 проверены. Точные ссылки и происхождение — PROVENANCE.json рядом с каждым файлом.
+Only the game source files are copied, separately from the main bot. They are unchanged; Git blob SHA and SHA256 were verified. Each source has an adjacent `PROVENANCE.json` with exact links and hashes.
 
-| Папка | Автор/источник | Версия |
+| Directory | Source | Revision |
 |---|---|---|
 | lacoz-7f190183 | [Lacoz/cg2026](https://github.com/Lacoz/cg2026) | 7f1901834d2ffc16532e083edfec8cbdb5941ab6, bot.py |
 | khoufou-372c1cd6 | [khoufou/Codingame_2026-11_FallChallenge](https://github.com/khoufou/Codingame_2026-11_FallChallenge) | 372c1cd6738d456513cb50705b98549eedfdfad8, Player.java |
 
-Это два наиболее содержательных найденных публичных решения, а не доказанно лучшие боты конкурса. Лицензия в репозиториях не обнаружена. Локальные копии не публиковались и не отправлялись как наше решение. Источники проверены на импорты и операции ввода/вывода перед запуском; нет сетевых вызовов, запуска сторонних процессов или чтения/записи пользовательских файлов самим ботом.
+These were the two most substantial public solutions found in the research, not verified leaders of the entire contest. No explicit repository license was found. The copies are retained in this private repository for local comparison, not submitted as the project's solution. Imports and I/O paths were reviewed before execution: no network calls, subprocess launches or personal-file reads/writes were found in the bots.
 
-## Среда
+## Environment
 
-- Java: Temurin17.0.21+9; Java-бот компилируется перед матчами.
-- Python3.14.6, NumPy2.5.4, SciPy1.18.1 — отдельное окружение code/arena/.venv-lacoz. Это локальные версии, не точная копия Python/SciPy среды CodinGame.
+- Java: Temurin17.0.21+9; the Java bot is compiled before matches.
+- Python3.14.6, NumPy2.5.4, SciPy1.18.1 in `code/arena/.venv-lacoz`. These are local versions, not an exact replica of CodinGame's Python environment.
 - OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1, VECLIB_MAXIMUM_THREADS=1.
-- Оригинальный Java-referee b6913124a10de328316ff42906448a18cb948431; league3, все действия. Движок не менялся.
-- Лимиты исходного GameManager: 1000 мс первый ответ, 50 мс остальные, подтверждены проверкой байткода core4.1.6. Матчи последовательные, чтобы уменьшить влияние нагрузки.
+- Original unmodified referee b6913124a10de328316ff42906448a18cb948431, league3, all actions available.
+- Original GameManager limits: 1000 ms for the first answer, 50 ms thereafter, verified from core4.1.6 bytecode. Matches run sequentially to reduce load effects.
 
-Первый холодный импорт недавно установленных Python-библиотек превысил1 секунду; пробная игра закончилась тайм-аутом на старте. После загрузки библиотек импорт занял около0,30 секунды, пробная игра завершилась по игровым условиям. Сбой сохранён в experiments/2026-11-05-public-bots-smoke/, исключён только из основной серии по заранее выполненной проверке запуска. benchmark_public.py делает импорт до измеряемой серии; исходник бота и игровые лимиты не меняет.
+The first cold Python import after installation exceeded one second and the smoke match timed out at startup. After warming the libraries, import took about 0.30 seconds and a smoke match ended normally. Both are retained under `experiments/2026-11-05-public-bots-smoke/`; this preliminary failure was outside the measured series. `benchmark_public.py` imports libraries before measurement without changing opponent source or game limits.
 
-## Повтор запуска
+## Reproduce
 
-Из корня проекта, при наличии JDK и собранного исходного движка (code/README.md):
+From the repository root, with JDK and the original referee built:
 
 ```sh
 python3 -m venv code/arena/.venv-lacoz
 code/arena/.venv-lacoz/bin/python -m pip install --only-binary=:all: -r code/arena/requirements-public.txt
 python3 code/build_public.py
-python3 code/benchmark_public.py --seeds 1001:1050 --out experiments/public-repeat
+python3 code/benchmark_public.py --seeds 1001: 1050 --out experiments/public-repeat
 ```
 
-Если окружение уже есть, повторять первые две команды не нужно. Папка результата должна быть новой. Сохраняются снимки кода и бинарников, команды, версии, проверки ошибок, сырые записи всех партий и статистика. По умолчанию используется замороженный baseline-v2 из первой проверенной серии, независимо от текущего code/bot.cpp. Для другого варианта передать --source путь/к/боту.cpp --label имя: он будет скопирован и собран отдельно перед запуском.
+Skip environment creation if it already exists. Use a new output directory. Runs preserve source/binary snapshots, commands, versions, errors, all raw records and statistics; binaries are excluded from Git. The default candidate is the frozen baseline-v2 from the first validation, regardless of `code/bot.cpp`. Use `--source path/to/bot.cpp --label name` for another source.
 
-Python-бот прекращает поиск по времени, поэтому при повторе возможны отличия ходов даже на той же карте. Противники не изменяются при обнаружении ошибки: такие матчи отдельно отмечаются в отчёте.
+Lacoz's search stops based on elapsed time, so decisions can differ on repeated maps. Opponents are not changed to hide failures; such matches remain in the report as technical outcomes.

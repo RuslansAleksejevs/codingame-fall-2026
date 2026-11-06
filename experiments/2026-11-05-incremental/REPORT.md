@@ -1,83 +1,84 @@
-# Поочерёдная проверка трёх улучшений
+# Sequential evaluation of three improvements
 
-Срез: 2026-11-05, America/Los_Angeles. Класс измерений: PROJECT_REPORTED. 
+as_of: 2026-11-05, America/Los_Angeles. Measurement classification: PROJECT_REPORTED.
 
-Проверка завершена: **выбран v3, несколько SPAWN за ход**. На новых картах он выиграл 13/100 против khoufou вместо 0/100 у исходного бота. Повторный захват и защита не дали дальнейшего прироста. Против Lacoz игровых побед нет у всех вариантов.
-Выполнены 1 400 новых партий, дополнительно использованы 200 сохранённых контрольных партий. Расходы на платные сервисы: 0.
+Completed: **v3, multiple SPAWN commands per turn, was selected**. On fresh validation maps it won13/100 against khoufou versus 0/100 for the original baseline. Triangle reset and surrounding protection did not add further gains. No variant won a normal game against Lacoz.
 
-## Что изменяли
+There were 1, 400 new matches plus200 retained control matches. Paid external cost: 0.
 
-| Версия | Основа | Изменение |
+## Variants
+
+| Version | Base | Change |
 |---|---|---|
-| v2 | Прежний замороженный бот | Контроль, одна SPAWN за ход |
-| v3 | v2 | Несколько SPAWN; прежний предел армии и резерв одного доходного треугольника сохранены |
-| v4 | v3 | Освобождение всех углов одного использованного треугольника, затем разрешённый движком повторный захват |
-| v5 | v3 | Оценка окружения в конечных позициях и до шести поправок движения, уменьшающих риск |
+| v2 | Frozen preceding baseline | Control: one SPAWN per turn |
+| v3 | v2 | Multiple SPAWN commands, retaining the army cap and one-triangle income reserve |
+| v4 | v3 | Clear all corners of one spent triangle, then recapture when legal |
+| v5 | v3 | Assess surrounding risk at final positions and make up to six movement corrections |
 
-v4 оказался хуже на рабочих картах, поэтому защиту v5 добавили к v3. Сравнение защиты — v5 против v3; сравнение v5 с v4 смешало бы два изменения. Все варианты сохранены в code/variants/ и в snapshots/ соответствующей серии. Исходники заморожены до испытаний, соперники не менялись. Коэффициенты каждой новой версии не подбирались по результатам её серии.
+v4 performed worse on development maps, so v5 branches from v3. Comparing v5 with v4 would confound two changes. Sources are retained in `code/variants/` and per-run snapshots, frozen before each run. Opponents were unchanged. New variant coefficients were not tuned on that variant's measured series.
 
-## Рабочие карты
+## Development maps
 
-Seed1001–1050, обе стороны, по 100 игр против каждого соперника для каждого варианта. Контроль v2 взят из прежней сохранённой серии; для v3, v4, v5 выполнены 600 новых партий.
+Seeds1001–1050, both seats: 100 games per opponent per variant. v2 uses the preceding archived control series; v3/v4/v5 added600 matches.
 
-| Версия | Победы над khoufou | Победы над Lacoz в партиях без ошибок | Технические победы над Lacoz |
+| Version | Wins vs khoufou | Clean wins vs Lacoz | Technical wins vs Lacoz |
 |---|---:|---:|---:|
 | v2 | 0/100 | 0/100 | 0 |
 | v3 | 8/100 | 0/81 | 19 |
 | v4 | 1/100 | 0/99 | 1 |
 | v5 | 7/100 | 0/98 | 1 |
 
-У v5 также был один собственный тайм-аут против Lacoz. Поэтому его 100 игр разделяются на 98 обычных, одну с тайм-аутом соперника и одну с нашим тайм-аутом. Все исходы сохранены. Технические победы засчитываются движком, но здесь не считаются доказательством усиления игровой стратегии.
+v5 also had one own timeout against Lacoz: 98 ordinary games, one opponent timeout and one own timeout. Every outcome is retained. Technical wins count in the engine but do not establish improved strategy.
 
-Против khoufou v3 создавал в среднем 31,93 юнита за партию против 18,38 у v2. После добавления освобождения треугольников v4 этот показатель упал до 15,98; захваты упали с 36,34 до 18,81. Это измеренный результат конкретной реализации. Гипотеза: слишком раннее освобождение углов мешает расширению; это не доказательство бесполезности повторного захвата вообще.
+Against khoufou, v3 spawned31.93 units per game versus 18.38 for v2. v4 reduced this to 15.98; captures fell from 36.34 to 18.81. These measurements describe this implementation. The hypothesis is that prematurely clearing corners disrupts expansion, not that triangle reuse is inherently unhelpful.
 
-## Независимая проверка
+## Separate validation
 
-Перед запуском зафиксированы новые seed2001–2050, все четыре исходника и протокол (plan.json). Выполнены 50 новых карт × 2 стороны × 2 соперника × 4 версии = 800 партий. На каждой карте версии чередовались; порядок сдвигался между сторонами и соперниками, чтобы уменьшить влияние момента запуска. Код во время этой серии не менялся.
+Before execution, seeds 2001–2050, four frozen sources and the protocol were recorded in `plan.json`. The series ran50 new maps ×2 seats ×2 opponents ×4 versions =800 games. Variants were interleaved per map, with order rotated across seats and opponents to reduce timing effects. Sources stayed fixed throughout.
 
-| Версия | Победы над khoufou | Победы над Lacoz в партиях без ошибок | Технические победы над Lacoz |
+| Version | Wins vs khoufou | Clean wins vs Lacoz | Technical wins vs Lacoz |
 |---|---:|---:|---:|
 | v2 | 0/100 | 0/99 | 1 |
 | v3 | 13/100 | 0/100 | 0 |
 | v4 | 7/100 | 0/100 | 0 |
 | v5 | 5/100 | 0/100 | 0 |
 
-Собственных ошибок и тайм-аутов во всей независимой серии нет. Один тайм-аут Lacoz принёс техническую победу исходному v2; она отделена от игрового результата. Источник: validation-comparison.json и validation/completion.json.
+No own errors or timeouts occurred in the separate validation. One Lacoz timeout gave v2 a technical win, reported separately. Sources: `validation-comparison.json`, `validation/completion.json`.
 
-## Что действительно дало прирост
+## Measured contribution
 
-1. **Несколько SPAWN — оставить.** Прирост против khoufou повторился: +8 процентных пунктов на рабочих картах и +13 на новых. На новых картах среднее подкрепление выросло с 19,25 до 35,39 юнита за партию, захваты — с 23,99 до 41,67. Описательный парный интервал для прироста побед на новых картах: +5…+22 п.п. По двум наборам вместе: 21/200 против 0/200, прирост +10,5 п.п., интервал +5,5…+16 п.п.
-2. **Текущий вариант повторного захвата — не включать.** Относительно v3 побед меньше в обоих наборах: 1 вместо 8 и 7 вместо 13. На новых картах подкрепления снизились до 22,00, захваты — до 25,86. Освобождение углов в этой реализации мешает расширению. Следующая попытка должна лучше выбирать момент освобождения, а не включать его постоянно.
-3. **Текущую защиту — не включать.** Против khoufou на новых картах потери от окружений снизились с 35,02 до 14,33 юнита на 100 наших ходов, но потери от ATTACK выросли с 34,08 до 51,33. Побед 5 вместо 13. По обоим наборам прирост не подтверждён: разница с v3 −4,5 п.п., описательный интервал −10,5…+1 п.п. Снижение одного вида потерь не обеспечило более сильную игру.
+1. **Retain multiple SPAWN.** The khoufou gain repeated: +8 percentage points in development and +13 in validation. Validation reinforcements increased from 19.25 to 35.39 per game; captures from 23.99 to 41.67. The descriptive paired95% interval for the validation win-rate change was +5 to +22 points. Across both sets: 21/200 versus 0/200, +10.5 points, interval +5.5 to +16.
+2. **Do not include this triangle-reset implementation.** It won fewer games than v3 in both sets: 1 versus 8, and 7 versus 13. Validation reinforcements fell to 22.00 and captures to 25.86. The next implementation would need more selective clearing timing rather than persistent clearing.
+3. **Do not include this protection implementation.** Validation surrounding losses against khoufou fell from 35.02 to 14.33 units per100 own decisions, but ATTACK losses rose from 34.08 to 51.33. Wins fell from 13 to 5. Combined difference from v3: -4.5 points, descriptive interval -10.5 to +1. Reducing one type of loss did not improve overall play.
 
-Эти выводы относятся к проверенным реализациям, а не ко всем возможным вариантам повторного захвата и защиты. Ни одна версия не одолела Lacoz по игровым условиям; до него сохраняется большой разрыв.
+These findings concern the tested implementations, not every possible reset/protection algorithm. The gap to Lacoz remains large.
 
-## Сохранённый результат и проверка
+## Saved result and audit
 
-code/bot.cpp и code/build/bot теперь содержат проверенный v3. Кандидат сохранён отдельно в submissions/baseline-v3-multispawn.cpp; прежний baseline-v2.cpp не заменён. Исходник и бинарник взяты из снимка независимой серии, их SHA256 совпадают. SHA256 выбранного исходника: 0b2d033bfda7282eaa31891f033124d680234e698dde714c21005fe2f9ac518f.
+At completion, `code/bot.cpp` and the local binary were set to validated v3. Candidate: `submissions/baseline-v3-multispawn.cpp`; the old v2 candidate was retained. Source/binary hashes matched the validation snapshot. Selected source SHA256: `0b2d033bfda7282eaa31891f033124d680234e698dde714c21005fe2f9ac518f`.
 
-audit.json подтверждает 1400 новых полных записей, 44 513 сверенных состояний перед решениями, совпадение исходников между рабочими и новыми картами, код возврата 0 у всех запускателей. Предупреждений компилятора нет. В новых 1400 матчах всего 22 игры с ошибкой времени соперника и одна с нашим тайм-аутом (v5 на рабочем seed1044/seat1 против Lacoz). У выбранного v3 в обеих сериях собственных ошибок нет. Исходы с ошибками сохранены, а не заменены повторными удачными запусками.
+`audit.json` confirms 1, 400 complete new records, 44, 513 checked decision states, source identity across development/validation, and exit0 for every launcher. No compiler warnings occurred. The new runs contain22 opponent timeouts and one own timeout, v5 development seed 1044/seat1 against Lacoz. Selected v3 had no own errors in its400 games. Failures were retained rather than replaced by successful reruns.
 
-Суммарное время процессов матчей — около 38,81 минуты; подготовка и анализ в него не входят. Внешних отправок, публикаций и платных вычислений не было.
+Summed match-process time was about 38.81 minutes, excluding preparation and analysis. No contest submissions, public releases or paid computations were performed by this experiment.
 
-## Метод и ограничения
+## Method and limits
 
-- Исходный неизменённый referee TryAngle-Catch b6913124a10de328316ff42906448a18cb948431, league3. Лимиты 1000 мс на первый ответ и 50 мс далее; все игры последовательные.
-- Неизменённые соперники: Lacoz 7f1901834d2ffc16532e083edfec8cbdb5941ab6, khoufou 372c1cd6738d456513cb50705b98549eedfdfad8. Происхождение, SHA256 и используемые версии среды записаны в manifest.json каждой серии.
-- Java17.0.21+9, Python3.14.6, NumPy2.5.4, SciPy1.18.1. Python-библиотеки загружены перед серией. Это локальная среда, не серверный рейтинг CodinGame.
-- Число юнитов из протокола просмотра сверяется с stderr нашего бота перед каждым полученным решением. Результаты, журналы ошибок, команды, снимки исходников/бинарников и полные записи всех партий сохранены.
-- Главный показатель — победы по игровым условиям. Продолжительность партии, количество юнитов и число захватов сами по себе победу не заменяют. Вторичные показатели считаются по партиям без ошибок; их размер выборки указан в JSON.
-- Сравнения парные: одинаковая карта, сторона и соперник. Оба старта одной карты зависимы, поэтому интервалы получены повторной выборкой целых карт (10 000 повторов). Интервалы описательные; нулевой интервал при всех нулевых наблюдениях не доказывает нулевую вероятность победы. Для Lacoz отдельно показываются технические исходы и общие для сравниваемых версий партии без ошибок; такая подвыборка может быть смещена.
-- Поиск Lacoz ограничен временем: даже с одинаковыми картами его решения могут различаться. Выводы относятся к этим версиям и этим локальным сериям.
+- Original unmodified referee b6913124a10de328316ff42906448a18cb948431, league3, 1000/50 ms limits. Games ran sequentially.
+- Unchanged Lacoz7f1901834d2ffc16532e083edfec8cbdb5941ab6 and khoufou372c1cd6738d456513cb50705b98549eedfdfad8. Per-run manifests retain provenance, hashes and environment versions.
+- Java17.0.21+9, Python3.14.6, NumPy2.5.4, SciPy1.18.1. Python libraries were warmed before the series. These are local results, not server rankings.
+- Viewer-protocol army totals were checked against bot stderr before every recorded decision. All results, error logs, commands, source snapshots and complete records are retained. Binaries are excluded from Git.
+- Primary metric: game wins. Duration, units and captures explain outcomes but do not replace them. Secondary metrics use error-free games, with denominators in JSON.
+- Comparisons pair identical map, seat and opponent. Both seats of a map are dependent, so intervals resample entire map clusters10, 000 times. Intervals are descriptive. An all-zero interval from zero observed wins does not prove zero true win probability.
+- Lacoz technical outcomes and shared clean pairs are reported separately. Clean filtering may introduce selection bias. Lacoz's time-bounded search can produce different decisions on repeated maps. Conclusions are conditional on these sources and runs.
 
-## Воспроизведение
+## Reproduce
 
-Одиночные серии: code/benchmark_public.py --source <файл.cpp> --label <версия> --seeds 1001:1050 --out <новая_папка>. Исходная v2 доступна по умолчанию без --source.
+Single series: `python3 code/benchmark_public.py --source file.cpp --label version --seeds 1001: 1050 --out new_directory`. Without `--source`, frozen v2 is used.
 
-Независимая серия из корня проекта:
+Original validation command from the repository root:
 
 ```sh
-python3 code/benchmark_ablation.py --variants v2=experiments/2026-11-05-baseline-v2-validation/bot.cpp v3=code/variants/v3-multispawn.cpp v4=code/variants/v4-reset.cpp v5=code/variants/v5-protection.cpp --seeds 2001:2050 --out experiments/2026-11-05-incremental/validation
+python3 code/benchmark_ablation.py --variants v2=experiments/2026-11-05-baseline-v2-validation/bot.cpp v3=code/variants/v3-multispawn.cpp v4=code/variants/v4-reset.cpp v5=code/variants/v5-protection.cpp --seeds 2001: 2050 --out experiments/2026-11-05-incremental/validation
 ```
 
-Для повтора нужна новая папка --out. Анализ выполняет code/analyze_incremental.py с --pairs v2:v3 v3:v4 v3:v5; его использованная копия сохранена рядом с отчётом. Источники: dev-comparison.json, validation-comparison.json, combined-comparison.json, audit.json, plan.json и снимки в каждой папке. Платные расходы 0; внешних отправок и публикаций нет.
+For replay use a new directory and `--map-context reused`; those seeds are no longer unseen. Analyze with `code/analyze_incremental.py --pairs v2:v3 v3:v4 v3:v5`; the historical script is also retained here. Supporting files: dev-comparison.json, validation-comparison.json, combined-comparison.json, audit.json, plan.json and run snapshots. Paid cost: 0.
