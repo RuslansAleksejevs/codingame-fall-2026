@@ -1,6 +1,13 @@
 # Local resources and coding workflow
 
-As of **2026-11-06**. The BC measurements below are **PROJECT_REPORTED**. Future PPO/search runtime/work estimates remain **MODEL_INFERENCE**.
+As of **2026-11-06**. The BC and PPO measurements below are **PROJECT_REPORTED**. Unexecuted larger-run/search estimates remain **MODEL_INFERENCE**.
+
+
+## Measured PPO v1
+
+The [PPO experiment](../../experiments/rl/2026-11-06-ppo-v1/REPORT.md) completed **1,001,849 controlled-player decisions / 19,776 games in 652.17 seconds** on CPU, about **1,536 decisions/s** end to end, including checkpoint selection. Collection took 326.40 seconds; optimization and probability checks took 306.95 seconds. Peak training process RSS was **1.55 GB**. External compute spend was **$0**.
+
+Representative complete-loop pilots measured **1,914 decisions/s on CPU** and **720/s on MPS**. This small ragged full-turn PPO workload favors CPU, despite MPS winning the earlier fixed-shape BC benchmark. Four rollout workers and four PyTorch CPU threads operate in successive phases. The actor remains 24,833 parameters; the training-only critic adds another 24,833. These measured first-run timings supersede the earlier conditional PPO pilot estimate below, but do not predict convergence or the speed of larger networks.
 
 ## Measured BC v1
 

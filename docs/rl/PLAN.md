@@ -1,6 +1,6 @@
 # RL implementation and evaluation plan
 
-As of **2026-11-06**. Research branch: `rl/research`. **The native simulator and BC-only milestone are implemented**; see the [measured report](../../experiments/rl/2026-11-06-bc-v1/REPORT.md) and [implementation guide](IMPLEMENTATION.md). The baseline is still v6. PPO, value learning, search and their comparisons below are future work. Unexecuted thresholds and budgets remain proposals.
+As of **2026-11-06**. Research branch: `rl/research`. **Native simulation, BC and a bounded PPO self-play run are implemented**; see the [BC report](../../experiments/rl/2026-11-06-bc-v1/REPORT.md), [PPO protocol/report](../../experiments/rl/2026-11-06-ppo-v1/REPORT.md) and [PPO implementation](PPO.md). The baseline is still v6. Search and Q-learning remain future work. Unexecuted thresholds and budgets below remain proposals. The actual PPO run uses a separate training-only critic and a 700-game confirmation panel; the older larger-panel/shared-encoder proposals below are not claims of completed work.
 
 ## First deliverable
 
@@ -10,7 +10,7 @@ Recommended sequence: simulator/representation → BC → bounded PPO → option
 
 ## Repository layout
 
-The directories below define the staged layout. Simulator/data/BC/native export/evaluation now contain implementations; PPO, a value head, search and single-file submission packaging remain unimplemented.
+The directories below define the staged layout. Simulator, data, BC, PPO, a training-only critic, native export and evaluation are implemented. Search and single-file submission packaging remain unimplemented.
 
 | Location | Purpose |
 |---|---|

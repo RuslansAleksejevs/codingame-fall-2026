@@ -8,7 +8,9 @@ I work on this project through **Codex**. **Codex created this repository and ma
 
 ## RL research branch
 
-This branch, `rl/research`, contains a verified native simulator and a **24,833-parameter behavior-cloning bot**, trained locally on frozen Lacoz/khoufou games. [Experiment report](experiments/rl/2026-11-06-bc-v1/REPORT.md) · [Implementation and reproduction](docs/rl/IMPLEMENTATION.md) · [Research and next stages](docs/rl/README.md). PPO/self-play has not been run; the main baseline below is v6.
+This branch, `rl/research`, contains a verified native simulator, a **24,833-parameter behavior-cloning bot**, and **PPO self-play fine-tuning** from its frozen weights. The local PPO run completed 1,001,849 controlled decisions in 10.9 minutes on the MacBook CPU. [PPO experiment](experiments/rl/2026-11-06-ppo-v1/REPORT.md) · [PPO implementation](docs/rl/PPO.md) · [Frozen BC report](experiments/rl/2026-11-06-bc-v1/REPORT.md) · [Research](docs/rl/README.md). The main baseline below remains v6.
+
+On 50 new maps, both seats, PPO won **98/100 against v6, 95/100 against khoufou and 31/100 against Lacoz**; BC won 65/100, 55/100 and 2/100 on those same maps. Direct PPO–BC: **94/100**. All 700 final games were free of command errors and timeouts. This is one local training seed; [paired intervals and complete evidence](experiments/rl/2026-11-06-ppo-v1/REPORT.md) are retained.
 
 ## Current baseline
 
@@ -36,7 +38,7 @@ v6 is stronger against the frozen khoufou but still far behind Lacoz. These are 
 
 - `code/bot.cpp`: main bot; `code/variants/`: isolated strategy variants.
 - `code/arena/`, `code/*.py`: build, match execution and paired analysis tools.
-- `code/rl/`: native simulator, replay dataset, BC training, C++ policy export and evaluation.
+- `code/rl/`: native simulator, replay dataset, BC/PPO training, C++ policy export and evaluation.
 - `code/opponents/`: test opponents with source provenance.
 - `experiments/`: reports, summaries, configurations, source snapshots and complete match archives.
 - `submissions/`: prepared single-file candidates.

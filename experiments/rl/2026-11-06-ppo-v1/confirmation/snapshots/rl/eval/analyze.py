@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""Map-clustered uncertainty and paired clean-game comparisons."""
+import argparse
+from collections import Counter
+import json
+from pathlib import Path
+import random
+import statistics
+
+def clean(r):return r['valid'] and not r['own_action_errors'] and not r['opponent_action_errors']
+def value(r):return {'win':1.,'draw':.5,'loss':0.}[r['outcome']]
+def interval(clusters,seed=20261106):
+    if not clusters:return None
+    # Resample complete maps; weight retained games equally if errors remove one seat.
+    rng=random.Random(seed);b=[]
+    totals=[(sum(v),len(v)) for v in clusters]
+    for _ in range(10000):
+        sample=rng.choices(totals,k=len(totals));b.append(sum(v[0] for v in sample)/sum(v[1] for v in sample))
+    b.sort()
+    return [100*b[249],100*b[9749]]
+
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('run',type=Path);ap.add_argument('--out',type=Path,required=True);ap.add_argument('--before',default='v6');ap.add_argument('--after',default='bc');ap.add_argument('--opponents',nargs='+',default=['lacoz','khoufou']);args=ap.parse_args()
+    rows=[json.loads(line) for line in (args.run/'matches.jsonl').read_text().splitlines()];groups={};paired={}
+    for candidate,opponent in sorted(set((r['candidate'],r['opponent']) for r in rows)):
+        rr=[r for r in rows if r['candidate']==candidate and r['opponent']==opponent];cc=[r for r in rr if clean(r)];seeds=sorted(set(r['seed'] for r in cc))
+        times=[us for r in rr for us in r['own_plan_us']];ordered=sorted(times)
+        groups[f'{candidate}_vs_{opponent}']={'games':len(rr),'results':dict(Counter(r['outcome'] for r in rr)),'clean_games':len(cc),'clean_results':dict(Counter(r['outcome'] for r in cc)),
+            'own_error_games':sum(bool(r['own_action_errors']) for r in rr),'opponent_error_games':sum(bool(r['opponent_action_errors']) for r in rr),'invalid_games':sum(not r['valid'] for r in rr),
+            'score_rate':statistics.mean(map(value,cc)) if cc else None,'map_cluster_95_percent':interval([[value(r) for r in cc if r['seed']==s] for s in seeds]),
+            'decisions':len(times),'plan_us_p50':ordered[len(ordered)//2] if ordered else None,'plan_us_p95':ordered[int(.95*(len(ordered)-1))] if ordered else None,'plan_us_max':max(times,default=None),
+            'seat_results':{str(s):dict(Counter(r['outcome'] for r in cc if r['seat']==s)) for s in (0,1)},'mean_turns':statistics.mean(r['own_decisions'] for r in rr),'mean_captures':statistics.mean(r['own_events'].get('captured',0) for r in rr),'mean_spawns':statistics.mean(r['own_events'].get('spawned',0) for r in rr),
+            'command_counts':dict(sum((Counter(r['own_commands']) for r in rr),Counter()))}
+    for opponent in args.opponents:
+        a={(r['seed'],r['seat']):r for r in rows if r['candidate']==args.after and r['opponent']==opponent};b={(r['seed'],r['seat']):r for r in rows if r['candidate']==args.before and r['opponent']==opponent}
+        keys=sorted(k for k in a.keys()&b.keys() if clean(a[k]) and clean(b[k]));maps={}
+        for k in keys:
+            assert a[k]['map_content_sha256']==b[k]['map_content_sha256'];maps.setdefault(k[0],[]).append(value(a[k])-value(b[k]))
+        paired[opponent]={'clean_pairs':len(keys),f'{args.after}_results':dict(Counter(a[k]['outcome'] for k in keys)),f'{args.before}_results':dict(Counter(b[k]['outcome'] for k in keys)),
+                         'score_rate_difference_pp':100*statistics.mean(value(a[k])-value(b[k]) for k in keys) if keys else None,'map_cluster_95_pp':interval(list(maps.values())),
+                         'improved':sum(value(a[k])>value(b[k]) for k in keys),'worsened':sum(value(a[k])<value(b[k]) for k in keys),'excluded_keys':[list(k) for k in sorted(a.keys()&b.keys()) if k not in keys]}
+    checkpoints={}
+    for opponent in args.opponents:
+        aa={(r['seed'],r['seat']):r for r in rows if r['candidate']==args.after and r['opponent']==opponent and clean(r)}
+        bb={(r['seed'],r['seat']):r for r in rows if r['candidate']==args.before and r['opponent']==opponent and clean(r)}
+        checkpoints[opponent]={}
+        for turn in (10,15,20):
+            samples=[]
+            for key in aa.keys()&bb.keys():
+                a=next((v for v in aa[key]['trajectory'] if v['turn']==turn),None);b=next((v for v in bb[key]['trajectory'] if v['turn']==turn),None)
+                if a and b:samples.append((a,b))
+            if samples:
+                means={name:{metric:statistics.mean(v[i][metric] for v in samples) for metric in ('own_units','own_triangles')} for i,name in enumerate((args.after,args.before))}
+                checkpoints[opponent][str(turn)]={'both_games_still_active':len(samples),'means':means}
+            else:
+                checkpoints[opponent][str(turn)]={'both_games_still_active':0}
+    report={'groups':groups,f'paired_{args.after}_minus_{args.before}':paired,'matched_survivor_checkpoints':checkpoints,'bootstrap':{'replicates':10000,'seed':20261106,'unit':'whole map, both seats together','scope':'Game/map uncertainty for one training seed; does not measure training-seed variance.','caveat':'An arm with no observed wins produces a degenerate empirical bootstrap interval; this is not proof that its underlying win probability is zero.'},'checkpoint_caveat':'Economy checkpoints condition on both matched games still being active; these are descriptive observations, not a causal feature ablation.'}
+    args.out.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+if __name__=='__main__':main()

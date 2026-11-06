@@ -1,6 +1,6 @@
 # Native simulator and BC v1
 
-As of 2026-11-06. Local implementation and measurements; no contest submission.
+As of 2026-11-06. This page documents the frozen BC baseline. The later [PPO extension](PPO.md) fine-tunes its actor without changing the decoder or rules. Local implementation and measurements; no contest submission.
 
 ## Simulator
 

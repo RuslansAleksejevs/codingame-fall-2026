@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Frozen BC/v6 panel in the original timed referee; serial, paired, both seats."""
+"""Frozen neural-policy/control panel in the original timed referee; serial, paired, both seats."""
 import argparse
 from collections import Counter
 from datetime import datetime,timezone
@@ -24,11 +24,12 @@ def cleanpath(value):
     return value
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--weights',required=True,type=Path);ap.add_argument('--out',required=True,type=Path);ap.add_argument('--seeds',default='6001:6050');ap.add_argument('--smoke',action='store_true');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--weights',required=True,type=Path);ap.add_argument('--ppo-weights',type=Path);ap.add_argument('--out',required=True,type=Path);ap.add_argument('--seeds',default='6001:6050');ap.add_argument('--smoke',action='store_true');args=ap.parse_args()
     out=args.out.resolve();out.mkdir(parents=True,exist_ok=False);snap=out/'snapshots';snap.mkdir()
     # Executables are local caches; sources and weights are preserved and hashed.
     shutil.copytree(BASE/'code/rl',snap/'rl',ignore=shutil.ignore_patterns('__pycache__'))
     shutil.copy2(BASE/'code/variants/v6-attack.cpp',snap/'v6.cpp');shutil.copy2(args.weights,snap/'weights.txt')
+    if args.ppo_weights:shutil.copy2(args.ppo_weights,snap/'ppo-weights.txt')
     (snap/'build').mkdir()
     for name,source,opt in [('bc',snap/'rl/export/bot.cpp','-O3'),('v6',snap/'v6.cpp','-O2')]:
         subprocess.run(['clang++','-std=c++17',opt,'-Wall','-Wextra','-Wpedantic',str(source),'-o',str(snap/'build'/name)],check=True)
@@ -39,12 +40,17 @@ def main():
     py=BASE/'code/arena/.venv-lacoz/bin/python'
     commands={'bc':[str(snap/'build/bc'),str(snap/'weights.txt'),'2'],'v6':[str(snap/'build/v6')],
               'lacoz':[str(py),'-u',str(snap/'lacoz/bot.py')],'khoufou':[str(jdk/'bin/java'),'-cp',str(snap/'khoufou/build'),'Player']}
+    if args.ppo_weights:commands['ppo']=[str(snap/'build/bc'),str(snap/'ppo-weights.txt'),'2']
     cp=str(BASE/'code/build')+':'+str(REPO/'target/classes')+':'+(REPO/'classpath.txt').read_text().strip()
     lo,hi=map(int,args.seeds.split(':'));pairs=[('bc','lacoz'),('v6','lacoz'),('bc','khoufou'),('v6','khoufou'),('bc','v6')]
+    if args.ppo_weights:pairs=[(c,o) for o in ('v6','lacoz','khoufou') for c in ('bc','ppo')]+[('ppo','bc')]
+    candidates=sorted(set(c for c,o in pairs));total_games=(hi-lo+1)*len(pairs)*2
     dataset=json.loads((BASE/'experiments/rl/2026-11-06-bc-v1/dataset.json').read_text());seen=set(dataset['maps'])
+    if args.ppo_weights:seen.update(json.loads((BASE/'experiments/rl/2026-11-06-bc-v1/confirmation/map-hashes.json').read_text()).values())
     manifest={'as_of':datetime.now(timezone.utc).isoformat(),'provenance':'PROJECT_REPORTED','referee_commit':COMMIT,'league':3,'turn_ms':50,'first_turn_ms':1000,'parallel_games':1,'seeds':list(range(lo,hi+1)),'seats':[0,1],'pairs':pairs,'weights_sha256':sha(snap/'weights.txt'),
               'source_sha256':{str(p.relative_to(snap)):sha(p) for p in sorted(snap.rglob('*')) if p.is_file() and 'build' not in p.relative_to(snap).parts},
               'binary_sha256':{n:sha(snap/'build'/n) for n in ('bc','v6')},'compiler':subprocess.run(['clang++','--version'],capture_output=True,text=True).stdout,'commands':cleanpath(commands),'environment':{k:ENV[k] for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS')},'external_spend':0,'live_submission':False,'method':'Serial original-referee matches; interleaved candidate/control on identical seeds and both seats; no checkpoint changes during the panel. Opponent wall-time search can vary across reruns.'}
+    if args.ppo_weights:manifest['ppo_weights_sha256']=sha(snap/'ppo-weights.txt')
     save(out/'manifest.json',manifest);subprocess.run([str(py),'-c','import numpy,scipy.optimize'],env=ENV,check=True)
     rows=[];maphashes={};start=time.monotonic()
     for seed in range(lo,hi+1):
@@ -71,9 +77,9 @@ def main():
                 with gzip.GzipFile(filename=str(out/(stem+'.json.gz')),mode='wb',mtime=0) as f:f.write(json.dumps(cleanpath(result)).encode())
                 path.unlink()
                 if len(rows)%10==0 or row['own_action_errors'] or row['opponent_action_errors'] or not row['valid']:
-                    print(f'{len(rows)}/{(hi-lo+1)*10} {stem}: {row["outcome"]} {row["score"]}:{row["opponent_score"]}; own errors={row["own_action_errors"]}; opponent errors={row["opponent_action_errors"]}; {time.monotonic()-start:.1f}s',flush=True)
+                    print(f'{len(rows)}/{total_games} {stem}: {row["outcome"]} {row["score"]}:{row["opponent_score"]}; own errors={row["own_action_errors"]}; opponent errors={row["opponent_action_errors"]}; {time.monotonic()-start:.1f}s',flush=True)
                 if args.smoke and row['own_action_errors']:raise RuntimeError('Candidate smoke failure; records preserved')
-        save(out/'summary.json',{c:summarize([r for r in rows if r['candidate']==c]) for c in ('bc','v6')})
+        save(out/'summary.json',{c:summarize([r for r in rows if r['candidate']==c]) for c in candidates})
     save(out/'map-hashes.json',maphashes);save(out/'runtime.json',{'wall_seconds':time.monotonic()-start,'games':len(rows),'external_spend':0})
-    print(json.dumps({c:{o:dict(Counter(r['outcome'] for r in rows if r['candidate']==c and r['opponent']==o)) for o in ('v6','lacoz','khoufou')} for c in ('bc','v6')},indent=2),flush=True)
+    print(json.dumps({c:{o:dict(Counter(r['outcome'] for r in rows if r['candidate']==c and r['opponent']==o)) for o in sorted(set(o for a,o in pairs if a==c))} for c in candidates},indent=2),flush=True)
 if __name__=='__main__':main()

@@ -10,6 +10,7 @@ def main():
     build=BASE/'code/build';build.mkdir(exist_ok=True)
     subprocess.run(['clang++','-std=c++17','-O3','-Wall','-Wextra','-shared','-fPIC',str(BASE/'code/rl/sim/api.cpp'),'-o',str(build/'libtryangle.dylib')],check=True)
     subprocess.run(['clang++','-std=c++17','-O3','-Wall','-Wextra',str(BASE/'code/rl/export/bot.cpp'),'-o',str(build/'bc-bot')],check=True)
+    subprocess.run(['clang++','-std=c++17','-O3','-Wall','-Wextra','-shared','-fPIC','-pthread',str(BASE/'code/rl/train/rollout.cpp'),'-o',str(build/'libtryangle_ppo.dylib')],check=True)
     cp=str(REPO/'target/classes')+':'+(REPO/'classpath.txt').read_text().strip()
     subprocess.run([str(java_home()/'bin/javac'),'-cp',cp,'-d',str(build),str(BASE/'code/rl/sim/Oracle.java')],check=True)
 if __name__=='__main__':main()

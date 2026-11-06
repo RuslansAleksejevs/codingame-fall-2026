@@ -1,0 +1,57 @@
+{
+  "learner": "PPO-Clip from behavior cloning",
+  "as_of": "2026-11-06",
+  "provenance": "PROJECT_REPORTED",
+  "status": "training_and_fresh_confirmation_complete",
+  "method_sources": [
+    {
+      "url": "https://arxiv.org/abs/1707.06347",
+      "claim": "Clipped policy surrogate; implementation is local."
+    },
+    {
+      "url": "https://arxiv.org/abs/1506.02438",
+      "claim": "Generalized advantage estimation with explicit episode boundaries."
+    },
+    {
+      "url": "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+      "claim": "PPO-Clip equations and approximate-KL early stopping."
+    }
+  ],
+  "evidence": {
+    "protocol": "experiments/rl/2026-11-06-ppo-v1/PROTOCOL.md",
+    "training": "experiments/rl/2026-11-06-ppo-v1/training/summary.json",
+    "correctness": "experiments/rl/2026-11-06-ppo-v1/tests-trained.json",
+    "report": "experiments/rl/2026-11-06-ppo-v1/REPORT.md",
+    "comparison": "experiments/rl/2026-11-06-ppo-v1/comparison.json",
+    "verification": "experiments/rl/2026-11-06-ppo-v1/verification.json"
+  },
+  "initial_bc_weights_sha256": "b97859bc318a0bcbbf9d9b3080da695313fd716018d50f8155902d558291e24e",
+  "selected_ppo_weights_sha256": "8b9f669b3b4047eb75d1ff1df2ea9cc8e61de59629de1c9260f8a954b40ae7e7",
+  "device": "CPU, local MacBook Air M4",
+  "external_compute_spend": 0,
+  "subscription_quota_usage": "UNKNOWN",
+  "live_submission": false,
+  "main_promotion": false,
+  "confirmation": {
+    "games": 700,
+    "new_maps": 50,
+    "prior_maps_excluded": 375,
+    "seeds": "7001-7050",
+    "bc_wins": {
+      "v6": 65,
+      "lacoz": 2,
+      "khoufou": 55
+    },
+    "ppo_wins": {
+      "v6": 98,
+      "lacoz": 31,
+      "khoufou": 95
+    },
+    "games_per_opponent": 100,
+    "direct_ppo_vs_bc_wins": 94,
+    "command_error_or_timeout_games": 0,
+    "native_replay_transitions": 20957,
+    "native_mismatches": 0,
+    "training_seed_count": 1
+  }
+}
