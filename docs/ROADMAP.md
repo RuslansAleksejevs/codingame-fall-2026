@@ -2,6 +2,8 @@
 
 As of 2026-11-06. Proposed work, not completed experiments. The current selection and measurements are in the [fresh ATTACK report](../experiments/2026-11-06-attack-holdout/REPORT.md). Local results do not establish contest ranking.
 
+**Branch update:** `rl/research` now develops a separate [RL research direction](rl/README.md), with a laptop resource budget and staged evaluation. The heuristic sequence below remains an alternative and a source of teacher/opponent candidates. No further tournament or RL training has been run in this branch.
+
 ## What has already been copied
 
 The complete public game files from Lacoz and khoufou are already present, unchanged, under [code/opponents/public](../code/opponents/public/README.md), with pinned revisions and hashes. They run as opponents. Neither whole algorithm has been adopted as the main bot.

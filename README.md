@@ -4,7 +4,11 @@ A private working repository for a C++17 bot, a reproducible local arena and exp
 
 I work on this project through **Codex**. **Codex created this repository and makes changes to it**, including code, validation tools and documentation.
 
-[Contest](https://www.codingame.com/contests/fall-challenge-2026) · [Rules](docs/RULES.md) · [Fresh ATTACK confirmation](experiments/2026-11-06-attack-holdout/REPORT.md) · [Development roadmap](docs/ROADMAP.md)
+[Contest](https://www.codingame.com/contests/fall-challenge-2026) · [Rules](docs/RULES.md) · [Fresh ATTACK confirmation](experiments/2026-11-06-attack-holdout/REPORT.md) · [Development roadmap](docs/ROADMAP.md) · [RL research](docs/rl/README.md)
+
+## RL research branch
+
+This branch, `rl/research`, contains a primary-source review and a local-compute plan for imitation learning, PPO self-play, learned search and BTR-inspired plan scoring. [Start here](docs/rl/README.md). No RL learner has been implemented or trained yet; the tested v6 baseline below remains unchanged.
 
 ## Current baseline
 

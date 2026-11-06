@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-06",
+  "scope": "RL research and plan; no training, implementation, or new games",
+  "branch": "rl/research",
+  "base_commit": "601a00eea536e305d9b77ea44d813228eb7d148d",
+  "local_evidence": {
+    "provenance": "PROJECT_REPORTED",
+    "hardware": {
+      "chip": "Apple M4",
+      "model": "MacBook Air",
+      "memory_gb": 24,
+      "cpu_cores": 10,
+      "performance_cpu_cores": 4,
+      "efficiency_cpu_cores": 6,
+      "gpu_cores": 10,
+      "inspection": "system_profiler, output filtered to hardware fields"
+    },
+    "current_python_torch_available": false,
+    "existing_arena": {
+      "report": "experiments/2026-11-06-attack-holdout/REPORT.md",
+      "candidate_decision_states": 55901,
+      "summed_match_minutes_rounded": 33.678,
+      "summed_match_seconds": 2020.688,
+      "derived_candidate_decisions_per_second": 27.66434006635364,
+      "is_rl_throughput": false
+    },
+    "new_matches": 0,
+    "training_runs": 0,
+    "external_compute_cost_usd": 0,
+    "coding_subscription_usage": "UNKNOWN"
+  },
+  "proposal": {
+    "provenance": "MODEL_INFERENCE",
+    "preferred_route": "BC -> small PPO self-play -> optional short simultaneous search",
+    "alternatives": [
+      "Learned value plus short search / Expert Iteration",
+      "BTR-inspired distributional Q-learning over complete turn plans"
+    ],
+    "compute": "Local MacBook only",
+    "implementation_status": "NOT_STARTED"
+  },
+  "sources": [
+    {
+      "id": "cg-summer-2026",
+      "url": "https://forum.codingame.com/t/summer-challenge-2026-feedback-strategies/208574",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_forum",
+      "claim": "Indrill reports first place with BTR-like Q-learning; RamzaBeoulve reports fourth place with BC, PPO and graph/search components.",
+      "independent_replication": false
+    },
+    {
+      "id": "pduhard-2026",
+      "url": "https://github.com/Pduhard/back-track-king-postmortem",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "github_readme",
+      "claim": "Third-place PPO and short-search postmortem; author-reported mirror-search result, not independently reproduced.",
+      "independent_replication": false
+    },
+    {
+      "id": "cg-fall-2023",
+      "url": "https://gist.github.com/reCurs3/7d4eb5b952790e3009337f61c3341074",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_author_gist",
+      "claim": "PPO, compact model, native simulator and training/deployment details.",
+      "independent_replication": false
+    },
+    {
+      "id": "cg-fall-2023-ranking",
+      "url": "https://www.codingame.com/contests/fall-challenge-2023/leaderboard",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "official_search_index",
+      "claim": "Official ranking lists reCurse first.",
+      "independent_replication": false
+    },
+    {
+      "id": "lux1",
+      "url": "https://github.com/IsaiahPressman/Kaggle_Lux_AI_2021",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "github_readme",
+      "claim": "Winning implementation and author report; IMPALA-derived joint-action training.",
+      "independent_replication": false
+    },
+    {
+      "id": "lux3-winner",
+      "url": "https://github.com/tonykozlovsky/lux-ai3-pub",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "github_readme_and_root_listing",
+      "claim": "Winning IMPALA implementation/report; distinguishes final run from total experiment steps.",
+      "independent_replication": false
+    },
+    {
+      "id": "lux3-second",
+      "url": "https://www.kaggle.com/competitions/lux-ai-season-3/writeups/frog-parade-frog-parade-s-solution",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "indexed_primary_author_text",
+      "claim": "Second-place PPO; environment-only throughput differs from complete training throughput.",
+      "independent_replication": false
+    },
+    {
+      "id": "lux3-third",
+      "url": "https://www.kaggle.com/competitions/lux-ai-season-3/writeups/adg4b-imitation-learning-3rd-place-solution",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "indexed_primary_author_text",
+      "claim": "Third-place imitation learning, not an RL-trained winner.",
+      "independent_replication": false
+    },
+    {
+      "id": "hungry-geese",
+      "url": "https://engineering.dena.com/blog/2021/12/distributed-reinforcement-learning-with-handyrl/",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_author_article",
+      "claim": "DeNA account of winning with off-policy RL and simultaneous-game search.",
+      "independent_replication": false
+    },
+    {
+      "id": "orbit-winner",
+      "url": "https://www.kaggle.com/competitions/orbit-wars/writeups/1st-place-solution-scaling-reinforcement-learnin",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "indexed_primary_author_text",
+      "claim": "First-place large-scale PPO. Training compute is author-reported, not a local estimate.",
+      "independent_replication": false
+    },
+    {
+      "id": "orbit-sixth",
+      "url": "https://www.kaggle.com/competitions/orbit-wars/writeups/6th-rl-league-search-with-a-custom-edge-atte",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "indexed_primary_author_text",
+      "claim": "Sixth-place learned policy/search account; two-player and four-player results differ.",
+      "independent_replication": false
+    },
+    {
+      "id": "orbit-macbook",
+      "url": "https://www.kaggle.com/competitions/orbit-wars/discussion/733686",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "indexed_primary_author_text",
+      "claim": "80th-place MacBook BC/PPO account. Direct opening redirects to an unreadable writeup body; indexed author text was reviewed.",
+      "independent_replication": false
+    },
+    {
+      "id": "generals-2026",
+      "url": "https://arxiv.org/html/2606.23348v2",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_primary_paper",
+      "claim": "October 2026 revision: human ladder result, not a contest victory. Final run is seven days on four H200 GPUs.",
+      "independent_replication": false
+    },
+    {
+      "id": "btr",
+      "url": "https://proceedings.mlr.press/v267/clark25a.html",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_conference_page",
+      "claim": "BTR, ICML 2025; includes official software link.",
+      "independent_replication": false
+    },
+    {
+      "id": "btr-full",
+      "url": "https://arxiv.org/html/2411.03820",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_primary_paper_v2",
+      "claim": "Full method and hardware appendix. Desktop runtime uses NVIDIA hardware; Atari frames and decisions differ.",
+      "independent_replication": false
+    },
+    {
+      "id": "ppo",
+      "url": "https://arxiv.org/abs/1707.06347",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "primary_paper_abstract",
+      "claim": "Clipped policy-gradient training baseline.",
+      "independent_replication": false
+    },
+    {
+      "id": "masking",
+      "url": "https://arxiv.org/abs/2006.14171",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "primary_paper_abstract",
+      "claim": "Invalid-action masking analysis.",
+      "independent_replication": false
+    },
+    {
+      "id": "expert-iteration",
+      "url": "https://arxiv.org/abs/1705.08439",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "primary_paper_abstract",
+      "claim": "Search/generalization loop; original application is Hex.",
+      "independent_replication": false
+    },
+    {
+      "id": "muzero",
+      "url": "https://arxiv.org/abs/1911.08265",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "primary_paper_abstract",
+      "claim": "Planning with learned latent dynamics.",
+      "independent_replication": false
+    },
+    {
+      "id": "dreamer",
+      "url": "https://arxiv.org/abs/2301.04104",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "primary_paper_abstract",
+      "claim": "World-model learning and imagined trajectories.",
+      "independent_replication": false
+    },
+    {
+      "id": "shaping",
+      "url": "https://ai.stanford.edu/~ang/papers/shaping-icml99.pdf",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "indexed_primary_paper_text",
+      "claim": "Potential-based shaping invariance for the stated MDP assumptions.",
+      "independent_replication": false
+    },
+    {
+      "id": "apple-pytorch",
+      "url": "https://developer.apple.com/metal/pytorch/",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "official_documentation_index",
+      "claim": "PyTorch MPS support, requirements and beta status.",
+      "independent_replication": false
+    },
+    {
+      "id": "apple-jax",
+      "url": "https://developer.apple.com/metal/jax/",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "official_documentation_index",
+      "claim": "Experimental JAX-Metal support and limitations.",
+      "independent_replication": false
+    },
+    {
+      "id": "openai-pricing",
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "official_docs_search_and_fetch",
+      "claim": "Standard purchased-credit token rates; not a conversion of included subscription quotas.",
+      "independent_replication": false
+    },
+    {
+      "id": "openai-models",
+      "url": "https://learn.chatgpt.com/docs/models",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "official_docs_search_and_fetch",
+      "claim": "Official model guidance; exact requested Astra/Luna names retained.",
+      "independent_replication": false
+    },
+    {
+      "id": "contest-window",
+      "url": "https://bsky.app/profile/codingame.bsky.social/post/3mxyfcrrg6c2e",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_organizer_announcement",
+      "claim": "Published window ends November 9, 2026 at 10:00 CET.",
+      "independent_replication": false
+    },
+    {
+      "id": "current-contest",
+      "url": "https://www.codingame.com/contests/fall-challenge-2026",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "access": "direct_official_page",
+      "claim": "Current event page confirms November 2–9 dates.",
+      "independent_replication": false
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/VIPTankz/BTR",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "main",
+      "commit": "093ca77f08540d646f12fd942ee5fda763e0fd8a",
+      "license_observation": "MIT",
+      "reviewed": "README and metadata",
+      "executed_locally": false
+    },
+    {
+      "url": "https://github.com/Pduhard/back-track-king-postmortem",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "main",
+      "commit": "398160842664b94e6141a2a0d5788d9f04a6023e",
+      "license_observation": "No license detected in repository metadata",
+      "reviewed": "README and metadata",
+      "executed_locally": false
+    },
+    {
+      "url": "https://github.com/tonykozlovsky/lux-ai3-pub",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "main",
+      "commit": "8001d70d939c78725d198a70586e8ba77efa2a24",
+      "license_observation": "MIT",
+      "reviewed": "README, metadata and root listing",
+      "executed_locally": false
+    },
+    {
+      "url": "https://github.com/IsaiahPressman/Kaggle_Lux_AI_2021",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "main",
+      "commit": "7b79d1cf9ab28590d27bfa13a6cc1f5b4de640e9",
+      "license_observation": "MIT",
+      "reviewed": "README and metadata",
+      "executed_locally": false
+    },
+    {
+      "url": "https://github.com/IsaiahPressman/kaggle-orbit-wars",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "main",
+      "commit": "32b3ec900ad406eedd965f53a1a0f4490d31c589",
+      "license_observation": "MIT",
+      "reviewed": "README and metadata",
+      "executed_locally": false
+    },
+    {
+      "url": "https://github.com/DeNA/HandyRL",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "master",
+      "commit": "c4a07a3229f0d9f45e923983bcead6376d4ef4be",
+      "license_observation": "MIT-style text plus component notice; GitHub metadata NOASSERTION",
+      "reviewed": "metadata and license",
+      "executed_locally": false
+    },
+    {
+      "url": "https://github.com/strakam/AverageJoe",
+      "as_of": "2026-11-06",
+      "provenance": "SOURCE_VERIFIED",
+      "default_branch": "main",
+      "commit": "5041e635dcf6c87b8b844cb2e244ad3e0abe40d7",
+      "license_observation": "No license detected in repository metadata",
+      "reviewed": "README and metadata",
+      "executed_locally": false
+    }
+  ],
+  "limitations": [
+    "Author-reported performance is not a local replication.",
+    "Some Kaggle writeups were readable only through indexed primary text.",
+    "Public repository revisions are research references, not imported executable dependencies.",
+    "Future runtime, work-packet and memory budgets are proposals, not measurements.",
+    "Actual contest IDE source-size, memory and runtime details remain unverified."
+  ]
+}
