@@ -13,9 +13,11 @@ v5 branches from v3 because v4 reduced development performance. Protection is th
 Freeze each source before its measured run. Do not replace a source after observing its results; use a new variant and output folder. Promote a candidate to `code/bot.cpp` only when measurements support it, retaining older variants.
 
 ```sh
-python3 code/benchmark_public.py --source code/variants/v3-multispawn.cpp --label v3-multispawn --seeds 1001: 1050 --out experiments/new-series
+python3 code/benchmark_public.py --source code/variants/v3-multispawn.cpp --label v3-multispawn --seeds 1001:1050 --out experiments/new-series
 ```
 
 `benchmark_ablation.py --variants label=source.cpp ...` schedules variants together but executes games sequentially, interleaving on each map/seat/opponent and rotating order. `analyze_incremental.py --pairs before:after ...` sets the correct comparison bases.
 
 Keep all outcomes, including timeouts. Report wins caused by opponent errors separately; they do not establish greater strategic strength. Earlier plans and results are in `experiments/2026-11-05-incremental/`; ATTACK evaluation is in `experiments/2026-11-05-attack/`.
+
+On 2026-11-06, frozen v6 passed the fresh-map promotion rule and became `code/bot.cpp`. It won 64/400 against khoufou versus 29/400 for v3; both won 1/398 shared clean games against Lacoz. See `experiments/2026-11-06-attack-holdout/REPORT.md`. The frozen variant sources remain unchanged.

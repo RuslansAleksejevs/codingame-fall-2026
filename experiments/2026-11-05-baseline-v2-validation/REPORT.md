@@ -17,7 +17,7 @@ Seeds101–120 were not used to choose the v2 change. Each seat won 20/20. These
 | Metric | Result |
 |---|---:|
 | Wins / draws / losses | 40 / 0 / 0 |
-| Validated bot decisions | 3, 758 |
+| Validated bot decisions | 3,758 |
 | Own command errors | 0 |
 | Opponent command errors | 0 |
 | Timeouts / engine failures | 0 / 0 |
@@ -52,7 +52,7 @@ From the repository root, using the frozen v2 source as `code/bot.cpp` for this 
 
 ```sh
 python3 code/build_local.py
-python3 code/run_matches.py --seeds 101: 120 --out experiments/repeat-v2
+python3 code/run_matches.py --seeds 101:120 --out experiments/repeat-v2
 ```
 
 The current main bot may be newer; do not silently label its results v2. JDK17, Maven and clang++ are required; see `code/README.md`. Versions, commands, SHA256 and parameters are in `manifest.json` and archived `matches.json`. Sources and records are retained; historical binaries are excluded from Git and can be rebuilt. Paid external cost: 0. No contest submission or public release was performed by this experiment.

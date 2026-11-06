@@ -1,16 +1,17 @@
 # TryAngle Catch bot and local arena
 
-`bot.cpp` contains the selected baseline, v3-multispawn, as a single C++17 file using MOVE, SPAWN and WAIT. On the original validation set of 50 maps from both seats it won 13/100 against khoufou and 0/100 against Lacoz, with no own errors. Prepared candidate: `submissions/baseline-v3-multispawn.cpp`. See `experiments/2026-11-05-incremental/REPORT.md` (PROJECT_REPORTED, 2026-11-05).
+`bot.cpp` contains the selected baseline, v6-attack, as a single C++17 file using ATTACK, MOVE, SPAWN and WAIT. On 200 fresh maps from both seats it won 64/400 against khoufou versus 29/400 for v3; both won 1/398 shared clean games against Lacoz. There were no own errors. Prepared candidate: `submissions/baseline-v6-attack.cpp`. See `experiments/2026-11-06-attack-holdout/REPORT.md` (PROJECT_REPORTED, 2026-11-06).
 
 `opponents/wood1_port.cpp` is an independently compiled adaptation of the game author's level1 opponent. It is not part of the submitted bot.
 
 ## Baseline strategy
 
 1. Compute shortest paths on the current road graph.
-2. Select uncaptured, capturable triangles. Try all six corner orders and assign the nearest available units. An enemy-occupied corner requires more troops than its current enemy stack.
-3. With spare troops, leave guards on exposed owned corners.
-4. Create multiple units per turn, using each owned triangle at most once. Target army size equals the number of houses before turn 150, half that before turn 175, then three. Normally preserve at least one income triangle.
-5. Replan each turn. The baseline does not predict enemy moves, attack or alter roads.
+2. Optionally attack the largest reachable enemy stack of at least four. Require six friendly units and an owned triangle with one unit at each corner; deduct the cost and mark the triangle spent in the planning state.
+3. Reserve guards on exposed owned corners while retaining at least three mobile troops.
+4. Select uncaptured, capturable triangles. Try all six corner orders and assign the nearest available units. An enemy-occupied corner requires more troops than its current enemy stack; shared destination demand is not yet coordinated between targets.
+5. Create multiple units per turn, using each owned triangle at most once. Target army size equals the number of houses before turn 150, half that before turn 175, then three. Normally preserve at least one income triangle.
+6. Replan each turn. The baseline does not predict enemy moves or alter roads.
 
 The army cap is a simple heuristic: a cap of 12 lost 7/8 development games; a higher cap won 8/8 on those same maps. Separate validation records are retained.
 
@@ -21,7 +22,7 @@ Run commands from the repository root:
 ```sh
 python3 code/bootstrap.py
 python3 code/build_local.py
-python3 code/run_matches.py --seeds 101: 120 --out experiments/repeat-current
+python3 code/run_matches.py --seeds 101:120 --out experiments/repeat-current
 ```
 
 Use a new output directory. Each map is played from both seats; `run_matches.py` runs two games concurrently by default. It records source/binary snapshots, SHA256, versions, commands, scores, engine messages and complete JSON.gz game records. Binaries are excluded from the Git archive.
@@ -58,4 +59,6 @@ See `opponents/public/README.md` and `variants/README.md` for provenance and var
 
 `variants/v6-attack.cpp` adds one optional attack to v3. It targets the largest adjacent enemy stack of at least four, requires six friendly units and one per triangle corner, then updates the planning state for the three-unit cost and spent triangle. `test_attack.py` checks legality and resource accounting; `audit_attack.py` checks every attack in recorded games.
 
-On 800 paired rerun games, khoufou wins increased from 21/200 to 29/200; Lacoz wins remained 0/200. The paired 95% interval for the khoufou change is -0.5 to +8.5 percentage points. v6 remains experimental and `bot.cpp` remains v3. See `experiments/2026-11-05-attack/REPORT.md`.
+The initial 800-game reused-map experiment was inconclusive. Fresh confirmation added 1,600 games: khoufou wins increased from 29/400 to 64/400, a gain of 8.75 percentage points with a paired 95% interval of +5.25 to +12.75. Lacoz remained at 1/398 shared clean games. v6 passed the pre-recorded selection rule and is now `bot.cpp`; v3 is preserved. See `experiments/2026-11-06-attack-holdout/REPORT.md`.
+
+`analyze_holdout.py` applies the frozen v3/v6 promotion gate and verifies new map contents against a frozen inventory of earlier runs. It writes a decision record and does not itself modify the main bot. See `docs/ROADMAP.md` for proposed next work and the distinction between copied opponents and the main implementation.

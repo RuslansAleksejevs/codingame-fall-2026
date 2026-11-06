@@ -65,7 +65,8 @@ def main():
                               'seats':[0,1],'opponents':['khoufou','lacoz'],
                               'order':'seed, seat, opponent; rotate variants by (seed_index+seat+opponent_index)%variant_count',
                               'planned_games':len(seeds)*4*len(labels),'map_context':args.map_context,
-                              'purpose':'paired feature comparison; code frozen before this run; previous results on reused maps are already known'})
+                              'purpose':('confirmation on previously unused maps; sources frozen before the run' if args.map_context=='fresh' else
+                                         'paired feature comparison; sources frozen before this run; reused map outcomes already known')})
     completed=0
     for seed_index,seed in enumerate(seeds):
         for seat in (0,1):

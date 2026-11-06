@@ -49,7 +49,7 @@ Own planning time: median0.375 ms, p95 0.598 ms, maximum8.388 ms. These are inte
 
 ## Interpretation
 
-**Measured:** khoufou spawned 2.36 times as many units and Lacoz 6.32 times as many. By turn 10, Lacoz averaged about 21 units versus 9. Of 3, 304 counted own deaths, 2, 261 were caused by surrounding (**68.4%**); ATTACK accounted for 31.6%. Own surrounds killed only 87 enemy units across the series.
+**Measured:** khoufou spawned 2.36 times as many units and Lacoz 6.32 times as many. By turn 10, Lacoz averaged about 21 units versus 9. Of 3,304 counted own deaths, 2,261 were caused by surrounding (**68.4%**); ATTACK accounted for 31.6%. Own surrounds killed only 87 enemy units across the series.
 
 **Source observations:** baseline-v2 issues at most one SPAWN per turn and does not coordinate clearing spent triangles for reuse. Both opponents reinforce multiple times and clear spent triangles. khoufou also plans attacks and surrounds; Lacoz uses time-bounded search and road changes. Lacoz successfully added502 and removed102 roads in these matches.
 
@@ -59,7 +59,7 @@ The earlier40/40 result only established superiority over an adapted weak level1
 
 ## Audit and limitations
 
-`audit.json` confirms 200 valid results and 6, 303 decision states: viewer-protocol army counts match bot stderr. Units before declared defeat balance against initial units, spawns and losses. Every launcher exited0.
+`audit.json` confirms 200 valid results and 6,303 decision states: viewer-protocol army counts match bot stderr. Units before declared defeat balance against initial units, spawns and losses. Every launcher exited0.
 
 On khoufou seed 1012/seat0 and seed 1034/seat1, the original referee executes one additional attack in a terminal frame after announcing defeat. Four displayed units are removed without appearing in the text event summary. Loss statistics therefore refer to events before declared game end; outcomes are unaffected and complete records are retained.
 
@@ -79,7 +79,7 @@ Environment setup: `code/opponents/public/README.md`. Original command:
 
 ```sh
 python3 code/build_public.py
-python3 code/benchmark_public.py --seeds 1001: 1050 --out experiments/2026-11-05-public-bots-v2
+python3 code/benchmark_public.py --seeds 1001:1050 --out experiments/2026-11-05-public-bots-v2
 ```
 
 Use a new output directory when repeating. manifest.json contains versions, commands and provenance; matches.jsonl contains outcomes, actions and trajectories; summary.json aggregates results; audit.json records checks. Snapshots preserve sources; specs, logs and JSON.gz records are in `records.tar.gz`. Executable binaries are excluded from Git.

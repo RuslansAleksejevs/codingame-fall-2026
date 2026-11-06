@@ -16,8 +16,8 @@ SOURCE_VERIFIED: https://www.codingame.com/contests/fall-challenge-2026/leaderbo
 
 SOURCE_VERIFIED: https://bsky.app/profile/codingame.bsky.social/post/3mxyfcrrg6c2e
 
-- November 2–9, 2026, 10: 00–10: 00 CET.
-- Submission deadline: 2026-11-09T10: 00: 00+01: 00 = 2026-11-09T01: 00: 00-08: 00, America/Los_Angeles.
+- November 2–9, 2026, 10:00–10:00 CET.
+- Submission deadline: 2026-11-09T10:00:00+01:00 = 2026-11-09T01:00:00-08:00, America/Los_Angeles.
 
 ## Still unverified
 

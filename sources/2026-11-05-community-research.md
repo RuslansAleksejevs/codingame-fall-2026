@@ -32,7 +32,7 @@ The [Python bot](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edf
 
 The [README](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/README.md) records specific losses, variant comparisons and failed ideas. A key lesson is that stronger self-play performance need not improve results against real opponents. The log discusses army growth, vulnerable stacks and faulty threat estimates. Its results were not independently reproduced at this stage.
 
-The latest [ranking.csv](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/ranking.csv) entry was2026-11-05 10: 10 UTC: Gold 252/356, overall 252/788. This is an author's saved record, not a live leaderboard check. The README title still said Silver despite a later Gold section.
+The latest [ranking.csv](https://github.com/Lacoz/cg2026/blob/7f1901834d2ffc16532e083edfec8cbdb5941ab6/ranking.csv) entry was2026-11-05 10:10 UTC: Gold 252/356, overall 252/788. This is an author's saved record, not a live leaderboard check. The README title still said Silver despite a later Gold section.
 
 **Caution:** README combines several historical versions. Its earlier claim that SPAWN requires troops at every corner is false for the checked original referee. Current source and authoritative mechanics are more reliable than treating the whole diary as current instructions.
 
@@ -76,7 +76,7 @@ SOURCE_VERIFIED: [SpawnTask.java](https://github.com/eulerscheZahl/TryAngle-Catc
 1. SPAWN uses `canUse(player, 0)`: no troops are required at the corners. Ownership and an unspent triangle are required; attacks/roads have a different cost.
 2. Multiple SPAWN commands are legal. The single-SPAWN limit belonged to the early baseline.
 3. Reuse requires all corners to become free of friendly units or an intervening enemy capture. Cycle length depends on the map and actions; it is not universally exactly three turns.
-4. The original senior boss evaluates joint movement plans with up to 10, 000 random modifications, multiple SPAWN, ATTACK and ADD_PATH. It is substantially more complex than the adapted level1 opponent.
+4. The original senior boss evaluates joint movement plans with up to 10,000 random modifications, multiple SPAWN, ATTACK and ADD_PATH. It is substantially more complex than the adapted level1 opponent.
 
 The initial opponent's exact source is `config/level1/Boss.cs`. The historical filename `wood1_port.cpp` does not establish the current league name; khoufou calls original level1 Wood2. “Adapted level1” is the precise comparison label. This naming correction does not change the40/40 result or its records.
 

@@ -4,7 +4,7 @@ as_of: 2026-11-05, America/Los_Angeles. Measurement classification: PROJECT_REPO
 
 Completed: **v3, multiple SPAWN commands per turn, was selected**. On fresh validation maps it won13/100 against khoufou versus 0/100 for the original baseline. Triangle reset and surrounding protection did not add further gains. No variant won a normal game against Lacoz.
 
-There were 1, 400 new matches plus200 retained control matches. Paid external cost: 0.
+There were 1,400 new matches plus200 retained control matches. Paid external cost: 0.
 
 ## Variants
 
@@ -57,7 +57,7 @@ These findings concern the tested implementations, not every possible reset/prot
 
 At completion, `code/bot.cpp` and the local binary were set to validated v3. Candidate: `submissions/baseline-v3-multispawn.cpp`; the old v2 candidate was retained. Source/binary hashes matched the validation snapshot. Selected source SHA256: `0b2d033bfda7282eaa31891f033124d680234e698dde714c21005fe2f9ac518f`.
 
-`audit.json` confirms 1, 400 complete new records, 44, 513 checked decision states, source identity across development/validation, and exit0 for every launcher. No compiler warnings occurred. The new runs contain22 opponent timeouts and one own timeout, v5 development seed 1044/seat1 against Lacoz. Selected v3 had no own errors in its400 games. Failures were retained rather than replaced by successful reruns.
+`audit.json` confirms 1,400 complete new records, 44,513 checked decision states, source identity across development/validation, and exit0 for every launcher. No compiler warnings occurred. The new runs contain22 opponent timeouts and one own timeout, v5 development seed 1044/seat1 against Lacoz. Selected v3 had no own errors in its400 games. Failures were retained rather than replaced by successful reruns.
 
 Summed match-process time was about 38.81 minutes, excluding preparation and analysis. No contest submissions, public releases or paid computations were performed by this experiment.
 
@@ -68,17 +68,17 @@ Summed match-process time was about 38.81 minutes, excluding preparation and ana
 - Java17.0.21+9, Python3.14.6, NumPy2.5.4, SciPy1.18.1. Python libraries were warmed before the series. These are local results, not server rankings.
 - Viewer-protocol army totals were checked against bot stderr before every recorded decision. All results, error logs, commands, source snapshots and complete records are retained. Binaries are excluded from Git.
 - Primary metric: game wins. Duration, units and captures explain outcomes but do not replace them. Secondary metrics use error-free games, with denominators in JSON.
-- Comparisons pair identical map, seat and opponent. Both seats of a map are dependent, so intervals resample entire map clusters10, 000 times. Intervals are descriptive. An all-zero interval from zero observed wins does not prove zero true win probability.
+- Comparisons pair identical map, seat and opponent. Both seats of a map are dependent, so intervals resample entire map clusters10,000 times. Intervals are descriptive. An all-zero interval from zero observed wins does not prove zero true win probability.
 - Lacoz technical outcomes and shared clean pairs are reported separately. Clean filtering may introduce selection bias. Lacoz's time-bounded search can produce different decisions on repeated maps. Conclusions are conditional on these sources and runs.
 
 ## Reproduce
 
-Single series: `python3 code/benchmark_public.py --source file.cpp --label version --seeds 1001: 1050 --out new_directory`. Without `--source`, frozen v2 is used.
+Single series: `python3 code/benchmark_public.py --source file.cpp --label version --seeds 1001:1050 --out new_directory`. Without `--source`, frozen v2 is used.
 
 Original validation command from the repository root:
 
 ```sh
-python3 code/benchmark_ablation.py --variants v2=experiments/2026-11-05-baseline-v2-validation/bot.cpp v3=code/variants/v3-multispawn.cpp v4=code/variants/v4-reset.cpp v5=code/variants/v5-protection.cpp --seeds 2001: 2050 --out experiments/2026-11-05-incremental/validation
+python3 code/benchmark_ablation.py --variants v2=experiments/2026-11-05-baseline-v2-validation/bot.cpp v3=code/variants/v3-multispawn.cpp v4=code/variants/v4-reset.cpp v5=code/variants/v5-protection.cpp --seeds 2001:2050 --out experiments/2026-11-05-incremental/validation
 ```
 
 For replay use a new directory and `--map-context reused`; those seeds are no longer unseen. Analyze with `code/analyze_incremental.py --pairs v2:v3 v3:v4 v3:v5`; the historical script is also retained here. Supporting files: dev-comparison.json, validation-comparison.json, combined-comparison.json, audit.json, plan.json and run snapshots. Paid cost: 0.

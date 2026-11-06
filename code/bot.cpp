@@ -1,5 +1,6 @@
 // Simple TryAngle Catch bot: capture nearby triangles, selectively spawn, defend.
-// Only MOVE/SPAWN/WAIT. No training, opponent code, or network access.
+// v6 adds one profitable ATTACK before the unchanged v3 movement/spawn planner.
+// No training, opponent code, or network access.
 #include <algorithm>
 #include <array>
 #include <chrono>
@@ -98,6 +99,34 @@ int main() {
         if (!(cin>>count)) return 0;
         for (int i=0,a,b;i<count;i++) if (!(cin>>a>>b)) return 0;
         paths();
+        const int observedUnits=accumulate(mine,mine+n,0);
+        const int observedOwned=count_if(triangles.begin(),triangles.end(),
+                                        [](const Triangle &t){return t.owner==0;});
+        vector<string> commands;
+        // ATTACK is resolved before MOVE/SPAWN and consumes one unit per corner.
+        // Use at most one owned triangle; four kills cover three units plus a spawn.
+        int attackTri=-1, attackTarget=-1, bestKills=3;
+        if(observedUnits>=6) {
+            for(int k=0;k<(int)triangles.size();k++) {
+                const auto &t=triangles[k];
+                if(t.owner!=0 || any_of(t.v.begin(),t.v.end(),
+                                       [](int v){return mine[v]<1;})) continue;
+                for(int v:t.v) for(int target:adj[v]) {
+                    if(enemy[target]>bestKills) {
+                        bestKills=enemy[target]; attackTri=k; attackTarget=target;
+                    }
+                }
+            }
+        }
+        if(attackTri>=0) {
+            auto &t=triangles[attackTri];
+            string command="ATTACK";
+            for(int v:t.v) { command+=" "+to_string(v); mine[v]--; }
+            commands.push_back(command+" "+to_string(attackTarget));
+            enemy[attackTarget]=0;
+            // Exclude the spent triangle from both capture targets and SPAWN.
+            t.owner=-1; t.can=0;
+        }
         vector<int> free(mine,mine+n), held(n,0), enemyDistance(n,INF);
         int total=accumulate(free.begin(),free.end(),0), owned=0;
         vector<bool> onOwned(n,false);
@@ -155,7 +184,6 @@ int main() {
             int amount=min(job.amount,mine[job.from]-held[job.from]-planned[job.from]);
             if(hop>=0 && amount>0) { move[job.from][hop]+=amount; planned[job.from]+=amount; }
         }
-        vector<string> commands;
         for(int s=0;s<n;s++) for(int t=0;t<n;t++) if(move[s][t]>0)
             commands.push_back("MOVE "+to_string(s)+" "+to_string(t)+" "+to_string(move[s][t]));
 
@@ -187,6 +215,6 @@ int main() {
         for(size_t i=0;i<commands.size();i++) cout<<(i?";":"")<<commands[i];
         cout<<endl;
         auto us=chrono::duration_cast<chrono::microseconds>(chrono::steady_clock::now()-started).count();
-        cerr<<"turn="<<turn<<" units="<<total<<" triangles="<<owned<<" plan_us="<<us<<'\n';
+        cerr<<"turn="<<turn<<" units="<<observedUnits<<" triangles="<<observedOwned<<" plan_us="<<us<<'\n';
     }
 }

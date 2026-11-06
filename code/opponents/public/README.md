@@ -27,9 +27,11 @@ From the repository root, with JDK and the original referee built:
 python3 -m venv code/arena/.venv-lacoz
 code/arena/.venv-lacoz/bin/python -m pip install --only-binary=:all: -r code/arena/requirements-public.txt
 python3 code/build_public.py
-python3 code/benchmark_public.py --seeds 1001: 1050 --out experiments/public-repeat
+python3 code/benchmark_public.py --seeds 1001:1050 --out experiments/public-repeat
 ```
 
 Skip environment creation if it already exists. Use a new output directory. Runs preserve source/binary snapshots, commands, versions, errors, all raw records and statistics; binaries are excluded from Git. The default candidate is the frozen baseline-v2 from the first validation, regardless of `code/bot.cpp`. Use `--source path/to/bot.cpp --label name` for another source.
 
 Lacoz's search stops based on elapsed time, so decisions can differ on repeated maps. Opponents are not changed to hide failures; such matches remain in the report as technical outcomes.
+
+On 2026-11-06, the khoufou repository had a newer two-turn lookahead revision, `070bc12803f10099755d35eb773c6724bd305434`. It was reviewed but has not been executed in this arena; the frozen opponent above remains unchanged. See `sources/2026-11-06-algorithm-review.md` and `docs/ROADMAP.md` for evidence and proposed comparisons.
