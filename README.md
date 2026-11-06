@@ -8,7 +8,7 @@ I work on this project through **Codex**. **Codex created this repository and ma
 
 ## RL research branch
 
-This branch, `rl/research`, contains a primary-source review and a local-compute plan for imitation learning, PPO self-play, learned search and BTR-inspired plan scoring. [Start here](docs/rl/README.md). No RL learner has been implemented or trained yet; the tested v6 baseline below remains unchanged.
+This branch, `rl/research`, contains a verified native simulator and a **24,833-parameter behavior-cloning bot**, trained locally on frozen Lacoz/khoufou games. [Experiment report](experiments/rl/2026-11-06-bc-v1/REPORT.md) · [Implementation and reproduction](docs/rl/IMPLEMENTATION.md) · [Research and next stages](docs/rl/README.md). PPO/self-play has not been run; the main baseline below is v6.
 
 ## Current baseline
 
@@ -36,6 +36,7 @@ v6 is stronger against the frozen khoufou but still far behind Lacoz. These are 
 
 - `code/bot.cpp`: main bot; `code/variants/`: isolated strategy variants.
 - `code/arena/`, `code/*.py`: build, match execution and paired analysis tools.
+- `code/rl/`: native simulator, replay dataset, BC training, C++ policy export and evaluation.
 - `code/opponents/`: test opponents with source provenance.
 - `experiments/`: reports, summaries, configurations, source snapshots and complete match archives.
 - `submissions/`: prepared single-file candidates.

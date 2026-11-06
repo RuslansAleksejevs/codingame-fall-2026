@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-11-06",
+  "commands": [
+    "python3 -m venv code/arena/.venv-rl",
+    "code/arena/.venv-rl/bin/python -m pip install --no-cache-dir torch numpy",
+    "python3 code/rl/build.py",
+    "python3 code/rl/sim/validate.py --games 20 --out experiments/rl/2026-11-06-bc-v1/sim-pilot-01.json",
+    "python3 code/rl/sim/validate.py --games 400 --out experiments/rl/2026-11-06-bc-v1/sim-archive-parity.json",
+    "code/arena/.venv-rl/bin/python code/rl/data/build_dataset.py --limit 40 --out code/build/rl-cache/pilot --report experiments/rl/2026-11-06-bc-v1/dataset-pilot.json",
+    "code/arena/.venv-rl/bin/python code/rl/data/build_dataset.py --out code/build/rl-cache/bc-v1 --report experiments/rl/2026-11-06-bc-v1/dataset.json",
+    "code/arena/.venv-rl/bin/python code/rl/train/bc.py --data code/build/rl-cache/bc-v1 --out experiments/rl/2026-11-06-bc-v1/training --device auto --epochs 10",
+    "python3 code/rl/sim/random_validate.py --out experiments/rl/2026-11-06-bc-v1/sim-random-parity.json",
+    "python3 code/rl/sim/validate.py --games 400 --out experiments/rl/2026-11-06-bc-v1/sim-terminal-parity.json",
+    "python3 code/rl/data/audit_labels.py --out experiments/rl/2026-11-06-bc-v1/label-audit.json",
+    "code/arena/.venv-rl/bin/python code/rl/data/build_dataset.py --out code/build/rl-cache/bc-v1-clean --report experiments/rl/2026-11-06-bc-v1/dataset.json --exclude-audit experiments/rl/2026-11-06-bc-v1/label-audit.json",
+    "code/arena/.venv-rl/bin/python code/rl/train/bc.py --data code/build/rl-cache/bc-v1-clean --out experiments/rl/2026-11-06-bc-v1/training --device auto --epochs 10",
+    "code/arena/.venv-rl/bin/python code/rl/export/verify.py --training experiments/rl/2026-11-06-bc-v1/training --data code/build/rl-cache/bc-v1-clean --out experiments/rl/2026-11-06-bc-v1/export-verification.json",
+    "python3 code/build_public.py",
+    "python3 code/rl/eval/benchmark.py --weights experiments/rl/2026-11-06-bc-v1/training/weights.txt --out experiments/rl/2026-11-06-bc-v1/policy-speed.json",
+    "python3 code/rl/eval/tournament.py --weights experiments/rl/2026-11-06-bc-v1/training/weights.txt --seeds 4101:4102 --smoke --out experiments/rl/2026-11-06-bc-v1/smoke",
+    "python3 code/rl/eval/tournament.py --weights experiments/rl/2026-11-06-bc-v1/training/weights.txt --seeds 6001:6050 --out experiments/rl/2026-11-06-bc-v1/confirmation"
+  ],
+  "notes": [
+    "Commands were run from the repository root; several independent validations ran concurrently. Timed tournament games run sequentially without concurrent training.",
+    "The first training/dataset/export outputs were renamed training-initial, dataset-initial.json and export-verification-initial.json before the clean rerun; no diagnostic result was overwritten.",
+    "The initial dependency download failed inside the network sandbox and succeeded with permitted network access. MPS was detected and used by permitted local training outside the restrictive sandbox.",
+    "Pinned dependency versions are in code/rl/configs/requirements.txt; no external compute was purchased."
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "schema": "candidate-features-v1",
+  "features": 128,
+  "storage": "float16; computed in float32 by shared native encoder",
+  "groups": 32057,
+  "candidates": 216847,
+  "counts": {
+    "teacher_turns": 1275,
+    "accepted_turns": 1275,
+    "khoufou_turns": 783,
+    "lacoz_turns": 492
+  },
+  "rejections": {},
+  "teacher_command_counts": {
+    "MOVE": 19750,
+    "SPAWN": 2215,
+    "ATTACK": 58,
+    "MSG": 492,
+    "LINE": 3934,
+    "TEXT": 5384,
+    "REMOVE_PATH": 10,
+    "ADD_PATH": 86,
+    "CIRCLE": 1450
+  },
+  "full_plan_coverage": 1.0,
+  "map_counts": {
+    "train": 8,
+    "validation": 2
+  },
+  "maps": {
+    "76ccd975b96f09be85be29a125121efcfcfe995704d61b9907f446318e6a67e5": {
+      "split": "train",
+      "seed": 4001
+    },
+    "5067a7f7869f2b39c0d2e2504467767db0e095a6362456cd5f8f0a6c1a59a335": {
+      "split": "train",
+      "seed": 4021
+    },
+    "775452ab8866f0ea2a0f1bad3fea5aea0f8d63cca3294039581f462b6bca694a": {
+      "split": "train",
+      "seed": 4041
+    },
+    "0845af4b5777be825cffdb3841eac652a179ff4fb1c079456363392d5bf5584f": {
+      "split": "train",
+      "seed": 4061
+    },
+    "3d8a3800ac736493bc70e1af7b74a911313860b52178bb69ece3584a5fbbedec": {
+      "split": "validation",
+      "seed": 4081
+    },
+    "2203842e2bef93093d40842d55947ec5d09b11223c689a763a380bdbb6a2849b": {
+      "split": "validation",
+      "seed": 4101
+    },
+    "755983ab8ea91ee4a953e04fe0b33951b0d9efb12915910b18f50c526b5cfa8e": {
+      "split": "train",
+      "seed": 4121
+    },
+    "387072a18fc58cba7bf06836cc29170ef12b2ba7ea7d283a1df289b145a1c0a7": {
+      "split": "train",
+      "seed": 4141
+    },
+    "4c750220de1811bd4988845d20f82e5b76417d5366f94bdb3a7b64ad56b5a4da": {
+      "split": "train",
+      "seed": 4161
+    },
+    "0c6c089c5b0dc405d08b88c67f596352a4a0853f7ef5a64c1aadc0784e9eaa7e": {
+      "split": "train",
+      "seed": 4181
+    }
+  },
+  "split_groups": {
+    "0": 25139,
+    "1": 6918
+  },
+  "wall_seconds": 0.4738664999604225,
+  "records": [
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4001-seat0.json.gz",
+      "sha256": "edc03dd18edebd878fa76f673967ce9f57192cbc4f59ffa8f6fad4d77336c67d",
+      "map_hash": "76ccd975b96f09be85be29a125121efcfcfe995704d61b9907f446318e6a67e5",
+      "teacher": "khoufou",
+      "accepted_turns": 28,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4021-seat0.json.gz",
+      "sha256": "a857a3e919e01f7ac0e39856577263ce5e96cb4bd082af913ba9ebc8260f8053",
+      "map_hash": "5067a7f7869f2b39c0d2e2504467767db0e095a6362456cd5f8f0a6c1a59a335",
+      "teacher": "khoufou",
+      "accepted_turns": 45,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4041-seat0.json.gz",
+      "sha256": "5a0c4dc27cce7c263a760edec905da97c32a45d7ae18a95a343de3f13db9cb0c",
+      "map_hash": "775452ab8866f0ea2a0f1bad3fea5aea0f8d63cca3294039581f462b6bca694a",
+      "teacher": "khoufou",
+      "accepted_turns": 28,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4061-seat0.json.gz",
+      "sha256": "ec667e8615575cc3e97f3f5a841d6a85e471bdf04b1d2bb2ad4fb9e71097381c",
+      "map_hash": "0845af4b5777be825cffdb3841eac652a179ff4fb1c079456363392d5bf5584f",
+      "teacher": "khoufou",
+      "accepted_turns": 76,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        1,
+        0
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4081-seat0.json.gz",
+      "sha256": "b68dd5a0b048a6c2f255cdf09c9c9d815f7fd8f884b95bc190dbb885121f59ac",
+      "map_hash": "3d8a3800ac736493bc70e1af7b74a911313860b52178bb69ece3584a5fbbedec",
+      "teacher": "khoufou",
+      "accepted_turns": 38,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4101-seat0.json.gz",
+      "sha256": "f725b147dafd2c559f7daf7e07532c871e096b00ebdfa9f5750db956a421431a",
+      "map_hash": "2203842e2bef93093d40842d55947ec5d09b11223c689a763a380bdbb6a2849b",
+      "teacher": "khoufou",
+      "accepted_turns": 30,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4121-seat0.json.gz",
+      "sha256": "75433585cfd635886e973fb9b69079e7da56162c404cdf0fcfe5571bc64821ef",
+      "map_hash": "755983ab8ea91ee4a953e04fe0b33951b0d9efb12915910b18f50c526b5cfa8e",
+      "teacher": "khoufou",
+      "accepted_turns": 35,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4141-seat0.json.gz",
+      "sha256": "0eb02d08879dabbf9b55a11f627c9779886486156aa05e0d76a4f74208163c25",
+      "map_hash": "387072a18fc58cba7bf06836cc29170ef12b2ba7ea7d283a1df289b145a1c0a7",
+      "teacher": "khoufou",
+      "accepted_turns": 42,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4161-seat0.json.gz",
+      "sha256": "52866106caf6c9a83dba037dc127c777f22c9197869f1e998d8b7191aa88c731",
+      "map_hash": "4c750220de1811bd4988845d20f82e5b76417d5366f94bdb3a7b64ad56b5a4da",
+      "teacher": "khoufou",
+      "accepted_turns": 40,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/khoufou-seed4181-seat0.json.gz",
+      "sha256": "9d41380893ea89b023469cf555455b2fccd0bf205baa0dcb1138d95666f42580",
+      "map_hash": "0c6c089c5b0dc405d08b88c67f596352a4a0853f7ef5a64c1aadc0784e9eaa7e",
+      "teacher": "khoufou",
+      "accepted_turns": 33,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4001-seat0.json.gz",
+      "sha256": "1489c7d6b1c005c8934a3b383e62d5d589e9b517242c467419a7b9e3016e867a",
+      "map_hash": "76ccd975b96f09be85be29a125121efcfcfe995704d61b9907f446318e6a67e5",
+      "teacher": "lacoz",
+      "accepted_turns": 29,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4021-seat0.json.gz",
+      "sha256": "90081f7dfbb0be541f8b04e8544d814b4a1df1021d64826fe24d8c40d326b075",
+      "map_hash": "5067a7f7869f2b39c0d2e2504467767db0e095a6362456cd5f8f0a6c1a59a335",
+      "teacher": "lacoz",
+      "accepted_turns": 26,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4041-seat0.json.gz",
+      "sha256": "e66fae56523d1ceb3d67a4b38eeb016788e9c022799a9532312caf5bc19291c9",
+      "map_hash": "775452ab8866f0ea2a0f1bad3fea5aea0f8d63cca3294039581f462b6bca694a",
+      "teacher": "lacoz",
+      "accepted_turns": 24,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4061-seat0.json.gz",
+      "sha256": "9eb8921b139fe836fc60d1c40df39475d5c0f294c2d28e365e699796e473692a",
+      "map_hash": "0845af4b5777be825cffdb3841eac652a179ff4fb1c079456363392d5bf5584f",
+      "teacher": "lacoz",
+      "accepted_turns": 26,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4081-seat0.json.gz",
+      "sha256": "3905eb1b55d6eac4519c114d4d5a172267cc29c3be0779fb3337aa31cb54c032",
+      "map_hash": "3d8a3800ac736493bc70e1af7b74a911313860b52178bb69ece3584a5fbbedec",
+      "teacher": "lacoz",
+      "accepted_turns": 24,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4101-seat0.json.gz",
+      "sha256": "2b060c01c46118587368141a8ccc99dd7f431a1a44ee6ef978da6ff724d0c924",
+      "map_hash": "2203842e2bef93093d40842d55947ec5d09b11223c689a763a380bdbb6a2849b",
+      "teacher": "lacoz",
+      "accepted_turns": 25,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4121-seat0.json.gz",
+      "sha256": "df2e1948133162303788ddf2d0749f1ae824bbcefdd13adc452742f7f0f83a36",
+      "map_hash": "755983ab8ea91ee4a953e04fe0b33951b0d9efb12915910b18f50c526b5cfa8e",
+      "teacher": "lacoz",
+      "accepted_turns": 27,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4141-seat0.json.gz",
+      "sha256": "d0e38a90d81f550204a947a0cb15bb143fa19cdff6fc1a3143fbf8e91829c490",
+      "map_hash": "387072a18fc58cba7bf06836cc29170ef12b2ba7ea7d283a1df289b145a1c0a7",
+      "teacher": "lacoz",
+      "accepted_turns": 26,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4161-seat0.json.gz",
+      "sha256": "14f1c93d23c677bc19b68adf1f34c3d64f65a460fc5c1e15d957e333841c4d43",
+      "map_hash": "4c750220de1811bd4988845d20f82e5b76417d5366f94bdb3a7b64ad56b5a4da",
+      "teacher": "lacoz",
+      "accepted_turns": 26,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v3/lacoz-seed4181-seat0.json.gz",
+      "sha256": "22f53aa58a8879a84792255493b71eb869711be7aa8cb919cf2cfe80a53d633a",
+      "map_hash": "0c6c089c5b0dc405d08b88c67f596352a4a0853f7ef5a64c1aadc0784e9eaa7e",
+      "teacher": "lacoz",
+      "accepted_turns": 16,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4001-seat0.json.gz",
+      "sha256": "61302b94b189720e9e89db421aeeafbe41e9e956ba4e0d5ee03372447b1bfd42",
+      "map_hash": "76ccd975b96f09be85be29a125121efcfcfe995704d61b9907f446318e6a67e5",
+      "teacher": "khoufou",
+      "accepted_turns": 28,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4021-seat0.json.gz",
+      "sha256": "37de0f54a1398b7bf97767e7c3d27c5781e1d4bf52ea4a3c5867feb4257459b7",
+      "map_hash": "5067a7f7869f2b39c0d2e2504467767db0e095a6362456cd5f8f0a6c1a59a335",
+      "teacher": "khoufou",
+      "accepted_turns": 54,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        1,
+        0
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4041-seat0.json.gz",
+      "sha256": "38517532ae9093073bc2660f08a4a8c483dd821ceaeaff91d41457e8d68f7d3f",
+      "map_hash": "775452ab8866f0ea2a0f1bad3fea5aea0f8d63cca3294039581f462b6bca694a",
+      "teacher": "khoufou",
+      "accepted_turns": 29,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4061-seat0.json.gz",
+      "sha256": "b860a9a2b87c9597cb6c76f53beba8658b045b81bc2abde8fd71e060fb94ef4e",
+      "map_hash": "0845af4b5777be825cffdb3841eac652a179ff4fb1c079456363392d5bf5584f",
+      "teacher": "khoufou",
+      "accepted_turns": 64,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4081-seat0.json.gz",
+      "sha256": "e8478535d6b6d3d79fd1345178d7dc33aa5a4ceb6bb45bbdfff9defba3496c37",
+      "map_hash": "3d8a3800ac736493bc70e1af7b74a911313860b52178bb69ece3584a5fbbedec",
+      "teacher": "khoufou",
+      "accepted_turns": 28,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4101-seat0.json.gz",
+      "sha256": "aeb4d81eb05b4c97e7edb1a1384d07eea2f4faed2fba72f4d4bb8fe993b4cdb1",
+      "map_hash": "2203842e2bef93093d40842d55947ec5d09b11223c689a763a380bdbb6a2849b",
+      "teacher": "khoufou",
+      "accepted_turns": 30,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4121-seat0.json.gz",
+      "sha256": "cccfef4251e07bc7b0adc9b7579af5924487298f0a7b5dd31fcfc0639da14cae",
+      "map_hash": "755983ab8ea91ee4a953e04fe0b33951b0d9efb12915910b18f50c526b5cfa8e",
+      "teacher": "khoufou",
+      "accepted_turns": 41,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4141-seat0.json.gz",
+      "sha256": "e9e512da70910259b1f3c25b9cff639c3d31990fe015d9fd20d393eb15e25e69",
+      "map_hash": "387072a18fc58cba7bf06836cc29170ef12b2ba7ea7d283a1df289b145a1c0a7",
+      "teacher": "khoufou",
+      "accepted_turns": 39,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4161-seat0.json.gz",
+      "sha256": "4f83d39fe56e160f7b9cb6d7c9eef900e9e54e6791aff6683fcbdd8f3ace7f67",
+      "map_hash": "4c750220de1811bd4988845d20f82e5b76417d5366f94bdb3a7b64ad56b5a4da",
+      "teacher": "khoufou",
+      "accepted_turns": 54,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        1,
+        0
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4181-seat0.json.gz",
+      "sha256": "9880a680f774b246e3213bf2f3a0652c917505aa565f541373d4d4362d2dc899",
+      "map_hash": "0c6c089c5b0dc405d08b88c67f596352a4a0853f7ef5a64c1aadc0784e9eaa7e",
+      "teacher": "khoufou",
+      "accepted_turns": 21,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4001-seat0.json.gz",
+      "sha256": "691290b9458f06d1913fe14ff2cdc5a945b5d1cca53c158bb402401c7b8d7c38",
+      "map_hash": "76ccd975b96f09be85be29a125121efcfcfe995704d61b9907f446318e6a67e5",
+      "teacher": "lacoz",
+      "accepted_turns": 29,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4021-seat0.json.gz",
+      "sha256": "11c39b74424759b398fa50f4ccf9588a00f06c14522770e615df9dfefb2922a1",
+      "map_hash": "5067a7f7869f2b39c0d2e2504467767db0e095a6362456cd5f8f0a6c1a59a335",
+      "teacher": "lacoz",
+      "accepted_turns": 31,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4041-seat0.json.gz",
+      "sha256": "7bf3028040f5fe505463a09ba55a16b20922405387c2432779408a700c3b3b7e",
+      "map_hash": "775452ab8866f0ea2a0f1bad3fea5aea0f8d63cca3294039581f462b6bca694a",
+      "teacher": "lacoz",
+      "accepted_turns": 22,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4061-seat0.json.gz",
+      "sha256": "2c09ff2ab71af294a2219c9e171c8673cffe6a1a75480684964f36eaf32d71c7",
+      "map_hash": "0845af4b5777be825cffdb3841eac652a179ff4fb1c079456363392d5bf5584f",
+      "teacher": "lacoz",
+      "accepted_turns": 21,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4081-seat0.json.gz",
+      "sha256": "b165d8b800cd1a03dfa5ea9f2aa24d1b125b609c50d4a65ae873c67acdc03167",
+      "map_hash": "3d8a3800ac736493bc70e1af7b74a911313860b52178bb69ece3584a5fbbedec",
+      "teacher": "lacoz",
+      "accepted_turns": 24,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4101-seat0.json.gz",
+      "sha256": "8d8c834e366ff4e431117d764e65000995c623f5ef180233bfff4feb0a5ce8c7",
+      "map_hash": "2203842e2bef93093d40842d55947ec5d09b11223c689a763a380bdbb6a2849b",
+      "teacher": "lacoz",
+      "accepted_turns": 25,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4121-seat0.json.gz",
+      "sha256": "8207ded5d25f6fe1f36712fb49708fd717af2d5a0c0b83134ab40b538be2f4aa",
+      "map_hash": "755983ab8ea91ee4a953e04fe0b33951b0d9efb12915910b18f50c526b5cfa8e",
+      "teacher": "lacoz",
+      "accepted_turns": 27,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4141-seat0.json.gz",
+      "sha256": "e0f9402ee3c850cbd2fc2ae9db50af9ada8ce1f0439f02dd191ce59404715cb4",
+      "map_hash": "387072a18fc58cba7bf06836cc29170ef12b2ba7ea7d283a1df289b145a1c0a7",
+      "teacher": "lacoz",
+      "accepted_turns": 26,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4161-seat0.json.gz",
+      "sha256": "1f7e08f16990369e9e2a123b2c71fdd0714e2a6631d5e727ba1e47dbf733dcb7",
+      "map_hash": "4c750220de1811bd4988845d20f82e5b76417d5366f94bdb3a7b64ad56b5a4da",
+      "teacher": "lacoz",
+      "accepted_turns": 22,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "experiments/2026-11-06-attack-holdout/run/v6/lacoz-seed4181-seat0.json.gz",
+      "sha256": "5cea129b0b90ac50aebddb7be14dd1e4d5f20ca821cc840ff35abf52abb85804",
+      "map_hash": "0c6c089c5b0dc405d08b88c67f596352a4a0853f7ef5a64c1aadc0784e9eaa7e",
+      "teacher": "lacoz",
+      "accepted_turns": 16,
+      "rejections": {},
+      "unpaired_terminal_outputs": [
+        0,
+        1
+      ]
+    }
+  ],
+  "external_spend": 0,
+  "array_sha256": {
+    "offsets.npy": "fab3d4358dc3faa3a975c22deaee8eb8e64c08f489870e9d6cfbebbbf21f19ea",
+    "splits.npy": "4c90d16091cc8fe4802de1dc08f7a3e131f000bf3212ac6f046b1b919f35841f",
+    "features.f16": "1f11381b736ac246e10f7d3ca34737a0ee6335ca35a2c62f2ed54b87b1c90db6",
+    "phases.npy": "d28088fc7dccab632ed0358d52c847edf242543609f1083ac426445fa79512bd",
+    "teachers.npy": "3cf48026149d6b3dfc41e1d025058dbd7cca2d42cd013fc68a17a18e84dbd045",
+    "targets.npy": "03708d7a7e10544825cfb28b70e17a82d9dae84db11f4717662bb7fdfca9a843"
+  }
+}

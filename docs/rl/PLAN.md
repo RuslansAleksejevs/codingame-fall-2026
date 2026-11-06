@@ -1,6 +1,6 @@
 # RL implementation and evaluation plan
 
-As of **2026-11-06**. **Proposed, not executed.** Research branch: `rl/research`. The baseline is still v6. Estimates and thresholds below are initial engineering choices, not empirical findings.
+As of **2026-11-06**. Research branch: `rl/research`. **The native simulator and BC-only milestone are implemented**; see the [measured report](../../experiments/rl/2026-11-06-bc-v1/REPORT.md) and [implementation guide](IMPLEMENTATION.md). The baseline is still v6. PPO, value learning, search and their comparisons below are future work. Unexecuted thresholds and budgets remain proposals.
 
 ## First deliverable
 
@@ -10,7 +10,7 @@ Recommended sequence: simulator/representation → BC → bounded PPO → option
 
 ## Repository layout
 
-The directories below are planned; this research commit does not contain placeholder training implementations.
+The directories below define the staged layout. Simulator/data/BC/native export/evaluation now contain implementations; PPO, a value head, search and single-file submission packaging remain unimplemented.
 
 | Location | Purpose |
 |---|---|

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-06",
+  "provenance": "PROJECT_REPORTED",
+  "scope": "Local native simulator, supervised behavior cloning and original-referee confirmation; no PPO/self-play or live submission",
+  "branch": "rl/research",
+  "referee": {
+    "repository": "https://github.com/eulerscheZahl/TryAngle-Catch",
+    "commit": "b6913124a10de328316ff42906448a18cb948431",
+    "native_rules_are_a_port": true
+  },
+  "teachers": {
+    "lacoz": {
+      "source": "code/opponents/public/lacoz-7f190183/bot.py",
+      "commit": "7f1901834d2ffc16532e083edfec8cbdb5941ab6"
+    },
+    "khoufou": {
+      "source": "code/opponents/public/khoufou-372c1cd6/Player.java",
+      "commit": "372c1cd6738d456513cb50705b98549eedfdfad8"
+    }
+  },
+  "model": {
+    "kind": "behavior cloning, legal-candidate MLP",
+    "parameters": 24833,
+    "training_turns": 44090,
+    "validation_turns": 11691,
+    "training_maps": 158,
+    "validation_maps": 42,
+    "weights_sha256": "b97859bc318a0bcbbf9d9b3080da695313fd716018d50f8155902d558291e24e"
+  },
+  "confirmation": {
+    "games": 500,
+    "maps": 50,
+    "seeds": [
+      6001,
+      6050
+    ],
+    "bc_wins": {
+      "v6": 75,
+      "khoufou": 51,
+      "lacoz": 3
+    },
+    "games_per_matchup": 100,
+    "v6_control_wins": {
+      "khoufou": 9,
+      "lacoz": 0
+    },
+    "own_error_games": 0,
+    "opponent_error_games": 0,
+    "referee_failures": 0
+  },
+  "resources": {
+    "hardware": "Apple M4 MacBook Air, 24 GB unified memory",
+    "training_device": "MPS",
+    "final_training_seconds": 116.9969104169868,
+    "external_compute_spend_usd": 0,
+    "coding_subscription_usage": "UNKNOWN"
+  },
+  "artifacts": {
+    "PROTOCOL.md": {
+      "path": "experiments/rl/2026-11-06-bc-v1/PROTOCOL.md",
+      "sha256": "b68fa0f26f80d6d04aaddf5d970c39fb59766fb86af0dc9e869f6274afbd4f59"
+    },
+    "REPORT.md": {
+      "path": "experiments/rl/2026-11-06-bc-v1/REPORT.md",
+      "sha256": "21b7f071cc17f66dd93be9fc14eb9ef1963df0ffaee17ca6212b8bfaf20b904e"
+    },
+    "dataset.json": {
+      "path": "experiments/rl/2026-11-06-bc-v1/dataset.json",
+      "sha256": "b60de601327c79667a0a6d3105ac32332d805bbafeb4bc2d60d9a7bc8ca40fc3"
+    },
+    "label-audit.json": {
+      "path": "experiments/rl/2026-11-06-bc-v1/label-audit.json",
+      "sha256": "17b9e9f45d9e258aae84a6ecd5e47349661d5b1e51c112eac624d61dc5cc6696"
+    },
+    "training/summary.json": {
+      "path": "experiments/rl/2026-11-06-bc-v1/training/summary.json",
+      "sha256": "7b9a61af6f5fad7fac64b29f6e14505443b24638fefeec291fe26e6ea887da16"
+    },
+    "training/checkpoint.pt": {
+      "path": "experiments/rl/2026-11-06-bc-v1/training/checkpoint.pt",
+      "sha256": "f0e494d15d4b35ad0251a9fcf3291e6777e0d35b444d074665c5ee42670461f9"
+    },
+    "training/weights.txt": {
+      "path": "experiments/rl/2026-11-06-bc-v1/training/weights.txt",
+      "sha256": "b97859bc318a0bcbbf9d9b3080da695313fd716018d50f8155902d558291e24e"
+    },
+    "comparison.json": {
+      "path": "experiments/rl/2026-11-06-bc-v1/comparison.json",
+      "sha256": "635afea4746e72f8b575884c9a8186398e4b243eadc4d2e75789bab65f2504a1"
+    },
+    "verification.json": {
+      "path": "experiments/rl/2026-11-06-bc-v1/verification.json",
+      "sha256": "e9cc0f56e708acf9589751e27dd60696aa51e70f049fd1f32c52f61a96e277a2"
+    },
+    "confirmation/records.tar.gz": {
+      "path": "experiments/rl/2026-11-06-bc-v1/confirmation/records.tar.gz",
+      "sha256": "fbfc04ccfd117fa4bc6ec0ca7621da12cacd9d91d0130da8424306c48f39e178"
+    }
+  },
+  "limitations": [
+    "One training seed; this is a trained checkpoint comparison, not an algorithm-wide strength claim.",
+    "Canonical command ordering excludes one observed order-sensitive validation turn.",
+    "Training arrays are local reproducible caches; original data sources and compact checkpoints are archived.",
+    "The local bot uses external text weights; live contest packaging, memory/source-size limits and ranking are not verified."
+  ]
+}

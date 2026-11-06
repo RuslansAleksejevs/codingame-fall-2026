@@ -1,0 +1,28 @@
+{
+  "seed": 20261106,
+  "device": "mps",
+  "epochs_limit": 10,
+  "patience": 3,
+  "layers": [
+    128,
+    128,
+    64,
+    1
+  ],
+  "parameters": 24833,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "clip_grad_norm": 1,
+  "candidate_batch_budget": 8192,
+  "teacher_weights": [
+    1.264245448065833,
+    0.827120037983484
+  ],
+  "spend_loss_weight": 2,
+  "mixed_style_training_probability": 0.5,
+  "validation_style": "equal mixture",
+  "checkpoint_selection": "lowest validation weighted cross-entropy; no tournament selection",
+  "dataset_sha256": "f5fc6b8bec6a1902bb859bbfde4013dabf9094dc6ce0b433ffb0321a630d69bd",
+  "external_spend": 0
+}

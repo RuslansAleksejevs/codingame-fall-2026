@@ -1,10 +1,24 @@
 # Local resources and coding workflow
 
-As of **2026-11-06**. All future runtime/work estimates are **MODEL_INFERENCE**, not measured training results.
+As of **2026-11-06**. The BC measurements below are **PROJECT_REPORTED**. Future PPO/search runtime/work estimates remain **MODEL_INFERENCE**.
+
+## Measured BC v1
+
+The [BC experiment](../../experiments/rl/2026-11-06-bc-v1/REPORT.md) now supplies an actual local starting point:
+
+- Native simulation: approximately **21,700 joint game transitions/s** on archived plans, excluding policy inference, rendering, map generation and process startup.
+- Complete C++ policy: **1,147 player decisions/s** on 2,000 archived observations; median **0.73 ms**, p95 **2.14 ms**, maximum **4.39 ms**. This includes candidate generation, features, MLP and full-turn decoding, but excludes environment steps and arena I/O.
+- Final BC fit: **117 seconds**, 10 epochs, 13,980 optimizer updates, 24,833 parameters, Metal/MPS. Training contains 44,090 teacher turns; validation contains 11,691. Each turn expands into several small action-choice groups. Optimizer group throughput is not game-turn throughput.
+- Representative fixed-shape optimizer benchmark: **472k groups/s on MPS versus 295k on CPU**, about **1.6×**. This excludes data loading/encoding and is not an RL rollout rate.
+- Peak recorded process RSS: **3.04 GB**; this is not a measurement of total machine or GPU memory. Derived float16 feature arrays occupy about **2.5 GB**, plus small index arrays.
+- An earlier diagnostic fit took 133 seconds and is retained. One validation turn was excluded after the command-order audit; the clean rerun produced identical weights. Both runs together used about 4.2 minutes of recorded fitting time.
+- External compute spend: **$0**. Coding subscription usage is not observable here and has no fabricated dollar/token estimate.
+
+These measurements establish feasibility for this small supervised baseline, not a prediction of PPO convergence or larger graph-network speed. The original plans below remain reference scenarios for future work.
 
 ## Available machine and measured starting point
 
-Read-only hardware inspection found an **Apple M4 MacBook Air**, **24 GB unified memory**, **10 CPU cores (4 performance, 6 efficiency)** and **10 GPU cores**. PyTorch was not found in the current `python3` environment; other environments were not exhaustively inspected. No package installation or training occurred during this research.
+Read-only hardware inspection found an **Apple M4 MacBook Air**, **24 GB unified memory**, **10 CPU cores (4 performance, 6 efficiency)** and **10 GPU cores**. The research-only snapshot had no PyTorch in the current Python environment. The implementation subsequently installed PyTorch 2.15.0 / NumPy 2.5.4 in the isolated `code/arena/.venv-rl` environment. Metal/MPS was available to a permitted local process outside the restrictive sandbox.
 
 The latest original-referee benchmark recorded 55,901 candidate decision states over 33.678 summed match-process minutes: approximately **27.7 candidate decisions/s**. This includes subprocesses and normal match recording; it is not an optimized simulator or an RL learner benchmark. At that rate, merely collecting 10M such decisions takes about **100 hours**, before training. [Local report](../../experiments/2026-11-06-attack-holdout/REPORT.md).
 
@@ -36,7 +50,7 @@ Initial planning envelopes:
 | Plan-level Q-learning | 100k–1M samples with bounded replay | More reuse of data, but update cost must be timed; no assumed speedup over PPO. |
 | Full learning from scratch | Tens/hundreds of millions of samples | Potentially days to weeks of repeated runs. Defer until simpler controls establish value. |
 
-A first end-to-end prototype could require **2–5 focused development days**, before substantial tuning. This is a rough engineering estimate with simulator correctness as the largest uncertainty, not a deadline commitment. Research has not already completed that implementation work.
+The earlier research estimate allowed **2–5 focused development days** for a first prototype. The native simulator and first BC prototype are now implemented; the estimate is not a measured duration and should not be carried forward as the time needed for PPO/search.
 
 ## Memory and disk
 

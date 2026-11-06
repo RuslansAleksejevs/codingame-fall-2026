@@ -1,0 +1,26 @@
+{
+  "python": "3.14.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "torch": "2.15.0",
+  "numpy": "2.5.4",
+  "torch_threads": 4,
+  "mps_available": true,
+  "benchmarks": [
+    {
+      "device": "cpu",
+      "steps": 80,
+      "groups_per_step": 512,
+      "candidates_per_group": 16,
+      "seconds": 0.13900658302009106,
+      "groups_per_second": 294662.30382830085
+    },
+    {
+      "device": "mps",
+      "steps": 80,
+      "groups_per_step": 512,
+      "candidates_per_group": 16,
+      "seconds": 0.08673083269968629,
+      "groups_per_second": 472265.72978755867
+    }
+  ]
+}

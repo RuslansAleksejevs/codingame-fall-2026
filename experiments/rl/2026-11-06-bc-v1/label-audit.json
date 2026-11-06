@@ -1,0 +1,21 @@
+{
+  "plans": 55782,
+  "transition_equivalent_plans": 55781,
+  "transition_equivalence": 0.999982073070166,
+  "differences": [
+    {
+      "record": "experiments/2026-11-06-attack-holdout/run/v6/khoufou-seed4197-seat1.json.gz",
+      "turn": 40,
+      "original": "ATTACK 28 30 36 18;ATTACK 4 7 22 29;MOVE 1 35 1;MOVE 4 11 1;MOVE 5 35 1;MOVE 6 15 1;MOVE 10 39 1;MOVE 11 17 1;MOVE 14 11 1;MOVE 15 34 2;MOVE 22 13 1;MOVE 22 29 1;MOVE 22 37 1;MOVE 24 27 1;MOVE 26 41 1;MOVE 31 0 1;MOVE 31 37 1;MOVE 32 16 1;MOVE 32 40 1;MOVE 36 18 1;MOVE 36 40 2;MOVE 37 41 1;MOVE 42 14 1;SPAWN 5 6 42;SPAWN 15 6 42",
+      "normalized": "ATTACK 4 7 22 29;SPAWN 5 6 42;SPAWN 15 6 42;ATTACK 28 30 36 18;MOVE 1 9 1;MOVE 4 7 1;MOVE 5 23 1;MOVE 6 15 1;MOVE 10 39 1;MOVE 11 17 1;MOVE 14 11 1;MOVE 15 34 1;MOVE 15 34 1;MOVE 22 13 1;MOVE 22 13 1;MOVE 22 29 1;MOVE 24 27 1;MOVE 26 41 1;MOVE 31 0 1;MOVE 31 37 1;MOVE 32 16 1;MOVE 32 40 1;MOVE 36 18 1;MOVE 36 40 1;MOVE 36 40 1;MOVE 37 41 1;MOVE 42 6 1",
+      "changed_fields": [
+        "score",
+        "units",
+        "triangles"
+      ]
+    }
+  ],
+  "rejections": [],
+  "wall_seconds": 23.440783500205725,
+  "method": "Normalize nonadjacent moves to one step, split unit amounts, order triangle choices and unit moves canonically; replay with the actual opposing plan. This checks observed joint effects, not equivalence against every possible opposing plan."
+}
