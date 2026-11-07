@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-11-07T02:14:28.384952+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "stage": "All three initial leaders passed safeguards; continue two promising runs sequentially",
+  "safeguards_scores_out_of_50": {
+    "league3m": {
+      "v6": 50,
+      "ppo1": 42
+    },
+    "long3m": {
+      "v6": 50,
+      "ppo1": 39
+    },
+    "roads1m": {
+      "v6": 50,
+      "ppo1": 39
+    }
+  },
+  "ppo1_v6_score_out_of_50": 48,
+  "all_passed": true,
+  "plans": [
+    {
+      "run": "league-a",
+      "resume_from": "step-03002173",
+      "target_additional_decisions": 5000000,
+      "cumulative_minutes_cap": 190
+    },
+    {
+      "run": "roads-a",
+      "resume_from": "step-01002234",
+      "target_additional_decisions": 2000000,
+      "cumulative_minutes_cap": 65
+    }
+  ],
+  "new_hyperparameters": false,
+  "new_training_seed": false,
+  "confirmation_maps_opened": false,
+  "final_candidate_selected": false,
+  "rationale": "League improved most from 1M to 3M and has the highest current Lacoz score. Roads had the highest 1M score; give it a smaller continuation. Retain all prior leaders for the same final development panel."
+}

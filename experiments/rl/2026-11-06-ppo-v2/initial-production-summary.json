@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-11-07T01:49:45.891261+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "stage": "First four completed production blocks; follow-up not selected yet",
+  "runs": {
+    "control-long": {
+      "additional_steps": 3002813,
+      "base_steps": 752998,
+      "games": 63680,
+      "iterations": 995,
+      "elapsed_seconds": 4484.41073404206,
+      "stop": "sample_target",
+      "last_checkpoint": "step-03002813",
+      "weights_sha256": "c02c08c67e17ab8bdbbb37fc77eafd646da40d96de306a94ef013778eb359094",
+      "max_rss_bytes": 1455538176,
+      "total_rollout_seconds": 2081.715351,
+      "total_update_seconds": 2376.3239632416517,
+      "actor_early_stop_batches": 0,
+      "external_spend": 0
+    },
+    "map-only": {
+      "additional_steps": 1002950,
+      "base_steps": 752998,
+      "games": 20800,
+      "iterations": 325,
+      "elapsed_seconds": 1778.5271054161713,
+      "stop": "sample_target",
+      "last_checkpoint": "step-01002950",
+      "weights_sha256": "e24d54966760a33cfbaca60fd9c584fcb85691f560cfcdfff31af2ce9f742c0d",
+      "max_rss_bytes": 1328545792,
+      "total_rollout_seconds": 818.89554,
+      "total_update_seconds": 941.5181777458638,
+      "actor_early_stop_batches": 0,
+      "external_spend": 0
+    },
+    "league-a": {
+      "additional_steps": 3002173,
+      "base_steps": 752998,
+      "games": 60608,
+      "iterations": 947,
+      "elapsed_seconds": 7943.657180042006,
+      "stop": "sample_target",
+      "last_checkpoint": "step-03002173",
+      "weights_sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+      "max_rss_bytes": 1451950080,
+      "total_rollout_seconds": 5148.32064,
+      "total_update_seconds": 2764.024239298422,
+      "actor_early_stop_batches": 0,
+      "teacher": {
+        "games": 7576,
+        "calls": 263501,
+        "summed_call_seconds": 8038.105330047663,
+        "errors": [],
+        "teacher_source_sha256": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+      },
+      "external_spend": 0
+    },
+    "roads-a": {
+      "additional_steps": 1002234,
+      "base_steps": 752998,
+      "games": 20032,
+      "iterations": 313,
+      "elapsed_seconds": 2343.947343458887,
+      "stop": "sample_target",
+      "last_checkpoint": "step-01002234",
+      "weights_sha256": "e3e75a9c9db28a1b7bf65d2a33c459fc4d0dcb99ea8b7603af5fe6a792f50a39",
+      "max_rss_bytes": 1283375104,
+      "total_rollout_seconds": 1595.06741,
+      "total_update_seconds": 731.1413365798071,
+      "actor_early_stop_batches": 0,
+      "teacher": {
+        "games": 2504,
+        "calls": 86176,
+        "summed_call_seconds": 2615.633084417321,
+        "errors": [],
+        "teacher_source_sha256": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+      },
+      "external_spend": 0
+    }
+  },
+  "total_additional_decisions": 8010170,
+  "total_games": 165120,
+  "summed_elapsed_seconds": 16550.542362959124,
+  "note": "Training jobs partly overlap. Summed elapsed time includes CPU contention and is not campaign wall time or an isolated speed comparison. Peak RSS is for each training parent only. Pilots, correctness tests and tournament evaluation are separate.",
+  "external_compute_spend_usd": 0,
+  "subscription_quota_used": "Not exposed by the local runtime; no token or dollar estimate inferred."
+}

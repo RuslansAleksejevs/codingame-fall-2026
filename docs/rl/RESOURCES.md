@@ -2,6 +2,23 @@
 
 As of **2026-11-06**. The BC and PPO measurements below are **PROJECT_REPORTED**. Unexecuted larger-run/search estimates remain **MODEL_INFERENCE**.
 
+## Measured PPO v2 campaign
+
+The [larger local campaign](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md) completed **10,633,778 additional controlled-player decisions / 218,880 training games** across four production arms. Their cumulative elapsed times sum to **359.79 minutes (6.00 hours)**. Some initial runs overlapped, so this sum is not calendar time or a hardware throughput benchmark. Every arm starts from the same frozen PPO v1 checkpoint; the chosen policy does not inherit all four arms' samples.
+
+| Arm | Additional decisions | Training games | Cumulative run time |
+|---|---:|---:|---:|
+| Longer original recipe | 3,002,813 | 63,680 | 74.74 min |
+| More maps, original recipe | 1,002,950 | 20,800 | 29.64 min |
+| Broader opponent league | 4,836,947 | 98,432 | 190.20 min |
+| League plus road observations | 1,791,068 | 35,968 | 65.21 min |
+
+The last two runs stopped at their cumulative time caps before their nominal 5M/2M sample targets. All runs use CPU, four rollout workers and four optimization threads. The 24,833-parameter actor and same-size training-only critic are unchanged in size. Individual training parents peaked at up to **1.46 GB RSS**, excluding teacher subprocesses; total simultaneous machine/process-tree peak memory was not measured. The original Lacoz training bridge completed without errors. Saved checkpoints, complete optimization histories, configurations and exact resource records are in the experiment folder.
+
+The 4,256 original-arena development/smoke/confirmation games took **86.73 summed panel minutes**, including **35.07 minutes** for the 1,800-game final test. The goal-to-final-tournament wall span was **5.65 hours**, including implementation and partially overlapping training; later audits, reporting and publication are excluded. PPO v2 planning measured **1.357 ms median / 4.069 ms p95 / 12.705 ms maximum** over 26,838 final decisions, and all responses passed the original timed arena. [Exact resource boundaries](../../experiments/rl/2026-11-06-ppo-v2/resources.json).
+
+External compute spend remains **$0**. Coding subscription usage and electricity are not measured. Original-referee evaluation and correctness verification are additional to the production training times. Only one fine-tuning seed was used; the campaign compared training length, map coverage and opponent/feature variants rather than independently replicating the strongest recipe.
+
 
 ## Measured PPO v1
 

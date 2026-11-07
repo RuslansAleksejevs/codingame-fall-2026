@@ -1,0 +1,21 @@
+{
+  "id": "ppo-v2-league3m",
+  "status": "local_confirmation_passed",
+  "weights": "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt",
+  "weights_sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+  "checkpoint": "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt",
+  "checkpoint_sha256": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+  "policy_variant": "standard",
+  "inference_style": 2,
+  "bot_source": "code/rl/export/bot.cpp",
+  "build_command": "python3 code/rl/build.py",
+  "run_command": "code/build/bc-bot experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt 2",
+  "actor_parameters": 24833,
+  "additional_controlled_decisions": 3002173,
+  "base_ppo_controlled_decisions": 752998,
+  "training_seed": 20261108,
+  "report": "experiments/rl/2026-11-06-ppo-v2/REPORT.md",
+  "selection": "experiments/rl/2026-11-06-ppo-v2/selection.json",
+  "confirmation": "experiments/rl/2026-11-06-ppo-v2/confirmation-decision.json",
+  "deployment_scope": "Local executable plus separate weight file. Contest-side single-file packaging has not been validated."
+}

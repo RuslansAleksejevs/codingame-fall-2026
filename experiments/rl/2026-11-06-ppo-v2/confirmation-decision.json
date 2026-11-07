@@ -1,0 +1,147 @@
+{
+  "as_of": "2026-11-07T04:47:30.292441+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "outcome": "Confirmed local improvement of the frozen selected policy",
+  "selected": "league3m",
+  "weights_sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+  "selection_before_confirmation_verified": true,
+  "selection_sha256": "5e6b866307b6a418fde9c13c0f1c8f73767dd9a9d355abc54ffb838feb186bda",
+  "confirmation_games": 1800,
+  "unique_new_maps": 100,
+  "previous_unique_maps": 2425,
+  "all_games_clean": true,
+  "native_java_full_states": 49424,
+  "native_java_joint_transitions": 47624,
+  "source_freeze_verified": true,
+  "frozen_control_sha256": {
+    "code/bot.cpp": "d36adc818e238b49544f1752beaf7388ea22ca4bb75446fcddc173c091e2ccf4",
+    "experiments/rl/2026-11-06-bc-v1/training/weights.txt": "b97859bc318a0bcbbf9d9b3080da695313fd716018d50f8155902d558291e24e",
+    "experiments/rl/2026-11-06-ppo-v1/training/weights.txt": "8b9f669b3b4047eb75d1ff1df2ea9cc8e61de59629de1c9260f8a954b40ae7e7"
+  },
+  "paired_results": {
+    "lacoz": {
+      "clean_pairs": 200,
+      "ppo2_results": {
+        "loss": 61,
+        "win": 139
+      },
+      "ppo1_results": {
+        "loss": 126,
+        "win": 74
+      },
+      "score_rate_difference_pp": 32.5,
+      "map_cluster_95_pp": [
+        22.5,
+        42.5
+      ],
+      "improved": 79,
+      "worsened": 14,
+      "excluded_keys": []
+    },
+    "khoufou": {
+      "clean_pairs": 200,
+      "ppo2_results": {
+        "loss": 7,
+        "win": 193
+      },
+      "ppo1_results": {
+        "win": 182,
+        "loss": 18
+      },
+      "score_rate_difference_pp": 5.5,
+      "map_cluster_95_pp": [
+        2.0,
+        9.5
+      ],
+      "improved": 12,
+      "worsened": 1,
+      "excluded_keys": []
+    },
+    "v6": {
+      "clean_pairs": 200,
+      "ppo2_results": {
+        "win": 194,
+        "loss": 6
+      },
+      "ppo1_results": {
+        "win": 195,
+        "loss": 5
+      },
+      "score_rate_difference_pp": -0.5,
+      "map_cluster_95_pp": [
+        -3.0,
+        1.5
+      ],
+      "improved": 1,
+      "worsened": 2,
+      "excluded_keys": []
+    },
+    "bc": {
+      "clean_pairs": 200,
+      "ppo2_results": {
+        "loss": 8,
+        "win": 192
+      },
+      "ppo1_results": {
+        "win": 189,
+        "loss": 9,
+        "draw": 2
+      },
+      "score_rate_difference_pp": 1.0,
+      "map_cluster_95_pp": [
+        -3.5000000000000004,
+        5.0
+      ],
+      "improved": 9,
+      "worsened": 6,
+      "excluded_keys": []
+    }
+  },
+  "direct_ppo2_vs_ppo1": {
+    "games": 200,
+    "results": {
+      "loss": 45,
+      "win": 155
+    },
+    "clean_games": 200,
+    "clean_results": {
+      "loss": 45,
+      "win": 155
+    },
+    "own_error_games": 0,
+    "opponent_error_games": 0,
+    "invalid_games": 0,
+    "score_rate": 0.775,
+    "map_cluster_95_percent": [
+      70.0,
+      84.0
+    ],
+    "decisions": 6116,
+    "plan_us_p50": 1294,
+    "plan_us_p95": 3850,
+    "plan_us_max": 9706,
+    "seat_results": {
+      "0": {
+        "loss": 23,
+        "win": 77
+      },
+      "1": {
+        "loss": 22,
+        "win": 78
+      }
+    },
+    "mean_turns": 30.58,
+    "mean_captures": 58.73,
+    "mean_spawns": 54.16,
+    "command_counts": {
+      "MOVE": 107073,
+      "SPAWN": 11232,
+      "ATTACK": 499,
+      "ADD_PATH": 25,
+      "WAIT": 75
+    }
+  },
+  "interpretation": "Large confirmed improvement against Lacoz, positive improvement against khoufou; v6 is effectively unchanged within this sample and BC shows no clear difference. One fine-tuning seed; no method-level seed-replication claim.",
+  "live_submission": false,
+  "main_promotion": false
+}

@@ -8,9 +8,20 @@ I work on this project through **Codex**. **Codex created this repository and ma
 
 ## RL research branch
 
-This branch, `rl/research`, contains a verified native simulator, a **24,833-parameter behavior-cloning bot**, and **PPO self-play fine-tuning** from its frozen weights. The local PPO run completed 1,001,849 controlled decisions in 10.9 minutes on the MacBook CPU. [PPO experiment](experiments/rl/2026-11-06-ppo-v1/REPORT.md) · [PPO implementation](docs/rl/PPO.md) · [Frozen BC report](experiments/rl/2026-11-06-bc-v1/REPORT.md) · [Research](docs/rl/README.md). The main baseline below remains v6.
+The selected local RL bot is **PPO v2, league3m**, a 24,833-parameter network initialized from frozen PPO v1 and trained for 3,002,173 additional controlled-player decisions. The larger campaign compared four training arms: **10.63M additional decisions / 218,880 games / 6.00 summed training hours** on the MacBook CPU, with $0 external compute spend. [Selected policy and run command](code/rl/configs/selected-policy.json) · [Full PPO v2 report](experiments/rl/2026-11-06-ppo-v2/REPORT.md) · [Implementation](docs/rl/LEAGUE.md).
 
-On 50 new maps, both seats, PPO won **98/100 against v6, 95/100 against khoufou and 31/100 against Lacoz**; BC won 65/100, 55/100 and 2/100 on those same maps. Direct PPO–BC: **94/100**. All 700 final games were free of command errors and timeouts. This is one local training seed; [paired intervals and complete evidence](experiments/rl/2026-11-06-ppo-v1/REPORT.md) are retained.
+On **100 new maps, both seats**, after freezing the winner:
+
+| Opponent | PPO v1 wins / 200 | PPO v2 wins / 200 |
+|---|---:|---:|
+| Lacoz | 74 | **139** |
+| khoufou | 182 | **193** |
+| v6 | 195 | 194 |
+| BC | 189 | 192 |
+
+PPO v1 also drew twice against BC. The paired score gain against Lacoz is **+32.5 percentage points**, with a 95% map-clustered interval of **+22.5 to +42.5**. Direct PPO v2–PPO v1: **155/200 wins**. All 1,800 final games were clean; all 49,424 full states / 47,624 transitions matched original Java. v6 performance is essentially unchanged, and the BC difference is inconclusive. This is one fine-tuning seed, with checkpoint selection completed before the final maps were opened.
+
+[BC report](experiments/rl/2026-11-06-bc-v1/REPORT.md) and [PPO v1 report](experiments/rl/2026-11-06-ppo-v1/REPORT.md) retain the earlier controls. The main baseline below remains v6. The RL deployment is currently a local executable plus a weight file; contest-side packaging has not been validated.
 
 ## Current baseline
 

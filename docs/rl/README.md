@@ -1,14 +1,16 @@
 # RL research branch
 
-As of **2026-11-06**. Status: **native simulator, BC and bounded PPO self-play implemented and trained locally**. See the [BC experiment](../../experiments/rl/2026-11-06-bc-v1/REPORT.md), [PPO experiment](../../experiments/rl/2026-11-06-ppo-v1/REPORT.md), [BC guide](IMPLEMENTATION.md) and [PPO guide](PPO.md). Learned search and Q-learning remain future stages.
+As of **2026-11-06**. Status: **native simulator, BC, PPO self-play and a larger league-training campaign are implemented and evaluated locally**. The selected [PPO v2 policy](../../code/rl/configs/selected-policy.json) won **139/200 against Lacoz versus 74/200 for PPO v1** on 100 new maps; direct PPO v2–PPO v1 was **155/200**. All 1,800 final games were clean. [Complete results and paired intervals](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md). Learned search and Q-learning remain future stages.
 
 The recommended first route is **imitation of strong opponents, followed by small-scale PPO self-play**. A learned value function can then support short lookahead. A separate **BTR-inspired Q-learning experiment over complete turn plans** is the most interesting alternative.
 
 The measured machine is an **Apple M4 MacBook Air, 24 GB unified memory, 10 CPU cores and 10 GPU cores**. BC v1 uses a smaller **24,833-parameter** candidate-scoring MLP as the initial control. BC runs locally on Metal/MPS; the measured PPO workload is faster on CPU. External compute spend is zero. The earlier 100,000–500,000-parameter graph encoder remains a proposal.
 
+- [Larger local PPO campaign](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md): longer controls, broader maps, original-opponent league, road observations and fresh confirmation.
+- [League and continuation implementation](LEAGUE.md): exact mixtures, warm starts, checkpoints, replay checks and limitations.
 - [Research and primary sources](RESEARCH.md): actual competition winners, relevant counterexamples, public implementations and transfer limits.
 - [Implementation and evaluation plan](PLAN.md): stages, directory layout, acceptance gates and isolated comparisons.
-- [Resources](RESOURCES.md): original conditional estimates and a link to the measured BC run, plus the coding-model workflow.
+- [Resources](RESOURCES.md): measured BC/PPO v1/PPO v2 costs, original conditional estimates and the coding-model workflow.
 - [Source register](../../sources/2026-11-06-rl-research.json): evidence classes, access notes and repository revisions.
 
 `rl/research` starts at main commit `601a00eea536e305d9b77ea44d813228eb7d148d`. The selected main-branch bot remains **v6-attack**. BC and PPO are separate research candidates; neither has been submitted to the live contest. Each checkpoint is frozen before evaluation against Lacoz, khoufou and v6 under the original referee.

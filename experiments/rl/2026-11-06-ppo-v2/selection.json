@@ -1,0 +1,472 @@
+{
+  "as_of": "2026-11-07T04:09:29.228547+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "status": "frozen_before_confirmation",
+  "confirmation_maps_opened": false,
+  "selection_rule": "Primary clean Lacoz score; khoufou/v6 no more than 6 pp below PPO v1 and direct PPO-v1 score at least 60%; tie by equally weighted four-opponent panel, then lower cumulative training elapsed time.",
+  "selected": "league3m",
+  "weights": "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt",
+  "weights_sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+  "checkpoint": "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt",
+  "checkpoint_sha256": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+  "policy_variant": "standard",
+  "inference_style": 2,
+  "additional_steps": 3002173,
+  "common_initialization_steps": 752998,
+  "training_elapsed_seconds": 7943.657180042006,
+  "candidates": [
+    {
+      "name": "league3m",
+      "guards": {
+        "khoufou": true,
+        "v6": true,
+        "direct_ppo1": true,
+        "complete_clean_panel": true
+      },
+      "eligible": true,
+      "lacoz_score_rate": 0.7,
+      "four_opponent_mean_score_rate": 0.885,
+      "additional_steps": 3002173,
+      "training_elapsed_seconds": 7943.657180042006
+    },
+    {
+      "name": "long3m",
+      "guards": {
+        "khoufou": true,
+        "v6": true,
+        "direct_ppo1": true,
+        "complete_clean_panel": true
+      },
+      "eligible": true,
+      "lacoz_score_rate": 0.54,
+      "four_opponent_mean_score_rate": 0.8300000000000001,
+      "additional_steps": 3002813,
+      "training_elapsed_seconds": 4484.41073404206
+    },
+    {
+      "name": "roads1m",
+      "guards": {
+        "khoufou": true,
+        "v6": true,
+        "direct_ppo1": true,
+        "complete_clean_panel": true
+      },
+      "eligible": true,
+      "lacoz_score_rate": 0.54,
+      "four_opponent_mean_score_rate": 0.8300000000000001,
+      "additional_steps": 1002234,
+      "training_elapsed_seconds": 2343.947343458887
+    },
+    {
+      "name": "league_extended",
+      "guards": {
+        "khoufou": true,
+        "v6": true,
+        "direct_ppo1": true,
+        "complete_clean_panel": true
+      },
+      "eligible": true,
+      "lacoz_score_rate": 0.6,
+      "four_opponent_mean_score_rate": 0.88,
+      "additional_steps": 4836947,
+      "training_elapsed_seconds": 11411.785842750221
+    },
+    {
+      "name": "roads_extended",
+      "guards": {
+        "khoufou": true,
+        "v6": true,
+        "direct_ppo1": true,
+        "complete_clean_panel": true
+      },
+      "eligible": true,
+      "lacoz_score_rate": 0.58,
+      "four_opponent_mean_score_rate": 0.875,
+      "additional_steps": 1791068,
+      "training_elapsed_seconds": 3912.8811013330705
+    }
+  ],
+  "eligible_ranking": [
+    "league3m",
+    "league_extended",
+    "roads_extended",
+    "roads1m",
+    "long3m"
+  ],
+  "groups": {
+    "ppo1_vs_lacoz": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 17,
+        "loss": 33
+      },
+      "clean_results": {
+        "win": 17,
+        "loss": 33
+      },
+      "score_rate": 0.34,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league3m_vs_lacoz": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 35,
+        "loss": 15
+      },
+      "clean_results": {
+        "win": 35,
+        "loss": 15
+      },
+      "score_rate": 0.7,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "long3m_vs_lacoz": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 27,
+        "loss": 23
+      },
+      "clean_results": {
+        "win": 27,
+        "loss": 23
+      },
+      "score_rate": 0.54,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads1m_vs_lacoz": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 27,
+        "loss": 23
+      },
+      "clean_results": {
+        "win": 27,
+        "loss": 23
+      },
+      "score_rate": 0.54,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league_extended_vs_lacoz": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 30,
+        "loss": 20
+      },
+      "clean_results": {
+        "win": 30,
+        "loss": 20
+      },
+      "score_rate": 0.6,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads_extended_vs_lacoz": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 29,
+        "loss": 21
+      },
+      "clean_results": {
+        "win": 29,
+        "loss": 21
+      },
+      "score_rate": 0.58,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "ppo1_vs_khoufou": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 47,
+        "loss": 3
+      },
+      "clean_results": {
+        "win": 47,
+        "loss": 3
+      },
+      "score_rate": 0.94,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league3m_vs_khoufou": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "long3m_vs_khoufou": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads1m_vs_khoufou": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league_extended_vs_khoufou": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads_extended_vs_khoufou": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "ppo1_vs_v6": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 48,
+        "loss": 2
+      },
+      "clean_results": {
+        "win": 48,
+        "loss": 2
+      },
+      "score_rate": 0.96,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league3m_vs_v6": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "long3m_vs_v6": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads1m_vs_v6": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league_extended_vs_v6": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads_extended_vs_v6": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_results": {
+        "win": 50
+      },
+      "score_rate": 1.0,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league3m_vs_ppo1": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 42,
+        "loss": 8
+      },
+      "clean_results": {
+        "win": 42,
+        "loss": 8
+      },
+      "score_rate": 0.84,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "long3m_vs_ppo1": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 39,
+        "loss": 11
+      },
+      "clean_results": {
+        "win": 39,
+        "loss": 11
+      },
+      "score_rate": 0.78,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads1m_vs_ppo1": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 39,
+        "loss": 11
+      },
+      "clean_results": {
+        "win": 39,
+        "loss": 11
+      },
+      "score_rate": 0.78,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "league_extended_vs_ppo1": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 46,
+        "loss": 4
+      },
+      "clean_results": {
+        "win": 46,
+        "loss": 4
+      },
+      "score_rate": 0.92,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    },
+    "roads_extended_vs_ppo1": {
+      "games": 50,
+      "clean_games": 50,
+      "results": {
+        "win": 46,
+        "loss": 4
+      },
+      "clean_results": {
+        "win": 46,
+        "loss": 4
+      },
+      "score_rate": 0.92,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0
+    }
+  },
+  "development_manifest_sha256": "679079b7e7c7598768d35d9ebc9bc4cf93867e9390e0d80bbf1350c4719f4d35",
+  "source_sha256": {
+    "harness/code/arena/BenchmarkMatch.java": "ef7020e1e023eaf77d4be7c3a92ffde8c3b00f748db2d86417e27758ef1055ea",
+    "harness/code/benchmark_public.py": "6fb78c93012ef8750cb2a65bbf81dc6248d3c1faf8eed7f703ed8a2e9cd1eded",
+    "harness/code/rl/eval/panel.py": "3da969f08fc3a6c713858fe011043bb652f7115e388d049592f7674077f75699",
+    "harness/code/run_matches.py": "af986c51dd416a1e238d6d34d176e6439c0de7756aa527d2a76146319ea5f776",
+    "khoufou/PROVENANCE.json": "6b4c62b9f40b8e86d2137e96ba71ba10cfc7cad38c48bb6ce9b739ecc9d9b290",
+    "khoufou/Player.java": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5",
+    "lacoz/PROVENANCE.json": "05d67ab035bf3f3a4515a60f502d00b82865686cdefa984f2b5ef8e6758b0e64",
+    "lacoz/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab",
+    "rl/export/bot.cpp": "6a2246ebf78a3b4b2196c7bfdc54e277fc60f749213c4f3f73ae81306107831b",
+    "rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "road-variant/roads/bot.cpp": "eb795e74201fc511c121e17d1c842c48b666796976a61b54fc0e348e61f89df5",
+    "road-variant/roads/policy.hpp": "bba4c50bb2543abec5a9c2a3eb438ce6374174929656658897d5ebbbc1234c0e",
+    "road-variant/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "v6.cpp": "d36adc818e238b49544f1752beaf7388ea22ca4bb75446fcddc173c091e2ccf4",
+    "weights/league3m.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "weights/league_extended.txt": "ca3a2d89183f9ce69391baca328f34c6719879a6348e614b622b4129c580c507",
+    "weights/long3m.txt": "c02c08c67e17ab8bdbbb37fc77eafd646da40d96de306a94ef013778eb359094",
+    "weights/ppo1.txt": "8b9f669b3b4047eb75d1ff1df2ea9cc8e61de59629de1c9260f8a954b40ae7e7",
+    "weights/roads1m.txt": "e3e75a9c9db28a1b7bf65d2a33c459fc4d0dcb99ea8b7603af5fe6a792f50a39",
+    "weights/roads_extended.txt": "04b21f399a79c7f78439c763d99bd19effa9ebd8aeb801a164025b47f3e6ab4a"
+  },
+  "selection_script_sha256": "73f694ea6cc2cb173d952c8077813ca24172a9780c257141d25506496b06d98b",
+  "caveat": "Selection on reused maps, not independent confirmation. Repeated development panels are not pooled."
+}

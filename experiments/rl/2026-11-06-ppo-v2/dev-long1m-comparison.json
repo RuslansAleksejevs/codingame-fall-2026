@@ -1,0 +1,304 @@
+{
+  "groups": {
+    "long1m_vs_khoufou": {
+      "games": 50,
+      "results": {
+        "win": 50
+      },
+      "clean_games": 50,
+      "clean_results": {
+        "win": 50
+      },
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0,
+      "score_rate": 1.0,
+      "map_cluster_95_percent": [
+        100.0,
+        100.0
+      ],
+      "decisions": 1169,
+      "plan_us_p50": 1123,
+      "plan_us_p95": 2929,
+      "plan_us_max": 5448,
+      "seat_results": {
+        "0": {
+          "win": 25
+        },
+        "1": {
+          "win": 25
+        }
+      },
+      "mean_turns": 23.38,
+      "mean_captures": 60.7,
+      "mean_spawns": 54.62,
+      "command_counts": {
+        "MOVE": 21324,
+        "SPAWN": 2910,
+        "ATTACK": 76,
+        "ADD_PATH": 24
+      }
+    },
+    "long1m_vs_lacoz": {
+      "games": 50,
+      "results": {
+        "win": 28,
+        "loss": 22
+      },
+      "clean_games": 50,
+      "clean_results": {
+        "win": 28,
+        "loss": 22
+      },
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0,
+      "score_rate": 0.56,
+      "map_cluster_95_percent": [
+        40.0,
+        72.0
+      ],
+      "decisions": 1710,
+      "plan_us_p50": 989,
+      "plan_us_p95": 2803,
+      "plan_us_max": 10114,
+      "seat_results": {
+        "0": {
+          "win": 15,
+          "loss": 10
+        },
+        "1": {
+          "win": 13,
+          "loss": 12
+        }
+      },
+      "mean_turns": 34.2,
+      "mean_captures": 61.4,
+      "mean_spawns": 55.58,
+      "command_counts": {
+        "MOVE": 30003,
+        "SPAWN": 2891,
+        "ATTACK": 119,
+        "ADD_PATH": 14
+      }
+    },
+    "ppo1_vs_khoufou": {
+      "games": 50,
+      "results": {
+        "win": 47,
+        "loss": 3
+      },
+      "clean_games": 50,
+      "clean_results": {
+        "win": 47,
+        "loss": 3
+      },
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0,
+      "score_rate": 0.94,
+      "map_cluster_95_percent": [
+        84.0,
+        100.0
+      ],
+      "decisions": 1164,
+      "plan_us_p50": 996,
+      "plan_us_p95": 2896,
+      "plan_us_max": 5331,
+      "seat_results": {
+        "0": {
+          "win": 23,
+          "loss": 2
+        },
+        "1": {
+          "win": 24,
+          "loss": 1
+        }
+      },
+      "mean_turns": 23.28,
+      "mean_captures": 58.02,
+      "mean_spawns": 51.4,
+      "command_counts": {
+        "MOVE": 19039,
+        "SPAWN": 2770,
+        "ATTACK": 85,
+        "ADD_PATH": 28
+      }
+    },
+    "ppo1_vs_lacoz": {
+      "games": 50,
+      "results": {
+        "win": 18,
+        "loss": 32
+      },
+      "clean_games": 50,
+      "clean_results": {
+        "win": 18,
+        "loss": 32
+      },
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "invalid_games": 0,
+      "score_rate": 0.36,
+      "map_cluster_95_percent": [
+        20.0,
+        54.0
+      ],
+      "decisions": 1661,
+      "plan_us_p50": 842,
+      "plan_us_p95": 2265,
+      "plan_us_max": 4884,
+      "seat_results": {
+        "0": {
+          "win": 9,
+          "loss": 16
+        },
+        "1": {
+          "win": 9,
+          "loss": 16
+        }
+      },
+      "mean_turns": 33.22,
+      "mean_captures": 50.32,
+      "mean_spawns": 46.46,
+      "command_counts": {
+        "MOVE": 23647,
+        "SPAWN": 2361,
+        "ATTACK": 95,
+        "ADD_PATH": 19,
+        "REMOVE_PATH": 1
+      }
+    }
+  },
+  "paired_long1m_minus_ppo1": {
+    "lacoz": {
+      "clean_pairs": 50,
+      "long1m_results": {
+        "win": 28,
+        "loss": 22
+      },
+      "ppo1_results": {
+        "win": 18,
+        "loss": 32
+      },
+      "score_rate_difference_pp": 20.0,
+      "map_cluster_95_pp": [
+        0.0,
+        38.0
+      ],
+      "improved": 15,
+      "worsened": 5,
+      "excluded_keys": []
+    },
+    "khoufou": {
+      "clean_pairs": 50,
+      "long1m_results": {
+        "win": 50
+      },
+      "ppo1_results": {
+        "win": 47,
+        "loss": 3
+      },
+      "score_rate_difference_pp": 6.0,
+      "map_cluster_95_pp": [
+        0.0,
+        16.0
+      ],
+      "improved": 3,
+      "worsened": 0,
+      "excluded_keys": []
+    }
+  },
+  "matched_survivor_checkpoints": {
+    "lacoz": {
+      "10": {
+        "both_games_still_active": 50,
+        "means": {
+          "long1m": {
+            "own_units": 14.74,
+            "own_triangles": 1.82
+          },
+          "ppo1": {
+            "own_units": 15.26,
+            "own_triangles": 2.16
+          }
+        }
+      },
+      "15": {
+        "both_games_still_active": 50,
+        "means": {
+          "long1m": {
+            "own_units": 21.84,
+            "own_triangles": 1.74
+          },
+          "ppo1": {
+            "own_units": 20.22,
+            "own_triangles": 1.84
+          }
+        }
+      },
+      "20": {
+        "both_games_still_active": 43,
+        "means": {
+          "long1m": {
+            "own_units": 27.627906976744185,
+            "own_triangles": 2.1627906976744184
+          },
+          "ppo1": {
+            "own_units": 23.441860465116278,
+            "own_triangles": 1.8837209302325582
+          }
+        }
+      }
+    },
+    "khoufou": {
+      "10": {
+        "both_games_still_active": 50,
+        "means": {
+          "long1m": {
+            "own_units": 16.68,
+            "own_triangles": 2.74
+          },
+          "ppo1": {
+            "own_units": 16.14,
+            "own_triangles": 2.36
+          }
+        }
+      },
+      "15": {
+        "both_games_still_active": 47,
+        "means": {
+          "long1m": {
+            "own_units": 29.04255319148936,
+            "own_triangles": 4.553191489361702
+          },
+          "ppo1": {
+            "own_units": 27.04255319148936,
+            "own_triangles": 3.9148936170212765
+          }
+        }
+      },
+      "20": {
+        "both_games_still_active": 31,
+        "means": {
+          "long1m": {
+            "own_units": 37.193548387096776,
+            "own_triangles": 3.5806451612903225
+          },
+          "ppo1": {
+            "own_units": 33.96774193548387,
+            "own_triangles": 3.6451612903225805
+          }
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261106,
+    "unit": "whole map, both seats together",
+    "scope": "Game/map uncertainty for one training seed; does not measure training-seed variance.",
+    "caveat": "An arm with no observed wins produces a degenerate empirical bootstrap interval; this is not proof that its underlying win probability is zero."
+  },
+  "checkpoint_caveat": "Economy checkpoints condition on both matched games still being active; these are descriptive observations, not a causal feature ablation."
+}
