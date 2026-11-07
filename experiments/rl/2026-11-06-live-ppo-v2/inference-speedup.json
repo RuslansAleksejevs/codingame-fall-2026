@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-11-07T07:22:11.650780+00:00",
+  "provenance": "SOURCE_VERIFIED",
+  "pairs": [
+    {
+      "initial": "test-timeout-replay.json",
+      "optimized": "test-fast-timeout-replay.json",
+      "all_outputs_identical": true,
+      "original_max_plan_us": 64797,
+      "optimized_max_plan_us": 13842,
+      "speedup_at_max": 4.681187689640225
+    },
+    {
+      "initial": "test-self-120003.json",
+      "optimized": "test-fast-self-120003.json",
+      "all_outputs_identical": true,
+      "original_max_plan_us": 55258,
+      "optimized_max_plan_us": 8725,
+      "speedup_at_max": 6.333295128939828
+    }
+  ],
+  "qualification": "Wall-clock plan timing from stderr; complete game output sequences match in each pair. Server timing varies."
+}

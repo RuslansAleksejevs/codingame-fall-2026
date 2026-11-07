@@ -1,0 +1,1630 @@
+{
+  "as_of": "2026-11-07T07:28:01.908097+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "source_sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+  "original_cpp_weights_equal_embedded": true,
+  "float32_parameters": 24833,
+  "float32_sha256": "a2c685b57e654122d411e757c2fd58b927558c2e1a61b82c6c0e98e3d29e5766",
+  "random_forward_values": 10000,
+  "fixed_contraction_bit_mismatches": 0,
+  "default_contraction": {
+    "bit_mismatches": 7658,
+    "max_absolute_error": 0.000244141,
+    "max_normalized_error": 4.11242e-05
+  },
+  "replays": 100,
+  "seats": 200,
+  "identical_plans": 5070,
+  "mismatches": 0,
+  "silver_identical_plans": 5070,
+  "silver_road_commands": 0,
+  "silver_source_sha256": "9661fb35d0a1f5bce24adab62ba5337377ef835ab5c4a66b3ea1a4971bffd35a",
+  "local_plan_us": {
+    "median": 279,
+    "p99": 1206,
+    "max": 2840
+  },
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "results": [
+    {
+      "replay": "ppo2-vs-bc-seed9001-seat0.json.gz",
+      "seat": 0,
+      "plans": 32,
+      "input_sha256": "2964caa00a625cd1becfdf0cd4e0a3a7cb068020170ab8cd75c507aba92d8af1",
+      "silver_output_sha256": "a555ffaf9c74507156fbfdd3fc832b10e7cf8588a5e1ed83b84c7362730eef16",
+      "output_sha256": "a555ffaf9c74507156fbfdd3fc832b10e7cf8588a5e1ed83b84c7362730eef16"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9001-seat0.json.gz",
+      "seat": 1,
+      "plans": 32,
+      "input_sha256": "f52636d402edbb48c0848d858573deebdc265840f543278baea23fe22655cef4",
+      "silver_output_sha256": "91acc0778f9eb18a9b46e811cd3907b2c3afd0193ee64b0b92cd32a0cd773c29",
+      "output_sha256": "91acc0778f9eb18a9b46e811cd3907b2c3afd0193ee64b0b92cd32a0cd773c29"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9006-seat0.json.gz",
+      "seat": 0,
+      "plans": 16,
+      "input_sha256": "9bb0e9ed76b9bab8de9d9bac5908b0733a3f0b95eab2f66f0c1ffe1ab27d4748",
+      "silver_output_sha256": "e61eeb85b3666bcfec1fae8f5ffcfbb7d8b91963472d457618099d5b8a6aafde",
+      "output_sha256": "e61eeb85b3666bcfec1fae8f5ffcfbb7d8b91963472d457618099d5b8a6aafde"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9006-seat0.json.gz",
+      "seat": 1,
+      "plans": 16,
+      "input_sha256": "7c95008820b312b08230ac5e9727408909e91b87acd19aa58c7876c78bfa7740",
+      "silver_output_sha256": "9ff7b85f63630b7633e5e29a47510983330f05ff0b74a17739657425a6c58a6f",
+      "output_sha256": "9ff7b85f63630b7633e5e29a47510983330f05ff0b74a17739657425a6c58a6f"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9011-seat0.json.gz",
+      "seat": 0,
+      "plans": 21,
+      "input_sha256": "f201c5a4335c80ffab8024526c54623eb373eb9880ed27ee4481f1cd15046131",
+      "silver_output_sha256": "9150f9c534af6fa580a5a800d8b0b0104a8560dd7f8fdd05a6061bad1f612a16",
+      "output_sha256": "9150f9c534af6fa580a5a800d8b0b0104a8560dd7f8fdd05a6061bad1f612a16"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9011-seat0.json.gz",
+      "seat": 1,
+      "plans": 21,
+      "input_sha256": "e2f830d8d52d234800b885f28f0b5cc80043f6b3a5f911b0a582eb73e67ec14f",
+      "silver_output_sha256": "4bda153074a1c440f038e5857bccbffecabe7ccd0e0cda6eb0e69daf5dbf297c",
+      "output_sha256": "4bda153074a1c440f038e5857bccbffecabe7ccd0e0cda6eb0e69daf5dbf297c"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9016-seat0.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "815a2c43a08fd13bf054e95a31376517c22af44352d9c02509070c051c7d79c7",
+      "silver_output_sha256": "63a1eab6ecb3c2b8b3ac2e4345d20f99fe4e467b7a07dd67de74b4db7c7cf935",
+      "output_sha256": "63a1eab6ecb3c2b8b3ac2e4345d20f99fe4e467b7a07dd67de74b4db7c7cf935"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9016-seat0.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "6d312db88a4a8b7253f2f814c2129b28c77f4058ed04ea5efae8c063925ae87c",
+      "silver_output_sha256": "bffbf9e1b71f3a5d8c2f9cbe57abdbcc4cab8d0eb8da6f8e25f1c8d54d383dfd",
+      "output_sha256": "bffbf9e1b71f3a5d8c2f9cbe57abdbcc4cab8d0eb8da6f8e25f1c8d54d383dfd"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9021-seat0.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "f20bea27bb413a329408ec5ded07a2958f7467b463b8d2446455f08ab2023117",
+      "silver_output_sha256": "f08d5b3abb380fd9977e7cf582206c478ca3420856063831df0590ec3340dbfc",
+      "output_sha256": "f08d5b3abb380fd9977e7cf582206c478ca3420856063831df0590ec3340dbfc"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9021-seat0.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "4d96a5eb51c073a5cf77b5718d62039c45285071310acc53ab03364f2487c3c2",
+      "silver_output_sha256": "59a9d9d36cd4a1d6ebefe0c9f521b55fe08832285e95df1eb3d1207562c517e1",
+      "output_sha256": "59a9d9d36cd4a1d6ebefe0c9f521b55fe08832285e95df1eb3d1207562c517e1"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9026-seat0.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "b7c47848c54bf223aaaf854deee43e0168fed6ebecec2de39e6906afbb5f0f2b",
+      "silver_output_sha256": "8eaed6fbf16113d5ed2f554c8ad1e7991a6db3e66ffb27147975035c1f1e577c",
+      "output_sha256": "8eaed6fbf16113d5ed2f554c8ad1e7991a6db3e66ffb27147975035c1f1e577c"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9026-seat0.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "2b537f4b9a110f4c20b4b008c85509315f1e945ffc465e03e996f3255f958562",
+      "silver_output_sha256": "d255d607f384f42a692a8f9781852c4a7fb84a6d0d04d1f4f10e73e912eed5d5",
+      "output_sha256": "d255d607f384f42a692a8f9781852c4a7fb84a6d0d04d1f4f10e73e912eed5d5"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9031-seat0.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "aade34ee9749a1ecca2abdfe68e2d84a69dea628b979133e1225ddef18a5b088",
+      "silver_output_sha256": "99451b82d618d7254ac86f20a440d5c6410aef6372c5800e753ab595520f1a82",
+      "output_sha256": "99451b82d618d7254ac86f20a440d5c6410aef6372c5800e753ab595520f1a82"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9031-seat0.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "f1a2bbb27d3b12fea3df43122dcc05fe91a36122bce1db550d7e2d7194ab05d5",
+      "silver_output_sha256": "bc7ca46807d03f11f1476cd15ab06017176d9e7043995ed557d6828af06f9e2a",
+      "output_sha256": "bc7ca46807d03f11f1476cd15ab06017176d9e7043995ed557d6828af06f9e2a"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9036-seat0.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "d375c5fd3b2a1bf1e1e90e19669f8e9791bf11ae84f911422381a66a2f699d59",
+      "silver_output_sha256": "0f94e6594794fc42b47157f56ffc19f8b9ae408ef10ac4394105abd4ccbb0346",
+      "output_sha256": "0f94e6594794fc42b47157f56ffc19f8b9ae408ef10ac4394105abd4ccbb0346"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9036-seat0.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "7343f5f1c6e1686ec26e9741b05f9c24609cf31c6bcc5a0a5ff794ecd6c0f66c",
+      "silver_output_sha256": "9800ba29dbad7c62edd2cda17dab88bf22ceb6e2c7558563b589bf0cef712916",
+      "output_sha256": "9800ba29dbad7c62edd2cda17dab88bf22ceb6e2c7558563b589bf0cef712916"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9041-seat0.json.gz",
+      "seat": 0,
+      "plans": 17,
+      "input_sha256": "d3689e0065beaa3f8008bcb42288304f4af82830c1435af220e3bb978500bd4a",
+      "silver_output_sha256": "b687c608f622981ac71e4d7fbf384e16699f2f5bc5e5c5dc10b6a7271a47c393",
+      "output_sha256": "b687c608f622981ac71e4d7fbf384e16699f2f5bc5e5c5dc10b6a7271a47c393"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9041-seat0.json.gz",
+      "seat": 1,
+      "plans": 17,
+      "input_sha256": "61b5fa2d415e7acbc2f13047d58dc894d0d1fa54e5d7303b9c5965db86e3d2ad",
+      "silver_output_sha256": "6c8f7327a8a89b9db729397a5600715f6fe03af197d1d7b715f3cc5824f7dd4f",
+      "output_sha256": "6c8f7327a8a89b9db729397a5600715f6fe03af197d1d7b715f3cc5824f7dd4f"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9046-seat0.json.gz",
+      "seat": 0,
+      "plans": 25,
+      "input_sha256": "11563356787df75833b3df79c0dcf4096b521c6dac8857cbdfb284592cadd1a5",
+      "silver_output_sha256": "b47faad0850c1f415cbcf75e4c777e4477df2d01b7953781f922f4f6ee3aa678",
+      "output_sha256": "b47faad0850c1f415cbcf75e4c777e4477df2d01b7953781f922f4f6ee3aa678"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9046-seat0.json.gz",
+      "seat": 1,
+      "plans": 25,
+      "input_sha256": "180656a52cf883c58c2c30df5a9ca528f728baeb6838cc30fd8a1815fb86c397",
+      "silver_output_sha256": "01e8eea0f6dd5ef389d6c6f1e597634644cb8f8501e509daeb674390d68a3480",
+      "output_sha256": "01e8eea0f6dd5ef389d6c6f1e597634644cb8f8501e509daeb674390d68a3480"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9051-seat0.json.gz",
+      "seat": 0,
+      "plans": 21,
+      "input_sha256": "1043b2ab672342016047745b92be211f3a6d1cc357064937f01cd539acf7332e",
+      "silver_output_sha256": "fb5c9fd260c0e5a5d8839c9a105eb77a017d800a2c81719bd2ebcf48aa02773f",
+      "output_sha256": "fb5c9fd260c0e5a5d8839c9a105eb77a017d800a2c81719bd2ebcf48aa02773f"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9051-seat0.json.gz",
+      "seat": 1,
+      "plans": 21,
+      "input_sha256": "98ef92d744a584ab21b358e96eabb95220a26a3995375fbe60442864456a4396",
+      "silver_output_sha256": "3aa095667738b98f5246eb98677e34ca316d2746c222233abe2251f1b6dc5d42",
+      "output_sha256": "3aa095667738b98f5246eb98677e34ca316d2746c222233abe2251f1b6dc5d42"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9056-seat1.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "3af40de19ba75e7a4ee2c20d5d382cfc05566d989852dc0b3790d02aa3cf2d0f",
+      "silver_output_sha256": "214a6e18d7dec92e60fc340933075d6e9b98c02a23694a641434bd411bab2dcd",
+      "output_sha256": "214a6e18d7dec92e60fc340933075d6e9b98c02a23694a641434bd411bab2dcd"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9056-seat1.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "20135d4c9db3afb0e735b34265e60a924921d413e2de902b780dd301691400d8",
+      "silver_output_sha256": "cda7fcc6cbc1c4cddf6fc7dc08d73dfcf4501943c36df533ee49355764e1f2bd",
+      "output_sha256": "3401f54a8f67cac08e0db29beda1320445258d223cf51c8e93055793f09d3918"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9061-seat1.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "6fcbe25227419434133a5005921c394f94cd0aa6137ba7890312606fa0f738ac",
+      "silver_output_sha256": "3922ca4fc0fd516495458df25c68b88b87d2bc1bce40ad595e0141d0255fe889",
+      "output_sha256": "3922ca4fc0fd516495458df25c68b88b87d2bc1bce40ad595e0141d0255fe889"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9061-seat1.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "ed3321bd681d7ce60f24a01770b2f10bb04278c596bbc7ca2caf3eb40fbd5b55",
+      "silver_output_sha256": "a2b9c9bb1ac15249e794c1bde0262ab77c9dce7c227c05b33ef2a1fcae10cc37",
+      "output_sha256": "a2b9c9bb1ac15249e794c1bde0262ab77c9dce7c227c05b33ef2a1fcae10cc37"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9066-seat1.json.gz",
+      "seat": 0,
+      "plans": 41,
+      "input_sha256": "9be82fee9069298427c2dade13f40910c140b23480b81134ab721cef1bab4229",
+      "silver_output_sha256": "eb5d61a04cc6c4985d415805336c8e0fa0b58ebd3f60929a68bd6da4a74726fc",
+      "output_sha256": "eb5d61a04cc6c4985d415805336c8e0fa0b58ebd3f60929a68bd6da4a74726fc"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9066-seat1.json.gz",
+      "seat": 1,
+      "plans": 41,
+      "input_sha256": "8fb34df8dfc694553936076c5d8b2f5b5357322ad4882374c2852f2f2ab20e5d",
+      "silver_output_sha256": "034450f97217b1b703de9d29c6f1acae3a9fa3db231269567a81d21a92f9787c",
+      "output_sha256": "034450f97217b1b703de9d29c6f1acae3a9fa3db231269567a81d21a92f9787c"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9071-seat1.json.gz",
+      "seat": 0,
+      "plans": 14,
+      "input_sha256": "6d584df7a2554b965e70d667b12c5e22d2b08001396554a2ba7c83263f373fa9",
+      "silver_output_sha256": "05e45241afa457573a22bab67439b33b2bab2a7a0b1e37824c22ad5f3d8e4401",
+      "output_sha256": "05e45241afa457573a22bab67439b33b2bab2a7a0b1e37824c22ad5f3d8e4401"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9071-seat1.json.gz",
+      "seat": 1,
+      "plans": 14,
+      "input_sha256": "453b1f447ae1dc50964faecee8191453dedae7ba79984eaeb98e0032219677e0",
+      "silver_output_sha256": "890434df95723c21da43e04600a1f602d6b84d485b70a27dacc78fa5e971dc1b",
+      "output_sha256": "890434df95723c21da43e04600a1f602d6b84d485b70a27dacc78fa5e971dc1b"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9076-seat1.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "56380a921fb89805f492e273c6052b4d400f6d5f8ac0f482da3a3ba57de93e73",
+      "silver_output_sha256": "a568a667819cd3d33bbdaa63e3551cfa16097258c960c9da55bb13d459809133",
+      "output_sha256": "a568a667819cd3d33bbdaa63e3551cfa16097258c960c9da55bb13d459809133"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9076-seat1.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "77526f750cb17f8d05d9b43f3795e8502087cb39a5e01a151d742a2a3f3e1251",
+      "silver_output_sha256": "7c6eedf99e9658f145019e8bb369536785bb6671e745510a175c03d0606d4901",
+      "output_sha256": "40e075ac596f05aaab3b674d4efae18ef3187899074aa4103df018b69b4b062e"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9081-seat1.json.gz",
+      "seat": 0,
+      "plans": 12,
+      "input_sha256": "31307491457173ecdf717be0b9ec22bf28706f663e5a7f60d003c3a45053e809",
+      "silver_output_sha256": "9e83dcac8cc4bd8dd65cf446910ae38aea43a6f70a12a677d08a38ad05f92034",
+      "output_sha256": "9e83dcac8cc4bd8dd65cf446910ae38aea43a6f70a12a677d08a38ad05f92034"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9081-seat1.json.gz",
+      "seat": 1,
+      "plans": 12,
+      "input_sha256": "00b1566523f95249c69f05df678951eead5aa50869598713eab68f8e5b2116c1",
+      "silver_output_sha256": "d4bceef47903dae18487508da3971f031c6ebb831661f8809cc7382982c01f3f",
+      "output_sha256": "d4bceef47903dae18487508da3971f031c6ebb831661f8809cc7382982c01f3f"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9086-seat1.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "d25688d113d874f1f892f964a3626e2e5f322598655e205d7a30083d87a20173",
+      "silver_output_sha256": "646a589734aebceb3642c8e46a731519ef93d7d50e36f1c84d2b686f2f43069c",
+      "output_sha256": "646a589734aebceb3642c8e46a731519ef93d7d50e36f1c84d2b686f2f43069c"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9086-seat1.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "8cdcebbc765169843fde98a50e7d4e25fe597fd9749e2d673f6e2ad60ee55cbd",
+      "silver_output_sha256": "b44f84b075ccacbd50114695f89c194655fc8be1b3cfad1ae1dcc1317a6d78e1",
+      "output_sha256": "b44f84b075ccacbd50114695f89c194655fc8be1b3cfad1ae1dcc1317a6d78e1"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9091-seat1.json.gz",
+      "seat": 0,
+      "plans": 62,
+      "input_sha256": "219a67058072cef010c58918a40da2d9e3d3856c80072c1d18819d5642cee645",
+      "silver_output_sha256": "3225eb00b0fad77933ebbc51a1f6c496efbc3e1bd102b2252601bcbbfcf5ebf7",
+      "output_sha256": "3225eb00b0fad77933ebbc51a1f6c496efbc3e1bd102b2252601bcbbfcf5ebf7"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9091-seat1.json.gz",
+      "seat": 1,
+      "plans": 62,
+      "input_sha256": "988b700c9933af432aef73296f9e749de045bee61dbf4e9db566d8138b2d330d",
+      "silver_output_sha256": "528584fc7a4105aa3926e0ed3219c297836279a8103859649f6e0632250c8268",
+      "output_sha256": "528584fc7a4105aa3926e0ed3219c297836279a8103859649f6e0632250c8268"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9096-seat1.json.gz",
+      "seat": 0,
+      "plans": 17,
+      "input_sha256": "974a2daba645ef8994f30f13aa6d9921472d1c9ae1b522f2f57e35d9f30fbf9b",
+      "silver_output_sha256": "6dd7a45ef71535a5683239b8c063fd26b7fd108c3076961b0e22e728bd258e2d",
+      "output_sha256": "6dd7a45ef71535a5683239b8c063fd26b7fd108c3076961b0e22e728bd258e2d"
+    },
+    {
+      "replay": "ppo2-vs-bc-seed9096-seat1.json.gz",
+      "seat": 1,
+      "plans": 17,
+      "input_sha256": "f74bc4e49a1ee06a6e32f7cee5d1e9ff8e5b8ce83dd9f788ac9517c30e51372b",
+      "silver_output_sha256": "4e2b97bc35b28d8406c4045688adf8241fb05d6c5a19f3f3b534b93e2c6f3679",
+      "output_sha256": "4e2b97bc35b28d8406c4045688adf8241fb05d6c5a19f3f3b534b93e2c6f3679"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9001-seat1.json.gz",
+      "seat": 0,
+      "plans": 28,
+      "input_sha256": "88adc34b61ee1b05f7170311bcb4b19d15ac6af6e130c7457890ef43fe198a62",
+      "silver_output_sha256": "ec73870aba97c641fcd7fb52c869f5c2236d6d4f08707762ac2e79a05d4a3d63",
+      "output_sha256": "ec73870aba97c641fcd7fb52c869f5c2236d6d4f08707762ac2e79a05d4a3d63"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9001-seat1.json.gz",
+      "seat": 1,
+      "plans": 28,
+      "input_sha256": "bbdd3f0f70c85e57d0db2aa623f0b8d193d3dc4fff80092d7e0bdb84925709c2",
+      "silver_output_sha256": "f0d90e89c70992c3d4bd22743b85b35b8350840b23b95fbce5399bf6a5f86409",
+      "output_sha256": "f0d90e89c70992c3d4bd22743b85b35b8350840b23b95fbce5399bf6a5f86409"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9006-seat1.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "c3d8ac1dc4c35134c4ef4a152a6cd3e2e99d336132e65428ed377bac2a5b609d",
+      "silver_output_sha256": "03a47e22936ea678ed74d3da95509afa1a4a4c3fc87affe9dea1736857eae28e",
+      "output_sha256": "03a47e22936ea678ed74d3da95509afa1a4a4c3fc87affe9dea1736857eae28e"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9006-seat1.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "8b493b5d82903da70a60582601a3fa676bf3e0b0caf10a5ece3a6df97ddca8ac",
+      "silver_output_sha256": "6f5af7eaafc7f7c3d1f707ffcefa746bd4913514348640336e7be0fca5ad5d59",
+      "output_sha256": "6f5af7eaafc7f7c3d1f707ffcefa746bd4913514348640336e7be0fca5ad5d59"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9012-seat0.json.gz",
+      "seat": 0,
+      "plans": 27,
+      "input_sha256": "164b703cf124be6cd7f562d6f8dbfa547c32ccd6ece0be51594e86dc922645fc",
+      "silver_output_sha256": "186027d952cf5aae1d79a75953a067671377c4902095de1f2b77ca58b0de478a",
+      "output_sha256": "186027d952cf5aae1d79a75953a067671377c4902095de1f2b77ca58b0de478a"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9012-seat0.json.gz",
+      "seat": 1,
+      "plans": 27,
+      "input_sha256": "1b841186c586373fd9ee20922b5015a1d895840bedb85c666c2a5126b819a144",
+      "silver_output_sha256": "a90d4433f150598d526c6dbb53fda26c2b7542d907b824d8aa1661f8c6d90e6c",
+      "output_sha256": "a90d4433f150598d526c6dbb53fda26c2b7542d907b824d8aa1661f8c6d90e6c"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9017-seat0.json.gz",
+      "seat": 0,
+      "plans": 16,
+      "input_sha256": "a1dc992c694a6f82327d3213efa34d11c2cad06bad1ddc92176e33ea35629b68",
+      "silver_output_sha256": "6b30cbc60d414c7237f00643d455377d8c9804f37da04ca6fa801a6a280acc18",
+      "output_sha256": "21d48b5c80084e90d128c21ddd00e7bbc4921c8bf487def4dc4d598f5f216256"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9017-seat0.json.gz",
+      "seat": 1,
+      "plans": 16,
+      "input_sha256": "e20b31a83880f27c34ebfdc1f5e84fb4612cd67fc7af0af6af07859fa5ec533d",
+      "silver_output_sha256": "fb93f48b737b3e509675ac4598ae494ad70312e32f94995e6a40d1f5bc9a1538",
+      "output_sha256": "fb93f48b737b3e509675ac4598ae494ad70312e32f94995e6a40d1f5bc9a1538"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9022-seat0.json.gz",
+      "seat": 0,
+      "plans": 22,
+      "input_sha256": "4f1dcf29d6b0a2752c96a250ec648967a853db77443297b12d56eb0b6a9a3b59",
+      "silver_output_sha256": "5edd709d6f4c6bd34bd29e37a3b85f1c3bb281031ff9de45c817271dff35432f",
+      "output_sha256": "5edd709d6f4c6bd34bd29e37a3b85f1c3bb281031ff9de45c817271dff35432f"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9022-seat0.json.gz",
+      "seat": 1,
+      "plans": 22,
+      "input_sha256": "9079144a3fe60e7ab23b96b4b94d8b5ad1d6deaddb15101c8a5df3f6aa5fd6d8",
+      "silver_output_sha256": "70d1f231ee1496675bd7f7837536f3d0f8522eaeb0041993924726fbd69d1f7f",
+      "output_sha256": "70d1f231ee1496675bd7f7837536f3d0f8522eaeb0041993924726fbd69d1f7f"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9027-seat0.json.gz",
+      "seat": 0,
+      "plans": 20,
+      "input_sha256": "002086b9ae178b7faff66134ba4253e2bbd771b9c8e11755d238aa14a87e7d52",
+      "silver_output_sha256": "c6f8bae8f194e347835f7d1bc1dc4f431836a20c7e1360d1405f9259abb926e5",
+      "output_sha256": "c6f8bae8f194e347835f7d1bc1dc4f431836a20c7e1360d1405f9259abb926e5"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9027-seat0.json.gz",
+      "seat": 1,
+      "plans": 20,
+      "input_sha256": "8767222c5bb9854dbfe087a985e57d5eb1bbfc50d55cca321fd69ddddcff2bef",
+      "silver_output_sha256": "ad22830fefd8b088580c0a61fd0f797f2319878952f33f04b3a7198a43e3c9c0",
+      "output_sha256": "ad22830fefd8b088580c0a61fd0f797f2319878952f33f04b3a7198a43e3c9c0"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9032-seat0.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "6848101ce252d0869e5663d0ee02a336b62c5ebb8d425eb1db330291269c2cc3",
+      "silver_output_sha256": "64f16afde7428c8b7ecfb30b21b0c8f6a99071483caefb2ed77306961816c2d9",
+      "output_sha256": "8c36e4e9337ba29c6330dd62e911dc1f70af43b9c86c3525934737b9b99b1aa1"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9032-seat0.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "4df4d4725445a42c7e343cc16596b8cfd49cc319c0c3586ace8d5487ad457446",
+      "silver_output_sha256": "4c4a6788561164038037781743d4a968901ebfa3ed2bc5a0688e1cb7263952dc",
+      "output_sha256": "4c4a6788561164038037781743d4a968901ebfa3ed2bc5a0688e1cb7263952dc"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9037-seat0.json.gz",
+      "seat": 0,
+      "plans": 22,
+      "input_sha256": "b34b181b68ab250fdda0cad785732574508aad913023bd5e77daddc5200a819c",
+      "silver_output_sha256": "a8bffc2913ca9119cb470ebfeafc2c0da75418e829997e0c5e1a79965ae0c741",
+      "output_sha256": "a8bffc2913ca9119cb470ebfeafc2c0da75418e829997e0c5e1a79965ae0c741"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9037-seat0.json.gz",
+      "seat": 1,
+      "plans": 22,
+      "input_sha256": "f4ec4b955b7d4afb8d3b18c19cec1ced13fed0b0bbe5fd1422e602e3430c6fb3",
+      "silver_output_sha256": "1f5dd794602a05c5e79ab9013a37ad9ea33916cbf3300361a218ec5ffc1b8519",
+      "output_sha256": "1f5dd794602a05c5e79ab9013a37ad9ea33916cbf3300361a218ec5ffc1b8519"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9042-seat0.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "c7f44d2c0bcb28bbe1f11131da604a553148cf9b0aa980ddbf226e31867da438",
+      "silver_output_sha256": "04832dd56ef45dc33de155efa29fa4f06a58fcf5fc6b77d45c1fc8321f587c3b",
+      "output_sha256": "04832dd56ef45dc33de155efa29fa4f06a58fcf5fc6b77d45c1fc8321f587c3b"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9042-seat0.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "70da7be9e907a5a0e76fdd7058e9a6ee5772c3812a568ad780bc3c1b27adfac1",
+      "silver_output_sha256": "feffbd12aca43863c712bdd5981716a9683169b4d09b2044dc680a95f3524c39",
+      "output_sha256": "feffbd12aca43863c712bdd5981716a9683169b4d09b2044dc680a95f3524c39"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9047-seat0.json.gz",
+      "seat": 0,
+      "plans": 20,
+      "input_sha256": "f2a7dec98940cd0513bab6437527f2019e6def513f75d425eef321c2938e98ee",
+      "silver_output_sha256": "7c1311809a1892cd3bd1b92888d5aee71bd52df995a0435eee29e2f77742bfb7",
+      "output_sha256": "7c1311809a1892cd3bd1b92888d5aee71bd52df995a0435eee29e2f77742bfb7"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9047-seat0.json.gz",
+      "seat": 1,
+      "plans": 20,
+      "input_sha256": "fa03c9f3912e6106a9493d007dc7591c8536056abeb6826c27436d9315e9abf1",
+      "silver_output_sha256": "a682c64a285a7e9233ae9078593120a57424ac2958a664085bc1c1a3e9a9a09b",
+      "output_sha256": "a682c64a285a7e9233ae9078593120a57424ac2958a664085bc1c1a3e9a9a09b"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9052-seat0.json.gz",
+      "seat": 0,
+      "plans": 26,
+      "input_sha256": "efae91759e0a804c66c32f50fbf59f9b43fed1ef662ba732b3067f8600b9d826",
+      "silver_output_sha256": "36544c3626a007e8e696348b94c59e22db7b43bac9dd94d702443c8f6cf2d703",
+      "output_sha256": "36544c3626a007e8e696348b94c59e22db7b43bac9dd94d702443c8f6cf2d703"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9052-seat0.json.gz",
+      "seat": 1,
+      "plans": 26,
+      "input_sha256": "b1abe552cb4eb350545dbf26c42a09cadce5ce612d6a67128e5c08533e94ece9",
+      "silver_output_sha256": "24990e3388fcc9f46cf8c5a2ce6f10362bf681691e422ebce03faa19ab4967f5",
+      "output_sha256": "24990e3388fcc9f46cf8c5a2ce6f10362bf681691e422ebce03faa19ab4967f5"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9057-seat0.json.gz",
+      "seat": 0,
+      "plans": 25,
+      "input_sha256": "38b5c2d0c08a4658f237ae8c98a094108b6d6056783aef01b8e2c3f454465fd7",
+      "silver_output_sha256": "6da00da0577e37e9d27a2d0edf120b99d51b04caa37ccd32ddb575b57b31e69d",
+      "output_sha256": "6da00da0577e37e9d27a2d0edf120b99d51b04caa37ccd32ddb575b57b31e69d"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9057-seat0.json.gz",
+      "seat": 1,
+      "plans": 25,
+      "input_sha256": "047611bd92c9f55dbda1f0594694d2a4070cc586a67998005d28e3c963d6867f",
+      "silver_output_sha256": "df280876a90394f0ae0eb606130ad2f7b717f87362d759b6a0e016bcea041856",
+      "output_sha256": "df280876a90394f0ae0eb606130ad2f7b717f87362d759b6a0e016bcea041856"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9062-seat0.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "208d1fca543f0552b74e2120847ede9263f1201ec2db6b6c22b5ad5a9b9f6223",
+      "silver_output_sha256": "27a83d9fdea78c69935bc915ea7ea0ea2ef5052bbb01861e7d292055b5516053",
+      "output_sha256": "27a83d9fdea78c69935bc915ea7ea0ea2ef5052bbb01861e7d292055b5516053"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9062-seat0.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "b631e814f050747cf45dffde2d8e36b3f58f8628dfe9820863654418c6a3b4fd",
+      "silver_output_sha256": "b5a2b48a856b1b4b628ed9cc1b1ba12599400763223fd1181cc2f576ecfa6468",
+      "output_sha256": "b5a2b48a856b1b4b628ed9cc1b1ba12599400763223fd1181cc2f576ecfa6468"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9067-seat1.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "adf6a829f3546d3010db0b97dba4ca06f34d9303b382dff19b3443b9ed9cae56",
+      "silver_output_sha256": "a903f7ce0b28688d19778fd9e71394908a2970738b597cd90aeb79da54bd46b8",
+      "output_sha256": "a903f7ce0b28688d19778fd9e71394908a2970738b597cd90aeb79da54bd46b8"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9067-seat1.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "9e8bce8f368b1b60b522d4a15c781e7a969c92557fbe05ef7cef5cbd0de28a98",
+      "silver_output_sha256": "a0b2d128b889a607fe77521fbd5451f8e77c316dbe42f722955a2b9f1297562f",
+      "output_sha256": "e79843b2c0a82f2cb1a37e9158ce7880a84990c627da25941095339ccf5232f0"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9072-seat1.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "59eafddad6a15bace766244d5a1a7095a2e5624ab64742537f4cca1b710104d1",
+      "silver_output_sha256": "b519a74e8dbaef92b4727a4c5755e73bb6d3e5e6723e0bfd1bc77e2fc1f15e13",
+      "output_sha256": "b519a74e8dbaef92b4727a4c5755e73bb6d3e5e6723e0bfd1bc77e2fc1f15e13"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9072-seat1.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "968f03ac513aa0c31f815754230231bde9d69139c9fd1dfb0f3da52c2c6b3597",
+      "silver_output_sha256": "4222e00ffd0f6efd501d4d940080e40ebd9d536b20201f0e21fe2f8a54c4dac8",
+      "output_sha256": "4222e00ffd0f6efd501d4d940080e40ebd9d536b20201f0e21fe2f8a54c4dac8"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9077-seat1.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "be62469245fc1989e2cfdcc733352ffd1988bf6df99d56b4a13d3c9e3de11b31",
+      "silver_output_sha256": "98184b040dbaa917bf82e83580a854b246cda6c5bf45a45103d06348438d7bcd",
+      "output_sha256": "98184b040dbaa917bf82e83580a854b246cda6c5bf45a45103d06348438d7bcd"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9077-seat1.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "e1efcfa19f818997b112456cd7c8affed98500c4d008a9e95109211e278d283a",
+      "silver_output_sha256": "1bf244914d620d2e1ccf189382536104c041bd347efe8ecf4d17333f117073d7",
+      "output_sha256": "1bf244914d620d2e1ccf189382536104c041bd347efe8ecf4d17333f117073d7"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9082-seat1.json.gz",
+      "seat": 0,
+      "plans": 25,
+      "input_sha256": "7a6dc59cc0dbc9c40d3ad89ffa76d349a551d0e4f1149b114b099b1d3157ce5d",
+      "silver_output_sha256": "73a07479a52ac5d5e370329dd9841f3c178e39bc256f4a264c547083bdb283f8",
+      "output_sha256": "73a07479a52ac5d5e370329dd9841f3c178e39bc256f4a264c547083bdb283f8"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9082-seat1.json.gz",
+      "seat": 1,
+      "plans": 25,
+      "input_sha256": "f787c825b8dbdd66a0fbb1b9685915aa14af9a6b9175f374c80c8de94f488206",
+      "silver_output_sha256": "2c00fe987c4ee44245adc5a498eea1d66fe0bb5ecacd1c645c8199c8619fe54c",
+      "output_sha256": "2c00fe987c4ee44245adc5a498eea1d66fe0bb5ecacd1c645c8199c8619fe54c"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9087-seat1.json.gz",
+      "seat": 0,
+      "plans": 23,
+      "input_sha256": "1d748bbdac7a61c4ec586555962f55b58b764bd8ff4e43ffb5a118c5f5c60452",
+      "silver_output_sha256": "151d4957b3dbd478cd44076986a0d41fa8d8731b8c6e6785c0f03a021a3bcf7d",
+      "output_sha256": "151d4957b3dbd478cd44076986a0d41fa8d8731b8c6e6785c0f03a021a3bcf7d"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9087-seat1.json.gz",
+      "seat": 1,
+      "plans": 23,
+      "input_sha256": "8e358cb18275b739bd60f75963ab5b4c5913965711018275af60b6106efa7af8",
+      "silver_output_sha256": "a5ec6af40ede78de5ec9c334e76ae584b744dad47724137b696b5c89a2e3d083",
+      "output_sha256": "a5ec6af40ede78de5ec9c334e76ae584b744dad47724137b696b5c89a2e3d083"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9092-seat1.json.gz",
+      "seat": 0,
+      "plans": 20,
+      "input_sha256": "7453463d28b9358264ac0f31455c5e2193d6f05b2e3328c4a71babe47dfe5ef6",
+      "silver_output_sha256": "f272bfa7b254d75a93398b809fa723b1106d3fc110b007cef9e9a9ecd608fc51",
+      "output_sha256": "f272bfa7b254d75a93398b809fa723b1106d3fc110b007cef9e9a9ecd608fc51"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9092-seat1.json.gz",
+      "seat": 1,
+      "plans": 20,
+      "input_sha256": "732eee9c185ece7f581571f674fe43396cba7e00d5da1ca731cb8b93c01d75b7",
+      "silver_output_sha256": "9e49606674a5b8e4a5f6656096baa771db4dc8a3a214ec556e21758390d530db",
+      "output_sha256": "9e49606674a5b8e4a5f6656096baa771db4dc8a3a214ec556e21758390d530db"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9097-seat1.json.gz",
+      "seat": 0,
+      "plans": 25,
+      "input_sha256": "a9c5581b00e87d7c6dbc0a50e7551fb24b6f89ded06a015780af3f16d9bd5958",
+      "silver_output_sha256": "b4684f2b58eb0ea0b4880668a1d8b27f3bf6e56a0409ad4549f9db7e01100989",
+      "output_sha256": "b4684f2b58eb0ea0b4880668a1d8b27f3bf6e56a0409ad4549f9db7e01100989"
+    },
+    {
+      "replay": "ppo2-vs-khoufou-seed9097-seat1.json.gz",
+      "seat": 1,
+      "plans": 25,
+      "input_sha256": "7ba59a203eea6a87e2d1db0a40c5b20983def1e7535fddfb31efe01f2cae7c50",
+      "silver_output_sha256": "f42dc4412c76d0c65b14a472915e22cc71da302011e76a52ab6327c749cf3056",
+      "output_sha256": "f42dc4412c76d0c65b14a472915e22cc71da302011e76a52ab6327c749cf3056"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9002-seat1.json.gz",
+      "seat": 0,
+      "plans": 31,
+      "input_sha256": "4db375236dee9ff0ec552e4100d5bf5c446e2cf2b5a1e2197a1e28dc666266ca",
+      "silver_output_sha256": "417673b748b8b0403fdf84958966a03a2e9dfd42457f1d9741136d64f9c6fdf9",
+      "output_sha256": "417673b748b8b0403fdf84958966a03a2e9dfd42457f1d9741136d64f9c6fdf9"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9002-seat1.json.gz",
+      "seat": 1,
+      "plans": 31,
+      "input_sha256": "ff8e668216f9d7cbc8df0d79ce28b39fde9598357ed99e58e80da7d7d406df58",
+      "silver_output_sha256": "f7199fcf4b3abf01a75fed6be3aa15cf0136ce73cee199ca1b1bf3791434e2d4",
+      "output_sha256": "f7199fcf4b3abf01a75fed6be3aa15cf0136ce73cee199ca1b1bf3791434e2d4"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9007-seat1.json.gz",
+      "seat": 0,
+      "plans": 28,
+      "input_sha256": "4036ba86de5dffd87738293dc8fbc3820fd3f9776ca5b3e1b6610f4cde129457",
+      "silver_output_sha256": "606219ab97cc8da8028812a53c4f48e66f304eaa48d3388bf3a36a948415d63a",
+      "output_sha256": "606219ab97cc8da8028812a53c4f48e66f304eaa48d3388bf3a36a948415d63a"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9007-seat1.json.gz",
+      "seat": 1,
+      "plans": 28,
+      "input_sha256": "979ec571dd3fd6ceed98200b45461e0dd2de3656aedd0823ebdf9bac40f17f33",
+      "silver_output_sha256": "e5ef982d6c19277420cafc1c2597d836971cf318018deedf04589cbbd2c2146a",
+      "output_sha256": "e5ef982d6c19277420cafc1c2597d836971cf318018deedf04589cbbd2c2146a"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9012-seat1.json.gz",
+      "seat": 0,
+      "plans": 32,
+      "input_sha256": "8b734aa7c2f5b802714912b22456e3bcb9a4dfc804c1f762bf2f871246486ec8",
+      "silver_output_sha256": "6df43b233ee991ba6000f0582b9f91f917496c407fda8ab704e9dca7e0800489",
+      "output_sha256": "1699d2c77726a08610b4cd67f6fe62a335acb4e69945486ffc3f89f23e2b330d"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9012-seat1.json.gz",
+      "seat": 1,
+      "plans": 32,
+      "input_sha256": "0450b81e4df6ff1d9e3288ffdb7981aa2cdea92c474d98ce8da4c2440419b870",
+      "silver_output_sha256": "401fde78ca864da7e4af840381c215c8e328798b79d86dd14c46ae19e5f29afd",
+      "output_sha256": "401fde78ca864da7e4af840381c215c8e328798b79d86dd14c46ae19e5f29afd"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9017-seat1.json.gz",
+      "seat": 0,
+      "plans": 31,
+      "input_sha256": "72112ccbedc671bc5df432e72c51f01fd931047f161bb4786adc694609fff75c",
+      "silver_output_sha256": "d5ce0120deb18415d36c0764c41aca53acb34cdf729e49e7e506e72959dda661",
+      "output_sha256": "d5ce0120deb18415d36c0764c41aca53acb34cdf729e49e7e506e72959dda661"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9017-seat1.json.gz",
+      "seat": 1,
+      "plans": 31,
+      "input_sha256": "a9bc161f29ad179df0c531853952acc9d11e80f0641a355a69857206abf3f5b0",
+      "silver_output_sha256": "93f9a4a09f6335788af86b1c86001c649010686a374d136ed38cb6b711eb3cb6",
+      "output_sha256": "5f5451f6bbdd255ac8e2d8b461b898ae6a73f94acfb4cadc52de90ffa6cc0f88"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9023-seat0.json.gz",
+      "seat": 0,
+      "plans": 26,
+      "input_sha256": "646c0ae26405fb8fcdc0a069d847400f363a6e13898e5442a742e11614cc1821",
+      "silver_output_sha256": "ef11e74611371c696b55ef580e89e8b8115fe79ac0227660e12e88b2e8c34f0d",
+      "output_sha256": "ef11e74611371c696b55ef580e89e8b8115fe79ac0227660e12e88b2e8c34f0d"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9023-seat0.json.gz",
+      "seat": 1,
+      "plans": 26,
+      "input_sha256": "fbdb3e5d9ae6f72ac2863eaa63be55761ce8a83afe8a9729d7e0fea89444432c",
+      "silver_output_sha256": "78774ac82f759722b25b0fccb428e4cb322faf33674c62aa9826c9d32a723ef0",
+      "output_sha256": "c58a6991da53df534dd88f784818ce1abe46550481cb5d791591e2d88647d07e"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9028-seat0.json.gz",
+      "seat": 0,
+      "plans": 33,
+      "input_sha256": "b7edd3f951d11fe704c3f23ba199c0d8a59cea96d8a6d140e2cd0c28f56f2ef9",
+      "silver_output_sha256": "ca7ddbf0c94bc17606998db645163ac459e880b360b66423badc797c6046d930",
+      "output_sha256": "ca7ddbf0c94bc17606998db645163ac459e880b360b66423badc797c6046d930"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9028-seat0.json.gz",
+      "seat": 1,
+      "plans": 33,
+      "input_sha256": "9a76a073a92d6248e4f4ec58a582234adbdd0fdb1c2ab0ca283d00e1e5cd6c17",
+      "silver_output_sha256": "10062ae080b8712d5c843e9bcd032c87f1c87880f2de4e265abbebecfe4819b0",
+      "output_sha256": "10062ae080b8712d5c843e9bcd032c87f1c87880f2de4e265abbebecfe4819b0"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9033-seat0.json.gz",
+      "seat": 0,
+      "plans": 47,
+      "input_sha256": "ff988f331b2bf7b45aa1e5accd201c50ef024dec39170f8218dfe70aee992b26",
+      "silver_output_sha256": "3199c14d9b11297f31c4737cb6c3a6af1b40dd3ff07cdbaf436c620683983a64",
+      "output_sha256": "3199c14d9b11297f31c4737cb6c3a6af1b40dd3ff07cdbaf436c620683983a64"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9033-seat0.json.gz",
+      "seat": 1,
+      "plans": 47,
+      "input_sha256": "c10a9d246e1a6786096e5bd5d37d71a1f65d0733d9786fd80a1288b2885c73ec",
+      "silver_output_sha256": "f538eb33cf8f7ece00824ca9cf03df56641949779a094589edb9035a8e94cdba",
+      "output_sha256": "f538eb33cf8f7ece00824ca9cf03df56641949779a094589edb9035a8e94cdba"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9038-seat0.json.gz",
+      "seat": 0,
+      "plans": 48,
+      "input_sha256": "756613b56591751d6399e27c62dfc2bb74676dbf7680ff6b83f355055ef40831",
+      "silver_output_sha256": "f50200c056f14ccc59fea25b0729407a5ad71167bead7cba7420ef764cb23234",
+      "output_sha256": "f50200c056f14ccc59fea25b0729407a5ad71167bead7cba7420ef764cb23234"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9038-seat0.json.gz",
+      "seat": 1,
+      "plans": 48,
+      "input_sha256": "ebbd8e3da8579263e44ca1c76b8bf9fc22c77aae8f269da23b7999fdc0c31908",
+      "silver_output_sha256": "eff2c70f1304326e8f9244ba0533213664a2d3e95e8de8d7e329bb956d87591c",
+      "output_sha256": "eff2c70f1304326e8f9244ba0533213664a2d3e95e8de8d7e329bb956d87591c"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9043-seat0.json.gz",
+      "seat": 0,
+      "plans": 25,
+      "input_sha256": "620dcbcea652669109f94ae5cc5e8c8a67e737bb551d10a1abc49e81295478e4",
+      "silver_output_sha256": "bee267f0c72cd23c66355dec14e3c17d58bcb5f11c50bef73686d3e7dfb2536f",
+      "output_sha256": "bee267f0c72cd23c66355dec14e3c17d58bcb5f11c50bef73686d3e7dfb2536f"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9043-seat0.json.gz",
+      "seat": 1,
+      "plans": 25,
+      "input_sha256": "4e5e7bb44fb26813b377e7d4a1b1fbeb6cd1a5bfcca8968c19c666ba2e15c6c6",
+      "silver_output_sha256": "c4faad3070e23e28f2ccf56b6a405b126a1729ddf48b249c5178b60c85a1aeaf",
+      "output_sha256": "c4faad3070e23e28f2ccf56b6a405b126a1729ddf48b249c5178b60c85a1aeaf"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9048-seat0.json.gz",
+      "seat": 0,
+      "plans": 31,
+      "input_sha256": "d798cc5229045faeae26304f3072fe0b7b8888f6904a1d288217ae729bbd364c",
+      "silver_output_sha256": "82c136f675230908a8602709a7cff7a90e00bca36b37df712e971b4a46fa404c",
+      "output_sha256": "82c136f675230908a8602709a7cff7a90e00bca36b37df712e971b4a46fa404c"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9048-seat0.json.gz",
+      "seat": 1,
+      "plans": 31,
+      "input_sha256": "96a06c821734a8fedfeea5ac90f80ca80947095a8b97e21c6702306de1b5debd",
+      "silver_output_sha256": "8dde4cf090a38106fb81d1ac5cc780865eec4cf0835dc69d902eac4891f9f5df",
+      "output_sha256": "8dde4cf090a38106fb81d1ac5cc780865eec4cf0835dc69d902eac4891f9f5df"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9053-seat0.json.gz",
+      "seat": 0,
+      "plans": 38,
+      "input_sha256": "e5ed0ecfb3ec18b5186d4cc4243ba53281e06c8ddd45be836ff8ebfad10629d4",
+      "silver_output_sha256": "f7a17d10e5a48dc374be84a1ac79a2e6d797a2311da8fb61a39aea2389955549",
+      "output_sha256": "f7a17d10e5a48dc374be84a1ac79a2e6d797a2311da8fb61a39aea2389955549"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9053-seat0.json.gz",
+      "seat": 1,
+      "plans": 38,
+      "input_sha256": "6580de1c74decaa04dd21f7efa45753cca1a7b929ecf65116660ef6d2a93f283",
+      "silver_output_sha256": "ecbc5c5c3db6556637ededd10b7879a5ca7961005997b9c7dece4b70a7899157",
+      "output_sha256": "ecbc5c5c3db6556637ededd10b7879a5ca7961005997b9c7dece4b70a7899157"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9058-seat0.json.gz",
+      "seat": 0,
+      "plans": 29,
+      "input_sha256": "cac493668052a5b36c60c34d5fe6a4b4d3cc0c96cc6bb96387eb972547fd67db",
+      "silver_output_sha256": "484d6ec7ac6f565539c98b2883e76ec53f462cdd0778f970d07f8d506b6b3915",
+      "output_sha256": "484d6ec7ac6f565539c98b2883e76ec53f462cdd0778f970d07f8d506b6b3915"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9058-seat0.json.gz",
+      "seat": 1,
+      "plans": 29,
+      "input_sha256": "0b2c89a739c92951c2ddfe5572a5df85d9cedddd7442ba1513ebb9d87dadac4a",
+      "silver_output_sha256": "cb717bbe52f114d4af778ca187c4097de9ef36ac520c11b1bbbc816fa457e105",
+      "output_sha256": "cb717bbe52f114d4af778ca187c4097de9ef36ac520c11b1bbbc816fa457e105"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9063-seat0.json.gz",
+      "seat": 0,
+      "plans": 31,
+      "input_sha256": "d76ac9e10b1118db09df6e6ad804ce29213fe88dc3bd16394b2407817cf453f3",
+      "silver_output_sha256": "e49aeb9538d9a06e7446a2197f48da43c6af91dc20fdfc3583d0a48447ff3f36",
+      "output_sha256": "e49aeb9538d9a06e7446a2197f48da43c6af91dc20fdfc3583d0a48447ff3f36"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9063-seat0.json.gz",
+      "seat": 1,
+      "plans": 31,
+      "input_sha256": "beb3be15a441963add7f696e0bed09da3b1d198b04922ef6d23e6003be71df17",
+      "silver_output_sha256": "06f32913382d6ab0cb3aaa108fec53b1c6a98a1c95721480fe28ceb645a2bb37",
+      "output_sha256": "06f32913382d6ab0cb3aaa108fec53b1c6a98a1c95721480fe28ceb645a2bb37"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9068-seat0.json.gz",
+      "seat": 0,
+      "plans": 21,
+      "input_sha256": "b5fb4ea3f3836bfc88514d33398137dab609113d1a46d2a8419f095dc409fd58",
+      "silver_output_sha256": "ba1d51c2ef208d1532c100f78afaa10ed28b985e9341edec28936eb87aba388a",
+      "output_sha256": "ba1d51c2ef208d1532c100f78afaa10ed28b985e9341edec28936eb87aba388a"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9068-seat0.json.gz",
+      "seat": 1,
+      "plans": 21,
+      "input_sha256": "2c0df15bb0a82a9d9c36b65d3dd4c818b582355cd46d6f8e900da6bda3537724",
+      "silver_output_sha256": "a7029c4f605896ffa9ceaea8dbcf1ffdf92810988145db554bfd0afbfd0af802",
+      "output_sha256": "a7029c4f605896ffa9ceaea8dbcf1ffdf92810988145db554bfd0afbfd0af802"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9073-seat0.json.gz",
+      "seat": 0,
+      "plans": 23,
+      "input_sha256": "fe9348de916f3f505f7292f4e5efa5bdaffe94959ba5fb9126f7882dea935958",
+      "silver_output_sha256": "8434c3d1e88c390a516c11eabac7429df102886f9ad2e44c7a87dca977ee6d3d",
+      "output_sha256": "8434c3d1e88c390a516c11eabac7429df102886f9ad2e44c7a87dca977ee6d3d"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9073-seat0.json.gz",
+      "seat": 1,
+      "plans": 23,
+      "input_sha256": "73d38b87387749a6f3b0dbc7811a0c874c41f2af86f1bef807d9a474ba088110",
+      "silver_output_sha256": "5bd0ec724513d334944222818723377020ff61290c191665f4206c36db6921b0",
+      "output_sha256": "5bd0ec724513d334944222818723377020ff61290c191665f4206c36db6921b0"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9078-seat1.json.gz",
+      "seat": 0,
+      "plans": 22,
+      "input_sha256": "182b531d0983acbced9c58acd3ac37b741f3c326085050442978aecec5eb1acc",
+      "silver_output_sha256": "b5faef26ac28ff9faefa9c6dba0df9d95510a5ae74cb56f3534601fd64f17d72",
+      "output_sha256": "b5faef26ac28ff9faefa9c6dba0df9d95510a5ae74cb56f3534601fd64f17d72"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9078-seat1.json.gz",
+      "seat": 1,
+      "plans": 22,
+      "input_sha256": "ec0b35ae857da693b677cf3911e5e444aba90a7d9d581091f45eac3f13aa29f5",
+      "silver_output_sha256": "93f00bad1b5647bcc387a427a55f004edf1b7fda735fef9ac7656cb6934ef3e5",
+      "output_sha256": "93f00bad1b5647bcc387a427a55f004edf1b7fda735fef9ac7656cb6934ef3e5"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9083-seat1.json.gz",
+      "seat": 0,
+      "plans": 28,
+      "input_sha256": "5a9f5d0fd82f74b523e2b1243cb32baeb3a74ca4f3ba8645e1b4b15be1ca7aad",
+      "silver_output_sha256": "e77df063cc5126099ba14d770ab666ac500e2b48a087aeee8ba8ebd19c80e72d",
+      "output_sha256": "e77df063cc5126099ba14d770ab666ac500e2b48a087aeee8ba8ebd19c80e72d"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9083-seat1.json.gz",
+      "seat": 1,
+      "plans": 28,
+      "input_sha256": "b2cce123980084987374534e03ec9a1e38e0bc4252dfa4b8a5370e438d62e833",
+      "silver_output_sha256": "dafa721bcedb3daafe6f82ac9959c8005915731548c617fbb30e2c7a61c55db2",
+      "output_sha256": "dafa721bcedb3daafe6f82ac9959c8005915731548c617fbb30e2c7a61c55db2"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9088-seat1.json.gz",
+      "seat": 0,
+      "plans": 28,
+      "input_sha256": "785e3cc6b552db38c9e71191fe34a8f0c621b98fc522c8e1f48581f4e6dbc1d4",
+      "silver_output_sha256": "a3835f4c8b9ae98ca9fb78c497e114bb7f2631658e616bdae6aa10d59d207460",
+      "output_sha256": "a3835f4c8b9ae98ca9fb78c497e114bb7f2631658e616bdae6aa10d59d207460"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9088-seat1.json.gz",
+      "seat": 1,
+      "plans": 28,
+      "input_sha256": "01785f794c649190cd91a9f53ce3012f01f63989a0823a3d64a029c902885116",
+      "silver_output_sha256": "37c6d43f011031a03fd83a4308c3ffc6abb7d497f108054e1742873c9b054e93",
+      "output_sha256": "37c6d43f011031a03fd83a4308c3ffc6abb7d497f108054e1742873c9b054e93"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9093-seat1.json.gz",
+      "seat": 0,
+      "plans": 26,
+      "input_sha256": "40c80da5e11ef2a2ffdb0e367f69e05abb9b7c93500b9ddd080cf0205daef0a1",
+      "silver_output_sha256": "eab95393eeb2481524063ebb7a7e6f2adba8320743f4a0bb7b9746755569a44d",
+      "output_sha256": "eab95393eeb2481524063ebb7a7e6f2adba8320743f4a0bb7b9746755569a44d"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9093-seat1.json.gz",
+      "seat": 1,
+      "plans": 26,
+      "input_sha256": "5536bc0e4f40185c98fbbee99c7f0335026b653f78db64938095842b916a4833",
+      "silver_output_sha256": "aa33ee7097da50034435f41988e2200bff055dead23aa4cee643db5b50445e97",
+      "output_sha256": "aa33ee7097da50034435f41988e2200bff055dead23aa4cee643db5b50445e97"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9098-seat1.json.gz",
+      "seat": 0,
+      "plans": 41,
+      "input_sha256": "bfa58e1d0d8b6f3b5817e29fd7cb35a2a2f9e5d38686d6b61bb9c3026b2532d1",
+      "silver_output_sha256": "87c12937e8a28ddfa877677a7beb1bceafb3de55c1ca1f58d669580cdee0e346",
+      "output_sha256": "87c12937e8a28ddfa877677a7beb1bceafb3de55c1ca1f58d669580cdee0e346"
+    },
+    {
+      "replay": "ppo2-vs-lacoz-seed9098-seat1.json.gz",
+      "seat": 1,
+      "plans": 41,
+      "input_sha256": "eb0e7d1c2aef4b38585c55b358e4a7d5a468f7f78f99d4302edcbe988229eaa3",
+      "silver_output_sha256": "95a91abf20cd033b5529b1752af8e07565e7164db10fbc3f5232add401aa788f",
+      "output_sha256": "22aaccae2f73f2d4ceb7de1db3d0bccf5795bc35a57a800284c4f5bff4abd806"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9003-seat1.json.gz",
+      "seat": 0,
+      "plans": 32,
+      "input_sha256": "13ad672b3ddee5a6bf10cb8ff0fa7be54adb66aa338de44980aa9c5d03bb625d",
+      "silver_output_sha256": "a403255c9a3f344f60f310b2079690ef7786668bba62b2f1b1081394af45c24c",
+      "output_sha256": "a403255c9a3f344f60f310b2079690ef7786668bba62b2f1b1081394af45c24c"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9003-seat1.json.gz",
+      "seat": 1,
+      "plans": 32,
+      "input_sha256": "4e6459284f12b5fd1bbed9966ab1496fc8549bbffeaf902b3654b658e9c72a94",
+      "silver_output_sha256": "c6f6bb4fb3d8b1b10bb7c48f9eb33e862c8f574e03c9cf654b30c9a7332900a0",
+      "output_sha256": "c6f6bb4fb3d8b1b10bb7c48f9eb33e862c8f574e03c9cf654b30c9a7332900a0"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9008-seat1.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "fb22ccd6b0170dd3b0410d7696a1f2d56ce03f24177c89c443c4c9a4251c1617",
+      "silver_output_sha256": "8884c66729e35031e709efcec80c8f70b4bce0de1c3d24f1b23f7c801bf3236b",
+      "output_sha256": "8884c66729e35031e709efcec80c8f70b4bce0de1c3d24f1b23f7c801bf3236b"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9008-seat1.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "9e99fc35b719cec3128f4045c4b450f16f4f624771a32ec509df603c26774287",
+      "silver_output_sha256": "23bcefa4c373e77e22ae4674e90ee6bb207e3cce132dfa9b776dfd11abc68fbd",
+      "output_sha256": "23bcefa4c373e77e22ae4674e90ee6bb207e3cce132dfa9b776dfd11abc68fbd"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9013-seat1.json.gz",
+      "seat": 0,
+      "plans": 25,
+      "input_sha256": "423b3d84bd28059a1913713bdcb249723473192c439a142634105c289da60ad9",
+      "silver_output_sha256": "4aed379d028e8cdef99fc0312e9168f5cf5a6454f035e68c107a79e17355fc72",
+      "output_sha256": "4aed379d028e8cdef99fc0312e9168f5cf5a6454f035e68c107a79e17355fc72"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9013-seat1.json.gz",
+      "seat": 1,
+      "plans": 25,
+      "input_sha256": "ecdea8630f4425c9bcca863f4d783b5549457e08beedd72df9fdb255c9ca3983",
+      "silver_output_sha256": "bca5203924fcb440922b41b97faf926bece9175469a22ef5396981e1c70f12b8",
+      "output_sha256": "bca5203924fcb440922b41b97faf926bece9175469a22ef5396981e1c70f12b8"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9018-seat1.json.gz",
+      "seat": 0,
+      "plans": 37,
+      "input_sha256": "7b694d9ddf1ec3874abfedc9f1503f7db8bc43841c8cf3cef8895b7dec5583ec",
+      "silver_output_sha256": "25403ff75a447a95c536e657f509052922c2e7591d09c772daa8734f7a8f52be",
+      "output_sha256": "25403ff75a447a95c536e657f509052922c2e7591d09c772daa8734f7a8f52be"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9018-seat1.json.gz",
+      "seat": 1,
+      "plans": 37,
+      "input_sha256": "5becf1367fe47c6187982fc9651c58200cce68f5c8c9d4ae879da7fea5d73c65",
+      "silver_output_sha256": "a5f2ce2b141fe56d4274ca568007657551a40cf5f6ffee4542125c027b9dfb86",
+      "output_sha256": "a5f2ce2b141fe56d4274ca568007657551a40cf5f6ffee4542125c027b9dfb86"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9023-seat1.json.gz",
+      "seat": 0,
+      "plans": 20,
+      "input_sha256": "31110b46ad6740414a775732fafa555186ee7b0188eba049cf24c005d0035706",
+      "silver_output_sha256": "c741c3212f44d31c1e951d4faaabc21bce8b10c9b7b2f18fc61ea191737c0589",
+      "output_sha256": "c741c3212f44d31c1e951d4faaabc21bce8b10c9b7b2f18fc61ea191737c0589"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9023-seat1.json.gz",
+      "seat": 1,
+      "plans": 20,
+      "input_sha256": "d4fcd777e95b12b831a798468fca9097e761e5e1561667e9b2d08cf7362a4c46",
+      "silver_output_sha256": "653a7efd95e84849af87bb9fbb4fcbf6ac7845c702bb66dac6e659eda3c0151b",
+      "output_sha256": "653a7efd95e84849af87bb9fbb4fcbf6ac7845c702bb66dac6e659eda3c0151b"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9028-seat1.json.gz",
+      "seat": 0,
+      "plans": 26,
+      "input_sha256": "1c70681c6c3f65c9a4b42e43a080b4eed73f6dc98397293f1ac95dc6aed77cb9",
+      "silver_output_sha256": "834df8723284c8f1e19cbe1dca9eeb9ff99ef7b575ea3d2ee55d43d556d91e06",
+      "output_sha256": "834df8723284c8f1e19cbe1dca9eeb9ff99ef7b575ea3d2ee55d43d556d91e06"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9028-seat1.json.gz",
+      "seat": 1,
+      "plans": 26,
+      "input_sha256": "2c4e63a024e4968b1d6cb6d0941416dcda5ce834de5f49493eb1786f8e6c02df",
+      "silver_output_sha256": "e14a0de41180bfd87360bb7c30af3ea14f3ea3b164815862384eeeed442530f2",
+      "output_sha256": "e14a0de41180bfd87360bb7c30af3ea14f3ea3b164815862384eeeed442530f2"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9034-seat0.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "9b0331f4f3a0b9af0b6e5443e893353708933ffde99af421881330d8a32d962b",
+      "silver_output_sha256": "b52b3d4493affb2907957050c4a5b73ecf7f6ac48d6855b884a83d5662a82db6",
+      "output_sha256": "b52b3d4493affb2907957050c4a5b73ecf7f6ac48d6855b884a83d5662a82db6"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9034-seat0.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "35a019570233380592ea4e11d1c1f414cf467bcc6274b526301a13f553db03fd",
+      "silver_output_sha256": "669eab4af676c18cc039144252633a812c0e58b5c1c9bbd54c72766596ef143a",
+      "output_sha256": "669eab4af676c18cc039144252633a812c0e58b5c1c9bbd54c72766596ef143a"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9039-seat0.json.gz",
+      "seat": 0,
+      "plans": 30,
+      "input_sha256": "9d1cac534754f8835a21a303456eb818105d6a74bd3113a5057f538a49b389c6",
+      "silver_output_sha256": "573531a53ccafe8e33f1c15c74b81e150c7a926cb9a77ce66f17e232c745740d",
+      "output_sha256": "573531a53ccafe8e33f1c15c74b81e150c7a926cb9a77ce66f17e232c745740d"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9039-seat0.json.gz",
+      "seat": 1,
+      "plans": 30,
+      "input_sha256": "22a9aa596f645c39adc2fad0b965a942cd9ffdb1dc1f477423861a3ef90e9620",
+      "silver_output_sha256": "ea746d3bed894fd650ce23919f59f648721da48b4a87494495c15285b16192ea",
+      "output_sha256": "ea746d3bed894fd650ce23919f59f648721da48b4a87494495c15285b16192ea"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9044-seat0.json.gz",
+      "seat": 0,
+      "plans": 33,
+      "input_sha256": "a7fe7534d3d8216287985df92c592ffc5870d9d3071a4fa1fa5fc0be34fec66c",
+      "silver_output_sha256": "b66428a359fb594379b528afd15958e18475352fcf8c2e50533e03dffd70d0f5",
+      "output_sha256": "b66428a359fb594379b528afd15958e18475352fcf8c2e50533e03dffd70d0f5"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9044-seat0.json.gz",
+      "seat": 1,
+      "plans": 33,
+      "input_sha256": "3496e82d6132fe85636d6103981061d8915e27d1c2825b40cc18725d04eeeaf8",
+      "silver_output_sha256": "894212c10fd0c136ca6d4b9749438757c639135f81fb88b89fa3a5d51e9adf87",
+      "output_sha256": "894212c10fd0c136ca6d4b9749438757c639135f81fb88b89fa3a5d51e9adf87"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9049-seat0.json.gz",
+      "seat": 0,
+      "plans": 66,
+      "input_sha256": "333a6aa2a150af207bd3b587743ee38dff7ffac2a5d1395e95717e7ff3a8a545",
+      "silver_output_sha256": "f2fd25e1a25033e8d6836eaa47bdd8a9323a4112d1958288380528a0ea2a4f2a",
+      "output_sha256": "f2fd25e1a25033e8d6836eaa47bdd8a9323a4112d1958288380528a0ea2a4f2a"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9049-seat0.json.gz",
+      "seat": 1,
+      "plans": 66,
+      "input_sha256": "3984570f39e327abc8a8df1a16b186d9bec0ea4129d83ec624dd05cf59082cd6",
+      "silver_output_sha256": "2ae399624645200c51b7449e79c60bc37a3043f90757220d62914ea27badd985",
+      "output_sha256": "2ae399624645200c51b7449e79c60bc37a3043f90757220d62914ea27badd985"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9054-seat0.json.gz",
+      "seat": 0,
+      "plans": 42,
+      "input_sha256": "fad032f1c38a9d01264923310291d6acf1d7289d7dc0fc8eb50756aa0f5f2b28",
+      "silver_output_sha256": "eeac4624ee74661283364ade9009bf24b53077a7d67391283848d9c56490799e",
+      "output_sha256": "eeac4624ee74661283364ade9009bf24b53077a7d67391283848d9c56490799e"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9054-seat0.json.gz",
+      "seat": 1,
+      "plans": 42,
+      "input_sha256": "be19074611a9fd732c1f987914119889b28b3e3a8174d59cac3cf33c635dd022",
+      "silver_output_sha256": "ffecf314e0b3ffa6aa100ca64e4fb73ee1acd4b4309f1abaafac3022ebfe97be",
+      "output_sha256": "ffecf314e0b3ffa6aa100ca64e4fb73ee1acd4b4309f1abaafac3022ebfe97be"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9059-seat0.json.gz",
+      "seat": 0,
+      "plans": 26,
+      "input_sha256": "c21e2f18af28e2f1c3219432e8bdd322ae2aac4568239ce1db31c02c9537b356",
+      "silver_output_sha256": "7b992489539de2ff0e95697f3027923eec31a55c7219798e610e27c3c4825d9d",
+      "output_sha256": "7b992489539de2ff0e95697f3027923eec31a55c7219798e610e27c3c4825d9d"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9059-seat0.json.gz",
+      "seat": 1,
+      "plans": 26,
+      "input_sha256": "f6e4dd85b62aa4e6d63c46f82df30e2d1c3d778f44e9cb4e8f9cd4c724a16b66",
+      "silver_output_sha256": "0f922004e2bfbb341859c5ce30903593cf24c8ebeff2c33d3837674e2753cbae",
+      "output_sha256": "0f922004e2bfbb341859c5ce30903593cf24c8ebeff2c33d3837674e2753cbae"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9064-seat0.json.gz",
+      "seat": 0,
+      "plans": 31,
+      "input_sha256": "314f822aead51b6819355da9a2d1515fe37de6b07571172f895db603d068acde",
+      "silver_output_sha256": "de1efadae081a6952a1308b7f3a6c52e933735a598329fd1e8b44affc575363d",
+      "output_sha256": "de1efadae081a6952a1308b7f3a6c52e933735a598329fd1e8b44affc575363d"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9064-seat0.json.gz",
+      "seat": 1,
+      "plans": 31,
+      "input_sha256": "4e24e4a5d4a5fa5a07ddd98595abc4906e39c757f2b581155c7c1089db643433",
+      "silver_output_sha256": "227787d0b97eca6612a0183c36c7262e0cebe5b5ed0fef3f06b0aa5b5ef26c20",
+      "output_sha256": "227787d0b97eca6612a0183c36c7262e0cebe5b5ed0fef3f06b0aa5b5ef26c20"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9069-seat0.json.gz",
+      "seat": 0,
+      "plans": 23,
+      "input_sha256": "01a2ab98c0fc8f8b35a46e485f45281e1a327ccdb44d02d75cdef9dccce7ac79",
+      "silver_output_sha256": "4f4fcb27a6c38caa433909954bdfde1388dc29f26970ced673b8e27db4f04566",
+      "output_sha256": "4f4fcb27a6c38caa433909954bdfde1388dc29f26970ced673b8e27db4f04566"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9069-seat0.json.gz",
+      "seat": 1,
+      "plans": 23,
+      "input_sha256": "f3b65a3605020763511d10ce402f1d21d10ee98614a5ac65fee9175ad487d614",
+      "silver_output_sha256": "02dc83390a10e61147b7610f659d0007eddf27996da4062d3426ec8bb488299b",
+      "output_sha256": "02dc83390a10e61147b7610f659d0007eddf27996da4062d3426ec8bb488299b"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9074-seat0.json.gz",
+      "seat": 0,
+      "plans": 27,
+      "input_sha256": "5422f73efa13eae218672341445f521e8cc7ff15a58939295a8e4da12fe67454",
+      "silver_output_sha256": "e5791d9f6322f8a9b421e5c9afdfc86a58cab02cd5e4b415443adfbe79fbd4ac",
+      "output_sha256": "e5791d9f6322f8a9b421e5c9afdfc86a58cab02cd5e4b415443adfbe79fbd4ac"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9074-seat0.json.gz",
+      "seat": 1,
+      "plans": 27,
+      "input_sha256": "196aa576ddd2b158635c116a5dbf5b79dde95250b9301732a9157cf22f2f899f",
+      "silver_output_sha256": "8d4517e8ecf940cc32ce8d4b9d617d82b0e6e9bf5be0683e660fef304922a1b9",
+      "output_sha256": "8d4517e8ecf940cc32ce8d4b9d617d82b0e6e9bf5be0683e660fef304922a1b9"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9079-seat0.json.gz",
+      "seat": 0,
+      "plans": 23,
+      "input_sha256": "85091b6a694bd5f1bf2fbe13cea512fa55cb240b899cf0297158f8a32a621e55",
+      "silver_output_sha256": "7f766110851a3bac2f9b60e25ce2723a72302ac977ba4778924294bce3dbf622",
+      "output_sha256": "7f766110851a3bac2f9b60e25ce2723a72302ac977ba4778924294bce3dbf622"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9079-seat0.json.gz",
+      "seat": 1,
+      "plans": 23,
+      "input_sha256": "f93b9a0f458004141250d9cbfcf625cda4a6fd7fb4de36e590c53c9d7e54007e",
+      "silver_output_sha256": "c43b50bb99692a96c2c5642b820d734ce69e489dbfdae9959fdd461da0c7126d",
+      "output_sha256": "c43b50bb99692a96c2c5642b820d734ce69e489dbfdae9959fdd461da0c7126d"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9084-seat0.json.gz",
+      "seat": 0,
+      "plans": 34,
+      "input_sha256": "e8c5bd7078afcd530602a614c969b08a445ad43f749b1b64706b3733c8ba59b9",
+      "silver_output_sha256": "30aa739a102695e73147c33ecdbf92ba127ed13c992949b4577d7e6fe015cc65",
+      "output_sha256": "30aa739a102695e73147c33ecdbf92ba127ed13c992949b4577d7e6fe015cc65"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9084-seat0.json.gz",
+      "seat": 1,
+      "plans": 34,
+      "input_sha256": "c28a853f0e8aeb09d111fc45cd872b838c803163f8edd96cf678d3c9c51ae430",
+      "silver_output_sha256": "b83f87e98c0717a67be38e0d0228252b1b3f32dd1c751ff6830726252701ea4e",
+      "output_sha256": "b83f87e98c0717a67be38e0d0228252b1b3f32dd1c751ff6830726252701ea4e"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9089-seat1.json.gz",
+      "seat": 0,
+      "plans": 37,
+      "input_sha256": "2ff78f26c6c73a68721e9600355e9458a7035c5f19df0928b568bc9b8295abac",
+      "silver_output_sha256": "c20b05b51fe73bbcff43e4f87f848fe26168985243ad4f7c0c597ccbd7295922",
+      "output_sha256": "c20b05b51fe73bbcff43e4f87f848fe26168985243ad4f7c0c597ccbd7295922"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9089-seat1.json.gz",
+      "seat": 1,
+      "plans": 37,
+      "input_sha256": "4e2b20556ceb119ddff7c010440fd2cfba69d1c91300ad483636cfb689f09b15",
+      "silver_output_sha256": "37fe59c50920bc83449b80fdc22038a4cfe8b53568326822a3b335feb57f7126",
+      "output_sha256": "37fe59c50920bc83449b80fdc22038a4cfe8b53568326822a3b335feb57f7126"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9094-seat1.json.gz",
+      "seat": 0,
+      "plans": 30,
+      "input_sha256": "96f403f44d66e2df96e0400c9e398b335de5f4d79317418fb1bdea29fbfac9cf",
+      "silver_output_sha256": "46406342a42497760c7b36595101397530537b0a47ef98932d83307aa5252c6b",
+      "output_sha256": "46406342a42497760c7b36595101397530537b0a47ef98932d83307aa5252c6b"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9094-seat1.json.gz",
+      "seat": 1,
+      "plans": 30,
+      "input_sha256": "e00b82b3c6ac27cd5e6c009361b9d6aa67459a6417f32ca37cb4eed475a585a5",
+      "silver_output_sha256": "968a2480ed961138da69e2fcb7ff9b5995ef0eca2f5e6f17681b947048e22bdc",
+      "output_sha256": "968a2480ed961138da69e2fcb7ff9b5995ef0eca2f5e6f17681b947048e22bdc"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9099-seat1.json.gz",
+      "seat": 0,
+      "plans": 26,
+      "input_sha256": "0980552760ed8631c2b752a657b22ada75fdb7f2fccb500e3f402abf0a54945e",
+      "silver_output_sha256": "153f95463d6ee8de84c12793d910cf229a4c81ee4f49b54bd2095a29fd5e3488",
+      "output_sha256": "153f95463d6ee8de84c12793d910cf229a4c81ee4f49b54bd2095a29fd5e3488"
+    },
+    {
+      "replay": "ppo2-vs-ppo1-seed9099-seat1.json.gz",
+      "seat": 1,
+      "plans": 26,
+      "input_sha256": "73e15f49a693439de05fee61931cdc774e15797dd4f78b18955ebc30236cb276",
+      "silver_output_sha256": "37d1f018a383c3c5cf43a87859ac35dae044383749426af6f09057497088f342",
+      "output_sha256": "20ec2d6bfef2c0f8f5a0564d76d311be55c6c85f312ac98dbc75086c0a0f3b28"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9004-seat1.json.gz",
+      "seat": 0,
+      "plans": 16,
+      "input_sha256": "a31479b2d85075414b6f0254b9c7b2f1f10155b6a6877d5ecc2265a11c5c6b0d",
+      "silver_output_sha256": "1b21102d3e94576881d76ffecb432a4c4936a81c8c9fcc1f030c533050774489",
+      "output_sha256": "1b21102d3e94576881d76ffecb432a4c4936a81c8c9fcc1f030c533050774489"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9004-seat1.json.gz",
+      "seat": 1,
+      "plans": 16,
+      "input_sha256": "7b14068c3d234b9e3fa88725378bba8d5d9c3e214bd1c93ddb16f09540c4895d",
+      "silver_output_sha256": "c172eb8bb74a4c761a7605c2d7c7d5311753f3bfb36a7118cd912346d53ef170",
+      "output_sha256": "5e7fb51e71bfec43e4009bfa3faa0b6bf0fa273fa526a0343456af78d5e0b641"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9009-seat1.json.gz",
+      "seat": 0,
+      "plans": 20,
+      "input_sha256": "21315ca32650260501ffab235496507764877dd580c15a5dfac9ce66ec056329",
+      "silver_output_sha256": "7e21b573fcb410fd6ec065f3f2bd71abc4a5b6fcd4288d76e771e84855cd8a83",
+      "output_sha256": "7e21b573fcb410fd6ec065f3f2bd71abc4a5b6fcd4288d76e771e84855cd8a83"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9009-seat1.json.gz",
+      "seat": 1,
+      "plans": 20,
+      "input_sha256": "7a1be15d6f20f6685494de7a368de09afd0ef569970dd1d47838ddce122289fb",
+      "silver_output_sha256": "1e91c545dc62e81badf6a115b986d4e54c2bc8fb06fc36661b8ffb0406010c05",
+      "output_sha256": "1e91c545dc62e81badf6a115b986d4e54c2bc8fb06fc36661b8ffb0406010c05"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9014-seat1.json.gz",
+      "seat": 0,
+      "plans": 16,
+      "input_sha256": "e1133e9a0e1fe5e8b78b02e93610e447a32bdc4b8b58fc5c2b5dafbf88bfb019",
+      "silver_output_sha256": "b6449103cd2d83b19e8799fa36ed26be94e7a90ce6004ef38acb0242aba2ddf1",
+      "output_sha256": "b6449103cd2d83b19e8799fa36ed26be94e7a90ce6004ef38acb0242aba2ddf1"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9014-seat1.json.gz",
+      "seat": 1,
+      "plans": 16,
+      "input_sha256": "bd1805e0065bd1aff23d4ea772f0cea3646ea7fbaa3453bac3badf5525f16ff7",
+      "silver_output_sha256": "9ef2827c573fd80011f47d202e31b37b8efaf5a7e6e9766f05e3c265e40b1958",
+      "output_sha256": "9ef2827c573fd80011f47d202e31b37b8efaf5a7e6e9766f05e3c265e40b1958"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9019-seat1.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "15ace4b7b2b44de8cae01c42117bf518c239b3559b74a626039927c9caf63b73",
+      "silver_output_sha256": "203531171bc9dfe1db787c5b0b8676389cede2c55c716166ecc7145101d07beb",
+      "output_sha256": "203531171bc9dfe1db787c5b0b8676389cede2c55c716166ecc7145101d07beb"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9019-seat1.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "40381aebb321301395b1c89e30e1a69269fec300d178cdc7e0355c651ee8cf7a",
+      "silver_output_sha256": "ee3d75691c943e0acd180efb0dea5526f1dd2c774769e72868f8bfc23311e60d",
+      "output_sha256": "ee3d75691c943e0acd180efb0dea5526f1dd2c774769e72868f8bfc23311e60d"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9024-seat1.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "dd9cdd5d958414dc43f190b175c4241c09bb6a326922a96f0533e8f299f23588",
+      "silver_output_sha256": "d55abf5c4aaadd191957b45d8f0af171c64f36a58e231aaf7f215f7f89be76ba",
+      "output_sha256": "d55abf5c4aaadd191957b45d8f0af171c64f36a58e231aaf7f215f7f89be76ba"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9024-seat1.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "b47f5bb04c8a24643fcce29a00e68d33c21ba7035b5da78723d058afc814d153",
+      "silver_output_sha256": "631de8441aa38ca96d3fd673f295823ab92252fb57557e87ea1e80e0470f27d9",
+      "output_sha256": "631de8441aa38ca96d3fd673f295823ab92252fb57557e87ea1e80e0470f27d9"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9029-seat1.json.gz",
+      "seat": 0,
+      "plans": 23,
+      "input_sha256": "385c2f987095514396d8179ce485017c21087faca4c260403e197589c72cd83b",
+      "silver_output_sha256": "277a82d999f765d72e011e43137ab93486040b892c3cd5e8700fd4ba95c3418d",
+      "output_sha256": "277a82d999f765d72e011e43137ab93486040b892c3cd5e8700fd4ba95c3418d"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9029-seat1.json.gz",
+      "seat": 1,
+      "plans": 23,
+      "input_sha256": "fc580ffda4bce4a6a85ec77b4805abe2bfe73d832a82ce4ab7bb80c4aca84578",
+      "silver_output_sha256": "e74d36ddbe1d2ea3f27490fc1d864643bfccb074bfd8ba751b4a02db7f2194fa",
+      "output_sha256": "e74d36ddbe1d2ea3f27490fc1d864643bfccb074bfd8ba751b4a02db7f2194fa"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9034-seat1.json.gz",
+      "seat": 0,
+      "plans": 17,
+      "input_sha256": "bcb4f4b95b6c724855a622b704455630c62e38bd923194b434539960f70b7a95",
+      "silver_output_sha256": "9eb5d7c81a93ac579b0bb5a1b1ecadd23fc7b4abe9e014d4dd685ba6e6499232",
+      "output_sha256": "9eb5d7c81a93ac579b0bb5a1b1ecadd23fc7b4abe9e014d4dd685ba6e6499232"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9034-seat1.json.gz",
+      "seat": 1,
+      "plans": 17,
+      "input_sha256": "2f2cc558946ce8945a1116db9260f7358a80305e6cff8ccd35a88089298b123e",
+      "silver_output_sha256": "a1e59961461560e933b389f9c266b383924b3096ed5e4eff3f0dc00e78ec3c85",
+      "output_sha256": "a1e59961461560e933b389f9c266b383924b3096ed5e4eff3f0dc00e78ec3c85"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9039-seat1.json.gz",
+      "seat": 0,
+      "plans": 14,
+      "input_sha256": "cce69741a91e1b9e1da3dc381aacb9a995e20b4734e4c4a89f4e3372e97402d8",
+      "silver_output_sha256": "498bf84a7b55099a096b984919f0c2a39726647bd0959b72abf322b7129d625a",
+      "output_sha256": "498bf84a7b55099a096b984919f0c2a39726647bd0959b72abf322b7129d625a"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9039-seat1.json.gz",
+      "seat": 1,
+      "plans": 14,
+      "input_sha256": "b36a00ef8b373242bb0b5bd3dfceff7b7291639eba70f9e43fa812d82e38f219",
+      "silver_output_sha256": "f1250fa61f2046eb34726a03ca6e154f3ee237c9f50dc15b1e01f612f17f7084",
+      "output_sha256": "f1250fa61f2046eb34726a03ca6e154f3ee237c9f50dc15b1e01f612f17f7084"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9045-seat0.json.gz",
+      "seat": 0,
+      "plans": 23,
+      "input_sha256": "67d47ca8cd1adab7499d29ff4489a3171949b3d2f861262d0976e90bbc70ba4a",
+      "silver_output_sha256": "29bcd9abf2b7edc4ad70231d876e60572953465f54c61efb227429561b3f9790",
+      "output_sha256": "29bcd9abf2b7edc4ad70231d876e60572953465f54c61efb227429561b3f9790"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9045-seat0.json.gz",
+      "seat": 1,
+      "plans": 23,
+      "input_sha256": "6269d6ef1f6bcf3caf85a7b8e3143405702bf3149ec4361e8eedf02b8a9004fb",
+      "silver_output_sha256": "53645472b5a8b44760cef2cdfc4fadf92bbf15e8fdaf6f0f7ee82fd2ea043d75",
+      "output_sha256": "53645472b5a8b44760cef2cdfc4fadf92bbf15e8fdaf6f0f7ee82fd2ea043d75"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9050-seat0.json.gz",
+      "seat": 0,
+      "plans": 18,
+      "input_sha256": "dcc5f30aab1f6b4e1e6d4f0ec2f8e46c7d48cbe1b4a6e673765a7b6d895a8051",
+      "silver_output_sha256": "d21c251aedf54db70f402e40055292116c8c6adca6e22750cde05e1d5fab15fe",
+      "output_sha256": "d21c251aedf54db70f402e40055292116c8c6adca6e22750cde05e1d5fab15fe"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9050-seat0.json.gz",
+      "seat": 1,
+      "plans": 18,
+      "input_sha256": "e06471ec78cf4a6c09e7f0bd645d4d9c565f717f53cb53f7271e1119140db30b",
+      "silver_output_sha256": "a15c39900f6bcc97fb779e4f4f79ed759fd46a2b1a45bfe3d338afd9b21f33aa",
+      "output_sha256": "a15c39900f6bcc97fb779e4f4f79ed759fd46a2b1a45bfe3d338afd9b21f33aa"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9055-seat0.json.gz",
+      "seat": 0,
+      "plans": 27,
+      "input_sha256": "c30dfdd7ead5cee1858f76b97c72eed9c3fe04478529a9a051bf7d527494c665",
+      "silver_output_sha256": "1694a6e2f87ace25dd21e4c7a5324ac433466d892615b8eb718201ccbc3e5a38",
+      "output_sha256": "a51cc965d453630dd146582cc1c8eae2d5149d66a1016914523afe60dbd4c5d7"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9055-seat0.json.gz",
+      "seat": 1,
+      "plans": 27,
+      "input_sha256": "7354f8362943e6dd873f7b763de48634495d22f3351e66525f4e45c51ab6fbf3",
+      "silver_output_sha256": "2308494295ccbb747a1dc6c8ec7bbaa7fe06983b1bbd31dc7a9f0ec4b391cbba",
+      "output_sha256": "2308494295ccbb747a1dc6c8ec7bbaa7fe06983b1bbd31dc7a9f0ec4b391cbba"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9060-seat0.json.gz",
+      "seat": 0,
+      "plans": 16,
+      "input_sha256": "59fa0affec1b752a3fd04821a24422f1756a19bca2a152e18e506e9a917c4778",
+      "silver_output_sha256": "000eed995f1f9419a4d1cf9a4eb8b7c7437055320ab464f2b11e25f39d2fa64a",
+      "output_sha256": "000eed995f1f9419a4d1cf9a4eb8b7c7437055320ab464f2b11e25f39d2fa64a"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9060-seat0.json.gz",
+      "seat": 1,
+      "plans": 16,
+      "input_sha256": "93cba86f9bd47d0c43d6ed0b7679ce0e8c461b3e8e6c581eab4c9f1eff6bd8a3",
+      "silver_output_sha256": "8ddb3a3f7a3613026ee52a7654f099d2a7cef7f11eec39a3ea5742dea7400359",
+      "output_sha256": "8ddb3a3f7a3613026ee52a7654f099d2a7cef7f11eec39a3ea5742dea7400359"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9065-seat0.json.gz",
+      "seat": 0,
+      "plans": 16,
+      "input_sha256": "5afdb33120a9a92dcb508abed3f2ea731abeb71cfaef71124da594677b7d770f",
+      "silver_output_sha256": "f3193d967042478346ba047f6a85594b72bfea656130cac6139aff6971ab68a3",
+      "output_sha256": "f3193d967042478346ba047f6a85594b72bfea656130cac6139aff6971ab68a3"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9065-seat0.json.gz",
+      "seat": 1,
+      "plans": 16,
+      "input_sha256": "5a0d46edb9e187fff42a2faf0a74b0c9af33d48b6deb8df920a63ff438928e17",
+      "silver_output_sha256": "23fef49ad736aeb09d9f222fa75fe75b09fa7c05f94158c23fa06165c90f0dd0",
+      "output_sha256": "23fef49ad736aeb09d9f222fa75fe75b09fa7c05f94158c23fa06165c90f0dd0"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9070-seat0.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "a12175e71ac8b8180943a5ba54c33e83f075c74905db12078c0049432297a287",
+      "silver_output_sha256": "4c543eecb8ade7fdf7174d40be5ccc876d2964fabc6b3c3e905e4f6899a83c8d",
+      "output_sha256": "4c543eecb8ade7fdf7174d40be5ccc876d2964fabc6b3c3e905e4f6899a83c8d"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9070-seat0.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "564720ff22934d718ecd72023c0843f32310cd00e3473b77359db209d50bb0ea",
+      "silver_output_sha256": "a4780ae80b810bd09a975f45e6caf3f8135013c6594d8b59aacc0ac0105eaa65",
+      "output_sha256": "a4780ae80b810bd09a975f45e6caf3f8135013c6594d8b59aacc0ac0105eaa65"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9075-seat0.json.gz",
+      "seat": 0,
+      "plans": 24,
+      "input_sha256": "8a5407b2d1c63896f5a2241b2e38ae480f6667b338ca94085ff2f50a016ef7c0",
+      "silver_output_sha256": "fcbe2b72919d814436c14edfa8d62e820aa2c6c3b009f6fb965e601b05e36911",
+      "output_sha256": "898be03d3a658e06ebeeca48026556aa5c318f4a179b57da5d4b65acdee36d11"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9075-seat0.json.gz",
+      "seat": 1,
+      "plans": 24,
+      "input_sha256": "a7e83692ace7784ca351ee7eb4f60e75b55fb734684cc041e426eab2619bb01b",
+      "silver_output_sha256": "6bd0e10c817f9bd49deaed8936801381664f75bf5cf50506f325e7c81be9c9b4",
+      "output_sha256": "6bd0e10c817f9bd49deaed8936801381664f75bf5cf50506f325e7c81be9c9b4"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9080-seat0.json.gz",
+      "seat": 0,
+      "plans": 21,
+      "input_sha256": "336ba05b99b049f6c506c5ad9643994a8437ea7968578b3ab5a4d0559cf123b4",
+      "silver_output_sha256": "2bff3f6852c614708fb8bac93b52adda6ccdc85fe8fa89541c79264eba12b5db",
+      "output_sha256": "2bff3f6852c614708fb8bac93b52adda6ccdc85fe8fa89541c79264eba12b5db"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9080-seat0.json.gz",
+      "seat": 1,
+      "plans": 21,
+      "input_sha256": "3d6a3e88a255175a176c704a7de043e94fb01543752549c18270e47886fc9dae",
+      "silver_output_sha256": "3bbe2d15c3e99d42ee200430fe9668f69588095c59fa5463ed35c83900ae86cd",
+      "output_sha256": "3bbe2d15c3e99d42ee200430fe9668f69588095c59fa5463ed35c83900ae86cd"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9085-seat0.json.gz",
+      "seat": 0,
+      "plans": 46,
+      "input_sha256": "638cef694eb7310898680fbf6b65aa95b313e5f9d9ff6549ea7f8e68b527b940",
+      "silver_output_sha256": "bfa0fc5a5825708bb3c016bf8d69a17c184becd8dd08c4646708e7eecf0c9a53",
+      "output_sha256": "bfa0fc5a5825708bb3c016bf8d69a17c184becd8dd08c4646708e7eecf0c9a53"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9085-seat0.json.gz",
+      "seat": 1,
+      "plans": 46,
+      "input_sha256": "20f468cab2683ad49cd8e9047c8015a10f19291c8f9b5a08a91d3c99718a5b41",
+      "silver_output_sha256": "f2d8147e6907405cc7708320cf612fbc98cf49db9d4cd2af8ee39a668db463dd",
+      "output_sha256": "f2d8147e6907405cc7708320cf612fbc98cf49db9d4cd2af8ee39a668db463dd"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9090-seat0.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "873c33ad4782abeb366faa44892857dbd56d08dad007482f551cfa7acce5440a",
+      "silver_output_sha256": "4f2f3618430d20d49b6be5b7de7839c04a8fca8746146043b9f93b5af03477d2",
+      "output_sha256": "24a2e1193ecbab32b07f95eddc947ead615ed0d5a4ac96b58d0a235ac7ec9c44"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9090-seat0.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "70a10596d2bb13755d3b9e2c33f36c4d77351bcde09bac5ad48b566543dc3d61",
+      "silver_output_sha256": "1049ccc9c30060a47e671b3243ac10b2e0150bec293c59bf5104f0f65698ab8b",
+      "output_sha256": "1049ccc9c30060a47e671b3243ac10b2e0150bec293c59bf5104f0f65698ab8b"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9095-seat0.json.gz",
+      "seat": 0,
+      "plans": 19,
+      "input_sha256": "4a8728e1c7db0276f40096f731a156be66f1bb0e0147a285aeb399d315c2004d",
+      "silver_output_sha256": "f5ff0c36536e3adfcf58a635737d452fc07c7b25a4c719a3c1e3a878a63ebf0e",
+      "output_sha256": "f5ff0c36536e3adfcf58a635737d452fc07c7b25a4c719a3c1e3a878a63ebf0e"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9095-seat0.json.gz",
+      "seat": 1,
+      "plans": 19,
+      "input_sha256": "c2790b3af517dbc1a07047d68d8d96458029e055c2ec90e8016d562a673b105e",
+      "silver_output_sha256": "75ebdad6f9b8b9fa543b42949995f065fce4cc1e24173dcc6a4c065a69b0544c",
+      "output_sha256": "75ebdad6f9b8b9fa543b42949995f065fce4cc1e24173dcc6a4c065a69b0544c"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9100-seat1.json.gz",
+      "seat": 0,
+      "plans": 15,
+      "input_sha256": "43c7f530a05294a81f9089aa7b8b3481a9e01493d92a4a79c42d9da7440fcc6d",
+      "silver_output_sha256": "366c3933812d1a901b1c7e7654096774a3bf85aed0eae9b0c240416e399bd8b4",
+      "output_sha256": "366c3933812d1a901b1c7e7654096774a3bf85aed0eae9b0c240416e399bd8b4"
+    },
+    {
+      "replay": "ppo2-vs-v6-seed9100-seat1.json.gz",
+      "seat": 1,
+      "plans": 15,
+      "input_sha256": "2223444fbdc0b27beff62062ed9024751fa493eeb7dbdad857c944f7a86cfa55",
+      "silver_output_sha256": "3a527a7395b1b954cac9b1da20a952e6b252ee1dce4d1881fd82a9db00310b21",
+      "output_sha256": "3a527a7395b1b954cac9b1da20a952e6b252ee1dce4d1881fd82a9db00310b21"
+    }
+  ]
+}

@@ -8,6 +8,8 @@ I work on this project through **Codex**. **Codex created this repository and ma
 
 ## RL research branch
 
+**Live result: 340/937 overall, Gold league**, after ranking completed at 2026-11-07 08:01 UTC. Active bot: PPO v2 league3m. The snapshot includes 52 wins / 40 losses in 92 Gold games, with no own technical failures. [Deployment report and full evidence](experiments/rl/2026-11-06-live-ppo-v2/REPORT.md). This is an ongoing-contest snapshot.
+
 The selected local RL bot is **PPO v2, league3m**, a 24,833-parameter network initialized from frozen PPO v1 and trained for 3,002,173 additional controlled-player decisions. The larger campaign compared four training arms: **10.63M additional decisions / 218,880 games / 6.00 summed training hours** on the MacBook CPU, with $0 external compute spend. [Selected policy and run command](code/rl/configs/selected-policy.json) · [Full PPO v2 report](experiments/rl/2026-11-06-ppo-v2/REPORT.md) · [Implementation](docs/rl/LEAGUE.md).
 
 On **100 new maps, both seats**, after freezing the winner:
@@ -21,7 +23,7 @@ On **100 new maps, both seats**, after freezing the winner:
 
 PPO v1 also drew twice against BC. The paired score gain against Lacoz is **+32.5 percentage points**, with a 95% map-clustered interval of **+22.5 to +42.5**. Direct PPO v2–PPO v1: **155/200 wins**. All 1,800 final games were clean; all 49,424 full states / 47,624 transitions matched original Java. v6 performance is essentially unchanged, and the BC difference is inconclusive. This is one fine-tuning seed, with checkpoint selection completed before the final maps were opened.
 
-[BC report](experiments/rl/2026-11-06-bc-v1/REPORT.md) and [PPO v1 report](experiments/rl/2026-11-06-ppo-v1/REPORT.md) retain the earlier controls. The main baseline below remains v6. The RL deployment is currently a local executable plus a weight file; contest-side packaging has not been validated.
+[BC report](experiments/rl/2026-11-06-bc-v1/REPORT.md) and [PPO v1 report](experiments/rl/2026-11-06-ppo-v1/REPORT.md) retain the earlier controls. The main baseline below remains v6. PPO v2 is now packaged as a single C++17 file and submitted to the live contest. See the [deployment guide](docs/rl/DEPLOYMENT.md) and [platform report](experiments/rl/2026-11-06-live-ppo-v2/REPORT.md) for the exact source, timing fix and ranking snapshot.
 
 ## Current baseline
 
@@ -34,7 +36,7 @@ The selected baseline is **v6-attack**, using ATTACK/MOVE/SPAWN/WAIT. Prepared c
 
 The khoufou gain is **+8.75 percentage points**, with a paired 95% interval of **+5.25 to +12.75 points**. No gain was observed against Lacoz. Neither candidate had errors or timeouts. Two Lacoz timeouts produced technical wins for v6; those pairs are excluded from the table and retained in the records. [Full report and decision](experiments/2026-11-06-attack-holdout/REPORT.md).
 
-v6 is stronger against the frozen khoufou but still far behind Lacoz. These are local measurements, not contest rankings. No contest submission has been made from this repository.
+v6 is stronger against the frozen khoufou but still far behind Lacoz. These are local measurements, not contest rankings. PPO v2 has a separate live contest submission, recorded above.
 
 ## Development history and next direction
 

@@ -1,0 +1,6444 @@
+{
+  "as_of": "2026-11-07T08:01:44.836487+00:00",
+  "provenance": "SOURCE_VERIFIED",
+  "source": "CodinGame public API; saved complete responses in this directory",
+  "accepted_source_sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+  "accepted_source_matches_package": true,
+  "verified_submissions": [
+    {
+      "submission_id": 41657621,
+      "sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1"
+    },
+    {
+      "submission_id": 41657553,
+      "sha256": "9661fb35d0a1f5bce24adab62ba5337377ef835ab5c4a66b3ea1a4971bffd35a"
+    },
+    {
+      "submission_id": 41657474,
+      "sha256": "0bef13d51647127e2fcdb8faa17d28f3d635fdee1ba9b126b238d68757554c02"
+    }
+  ],
+  "ranked_logs_by_agent": {
+    "6858019": {
+      "games": 2,
+      "games_with_errors": 2,
+      "games_with_warnings": 1
+    },
+    "6858046": {
+      "games": 61,
+      "games_with_errors": 0,
+      "games_with_warnings": 0
+    },
+    "6858071": {
+      "games": 92,
+      "games_with_errors": 0,
+      "games_with_warnings": 0
+    }
+  },
+  "tests": [
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-bronze-boss-120001.json",
+      "game_id": 917923620,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Baron Bosswell",
+          "agent_id": 6838062
+        }
+      ],
+      "scores": [
+        28.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 188,
+        "SPAWN": 28
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 21058
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-bronze-top-120002.json",
+      "game_id": 917923873,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "B4LBU",
+          "agent_id": 6839684,
+          "rank": 831
+        }
+      ],
+      "scores": [
+        35.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 179,
+        "SPAWN": 35
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 22220
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-self-120003.json",
+      "game_id": 917925818,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        75.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0,
+        1
+      ],
+      "warnings": [
+        {
+          "frame": 53,
+          "seat": 1,
+          "message": "Command not available in your league: ATTACK 0 18 29 4"
+        },
+        {
+          "frame": 53,
+          "seat": 1,
+          "message": "Command not available in your league: ATTACK 10 20 40 4"
+        }
+      ],
+      "errors": [],
+      "commands": {
+        "MOVE": 898,
+        "SPAWN": 87,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8725
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-silver-boss-120004.json",
+      "game_id": 917926903,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        102.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 623,
+        "SPAWN": 91,
+        "ATTACK": 7
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 10864
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-timeout-replay.json",
+      "game_id": 917925603,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Captainseb",
+          "agent_id": 6844184,
+          "rank": 834
+        }
+      ],
+      "scores": [
+        73.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 278,
+        "SPAWN": 65
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 13842
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-gold-full-leader-120005.json",
+      "game_id": 917930646,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "DomiKo",
+          "agent_id": 6855982,
+          "rank": 1
+        }
+      ],
+      "scores": [
+        -1.0,
+        44.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 71,
+        "SPAWN": 8
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1244
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-gold-full-mid-120006.json",
+      "game_id": 917930771,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "ViktorCs",
+          "agent_id": 6849383,
+          "rank": 202
+        }
+      ],
+      "scores": [
+        -1.0,
+        458.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 320,
+        "SPAWN": 16
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2522
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-self-120003.json",
+      "game_id": 917923951,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        75.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0,
+        1
+      ],
+      "warnings": [
+        {
+          "frame": 53,
+          "seat": 1,
+          "message": "Command not available in your league: ATTACK 0 18 29 4"
+        },
+        {
+          "frame": 53,
+          "seat": 1,
+          "message": "Command not available in your league: ATTACK 10 20 40 4"
+        }
+      ],
+      "errors": [],
+      "commands": {
+        "MOVE": 898,
+        "SPAWN": 87,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 55258
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-silver-profile-boss-120004.json",
+      "game_id": 917927605,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        93.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 523,
+        "SPAWN": 86,
+        "ATTACK": 7
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6661
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/test-timeout-replay.json",
+      "game_id": 917925139,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Captainseb",
+          "agent_id": 6844184,
+          "rank": 834
+        }
+      ],
+      "scores": [
+        73.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 278,
+        "SPAWN": 65
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 64797
+    }
+  ],
+  "inspected_battles": [
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917924447.json.gz",
+      "game_id": 917924447,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858019,
+          "rank": 831,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Captainseb",
+          "agent_id": 6844184,
+          "rank": 834
+        }
+      ],
+      "scores": [
+        -1.0,
+        5.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [
+        {
+          "frame": 45,
+          "seat": 0,
+          "message": "timeout"
+        },
+        {
+          "frame": 45,
+          "text": "$0 timeout!"
+        }
+      ],
+      "commands": {
+        "MOVE": 160,
+        "SPAWN": 37
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 40286
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917926175.json.gz",
+      "game_id": 917926175,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Captainseb",
+          "agent_id": 6844184,
+          "rank": 834
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858019,
+          "me": true
+        }
+      ],
+      "scores": [
+        9.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [
+        {
+          "frame": 46,
+          "seat": 1,
+          "message": "Command not available in your league: ATTACK 0 3 21 37"
+        },
+        {
+          "frame": 46,
+          "seat": 1,
+          "message": "Command not available in your league: ATTACK 3 30 42 37"
+        }
+      ],
+      "errors": [
+        {
+          "frame": 50,
+          "seat": 1,
+          "message": "timeout"
+        },
+        {
+          "frame": 50,
+          "text": "$1 timeout!"
+        }
+      ],
+      "commands": {
+        "SPAWN": 56,
+        "MOVE": 228,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 64431
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927810.json.gz",
+      "game_id": 917927810,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Khoufou",
+          "agent_id": 6855948,
+          "rank": 515
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        48.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 434,
+        "SPAWN": 46,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3594
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927811.json.gz",
+      "game_id": 917927811,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Myrtille44",
+          "agent_id": 6855911,
+          "rank": 523
+        }
+      ],
+      "scores": [
+        58.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 465,
+        "SPAWN": 57,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4808
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927812.json.gz",
+      "game_id": 917927812,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 497,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Konstant",
+          "agent_id": 6848847,
+          "rank": 577
+        }
+      ],
+      "scores": [
+        -1.0,
+        171.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 433,
+        "WAIT": 2,
+        "SPAWN": 12,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1922
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927813.json.gz",
+      "game_id": 917927813,
+      "agents": [
+        {
+          "index": 0,
+          "name": "mluczynski",
+          "agent_id": 6850663,
+          "rank": 607
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        67.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 451,
+        "SPAWN": 64,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5882
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927814.json.gz",
+      "game_id": 917927814,
+      "agents": [
+        {
+          "index": 0,
+          "name": "conioon",
+          "agent_id": 6842888,
+          "rank": 649
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        52.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 436,
+        "SPAWN": 52
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3398
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927815.json.gz",
+      "game_id": 917927815,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "elderlybeginner",
+          "agent_id": 6857244,
+          "rank": 662
+        }
+      ],
+      "scores": [
+        61.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 488,
+        "SPAWN": 60,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5722
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927816.json.gz",
+      "game_id": 917927816,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "OccitanieFreelancer",
+          "agent_id": 6853772,
+          "rank": 720
+        }
+      ],
+      "scores": [
+        49.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 342,
+        "SPAWN": 49
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3922
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927817.json.gz",
+      "game_id": 917927817,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "sayankhanmidnapore",
+          "agent_id": 6847547,
+          "rank": 757
+        }
+      ],
+      "scores": [
+        53.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 390,
+        "SPAWN": 52
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4805
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927818.json.gz",
+      "game_id": 917927818,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "63ch222",
+          "agent_id": 6845691,
+          "rank": 770
+        }
+      ],
+      "scores": [
+        59.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 299,
+        "SPAWN": 59
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 10894
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927819.json.gz",
+      "game_id": 917927819,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "ChtiSeb",
+          "agent_id": 6855415,
+          "rank": 823
+        }
+      ],
+      "scores": [
+        42.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 252,
+        "SPAWN": 42
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4126
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927876.json.gz",
+      "game_id": 917927876,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Zabym",
+          "agent_id": 6845237,
+          "rank": 583
+        }
+      ],
+      "scores": [
+        41.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 229,
+        "SPAWN": 41
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4478
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927914.json.gz",
+      "game_id": 917927914,
+      "agents": [
+        {
+          "index": 0,
+          "name": "trictrac",
+          "agent_id": 6856756,
+          "rank": 580
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        46.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 401,
+        "SPAWN": 46
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2942
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917927953.json.gz",
+      "game_id": 917927953,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "tobk",
+          "agent_id": 6852297,
+          "rank": 562
+        }
+      ],
+      "scores": [
+        75.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 429,
+        "SPAWN": 73,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6221
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928022.json.gz",
+      "game_id": 917928022,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "NicolasB1",
+          "agent_id": 6844277,
+          "rank": 561
+        }
+      ],
+      "scores": [
+        53.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 353,
+        "SPAWN": 52,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4489
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928086.json.gz",
+      "game_id": 917928086,
+      "agents": [
+        {
+          "index": 0,
+          "name": "SangHeonLee",
+          "agent_id": 6855707,
+          "rank": 535
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        146.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 836,
+        "SPAWN": 103,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 12566
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928138.json.gz",
+      "game_id": 917928138,
+      "agents": [
+        {
+          "index": 0,
+          "name": "zundamon",
+          "agent_id": 6848612,
+          "rank": 530
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        57.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 445,
+        "SPAWN": 56,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3810
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928184.json.gz",
+      "game_id": 917928184,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "xenonsuraj",
+          "agent_id": 6845341,
+          "rank": 521
+        }
+      ],
+      "scores": [
+        73.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 566,
+        "SPAWN": 71
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9644
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928227.json.gz",
+      "game_id": 917928227,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "bneay",
+          "agent_id": 6857900,
+          "rank": 512
+        }
+      ],
+      "scores": [
+        56.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 680,
+        "SPAWN": 55,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3720
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928310.json.gz",
+      "game_id": 917928310,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Flyns_2",
+          "agent_id": 6838986,
+          "rank": 491
+        }
+      ],
+      "scores": [
+        92.0,
+        1259.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 2791,
+        "SPAWN": 79,
+        "ATTACK": 13
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3845
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928469.json.gz",
+      "game_id": 917928469,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Entropical",
+          "agent_id": 6857500,
+          "rank": 505
+        }
+      ],
+      "scores": [
+        64.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 813,
+        "SPAWN": 64
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6832
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928560.json.gz",
+      "game_id": 917928560,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lanfeust",
+          "agent_id": 6855362,
+          "rank": 488
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        52.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 518,
+        "SPAWN": 52
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3949
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928643.json.gz",
+      "game_id": 917928643,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "LiliaBekrar",
+          "agent_id": 6845630,
+          "rank": 492
+        }
+      ],
+      "scores": [
+        68.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 778,
+        "SPAWN": 66,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4724
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928794.json.gz",
+      "game_id": 917928794,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Flyns_2",
+          "agent_id": 6838986,
+          "rank": 491
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        89.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1033,
+        "SPAWN": 72,
+        "ATTACK": 6
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 33384
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928878.json.gz",
+      "game_id": 917928878,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "benedictdavon",
+          "agent_id": 6847601,
+          "rank": 489
+        }
+      ],
+      "scores": [
+        -1.0,
+        88.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 143,
+        "SPAWN": 17
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3392
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928913.json.gz",
+      "game_id": 917928913,
+      "agents": [
+        {
+          "index": 0,
+          "name": "LMF023",
+          "agent_id": 6842810,
+          "rank": 490
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        37.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 442,
+        "SPAWN": 37
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2805
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917928931.json.gz",
+      "game_id": 917928931,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "PaulBarte",
+          "agent_id": 6850008,
+          "rank": 494
+        }
+      ],
+      "scores": [
+        88.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 984,
+        "SPAWN": 86,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5982
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929011.json.gz",
+      "game_id": 917929011,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "_Raccoon",
+          "agent_id": 6855650,
+          "rank": 486
+        }
+      ],
+      "scores": [
+        74.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 454,
+        "SPAWN": 72,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6637
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929039.json.gz",
+      "game_id": 917929039,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        53.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 242,
+        "SPAWN": 15,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2580
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929078.json.gz",
+      "game_id": 917929078,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "benedictdavon",
+          "agent_id": 6847601,
+          "rank": 489
+        }
+      ],
+      "scores": [
+        85.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 611,
+        "SPAWN": 82,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8500
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929084.json.gz",
+      "game_id": 917929084,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 498
+        }
+      ],
+      "scores": [
+        71.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 395,
+        "SPAWN": 67,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6653
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929130.json.gz",
+      "game_id": 917929130,
+      "agents": [
+        {
+          "index": 0,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 498
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        58.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 409,
+        "SPAWN": 48,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4365
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929152.json.gz",
+      "game_id": 917929152,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "benedictdavon",
+          "agent_id": 6847601,
+          "rank": 490
+        }
+      ],
+      "scores": [
+        59.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 473,
+        "SPAWN": 59
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4089
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929201.json.gz",
+      "game_id": 917929201,
+      "agents": [
+        {
+          "index": 0,
+          "name": "benedictdavon",
+          "agent_id": 6847601,
+          "rank": 490
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        63.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 429,
+        "SPAWN": 60,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3409
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929245.json.gz",
+      "game_id": 917929245,
+      "agents": [
+        {
+          "index": 0,
+          "name": "_Raccoon",
+          "agent_id": 6855650,
+          "rank": 486
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        74.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 454,
+        "SPAWN": 72,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5083
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929278.json.gz",
+      "game_id": 917929278,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "3rgo",
+          "agent_id": 6857096,
+          "rank": 487
+        }
+      ],
+      "scores": [
+        77.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 544,
+        "SPAWN": 75,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6976
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929333.json.gz",
+      "game_id": 917929333,
+      "agents": [
+        {
+          "index": 0,
+          "name": "_Raccoon",
+          "agent_id": 6855650,
+          "rank": 486
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        36.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 113,
+        "SPAWN": 35,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5559
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929362.json.gz",
+      "game_id": 917929362,
+      "agents": [
+        {
+          "index": 0,
+          "name": "_Raccoon",
+          "agent_id": 6855650,
+          "rank": 486
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        66.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 667,
+        "SPAWN": 61,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3485
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929404.json.gz",
+      "game_id": 917929404,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        67.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 615,
+        "SPAWN": 65,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5706
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929426.json.gz",
+      "game_id": 917929426,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        -1.0,
+        156.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1072,
+        "SPAWN": 85,
+        "ATTACK": 13
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7154
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929470.json.gz",
+      "game_id": 917929470,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        67.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 531,
+        "SPAWN": 64,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4202
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929537.json.gz",
+      "game_id": 917929537,
+      "agents": [
+        {
+          "index": 0,
+          "name": "_Raccoon",
+          "agent_id": 6855650,
+          "rank": 487
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        78.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 433,
+        "SPAWN": 75,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6497
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929573.json.gz",
+      "game_id": 917929573,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        84.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 732,
+        "SPAWN": 75,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5238
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929615.json.gz",
+      "game_id": 917929615,
+      "agents": [
+        {
+          "index": 0,
+          "name": "LiliaBekrar",
+          "agent_id": 6845630,
+          "rank": 493
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        45.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 538,
+        "SPAWN": 44,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3181
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929653.json.gz",
+      "game_id": 917929653,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lanfeust",
+          "agent_id": 6855362,
+          "rank": 489
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        81.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 446,
+        "SPAWN": 79,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6569
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929679.json.gz",
+      "game_id": 917929679,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lanfeust",
+          "agent_id": 6855362,
+          "rank": 489
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        78.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 881,
+        "SPAWN": 69,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4343
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929713.json.gz",
+      "game_id": 917929713,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 486
+        }
+      ],
+      "scores": [
+        103.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 523,
+        "SPAWN": 87,
+        "ATTACK": 8
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9412
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929745.json.gz",
+      "game_id": 917929745,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        90.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 577,
+        "SPAWN": 86,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8124
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929762.json.gz",
+      "game_id": 917929762,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        73.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 350,
+        "SPAWN": 71,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8188
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929788.json.gz",
+      "game_id": 917929788,
+      "agents": [
+        {
+          "index": 0,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 486
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        27.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 184,
+        "SPAWN": 26,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2142
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929806.json.gz",
+      "game_id": 917929806,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        }
+      ],
+      "scores": [
+        90.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 694,
+        "SPAWN": 85,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7068
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929847.json.gz",
+      "game_id": 917929847,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 486
+        }
+      ],
+      "scores": [
+        88.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 688,
+        "SPAWN": 78,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6548
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929867.json.gz",
+      "game_id": 917929867,
+      "agents": [
+        {
+          "index": 0,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 486
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        78.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 389,
+        "SPAWN": 74,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7830
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929883.json.gz",
+      "game_id": 917929883,
+      "agents": [
+        {
+          "index": 0,
+          "name": "_Raccoon",
+          "agent_id": 6855650,
+          "rank": 487
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        42.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 389,
+        "SPAWN": 41,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2906
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929921.json.gz",
+      "game_id": 917929921,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "rank": 485,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 486
+        }
+      ],
+      "scores": [
+        49.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 462,
+        "SPAWN": 49
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3526
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917929991.json.gz",
+      "game_id": 917929991,
+      "agents": [
+        {
+          "index": 0,
+          "name": "3rgo",
+          "agent_id": 6857096,
+          "rank": 486
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        }
+      ],
+      "scores": [
+        413.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 757,
+        "SPAWN": 41,
+        "ATTACK": 9
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3985
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930042.json.gz",
+      "game_id": 917930042,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 487
+        }
+      ],
+      "scores": [
+        -1.0,
+        116.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 93,
+        "SPAWN": 9
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2223
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930071.json.gz",
+      "game_id": 917930071,
+      "agents": [
+        {
+          "index": 0,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 487
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        89.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 664,
+        "SPAWN": 85,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7893
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930087.json.gz",
+      "game_id": 917930087,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CyberEcho",
+          "agent_id": 6858047,
+          "rank": 487
+        }
+      ],
+      "scores": [
+        74.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 616,
+        "SPAWN": 70,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6178
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930120.json.gz",
+      "game_id": 917930120,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lanfeust",
+          "agent_id": 6855362,
+          "rank": 489
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        74.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 493,
+        "SPAWN": 69,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5665
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930144.json.gz",
+      "game_id": 917930144,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lanfeust",
+          "agent_id": 6855362,
+          "rank": 489
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        44.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 297,
+        "SPAWN": 42,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3205
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930172.json.gz",
+      "game_id": 917930172,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lord Bossington",
+          "agent_id": 6849199
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858046,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        71.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 744,
+        "SPAWN": 66,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3207
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930976.json.gz",
+      "game_id": 917930976,
+      "agents": [
+        {
+          "index": 0,
+          "name": "mech_39",
+          "agent_id": 6857430,
+          "rank": 14
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        77.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 156,
+        "SPAWN": 21
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3256
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930978.json.gz",
+      "game_id": 917930978,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "fenrir",
+          "agent_id": 6849265,
+          "rank": 60
+        }
+      ],
+      "scores": [
+        -1.0,
+        40.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 88,
+        "SPAWN": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1341
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930979.json.gz",
+      "game_id": 917930979,
+      "agents": [
+        {
+          "index": 0,
+          "name": "blasterpoard",
+          "agent_id": 6856863,
+          "rank": 124
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        86.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 267,
+        "SPAWN": 27
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4403
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930980.json.gz",
+      "game_id": 917930980,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Linvg",
+          "agent_id": 6857891,
+          "rank": 163
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        65.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 188,
+        "SPAWN": 19
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2363
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930982.json.gz",
+      "game_id": 917930982,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "fnsyacoub",
+          "agent_id": 6853990,
+          "rank": 239
+        }
+      ],
+      "scores": [
+        -1.0,
+        46.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 212,
+        "SPAWN": 15
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2066
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930983.json.gz",
+      "game_id": 917930983,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "egaetan",
+          "agent_id": 6857792,
+          "rank": 284
+        }
+      ],
+      "scores": [
+        -1.0,
+        61.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 368,
+        "SPAWN": 20
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2190
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930984.json.gz",
+      "game_id": 917930984,
+      "agents": [
+        {
+          "index": 0,
+          "name": "LuckyDuke",
+          "agent_id": 6857596,
+          "rank": 313
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        122.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 673,
+        "SPAWN": 55
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5204
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930985.json.gz",
+      "game_id": 917930985,
+      "agents": [
+        {
+          "index": 0,
+          "name": "anonymousping",
+          "agent_id": 6855141,
+          "rank": 367
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        71.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 897,
+        "SPAWN": 69,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4803
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930986.json.gz",
+      "game_id": 917930986,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Liebie",
+          "agent_id": 6853835,
+          "rank": 405
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        62.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 615,
+        "SPAWN": 61,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4644
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917930987.json.gz",
+      "game_id": 917930987,
+      "agents": [
+        {
+          "index": 0,
+          "name": "rodry05",
+          "agent_id": 6857182,
+          "rank": 457
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        56.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 432,
+        "SPAWN": 56
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6629
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931066.json.gz",
+      "game_id": 917931066,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "WeiCao",
+          "agent_id": 6857970,
+          "rank": 436
+        }
+      ],
+      "scores": [
+        67.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 523,
+        "SPAWN": 67
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9368
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931161.json.gz",
+      "game_id": 917931161,
+      "agents": [
+        {
+          "index": 0,
+          "name": "torquemada-ubs",
+          "agent_id": 6856420,
+          "rank": 432
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        73.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 598,
+        "SPAWN": 62,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7620
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931206.json.gz",
+      "game_id": 917931206,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Tojo_Randria",
+          "agent_id": 6856020,
+          "rank": 413
+        }
+      ],
+      "scores": [
+        -1.0,
+        81.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 91,
+        "SPAWN": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1959
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931288.json.gz",
+      "game_id": 917931288,
+      "agents": [
+        {
+          "index": 0,
+          "name": "0xProto",
+          "agent_id": 6849573,
+          "rank": 438
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        74.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 511,
+        "SPAWN": 70,
+        "ATTACK": 2,
+        "ADD_PATH": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 18926
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931392.json.gz",
+      "game_id": 917931392,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Biglover",
+          "agent_id": 6851159,
+          "rank": 423
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        69.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 422,
+        "SPAWN": 64
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9388
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931483.json.gz",
+      "game_id": 917931483,
+      "agents": [
+        {
+          "index": 0,
+          "name": "_proton",
+          "agent_id": 6857653,
+          "rank": 418
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        196.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 74
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 639
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931521.json.gz",
+      "game_id": 917931521,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "PhOeNyX",
+          "agent_id": 6854339,
+          "rank": 422
+        }
+      ],
+      "scores": [
+        58.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 635,
+        "SPAWN": 52,
+        "ATTACK": 4,
+        "ADD_PATH": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4842
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931560.json.gz",
+      "game_id": 917931560,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Biglover",
+          "agent_id": 6851159,
+          "rank": 423
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        74.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 813,
+        "SPAWN": 70,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5987
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931605.json.gz",
+      "game_id": 917931605,
+      "agents": [
+        {
+          "index": 0,
+          "name": "aLeX",
+          "agent_id": 6849522,
+          "rank": 397
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        82.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 875,
+        "SPAWN": 81,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7311
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931649.json.gz",
+      "game_id": 917931649,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Tecnokinema",
+          "agent_id": 6849555,
+          "rank": 390
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        65.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 456,
+        "SPAWN": 64,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4959
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931700.json.gz",
+      "game_id": 917931700,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lite0812",
+          "agent_id": 6851299,
+          "rank": 394
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        54.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 291,
+        "SPAWN": 54
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6394
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931761.json.gz",
+      "game_id": 917931761,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "skotz",
+          "agent_id": 6857793,
+          "rank": 388
+        }
+      ],
+      "scores": [
+        107.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1037,
+        "SPAWN": 103,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 11802
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931835.json.gz",
+      "game_id": 917931835,
+      "agents": [
+        {
+          "index": 0,
+          "name": "mYRR",
+          "agent_id": 6855775,
+          "rank": 375
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        }
+      ],
+      "scores": [
+        68.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 246,
+        "SPAWN": 20
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2280
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931876.json.gz",
+      "game_id": 917931876,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 387,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "0x6E0FF",
+          "agent_id": 6857220,
+          "rank": 383
+        }
+      ],
+      "scores": [
+        80.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 611,
+        "SPAWN": 80
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8089
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931931.json.gz",
+      "game_id": 917931931,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "minioim",
+          "agent_id": 6856697,
+          "rank": 368
+        }
+      ],
+      "scores": [
+        -1.0,
+        73.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 432,
+        "SPAWN": 32,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4585
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917931975.json.gz",
+      "game_id": 917931975,
+      "agents": [
+        {
+          "index": 0,
+          "name": "metwesse",
+          "agent_id": 6849514,
+          "rank": 384
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        61.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 117,
+        "SPAWN": 6
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1237
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932006.json.gz",
+      "game_id": 917932006,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Risen",
+          "agent_id": 6857300
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        93.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1046,
+        "SPAWN": 89,
+        "ATTACK": 3,
+        "ADD_PATH": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9770
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932038.json.gz",
+      "game_id": 917932038,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Risen",
+          "agent_id": 6857300
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        169.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 462,
+        "SPAWN": 18
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2725
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932090.json.gz",
+      "game_id": 917932090,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "skotz",
+          "agent_id": 6857793,
+          "rank": 387
+        }
+      ],
+      "scores": [
+        -1.0,
+        106.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 473,
+        "SPAWN": 24
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3962
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932295.json.gz",
+      "game_id": 917932295,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Masteryon",
+          "agent_id": 6849538,
+          "rank": 390
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        }
+      ],
+      "scores": [
+        74.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 574,
+        "SPAWN": 29
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3502
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932379.json.gz",
+      "game_id": 917932379,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Julien_E",
+          "agent_id": 6852762,
+          "rank": 401
+        }
+      ],
+      "scores": [
+        67.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 646,
+        "SPAWN": 66,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6245
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932572.json.gz",
+      "game_id": 917932572,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Lite0812",
+          "agent_id": 6851299,
+          "rank": 397
+        }
+      ],
+      "scores": [
+        82.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 990,
+        "SPAWN": 80,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7888
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932699.json.gz",
+      "game_id": 917932699,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 345,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "WackyWabbit",
+          "agent_id": 6849529,
+          "rank": 392
+        }
+      ],
+      "scores": [
+        97.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 592,
+        "SPAWN": 83
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 11360
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932762.json.gz",
+      "game_id": 917932762,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Risen",
+          "agent_id": 6857300
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        60.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 757,
+        "SPAWN": 57,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4405
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932803.json.gz",
+      "game_id": 917932803,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Reblochon",
+          "agent_id": 6854288,
+          "rank": 389
+        }
+      ],
+      "scores": [
+        66.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 478,
+        "SPAWN": 63,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5655
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932862.json.gz",
+      "game_id": 917932862,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "metwesse",
+          "agent_id": 6849514,
+          "rank": 385
+        }
+      ],
+      "scores": [
+        94.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 599,
+        "SPAWN": 82,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9311
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917932981.json.gz",
+      "game_id": 917932981,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Iori_",
+          "agent_id": 6849500,
+          "rank": 365
+        }
+      ],
+      "scores": [
+        -1.0,
+        185.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 673,
+        "SPAWN": 45,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3964
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933045.json.gz",
+      "game_id": 917933045,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "minioim",
+          "agent_id": 6856697,
+          "rank": 369
+        }
+      ],
+      "scores": [
+        100.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1611,
+        "SPAWN": 93,
+        "ATTACK": 6
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5608
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933137.json.gz",
+      "game_id": 917933137,
+      "agents": [
+        {
+          "index": 0,
+          "name": "emn54",
+          "agent_id": 6851177,
+          "rank": 368
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        48.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 77,
+        "SPAWN": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1013
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933156.json.gz",
+      "game_id": 917933156,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Keiras",
+          "agent_id": 6857400,
+          "rank": 374
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        124.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 795,
+        "SPAWN": 106,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 12238
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933257.json.gz",
+      "game_id": 917933257,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lv0Sys",
+          "agent_id": 6850784,
+          "rank": 376
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        89.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 222,
+        "SPAWN": 9
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1556
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933311.json.gz",
+      "game_id": 917933311,
+      "agents": [
+        {
+          "index": 0,
+          "name": "TheCodeWitcher",
+          "agent_id": 6854617,
+          "rank": 379
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        114.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 342,
+        "SPAWN": 30,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3360
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933378.json.gz",
+      "game_id": 917933378,
+      "agents": [
+        {
+          "index": 0,
+          "name": "WarriorOne",
+          "agent_id": 6849526,
+          "rank": 382
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        77.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 564,
+        "SPAWN": 73,
+        "ADD_PATH": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8314
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933426.json.gz",
+      "game_id": 917933426,
+      "agents": [
+        {
+          "index": 0,
+          "name": "antoine.bonamy",
+          "agent_id": 6850137,
+          "rank": 372
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        63.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 656,
+        "SPAWN": 63
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5374
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933488.json.gz",
+      "game_id": 917933488,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Skyloro",
+          "agent_id": 6850909,
+          "rank": 364
+        }
+      ],
+      "scores": [
+        -1.0,
+        316.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 408,
+        "SPAWN": 18,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2011
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933548.json.gz",
+      "game_id": 917933548,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "AndreasHuber",
+          "agent_id": 6856770,
+          "rank": 378
+        }
+      ],
+      "scores": [
+        64.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 726,
+        "SPAWN": 59,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3839
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933630.json.gz",
+      "game_id": 917933630,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Iori_",
+          "agent_id": 6849500,
+          "rank": 365
+        }
+      ],
+      "scores": [
+        -1.0,
+        132.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 473,
+        "SPAWN": 29,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3733
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933739.json.gz",
+      "game_id": 917933739,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Ranzer01",
+          "agent_id": 6858085,
+          "rank": 337
+        }
+      ],
+      "scores": [
+        -1.0,
+        71.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 318,
+        "SPAWN": 28
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3594
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933898.json.gz",
+      "game_id": 917933898,
+      "agents": [
+        {
+          "index": 0,
+          "name": "mYRR",
+          "agent_id": 6855775,
+          "rank": 377
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        50.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 392,
+        "SPAWN": 50
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4572
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917933944.json.gz",
+      "game_id": 917933944,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Keiras",
+          "agent_id": 6857400,
+          "rank": 374
+        }
+      ],
+      "scores": [
+        89.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1005,
+        "SPAWN": 84,
+        "ATTACK": 3,
+        "ADD_PATH": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5093
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934031.json.gz",
+      "game_id": 917934031,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lv0Sys",
+          "agent_id": 6850784,
+          "rank": 376
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        48.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 204,
+        "SPAWN": 47,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7338
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934067.json.gz",
+      "game_id": 917934067,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "ShidoADR",
+          "agent_id": 6858098
+        }
+      ],
+      "scores": [
+        -1.0,
+        38.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 253,
+        "SPAWN": 21
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2778
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934109.json.gz",
+      "game_id": 917934109,
+      "agents": [
+        {
+          "index": 0,
+          "name": "antoine.bonamy",
+          "agent_id": 6850137,
+          "rank": 372
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 348,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        90.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 947,
+        "SPAWN": 88,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7023
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934186.json.gz",
+      "game_id": 917934186,
+      "agents": [
+        {
+          "index": 0,
+          "name": "LENAIC",
+          "agent_id": 6856983,
+          "rank": 367
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        93.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 554,
+        "SPAWN": 87,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 14691
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934233.json.gz",
+      "game_id": 917934233,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Edds",
+          "agent_id": 6857647,
+          "rank": 361
+        }
+      ],
+      "scores": [
+        80.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 991,
+        "SPAWN": 77,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4537
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934346.json.gz",
+      "game_id": 917934346,
+      "agents": [
+        {
+          "index": 0,
+          "name": "ByLoo",
+          "agent_id": 6849486,
+          "rank": 353
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        266.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 638,
+        "SPAWN": 41,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4089
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934392.json.gz",
+      "game_id": 917934392,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "mattsoh",
+          "agent_id": 6849519,
+          "rank": 359
+        }
+      ],
+      "scores": [
+        -1.0,
+        82.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 412,
+        "SPAWN": 33
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3638
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934464.json.gz",
+      "game_id": 917934464,
+      "agents": [
+        {
+          "index": 0,
+          "name": "anonymousping",
+          "agent_id": 6855141,
+          "rank": 372
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        100.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 941,
+        "SPAWN": 95,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 10039
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934482.json.gz",
+      "game_id": 917934482,
+      "agents": [
+        {
+          "index": 0,
+          "name": "ShidoADR",
+          "agent_id": 6858098
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        95.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 551,
+        "SPAWN": 78,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 11788
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934597.json.gz",
+      "game_id": 917934597,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Aliyyiakbar",
+          "agent_id": 6852674,
+          "rank": 355
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        125.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 278,
+        "SPAWN": 28,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2858
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934658.json.gz",
+      "game_id": 917934658,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Mglhs",
+          "agent_id": 6853679,
+          "rank": 358
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        48.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 166,
+        "SPAWN": 11
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1660
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934712.json.gz",
+      "game_id": 917934712,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Eulero314",
+          "agent_id": 6849504,
+          "rank": 362
+        }
+      ],
+      "scores": [
+        92.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 604,
+        "SPAWN": 84,
+        "ADD_PATH": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 12169
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934745.json.gz",
+      "game_id": 917934745,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Eulero314",
+          "agent_id": 6849504,
+          "rank": 362
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        84.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 636,
+        "SPAWN": 78,
+        "ADD_PATH": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8863
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934790.json.gz",
+      "game_id": 917934790,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Mglhs",
+          "agent_id": 6853679,
+          "rank": 358
+        }
+      ],
+      "scores": [
+        -1.0,
+        519.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 281,
+        "SPAWN": 26
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3400
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934832.json.gz",
+      "game_id": 917934832,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Difriasus",
+          "agent_id": 6849492,
+          "rank": 356
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        63.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 477,
+        "SPAWN": 62,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5076
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934880.json.gz",
+      "game_id": 917934880,
+      "agents": [
+        {
+          "index": 0,
+          "name": "ByLoo",
+          "agent_id": 6849486,
+          "rank": 353
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        49.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 406,
+        "SPAWN": 49
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6532
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917934991.json.gz",
+      "game_id": 917934991,
+      "agents": [
+        {
+          "index": 0,
+          "name": "kvasanova",
+          "agent_id": 6857053,
+          "rank": 346
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        40.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 95,
+        "SPAWN": 7
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1612
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935045.json.gz",
+      "game_id": 917935045,
+      "agents": [
+        {
+          "index": 0,
+          "name": "gragatrim",
+          "agent_id": 6857589,
+          "rank": 354
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        43.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 60,
+        "SPAWN": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 674
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935132.json.gz",
+      "game_id": 917935132,
+      "agents": [
+        {
+          "index": 0,
+          "name": "ShidoADR",
+          "agent_id": 6858098
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        72.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 196,
+        "SPAWN": 24,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4749
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935242.json.gz",
+      "game_id": 917935242,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "gragatrim",
+          "agent_id": 6857589,
+          "rank": 354
+        }
+      ],
+      "scores": [
+        -1.0,
+        55.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 324,
+        "SPAWN": 21
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2321
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935366.json.gz",
+      "game_id": 917935366,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Difriasus",
+          "agent_id": 6849492,
+          "rank": 356
+        }
+      ],
+      "scores": [
+        118.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1074,
+        "SPAWN": 109,
+        "ATTACK": 7,
+        "ADD_PATH": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9740
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935470.json.gz",
+      "game_id": 917935470,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Skyloro",
+          "agent_id": 6850909,
+          "rank": 365
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        66.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 589,
+        "SPAWN": 65,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5159
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935513.json.gz",
+      "game_id": 917935513,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 350,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Di_Masta",
+          "agent_id": 6851620,
+          "rank": 351
+        }
+      ],
+      "scores": [
+        64.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 494,
+        "SPAWN": 58,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5151
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935545.json.gz",
+      "game_id": 917935545,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Difriasus",
+          "agent_id": 6849492,
+          "rank": 354
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        87.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 957,
+        "SPAWN": 83,
+        "ATTACK": 3,
+        "ADD_PATH": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 8276
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935678.json.gz",
+      "game_id": 917935678,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Metamong",
+          "agent_id": 6854406,
+          "rank": 343
+        }
+      ],
+      "scores": [
+        -1.0,
+        508.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 114,
+        "SPAWN": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1908
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935754.json.gz",
+      "game_id": 917935754,
+      "agents": [
+        {
+          "index": 0,
+          "name": "ByLoo",
+          "agent_id": 6849486,
+          "rank": 350
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        48.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 520,
+        "SPAWN": 47
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4537
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917935863.json.gz",
+      "game_id": 917935863,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Lyapunov",
+          "agent_id": 6857541,
+          "rank": 348
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        63.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 803,
+        "SPAWN": 62,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6109
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936048.json.gz",
+      "game_id": 917936048,
+      "agents": [
+        {
+          "index": 0,
+          "name": "adrianoh99",
+          "agent_id": 6857569,
+          "rank": 349
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        62.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 420,
+        "SPAWN": 25
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1903
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936116.json.gz",
+      "game_id": 917936116,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 338,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "gragatrim",
+          "agent_id": 6857589,
+          "rank": 352
+        }
+      ],
+      "scores": [
+        78.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 888,
+        "SPAWN": 76,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 6251
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936274.json.gz",
+      "game_id": 917936274,
+      "agents": [
+        {
+          "index": 0,
+          "name": "kvasanova",
+          "agent_id": 6857053,
+          "rank": 344
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        95.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "SPAWN": 89,
+        "MOVE": 723,
+        "ATTACK": 5
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 9094
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936343.json.gz",
+      "game_id": 917936343,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "adrianoh99",
+          "agent_id": 6857569,
+          "rank": 349
+        }
+      ],
+      "scores": [
+        59.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 507,
+        "SPAWN": 58,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4330
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936448.json.gz",
+      "game_id": 917936448,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "sensei__",
+          "agent_id": 6849479,
+          "rank": 327
+        }
+      ],
+      "scores": [
+        -1.0,
+        78.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 222,
+        "SPAWN": 23
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 3931
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936576.json.gz",
+      "game_id": 917936576,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "NoobTactix",
+          "agent_id": 6852406,
+          "rank": 336
+        }
+      ],
+      "scores": [
+        81.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 606,
+        "SPAWN": 77,
+        "ATTACK": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 7609
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936629.json.gz",
+      "game_id": 917936629,
+      "agents": [
+        {
+          "index": 0,
+          "name": "colegu",
+          "agent_id": 6851334,
+          "rank": 335
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        61.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1240,
+        "SPAWN": 60,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 4535
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936751.json.gz",
+      "game_id": 917936751,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "NoobTactix",
+          "agent_id": 6852406,
+          "rank": 336
+        }
+      ],
+      "scores": [
+        77.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 707,
+        "SPAWN": 74,
+        "ATTACK": 3
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5745
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936819.json.gz",
+      "game_id": 917936819,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Denman",
+          "agent_id": 6856608,
+          "rank": 332
+        }
+      ],
+      "scores": [
+        -1.0,
+        129.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 91,
+        "SPAWN": 4
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 1643
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917936891.json.gz",
+      "game_id": 917936891,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Denman",
+          "agent_id": 6856608,
+          "rank": 332
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        229.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 300,
+        "SPAWN": 21
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2595
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917937060.json.gz",
+      "game_id": 917937060,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "CapLord",
+          "agent_id": 6854671,
+          "rank": 337
+        }
+      ],
+      "scores": [
+        -1.0,
+        73.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 231,
+        "SPAWN": 16
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2261
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917937167.json.gz",
+      "game_id": 917937167,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "adrianoh99",
+          "agent_id": 6857569,
+          "rank": 349
+        }
+      ],
+      "scores": [
+        81.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 1044,
+        "SPAWN": 79,
+        "ATTACK": 2
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5642
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917937260.json.gz",
+      "game_id": 917937260,
+      "agents": [
+        {
+          "index": 0,
+          "name": "elsek",
+          "agent_id": 6853381,
+          "rank": 334
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        159.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 123,
+        "SPAWN": 11
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 2346
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917937305.json.gz",
+      "game_id": 917937305,
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Ranzer01",
+          "agent_id": 6858085,
+          "rank": 321
+        }
+      ],
+      "scores": [
+        -1.0,
+        94.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        0
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "MOVE": 324,
+        "SPAWN": 28
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5726
+    },
+    {
+      "file": "experiments/rl/2026-11-06-live-ppo-v2/games/917937355.json.gz",
+      "game_id": 917937355,
+      "agents": [
+        {
+          "index": 0,
+          "name": "kvasanova",
+          "agent_id": 6857053,
+          "rank": 346
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": 6858071,
+          "rank": 341,
+          "me": true
+        }
+      ],
+      "scores": [
+        -1.0,
+        66.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "own_seats": [
+        1
+      ],
+      "warnings": [],
+      "errors": [],
+      "commands": {
+        "SPAWN": 64,
+        "MOVE": 563,
+        "ATTACK": 1
+      },
+      "fail_cause": null,
+      "measured_plan_us_max": 5960
+    }
+  ],
+  "test_own_warnings": 4,
+  "test_own_errors": 0,
+  "battle_own_warnings": 2,
+  "battle_own_errors": 4,
+  "battle_games_with_own_errors": 2,
+  "battle_games_with_own_warnings": 1
+}

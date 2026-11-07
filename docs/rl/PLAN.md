@@ -1,6 +1,6 @@
 # RL implementation and evaluation plan
 
-As of **2026-11-06**. Research branch: `rl/research`. **Native simulation, BC, PPO self-play and a larger PPO league campaign are implemented**. The selected [PPO v2 model](../../code/rl/configs/selected-policy.json) passed the [1,800-game fresh confirmation](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md), with a +32.5-point Lacoz improvement over PPO v1. The campaign trained 10.63M additional decisions across four arms; one 3.002M checkpoint was selected before confirmation. Main remains v6. Search, Q-learning, independent training-seed replication and contest packaging remain future work. Older thresholds, shared-encoder ideas and budgets below remain proposals; the actual protocols and reports take precedence for completed experiments.
+As of **2026-11-06**. Research branch: `rl/research`. **Native simulation, BC, PPO self-play and a larger PPO league campaign are implemented**. The selected [PPO v2 model](../../code/rl/configs/selected-policy.json) passed the [1,800-game fresh confirmation](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md), with a +32.5-point Lacoz improvement over PPO v1. The campaign trained 10.63M additional decisions across four arms; one 3.002M checkpoint was selected before confirmation. Main remains v6. Single-file packaging and live submission are implemented; see the [deployment report](../../experiments/rl/2026-11-06-live-ppo-v2/REPORT.md). Search, Q-learning and independent training-seed replication remain future work. Older thresholds, shared-encoder ideas and budgets below remain proposals; the actual protocols and reports take precedence for completed experiments.
 
 ## First deliverable
 
@@ -10,7 +10,7 @@ Recommended sequence: simulator/representation → BC → bounded PPO → option
 
 ## Repository layout
 
-The directories below define the staged layout. Simulator, data, BC, PPO, a training-only critic, native export and evaluation are implemented. Search and single-file submission packaging remain unimplemented.
+The directories below define the staged layout. Simulator, data, BC, PPO, a training-only critic, native export and evaluation are implemented. Single-file packaging is implemented; search remains unimplemented.
 
 | Location | Purpose |
 |---|---|

@@ -1,0 +1,579 @@
+{
+  "test_game_id": 917927605,
+  "status": "done",
+  "poll_url": "/api/v1/test-games/917927605",
+  "log": {
+    "game_id": 917927605,
+    "game_options": "seed=120004\nunits=0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,1_1,0_0,0_0,0_0,1_1,0_0,0_0,0_0,0_0,0_0,0_0,0_1,0_0,1_0,0_0,0_0,0_0,0_0,0_0,0\nedges=0,4_0,10_0,30_0,40_1,5_1,11_1,31_1,41_2,6_2,9_2,11_2,19_2,28_2,29_3,7_3,8_3,10_3,18_3,28_3,29_4,8_4,24_4,30_4,40_5,9_5,25_5,31_5,41_6,11_6,19_6,21_7,10_7,18_7,20_8,10_8,19_8,24_8,28_8,40_9,11_9,18_9,25_9,29_9,41_10,40_11,41_12,25_12,27_12,31_12,34_13,24_13,26_13,30_13,35_14,21_14,33_14,39_15,20_15,32_15,38_16,23_16,34_16,38_17,22_17,35_17,39_18,25_18,32_18,37_19,24_19,33_19,36_20,32_20,38_21,33_21,39_22,39_23,38_24,30_24,33_25,31_25,32_26,30_26,35_27,31_27,34_28,29_32,34_32,37_33,35_33,36\nnodes=1475,868_444,91_952,259_967,700_1361,679_558,280_1047,136_872,823_1213,651_706,308_1122,831_797,128_261,356_1658,603_1548,218_371,741_232,724_1687,235_702,630_1217,329_491,858_1428,101_1806,310_113,649_1501,555_418,404_1818,783_101,176_1063,428_856,531_1641,770_278,189_488,615_1431,344_139,507_1780,452_1238,163_681,796_155,852_1764,107_1304,808_615,151",
+    "agents": [
+      {
+        "index": 0,
+        "name": "Ruslans",
+        "agent_id": -1,
+        "me": true
+      },
+      {
+        "index": 1,
+        "name": "Lord Bossington",
+        "agent_id": 6849199
+      }
+    ],
+    "frames": [
+      {
+        "frame": 0
+      },
+      {
+        "frame": 1,
+        "agent": 0,
+        "stderr": "turn=1 units=3 triangles=0 plan_us=422",
+        "stdout": "MOVE 23 16 1;MOVE 27 12 1;MOVE 34 27 1"
+      },
+      {
+        "frame": 2,
+        "agent": 1,
+        "stdout": "MOVE 22 17 1;MOVE 26 13 1;MOVE 35 26 1"
+      },
+      {
+        "frame": 3,
+        "agent": 0,
+        "stderr": "turn=2 units=3 triangles=0 plan_us=352",
+        "stdout": "MOVE 16 34 1"
+      },
+      {
+        "frame": 4,
+        "agent": 1,
+        "stdout": "MOVE 17 35 1;MOVE 26 30 1"
+      },
+      {
+        "frame": 5,
+        "agent": 0,
+        "summary": "$0 captured 1 triangle\n$1 captured 2 triangles"
+      },
+      {
+        "frame": 6,
+        "agent": 0,
+        "stderr": "turn=3 units=3 triangles=1 plan_us=612",
+        "stdout": "SPAWN 12 27 34;MOVE 12 31 1;MOVE 27 31 1;MOVE 34 27 1"
+      },
+      {
+        "frame": 7,
+        "agent": 1,
+        "stdout": "MOVE 13 30 1;MOVE 30 24 1;MOVE 35 13 1;SPAWN 13 26 30;SPAWN 13 26 35"
+      },
+      {
+        "frame": 8,
+        "agent": 0,
+        "summary": "$0 spawned 1 unit\n$1 spawned 2 units"
+      },
+      {
+        "frame": 9,
+        "agent": 0,
+        "summary": "$0 captured 1 triangle\n$1 captured 1 triangle"
+      },
+      {
+        "frame": 10,
+        "agent": 0,
+        "stderr": "turn=4 units=4 triangles=1 plan_us=764",
+        "stdout": "SPAWN 31 12 27;MOVE 12 25 1;MOVE 27 12 1;MOVE 31 5 1;MOVE 31 1 1"
+      },
+      {
+        "frame": 11,
+        "agent": 1,
+        "stdout": "MOVE 13 24 2;MOVE 13 30 1;MOVE 24 4 1;MOVE 30 0 1;SPAWN 13 24 30"
+      },
+      {
+        "frame": 12,
+        "agent": 0,
+        "summary": "$0 spawned 1 unit\n$1 spawned 1 unit"
+      },
+      {
+        "frame": 13,
+        "agent": 0,
+        "summary": "$0 captured 3 triangles\n$1 captured 2 triangles"
+      },
+      {
+        "frame": 14,
+        "agent": 0,
+        "stderr": "turn=5 units=5 triangles=3 plan_us=1401",
+        "stdout": "SPAWN 5 1 31;SPAWN 25 5 31;SPAWN 25 12 31;MOVE 1 41 1;MOVE 5 9 1;MOVE 12 25 1;MOVE 25 18 1;MOVE 31 1 1"
+      },
+      {
+        "frame": 15,
+        "agent": 1,
+        "stdout": "MOVE 0 10 1;MOVE 13 24 1;MOVE 24 19 1;MOVE 24 8 1;MOVE 30 0 1;SPAWN 0 4 30;SPAWN 4 24 30"
+      },
+      {
+        "frame": 16,
+        "agent": 0,
+        "summary": "$0 spawned 3 units\n$1 spawned 2 units"
+      },
+      {
+        "frame": 17,
+        "agent": 0,
+        "summary": "$0 captured 4 triangles\n$1 captured 6 triangles"
+      },
+      {
+        "frame": 18,
+        "agent": 0,
+        "stderr": "turn=6 units=8 triangles=4 plan_us=1972",
+        "stdout": "SPAWN 41 1 5;SPAWN 9 5 25;SPAWN 9 5 41;SPAWN 18 9 25;MOVE 1 11 1;MOVE 5 1 1;MOVE 9 2 1;MOVE 18 32 1;MOVE 25 32 1;MOVE 25 18 1;MOVE 41 11 1"
+      },
+      {
+        "frame": 19,
+        "agent": 1,
+        "stdout": "MOVE 0 10 1;MOVE 0 4 1;MOVE 4 8 1;MOVE 4 24 1;MOVE 8 3 1;MOVE 10 7 1;MOVE 24 33 1;SPAWN 0 4 40;SPAWN 0 10 40;SPAWN 4 8 24;SPAWN 4 8 40;SPAWN 8 10 40;SPAWN 8 19 24"
+      },
+      {
+        "frame": 20,
+        "agent": 0,
+        "summary": "$0 spawned 4 units\n$1 spawned 6 units"
+      },
+      {
+        "frame": 21,
+        "agent": 0,
+        "summary": "$0 captured 5 triangles\n$1 captured 4 triangles"
+      },
+      {
+        "frame": 22,
+        "agent": 0,
+        "stderr": "turn=7 units=12 triangles=5 plan_us=2502",
+        "stdout": "SPAWN 11 1 41;SPAWN 2 9 11;SPAWN 9 11 41;SPAWN 18 25 32;SPAWN 18 32 37;MOVE 1 11 1;MOVE 2 29 1;MOVE 9 2 1;MOVE 9 29 1;MOVE 11 6 1;MOVE 11 6 1;MOVE 18 3 1;MOVE 18 3 1;MOVE 25 32 1;MOVE 32 20 1;MOVE 32 15 1;MOVE 41 9 1"
+      },
+      {
+        "frame": 23,
+        "agent": 1,
+        "stdout": "MOVE 0 30 2;MOVE 3 29 1;MOVE 4 24 2;MOVE 4 8 1;MOVE 7 3 1;MOVE 8 28 1;MOVE 8 19 1;MOVE 10 8 1;MOVE 19 6 1;MOVE 24 33 1;MOVE 33 14 1;SPAWN 3 7 10;SPAWN 3 8 10;SPAWN 19 24 33;SPAWN 19 33 36"
+      },
+      {
+        "frame": 24,
+        "agent": 0,
+        "summary": "$0 spawned 5 units\n$1 spawned 4 units"
+      },
+      {
+        "frame": 25,
+        "agent": 0,
+        "summary": "$0 captured 3 triangles\n$1 captured 1 triangle"
+      },
+      {
+        "frame": 26,
+        "agent": 0,
+        "stderr": "turn=8 units=17 triangles=3 plan_us=2430",
+        "stdout": "SPAWN 2 6 11;SPAWN 29 2 9;SPAWN 20 15 32;MOVE 2 19 1;MOVE 2 19 1;MOVE 3 8 1;MOVE 3 8 1;MOVE 6 19 1;MOVE 6 19 1;MOVE 9 29 1;MOVE 9 2 1;MOVE 11 6 1;MOVE 11 6 1;MOVE 15 38 1;MOVE 18 3 1;MOVE 18 3 1;MOVE 20 15 1;MOVE 29 3 1;MOVE 29 28 1;MOVE 32 34 1"
+      },
+      {
+        "frame": 27,
+        "agent": 1,
+        "stdout": "MOVE 3 28 1;MOVE 6 2 1;MOVE 8 3 1;MOVE 8 19 2;MOVE 14 39 1;MOVE 19 33 2;MOVE 19 2 1;MOVE 24 13 1;MOVE 24 33 1;MOVE 30 26 1;MOVE 33 21 1;SPAWN 3 8 28"
+      },
+      {
+        "frame": 28,
+        "agent": 0,
+        "summary": "$0 spawned 3 units\n$1 spawned 1 unit"
+      },
+      {
+        "frame": 29,
+        "agent": 0,
+        "summary": "$0 captured 1 triangle\n$1 captured 3 triangles"
+      },
+      {
+        "frame": 30,
+        "agent": 0,
+        "stderr": "turn=9 units=20 triangles=1 plan_us=2104",
+        "stdout": "SPAWN 38 15 20;MOVE 2 9 1;MOVE 2 11 1;MOVE 3 18 1;MOVE 3 10 1;MOVE 3 8 1;MOVE 6 11 1;MOVE 6 19 1;MOVE 8 40 1;MOVE 8 4 1;MOVE 15 32 1;MOVE 19 24 1;MOVE 19 24 1;MOVE 20 7 1;MOVE 28 8 1;MOVE 29 9 1;MOVE 29 3 1;MOVE 34 12 1;MOVE 38 16 1"
+      },
+      {
+        "frame": 31,
+        "agent": 1,
+        "stdout": "MOVE 3 29 2;MOVE 19 2 1;MOVE 19 8 1;MOVE 21 39 1;MOVE 26 13 1;MOVE 30 26 1;MOVE 33 35 2;MOVE 33 14 1;MOVE 39 17 1;SPAWN 13 26 30;SPAWN 14 21 33;SPAWN 14 21 39"
+      },
+      {
+        "frame": 32,
+        "agent": 0,
+        "summary": "$0 spawned 1 unit\n$1 spawned 3 units"
+      },
+      {
+        "frame": 33,
+        "agent": 0,
+        "summary": "$0 captured 6 triangles\n$1 captured 4 triangles"
+      },
+      {
+        "frame": 34,
+        "agent": 0,
+        "stderr": "turn=10 units=21 triangles=6 plan_us=3319",
+        "stdout": "SPAWN 24 4 8;SPAWN 8 4 40;SPAWN 10 8 40;SPAWN 19 8 24;SPAWN 16 23 38;SPAWN 18 32 37;MOVE 4 30 1;MOVE 7 3 1;MOVE 8 4 1;MOVE 8 3 1;MOVE 9 5 1;MOVE 9 25 1;MOVE 10 0 1;MOVE 11 41 1;MOVE 11 1 1;MOVE 12 31 1;MOVE 16 34 1;MOVE 18 9 1;MOVE 19 33 1;MOVE 19 36 1;MOVE 19 33 1;MOVE 24 8 1;MOVE 24 13 1;MOVE 32 18 1;MOVE 38 16 1"
+      },
+      {
+        "frame": 35,
+        "agent": 1,
+        "stdout": "MOVE 2 9 1;MOVE 2 19 2;MOVE 3 10 1;MOVE 3 8 1;MOVE 8 40 1;MOVE 13 24 3;MOVE 14 33 3;MOVE 17 39 1;MOVE 26 30 1;MOVE 28 8 2;MOVE 29 3 3;MOVE 35 33 2;MOVE 39 21 1;SPAWN 2 28 29;SPAWN 3 28 29;SPAWN 13 26 35;SPAWN 17 22 39"
+      },
+      {
+        "frame": 36,
+        "agent": 0,
+        "summary": "$0 spawned 6 units\n$1 spawned 4 units"
+      },
+      {
+        "frame": 37,
+        "agent": 0,
+        "summary": "$1 surrounded 1 unit"
+      },
+      {
+        "frame": 38,
+        "agent": 0,
+        "summary": "$0 captured 3 triangles\n$1 captured 3 triangles"
+      },
+      {
+        "frame": 39,
+        "agent": 0,
+        "stderr": "turn=11 units=26 triangles=3 plan_us=3024",
+        "stdout": "SPAWN 5 1 31;SPAWN 41 1 5;SPAWN 25 5 31;MOVE 0 30 1;MOVE 1 11 1;MOVE 3 18 1;MOVE 4 30 1;MOVE 5 9 1;MOVE 8 3 1;MOVE 8 4 1;MOVE 10 0 1;MOVE 13 24 1;MOVE 16 34 1;MOVE 16 34 1;MOVE 18 32 1;MOVE 18 3 1;MOVE 19 2 1;MOVE 24 4 1;MOVE 25 12 1;MOVE 30 13 1;MOVE 33 24 1;MOVE 33 24 1;MOVE 34 27 1;MOVE 40 0 1;MOVE 41 1 1"
+      },
+      {
+        "frame": 40,
+        "agent": 1,
+        "stdout": "MOVE 3 10 2;MOVE 3 8 1;MOVE 3 18 1;MOVE 8 40 1;MOVE 9 41 1;MOVE 13 30 1;MOVE 19 6 1;MOVE 19 8 1;MOVE 21 6 1;MOVE 24 19 1;MOVE 24 4 2;MOVE 30 0 1;MOVE 33 24 3;MOVE 33 19 2;SPAWN 8 19 24;SPAWN 19 24 33;SPAWN 19 33 36"
+      },
+      {
+        "frame": 41,
+        "agent": 0,
+        "summary": "$0 spawned 3 units\n$1 spawned 3 units"
+      },
+      {
+        "frame": 42,
+        "agent": 0,
+        "summary": "$0 surrounded 1 unit"
+      },
+      {
+        "frame": 43,
+        "agent": 0,
+        "summary": "$0 captured 7 triangles\n$1 captured 1 triangle"
+      },
+      {
+        "frame": 44,
+        "agent": 0,
+        "stderr": "turn=12 units=29 triangles=7 plan_us=4426",
+        "stdout": "SPAWN 11 1 41;SPAWN 25 5 9;SPAWN 9 5 41;SPAWN 9 11 41;SPAWN 25 12 31;SPAWN 12 27 31;SPAWN 34 12 27;MOVE 0 30 1;MOVE 1 11 1;MOVE 2 28 1;MOVE 3 7 1;MOVE 3 29 1;MOVE 3 28 1;MOVE 4 8 1;MOVE 4 8 1;MOVE 5 9 1;MOVE 9 2 1;MOVE 9 2 1;MOVE 11 6 1;MOVE 12 25 1;MOVE 13 35 1;MOVE 18 3 1;MOVE 24 8 1;MOVE 24 33 1;MOVE 24 8 1;MOVE 25 32 1;MOVE 27 34 1;MOVE 30 13 1;MOVE 30 26 1;MOVE 31 25 1;MOVE 32 15 1;MOVE 34 32 1;MOVE 34 16 1;MOVE 41 11 1"
+      },
+      {
+        "frame": 45,
+        "agent": 1,
+        "stdout": "MOVE 4 0 2;MOVE 6 2 1;MOVE 8 4 3;MOVE 8 24 1;MOVE 10 3 2;MOVE 17 39 1;MOVE 19 24 2;MOVE 19 33 1;MOVE 19 36 1;MOVE 24 30 2;MOVE 39 14 1;MOVE 40 4 1;SPAWN 8 10 40"
+      },
+      {
+        "frame": 46,
+        "agent": 0,
+        "summary": "$0 spawned 7 units\n$1 spawned 1 unit"
+      },
+      {
+        "frame": 47,
+        "agent": 0,
+        "summary": "$1 surrounded 1 unit"
+      },
+      {
+        "frame": 48,
+        "agent": 0,
+        "summary": "$0 captured 1 triangle\n$1 captured 4 triangles"
+      },
+      {
+        "frame": 49,
+        "agent": 0,
+        "stderr": "turn=13 units=35 triangles=1 plan_us=3384",
+        "stdout": "SPAWN 13 26 35;MOVE 2 19 1;MOVE 2 19 1;MOVE 6 21 1;MOVE 7 20 1;MOVE 8 3 1;MOVE 8 10 1;MOVE 8 10 1;MOVE 8 19 1;MOVE 9 2 1;MOVE 9 2 1;MOVE 9 18 1;MOVE 11 2 1;MOVE 11 6 1;MOVE 11 6 1;MOVE 12 25 1;MOVE 13 30 1;MOVE 16 38 1;MOVE 25 18 1;MOVE 25 18 1;MOVE 25 18 1;MOVE 26 30 1;MOVE 28 3 1;MOVE 30 13 1;MOVE 33 14 1;MOVE 34 16 1;MOVE 34 32 1;MOVE 35 33 1"
+      },
+      {
+        "frame": 50,
+        "agent": 1,
+        "stdout": "MOVE 0 10 2;MOVE 0 4 1;MOVE 4 8 3;MOVE 8 28 1;MOVE 8 19 1;MOVE 10 3 1;MOVE 18 9 1;MOVE 19 6 1;MOVE 24 33 2;MOVE 24 13 2;MOVE 30 26 2;MOVE 30 13 1;MOVE 33 21 1;MOVE 36 33 1;MOVE 39 14 1;MOVE 40 8 1;SPAWN 0 4 30;SPAWN 0 4 40;SPAWN 0 10 40;SPAWN 4 24 30"
+      },
+      {
+        "frame": 51,
+        "agent": 0,
+        "summary": "$0 spawned 1 unit\n$1 spawned 4 units"
+      },
+      {
+        "frame": 52,
+        "agent": 0,
+        "summary": "$0 captured 4 triangles"
+      },
+      {
+        "frame": 53,
+        "agent": 0,
+        "stderr": "turn=14 units=36 triangles=4 plan_us=4142",
+        "stdout": "SPAWN 32 15 20;SPAWN 20 15 38;SPAWN 38 16 23;SPAWN 18 25 32;MOVE 2 11 1;MOVE 2 9 1;MOVE 2 28 1;MOVE 3 8 1;MOVE 3 8 1;MOVE 3 8 1;MOVE 3 8 1;MOVE 6 11 1;MOVE 6 19 1;MOVE 10 40 1;MOVE 10 8 1;MOVE 13 24 1;MOVE 13 24 1;MOVE 14 33 1;MOVE 15 20 1;MOVE 16 34 1;MOVE 18 3 1;MOVE 18 9 1;MOVE 18 3 1;MOVE 18 7 1;MOVE 19 24 1;MOVE 19 33 1;MOVE 20 7 1;MOVE 21 33 1;MOVE 25 5 1;MOVE 28 2 1;MOVE 29 3 1;MOVE 30 4 1;MOVE 30 4 1;MOVE 32 18 1;MOVE 32 18 1;MOVE 32 18 1;MOVE 38 16 1"
+      },
+      {
+        "frame": 54,
+        "agent": 1,
+        "stdout": "MOVE 0 40 1;MOVE 0 4 2;MOVE 3 18 1;MOVE 3 29 2;MOVE 4 8 1;MOVE 4 24 1;MOVE 6 2 2;MOVE 8 19 4;MOVE 9 11 1;MOVE 10 3 2;MOVE 19 6 1;MOVE 21 6 1;MOVE 26 35 1;MOVE 28 8 1;MOVE 33 19 1;MOVE 33 21 2"
+      },
+      {
+        "frame": 55,
+        "agent": 0,
+        "summary": "$0 spawned 4 units"
+      },
+      {
+        "frame": 56,
+        "agent": 0,
+        "summary": "$0 captured 3 triangles\n$1 captured 2 triangles"
+      },
+      {
+        "frame": 57,
+        "agent": 0,
+        "stderr": "turn=15 units=40 triangles=3 plan_us=4684",
+        "stdout": "SPAWN 3 7 18;ATTACK 3 8 28 19;SPAWN 9 18 25;MOVE 2 29 1;MOVE 3 10 1;MOVE 3 10 1;MOVE 4 30 1;MOVE 4 0 1;MOVE 5 1 1;MOVE 7 3 1;MOVE 7 3 1;MOVE 8 40 1;MOVE 9 41 1;MOVE 9 5 1;MOVE 16 34 1;MOVE 18 7 1;MOVE 18 9 1;MOVE 18 9 1;MOVE 18 3 1;MOVE 19 2 1;MOVE 19 2 1;MOVE 20 7 1;MOVE 20 7 1;MOVE 24 13 1;MOVE 25 31 1;MOVE 32 34 1;MOVE 33 24 1;MOVE 33 19 1;MOVE 33 19 1;MOVE 34 12 1;MOVE 38 16 1"
+      },
+      {
+        "frame": 58,
+        "agent": 1,
+        "stdout": "MOVE 2 11 2;MOVE 3 8 1;MOVE 3 29 1;MOVE 6 2 1;MOVE 13 24 3;MOVE 14 21 2;MOVE 18 9 1;MOVE 19 8 3;MOVE 19 2 2;MOVE 21 6 2;MOVE 26 13 1;MOVE 29 9 2;MOVE 35 33 1;MOVE 40 4 1;SPAWN 2 6 19;SPAWN 13 26 35"
+      },
+      {
+        "frame": 59,
+        "agent": 0
+      },
+      {
+        "frame": 60,
+        "agent": 0,
+        "summary": "$0 spawned 2 units\n$1 spawned 2 units\n$0 attacked 5 units"
+      },
+      {
+        "frame": 61,
+        "agent": 0,
+        "summary": "$0 captured 6 triangles\n$1 captured 1 triangle"
+      },
+      {
+        "frame": 62,
+        "agent": 0,
+        "stderr": "turn=16 units=39 triangles=6 plan_us=4672",
+        "stdout": "SPAWN 40 0 10;SPAWN 5 1 31;SPAWN 41 1 5;SPAWN 10 3 7;SPAWN 12 27 31;SPAWN 34 12 27;MOVE 0 4 1;MOVE 1 11 1;MOVE 2 28 1;MOVE 2 19 1;MOVE 3 18 1;MOVE 3 29 1;MOVE 3 8 1;MOVE 5 25 1;MOVE 7 20 1;MOVE 7 3 1;MOVE 7 18 1;MOVE 8 4 1;MOVE 8 4 1;MOVE 8 4 1;MOVE 9 2 1;MOVE 9 11 1;MOVE 9 11 1;MOVE 10 8 1;MOVE 10 8 1;MOVE 11 6 1;MOVE 12 25 1;MOVE 13 30 1;MOVE 16 38 1;MOVE 19 8 1;MOVE 19 33 1;MOVE 24 13 1;MOVE 24 13 1;MOVE 24 33 1;MOVE 30 26 1;MOVE 31 1 1;MOVE 33 36 1;MOVE 34 32 1;MOVE 34 32 1;MOVE 40 4 1;MOVE 40 0 1;MOVE 41 9 1"
+      },
+      {
+        "frame": 63,
+        "agent": 1,
+        "stdout": "MOVE 2 9 1;MOVE 4 40 2;MOVE 4 8 1;MOVE 4 24 1;MOVE 6 2 1;MOVE 6 11 1;MOVE 6 19 1;MOVE 8 40 1;MOVE 13 24 2;MOVE 21 14 1;SPAWN 2 6 11"
+      },
+      {
+        "frame": 64,
+        "agent": 0,
+        "summary": "$0 spawned 6 units\n$1 spawned 1 unit"
+      },
+      {
+        "frame": 65,
+        "agent": 0,
+        "summary": "$0 surrounded 3 units"
+      },
+      {
+        "frame": 66,
+        "agent": 0,
+        "summary": "$0 captured 11 triangles"
+      },
+      {
+        "frame": 67,
+        "agent": 0,
+        "stderr": "turn=17 units=45 triangles=11 plan_us=4895",
+        "stdout": "ATTACK 0 4 30 24;SPAWN 4 0 40;ATTACK 3 8 10 24;SPAWN 28 3 29;ATTACK 4 8 40 24;SPAWN 8 10 40;SPAWN 13 26 30;SPAWN 32 15 20;SPAWN 20 15 38;ATTACK 18 25 32 9;SPAWN 18 32 37;MOVE 1 41 1;MOVE 2 19 1;MOVE 3 29 1;MOVE 4 24 1;MOVE 4 24 1;MOVE 4 24 1;MOVE 5 9 1;MOVE 6 21 1;MOVE 8 19 1;MOVE 8 19 1;MOVE 11 9 1;MOVE 11 9 1;MOVE 11 6 1;MOVE 12 25 1;MOVE 13 35 1;MOVE 13 24 1;MOVE 18 9 1;MOVE 19 24 1;MOVE 20 32 1;MOVE 25 5 1;MOVE 28 2 1;MOVE 29 2 1;MOVE 29 2 1;MOVE 32 18 1;MOVE 33 21 1;MOVE 33 14 1;MOVE 34 32 1;MOVE 36 33 1;MOVE 38 15 1;MOVE 41 1 1"
+      },
+      {
+        "frame": 68,
+        "agent": 1,
+        "stdout": "MOVE 2 11 1;MOVE 2 29 2;MOVE 9 41 2;MOVE 19 2 1;MOVE 24 33 2;MOVE 24 8 2;MOVE 24 13 1;MOVE 24 4 2"
+      },
+      {
+        "frame": 69,
+        "agent": 0
+      },
+      {
+        "frame": 70,
+        "agent": 0
+      },
+      {
+        "frame": 71,
+        "agent": 0
+      },
+      {
+        "frame": 72,
+        "agent": 0
+      },
+      {
+        "frame": 73,
+        "agent": 0,
+        "summary": "$0 spawned 7 units\n$0 attacked 11 units"
+      },
+      {
+        "frame": 74,
+        "agent": 0,
+        "summary": "$0 captured 2 triangles"
+      },
+      {
+        "frame": 75,
+        "agent": 0,
+        "stderr": "turn=18 units=40 triangles=2 plan_us=3834",
+        "stdout": "ATTACK 5 9 41 11;SPAWN 13 26 35;MOVE 1 11 1;MOVE 2 28 1;MOVE 4 40 1;MOVE 6 21 1;MOVE 8 10 1;MOVE 9 2 1;MOVE 9 2 1;MOVE 9 11 1;MOVE 9 11 1;MOVE 13 24 1;MOVE 14 39 1;MOVE 15 38 1;MOVE 18 3 1;MOVE 18 3 1;MOVE 19 36 1;MOVE 19 33 1;MOVE 20 7 1;MOVE 21 6 1;MOVE 21 39 1;MOVE 24 19 1;MOVE 24 8 1;MOVE 24 8 1;MOVE 24 33 1;MOVE 24 30 1;MOVE 25 12 1;MOVE 26 35 1;MOVE 28 8 1;MOVE 32 34 1;MOVE 32 34 1;MOVE 32 34 1;MOVE 33 24 1;MOVE 35 33 1"
+      },
+      {
+        "frame": 76,
+        "agent": 1,
+        "stdout": "MOVE 2 6 2;MOVE 2 19 1;MOVE 8 19 1;MOVE 8 24 1;MOVE 11 2 3;MOVE 11 9 1;MOVE 11 41 1;MOVE 21 14 1;MOVE 29 3 3;MOVE 33 21 1"
+      },
+      {
+        "frame": 77,
+        "agent": 0
+      },
+      {
+        "frame": 78,
+        "agent": 0,
+        "summary": "$0 spawned 1 unit\n$0 attacked 5 units"
+      },
+      {
+        "frame": 79,
+        "agent": 0,
+        "summary": "$0 captured 2 triangles"
+      },
+      {
+        "frame": 80,
+        "agent": 0,
+        "stderr": "turn=19 units=38 triangles=2 plan_us=3716",
+        "stdout": "SPAWN 2 28 29;SPAWN 24 13 30;MOVE 2 19 1;MOVE 2 9 1;MOVE 2 11 1;MOVE 3 18 1;MOVE 3 18 1;MOVE 6 21 1;MOVE 7 20 1;MOVE 8 4 1;MOVE 8 10 1;MOVE 8 19 1;MOVE 10 8 1;MOVE 11 41 1;MOVE 11 1 1;MOVE 11 6 1;MOVE 12 25 1;MOVE 13 24 1;MOVE 19 8 1;MOVE 24 8 1;MOVE 28 3 1;MOVE 29 3 1;MOVE 30 0 1;MOVE 33 14 1;MOVE 33 14 1;MOVE 34 32 1;MOVE 34 12 1;MOVE 34 27 1;MOVE 35 17 1;MOVE 38 16 1;MOVE 39 14 1"
+      },
+      {
+        "frame": 81,
+        "agent": 1,
+        "stdout": "MOVE 3 8 3;MOVE 6 19 2;MOVE 8 10 1;MOVE 14 33 2;MOVE 19 8 1;MOVE 19 24 1;MOVE 21 39 1"
+      },
+      {
+        "frame": 82,
+        "agent": 0,
+        "summary": "$0 spawned 2 units"
+      },
+      {
+        "frame": 83,
+        "agent": 0,
+        "summary": "$0 captured 8 triangles"
+      },
+      {
+        "frame": 84,
+        "agent": 0,
+        "stderr": "turn=20 units=40 triangles=8 plan_us=5394",
+        "stdout": "SPAWN 41 1 11;SPAWN 6 2 11;SPAWN 19 2 6;SPAWN 9 11 41;SPAWN 25 9 18;SPAWN 27 12 34;SPAWN 32 18 25;SPAWN 32 18 37;MOVE 0 30 1;MOVE 1 5 1;MOVE 2 19 1;MOVE 2 19 1;MOVE 3 10 1;MOVE 3 10 1;MOVE 6 21 1;MOVE 8 3 1;MOVE 8 24 1;MOVE 8 24 1;MOVE 9 5 1;MOVE 10 40 1;MOVE 11 1 1;MOVE 11 6 1;MOVE 12 31 1;MOVE 14 39 1;MOVE 14 33 1;MOVE 16 38 1;MOVE 17 35 1;MOVE 18 3 1;MOVE 18 7 1;MOVE 19 8 1;MOVE 19 33 1;MOVE 19 8 1;MOVE 21 39 1;MOVE 21 33 1;MOVE 24 8 1;MOVE 24 13 1;MOVE 25 12 1;MOVE 27 34 1;MOVE 32 15 1;MOVE 33 24 1;MOVE 39 17 1;MOVE 40 8 1;MOVE 41 11 1"
+      },
+      {
+        "frame": 85,
+        "agent": 1,
+        "stdout": "MOVE 8 19 4;MOVE 10 40 1;MOVE 19 2 2;MOVE 24 4 1;MOVE 24 19 1;MOVE 33 19 2"
+      },
+      {
+        "frame": 86,
+        "agent": 0,
+        "summary": "$0 spawned 8 units"
+      },
+      {
+        "frame": 87,
+        "agent": 0,
+        "summary": "$0 captured 13 triangles"
+      },
+      {
+        "frame": 88,
+        "agent": 0,
+        "stderr": "turn=21 units=48 triangles=13 plan_us=6661",
+        "stdout": "SPAWN 1 5 31;SPAWN 41 1 5;SPAWN 10 3 7;SPAWN 9 5 25;SPAWN 9 5 41;SPAWN 25 5 31;SPAWN 12 27 31;SPAWN 30 13 26;SPAWN 35 13 26;ATTACK 14 21 33 19;SPAWN 39 14 21;SPAWN 20 15 32;SPAWN 39 17 22;MOVE 1 11 1;MOVE 3 28 1;MOVE 3 29 1;MOVE 4 0 1;MOVE 5 9 1;MOVE 5 9 1;MOVE 6 2 1;MOVE 6 2 1;MOVE 7 10 1;MOVE 8 40 1;MOVE 8 24 1;MOVE 9 2 1;MOVE 10 40 1;MOVE 10 0 1;MOVE 11 6 1;MOVE 12 34 1;MOVE 13 24 1;MOVE 15 38 1;MOVE 17 22 1;MOVE 19 8 1;MOVE 20 15 1;MOVE 24 19 1;MOVE 24 19 1;MOVE 24 4 1;MOVE 24 33 1;MOVE 25 5 1;MOVE 30 4 1;MOVE 32 37 1;MOVE 33 19 1;MOVE 33 36 1;MOVE 34 16 1;MOVE 35 33 1;MOVE 36 19 1;MOVE 38 23 1;MOVE 39 21 1;MOVE 39 14 1;MOVE 40 4 1;MOVE 41 11 1"
+      },
+      {
+        "frame": 89,
+        "agent": 1,
+        "stdout": "MOVE 2 11 1;MOVE 2 6 1;MOVE 4 30 1;MOVE 19 8 2;MOVE 19 33 3;MOVE 19 36 1;MOVE 39 17 1;MOVE 40 0 1"
+      },
+      {
+        "frame": 90,
+        "agent": 0
+      },
+      {
+        "frame": 91,
+        "agent": 0,
+        "summary": "$0 spawned 12 units\n$0 attacked 7 units"
+      },
+      {
+        "frame": 92,
+        "agent": 0,
+        "summary": "$0 surrounded 2 units"
+      },
+      {
+        "frame": 93,
+        "agent": 0,
+        "summary": "$0 captured 7 triangles"
+      },
+      {
+        "frame": 94,
+        "agent": 0,
+        "stderr": "turn=22 units=57 triangles=7 plan_us=6236",
+        "stdout": "SPAWN 0 10 40;SPAWN 28 2 29;SPAWN 24 4 8;SPAWN 24 8 19;SPAWN 38 16 23;SPAWN 33 19 24;SPAWN 36 19 33;MOVE 0 30 1;MOVE 0 30 1;MOVE 1 11 1;MOVE 2 11 1;MOVE 2 11 1;MOVE 2 29 1;MOVE 4 0 1;MOVE 4 30 1;MOVE 5 1 1;MOVE 6 2 1;MOVE 8 3 1;MOVE 8 4 1;MOVE 8 10 1;MOVE 9 18 1;MOVE 9 41 1;MOVE 9 41 1;MOVE 10 0 1;MOVE 10 7 1;MOVE 11 6 1;MOVE 11 6 1;MOVE 12 34 1;MOVE 14 39 1;MOVE 15 20 1;MOVE 19 2 1;MOVE 19 2 1;MOVE 19 8 1;MOVE 19 6 1;MOVE 19 24 1;MOVE 20 15 1;MOVE 21 14 1;MOVE 22 17 1;MOVE 24 13 1;MOVE 24 13 1;MOVE 25 9 1;MOVE 27 12 1;MOVE 28 8 1;MOVE 29 9 1;MOVE 30 26 1;MOVE 31 1 1;MOVE 32 37 1;MOVE 33 21 1;MOVE 33 35 1;MOVE 34 32 1;MOVE 35 26 1;MOVE 36 33 1;MOVE 37 18 1;MOVE 38 20 1;MOVE 39 22 1;MOVE 39 21 1;MOVE 40 10 1;MOVE 41 11 1"
+      },
+      {
+        "frame": 95,
+        "agent": 1,
+        "stdout": "MOVE 0 10 1;MOVE 11 9 1;MOVE 30 0 1"
+      },
+      {
+        "frame": 96,
+        "agent": 0,
+        "summary": "$0 spawned 7 units"
+      },
+      {
+        "frame": 97,
+        "agent": 0,
+        "summary": "$0 surrounded 2 units"
+      },
+      {
+        "frame": 98,
+        "agent": 0,
+        "summary": "$0 captured 2 triangles"
+      },
+      {
+        "frame": 99,
+        "agent": 0,
+        "summary": "$1: can't score any more points",
+        "stderr": "turn=23 units=64 triangles=2 plan_us=5338",
+        "stdout": "SPAWN 7 3 18;SPAWN 24 4 30;MOVE 0 10 1;MOVE 0 10 1;MOVE 1 31 1;MOVE 1 5 1;MOVE 2 29 1;MOVE 2 29 1;MOVE 3 18 1;MOVE 4 0 1;MOVE 6 2 1;MOVE 6 11 1;MOVE 6 11 1;MOVE 7 18 1;MOVE 8 28 1;MOVE 8 3 1;MOVE 9 5 1;MOVE 9 25 1;MOVE 9 25 1;MOVE 10 7 1;MOVE 10 3 1;MOVE 11 9 1;MOVE 11 9 1;MOVE 11 9 1;MOVE 11 41 1;MOVE 12 27 1;MOVE 13 35 1;MOVE 14 21 1;MOVE 18 9 1;MOVE 18 37 1;MOVE 19 6 1;MOVE 20 38 1;MOVE 21 14 1;MOVE 21 6 1;MOVE 24 19 1;MOVE 24 19 1;MOVE 24 33 1;MOVE 26 13 1;MOVE 28 2 1;MOVE 29 28 1;MOVE 30 24 1;MOVE 30 4 1;MOVE 32 34 1;MOVE 33 36 1;MOVE 34 12 1;MOVE 37 32 1;MOVE 38 15 1;MOVE 41 1 1"
+      }
+    ],
+    "scores": [
+      93.0,
+      -1.0
+    ],
+    "ranking": [
+      0,
+      1
+    ],
+    "tooltips": [
+      {
+        "frame": 99,
+        "text": "$1 can't score any more points!"
+      }
+    ]
+  },
+  "limits": {
+    "submits": {
+      "name": "submits_5m",
+      "limit": 5,
+      "used": 0,
+      "remaining": 5,
+      "window_seconds": 300,
+      "resets_in_seconds": 0
+    },
+    "test_games": {
+      "name": "test_games_1m",
+      "limit": 10,
+      "used": 1,
+      "remaining": 9,
+      "window_seconds": 60,
+      "resets_in_seconds": 60
+    },
+    "requests": {
+      "name": "requests_1m",
+      "limit": 120,
+      "used": 1,
+      "remaining": 119,
+      "window_seconds": 60,
+      "resets_in_seconds": 60
+    }
+  }
+}
