@@ -1,0 +1,156 @@
+{
+  "as_of": "2026-11-08T08:48:59.186169+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "referee_commit": "b6913124a10de328316ff42906448a18cb948431",
+  "league": 3,
+  "turn_ms": 50,
+  "first_turn_ms": 1000,
+  "parallel_games": 1,
+  "seeds": [
+    61001,
+    61002,
+    61003,
+    61004,
+    61005,
+    61006,
+    61007,
+    61008,
+    61009,
+    61010,
+    61011,
+    61012
+  ],
+  "purpose": "development",
+  "seats": [
+    0,
+    1
+  ],
+  "pairs": [
+    [
+      "curriculum",
+      "lacoz"
+    ],
+    [
+      "control",
+      "lacoz"
+    ],
+    [
+      "base",
+      "lacoz"
+    ],
+    [
+      "curriculum",
+      "khoufou"
+    ],
+    [
+      "control",
+      "khoufou"
+    ],
+    [
+      "base",
+      "khoufou"
+    ],
+    [
+      "curriculum",
+      "b2m"
+    ],
+    [
+      "control",
+      "b2m"
+    ],
+    [
+      "base",
+      "b2m"
+    ],
+    [
+      "curriculum",
+      "control"
+    ],
+    [
+      "curriculum",
+      "base"
+    ]
+  ],
+  "policy_weights_sha256": {
+    "curriculum": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f",
+    "control": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762",
+    "base": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "b2m": "0369bcdddb1ba2e3378c23621871f650c4d0552f4364793bdaae5f524077be61"
+  },
+  "source_sha256": {
+    "harness/code/arena/BenchmarkMatch.java": "ef7020e1e023eaf77d4be7c3a92ffde8c3b00f748db2d86417e27758ef1055ea",
+    "harness/code/benchmark_public.py": "6fb78c93012ef8750cb2a65bbf81dc6248d3c1faf8eed7f703ed8a2e9cd1eded",
+    "harness/code/rl/eval/panel.py": "ba425c2c1aa20559e34dd43b782ad3885c1ca4bd9da421e3f9cd38e4606dd1b3",
+    "harness/code/run_matches.py": "af986c51dd416a1e238d6d34d176e6439c0de7756aa527d2a76146319ea5f776",
+    "khoufou/PROVENANCE.json": "6b4c62b9f40b8e86d2137e96ba71ba10cfc7cad38c48bb6ce9b739ecc9d9b290",
+    "khoufou/Player.java": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5",
+    "lacoz/PROVENANCE.json": "05d67ab035bf3f3a4515a60f502d00b82865686cdefa984f2b5ef8e6758b0e64",
+    "lacoz/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab",
+    "rl/export/bot.cpp": "6a2246ebf78a3b4b2196c7bfdc54e277fc60f749213c4f3f73ae81306107831b",
+    "rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "v6.cpp": "d36adc818e238b49544f1752beaf7388ea22ca4bb75446fcddc173c091e2ccf4",
+    "weights/b2m.txt": "0369bcdddb1ba2e3378c23621871f650c4d0552f4364793bdaae5f524077be61",
+    "weights/base.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "weights/control.txt": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762",
+    "weights/curriculum.txt": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f"
+  },
+  "binary_sha256": {
+    "bc": "b083e80e4912ae559a136b0667c9031fae6db6f91f702713be701f43e38eee4f",
+    "v6": "869b6963dacbab8a553ec69c10d1e0275f1c50f73113b40a76beecf82e160cf7"
+  },
+  "policy_variants": {
+    "curriculum": "standard",
+    "control": "standard",
+    "base": "standard",
+    "b2m": "standard"
+  },
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "commands": {
+    "v6": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/build/v6"
+    ],
+    "lacoz": [
+      "${PROJECT_ROOT}/code/arena/.venv-lacoz/bin/python",
+      "-u",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/lacoz/bot.py"
+    ],
+    "khoufou": [
+      "/tmp/tryangle-tools/jdk-17.0.21+9/Contents/Home/bin/java",
+      "-cp",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/khoufou/build",
+      "Player"
+    ],
+    "curriculum": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/build/bc",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/curriculum.txt",
+      "2"
+    ],
+    "control": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/build/bc",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/control.txt",
+      "2"
+    ],
+    "base": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/build/bc",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/base.txt",
+      "2"
+    ],
+    "b2m": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/build/bc",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/b2m.txt",
+      "2"
+    ]
+  },
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "external_spend": 0,
+  "live_submission": false,
+  "method": "Serial original-referee matches; interleaved candidate/control on identical seeds and both seats; no checkpoint changes during the panel. Opponent wall-time search can vary across reruns.",
+  "execution_order": "Cyclic pair rotation and alternating seat order by seed index",
+  "benchmark_class_sha256": "f99586779cbdc4a1882a488a7bb53d5e7519a053d6e3486a1faaf9ac9809e87d",
+  "java_version": "openjdk version \"17.0.21\" 2026-10-20\nOpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)\nOpenJDK 64-Bit Server VM Temurin-17.0.21+9 (build 17.0.21+9, mixed mode, sharing)\n"
+}

@@ -1,0 +1,33 @@
+[
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/v4/curriculum/test_changed_topology.py"
+  ],
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/v4/curriculum/train.py",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum",
+    "--fraction",
+    ".15",
+    "--steps",
+    "100000",
+    "--minutes",
+    "12",
+    "--seed",
+    "202611081"
+  ],
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/export/verify.py",
+    "--training",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum",
+    "--data",
+    "code/build/rl-cache/bc-v1-clean",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/export-verification.json"
+  ]
+]

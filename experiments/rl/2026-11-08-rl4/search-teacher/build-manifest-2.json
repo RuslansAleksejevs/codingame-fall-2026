@@ -1,0 +1,36 @@
+{
+  "as_of": "2026-11-08T07:56:30.661328+00:00",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-pthread",
+    "-shared",
+    "-fPIC",
+    "code/rl/v4/search_teacher/diagnostic.cpp",
+    "-o",
+    "experiments/rl/2026-11-08-rl4/search-teacher/build/diagnostic.dylib"
+  ],
+  "returncode": 0,
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "stdout": "",
+  "stderr": "",
+  "preserved": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1"
+  },
+  "sources": {
+    "code/rl/v4/search_teacher/diagnostic.cpp": "5d5f23d07c1cc47810c8d2253a1070bc240037615112321fdb91827883acd4b4",
+    "code/rl/search/search.hpp": "723f5af35be6ed379da726bb31337412b068b23991d00dc6cb7f2774d2ffb72d",
+    "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+    "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "code/rl/export/inference.hpp": "6fbee4b154022df88a141f1702e81a29d1f5df0f99eea5e69ab7a4a5b5c809e9"
+  },
+  "binary_sha256": "922b0baeb4c47ecc74c9948cd406985345596d440ef1b1a0a2e094f6142bd063",
+  "external_spend": 0
+}

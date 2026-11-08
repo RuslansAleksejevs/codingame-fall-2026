@@ -1,0 +1,439 @@
+{
+  "as_of": "2026-11-08T09:14:56.489142+00:00",
+  "classification": "PROJECT_REPORTED",
+  "status": "technically_rejected_complete_descriptive_confirmation",
+  "extraction_command": "code/arena/.venv-rl/bin/python -B code/rl/v4/search_teacher/technical_errors.py",
+  "extraction_source_sha256": "f9e3ff6afbc6e7a7c90a84369578bf2692300759299cfd41a016263138d83074",
+  "technical_rejection_sha256": "e1e39277d82f88ae6092f2d0187d4c30c1c7313a4d891ce943c688cc83f62c0d",
+  "teacher_decision_sha256": "6e1744b784d4fb72e479ea26fc2b68073b76dd3c6d1081a5ff8082b0cc99184c",
+  "games": 960,
+  "own_error_games": 3,
+  "opponent_error_games": 1,
+  "stages": {
+    "confirm1": {
+      "games": 240,
+      "replayed_clean_games": 240,
+      "clean_subset_java_passed": true,
+      "technical_exclusions": [],
+      "whole_panel_technical_pass": true,
+      "matches_sha256": "94458a8bf5ffe95d52da330d987260e6c923960c2fed7356689b1ff6166a4f8b"
+    },
+    "confirm2": {
+      "games": 240,
+      "replayed_clean_games": 240,
+      "clean_subset_java_passed": true,
+      "technical_exclusions": [],
+      "whole_panel_technical_pass": true,
+      "matches_sha256": "fa5e3815282252eeb8fc12d9797f839d1958d32b122f9b9cec180a1e8793c313"
+    },
+    "confirm3": {
+      "games": 240,
+      "replayed_clean_games": 236,
+      "clean_subset_java_passed": true,
+      "technical_exclusions": [
+        "greedy-vs-league3m-seed62039-seat1.json.gz",
+        "search2-vs-v6-seed62041-seat0.json.gz",
+        "search2-vs-lacoz-seed62044-seat0.json.gz",
+        "search2-vs-lacoz-seed62046-seat0.json.gz"
+      ],
+      "whole_panel_technical_pass": false,
+      "matches_sha256": "64aa38500dc131ed7283193981f9340ff2e2331749a87cdd190b8a203d1e000e"
+    },
+    "confirm4": {
+      "games": 240,
+      "replayed_clean_games": 240,
+      "clean_subset_java_passed": true,
+      "technical_exclusions": [],
+      "whole_panel_technical_pass": true,
+      "matches_sha256": "517530717421d72769ab8090ecdbac842301099ad0060c9c7d493ec9063a2c9e"
+    }
+  },
+  "technical_records": [
+    {
+      "stage": "confirm3",
+      "candidate": "greedy",
+      "opponent": "league3m",
+      "seed": 62039,
+      "seat": 1,
+      "outcome": "win",
+      "score": 14,
+      "opponent_score": -1,
+      "returncode": 0,
+      "valid": true,
+      "own_action_errors": [],
+      "opponent_action_errors": [
+        "timeout"
+      ],
+      "source": "experiments/rl/2026-11-08-rl4/search-teacher/confirm3/greedy-vs-league3m-seed62039-seat1.json.gz",
+      "sha256": "7eef8ffe46b2a6d9662a19ff0d1e857d989958b95024ffc0751d916c3c727f50",
+      "failed_sides": [
+        {
+          "absolute_side": 0,
+          "is_own": false,
+          "errors": [
+            "timeout"
+          ],
+          "last_internal_log": {
+            "frame": 62,
+            "reported_turn": 17,
+            "internal_plan_us": 9248,
+            "same_frame_output_recorded": false,
+            "stderr": "turn=17 units=41 triangles=10 plan_us=9248\n"
+          },
+          "max_logged_internal_plan_us": 11058
+        }
+      ],
+      "own_accepted_turn_plan_us_max": 2268,
+      "referee_tooltips": [
+        {
+          "turn": 63,
+          "text": "$0 timeout!",
+          "event": 0
+        }
+      ],
+      "last_referee_summaries": [
+        "",
+        "$0: timeout\n"
+      ]
+    },
+    {
+      "stage": "confirm3",
+      "candidate": "search2",
+      "opponent": "v6",
+      "seed": 62041,
+      "seat": 0,
+      "outcome": "loss",
+      "score": -1,
+      "opponent_score": 27,
+      "returncode": 0,
+      "valid": true,
+      "own_action_errors": [
+        "timeout"
+      ],
+      "opponent_action_errors": [],
+      "source": "experiments/rl/2026-11-08-rl4/search-teacher/confirm3/search2-vs-v6-seed62041-seat0.json.gz",
+      "sha256": "6eefba8fbf66c3274009a42d0df3a9f327aa112b0cb9403d74998cf5d4da3f0d",
+      "failed_sides": [
+        {
+          "absolute_side": 0,
+          "is_own": true,
+          "errors": [
+            "timeout"
+          ],
+          "last_internal_log": {
+            "frame": 93,
+            "reported_turn": 24,
+            "internal_plan_us": 75244,
+            "same_frame_output_recorded": false,
+            "stderr": "turn=24 units=43 triangles=3 plan_us=75244\nsearch={\"selected\":0,\"plans_generated\":3,\"complete_candidates\":3,\"transitions\":17,\"stopped_by_budget\":1,\"plan_us\":75235,\"depth\":2,\"values\":[0.965500924,0.967195865,0.969677947]}\n"
+          },
+          "max_logged_internal_plan_us": 75244
+        }
+      ],
+      "own_accepted_turn_plan_us_max": 28502,
+      "referee_tooltips": [
+        {
+          "turn": 94,
+          "text": "$0 timeout!",
+          "event": 0
+        }
+      ],
+      "last_referee_summaries": [
+        "",
+        "$0: timeout\n"
+      ]
+    },
+    {
+      "stage": "confirm3",
+      "candidate": "search2",
+      "opponent": "lacoz",
+      "seed": 62044,
+      "seat": 0,
+      "outcome": "loss",
+      "score": -1,
+      "opponent_score": 35,
+      "returncode": 0,
+      "valid": true,
+      "own_action_errors": [
+        "timeout"
+      ],
+      "opponent_action_errors": [],
+      "source": "experiments/rl/2026-11-08-rl4/search-teacher/confirm3/search2-vs-lacoz-seed62044-seat0.json.gz",
+      "sha256": "2067375a6a82d655346662e17f66bd2507a6ea9dbcd72d2c9e118f825205d553",
+      "failed_sides": [
+        {
+          "absolute_side": 0,
+          "is_own": true,
+          "errors": [
+            "timeout"
+          ],
+          "last_internal_log": {
+            "frame": 91,
+            "reported_turn": 24,
+            "internal_plan_us": 34676,
+            "same_frame_output_recorded": false,
+            "stderr": "turn=24 units=35 triangles=2 plan_us=34676\nsearch={\"selected\":0,\"plans_generated\":1,\"complete_candidates\":0,\"transitions\":0,\"stopped_by_budget\":1,\"plan_us\":34670,\"depth\":2,\"values\":[]}\n"
+          },
+          "max_logged_internal_plan_us": 34676
+        }
+      ],
+      "own_accepted_turn_plan_us_max": 32732,
+      "referee_tooltips": [
+        {
+          "turn": 92,
+          "text": "$0 timeout!",
+          "event": 0
+        }
+      ],
+      "last_referee_summaries": [
+        "",
+        "$0: timeout\n"
+      ]
+    },
+    {
+      "stage": "confirm3",
+      "candidate": "search2",
+      "opponent": "lacoz",
+      "seed": 62046,
+      "seat": 0,
+      "outcome": "loss",
+      "score": -1,
+      "opponent_score": 10,
+      "returncode": 0,
+      "valid": true,
+      "own_action_errors": [
+        "timeout"
+      ],
+      "opponent_action_errors": [],
+      "source": "experiments/rl/2026-11-08-rl4/search-teacher/confirm3/search2-vs-lacoz-seed62046-seat0.json.gz",
+      "sha256": "345a517f9d1824d852356775be0a9e8b17366ceee7b5c1b949432df19da952c9",
+      "failed_sides": [
+        {
+          "absolute_side": 0,
+          "is_own": true,
+          "errors": [
+            "timeout"
+          ],
+          "last_internal_log": {
+            "frame": 9,
+            "reported_turn": 3,
+            "internal_plan_us": 32577,
+            "same_frame_output_recorded": false,
+            "stderr": "turn=3 units=6 triangles=4 plan_us=32577\nsearch={\"selected\":0,\"plans_generated\":3,\"complete_candidates\":3,\"transitions\":18,\"stopped_by_budget\":0,\"plan_us\":32556,\"depth\":2,\"values\":[-0.0157090707,-0.616636148,-0.24804896]}\n"
+          },
+          "max_logged_internal_plan_us": 32577
+        }
+      ],
+      "own_accepted_turn_plan_us_max": 7733,
+      "referee_tooltips": [
+        {
+          "turn": 10,
+          "text": "$0 timeout!",
+          "event": 0
+        }
+      ],
+      "last_referee_summaries": [
+        "",
+        "$0: timeout\n"
+      ]
+    }
+  ],
+  "completed_compute_leases": [
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T07:55:26.219883+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 76955,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "pilot"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T07:55:26.407618+00:00",
+        "owner": "search-teacher",
+        "seconds": 0.18741750018671155,
+        "outcome": "finished",
+        "exit_code": 1
+      }
+    },
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T07:56:28.883510+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 77161,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "pilot",
+          "--build-attempt",
+          "2"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T07:56:51.786394+00:00",
+        "owner": "search-teacher",
+        "seconds": 22.88847166625783,
+        "outcome": "finished",
+        "exit_code": 0
+      }
+    },
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T08:09:47.827745+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 91467,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "screen"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T08:14:19.096827+00:00",
+        "owner": "search-teacher",
+        "seconds": 271.26701783388853,
+        "outcome": "finished",
+        "exit_code": 0
+      }
+    },
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T08:30:53.748721+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 10150,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "confirm1"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T08:35:35.567780+00:00",
+        "owner": "search-teacher",
+        "seconds": 281.83233741717413,
+        "outcome": "finished",
+        "exit_code": 0
+      }
+    },
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T08:43:28.149958+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 21320,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "confirm2"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T08:47:45.123906+00:00",
+        "owner": "search-teacher",
+        "seconds": 256.9722691248171,
+        "outcome": "finished",
+        "exit_code": 0
+      }
+    },
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T08:58:09.639312+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 37730,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "confirm3"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T09:02:46.162777+00:00",
+        "owner": "search-teacher",
+        "seconds": 276.5226682918146,
+        "outcome": "finished",
+        "exit_code": 1
+      }
+    },
+    {
+      "start": {
+        "event": "started",
+        "as_of": "2026-11-08T09:08:39.317075+00:00",
+        "owner": "search-teacher",
+        "wrapper_pid": 46585,
+        "command": [
+          "code/arena/.venv-rl/bin/python",
+          "-B",
+          "code/rl/v4/search_teacher/run_stage.py",
+          "confirm4"
+        ],
+        "cwd": ".",
+        "allowed_seconds": 900.0
+      },
+      "finish": {
+        "event": "finished",
+        "as_of": "2026-11-08T09:13:03.856741+00:00",
+        "owner": "search-teacher",
+        "seconds": 264.5135086248629,
+        "outcome": "finished",
+        "exit_code": 0
+      }
+    }
+  ],
+  "completed_compute_seconds_before_this_report": 1374.1836904590018,
+  "active_lease_at_report": {
+    "event": "started",
+    "as_of": "2026-11-08T09:14:55.771673+00:00",
+    "owner": "search-teacher",
+    "wrapper_pid": 54181,
+    "command": [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v4/search_teacher/close_report.py"
+    ],
+    "cwd": ".",
+    "allowed_seconds": 120.0
+  },
+  "interpretation": [
+    "Raw stderr can retain a late planning log for a timed-out turn absent from accepted-turn own_plan_us.",
+    "A logged internal duration is not the full referee deadline interval, which also includes input and output.",
+    "Search checks its budget between expensive operations; the source does not enforce a hard per-turn deadline.",
+    "Timeouts remain technical failures; no host fault or counterfactual game outcome is inferred.",
+    "Clean-paired strategic intervals exclude whole affected opponent-map clusters under the original protocol, while every technical record remains visible."
+  ],
+  "teacher_strength_gate_passed": false,
+  "teacher_labels": 0,
+  "student_training_performed": false,
+  "global_final_opened": false,
+  "external_spend": 0
+}

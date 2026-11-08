@@ -1,0 +1,652 @@
+{
+  "as_of": "2026-11-08T09:00:45.664322+00:00",
+  "passed": true,
+  "method": "Recomputed all W/L/D, score rates, paired gains and bootstrap intervals from saved matches; checked actual source, DLL, checkpoint and policy hashes.",
+  "groups": {
+    "curriculum_vs_lacoz": {
+      "games": 24,
+      "results": {
+        "loss": 5,
+        "win": 19
+      },
+      "score_rate": 0.7916666666666666,
+      "score_95_percent": [
+        54.166666666666664,
+        100.0
+      ]
+    },
+    "control_vs_lacoz": {
+      "games": 24,
+      "results": {
+        "loss": 5,
+        "win": 19
+      },
+      "score_rate": 0.7916666666666666,
+      "score_95_percent": [
+        54.166666666666664,
+        100.0
+      ]
+    },
+    "base_vs_lacoz": {
+      "games": 24,
+      "results": {
+        "loss": 9,
+        "win": 15
+      },
+      "score_rate": 0.625,
+      "score_95_percent": [
+        33.33333333333333,
+        87.5
+      ]
+    },
+    "curriculum_vs_khoufou": {
+      "games": 24,
+      "results": {
+        "win": 23,
+        "loss": 1
+      },
+      "score_rate": 0.9583333333333334,
+      "score_95_percent": [
+        87.5,
+        100.0
+      ]
+    },
+    "control_vs_khoufou": {
+      "games": 24,
+      "results": {
+        "win": 24
+      },
+      "score_rate": 1.0,
+      "score_95_percent": [
+        100.0,
+        100.0
+      ]
+    },
+    "base_vs_khoufou": {
+      "games": 24,
+      "results": {
+        "win": 24
+      },
+      "score_rate": 1.0,
+      "score_95_percent": [
+        100.0,
+        100.0
+      ]
+    },
+    "curriculum_vs_b2m": {
+      "games": 24,
+      "results": {
+        "loss": 11,
+        "win": 13
+      },
+      "score_rate": 0.5416666666666666,
+      "score_95_percent": [
+        29.166666666666668,
+        79.16666666666666
+      ]
+    },
+    "control_vs_b2m": {
+      "games": 24,
+      "results": {
+        "loss": 17,
+        "win": 7
+      },
+      "score_rate": 0.2916666666666667,
+      "score_95_percent": [
+        12.5,
+        45.83333333333333
+      ]
+    },
+    "base_vs_b2m": {
+      "games": 24,
+      "results": {
+        "win": 11,
+        "loss": 13
+      },
+      "score_rate": 0.4583333333333333,
+      "score_95_percent": [
+        20.833333333333336,
+        70.83333333333334
+      ]
+    },
+    "curriculum_vs_control": {
+      "games": 24,
+      "results": {
+        "win": 11,
+        "loss": 11,
+        "draw": 2
+      },
+      "score_rate": 0.5,
+      "score_95_percent": [
+        29.166666666666668,
+        70.83333333333334
+      ]
+    },
+    "curriculum_vs_base": {
+      "games": 24,
+      "results": {
+        "loss": 14,
+        "win": 10
+      },
+      "score_rate": 0.4166666666666667,
+      "score_95_percent": [
+        20.833333333333336,
+        62.5
+      ]
+    }
+  },
+  "paired_curriculum_minus": {
+    "control": {
+      "lacoz": {
+        "clean_pairs": 24,
+        "gain_pp": 0.0,
+        "paired_95_pp": [
+          -20.833333333333336,
+          16.666666666666664
+        ]
+      },
+      "khoufou": {
+        "clean_pairs": 24,
+        "gain_pp": -4.166666666666666,
+        "paired_95_pp": [
+          -12.5,
+          0.0
+        ]
+      },
+      "b2m": {
+        "clean_pairs": 24,
+        "gain_pp": 25.0,
+        "paired_95_pp": [
+          12.5,
+          37.5
+        ]
+      },
+      "pooled": {
+        "gain_pp": 6.944444444444445,
+        "paired_95_pp": [
+          -1.3888888888888888,
+          16.666666666666664
+        ]
+      }
+    },
+    "base": {
+      "lacoz": {
+        "clean_pairs": 24,
+        "gain_pp": 16.666666666666664,
+        "paired_95_pp": [
+          0.0,
+          37.5
+        ]
+      },
+      "khoufou": {
+        "clean_pairs": 24,
+        "gain_pp": -4.166666666666666,
+        "paired_95_pp": [
+          -12.5,
+          0.0
+        ]
+      },
+      "b2m": {
+        "clean_pairs": 24,
+        "gain_pp": 8.333333333333332,
+        "paired_95_pp": [
+          -25.0,
+          41.66666666666667
+        ]
+      },
+      "pooled": {
+        "gain_pp": 6.944444444444445,
+        "paired_95_pp": [
+          -8.333333333333332,
+          20.833333333333336
+        ]
+      }
+    }
+  },
+  "gate_components": {
+    "pooled_point_gain_positive": true,
+    "no_opponent_point_loss_worse_than_10pp": true,
+    "direct_score_strictly_above_half": false,
+    "at_least_90_percent_clean_pairs": true,
+    "all_technical_checks": true
+  },
+  "continuation_gate_passed": false,
+  "arms": {
+    "control": {
+      "summary": {
+        "as_of": "2026-11-08T08:30:28.373267+00:00",
+        "steps": 100020,
+        "target_steps": 100000,
+        "decision_overshoot": 20,
+        "games": 3049,
+        "restored_games": 0,
+        "restored_episode_share": 0.0,
+        "restored_decisions": 0,
+        "restored_decision_share": 0.0,
+        "category_episodes": {
+          "loss": 0,
+          "win": 0,
+          "fresh": 0
+        },
+        "iterations": 48,
+        "elapsed_seconds": 233.8472187081352,
+        "stop": "sample_target",
+        "weights_sha256": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762",
+        "checkpoint_sha256": "ec7fe5b20fd6bbe87048b8d1c0b36d384c55a54f843feceb4c52bc20fa803a84",
+        "max_rss_bytes": 1083342848,
+        "teacher": {
+          "games": 384,
+          "calls": 13435,
+          "summed_call_seconds": 407.26411739038303,
+          "errors": [],
+          "teacher_source_sha256": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+        },
+        "external_spend": 0
+      },
+      "runtime": {
+        "as_of": "2026-11-08T08:26:34.228948+00:00",
+        "target_steps": 100000,
+        "block_minutes": 12.0,
+        "starting_steps": 0,
+        "python": "3.14.6",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "binary_sha256": "85f1b2b32a144e692066b37d5a676ff9a37b18aecba3ab2233dc90781d1b6a44",
+        "pid": 8223,
+        "external_spend": 0
+      },
+      "technical_audit": {
+        "as_of": "2026-11-08T08:48:56.693744+00:00",
+        "passed": true,
+        "arm": "control",
+        "source_hashes_unchanged": true,
+        "source_manifest_sha256": "05157018f183bb484dbc61e314bc7a55f0d6f94bf896b63765f0f891114d14c5",
+        "config_sha256": "a25c21884cbab67e8c36c79df1d04acb4b4c5c412e5fa1bd3a5fdf1c5ffdd574",
+        "base_checkpoint_sha256": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+        "bank_sha256": "2604762ff2c317d33ede69e4371b4bd0c6a74ae46543aa5726102b8a87ad7fc0",
+        "trained_decisions": 100020,
+        "trained_complete_episodes": 3049,
+        "collected_complete_episodes": 3072,
+        "unused_complete_episode_decisions": 748,
+        "partial_episodes_used": 0,
+        "decision_overshoot": 20,
+        "opponent_episodes": {
+          "league3m": 767,
+          "current": 1517,
+          "older_ppo": 382,
+          "lacoz": 383
+        },
+        "opponent_shares": {
+          "league3m": 0.2515578878320761,
+          "current": 0.4975401771072483,
+          "older_ppo": 0.1252869793374877,
+          "lacoz": 0.12561495572318793
+        },
+        "learner_seat_episodes": {
+          "1": 1509,
+          "0": 1540
+        },
+        "restored_episode_share": 0.0,
+        "restored_decision_share": 0.0,
+        "restored_categories": {
+          "loss": 0,
+          "win": 0,
+          "fresh": 0
+        },
+        "teacher_errors": [],
+        "actual_training_sample_games": 8,
+        "java_full_states": 268,
+        "java_mismatches": 0,
+        "export_verification": {
+          "groups": 1000,
+          "candidate_logits": 6934,
+          "argmax_agreement": 1.0,
+          "max_absolute_logit_error": 2.288818359375e-05,
+          "mean_absolute_logit_error": 2.105320895959432e-06,
+          "wall_seconds": 0.246115458663553,
+          "passed": true,
+          "checkpoint_epoch": null,
+          "checkpoint_steps": 100020
+        },
+        "max_old_logp_error": 7.2479248046875e-05,
+        "weights_sha256": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762",
+        "external_spend": 0
+      }
+    },
+    "curriculum": {
+      "summary": {
+        "as_of": "2026-11-08T08:40:31.843832+00:00",
+        "steps": 100013,
+        "target_steps": 100000,
+        "decision_overshoot": 13,
+        "games": 3157,
+        "restored_games": 469,
+        "restored_episode_share": 0.14855875831485588,
+        "restored_decisions": 12209,
+        "restored_decision_share": 0.1220741303630528,
+        "category_episodes": {
+          "loss": 155,
+          "win": 160,
+          "fresh": 154
+        },
+        "iterations": 50,
+        "elapsed_seconds": 233.32497625006363,
+        "stop": "sample_target",
+        "weights_sha256": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f",
+        "checkpoint_sha256": "dfe5710585695cd5c33dc98b11cf144c4b51235dab4c973181f54c541142c96d",
+        "max_rss_bytes": 1077149696,
+        "teacher": {
+          "games": 400,
+          "calls": 13844,
+          "summed_call_seconds": 418.7174158031121,
+          "errors": [],
+          "teacher_source_sha256": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+        },
+        "external_spend": 0
+      },
+      "runtime": {
+        "as_of": "2026-11-08T08:36:38.206667+00:00",
+        "target_steps": 100000,
+        "block_minutes": 12.0,
+        "starting_steps": 0,
+        "python": "3.14.6",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "binary_sha256": "85f1b2b32a144e692066b37d5a676ff9a37b18aecba3ab2233dc90781d1b6a44",
+        "pid": 17192,
+        "external_spend": 0
+      },
+      "technical_audit": {
+        "as_of": "2026-11-08T08:48:57.209595+00:00",
+        "passed": true,
+        "arm": "curriculum",
+        "source_hashes_unchanged": true,
+        "source_manifest_sha256": "05157018f183bb484dbc61e314bc7a55f0d6f94bf896b63765f0f891114d14c5",
+        "config_sha256": "e6492a4760af6bb17efc06cd8aae581759afa929e89d7ede1b4c640ea8731a98",
+        "base_checkpoint_sha256": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+        "bank_sha256": "2604762ff2c317d33ede69e4371b4bd0c6a74ae46543aa5726102b8a87ad7fc0",
+        "trained_decisions": 100013,
+        "trained_complete_episodes": 3157,
+        "collected_complete_episodes": 3200,
+        "unused_complete_episode_decisions": 1373,
+        "partial_episodes_used": 0,
+        "decision_overshoot": 13,
+        "opponent_episodes": {
+          "league3m": 788,
+          "current": 1579,
+          "older_ppo": 394,
+          "lacoz": 396
+        },
+        "opponent_shares": {
+          "league3m": 0.24960405448210327,
+          "current": 0.5001583782071587,
+          "older_ppo": 0.12480202724105163,
+          "lacoz": 0.1254355400696864
+        },
+        "learner_seat_episodes": {
+          "1": 1563,
+          "0": 1594
+        },
+        "restored_episode_share": 0.14855875831485588,
+        "restored_decision_share": 0.1220741303630528,
+        "restored_categories": {
+          "loss": 155,
+          "win": 160,
+          "fresh": 154
+        },
+        "teacher_errors": [],
+        "actual_training_sample_games": 8,
+        "java_full_states": 268,
+        "java_mismatches": 0,
+        "export_verification": {
+          "groups": 1000,
+          "candidate_logits": 6934,
+          "argmax_agreement": 1.0,
+          "max_absolute_logit_error": 2.288818359375e-05,
+          "mean_absolute_logit_error": 2.185594616068314e-06,
+          "wall_seconds": 0.23207595804706216,
+          "passed": true,
+          "checkpoint_epoch": null,
+          "checkpoint_steps": 100013
+        },
+        "max_old_logp_error": 7.62939453125e-05,
+        "weights_sha256": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f",
+        "external_spend": 0
+      }
+    }
+  },
+  "java": {
+    "passed": true,
+    "panel_games": 264,
+    "clean_games_replayed": 264,
+    "panel_manifest_sha256": "bea3a2eec90d2952dd65938c1caaae0c257db7b60d9dd6ed6f87c51d1a88db65",
+    "panel_matches_sha256": "efa25584d2ea9ed4f972baa2028a62d94277b8f8e86bf3cb332637f51bd60c76",
+    "panel_spec_sha256": "91b4b3ce2b2644b8e4481499f5d646dc6ea8f27d455acead59da4fc4b0c0af98",
+    "full_states_compared": 8568,
+    "joint_transitions": 8304,
+    "fields": [
+      "turn",
+      "score",
+      "units",
+      "edges",
+      "triangles",
+      "done"
+    ],
+    "technical_records_excluded": [],
+    "mismatches": [],
+    "referee_commit": "b6913124a10de328316ff42906448a18cb948431",
+    "oracle_sha256": "722134e0b65943e4d2ca51b122ec783532da75befe5d71325564c59663396511",
+    "verifier_sha256": "c6febcf12778baec145125fa7272d640380fd26a7fa676c37cf63cce5fc2077d",
+    "wall_seconds": 5.343754457775503
+  },
+  "native": {
+    "verifier_sha256": "f871c0b2d99e81d0b16bbe99a06a7f49e3e1d33142fa21defea421bbae69edb6",
+    "purpose": "development",
+    "panel_manifest_sha256": "bea3a2eec90d2952dd65938c1caaae0c257db7b60d9dd6ed6f87c51d1a88db65",
+    "panel_matches_sha256": "efa25584d2ea9ed4f972baa2028a62d94277b8f8e86bf3cb332637f51bd60c76",
+    "panel_spec_sha256": "91b4b3ce2b2644b8e4481499f5d646dc6ea8f27d455acead59da4fc4b0c0af98",
+    "games": 264,
+    "source_freeze_verified": true,
+    "policy_weights_sha256": {
+      "curriculum": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f",
+      "control": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762",
+      "base": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+      "b2m": "0369bcdddb1ba2e3378c23621871f650c4d0552f4364793bdaae5f524077be61"
+    },
+    "v6_source_sha256": "d36adc818e238b49544f1752beaf7388ea22ca4bb75446fcddc173c091e2ccf4",
+    "previous_unique_legacy_maps": 907,
+    "previous_unique_canonical_maps": 2782,
+    "unique_maps": 12,
+    "map_overlap_seeds": [],
+    "native_joint_transitions": 8304,
+    "native_replay_mismatches": [],
+    "technical_records_excluded_from_native_replay": [],
+    "own_error_games": 0,
+    "opponent_error_games": 0,
+    "wall_seconds": 1.1287953751161695
+  },
+  "evidence_sha256": {
+    "screen/analysis.json": "3892ddd7f50faf6048c34b1bf97c90840fef4c8c5effc2bd9b47433de69fc716",
+    "screen/matches.jsonl": "efa25584d2ea9ed4f972baa2028a62d94277b8f8e86bf3cb332637f51bd60c76",
+    "screen/manifest.json": "bea3a2eec90d2952dd65938c1caaae0c257db7b60d9dd6ed6f87c51d1a88db65",
+    "screen/native-verification.json": "24adcb394894ac60308c7d07f2e741cc4d48d745a592b90b71ee4231fa8c54c7",
+    "screen/java-verification.json": "900ac5652d457fcf7f24bfcb4e7cc8976b49d8f9f1247e01c77cbc40c41c9468",
+    "screen-analysis-freeze.json": "92d66866814e7f14529281e3dc952d52ad58a6070bb5028c62cf93033a73af49",
+    "screen-strict-decision.json": "05116fe3b575ef792465f73e1c7bd61ffe64a9168acb5c6c5642e61661a1819f",
+    "bank.json": "2604762ff2c317d33ede69e4371b4bd0c6a74ae46543aa5726102b8a87ad7fc0",
+    "restoration.json": "e7c3c420282a2e94b0cebd3d7820268ff34d98513b2ffeb02a20a27c29f52d4f",
+    "bank-verification.json": "fb08283dc4202884a0a74f719282d264bfe3eb0653db890a4620459e30001c6b",
+    "matched-pair-audit.json": "b65d0d463def75982f17dc53c3d40aca0d7f26f4ef1f29cc22f211c838870811"
+  },
+  "source_freeze": {
+    "as_of": "2026-11-08T08:49:21Z",
+    "status": "Analysis and gate loaded by the running evaluation process before games; explicit SHA record captured after launch, before inspecting game outcomes. No analysis or training source was changed during this run.",
+    "source_sha256": {
+      "code/rl/v4/curriculum/evaluate.py": "aad72ed4961ef3d3b7fb979d443ffb219a82bce56e918811f34740cddae2c46a",
+      "code/rl/v4/curriculum/audit_arm.py": "c53e372587c47a8e471bfbb7ccb8c987d00e363ccc8095d42a1d26b7016d13a5",
+      "code/rl/eval/analyze.py": "f806d65164e5eaea9bd7df2abb17bc641ef9baa0ebfa22d2fb01acbd4e2cd409",
+      "code/opponents/public/lacoz-7f190183/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab",
+      "code/opponents/public/khoufou-372c1cd6/Player.java": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5"
+    },
+    "gate_scope": "Continue frozen development evaluation only; not promotion or independent proof",
+    "gate": {
+      "pooled_external_point_gain_over_control_pp": "> 0",
+      "each_external_opponent_gain_over_control_pp": ">= -10",
+      "direct_curriculum_vs_control_score_rate": "> 0.50",
+      "minimum_clean_pair_coverage": "at least ceil(0.9 * 24), i.e. 22 of 24 pairs per opponent",
+      "own_errors_and_invalid_games": 0,
+      "native_java_and_content_audits": "must pass"
+    },
+    "coverage_implementation_note": "The loaded analyzer uses int(0.9 * games), a floor rather than the declared at-least-90-percent rule. Do not alter the running analysis. Final decision must additionally require 22/24 pairs; if the old boolean differs, retain it and reject continuation under the stricter declared rule. This discrepancy was noticed before inspecting game outcomes.",
+    "bootstrap": {
+      "replicates": 10000,
+      "seed": 20261106,
+      "unit": "whole map with both seats paired"
+    },
+    "external_spend": 0
+  },
+  "versions": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+    "java_version": "openjdk version \"17.0.21\" 2026-10-20\nOpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)\nOpenJDK 64-Bit Server VM Temurin-17.0.21+9 (build 17.0.21+9, mixed mode, sharing)\n",
+    "referee_commit": "b6913124a10de328316ff42906448a18cb948431"
+  },
+  "curriculum_compute_events": [
+    {
+      "event": "started",
+      "as_of": "2026-11-08T07:54:44.320687+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 76681,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_stage.py",
+        "restore"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 300.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T07:54:44.611296+00:00",
+      "owner": "curriculum",
+      "seconds": 0.29001550003886223,
+      "outcome": "finished",
+      "exit_code": 1
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T07:55:08.841324+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 76839,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_stage.py",
+        "restore",
+        "--attempt",
+        "2"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 300.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T07:55:13.765995+00:00",
+      "owner": "curriculum",
+      "seconds": 4.922297291923314,
+      "outcome": "finished",
+      "exit_code": 1
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:08:01.509133+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 89021,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_stage.py",
+        "smoke"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 300.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:09:05.303271+00:00",
+      "owner": "curriculum",
+      "seconds": 63.79333725012839,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:26:30.799381+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 8182,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_train.py",
+        "control"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 900.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:30:30.258269+00:00",
+      "owner": "curriculum",
+      "seconds": 239.45706150028855,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:36:35.334907+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 17165,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_train.py",
+        "curriculum"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 900.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:40:33.587887+00:00",
+      "owner": "curriculum",
+      "seconds": 238.2521082907915,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:48:55.355177+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 28991,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/evaluate.py",
+        "screen"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 1200.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:53:41.029902+00:00",
+      "owner": "curriculum",
+      "seconds": 285.67420320911333,
+      "outcome": "finished",
+      "exit_code": 0
+    }
+  ],
+  "heavy_seconds_at_audit": 832.389023042284,
+  "external_spend": 0,
+  "scope": "Saved development evidence only. No new games, training or promotion."
+}

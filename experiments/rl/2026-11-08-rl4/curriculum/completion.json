@@ -1,0 +1,761 @@
+{
+  "as_of": "2026-11-08T09:16:06.263119+00:00",
+  "status": "CLOSED_REJECTED",
+  "classification": "PROJECT_REPORTED",
+  "continuation_gate_passed": false,
+  "no_further_training_or_dev_games": true,
+  "screen_result_source": "final-data-audit.json",
+  "recovery_diagnostic": {
+    "curriculum": {
+      "games": 96,
+      "wins": 55,
+      "losses": 41,
+      "draws": 0,
+      "win_rate": 0.5729166666666666,
+      "categories": {
+        "loss": {
+          "-1": 30,
+          "1": 10
+        },
+        "win": {
+          "1": 20,
+          "-1": 4
+        },
+        "fresh": {
+          "-1": 7,
+          "1": 25
+        }
+      }
+    },
+    "control": {
+      "games": 96,
+      "wins": 59,
+      "losses": 37,
+      "draws": 0,
+      "win_rate": 0.6145833333333334,
+      "categories": {
+        "loss": {
+          "-1": 29,
+          "1": 11
+        },
+        "win": {
+          "1": 21,
+          "-1": 3
+        },
+        "fresh": {
+          "1": 27,
+          "-1": 5
+        }
+      }
+    },
+    "base": {
+      "games": 96,
+      "wins": 57,
+      "losses": 39,
+      "draws": 0,
+      "win_rate": 0.59375,
+      "categories": {
+        "loss": {
+          "-1": 27,
+          "1": 13
+        },
+        "win": {
+          "1": 21,
+          "-1": 3
+        },
+        "fresh": {
+          "-1": 9,
+          "1": 23
+        }
+      }
+    }
+  },
+  "recovery_java_states": 7988,
+  "recovery_java_mismatches": 0,
+  "recovery_wall_seconds": 22.278394415974617,
+  "heavy_lease_seconds": 855.3002142091282,
+  "compute_events": [
+    {
+      "event": "started",
+      "as_of": "2026-11-08T07:54:44.320687+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 76681,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_stage.py",
+        "restore"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 300.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T07:54:44.611296+00:00",
+      "owner": "curriculum",
+      "seconds": 0.29001550003886223,
+      "outcome": "finished",
+      "exit_code": 1
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T07:55:08.841324+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 76839,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_stage.py",
+        "restore",
+        "--attempt",
+        "2"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 300.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T07:55:13.765995+00:00",
+      "owner": "curriculum",
+      "seconds": 4.922297291923314,
+      "outcome": "finished",
+      "exit_code": 1
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:08:01.509133+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 89021,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_stage.py",
+        "smoke"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 300.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:09:05.303271+00:00",
+      "owner": "curriculum",
+      "seconds": 63.79333725012839,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:26:30.799381+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 8182,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_train.py",
+        "control"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 900.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:30:30.258269+00:00",
+      "owner": "curriculum",
+      "seconds": 239.45706150028855,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:36:35.334907+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 17165,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/run_train.py",
+        "curriculum"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 900.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:40:33.587887+00:00",
+      "owner": "curriculum",
+      "seconds": 238.2521082907915,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T08:48:55.355177+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 28991,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/evaluate.py",
+        "screen"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 1200.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T08:53:41.029902+00:00",
+      "owner": "curriculum",
+      "seconds": 285.67420320911333,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T09:13:55.944780+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 54081,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/recovery.py"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 120.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T09:14:18.411782+00:00",
+      "owner": "curriculum",
+      "seconds": 22.46527074975893,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "event": "started",
+      "as_of": "2026-11-08T09:15:52.439571+00:00",
+      "owner": "curriculum",
+      "wrapper_pid": 54334,
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v4/curriculum/pack_evidence.py"
+      ],
+      "cwd": ".",
+      "allowed_seconds": 60.0
+    },
+    {
+      "event": "finished",
+      "as_of": "2026-11-08T09:15:52.886081+00:00",
+      "owner": "curriculum",
+      "seconds": 0.44592041708528996,
+      "outcome": "finished",
+      "exit_code": 0
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/test_state.py"
+      ],
+      "cwd": "repository",
+      "returncode": 0,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/test_sampling.py"
+      ],
+      "cwd": "repository",
+      "returncode": 0,
+      "output": "OMP: Warning #179: Function Can't set size of /tmp file failed:\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.035s\n\nOK\n"
+    },
+    {
+      "command": [
+        "${PYTHON}",
+        "contest.py",
+        "check"
+      ],
+      "cwd": "contest-project",
+      "returncode": 0,
+      "output": "PASS: 11 contests; 16 TickTick links\n"
+    }
+  ],
+  "inventory": {
+    "code/rl/v4/curriculum/RestoreOracle.java": {
+      "bytes": 4842,
+      "sha256": "a31ec56b7920c527cf619de66f7ace1ece787d5c29a4cbbc3275ab62fe96bc1e"
+    },
+    "code/rl/v4/curriculum/archive.py": {
+      "bytes": 1749,
+      "sha256": "2b96deb2a1fb7b910f0527dbbe977d6b2e1a3c9faad7df4d24e1de4346887128"
+    },
+    "code/rl/v4/curriculum/audit_arm.py": {
+      "bytes": 6659,
+      "sha256": "c53e372587c47a8e471bfbb7ccb8c987d00e363ccc8095d42a1d26b7016d13a5"
+    },
+    "code/rl/v4/curriculum/build.py": {
+      "bytes": 1070,
+      "sha256": "0591048112ba597724d3b0a69d446d5cdab702c402810c310cc73d1acebccc0a"
+    },
+    "code/rl/v4/curriculum/close.py": {
+      "bytes": 7541,
+      "sha256": "df4673e80a41e5dd3fa73b8ad344f95886ecddaf6c69987f7fd704ea5640983b"
+    },
+    "code/rl/v4/curriculum/common.py": {
+      "bytes": 1913,
+      "sha256": "0ee40e298685545eda7bed113ccf6700731378aae22cf57613e4ab2623b6542a"
+    },
+    "code/rl/v4/curriculum/contracts.py": {
+      "bytes": 5954,
+      "sha256": "da50bcb46e347e18bb740aadb8878355efd79da326d18909f86a3515007f049a"
+    },
+    "code/rl/v4/curriculum/evaluate.py": {
+      "bytes": 11147,
+      "sha256": "aad72ed4961ef3d3b7fb979d443ffb219a82bce56e918811f34740cddae2c46a"
+    },
+    "code/rl/v4/curriculum/final_audit.py": {
+      "bytes": 7792,
+      "sha256": "19d959a019697f707d5e0a039d0b2f5d1766f9d4fb3534856c93ec18a56820c8"
+    },
+    "code/rl/v4/curriculum/native.cpp": {
+      "bytes": 7288,
+      "sha256": "f0bfe838d4c1803e5997c980a960d1874550eff70a768fd325c29d72a02523d8"
+    },
+    "code/rl/v4/curriculum/native.py": {
+      "bytes": 5045,
+      "sha256": "bfb86f5d5e96c62f4ba336c91fb08d0792ca12aced15d4645678c02e4c6d75b5"
+    },
+    "code/rl/v4/curriculum/pack_evidence.py": {
+      "bytes": 4142,
+      "sha256": "7ffb77173f3b1b4bf8c711cc52a2dc858697b519629dfecf094541d4a6678b22"
+    },
+    "code/rl/v4/curriculum/prepare.py": {
+      "bytes": 11854,
+      "sha256": "509f5b81f1d95ab03fde1c4844fde35131e90f131239c17b2a9482594a107588"
+    },
+    "code/rl/v4/curriculum/recovery.py": {
+      "bytes": 3055,
+      "sha256": "98665a211103f1e8426bb5728faa32fa3a24c218000dc26827da5a7ee2e2f814"
+    },
+    "code/rl/v4/curriculum/run_stage.py": {
+      "bytes": 1964,
+      "sha256": "836d529cd46151c515f7375539d3918082065d94f5d71ff4e73e346141344eb8"
+    },
+    "code/rl/v4/curriculum/run_train.py": {
+      "bytes": 1832,
+      "sha256": "93be1813e474ad68a55c67a559be4c707744ccf54e968ad1d9dcbeb2ce5cbf4b"
+    },
+    "code/rl/v4/curriculum/state.hpp": {
+      "bytes": 2800,
+      "sha256": "4fdb25d712723ce38f3995f66e2cc968a533ae3f4016c21342dde628c6cc70cf"
+    },
+    "code/rl/v4/curriculum/state.py": {
+      "bytes": 1769,
+      "sha256": "17bc48d4e174b356f23966554e55de9b0609aeee089f823e44665c4e2dc0d3e9"
+    },
+    "code/rl/v4/curriculum/strict_decision.py": {
+      "bytes": 2764,
+      "sha256": "2227c88f0d81068187a845130a1391474f68380d0981c811ac8826ab6eae9c21"
+    },
+    "code/rl/v4/curriculum/test_changed_topology.py": {
+      "bytes": 2657,
+      "sha256": "fb9aabbd91a143bfa25a779811a283610a78684a2704fa9c22c74f3680b1f672"
+    },
+    "code/rl/v4/curriculum/test_sampling.py": {
+      "bytes": 2065,
+      "sha256": "72dbc8dcdb7b636ec3e901d6616f0ed2d958c4e47f8c7734d5c1e5b7b72144d2"
+    },
+    "code/rl/v4/curriculum/test_state.py": {
+      "bytes": 1632,
+      "sha256": "e96700498f6cc45e3814cf7883aedfa15f97a1d33fbfa2c19917a0bfff77b2f6"
+    },
+    "code/rl/v4/curriculum/train.py": {
+      "bytes": 12635,
+      "sha256": "a85b025e93e0f5f70f018f20b6741ae9ae56c026f62a99e20078f51e6559cecd"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/.gitignore": {
+      "bytes": 217,
+      "sha256": "19f3311ea5083e061ae327dbe573ff32ae40a138edefef26724d3ab15a31fd3f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/REPORT.md": {
+      "bytes": 17852,
+      "sha256": "eb9405c254b024adaed3d2d6d657cb454b27020a20db28e08c95e37d2db7c9d2"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/STATUS.md": {
+      "bytes": 6312,
+      "sha256": "cb05d524705b305208d6f42205532e5ef440b99a8971ead4b6d957e5c2e6b664"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/bank-screen-plan.json": {
+      "bytes": 1418,
+      "sha256": "e814ab7b9d82a67b4c8058a7a28c703f42a70747e8f4b73fdcf327e371a33dc3"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/bank-screen-progress.json": {
+      "bytes": 142,
+      "sha256": "0aef74172d489330e662742cc726be64f820e1fd3cabc0aa39ce44fa0955b4b8"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/bank-verification.json": {
+      "bytes": 590,
+      "sha256": "fb08283dc4202884a0a74f719282d264bfe3eb0653db890a4620459e30001c6b"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/bank.json": {
+      "bytes": 1369474,
+      "sha256": "2604762ff2c317d33ede69e4371b4bd0c6a74ae46543aa5726102b8a87ad7fc0"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/changed-topology-restoration.json": {
+      "bytes": 1028884,
+      "sha256": "68b79c6216ae1fb2ab3bac0c7332f96242d4eccb57a67cfeefbc43f615fce65d"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/base-export.txt": {
+      "bytes": 322709,
+      "sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/checkpoint.pt": {
+      "bytes": 618384,
+      "sha256": "b2cbbb06cb5e5f08cc8c598d7304c35f2cf53f2550ce66ee4686c5cfeaba5550"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/config.json": {
+      "bytes": 1394,
+      "sha256": "80c3e7ebe7b5131d02785f22fa703df6f32ee8c28720d1384c3c5c5658b9ea14"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/run-000000.json": {
+      "bytes": 310,
+      "sha256": "647ad53b05e0623bec43c81ee2d20a7ab9bad14b06bb90810c0636d55c5bba35"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/sample-rollouts.json": {
+      "bytes": 4289815,
+      "sha256": "99c2f8192c1bb5d077583583c90ae5779e76894a2ad6a1ab7c2e9139773d6b7b"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/source-sha256.json": {
+      "bytes": 1342,
+      "sha256": "05157018f183bb484dbc61e314bc7a55f0d6f94bf896b63765f0f891114d14c5"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/summary.json": {
+      "bytes": 699,
+      "sha256": "2a60491bfb1efeb0497fa5300c179e04483fe3068ad7a35806ef511ddbab2f62"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/full/weights.txt": {
+      "bytes": 322838,
+      "sha256": "1049e79a8df7b6ef5e99e35553adfa6503255ef7215eee7f5ab5094e0d691beb"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/checkpoint.pt": {
+      "bytes": 618384,
+      "sha256": "3bf2dbbfeb36eac70545783f97ad6e7b642befd879d71c547aa319ace19451f1"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/config.json": {
+      "bytes": 1394,
+      "sha256": "80c3e7ebe7b5131d02785f22fa703df6f32ee8c28720d1384c3c5c5658b9ea14"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/run-000000.json": {
+      "bytes": 310,
+      "sha256": "ef20b6d04446ed2e588ba0f9f23b2f3b5fb89a1735b6354155730f7505b0f61f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/run-000001.json": {
+      "bytes": 312,
+      "sha256": "a15514a96e9efce8c7d7dcdee8a590fbe81d36e9e322011df4909be4bc89a024"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/sample-rollouts.json": {
+      "bytes": 4289815,
+      "sha256": "99c2f8192c1bb5d077583583c90ae5779e76894a2ad6a1ab7c2e9139773d6b7b"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/source-sha256.json": {
+      "bytes": 1342,
+      "sha256": "05157018f183bb484dbc61e314bc7a55f0d6f94bf896b63765f0f891114d14c5"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/summary.json": {
+      "bytes": 699,
+      "sha256": "5abf57b76df7ca101d1ab51fff618a0a75ef688001c413555d3516032f673ad9"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/split/weights.txt": {
+      "bytes": 322838,
+      "sha256": "1049e79a8df7b6ef5e99e35553adfa6503255ef7215eee7f5ab5094e0d691beb"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/contracts/summary.json": {
+      "bytes": 1962,
+      "sha256": "e5845015c49ab758343b3bfde57f024295809002f68ea29993e9b2efe020a820"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/final-data-audit.json": {
+      "bytes": 21024,
+      "sha256": "1e3ec2c3b325de63058d1578e71db17a39b3d3ea7b5ad31975b8fc6a086205e6"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/map-contribution.json": {
+      "bytes": 4676,
+      "sha256": "c0c62696162dddc48de1ab2adf0909b0e8318dfd9ae45d60b0ce66ffd7c601f2"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/map-registry-claim.json": {
+      "bytes": 4676,
+      "sha256": "c0c62696162dddc48de1ab2adf0909b0e8318dfd9ae45d60b0ce66ffd7c601f2"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/matched-pair-audit.json": {
+      "bytes": 848,
+      "sha256": "b65d0d463def75982f17dc53c3d40aca0d7f26f4ef1f29cc22f211c838870811"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/checkpoint.pt": {
+      "bytes": 618384,
+      "sha256": "ec7fe5b20fd6bbe87048b8d1c0b36d384c55a54f843feceb4c52bc20fa803a84"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/config.json": {
+      "bytes": 1393,
+      "sha256": "a25c21884cbab67e8c36c79df1d04acb4b4c5c412e5fa1bd3a5fdf1c5ffdd574"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/export-verification.json": {
+      "bytes": 293,
+      "sha256": "14f5d12d97251692377921eac6740f6232f0f1b4fe1a493c6e6b33b3abfd8890"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/run-000000.json": {
+      "bytes": 312,
+      "sha256": "0ac63d0e07abe5b2be503f5c4ed9eca9cec434c21a60b62bbe7f353b8c5d8510"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/sample-rollouts.json": {
+      "bytes": 4764382,
+      "sha256": "71bbd65ae5748221230b6284fd5aa9153628892adf6d58e7f288c7ce4e6ece83"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/source-sha256.json": {
+      "bytes": 1342,
+      "sha256": "05157018f183bb484dbc61e314bc7a55f0d6f94bf896b63765f0f891114d14c5"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/summary.json": {
+      "bytes": 870,
+      "sha256": "593377daf24bd6ad0c0fddb200ba773c8974d7708d46e0b7eed63987e5d3c905"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/technical-audit.json": {
+      "bytes": 1789,
+      "sha256": "bfe1be42fe77d961f7906adb715ca1a0ae7c17b5c2b8420d2923075831c526d6"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/weights.txt": {
+      "bytes": 322713,
+      "sha256": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control-commands.json": {
+      "bytes": 640,
+      "sha256": "1256fc9ef4b9363f325518d8c0f0cd31e85b73029f0170ba74394eeae1c3ea7a"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control-execution.json": {
+      "bytes": 128,
+      "sha256": "abf72d090dd0700c1baa332968b66a158940aa98a62f1ec4e7ddea96914f0448"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/checkpoint.pt": {
+      "bytes": 618384,
+      "sha256": "dfe5710585695cd5c33dc98b11cf144c4b51235dab4c973181f54c541142c96d"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/config.json": {
+      "bytes": 1394,
+      "sha256": "e6492a4760af6bb17efc06cd8aae581759afa929e89d7ede1b4c640ea8731a98"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/export-verification.json": {
+      "bytes": 295,
+      "sha256": "a83c09b2e3ae02bd30d96daf062dabcac49c639f8251f331fbc6eb1d352e1b6f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/run-000000.json": {
+      "bytes": 313,
+      "sha256": "65d7fbe28a99e723399ee3b91a8be570fe12e56bd1b215e51b2db5fe49e07d2a"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/sample-rollouts.json": {
+      "bytes": 4764382,
+      "sha256": "71bbd65ae5748221230b6284fd5aa9153628892adf6d58e7f288c7ce4e6ece83"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/source-sha256.json": {
+      "bytes": 1342,
+      "sha256": "05157018f183bb484dbc61e314bc7a55f0d6f94bf896b63765f0f891114d14c5"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/summary.json": {
+      "bytes": 913,
+      "sha256": "7392b3c4d1b3ddd1a589c07212f5143c89b85c1c69400d6548392fbdd29169e4"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/technical-audit.json": {
+      "bytes": 1831,
+      "sha256": "6539af6a3b9b34131c86c17ae85972e816112266be52e874e45f8dd9125d680f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/weights.txt": {
+      "bytes": 322807,
+      "sha256": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum-commands.json": {
+      "bytes": 665,
+      "sha256": "5f69d6c04439e973e6343a76367bae2d8d175013263253aca94dc10f336a8131"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum-execution.json": {
+      "bytes": 129,
+      "sha256": "c9f673c6f300d7a05ddd04aae6e8cfb631022eb01033ab38d7f87fd20efeb90d"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-evidence-archive.json": {
+      "bytes": 298454,
+      "sha256": "3ec46b89bb84b77481525dee7e43a55fb880585c5ee45e90c5cbdbd8d6dee3b4"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-evidence.tar.gz": {
+      "bytes": 4162339,
+      "sha256": "503a35c5740f84e96b7809a49479dba523ad468bbdbcda450cc05d886447cf73"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/preflight-archive.json": {
+      "bytes": 655,
+      "sha256": "23729f1bb80adc23fe312e785b896c46d87ee1d71bcacf84445f396952491e2f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/preflight-evidence.tar.gz": {
+      "bytes": 4387514,
+      "sha256": "5b9e69f1c55808f4aedf1bd5c9ae183daeefb82536f2faa591efc270a8a48780"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/recovery-diagnostic.json": {
+      "bytes": 9231289,
+      "sha256": "8920d1010746438bd70aa67c2b451550b9f5d1bec3bb09ad141a4226f440e591"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/recovery-plan.json": {
+      "bytes": 2764,
+      "sha256": "07113019e78dbc8aced2c1d584d346dd83363cfd4cc107633b3fa73721ca945e"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/restoration-mismatch.json": {
+      "bytes": 27529,
+      "sha256": "7a64e2cd5d5ad73e0fda8c31e248bb3ddaef4d824c00f4e961b5fa32129fc01e"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/restoration.json": {
+      "bytes": 969,
+      "sha256": "e7c3c420282a2e94b0cebd3d7820268ff34d98513b2ffeb02a20a27c29f52d4f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/restore-execution-attempt2.json": {
+      "bytes": 545,
+      "sha256": "3fbcd2be3381eef33d11343b1b73e30ac6f32bf4cc1b011222eddedf900c8c38"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/restore-execution.json": {
+      "bytes": 337,
+      "sha256": "199b08d6d2ec11add6219ff4591b9df3004eeb11d453201b4c09809382546751"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/analysis.json": {
+      "bytes": 5490,
+      "sha256": "3892ddd7f50faf6048c34b1bf97c90840fef4c8c5effc2bd9b47433de69fc716"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/java-verification.json": {
+      "bytes": 846,
+      "sha256": "900ac5652d457fcf7f24bfcb4e7cc8976b49d8f9f1247e01c77cbc40c41c9468"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/manifest.json": {
+      "bytes": 5581,
+      "sha256": "bea3a2eec90d2952dd65938c1caaae0c257db7b60d9dd6ed6f87c51d1a88db65"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/map-hashes.json": {
+      "bytes": 951,
+      "sha256": "481ad9896f64da38b6fce3bbe7bb965a6f4b4932f9f7b762d79eb180bfb56471"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/native-verification.json": {
+      "bytes": 3266,
+      "sha256": "24adcb394894ac60308c7d07f2e741cc4d48d745a592b90b71ee4231fa8c54c7"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/runtime.json": {
+      "bytes": 80,
+      "sha256": "4cff0612106fb147fd14076668882062f3bc976ad521c4ae0c8a17525b653880"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/harness/code/arena/BenchmarkMatch.java": {
+      "bytes": 1203,
+      "sha256": "ef7020e1e023eaf77d4be7c3a92ffde8c3b00f748db2d86417e27758ef1055ea"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/harness/code/benchmark_public.py": {
+      "bytes": 12337,
+      "sha256": "6fb78c93012ef8750cb2a65bbf81dc6248d3c1faf8eed7f703ed8a2e9cd1eded"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/harness/code/rl/eval/panel.py": {
+      "bytes": 13116,
+      "sha256": "ba425c2c1aa20559e34dd43b782ad3885c1ca4bd9da421e3f9cd38e4606dd1b3"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/harness/code/run_matches.py": {
+      "bytes": 7109,
+      "sha256": "af986c51dd416a1e238d6d34d176e6439c0de7756aa527d2a76146319ea5f776"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/khoufou/PROVENANCE.json": {
+      "bytes": 843,
+      "sha256": "6b4c62b9f40b8e86d2137e96ba71ba10cfc7cad38c48bb6ce9b739ecc9d9b290"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/khoufou/Player.java": {
+      "bytes": 31849,
+      "sha256": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/lacoz/PROVENANCE.json": {
+      "bytes": 779,
+      "sha256": "05d67ab035bf3f3a4515a60f502d00b82865686cdefa984f2b5ef8e6758b0e64"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/lacoz/bot.py": {
+      "bytes": 43507,
+      "sha256": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/rl/export/bot.cpp": {
+      "bytes": 1512,
+      "sha256": "6a2246ebf78a3b4b2196c7bfdc54e277fc60f749213c4f3f73ae81306107831b"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/rl/models/policy.hpp": {
+      "bytes": 10911,
+      "sha256": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/rl/sim/simulator.hpp": {
+      "bytes": 10308,
+      "sha256": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/v6.cpp": {
+      "bytes": 10073,
+      "sha256": "d36adc818e238b49544f1752beaf7388ea22ca4bb75446fcddc173c091e2ccf4"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/b2m.txt": {
+      "bytes": 322676,
+      "sha256": "0369bcdddb1ba2e3378c23621871f650c4d0552f4364793bdaae5f524077be61"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/base.txt": {
+      "bytes": 322709,
+      "sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/control.txt": {
+      "bytes": 322713,
+      "sha256": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/snapshots/weights/curriculum.txt": {
+      "bytes": 322807,
+      "sha256": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/summary.json": {
+      "bytes": 27328,
+      "sha256": "2b95242eddab78f94025eeee3059450c8e2f99ac08b9724d6fbfc168bd972e73"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen-analysis-freeze.json": {
+      "bytes": 1834,
+      "sha256": "92d66866814e7f14529281e3dc952d52ad58a6070bb5028c62cf93033a73af49"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen-commands.json": {
+      "bytes": 655,
+      "sha256": "ad786e2c315ff08bc50567f46e6fa4c370d66122d0e3b7a104c3aa5ad8d41871"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen-exclusions.json": {
+      "bytes": 266408,
+      "sha256": "d277dd83f2b2693ac7f8c113e8448a1608f27f99f78574674d3fbe8ce3e50891"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen-maps.json": {
+      "bytes": 123164,
+      "sha256": "3a886850cdc42075a58ed21dffee8788752d4c406c10b0b17765109495222148"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/screen-strict-decision.json": {
+      "bytes": 2082,
+      "sha256": "05116fe3b575ef792465f73e1c7bd61ffe64a9168acb5c6c5642e61661a1819f"
+    },
+    "experiments/rl/2026-11-08-rl4/curriculum/smoke-execution-attempt1.json": {
+      "bytes": 947,
+      "sha256": "0734ffc29fc78bd16d8dff85649fc4066990f967ebf16eec0946aa900944ca99"
+    },
+    "docs/rl/v4/CURRICULUM.md": {
+      "bytes": 6244,
+      "sha256": "79b797ec939ecb36198980d6e3899ee4db177b5d20c712a9cb4b963f99ef6d79"
+    }
+  },
+  "final_content_audit": {
+    "unique_maps": 12,
+    "overlap": 0,
+    "exclusion_files_sha256": {
+      "experiments/rl/2026-11-08-rl4/map-registry-base.json": "6185ddba8c2eac022e1f2201ae4b669e7c1e7dc962f1bc6636c805609b6c3702",
+      "experiments/rl/2026-11-08-rl4/exploiters/map-contribution.json": "37553e4a9eccbb0de8e8099141dd51f40bec9680ce4b36be9d9523f53ab10ad8",
+      "experiments/rl/2026-11-08-rl4/exploiters/map-registry-claim.json": "37553e4a9eccbb0de8e8099141dd51f40bec9680ce4b36be9d9523f53ab10ad8",
+      "experiments/rl/2026-11-08-rl4/search-teacher/map-contribution.json": "6d55e11cd49c5467975ca7c5cbe4eeb3b4cb35a6f25cc82c321820985b54151b",
+      "experiments/rl/2026-11-08-rl4/search-teacher/map-registry-claim.json": "6d55e11cd49c5467975ca7c5cbe4eeb3b4cb35a6f25cc82c321820985b54151b"
+    },
+    "scope": "Hash-only reread of latest neighboring claims and frozen prior registry; no held-out map content opened"
+  },
+  "inventory_scope": "Owned source/docs and portable evidence; every raw replay/history/log/spec is in verified archives, with private prefixes normalized only in archived copies and dual hash ledger. Build caches and redundant raw extracts remain local.",
+  "test_invocation_erratum": "A manual system-python invocation of test_sampling.py lacked NumPy; using the prescribed RL virtual environment passed both tests without any code change. This was an environment invocation issue, not a failed algorithm audit.",
+  "external_spend": 0,
+  "integration": "Preserve rejected candidate and restoration evidence only. Do not promote either pilot or change the active submission. Coordinator serializes organizational state and handles any Git action."
+}

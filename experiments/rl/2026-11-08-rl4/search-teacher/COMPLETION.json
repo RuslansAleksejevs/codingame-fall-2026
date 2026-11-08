@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-11-08T09:19:07.280059+00:00",
+  "classification": "PROJECT_REPORTED",
+  "status": "completed_rejected_no_deployable_candidate",
+  "teacher_strength_gate_passed": false,
+  "candidate_manifest_sha256": "d58fa093312b3df60712ceeef032741c94f8bb4ebb967db21c3bb9051c20c81e",
+  "bindings_sha256": {
+    "REPORT.md": "8c389207cf29faa344603f139001eb34361cdbd12add784cc1384527ef61164a",
+    "STATUS.md": "8aa81835458e0606d051e9e2ce7fc50780866b5418877920b6ce2d0c6b467240",
+    "HISTORY.md": "b113f50628adb7becfb779f9e2ef78561a775847111d3c115ec957c0124cdaf6",
+    "PROTOCOL.md": "5e43371609009a54a395d1568ab77375a8c10f666ddb26b5862fa3025744cfe7",
+    "candidate.json": "d58fa093312b3df60712ceeef032741c94f8bb4ebb967db21c3bb9051c20c81e",
+    "confirmation-plan.json": "b47070b55b17e0e99eeccab2117ab94bcecb260123e633ccfe7bdf334a6f8ee1",
+    "technical-rejection.json": "e1e39277d82f88ae6092f2d0187d4c30c1c7313a4d891ce943c688cc83f62c0d",
+    "teacher-decision.json": "6e1744b784d4fb72e479ea26fc2b68073b76dd3c6d1081a5ff8082b0cc99184c",
+    "teacher-audit.json": "fda82389952c93b2cf1d184b2959ca608aa5829a0c8cc46b61d4daacc2530197",
+    "technical-errors.json": "e4a46f68bb0817b122c5f041acb96c841dd84507ef24a2ba43e12b38e35fe39d",
+    "evidence-manifest.json": "7ef82fe8f11b4c0092a3e3093332eab56c3530bb95994e03773e5c39e1ab3ba4",
+    "closing-gate-tests.log": "d5c42298542e8087193ca809f6dfcba308030c868c5e717efbc32ab0ad47b9de",
+    "closing-technical-tests.log": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0"
+  },
+  "archive": {
+    "archive": "experiments/rl/2026-11-08-rl4/search-teacher/evidence.tar.gz",
+    "sha256": "bd796f3c5cafccb195921f513f9c17906956517ccbd73675d22e9c08f1695390",
+    "files": 3814,
+    "roundtrip_verified": true,
+    "normalized_invocations": 1156
+  },
+  "external_gain_pp": 4.824561403508771,
+  "external_gain_paired_95_pp": [
+    0.43859649122807015,
+    10.087719298245613
+  ],
+  "direct_score_percent": 97.5,
+  "direct_score_95_percent": [
+    93.75,
+    100.0
+  ],
+  "total_timed_games": 1156,
+  "confirmation_maps": 40,
+  "confirmation_games": 960,
+  "confirmation_clean_raw_games": 956,
+  "confirmation_complete_paired_game_records": 944,
+  "own_timeout_games": 3,
+  "opponent_timeout_games": 1,
+  "pure_tests_passed": 13,
+  "teacher_labels": 0,
+  "student_training_performed": false,
+  "submission_ready": false,
+  "preserved": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "code/rl/search/bot.cpp": "da6a29bf0c204d4add3a94eb26a0acebe6d0e15c3cc96595882a4befba364d1f"
+  },
+  "global_final_opened": false,
+  "external_spend": 0,
+  "completed_heavy_seconds": 1379.5969817093574,
+  "remaining_lane_budget_seconds": 13020.403018290643,
+  "archive_lease_seconds": 4.533891042228788,
+  "active_compute_leases": 0,
+  "pending_branch_continuations": 0,
+  "continuation_basis": "Every branch-scheduled check was cancelled or delivered; no new schedule was created after confirmation.",
+  "research_hard_stop": "2026-11-09T02:00:00+00:00",
+  "seconds_until_research_stop": 60052.723289,
+  "official_deadline": "2026-11-09T09:00:00Z",
+  "seconds_until_official_deadline": 85252.723289,
+  "next_step": "Integrate isolated code/docs and negative evidence only. Do not deploy teacher, generate labels, train a student, reopen global final or alter active platform/fallback."
+}

@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-11-08T08:49:21Z",
+  "status": "Analysis and gate loaded by the running evaluation process before games; explicit SHA record captured after launch, before inspecting game outcomes. No analysis or training source was changed during this run.",
+  "source_sha256": {
+    "code/rl/v4/curriculum/evaluate.py": "aad72ed4961ef3d3b7fb979d443ffb219a82bce56e918811f34740cddae2c46a",
+    "code/rl/v4/curriculum/audit_arm.py": "c53e372587c47a8e471bfbb7ccb8c987d00e363ccc8095d42a1d26b7016d13a5",
+    "code/rl/eval/analyze.py": "f806d65164e5eaea9bd7df2abb17bc641ef9baa0ebfa22d2fb01acbd4e2cd409",
+    "code/opponents/public/lacoz-7f190183/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab",
+    "code/opponents/public/khoufou-372c1cd6/Player.java": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5"
+  },
+  "gate_scope": "Continue frozen development evaluation only; not promotion or independent proof",
+  "gate": {
+    "pooled_external_point_gain_over_control_pp": "> 0",
+    "each_external_opponent_gain_over_control_pp": ">= -10",
+    "direct_curriculum_vs_control_score_rate": "> 0.50",
+    "minimum_clean_pair_coverage": "at least ceil(0.9 * 24), i.e. 22 of 24 pairs per opponent",
+    "own_errors_and_invalid_games": 0,
+    "native_java_and_content_audits": "must pass"
+  },
+  "coverage_implementation_note": "The loaded analyzer uses int(0.9 * games), a floor rather than the declared at-least-90-percent rule. Do not alter the running analysis. Final decision must additionally require 22/24 pairs; if the old boolean differs, retain it and reject continuation under the stricter declared rule. This discrepancy was noticed before inspecting game outcomes.",
+  "bootstrap": {"replicates": 10000, "seed": 20261106, "unit": "whole map with both seats paired"},
+  "external_spend": 0
+}

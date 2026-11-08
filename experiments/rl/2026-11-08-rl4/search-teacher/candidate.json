@@ -1,0 +1,34 @@
+{
+  "as_of": "2026-11-08T08:09:53.651186+00:00",
+  "label": "frozen-search2-30ms",
+  "protocol_sha256": "5e43371609009a54a395d1568ab77375a8c10f666ddb26b5862fa3025744cfe7",
+  "sources": {
+    "code/rl/v4/search_teacher/diagnostic.cpp": "5d5f23d07c1cc47810c8d2253a1070bc240037615112321fdb91827883acd4b4",
+    "code/rl/search/search.hpp": "723f5af35be6ed379da726bb31337412b068b23991d00dc6cb7f2774d2ffb72d",
+    "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+    "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "code/rl/export/inference.hpp": "6fbee4b154022df88a141f1702e81a29d1f5df0f99eea5e69ab7a4a5b5c809e9"
+  },
+  "standalone_source_sha256": "da6a29bf0c204d4add3a94eb26a0acebe6d0e15c3cc96595882a4befba364d1f",
+  "weights": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-07-ppo-v3/search/frozen-critic/critic.txt": "91fd5a290dd4a015fade1abdfe8840e1b580b4480c50102b4f7a3fb14f1f6680",
+    "experiments/rl/2026-11-06-ppo-v2/control-long/step-03002813/weights.txt": "c02c08c67e17ab8bdbbb37fc77eafd646da40d96de306a94ef013778eb359094",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-04836947/weights.txt": "ca3a2d89183f9ce69391baca328f34c6719879a6348e614b622b4129c580c507"
+  },
+  "depth": 2,
+  "proposals": 4,
+  "temperatures": [
+    0.15,
+    0.35,
+    0.7
+  ],
+  "budget_ms": 30,
+  "score": "0.5 mean + 0.5 minimum of three response-model values",
+  "margin": 0.02,
+  "gamma": 0.995,
+  "student": false,
+  "submission_ready": false,
+  "scope": "One frozen teacher; diagnostic depths4/8 are not promoted as candidates."
+}

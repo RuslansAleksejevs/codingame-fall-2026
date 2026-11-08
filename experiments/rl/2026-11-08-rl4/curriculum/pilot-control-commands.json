@@ -1,0 +1,33 @@
+[
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/v4/curriculum/archive.py"
+  ],
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/v4/curriculum/train.py",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control",
+    "--fraction",
+    "0",
+    "--steps",
+    "100000",
+    "--minutes",
+    "12",
+    "--seed",
+    "202611081"
+  ],
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/export/verify.py",
+    "--training",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control",
+    "--data",
+    "code/build/rl-cache/bc-v1-clean",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/export-verification.json"
+  ]
+]

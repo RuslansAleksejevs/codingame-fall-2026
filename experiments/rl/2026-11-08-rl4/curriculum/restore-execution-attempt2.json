@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-11-08T07:55:13.735063+00:00",
+  "events": [
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/build.py"
+      ],
+      "as_of": "2026-11-08T07:55:08.921403+00:00",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/prepare.py",
+        "parity"
+      ],
+      "as_of": "2026-11-08T07:55:11.403377+00:00",
+      "returncode": 1
+    }
+  ],
+  "seconds": 4.812171333003789,
+  "external_spend": 0,
+  "completed": false
+}

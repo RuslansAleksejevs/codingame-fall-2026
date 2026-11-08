@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-11-08T08:09:05.235747+00:00",
+  "events": [
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/build.py"
+      ],
+      "as_of": "2026-11-08T08:08:01.584153+00:00",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/prepare.py",
+        "parity"
+      ],
+      "as_of": "2026-11-08T08:08:04.325017+00:00",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/prepare.py",
+        "bank"
+      ],
+      "as_of": "2026-11-08T08:08:08.055791+00:00",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "${PYTHON}",
+        "-B",
+        "code/rl/v4/curriculum/contracts.py"
+      ],
+      "as_of": "2026-11-08T08:08:43.323769+00:00",
+      "returncode": 0
+    }
+  ],
+  "seconds": 63.651309832930565,
+  "external_spend": 0,
+  "completed": true
+}

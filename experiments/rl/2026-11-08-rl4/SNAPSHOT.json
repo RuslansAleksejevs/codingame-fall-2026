@@ -1,0 +1,67 @@
+{
+  "as_of": "2026-11-08T09:26:18Z",
+  "classification": "PROJECT_REPORTED",
+  "status": "all_three_bounded_experiments_closed_no_finalist",
+  "summary": "docs/rl/v4/RESULTS.md",
+  "external_compute_spend_usd": 0,
+  "submission_unchanged": 41665776,
+  "no_new_platform_action": true,
+  "global_map_sets_unopened": ["65001-65040", "40001-40100"],
+  "archives": [
+    {
+      "path": "exploiters/records-final.tar.gz",
+      "members": 1231,
+      "bytes": 7454233,
+      "sha256": "a434abdb5575a107c5ebdf5465a3805b79209f1153a4c271e8f669976561c210",
+      "ledger": "exploiters/archive-final.json"
+    },
+    {
+      "path": "curriculum/preflight-evidence.tar.gz",
+      "members": 3,
+      "bytes": 4387514,
+      "sha256": "5b9e69f1c55808f4aedf1bd5c9ae183daeefb82536f2faa591efc270a8a48780",
+      "ledger": "curriculum/preflight-archive.json"
+    },
+    {
+      "path": "curriculum/pilot-evidence.tar.gz",
+      "members": 827,
+      "bytes": 4162339,
+      "sha256": "503a35c5740f84e96b7809a49479dba523ad468bbdbcda450cc05d886447cf73",
+      "ledger": "curriculum/pilot-evidence-archive.json"
+    },
+    {
+      "path": "search-teacher/evidence.tar.gz",
+      "members": 3814,
+      "bytes": 26866286,
+      "sha256": "bd796f3c5cafccb195921f513f9c17906956517ccbd73675d22e9c08f1695390",
+      "ledger": "search-teacher/evidence-manifest.json"
+    }
+  ],
+  "archive_totals": {"members": 5875, "bytes": 42870372, "path_normalized_copies": 2625},
+  "coverage_audit": {
+    "unique_original_sha_bindings_verified": 5875,
+    "git_ignored_scientific_files": 5575,
+    "uncovered_ignored_files": [],
+    "original_sha_mismatches": [],
+    "excluded_build_or_cache_files": 78,
+    "original_files_deleted_or_rewritten": false
+  },
+  "security_audit": {
+    "scope": "Selected versioned files, checkpoint pickle metadata and all5875 archive members; location-only findings",
+    "detected_secret_literals_or_auth_fields": 0,
+    "personal_host_paths": 0,
+    "executable_binaries": 0,
+    "unsafe_archive_member_names_or_types": 0,
+    "selected_files_over_90MB": 0,
+    "limitation": "Pattern/structure-based scan, not an absolute security guarantee. Checkpoints are model data, not executable build artifacts."
+  },
+  "preserved_sha256": {
+    "league3m_checkpoint": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "league3m_weights": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "published_fallback_source": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "active_b2m_source": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214"
+  },
+  "runtime": "All three project chats configured GPT-6 Astra/max/codex_second; initial actual configuration and closing provider/model metadata verified. No extra workspace or paid resource.",
+  "closure": "Every owned experimental lease ended; scoped process check found no remaining lane command, branch timers cleared. No further training or games are authorized by stale reminders.",
+  "reproducibility": "Each archive ledger binds original and exported member SHA256. Personal prefixes are normalized only in copies; historical verifier hashes may refer to local originals. CHECKSUMS.json binds the staged repository files."
+}

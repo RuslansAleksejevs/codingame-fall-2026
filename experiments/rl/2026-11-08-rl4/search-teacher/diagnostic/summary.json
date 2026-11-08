@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-11-08T07:56:40.884663+00:00",
+  "passed": true,
+  "cases": 36,
+  "maps": 6,
+  "complete_counterfactual_continuations": 219,
+  "java_snapshots_compared": 1095,
+  "root_immutable": true,
+  "baseline_included": true,
+  "depth2_matches_frozen_teacher": true,
+  "deterministic_repeat": true,
+  "parse_errors": 0,
+  "metrics": {
+    "1": {
+      "pairwise_concordant": 30,
+      "pairwise_non_tied": 54,
+      "concordance": 0.5555555555555556,
+      "mean_selection_regret": 0.02116726101909723,
+      "mean_delta_vs_greedy": 0.042630027450638895,
+      "changed": 8,
+      "improved": 6,
+      "worsened": 2,
+      "per_model": [
+        {
+          "concordant": 28,
+          "comparable": 50
+        },
+        {
+          "concordant": 21,
+          "comparable": 51
+        },
+        {
+          "concordant": 27,
+          "comparable": 50
+        }
+      ]
+    },
+    "2": {
+      "pairwise_concordant": 33,
+      "pairwise_non_tied": 54,
+      "concordance": 0.6111111111111112,
+      "mean_selection_regret": 0.06001040750943982,
+      "mean_delta_vs_greedy": 0.003786880960296301,
+      "changed": 8,
+      "improved": 5,
+      "worsened": 3,
+      "per_model": [
+        {
+          "concordant": 30,
+          "comparable": 50
+        },
+        {
+          "concordant": 30,
+          "comparable": 51
+        },
+        {
+          "concordant": 29,
+          "comparable": 50
+        }
+      ]
+    },
+    "4": {
+      "pairwise_concordant": 31,
+      "pairwise_non_tied": 54,
+      "concordance": 0.5740740740740741,
+      "mean_selection_regret": 0.01745261716697223,
+      "mean_delta_vs_greedy": 0.046344671302763894,
+      "changed": 7,
+      "improved": 7,
+      "worsened": 0,
+      "per_model": [
+        {
+          "concordant": 34,
+          "comparable": 50
+        },
+        {
+          "concordant": 38,
+          "comparable": 51
+        },
+        {
+          "concordant": 36,
+          "comparable": 50
+        }
+      ]
+    },
+    "8": {
+      "pairwise_concordant": 44,
+      "pairwise_non_tied": 54,
+      "concordance": 0.8148148148148148,
+      "mean_selection_regret": 0.007950499463125007,
+      "mean_delta_vs_greedy": 0.055846789006611115,
+      "changed": 10,
+      "improved": 10,
+      "worsened": 0,
+      "per_model": [
+        {
+          "concordant": 37,
+          "comparable": 50
+        },
+        {
+          "concordant": 37,
+          "comparable": 51
+        },
+        {
+          "concordant": 40,
+          "comparable": 50
+        }
+      ]
+    }
+  },
+  "wall_seconds": 9.523306374903768,
+  "registry": "experiments/rl/2026-11-08-rl4/search-teacher/diagnostic-registry.json",
+  "registry_sha256": "15e9cab3b358dc46c6ffa80a2d0c8a853970f740ec6b31233a135116bbf0199a",
+  "cases_sha256": "5b032c934cca420bca3fcebb2b6aa60e8e7109c98c41cefa76ea71b419d525f3",
+  "weights": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-07-ppo-v3/search/frozen-critic/critic.txt": "91fd5a290dd4a015fade1abdfe8840e1b580b4480c50102b4f7a3fb14f1f6680",
+    "experiments/rl/2026-11-06-ppo-v2/control-long/step-03002813/weights.txt": "c02c08c67e17ab8bdbbb37fc77eafd646da40d96de306a94ef013778eb359094",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-04836947/weights.txt": "ca3a2d89183f9ce69391baca328f34c6719879a6348e614b622b4129c580c507"
+  },
+  "external_spend": 0,
+  "scope": "Offline diagnostics versus three teacher response models; not independent strength or timed-program evidence."
+}

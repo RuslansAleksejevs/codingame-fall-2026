@@ -1,0 +1,27 @@
+[
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/eval/panel.py",
+    "--spec",
+    "experiments/rl/2026-11-08-rl4/curriculum/screen-spec.json",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/screen"
+  ],
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/eval/verify_panel.py",
+    "experiments/rl/2026-11-08-rl4/curriculum/screen",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/native-verification.json"
+  ],
+  [
+    "${PYTHON}",
+    "-B",
+    "code/rl/eval/verify_java_panel.py",
+    "experiments/rl/2026-11-08-rl4/curriculum/screen",
+    "--out",
+    "experiments/rl/2026-11-08-rl4/curriculum/screen/java-verification.json"
+  ]
+]

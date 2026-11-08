@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-11-08T09:03:24Z",
+  "status": "Frozen before any diagnostic game; wait for both search confirmation leases to be released",
+  "purpose": "Training-bank recovery and original-Java parity only; the curriculum branch is already closed by its failed full-start gate",
+  "states": 48,
+  "candidates": ["curriculum", "control", "base"],
+  "opponents": ["base", "older"],
+  "games": 288,
+  "selection": "Every unchanged accepted bank state, its original controlled seat, all six candidate/opponent combinations; no subsampling or exclusions",
+  "behavior": "Greedy live neural policies at each future turn, terminal outcomes only, full-state original-Java replay for every continuation",
+  "reports": ["win/draw/loss counts", "win rates", "full Java state count", "state mismatches", "wall time"],
+  "interpretation": "Biased training-bank diagnostic, no independent strength claim or confidence interval; no promotion, retraining, gate change or candidate selection regardless of outcome",
+  "maximum_lease_seconds": 120,
+  "command": ["python3", "code/rl/v4/compute_slot.py", "--owner", "curriculum", "--minutes", "2", "--", "code/arena/.venv-rl/bin/python", "-B", "code/rl/v4/curriculum/recovery.py"],
+  "sha256": {
+    "code/rl/v4/curriculum/recovery.py": "98665a211103f1e8426bb5728faa32fa3a24c218000dc26827da5a7ee2e2f814",
+    "code/rl/v4/curriculum/prepare.py": "509f5b81f1d95ab03fde1c4844fde35131e90f131239c17b2a9482594a107588",
+    "code/rl/v4/curriculum/native.py": "bfb86f5d5e96c62f4ba336c91fb08d0792ca12aced15d4645678c02e4c6d75b5",
+    "code/rl/v4/curriculum/common.py": "0ee40e298685545eda7bed113ccf6700731378aae22cf57613e4ab2623b6542a",
+    "code/rl/v4/curriculum/build/libcurriculum.dylib": "85f1b2b32a144e692066b37d5a676ff9a37b18aecba3ab2233dc90781d1b6a44",
+    "code/rl/v4/curriculum/build/RestoreOracle.class": "f3dad87b00df5a7dde7dc78c3919808a4b9df3a42b632e3431905762fced376d",
+    "experiments/rl/2026-11-08-rl4/curriculum/final-data-audit.json": "1e3ec2c3b325de63058d1578e71db17a39b3d3ea7b5ad31975b8fc6a086205e6",
+    "experiments/rl/2026-11-08-rl4/curriculum/bank.json": "2604762ff2c317d33ede69e4371b4bd0c6a74ae46543aa5726102b8a87ad7fc0",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-curriculum/weights.txt": "7689e7cc277d26d76af80edd8ab95829786397e872fd53a43af1707667a8636f",
+    "experiments/rl/2026-11-08-rl4/curriculum/pilot-control/weights.txt": "21c6da38b91e236ffa29a6663af4a2a97d9a83efbbf3c7d6541b9ac277165762",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v1/training/weights.txt": "8b9f669b3b4047eb75d1ff1df2ea9cc8e61de59629de1c9260f8a954b40ae7e7"
+  },
+  "external_spend": 0
+}
