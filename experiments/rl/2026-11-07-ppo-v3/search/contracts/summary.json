@@ -1,0 +1,418 @@
+{
+  "as_of": "2026-11-08T00:07:18.539164+00:00",
+  "passed": true,
+  "cases": 12,
+  "java_counterfactual_states": 12,
+  "root_immutable": true,
+  "greedy_matches_scalar": true,
+  "unbounded_search_deterministic": true,
+  "value_antisymmetric": true,
+  "changed_plans": 2,
+  "counterfactual_improved": 0,
+  "counterfactual_worsened": 2,
+  "under_training_load": true,
+  "timing_caveat": "Diagnostic timings under active PPO load; not uncontended runtime evidence.",
+  "ranking_caveat": "Same exposed roots; full greedy continuations against the three response models. Not independent external-opponent evidence.",
+  "source_sha256": {
+    "code/rl/search/build.py": "b7239d1804fc7e1a4ba165b196085f8c94f2891288451b45c1a64c80d1a21fba",
+    "code/rl/search/api.cpp": "5425b5caf184993dd56d6b387022e1478799d4f9b129fc646aac63e3d6363f80",
+    "code/rl/search/search.hpp": "723f5af35be6ed379da726bb31337412b068b23991d00dc6cb7f2774d2ffb72d",
+    "code/rl/search/native.py": "645380e1025b8ebf7c1ad98b53c3f9bb274795c818ee3ce65481f9f1d1e5e708",
+    "code/rl/search/test.py": "c72d6a7cb36438e9186ddee6875b2ff986ec7ac8d7ab5e4a2feddeb4f049617b",
+    "code/rl/search/bot.cpp": "ccbcecdbd545930ac7c62eaf25f7b6aea8520ef7ca3d2e61073d7aaf156af8cc",
+    "code/rl/search/prepare.py": "1ad7a795b389740f3dafea05b4c149c02fa96522d7e897d7d852dd79641055cd"
+  },
+  "weights_sha256": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-07-ppo-v3/search/frozen-critic/critic.txt": "91fd5a290dd4a015fade1abdfe8840e1b580b4480c50102b4f7a3fb14f1f6680",
+    "experiments/rl/2026-11-06-ppo-v2/control-long/step-03002813/weights.txt": "c02c08c67e17ab8bdbbb37fc77eafd646da40d96de306a94ef013778eb359094",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-04836947/weights.txt": "ca3a2d89183f9ce69391baca328f34c6719879a6348e614b622b4129c580c507"
+  },
+  "details": [
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat0.json.gz",
+      "turn": 0,
+      "player": 0,
+      "search": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 3168,
+        "depth": 2,
+        "values": [
+          0.0213307499
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 3598,
+        "depth": 2,
+        "values": [
+          0.0213307499
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat0.json.gz",
+      "turn": 0,
+      "player": 1,
+      "search": {
+        "selected": 1,
+        "plans_generated": 2,
+        "complete_candidates": 2,
+        "transitions": 12,
+        "stopped_by_budget": 0,
+        "plan_us": 5698,
+        "depth": 2,
+        "values": [
+          -0.141762929,
+          -0.066919804
+        ]
+      },
+      "budgeted": {
+        "selected": 1,
+        "plans_generated": 2,
+        "complete_candidates": 2,
+        "transitions": 12,
+        "stopped_by_budget": 0,
+        "plan_us": 5070,
+        "depth": 2,
+        "values": [
+          -0.141762929,
+          -0.066919804
+        ]
+      },
+      "changed": true,
+      "counterfactual_complete_game_delta": -0.032395932709110176
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat0.json.gz",
+      "turn": 5,
+      "player": 0,
+      "search": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 12150,
+        "depth": 2,
+        "values": [
+          -0.378765426
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 10568,
+        "depth": 2,
+        "values": [
+          -0.378765426
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat0.json.gz",
+      "turn": 5,
+      "player": 1,
+      "search": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 10505,
+        "depth": 2,
+        "values": [
+          0.0307867962
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 10907,
+        "depth": 2,
+        "values": [
+          0.0307867962
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat0.json.gz",
+      "turn": 10,
+      "player": 0,
+      "search": {
+        "selected": 0,
+        "plans_generated": 3,
+        "complete_candidates": 3,
+        "transitions": 18,
+        "stopped_by_budget": 0,
+        "plan_us": 34299,
+        "depth": 2,
+        "values": [
+          0.952055662,
+          0.951346892,
+          0.942923501
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 3,
+        "complete_candidates": 3,
+        "transitions": 18,
+        "stopped_by_budget": 0,
+        "plan_us": 29900,
+        "depth": 2,
+        "values": [
+          0.952055662,
+          0.951346892,
+          0.942923501
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat0.json.gz",
+      "turn": 10,
+      "player": 1,
+      "search": {
+        "selected": 0,
+        "plans_generated": 4,
+        "complete_candidates": 4,
+        "transitions": 24,
+        "stopped_by_budget": 0,
+        "plan_us": 40025,
+        "depth": 2,
+        "values": [
+          -0.955938752,
+          -0.951648664,
+          -0.960434657,
+          -0.950066063
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 3,
+        "complete_candidates": 3,
+        "transitions": 18,
+        "stopped_by_budget": 1,
+        "plan_us": 31997,
+        "depth": 2,
+        "values": [
+          -0.955938752,
+          -0.951648664,
+          -0.960434657
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat1.json.gz",
+      "turn": 0,
+      "player": 0,
+      "search": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 3046,
+        "depth": 2,
+        "values": [
+          0.0213307499
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 2865,
+        "depth": 2,
+        "values": [
+          0.0213307499
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat1.json.gz",
+      "turn": 0,
+      "player": 1,
+      "search": {
+        "selected": 1,
+        "plans_generated": 2,
+        "complete_candidates": 2,
+        "transitions": 12,
+        "stopped_by_budget": 0,
+        "plan_us": 5457,
+        "depth": 2,
+        "values": [
+          -0.141762929,
+          -0.066919804
+        ]
+      },
+      "budgeted": {
+        "selected": 1,
+        "plans_generated": 2,
+        "complete_candidates": 2,
+        "transitions": 12,
+        "stopped_by_budget": 0,
+        "plan_us": 5065,
+        "depth": 2,
+        "values": [
+          -0.141762929,
+          -0.066919804
+        ]
+      },
+      "changed": true,
+      "counterfactual_complete_game_delta": -0.032395932709110176
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat1.json.gz",
+      "turn": 5,
+      "player": 0,
+      "search": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 10965,
+        "depth": 2,
+        "values": [
+          0.088288706
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 9752,
+        "depth": 2,
+        "values": [
+          0.088288706
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat1.json.gz",
+      "turn": 5,
+      "player": 1,
+      "search": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 12831,
+        "depth": 2,
+        "values": [
+          -0.195117127
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 1,
+        "complete_candidates": 1,
+        "transitions": 6,
+        "stopped_by_budget": 0,
+        "plan_us": 11320,
+        "depth": 2,
+        "values": [
+          -0.195117127
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat1.json.gz",
+      "turn": 10,
+      "player": 0,
+      "search": {
+        "selected": 0,
+        "plans_generated": 4,
+        "complete_candidates": 4,
+        "transitions": 24,
+        "stopped_by_budget": 0,
+        "plan_us": 43848,
+        "depth": 2,
+        "values": [
+          -0.947658633,
+          -0.947658633,
+          -0.947658633,
+          -0.942523211
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 3,
+        "complete_candidates": 3,
+        "transitions": 18,
+        "stopped_by_budget": 1,
+        "plan_us": 31303,
+        "depth": 2,
+        "values": [
+          -0.947658633,
+          -0.947658633,
+          -0.947658633
+        ]
+      },
+      "changed": false
+    },
+    {
+      "record": "experiments/rl/2026-11-07-ppo-v3/baseline-dev/league3m-vs-lacoz-seed30001-seat1.json.gz",
+      "turn": 10,
+      "player": 1,
+      "search": {
+        "selected": 0,
+        "plans_generated": 4,
+        "complete_candidates": 4,
+        "transitions": 24,
+        "stopped_by_budget": 0,
+        "plan_us": 37618,
+        "depth": 2,
+        "values": [
+          0.94562694,
+          0.945288277,
+          0.947666929,
+          0.938194104
+        ]
+      },
+      "budgeted": {
+        "selected": 0,
+        "plans_generated": 4,
+        "complete_candidates": 3,
+        "transitions": 22,
+        "stopped_by_budget": 1,
+        "plan_us": 31843,
+        "depth": 2,
+        "values": [
+          0.94562694,
+          0.945288277,
+          0.947666929
+        ]
+      },
+      "changed": false
+    }
+  ]
+}

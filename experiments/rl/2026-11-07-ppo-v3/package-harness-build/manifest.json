@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-11-08T00:48:21.537183+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "referee_commit": "b6913124a10de328316ff42906448a18cb948431",
+  "league": 3,
+  "turn_ms": 50,
+  "first_turn_ms": 1000,
+  "parallel_games": 1,
+  "seeds": [],
+  "purpose": "smoke",
+  "seats": [
+    0,
+    1
+  ],
+  "pairs": [
+    [
+      "packed",
+      "league3m"
+    ]
+  ],
+  "policy_weights_sha256": {
+    "packed": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "league3m": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb"
+  },
+  "source_sha256": {
+    "harness/code/arena/BenchmarkMatch.java": "ef7020e1e023eaf77d4be7c3a92ffde8c3b00f748db2d86417e27758ef1055ea",
+    "harness/code/benchmark_public.py": "6fb78c93012ef8750cb2a65bbf81dc6248d3c1faf8eed7f703ed8a2e9cd1eded",
+    "harness/code/rl/eval/panel.py": "ba425c2c1aa20559e34dd43b782ad3885c1ca4bd9da421e3f9cd38e4606dd1b3",
+    "harness/code/run_matches.py": "af986c51dd416a1e238d6d34d176e6439c0de7756aa527d2a76146319ea5f776",
+    "khoufou/PROVENANCE.json": "6b4c62b9f40b8e86d2137e96ba71ba10cfc7cad38c48bb6ce9b739ecc9d9b290",
+    "khoufou/Player.java": "a668199d7b773479b20a2fd599eecf7e4255f14cd6c6e2361880c27ffa0230e5",
+    "lacoz/PROVENANCE.json": "05d67ab035bf3f3a4515a60f502d00b82865686cdefa984f2b5ef8e6758b0e64",
+    "lacoz/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab",
+    "packaged/league3m-manifest.json": "27d9900e3af57f3541eb0297004b52b98d4dff4c4d2f324cf4dd75bd10318e35",
+    "packaged/league3m.cpp": "59f5d5c438809c5b35e7cad121fac95d20205f5b3dbe3574854b679ac3551522",
+    "packaged/packed-manifest.json": "27d9900e3af57f3541eb0297004b52b98d4dff4c4d2f324cf4dd75bd10318e35",
+    "packaged/packed.cpp": "59f5d5c438809c5b35e7cad121fac95d20205f5b3dbe3574854b679ac3551522",
+    "rl/export/bot.cpp": "6a2246ebf78a3b4b2196c7bfdc54e277fc60f749213c4f3f73ae81306107831b",
+    "rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "v6.cpp": "d36adc818e238b49544f1752beaf7388ea22ca4bb75446fcddc173c091e2ccf4",
+    "weights/league3m.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "weights/packed.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb"
+  },
+  "binary_sha256": {
+    "bc": "b083e80e4912ae559a136b0667c9031fae6db6f91f702713be701f43e38eee4f",
+    "v6": "869b6963dacbab8a553ec69c10d1e0275f1c50f73113b40a76beecf82e160cf7",
+    "package-packed": "0694b60b5ad8e694e631f729f8da36fa5c6ed19fb0ea7f0adad49ea6dcdeae7e",
+    "package-league3m": "0adc932e8eaec1e507f748ec48e67fbf31a117aa99cccc90f4f3e08b768d4baf"
+  },
+  "policy_variants": {
+    "packed": "packaged",
+    "league3m": "packaged"
+  },
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "commands": {
+    "v6": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/package-harness-build/snapshots/build/v6"
+    ],
+    "lacoz": [
+      "${PROJECT_ROOT}/code/arena/.venv-lacoz/bin/python",
+      "-u",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/package-harness-build/snapshots/lacoz/bot.py"
+    ],
+    "khoufou": [
+      "/tmp/tryangle-tools/jdk-17.0.21+9/Contents/Home/bin/java",
+      "-cp",
+      "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/package-harness-build/snapshots/khoufou/build",
+      "Player"
+    ],
+    "packed": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/package-harness-build/snapshots/build/package-packed"
+    ],
+    "league3m": [
+      "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/package-harness-build/snapshots/build/package-league3m"
+    ]
+  },
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "external_spend": 0,
+  "live_submission": false,
+  "method": "Serial original-referee matches; interleaved candidate/control on identical seeds and both seats; no checkpoint changes during the panel. Opponent wall-time search can vary across reruns.",
+  "execution_order": "Listed pair order; seat 0 then seat 1",
+  "benchmark_class_sha256": "f99586779cbdc4a1882a488a7bb53d5e7519a053d6e3486a1faaf9ac9809e87d",
+  "java_version": "openjdk version \"17.0.21\" 2026-10-20\nOpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)\nOpenJDK 64-Bit Server VM Temurin-17.0.21+9 (build 17.0.21+9, mixed mode, sharing)\n"
+}

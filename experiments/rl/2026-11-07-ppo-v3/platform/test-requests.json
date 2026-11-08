@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-11-08T05:50:00Z",
+  "purpose": "Bounded official-platform compatibility tests, not competitive submission or independent strength confirmation",
+  "candidate_source": "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp",
+  "candidate_source_sha256": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+  "baseline_source": "submissions/ppo-v2-league3m.cpp",
+  "baseline_source_sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+  "method": "POST",
+  "endpoint": "/challenges/fall-challenge-2026/test-games?wait=30&format=json",
+  "defaults": {
+    "language": "C++",
+    "show_in_ide": false,
+    "overwrite_ide_code": false,
+    "overwrite_ide_game_parameters": false
+  },
+  "smoke_tests": [
+    {"name": "test-01-selfplay", "policy": "candidate", "opponents": ["me"], "game_options": "seed=90001"},
+    {"name": "test-02-boss", "policy": "candidate", "opponents": ["boss"], "game_options": "seed=90002"}
+  ],
+  "conditional_next": "Only after clean smoke, select at most four eligible current-league archived battles covering both seats, and replay each with candidate and unchanged baseline. Record selected IDs before those tests.",
+  "total_game_cap": 10,
+  "competitive_submission": false
+}

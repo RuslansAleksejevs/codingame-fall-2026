@@ -1,0 +1,149 @@
+{
+  "passed_contracts": true,
+  "games": 216,
+  "java_full_states_compared": 6663,
+  "joint_transitions": 6447,
+  "technical_errors": 0,
+  "groups": {
+    "greedy": {
+      "league3m": {
+        "games": 24,
+        "results": {
+          "win": 12,
+          "loss": 12
+        },
+        "score_rate": 0.5,
+        "map_cluster_95_percent": [
+          50.0,
+          50.0
+        ]
+      },
+      "long3m": {
+        "games": 24,
+        "results": {
+          "loss": 13,
+          "win": 11
+        },
+        "score_rate": 0.4583333333333333,
+        "map_cluster_95_percent": [
+          25.0,
+          66.66666666666666
+        ]
+      },
+      "extended": {
+        "games": 24,
+        "results": {
+          "win": 15,
+          "loss": 9
+        },
+        "score_rate": 0.625,
+        "map_cluster_95_percent": [
+          37.5,
+          87.5
+        ]
+      }
+    },
+    "search1": {
+      "league3m": {
+        "games": 24,
+        "results": {
+          "win": 21,
+          "loss": 3
+        },
+        "score_rate": 0.875,
+        "map_cluster_95_percent": [
+          75.0,
+          100.0
+        ]
+      },
+      "long3m": {
+        "games": 24,
+        "results": {
+          "win": 19,
+          "loss": 5
+        },
+        "score_rate": 0.7916666666666666,
+        "map_cluster_95_percent": [
+          58.333333333333336,
+          95.83333333333334
+        ]
+      },
+      "extended": {
+        "games": 24,
+        "results": {
+          "loss": 5,
+          "win": 19
+        },
+        "score_rate": 0.7916666666666666,
+        "map_cluster_95_percent": [
+          58.333333333333336,
+          95.83333333333334
+        ]
+      }
+    },
+    "search2": {
+      "league3m": {
+        "games": 24,
+        "results": {
+          "win": 23,
+          "loss": 1
+        },
+        "score_rate": 0.9583333333333334,
+        "map_cluster_95_percent": [
+          87.5,
+          100.0
+        ]
+      },
+      "long3m": {
+        "games": 24,
+        "results": {
+          "win": 21,
+          "loss": 3
+        },
+        "score_rate": 0.875,
+        "map_cluster_95_percent": [
+          66.66666666666666,
+          100.0
+        ]
+      },
+      "extended": {
+        "games": 24,
+        "results": {
+          "win": 22,
+          "loss": 2
+        },
+        "score_rate": 0.9166666666666666,
+        "map_cluster_95_percent": [
+          75.0,
+          100.0
+        ]
+      }
+    }
+  },
+  "preliminary_gate": {
+    "search1": {
+      "mean_gain_pp": 29.166666666666664,
+      "direct_score": 0.875,
+      "per_opponent_gain_pp": {
+        "league3m": 37.5,
+        "long3m": 33.33333333333333,
+        "extended": 16.666666666666664
+      },
+      "permits_external_screen_only": true
+    },
+    "search2": {
+      "mean_gain_pp": 38.888888888888886,
+      "direct_score": 0.9583333333333334,
+      "per_opponent_gain_pp": {
+        "league3m": 45.833333333333336,
+        "long3m": 41.66666666666667,
+        "extended": 29.166666666666664
+      },
+      "permits_external_screen_only": true
+    }
+  },
+  "wall_seconds": 72.01461112499237,
+  "external_spend": 0,
+  "scope": "Untimed native simulator, deterministic greedy opponents and unlimited-time search",
+  "limitations": "All three opponents are also response models. Passing only permits an external-opponent screen; it is not promotion evidence."
+}

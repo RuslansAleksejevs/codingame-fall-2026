@@ -1,0 +1,162 @@
+{
+  "as_of": "2026-11-08T03:31:19.810223+00:00",
+  "previous_ranking_sha256": "6bbf106638bc67c8f968126af31a142b70467f1aebe2d479a20b5bc118cafdd3",
+  "incumbents": {
+    "a": {
+      "candidate": "a1501957",
+      "scores": {
+        "lacoz": 0.6875,
+        "khoufou2": 0.9375,
+        "khoufou": 0.975,
+        "v6": 0.975,
+        "bc": 0.9625,
+        "league3m": 0.6625
+      },
+      "paired_gain_pp": {
+        "lacoz": -3.75,
+        "khoufou2": 5.0,
+        "khoufou": 7.5,
+        "v6": 5.0,
+        "bc": 3.75,
+        "league3m": 16.249999999999996
+      },
+      "clean_paired_games": {
+        "lacoz": 80,
+        "khoufou2": 80,
+        "khoufou": 80,
+        "v6": 80,
+        "bc": 80,
+        "league3m": 80
+      },
+      "paired_map_95_pp": {
+        "lacoz": [
+          -16.25,
+          8.75
+        ],
+        "khoufou2": [
+          -1.25,
+          13.750000000000002
+        ],
+        "khoufou": [
+          0.0,
+          17.5
+        ],
+        "v6": [
+          0.0,
+          12.5
+        ],
+        "bc": [
+          -3.75,
+          12.5
+        ]
+      },
+      "primary_mean": 0.815625,
+      "external_gain_pp": 3.5000000000000004,
+      "own_or_invalid_games": 0,
+      "safeguards_pass": true,
+      "weights": "experiments/rl/2026-11-07-ppo-v3/seed-a/step-01501957/weights.txt"
+    },
+    "b": {
+      "candidate": "b2000416",
+      "scores": {
+        "lacoz": 0.75,
+        "khoufou2": 0.9625,
+        "khoufou": 0.95,
+        "v6": 0.95,
+        "bc": 0.9625,
+        "league3m": 0.7125
+      },
+      "paired_gain_pp": {
+        "lacoz": 2.5,
+        "khoufou2": 7.5,
+        "khoufou": 5.0,
+        "v6": 2.5,
+        "bc": 3.75,
+        "league3m": 21.250000000000004
+      },
+      "clean_paired_games": {
+        "lacoz": 80,
+        "khoufou2": 80,
+        "khoufou": 80,
+        "v6": 80,
+        "bc": 80,
+        "league3m": 80
+      },
+      "paired_map_95_pp": {
+        "lacoz": [
+          -11.25,
+          16.25
+        ],
+        "khoufou2": [
+          0.0,
+          17.5
+        ],
+        "khoufou": [
+          0.0,
+          12.5
+        ],
+        "v6": [
+          0.0,
+          7.5
+        ],
+        "bc": [
+          -1.25,
+          11.25
+        ]
+      },
+      "primary_mean": 0.84375,
+      "external_gain_pp": 4.25,
+      "own_or_invalid_games": 0,
+      "safeguards_pass": true,
+      "weights": "experiments/rl/2026-11-07-ppo-v3/seed-b/step-02000416/weights.txt"
+    }
+  },
+  "implementation_sha256": {
+    "continue_blocks.py": "15f65e67209ae5a8d16c24ff35aca6af0d126798d646bede38e0e25d5f5ddf74",
+    "full_development.py": "4397487a20f8f52d3afc8df848497c2f409bad6c120b803cd82e92b9520b1a59",
+    "CONTINUATION.md": "512ba3bc6521532767f3fb2d4a3c435744061d06d525b08c19e0c44b95d6eb26"
+  },
+  "frozen_training_source_sha256": {
+    "a": {
+      "code/rl/v3/train.py": "b82e499557143336d934579a4f8be2ba497920214e915457301367ae55a28668",
+      "code/rl/train/ppo.py": "cbca0249720dba7710f6a59ed19bb201248cc67ee93b958c013ebd2a6e6d6f7c",
+      "code/rl/train/bc.py": "b3a213b1a657cd590c93cd96cbee9a9fa7a7c394ac74f2502d353af452d18398",
+      "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+      "code/rl/league/external.py": "b5f04f76510447a77f5c73e28bc258dc69aa29365cd87c5904388cb572d75e45",
+      "code/rl/league/teacher_worker.py": "c4c669329c8b53373eeef7380017d45de1849b2aae8268d3ff82a43050e8ecee",
+      "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+      "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+      "code/rl/v3/rollout.py": "bd8a7f7a685db1366400d3c278bc86de33e8f7b32201e1d5f6e782de8d6c6ab4",
+      "code/rl/v3/sampling.py": "23008ba1f4e9add8bcebf8f7938a3861f4785efae7f72ce937e80912b16f628d",
+      "code/rl/v3/build.py": "3faa59c0896bc2b4f19f96ce64addeb733213fd5dc82bc3efa4a195b9b8ddff6",
+      "code/opponents/public/lacoz-7f190183/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+    },
+    "b": {
+      "code/rl/v3/train.py": "b82e499557143336d934579a4f8be2ba497920214e915457301367ae55a28668",
+      "code/rl/train/ppo.py": "cbca0249720dba7710f6a59ed19bb201248cc67ee93b958c013ebd2a6e6d6f7c",
+      "code/rl/train/bc.py": "b3a213b1a657cd590c93cd96cbee9a9fa7a7c394ac74f2502d353af452d18398",
+      "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+      "code/rl/league/external.py": "b5f04f76510447a77f5c73e28bc258dc69aa29365cd87c5904388cb572d75e45",
+      "code/rl/league/teacher_worker.py": "c4c669329c8b53373eeef7380017d45de1849b2aae8268d3ff82a43050e8ecee",
+      "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+      "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+      "code/rl/v3/rollout.py": "bd8a7f7a685db1366400d3c278bc86de33e8f7b32201e1d5f6e782de8d6c6ab4",
+      "code/rl/v3/sampling.py": "23008ba1f4e9add8bcebf8f7938a3861f4785efae7f72ce937e80912b16f628d",
+      "code/rl/v3/build.py": "3faa59c0896bc2b4f19f96ce64addeb733213fd5dc82bc3efa4a195b9b8ddff6",
+      "code/opponents/public/lacoz-7f190183/bot.py": "1a3da032551072103712a5b702ff8d41e859c5546a9602cc0564e78f849dfeab"
+    }
+  },
+  "limits": {
+    "a": {
+      "target_steps": 4001950,
+      "cumulative_minutes": 175.4725394388816
+    },
+    "b": {
+      "target_steps": 4000416,
+      "cumulative_minutes": 178.03177772221775
+    }
+  },
+  "scope": "One additional bounded block per independent seed, serial screens/full development; no final maps.",
+  "incumbent_rule": "Keep the prior full-panel champion plus at most one admissible new screen leader per seed.",
+  "external_spend": 0
+}

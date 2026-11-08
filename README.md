@@ -8,9 +8,13 @@ I work on this project through **Codex**. **Codex created this repository and ma
 
 ## RL research branch
 
-**Live result: 340/937 overall, Gold league**, after ranking completed at 2026-11-07 08:01 UTC. Active bot: PPO v2 league3m. The snapshot includes 52 wins / 40 losses in 92 Gold games, with no own technical failures. [Deployment report and full evidence](experiments/rl/2026-11-06-live-ppo-v2/REPORT.md). This is an ongoing-contest snapshot.
+**Latest deployed bot: experimental PPO-v3 B2M, submission41665776.** At2026-11-08 07:10 UTC its completed ranking was382/989 overall, Gold243/392, score12.90. All95 recorded battles were audited:41 wins/54 losses, no errors/timeouts/warnings. The previous league3m was356/987, score13.51 immediately before replacement; no live improvement was demonstrated. B2M remains active; no automatic rollback. [Submission report and audit](experiments/rl/2026-11-07-ppo-v3/live-submission/REPORT.md). This repository snapshot preserves the completed/stopped PPO-v3 work and its evidence.
 
-The selected local RL bot is **PPO v2, league3m**, a 24,833-parameter network initialized from frozen PPO v1 and trained for 3,002,173 additional controlled-player decisions. The larger campaign compared four training arms: **10.63M additional decisions / 218,880 games / 6.00 summed training hours** on the MacBook CPU, with $0 external compute spend. [Selected policy and run command](code/rl/configs/selected-policy.json) · [Full PPO v2 report](experiments/rl/2026-11-06-ppo-v2/REPORT.md) · [Implementation](docs/rl/LEAGUE.md).
+[Post-v3 diagnosis and RL alternatives](docs/rl/POST_V3.md) analyse the same95 saved games. A separately authorized, bounded three-lane investigation now tests exploiters, an early-state curriculum and conditional search distillation; it does not resume the stopped PPO-v3 campaign. [Coordination, file ownership and CPU lease](docs/rl/v4/COORDINATION.md). New lane work is in progress and is not an established improvement or another submission.
+
+Historical league3m snapshot:340/937 overall at2026-11-07 08:01 UTC,52 wins/40 losses in92 clean Gold games. [Earlier deployment report](experiments/rl/2026-11-06-live-ppo-v2/REPORT.md). These are ongoing-contest snapshots, not final contest results.
+
+The preserved independently-tested local RL baseline is **PPO v2, league3m**, a 24,833-parameter network initialized from frozen PPO v1 and trained for 3,002,173 additional controlled-player decisions. The larger campaign compared four training arms: **10.63M additional decisions / 218,880 games / 6.00 summed training hours** on the MacBook CPU, with $0 external compute spend. [Selected policy and run command](code/rl/configs/selected-policy.json) · [Full PPO v2 report](experiments/rl/2026-11-06-ppo-v2/REPORT.md) · [Implementation](docs/rl/LEAGUE.md).
 
 On **100 new maps, both seats**, after freezing the winner:
 

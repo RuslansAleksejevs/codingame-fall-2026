@@ -1,0 +1,755 @@
+{
+  "as_of": "2026-11-08T06:06:17.803420+00:00",
+  "provenance": "PROJECT_REPORTED",
+  "source": "Saved official CodinGame API logs",
+  "tests": {
+    "test-01-selfplay": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-01-selfplay-start.json",
+      "file_sha256": "be45c427440c847b83243f81be019d07541efcf26b2651da3332aea720e77cc9",
+      "game_id": 918414170,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "own_seats": [
+        0,
+        1
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 30,
+          "commands": {
+            "MOVE": 499,
+            "SPAWN": 28
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 30,
+          "planning_us_max": 3200
+        },
+        "1": {
+          "own": true,
+          "turns": 31,
+          "commands": {
+            "MOVE": 979,
+            "SPAWN": 74,
+            "ATTACK": 3
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 31,
+          "planning_us_max": 7910
+        }
+      },
+      "scores": [
+        -1.0,
+        77.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "outcome": "selfplay",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "7086080efcf80acdcb203849d4d68042f05ccbbc0e79249787e0de89e6125afc",
+      "game_options_sha256": "7a25e7918402a0eae6a68d22ad4c3e321a8ac96178f12b416ad6cb8e3d509dfa",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-02-boss": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-02-boss-start.json",
+      "file_sha256": "d29345cdadcd105129c7a713ee014035c4fca96cc7c100a18da41840012d286b",
+      "game_id": 918414903,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Boss 3",
+          "agent_id": 6858290
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 38,
+          "commands": {
+            "MOVE": 211,
+            "SPAWN": 13
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 38,
+          "planning_us_max": 2033
+        },
+        "1": {
+          "own": false,
+          "turns": 39,
+          "commands": {
+            "MOVE": 557,
+            "SPAWN": 116,
+            "ATTACK": 3
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        -1.0,
+        119.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "1f91229710b218798a1815fdea6f1ea2215b240de2efe969e5ed406870a962ac",
+      "game_options_sha256": "7a6a34f6d94e9df51edb05b629605bf063a9e63a135f6776fd3a1ff5f79453e2",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-03-pair1-candidate": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-03-pair1-candidate-start.json",
+      "file_sha256": "0b5c12c58864e848136c5098fc9127d1c8667e6217a784bec8175e1e5cc742f9",
+      "game_id": 918415387,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Metamong",
+          "agent_id": 6862212,
+          "rank": 336
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "own_seats": [
+        1
+      ],
+      "seats": {
+        "0": {
+          "own": false,
+          "turns": 30,
+          "commands": {
+            "MOVE": 630,
+            "SPAWN": 56,
+            "ATTACK": 2,
+            "ADD_PATH": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        },
+        "1": {
+          "own": true,
+          "turns": 29,
+          "commands": {
+            "MOVE": 253,
+            "SPAWN": 19
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 29,
+          "planning_us_max": 2267
+        }
+      },
+      "scores": [
+        209.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "6c1a0aebf1eacef887de0e9577c0084c9cecf526d7441429d3fb98fdaf7408b8",
+      "game_options_sha256": "340640b4245b1f03faec2514264c28c6a87df5a321fccadf64714a4fff44fa71",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-04-pair1-baseline": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-04-pair1-baseline-start.json",
+      "file_sha256": "e09f6d835d745c01f87458402e42425d46a7a4d73b7f26c1a153e31f4a98e16f",
+      "game_id": 918415650,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Metamong",
+          "agent_id": 6862212,
+          "rank": 336
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "own_seats": [
+        1
+      ],
+      "seats": {
+        "0": {
+          "own": false,
+          "turns": 42,
+          "commands": {
+            "MOVE": 893,
+            "SPAWN": 67,
+            "ATTACK": 5,
+            "ADD_PATH": 2
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        },
+        "1": {
+          "own": true,
+          "turns": 41,
+          "commands": {
+            "MOVE": 484,
+            "SPAWN": 34
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 41,
+          "planning_us_max": 3036
+        }
+      },
+      "scores": [
+        310.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "6c1a0aebf1eacef887de0e9577c0084c9cecf526d7441429d3fb98fdaf7408b8",
+      "game_options_sha256": "340640b4245b1f03faec2514264c28c6a87df5a321fccadf64714a4fff44fa71",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-05-pair2-candidate": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-05-pair2-candidate-start.json",
+      "file_sha256": "48f80cdc8447e140ed48574bafb1f4443ff7c1ff35fca098df6666b8c05fa74b",
+      "game_id": 918416026,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "RAFIK",
+          "agent_id": 6861995,
+          "rank": 297
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "own_seats": [
+        1
+      ],
+      "seats": {
+        "0": {
+          "own": false,
+          "turns": 57,
+          "commands": {
+            "MOVE": 816,
+            "SPAWN": 56,
+            "ATTACK": 7,
+            "WAIT": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        },
+        "1": {
+          "own": true,
+          "turns": 56,
+          "commands": {
+            "MOVE": 852,
+            "SPAWN": 45
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 56,
+          "planning_us_max": 3074
+        }
+      },
+      "scores": [
+        239.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "fe0f8346808a8f6f5f8b1da4cb978c91e0e92a69b06e1b96ec05f4dcf9718eaa",
+      "game_options_sha256": "5539c123670d19af5edb9ddaf723e80624b93b9efd74df36ced342b259c4a984",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-06-pair2-baseline": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-06-pair2-baseline-start.json",
+      "file_sha256": "4d4e2f6b940502831b3900b8b35bc3b7f0dcd8d8ad950027ed96b5cfea4951f5",
+      "game_id": 918416136,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "RAFIK",
+          "agent_id": 6861995,
+          "rank": 298
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "own_seats": [
+        1
+      ],
+      "seats": {
+        "0": {
+          "own": false,
+          "turns": 30,
+          "commands": {
+            "MOVE": 266,
+            "SPAWN": 24
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        },
+        "1": {
+          "own": true,
+          "turns": 31,
+          "commands": {
+            "MOVE": 661,
+            "SPAWN": 54,
+            "ATTACK": 2
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 31,
+          "planning_us_max": 4051
+        }
+      },
+      "scores": [
+        -1.0,
+        56.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "fe0f8346808a8f6f5f8b1da4cb978c91e0e92a69b06e1b96ec05f4dcf9718eaa",
+      "game_options_sha256": "5539c123670d19af5edb9ddaf723e80624b93b9efd74df36ced342b259c4a984",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-07-pair3-candidate": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-07-pair3-candidate-start.json",
+      "file_sha256": "90847badd820a8732a7da4d2cc11cc3e1bbaba20ed30a3bd92e88c278ec91a18",
+      "game_id": 918416348,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "dr.frankenstein",
+          "agent_id": 6861374,
+          "rank": 331
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 28,
+          "commands": {
+            "MOVE": 489,
+            "SPAWN": 46
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 28,
+          "planning_us_max": 4025
+        },
+        "1": {
+          "own": false,
+          "turns": 27,
+          "commands": {
+            "MOVE": 161,
+            "SPAWN": 11
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        46.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "eb7d9425376d34669e474d22b1d8589ca06119ac02d40e4e75123fd3b1df2c84",
+      "game_options_sha256": "8150febc9877b0982879678415b570a17ee0a63d4966e9a8de9f5e1a0504986f",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-08-pair3-baseline": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-08-pair3-baseline-start.json",
+      "file_sha256": "eeb14f7283b239dea407bba754635f55c68c8e829e71a9c4b63c11c796b46a57",
+      "game_id": 918416520,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "dr.frankenstein",
+          "agent_id": 6861374,
+          "rank": 329
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 47,
+          "commands": {
+            "MOVE": 1068,
+            "SPAWN": 77,
+            "ATTACK": 1,
+            "ADD_PATH": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 47,
+          "planning_us_max": 4911
+        },
+        "1": {
+          "own": false,
+          "turns": 46,
+          "commands": {
+            "MOVE": 513,
+            "SPAWN": 35,
+            "ATTACK": 3
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        81.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "eb7d9425376d34669e474d22b1d8589ca06119ac02d40e4e75123fd3b1df2c84",
+      "game_options_sha256": "8150febc9877b0982879678415b570a17ee0a63d4966e9a8de9f5e1a0504986f",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-09-pair4-candidate": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-09-pair4-candidate-start.json",
+      "file_sha256": "3adf1d5acd62d1f2205cbc68bb4dbf6bef5d8fdeb565b864b3ace1499bb8554c",
+      "game_id": 918416667,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "utfart",
+          "agent_id": 6861164,
+          "rank": 379
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 37,
+          "commands": {
+            "MOVE": 911,
+            "SPAWN": 65
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 37,
+          "planning_us_max": 5310
+        },
+        "1": {
+          "own": false,
+          "turns": 36,
+          "commands": {
+            "MOVE": 366,
+            "SPAWN": 25,
+            "ADD_PATH": 12
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        65.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "66059f632ff8176be7df6e34e1178e83877d58d1314ce5043237bdf7fd9a6f44",
+      "game_options_sha256": "5ed3016edb701c7ddc447fd1f864b0c5153e530da7f02e9af3533d93debe83d7",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    },
+    "test-10-pair4-baseline": {
+      "file": "experiments/rl/2026-11-07-ppo-v3/platform/test-10-pair4-baseline-start.json",
+      "file_sha256": "942da2b59bfefb81f11f053c9c9fe5edb75f727908c533836878bf96cca8c8ee",
+      "game_id": 918416826,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "utfart",
+          "agent_id": 6861164,
+          "rank": 379
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 26,
+          "commands": {
+            "MOVE": 530,
+            "SPAWN": 55
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 26,
+          "planning_us_max": 7024
+        },
+        "1": {
+          "own": false,
+          "turns": 25,
+          "commands": {
+            "MOVE": 208,
+            "SPAWN": 20,
+            "ADD_PATH": 7
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        55.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "66059f632ff8176be7df6e34e1178e83877d58d1314ce5043237bdf7fd9a6f44",
+      "game_options_sha256": "5ed3016edb701c7ddc447fd1f864b0c5153e530da7f02e9af3533d93debe83d7",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0
+    }
+  },
+  "paired_results": [
+    {
+      "pair": 1,
+      "opponent": "Metamong",
+      "own_seat": 1,
+      "candidate": "loss",
+      "baseline": "loss",
+      "map_seat_opponent_match": true,
+      "clean": true
+    },
+    {
+      "pair": 2,
+      "opponent": "RAFIK",
+      "own_seat": 1,
+      "candidate": "loss",
+      "baseline": "win",
+      "map_seat_opponent_match": true,
+      "clean": true
+    },
+    {
+      "pair": 3,
+      "opponent": "dr.frankenstein",
+      "own_seat": 0,
+      "candidate": "win",
+      "baseline": "win",
+      "map_seat_opponent_match": true,
+      "clean": true
+    },
+    {
+      "pair": 4,
+      "opponent": "utfart",
+      "own_seat": 0,
+      "candidate": "win",
+      "baseline": "win",
+      "map_seat_opponent_match": true,
+      "clean": true
+    }
+  ],
+  "completed_games": 10,
+  "own_errors": 0,
+  "own_warnings": 0,
+  "planning_time_caveat": "plan_us is bot instrumentation, not total platform CPU time.",
+  "strength_caveat": "Four adaptive archived replays and two smokes are not independent strength confirmation.",
+  "competitive_submission": false,
+  "source_integrity": {
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": {
+      "sha256": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+      "expected": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+      "matches": true
+    },
+    "submissions/ppo-v2-league3m.cpp": {
+      "sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+      "expected": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+      "matches": true
+    },
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": {
+      "sha256": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+      "expected": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+      "matches": true
+    },
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": {
+      "sha256": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+      "expected": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+      "matches": true
+    }
+  },
+  "published_fallback": {
+    "submission_id": 41657621,
+    "current": true,
+    "source_sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "matches_preserved_source": true,
+    "submission_ids_languages_current_flags_unchanged": true,
+    "timestamp_caveat": "API submitted_at values drifted by7ms between GETs. Source hash, IDs and current flags are compared explicitly, not full response bytes.",
+    "live_snapshot": {
+      "submission_id": 41657621,
+      "rank": 348,
+      "total": 986,
+      "league": "Gold",
+      "league_rank": 209,
+      "league_total": 389,
+      "score": 13.65,
+      "in_progress": false
+    }
+  }
+}

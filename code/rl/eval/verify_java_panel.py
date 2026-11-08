@@ -62,6 +62,9 @@ def main():
         oracle.stdin.close()
         oracle.wait(timeout=30)
     report = {'passed': not mismatches, 'panel_games': len(rows), 'clean_games_replayed': games,
+              'panel_manifest_sha256': hashlib.sha256((args.run / 'manifest.json').read_bytes()).hexdigest(),
+              'panel_matches_sha256': hashlib.sha256((args.run / 'matches.jsonl').read_bytes()).hexdigest(),
+              'panel_spec_sha256': hashlib.sha256((args.run / 'panel-spec.json').read_bytes()).hexdigest(),
               'full_states_compared': states, 'joint_transitions': transitions,
               'fields': ['turn', 'score', 'units', 'edges', 'triangles', 'done'],
               'technical_records_excluded': excluded, 'mismatches': mismatches,

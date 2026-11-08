@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-08T07:27:44Z",
+  "provenance": "PROJECT_REPORTED",
+  "submission_id": 41665776,
+  "method": "Reconstruct the 95 archived battles with diagnose_gold.replay. Adapt uncompressed JSON to its gzip reader in memory; execute only recorded commands. No new games, training or platform requests.",
+  "sources": {
+    "battles-009.json": "ff1f9d5421d91e02ce80d78f1318b927f887fa1506864ef7d1a85542292f3001",
+    "audit-final.json": "6a24d92787cda8a994d821032757fdb807abd0ec224973ec35bf8c0fc5963c18",
+    "code/rl/eval/diagnose_gold.py": "cb14f9694263508eee1b9c8ba790372631bf918299cde1c476e899b811e98f7d",
+    "code/build/libtryangle.dylib": "eac240e557284539b3ee04bead546da5ea11e3d1697688ef3b5a0a408a86f63a"
+  },
+  "raw_game_hashes": "audit-final.json: games",
+  "replay_mismatch_games": 0,
+  "observation_checks": 3543,
+  "all": {
+    "games": 95,
+    "median_turns": 33,
+    "max_executed_plan_us": 11291,
+    "after_5_turns": {"surviving_games": 95, "median_army_gap": -1, "median_income_gap": 0, "behind_in_army": 73},
+    "after_10_turns": {"surviving_games": 95, "median_army_gap": -4, "median_income_gap": 0, "behind_in_army": 69}
+  },
+  "wins": {
+    "games": 41,
+    "median_turns": 34,
+    "after_5_turns": {"surviving_games": 41, "median_army_gap": -1, "median_income_gap": 0, "behind_in_army": 30},
+    "after_10_turns": {"surviving_games": 41, "median_army_gap": 0, "median_income_gap": 1, "behind_in_army": 17},
+    "opponent_games_with_ATTACK": 9,
+    "opponent_games_with_ADD_PATH": 1,
+    "opponent_games_with_REMOVE_PATH": 0
+  },
+  "losses": {
+    "games": 54,
+    "median_turns": 33,
+    "after_5_turns": {"surviving_games": 54, "median_army_gap": -2, "median_income_gap": -1, "behind_in_army": 43},
+    "after_10_turns": {"surviving_games": 54, "median_army_gap": -6, "median_income_gap": -1, "behind_in_army": 52},
+    "opponent_games_with_ATTACK": 41,
+    "opponent_games_with_ADD_PATH": 9,
+    "opponent_games_with_REMOVE_PATH": 0
+  },
+  "by_seat": {"0": {"games": 48, "wins": 22}, "1": {"games": 47, "wins": 19}},
+  "limitations": [
+    "Observational matchmaking sample, not a paired policy comparison or a causal diagnosis.",
+    "All 95 games were still running after ten completed turns; later-state survivor summaries are omitted here.",
+    "Army deficit can follow poor captures, losses, movement or spending; it does not justify rewarding spawning or army size.",
+    "Final scores and own reported army/income observations matched; this is not an independent Java comparison of every hidden state.",
+    "Planning time is internal instrumentation, not total platform CPU time."
+  ],
+  "external_compute_spend_usd": 0
+}

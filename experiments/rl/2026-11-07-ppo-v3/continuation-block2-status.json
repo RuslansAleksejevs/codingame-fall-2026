@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-11-08T05:34:13Z",
+  "pid": 4075,
+  "stage": "stopped_by_request",
+  "process_running": false,
+  "control_record": "Explicit stop request superseded further research. Own exec150 stopped; see user-stop.json. Driver event history is preserved.",
+  "label": "train-b-block2",
+  "command": [
+    "${PROJECT_ROOT}/code/arena/.venv-rl/bin/python",
+    "code/rl/v3/train.py",
+    "--maps",
+    "experiments/rl/2026-11-06-ppo-v2/maps-2000.json",
+    "--init",
+    "${PROJECT_ROOT}/experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt",
+    "--initial-weights",
+    "${PROJECT_ROOT}/experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt",
+    "--opponents",
+    "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/training-opponents.json",
+    "--out",
+    "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/seed-b",
+    "--resume",
+    "${PROJECT_ROOT}/experiments/rl/2026-11-07-ppo-v3/continuation-block2/before-b/final.pt",
+    "--steps",
+    "4000416",
+    "--minutes",
+    "178.03177772221775",
+    "--seed",
+    "202611075"
+  ],
+  "log": "experiments/rl/2026-11-07-ppo-v3/train-b-block2.log"
+}

@@ -75,12 +75,14 @@ struct Collector {
     std::string error,stats,records;
     Collector(const char*weights){actor.load(weights);bc=actor;anchor=actor;pool.push_back(actor);}
     void set(const float*f){for(int l=0;l<int(actor.weights.size());l++){for(float&v:actor.weights[l])v=*f++;for(float&v:actor.bias[l])v=*f++;}}
-    void collect(int count,int workers,unsigned long long seed,double temperature,int audit) {
+    void collect(int count,int workers,unsigned long long seed,double temperature,int audit,const int*schedule=nullptr) {
         auto begin=std::chrono::steady_clock::now();std::vector<Game> games(count);std::atomic<int> next{0};std::mutex lock;error.clear();
         auto run=[&](int worker){while(true){int id=next++;if(id>=count)break;
             try{
                 auto&g=games[id];g.seed=seed+0x9e3779b97f4a7c15ULL*(id+1);std::mt19937_64 rng(g.seed);
                 g.map=rng()%maps.size();g.kind=id%8<4?0:id%8<6?1:id%8==6?2:external?3:2;g.seat=(id/8)%2;g.pool=rng()%pool.size();g.anchor_id=rng()%10;g.greedy_history=rng()%2;
+                if(schedule){g.kind=schedule[id*3];g.pool=schedule[id*3+1];g.seat=schedule[id*3+2];g.anchor_id=1;g.greedy_history=1;
+                    if(g.kind<0||g.kind>3||g.seat<0||g.seat>1||(g.kind==2&&(g.pool<0||g.pool>=int(pool.size())))||(g.kind==3&&!external))throw std::runtime_error("Invalid scheduled opponent");}
                 rl::State s;std::istringstream in(maps[g.map]);s.load(in);
                 if(id<audit)g.states.push_back(s.json());
                 while(!s.done){std::array<std::string,2> commands;
@@ -126,7 +128,8 @@ struct Collector {
         }
         rec<<']';records=rec.str();double seconds=std::chrono::duration<double>(std::chrono::steady_clock::now()-begin).count();
         std::ostringstream o;o<<"{\"games\":"<<count<<",\"joint_turns\":"<<turns<<",\"controlled_decisions\":"<<logps.size()<<",\"groups\":"<<choices.size()<<",\"candidates\":"<<x.size()/FEATURES<<",\"feature_bytes\":"<<x.size()*sizeof(float)<<",\"seconds\":"<<seconds<<",\"pool_size\":"<<pool.size()<<",\"kinds\":[";
-        for(int k=0;k<4;k++){if(k)o<<',';o<<"{\"games\":"<<kinds[k]<<",\"learner_seat_wins\":"<<wins[k]<<",\"draws\":"<<draws[k]<<'}';}o<<"]}";stats=o.str();
+        for(int k=0;k<4;k++){if(k)o<<',';o<<"{\"games\":"<<kinds[k]<<",\"learner_seat_wins\":"<<wins[k]<<",\"draws\":"<<draws[k]<<'}';}o<<"],\"outcomes\":[";
+        for(int id=0;id<count;id++){const auto&g=games[id];if(id)o<<',';o<<'['<<g.kind<<','<<g.pool<<','<<g.seat<<','<<(g.winner<0?0:g.winner==g.seat?1:-1)<<','<<g.turns<<','<<g.map<<']';}o<<"]}";stats=o.str();
     }
 };
 static thread_local std::string error;
@@ -142,6 +145,8 @@ void league_add_map(void*p,const char*map){static_cast<league::Collector*>(p)->m
 void league_set_actor(void*p,const float*f){static_cast<league::Collector*>(p)->set(f);}
 void league_add_pool(void*p){auto*c=static_cast<league::Collector*>(p);c->pool.push_back(c->actor);if(c->pool.size()>12)c->pool.erase(c->pool.begin());}
 void league_clear_pool(void*p){static_cast<league::Collector*>(p)->pool.clear();}
+void league_set_pool(void*p,int index,const float*f){auto*c=static_cast<league::Collector*>(p);auto&net=c->pool.at(index);for(int l=0;l<int(net.weights.size());l++){for(float&v:net.weights[l])v=*f++;for(float&v:net.bias[l])v=*f++;}}
+int league_collect_scheduled(void*p,int games,int workers,unsigned long long seed,double temperature,int audit,const int*schedule){try{static_cast<league::Collector*>(p)->collect(games,workers,seed,temperature,audit,schedule);return 0;}catch(const std::exception&e){league::error=e.what();return -1;}}
 int league_collect(void*p,int games,int workers,unsigned long long seed,double temperature,int audit){try{static_cast<league::Collector*>(p)->collect(games,workers,seed,temperature,audit);return 0;}catch(const std::exception&e){league::error=e.what();return -1;}}
 const char* league_stats(void*p){return static_cast<league::Collector*>(p)->stats.c_str();}
 const char* league_records(void*p){return static_cast<league::Collector*>(p)->records.c_str();}

@@ -26,6 +26,10 @@ def old_maps(spec):
         path = BASE / f'experiments/rl/2026-11-06-{experiment}/verification.json'
         legacy.update(json.loads(path.read_text())['new_legacy_hashes_by_seed'].values())
     canonical = set()
+    for relative in spec.get('exclude_map_hash_files', []):
+        registry = json.loads((BASE / relative).read_text())
+        canonical.update(registry['canonical'])
+        legacy.update(registry.get('legacy', []))
     for relative in spec.get('exclude_map_manifests', []):
         manifest = json.loads((BASE / relative).read_text())
         for split in ('training', 'selection'):
@@ -91,6 +95,9 @@ def main():
     assert len(set(new_canonical.values())) == len(manifest['seeds'])
     report = {
         'verifier_sha256': sha(Path(__file__)), 'purpose': manifest['purpose'],
+        'panel_manifest_sha256': sha(run / 'manifest.json'),
+        'panel_matches_sha256': sha(run / 'matches.jsonl'),
+        'panel_spec_sha256': sha(run / 'panel-spec.json'),
         'games': len(rows), 'source_freeze_verified': True,
         'policy_weights_sha256': manifest['policy_weights_sha256'],
         'v6_source_sha256': sha(BASE / 'code/bot.cpp'),

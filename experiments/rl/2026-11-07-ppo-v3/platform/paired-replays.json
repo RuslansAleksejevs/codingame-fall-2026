@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-11-08T05:58:47Z",
+  "provenance": "PROJECT_REPORTED",
+  "selection_rule": "The first four distinct opponents in saved battles-start.json that are eligible Gold opponents in opponents-start.json. Actual source logs confirm two games in each seat. Selection is frozen before candidate/baseline replays; original outcomes are known, so this is not a blind strength test.",
+  "candidate": "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp",
+  "baseline": "submissions/ppo-v2-league3m.cpp",
+  "request_endpoint": "/challenges/fall-challenge-2026/test-games?wait=30&format=json",
+  "request_body": {
+    "language": "C++",
+    "show_in_ide": false,
+    "overwrite_ide_code": false,
+    "overwrite_ide_game_parameters": false
+  },
+  "replay_request_note": "Add only replay_game_id and code_file to the request; omit opponents and game_options. Candidate then baseline for each pair, strictly serial. Inspect completion before the next game.",
+  "pairs": [
+    {"pair": 1, "replay_game_id": 918404017, "own_seat": 1, "opponent_agent_id": 6862212, "opponent_name": "Metamong", "candidate_test": "test-03-pair1-candidate", "baseline_test": "test-04-pair1-baseline"},
+    {"pair": 2, "replay_game_id": 918375852, "own_seat": 1, "opponent_agent_id": 6861995, "opponent_name": "RAFIK", "candidate_test": "test-05-pair2-candidate", "baseline_test": "test-06-pair2-baseline"},
+    {"pair": 3, "replay_game_id": 918304320, "own_seat": 0, "opponent_agent_id": 6861374, "opponent_name": "dr.frankenstein", "candidate_test": "test-07-pair3-candidate", "baseline_test": "test-08-pair3-baseline"},
+    {"pair": 4, "replay_game_id": 918279124, "own_seat": 0, "opponent_agent_id": 6861164, "opponent_name": "utfart", "candidate_test": "test-09-pair4-candidate", "baseline_test": "test-10-pair4-baseline"}
+  ],
+  "prior_read_corrections": "An interim conversation summary contained incorrect battle IDs and denominator. Saved API responses are authoritative: progress-start is rank347/986, own agent6858071, submission41657621. Initial unrelated GETs of918111172/918111056/918110905/918110715 are diagnostic reads only, excluded from testing and evidence. GET /games requires format=json, otherwise text is returned. No tests were started on those incorrect IDs.",
+  "game_cap_including_two_smokes": 10,
+  "competitive_submission": false
+}

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Task-scoped JSON-lines API client; OAuth credentials stay in process memory."""
+import argparse
 import json
 from pathlib import Path
 import re
@@ -12,6 +13,10 @@ API = 'https://www.codingame.com/api/v1'
 CHALLENGE = '/challenges/fall-challenge-2026'
 token = None
 device = None
+parser = argparse.ArgumentParser()
+parser.add_argument('--allow-submit', action='store_true', help='Requires separate explicit submission authorization')
+options = parser.parse_args()
+scopes = 'challenge:read challenge:play' + (' challenge:submit' if options.allow_submit else '')
 
 
 def call(method, path, body=None, authenticated=True):
@@ -46,7 +51,7 @@ for line in sys.stdin:
             break
         if op == 'auth_start':
             assert device is None and token is None, 'An authorization flow already exists'
-            status, device = call('POST', '/auth/device', {'client_name': 'Codex - Fall Challenge 2026', 'scope': 'challenge:read challenge:play challenge:submit'}, False)
+            status, device = call('POST', '/auth/device', {'client_name': 'Codex - Fall Challenge 2026', 'scope': scopes}, False)
             result = {k: device[k] for k in ('user_code', 'verification_uri_complete', 'interval', 'expires_in') if k in device}
         elif op == 'auth_poll':
             assert device and not token
@@ -62,6 +67,7 @@ for line in sys.stdin:
             assert path.startswith(CHALLENGE) or re.fullmatch(r'/test-games/\d+(\?[^\s]*)?|/games/\d+(\?[^\s]*)?|/me|/limits\?challenge=fall-challenge-2026', path)
             method = command.get('method', 'GET')
             assert method == 'GET' or method == 'POST' and path.split('?')[0] in (CHALLENGE + '/test-games', CHALLENGE + '/submissions')
+            assert options.allow_submit or not (method == 'POST' and path.split('?')[0] == CHALLENGE + '/submissions'), 'Submission disabled for this session'
             body = command.get('body')
             if 'code_file' in command:
                 body = dict(body or {}, code=(BASE / command['code_file']).read_text())

@@ -44,9 +44,10 @@ The official [CodinGame API skill](https://www.codingame.com/api/v1/docs/skill),
 [league guide](https://www.codingame.com/api/v1/docs/leagues) describe the workflow.
 Use `/challenges/fall-challenge-2026`, not the permanent TryAngle Catch puzzle.
 
-`code/platform/codingame_session.py` accepts one JSON command per line. It uses an OAuth
-device authorization with `challenge:read challenge:play challenge:submit` and keeps
-credentials in process memory only. Do not commit credentials or print them in logs.
+`code/platform/codingame_session.py` accepts one JSON command per line. By default it
+requests only `challenge:read challenge:play`; submission is disabled. The optional
+`--allow-submit` flag adds `challenge:submit` and requires separate explicit permission.
+OAuth credentials stay in process memory only. Do not commit or print them in logs.
 An `auth_start` command returns the approval URL; after approval, `auth_poll` completes
 the connection. `exit` drops the in-memory credential. A later process needs authorization again.
 
