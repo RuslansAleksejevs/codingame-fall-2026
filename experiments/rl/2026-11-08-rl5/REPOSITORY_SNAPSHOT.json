@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-11-08",
+  "classification": "PROJECT_REPORTED",
+  "purpose": "Preserve completed RL-v5 evidence and integrate current documentation; not a new experiment or submission.",
+  "research_status": "Teacher passed locally; compact student rejected; no deployable improvement established.",
+  "original_archive_sha256": "1af8db533a3cdfa7c501373e1053c016d6a401324df169bd1f551b3f94b53728",
+  "original_archive_bytes": 109433853,
+  "original_archive_members": 12244,
+  "original_game_json_members": 2918,
+  "split_manifest": "experiments/rl/2026-11-08-rl5/archive-parts/manifest.json",
+  "split_parts": 3,
+  "maximum_part_bytes": 50331648,
+  "split_roundtrip_hash_verified": true,
+  "original_archive_or_evidence_deleted": false,
+  "independent_scientific_audits": [
+    "experiments/rl/2026-11-08-rl5/coordinator/teacher-audit.json",
+    "experiments/rl/2026-11-08-rl5/coordinator/student-audit.json",
+    "experiments/rl/2026-11-08-rl5/coordinator/archive-audit.json"
+  ],
+  "new_pure_tests": {"archive_roundtrip_and_guards": 2, "teacher_statistics": 7, "student_statistics": 8},
+  "test_environment_note": "A repeat using system Python could not import numpy; the existing project .venv-rl completed all 15 analyzer tests. No test or scientific source was changed to obtain the pass.",
+  "security_review": {
+    "selected_files_before_this_manifest": 530,
+    "full_archive_members_scanned": 12244,
+    "findings": "No detected executable binaries, personal host paths, credential literals, live auth fields, oversized selected files or unsafe archive member paths.",
+    "limitations": "Heuristic pattern/structure scan, not an absolute security guarantee. Archive parts are bound by SHA to the fully inspected original archive. Scientific float/checkpoint files are retained."
+  },
+  "preservation": {
+    "league3m_checkpoint": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "league3m_weights": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "league3m_fallback": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "deployed_b2m_source": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214"
+  },
+  "not_performed": "No new training, arena games, platform requests, submissions, rollback, paid resources or automation. Commit/merge/push metadata is recorded outside the self-hashed scientific snapshot."
+}

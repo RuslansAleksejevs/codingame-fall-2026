@@ -23,5 +23,23 @@ refuses to replace a differing local original with a normalized copy. Source,
 checkpoints, weights, reports and all95 raw platform battle logs are retained as
 ordinary files. Generated executables, build/class files, verification binaries,
 environments and scratch/runtime files are excluded. No result or local checkpoint
-was deleted. Concurrent new RL-v4 lane files remain outside this completed v3
-snapshot until their separately reviewed checkpoint.
+was deleted. The later RL-v4 and RL-v5 evidence is preserved in separate snapshots below.
+
+## RL-v4: three completed investigations
+
+The [snapshot manifest](../experiments/rl/2026-11-08-rl4/SNAPSHOT.json) binds four archives, 5,875 members and 42,870,372 compressed bytes. All 5,575 Git-ignored scientific files are represented; normalized archive copies have explicit original/export SHA mappings. No original was deleted. [Results](rl/v4/RESULTS.md).
+
+## RL-v5: split, byte-exact evidence
+
+The latest original `evidence.tar.gz` is 109,433,853 bytes, above GitHub's 100 MiB per-file limit. It remains unchanged locally. Its exact bytes are stored in three parts of at most 48 MiB, with individual and combined SHA256 in [the split manifest](../experiments/rl/2026-11-08-rl5/archive-parts/manifest.json).
+
+```sh
+python3 code/split_evidence.py verify experiments/rl/2026-11-08-rl5/archive-parts/manifest.json
+python3 code/split_evidence.py join experiments/rl/2026-11-08-rl5/archive-parts/manifest.json --out .context/rl5-evidence.tar.gz
+```
+
+The join operation refuses to overwrite any existing output. It reconstructs the original archive SHA `1af8db533a3cdfa7c501373e1053c016d6a401324df169bd1f551b3f94b53728`; no lossy transformation or replacement of original records is involved.
+
+The archive contains 12,244 repository-relative files, including all 2,918 original referee games, labels, both student checkpoints and frozen source identities. Reports, key summaries/models and independent audits also remain easy to browse as ordinary files. Large repeated raw game files are excluded from the Git tree because the archive covers them exactly. Compiled binaries, environments and caches are excluded entirely and rebuilt when needed.
+
+The archive is not extracted automatically. Inspect its member paths and use a separate empty directory for full extraction; never overwrite a working experiment tree. The late final resource ledger and completion metadata are retained alongside the archive inventory. See [completion](../experiments/rl/2026-11-08-rl5/deadline-search/COMPLETION.json) and [independent archive audit](../experiments/rl/2026-11-08-rl5/coordinator/archive-audit.json).

@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-11-08T10:21:12.841929+00:00",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-shared",
+    "-fPIC",
+    "-pthread",
+    "code/rl/v5/deadline_search/api.cpp",
+    "-o",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/api.dylib"
+  ],
+  "seconds": 1.6163909579627216,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "In file included from code/rl/v5/deadline_search/api.cpp:2:\nIn file included from code/rl/v5/deadline_search/io.hpp:4:\ncode/rl/v5/deadline_search/../../search/bot.cpp:90:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]\n   90 | }\n      | ^\n1 warning generated.\n",
+  "binary_sha256": "7088b29f8d49ee046580fab9a0f38ab403137ef40b8beaa85fc841b61c40d3ea"
+}

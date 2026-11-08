@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-11-08T12:01:14.901353Z",
+  "classification": "PROJECT_REPORTED",
+  "audit_source_sha256": "4bff0e792f7ef53675e80a18bedca88effc4ece4c7edb5ad326201a21e2db665",
+  "exit_code": 1,
+  "reason": "Coordinator auditor used incorrect student/confirm1-registry.json path; actual immutable evidence is deadline-search/student-confirm1-registry.json, as bound in student_common.prepare().",
+  "scientific_result": "No audit decision produced. Not a trajectory/model/strength discrepancy.",
+  "correction_scope": "Fix only coordinator registry path; preserve all experiment code, games, frozen inputs and reported decision. Rerun the read-only audit, not games.",
+  "self_tests_passed": true,
+  "failed_lease_seconds": 0.1397535828873515
+}

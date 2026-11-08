@@ -1,0 +1,120 @@
+{
+  "as_of": "2026-11-08T12:00:36.726635+00:00",
+  "candidates": {
+    "student": {
+      "outputs": 15538,
+      "plan_us_records": 15538,
+      "plan_us": {
+        "0.5": 409.0,
+        "0.95": 1089.0,
+        "0.99": 1572.6299999999992,
+        "1": 4537.0
+      },
+      "deadline_records": 0,
+      "total_components": {
+        "parse_us": {},
+        "restore_us": {},
+        "flush_us": {},
+        "through_flush_us": {}
+      },
+      "post_flush_us": {},
+      "changed": 0,
+      "emergency": 0,
+      "budget_stops": 0
+    },
+    "control": {
+      "outputs": 15897,
+      "plan_us_records": 15897,
+      "plan_us": {
+        "0.5": 422.0,
+        "0.95": 1059.199999999999,
+        "0.99": 1547.1199999999972,
+        "1": 2708.0
+      },
+      "deadline_records": 15897,
+      "total_components": {
+        "parse_us": {
+          "0.5": 271.833,
+          "0.95": 421.00839999999994,
+          "0.99": 519.25168,
+          "1": 1024.46
+        },
+        "restore_us": {
+          "0.5": 0.959,
+          "0.95": 4.833199999999999,
+          "0.99": 10.083,
+          "1": 62.459
+        },
+        "flush_us": {
+          "0.5": 1.459,
+          "0.95": 4.467199999999955,
+          "0.99": 6.583,
+          "1": 58.666
+        },
+        "through_flush_us": {
+          "0.5": 702.791,
+          "0.95": 1414.4639999999993,
+          "0.99": 1998.8063999999977,
+          "1": 3395.08
+        }
+      },
+      "post_flush_us": {
+        "0.5": 8.208,
+        "0.95": 13.508199999999956,
+        "0.99": 17.54104,
+        "1": 70.334
+      },
+      "changed": 0,
+      "emergency": 0,
+      "budget_stops": 0
+    },
+    "teacher": {
+      "outputs": 14341,
+      "plan_us_records": 14341,
+      "plan_us": {
+        "0.5": 12344.0,
+        "0.95": 15784.0,
+        "0.99": 15815.0,
+        "1": 16185.0
+      },
+      "deadline_records": 14341,
+      "total_components": {
+        "parse_us": {
+          "0.5": 265.833,
+          "0.95": 410.584,
+          "0.99": 508.4584000000001,
+          "1": 960.75
+        },
+        "restore_us": {
+          "0.5": 0.917,
+          "0.95": 3.75,
+          "0.99": 9.7916,
+          "1": 26.917
+        },
+        "flush_us": {
+          "0.5": 1.833,
+          "0.95": 5.334,
+          "0.99": 7.416600000000001,
+          "1": 33.125
+        },
+        "through_flush_us": {
+          "0.5": 12623.5,
+          "0.95": 16047.0,
+          "0.99": 16083.8,
+          "1": 16393.5
+        }
+      },
+      "post_flush_us": {
+        "0.5": 9.084,
+        "0.95": 14.542,
+        "0.99": 18.316600000000015,
+        "1": 70.5
+      },
+      "changed": 2013,
+      "emergency": 0,
+      "budget_stops": 4941
+    }
+  },
+  "missing_timing_records": [],
+  "scope": "Original referee enforces50ms; package plan_us excludes parsing/output/startup/scheduling. D16 through_flush excludes time before first score token and referee/platform accounting. Not platform measurements."
+}

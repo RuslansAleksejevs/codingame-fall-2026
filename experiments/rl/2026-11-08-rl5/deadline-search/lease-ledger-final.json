@@ -1,0 +1,405 @@
+{
+  "as_of": "2026-11-08T12:05:51.822783+00:00",
+  "initial_owner_seconds": 1379.5969817093574,
+  "phase_completed_seconds": 3189.411730584223,
+  "owner_completed_seconds": 4569.00871229358,
+  "phase_limit_seconds": 10800,
+  "owner_limit_seconds": 14400,
+  "completed_leases": [
+    {
+      "started": "2026-11-08T10:21:08.830099+00:00",
+      "finished": "2026-11-08T10:21:15.264328+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/build.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 6.433683792129159,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:21:49.858508+00:00",
+      "finished": "2026-11-08T10:21:55.060397+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/diagnose.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 5.199467625003308,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:26:11.983013+00:00",
+      "finished": "2026-11-08T10:26:14.789143+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "contracts"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 2.805370416957885,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:26:50.756939+00:00",
+      "finished": "2026-11-08T10:27:05.431478+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "regression"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 14.673949125222862,
+      "outcome": "finished",
+      "exit_code": 1
+    },
+    {
+      "started": "2026-11-08T10:29:11.614978+00:00",
+      "finished": "2026-11-08T10:29:12.674621+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "terminal-check"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 1.0585628747940063,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:29:48.087452+00:00",
+      "finished": "2026-11-08T10:30:46.887360+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "development"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 58.79907558299601,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:33:49.564780+00:00",
+      "finished": "2026-11-08T10:33:51.954702+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "freeze"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 2.3890888751484454,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:34:15.393108+00:00",
+      "finished": "2026-11-08T10:39:13.890661+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "confirm1"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 298.49474362516776,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:39:30.241138+00:00",
+      "finished": "2026-11-08T10:39:37.750521+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/postcheck.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 7.5085757919587195,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:40:49.358180+00:00",
+      "finished": "2026-11-08T10:45:40.596905+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "confirm2"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 291.2346252906136,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:46:01.408504+00:00",
+      "finished": "2026-11-08T10:51:18.169748+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "confirm3"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 316.75828387541696,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:51:32.942245+00:00",
+      "finished": "2026-11-08T10:56:41.841165+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/stage.py",
+        "confirm4"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 308.89580366713926,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T10:58:51.218097+00:00",
+      "finished": "2026-11-08T10:58:55.292174+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/decide.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 4.073359041009098,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:13:07.668651+00:00",
+      "finished": "2026-11-08T11:13:11.862395+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/trace_contracts.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 4.1931073339655995,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:22:36.799523+00:00",
+      "finished": "2026-11-08T11:23:12.561545+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_stage.py",
+        "anchor"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 35.76023375010118,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:24:08.582862+00:00",
+      "finished": "2026-11-08T11:24:31.493488+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_stage.py",
+        "development"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 22.909951500128955,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:24:56.981503+00:00",
+      "finished": "2026-11-08T11:24:59.409675+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_stage.py",
+        "train1"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 2.427871249616146,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:25:58.690379+00:00",
+      "finished": "2026-11-08T11:26:35.607008+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_stage.py",
+        "current"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 36.91523858299479,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:27:07.901300+00:00",
+      "finished": "2026-11-08T11:27:10.016412+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_stage.py",
+        "train2"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 2.1145023750141263,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:27:36.947901+00:00",
+      "finished": "2026-11-08T11:28:06.904235+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_package.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 29.955578125081956,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:28:45.720211+00:00",
+      "finished": "2026-11-08T11:28:47.389551+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_confirm.py",
+        "freeze"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 1.6682325000874698,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:29:33.309432+00:00",
+      "finished": "2026-11-08T11:36:15.925211+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_confirm.py",
+        "1"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 402.6124955830164,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:36:49.092472+00:00",
+      "finished": "2026-11-08T11:36:51.860987+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_label_audit.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 2.7680995408445597,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:37:26.259261+00:00",
+      "finished": "2026-11-08T11:44:05.367199+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_confirm.py",
+        "2"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 399.1027037501335,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:44:38.294257+00:00",
+      "finished": "2026-11-08T11:52:04.102457+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_confirm.py",
+        "3"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 445.8109907088801,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T11:52:34.038719+00:00",
+      "finished": "2026-11-08T12:00:11.647701+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_confirm.py",
+        "4"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 457.60658912500367,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T12:00:31.983041+00:00",
+      "finished": "2026-11-08T12:00:36.816072+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/student_decide.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 4.831690291874111,
+      "outcome": "finished",
+      "exit_code": 0
+    },
+    {
+      "started": "2026-11-08T12:04:43.826168+00:00",
+      "finished": "2026-11-08T12:05:06.237184+00:00",
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v5/deadline_search/archive.py"
+      ],
+      "allowed_seconds": 1500.0,
+      "actual_seconds": 22.4098565839231,
+      "outcome": "finished",
+      "exit_code": 0
+    }
+  ],
+  "active_lease_excluded": false,
+  "external_spend": 0,
+  "budget": {
+    "as_of": "2026-11-08T12:05:51.823296+00:00",
+    "initial_owner_seconds": 1379.5969817093574,
+    "owner_completed_seconds": 4569.00871229358,
+    "phase_completed_seconds": 3189.411730584223,
+    "active_elapsed_seconds": 0,
+    "phase_remaining_seconds": 7610.588269415777,
+    "seconds_to_research_stop": 50048.176701
+  },
+  "source_sha256": "f0a8d501df08f14f2af5329bcc3eb9d9ed4258b0909526e94422574ca4a757b9"
+}

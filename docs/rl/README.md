@@ -1,18 +1,39 @@
-# RL research branch
+# Reinforcement learning: results and evidence
 
-As of **2026-11-06**. Status: **native simulator, BC, PPO self-play and a larger league-training campaign are implemented and evaluated locally**. The selected [PPO v2 policy](../../code/rl/configs/selected-policy.json) won **139/200 against Lacoz versus 74/200 for PPO v1** on 100 new maps; direct PPO v2–PPO v1 was **155/200**. All 1,800 final games were clean. [Complete results and paired intervals](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md). PPO v2 is now deployed: **340/937 overall in Gold**, ranking completed at 2026-11-07 08:01 UTC. [Live report](../../experiments/rl/2026-11-06-live-ppo-v2/REPORT.md). Learned search and Q-learning remain future stages.
+As of **8 November 2026**. Research code and evidence are integrated into the main project; the branch name does not identify which bot is deployed. See [current status](../STATUS.md) for that distinction.
 
-The initial imitation-to-PPO route is implemented. The [post-Gold diagnosis and next experiments](NEXT.md) now prioritize **search-generated complete-plan targets and compact-policy distillation**, followed by an independently tested **exploiter league**. Reset curricula, a compact graph policy and checkpoint averaging are additional proposals. No follow-up training has been run yet. A separate **BTR-inspired Q-learning experiment over complete turn plans** remains an alternative from the original research.
+## Current conclusions
 
-The measured machine is an **Apple M4 MacBook Air, 24 GB unified memory, 10 CPU cores and 10 GPU cores**. BC v1 uses a smaller **24,833-parameter** candidate-scoring MLP as the initial control. BC runs locally on Metal/MPS; the measured PPO workload is faster on CPU. External compute spend is zero. The earlier 100,000–500,000-parameter graph encoder proposal requires compression or distillation to meet the measured single-file packaging constraint; it is not a ready deployment design.
+- **Reference policy:** PPO-v2 league3m, 24,833 parameters. Its independent 100-map test produced 139/200 wins against Lacoz, versus 74/200 for PPO-v1; paired gain +32.5pp, 95% interval [+22.5, +42.5].
+- **Last confirmed submission:** PPO-v3 B2M, submission41665776. The dated live snapshot did not demonstrate improvement; there was no automatic rollback.
+- **Useful offline teacher:** D16 search, +5.42pp external-panel gain in 1,120 fresh games, with no technical errors. Its multi-network implementation is not a valid unchanged-rule single-file package.
+- **Rejected compact student:** the 1,680-game independent test did not preserve the teacher's advantage. Export correctness is not playing strength.
+- **No experiment remains active.** New work requires a new decision; historical plans and command files are not an instruction to restart training.
 
-- [Larger local PPO campaign](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md): longer controls, broader maps, original-opponent league, road observations and fresh confirmation.
-- [League and continuation implementation](LEAGUE.md): exact mixtures, warm starts, checkpoints, replay checks and limitations.
-- [Research and primary sources](RESEARCH.md): actual competition winners, relevant counterexamples, public implementations and transfer limits.
-- [Implementation and evaluation plan](PLAN.md): stages, directory layout, acceptance gates and isolated comparisons.
-- [Resources](RESOURCES.md): measured BC/PPO v1/PPO v2 costs, original conditional estimates and the coding-model workflow.
-- [Source register](../../sources/2026-11-06-rl-research.json): evidence classes, access notes and repository revisions.
+## Completed stages
 
-`rl/research` starts at main commit `601a00eea536e305d9b77ea44d813228eb7d148d`. The selected main-branch bot remains **v6-attack**. BC remains a local control; selected PPO v2 is packaged and submitted to the live contest. See [deployment](DEPLOYMENT.md) and the [live report](../../experiments/rl/2026-11-06-live-ppo-v2/REPORT.md). Each checkpoint is frozen before evaluation against Lacoz, khoufou and v6 under the original referee.
+| Stage | Report | Implementation / supporting material |
+|---|---|---|
+| Behavior cloning | [BC-v1](../../experiments/rl/2026-11-06-bc-v1/REPORT.md) | [Initial research](RESEARCH.md) |
+| Initial self-play | [PPO-v1](../../experiments/rl/2026-11-06-ppo-v1/REPORT.md) | [Training code](../../code/rl/train/) |
+| Larger league campaign | [PPO-v2](../../experiments/rl/2026-11-06-ppo-v2/REPORT.md) | [League implementation](LEAGUE.md) · [Selected policy](../../code/rl/configs/selected-policy.json) |
+| Original deployment | [League3m live report](../../experiments/rl/2026-11-06-live-ppo-v2/REPORT.md) | [Deployment guide](DEPLOYMENT.md) |
+| Diverse PPO continuation | [B2M live report](../../experiments/rl/2026-11-07-ppo-v3/live-submission/REPORT.md) | [Post-v3 diagnosis](POST_V3.md) |
+| Exploiters / curriculum / search | [RL-v4 results](v4/RESULTS.md) | [Verified snapshot](../../experiments/rl/2026-11-08-rl4/SNAPSHOT.json) |
+| Deadline-bounded search and distillation | [RL-v5 report](../../experiments/rl/2026-11-08-rl5/deadline-search/REPORT.md) | [Implementation](v5/DEADLINE_SEARCH.md) · [Independent audits](../../experiments/rl/2026-11-08-rl5/coordinator/) |
 
-All recommendations are hypotheses for TryAngle Catch. Results reported by other authors are not local replications or predictions of a contest rank.
+## Evaluation discipline
+
+Candidates are compared on matched maps and both seats. Technical losses are retained; clean-paired results are reported separately. Whole-map confidence intervals do not measure variation across training seeds or guarantee live leaderboard gains. The latest teacher/student confirmation sets were fixed before evaluation, with no post-result sample extension.
+
+The global reserved partitions 40001–40100 and 65001–65040 remain unopened. Older development maps and training-bank diagnostics must not be relabelled as independent tests.
+
+## Reproduction and historical planning
+
+The current [last-day recommendations](LAST_DAY_OPTIONS.md) prioritize delivering the measured search advantage. The [AI competition evidence review](AI_COMPETITION_EDGE.md) separates research findings, winner accounts and inference. Neither document starts a new experiment.
+
+Use the experiment-specific protocol, command manifests, model identities and reports. Frozen research sources contain their original budget/cutoff guards; reading an old command is not authorization to rerun it. The measured environment was an Apple M4 MacBook Air with24GB memory; PPO used CPU because that workload was faster than MPS. External compute spend was zero.
+
+[Quick start](../QUICKSTART.md) · [Evidence restoration](../ARCHIVE.md) · [Resource measurements](RESOURCES.md)
+
+[PLAN](PLAN.md), [NEXT](NEXT.md) and the [original research](RESEARCH.md) are historical proposals. Consult current reports before interpreting any item as unimplemented or pending.

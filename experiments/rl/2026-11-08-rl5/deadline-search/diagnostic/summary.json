@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-11-08T10:21:55.022458+00:00",
+  "passed": true,
+  "fixtures": 3,
+  "roots": 6,
+  "unlimited_parity_commands": 102,
+  "standalone_parity_commands": 102,
+  "streams": [
+    {
+      "seed": 62041,
+      "player": 0,
+      "turns": 24,
+      "mismatches": 0
+    },
+    {
+      "seed": 62041,
+      "player": 1,
+      "turns": 24,
+      "mismatches": 0
+    },
+    {
+      "seed": 62044,
+      "player": 0,
+      "turns": 24,
+      "mismatches": 0
+    },
+    {
+      "seed": 62044,
+      "player": 1,
+      "turns": 24,
+      "mismatches": 0
+    },
+    {
+      "seed": 62046,
+      "player": 0,
+      "turns": 3,
+      "mismatches": 0
+    },
+    {
+      "seed": 62046,
+      "player": 1,
+      "turns": 3,
+      "mismatches": 0
+    }
+  ],
+  "timed_root_calls": 60,
+  "maximum_timed_call_us": 15896.750148385763,
+  "scope": "Disclosed regression roots, not fresh strength evidence; call time excludes bot I/O.",
+  "sources": {
+    "code/arena/BenchmarkMatch.java": "ef7020e1e023eaf77d4be7c3a92ffde8c3b00f748db2d86417e27758ef1055ea",
+    "code/benchmark_public.py": "6fb78c93012ef8750cb2a65bbf81dc6248d3c1faf8eed7f703ed8a2e9cd1eded",
+    "code/rl/data/replays.py": "ed0242937ac009584aeb4d4b5fd417dde19e96be97c8fb1f76f876ef45c1ed55",
+    "code/rl/export/inference.hpp": "6fbee4b154022df88a141f1702e81a29d1f5df0f99eea5e69ab7a4a5b5c809e9",
+    "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+    "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "code/rl/search/bot.cpp": "da6a29bf0c204d4add3a94eb26a0acebe6d0e15c3cc96595882a4befba364d1f",
+    "code/rl/search/search.hpp": "723f5af35be6ed379da726bb31337412b068b23991d00dc6cb7f2774d2ffb72d",
+    "code/rl/sim/Oracle.java": "722134e0b65943e4d2ca51b122ec783532da75befe5d71325564c59663396511",
+    "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "code/rl/v4/compute_slot.py": "efd6d50ba91f557f322f8fcb3eb9666d28d45bc2645b4b2a2fb0b46e4dbec5c2",
+    "code/rl/v5/deadline_search/api.cpp": "1f98aadfc713066276a10c7c99ba2171e5eb96fef2c1b584868325369d9fd482",
+    "code/rl/v5/deadline_search/bot.cpp": "5a410c9212ea85b7fff14abe3aab8ae7a85544a83d4548c41c5d695f8d15fb86",
+    "code/rl/v5/deadline_search/build.py": "417e4166b724aa20cd80d9e4b21fe44d58822e6d47f6a8d474d32b4c75da9395",
+    "code/rl/v5/deadline_search/common.py": "1fbe0fa3e8a0429231f53db8c67c022c125696651a06d8a19b02820f002d83da",
+    "code/rl/v5/deadline_search/diagnose.py": "069cb7a470ca40084aa167b526d5e8c8ff79f552f044e33f00463b4d7bf99226",
+    "code/rl/v5/deadline_search/io.hpp": "470c285871cc4b14b24a2de42ecd0f27b9f57058c23caaf7dc2e7d12a3079eed",
+    "code/rl/v5/deadline_search/search.hpp": "e704f38b9656302d1621eb57aae65e1f987e5dbc29ea5d111e5cf558adfad019",
+    "code/run_matches.py": "af986c51dd416a1e238d6d34d176e6439c0de7756aa527d2a76146319ea5f776"
+  },
+  "budget": {
+    "as_of": "2026-11-08T10:21:55.026983+00:00",
+    "initial_owner_seconds": 1379.5969817093574,
+    "owner_completed_seconds": 1386.0306655014865,
+    "phase_completed_seconds": 6.433683792129159,
+    "active_elapsed_seconds": 5.168471,
+    "phase_remaining_seconds": 10788.39784520787,
+    "seconds_to_research_stop": 56284.973014
+  }
+}
