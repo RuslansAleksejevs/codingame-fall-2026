@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-11-09",
+  "status": "Prospective clarification before official D16 tests; original request file preserved",
+  "source_sha256": "aba2d6f2ae4bcd92eb79f38fd6bd643be9973b714b135c7b532a3e9fd9a80701",
+  "selfplay_semantics": "opponents:[me] uses the tested source on both seats. Candidate-self is D16 versus D16; control-self is league3m versus league3m. Technical stress only, not paired strength versus a common opponent. Audit telemetry for both own agents.",
+  "captainseb_availability": "Coordinator checks numeric opponent6844184 against current room/last500current-league battles before POST.",
+  "fallback_if_unavailable": {
+    "selection_rule": "Most recently completed battle in the preserved final league3m battle list, chosen by time/order only before D16 official outcomes; no win/loss filtering.",
+    "battle_list": "experiments/rl/2026-11-08-leaderboard-recheck/battles-final.json",
+    "game_id": 918815295,
+    "game_options_from": "experiments/rl/2026-11-08-leaderboard-recheck/games/918815295.json:game_options",
+    "opponent_agent_id": 6850587,
+    "opponent_name": "rbilim",
+    "historical_own_seat": 1,
+    "tests": ["candidate", "unchanged league3m control"],
+    "replacement_scope": "Replace only the two historical-Captainseb tests, retain total five tests. Use identical archived game_options and opponent for the two sources. Preserve historical seat if API supports it; otherwise report actual seating explicitly, without extra tests.",
+    "if_also_unavailable": "Report blocker to coordinator; no silent opponent search, expanded test series or duplicate POST."
+  },
+  "ranking": "No change: one authorized exploratory submission only after clean official tests and independent local final review, coordinator alone; no automatic rollback."
+}

@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-11-09T00:31:17.226454+00:00",
+  "commands": [
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/train.py",
+      "train",
+      "narrow1"
+    ],
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/train.py",
+      "train",
+      "broad1"
+    ],
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/train.py",
+      "package",
+      "narrow1"
+    ],
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/train.py",
+      "package",
+      "broad1"
+    ]
+  ],
+  "budget": {
+    "completed_seconds": 252.14267662586644,
+    "cap_seconds": 7200,
+    "cutoff": "2026-11-09T06:00:00Z"
+  }
+}

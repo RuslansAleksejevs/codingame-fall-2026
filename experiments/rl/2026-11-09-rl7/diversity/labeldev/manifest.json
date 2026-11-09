@@ -1,0 +1,277 @@
+{
+  "as_of": "2026-11-09T00:30:02.195375+00:00",
+  "purpose": "rl7_diversity_labeldev",
+  "schedule": [
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73201,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73201,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73202,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73202,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73203,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73203,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73204,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73204,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73205,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73205,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73206,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73206,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73207,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73207,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73208,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73208,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73209,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73209,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73210,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73210,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73211,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73211,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73212,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73212,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73213,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73213,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73214,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73214,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73215,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73215,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73216,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73216,
+      "seat": 0
+    }
+  ],
+  "commands": {
+    "league3m": [
+      "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/league3m"
+    ],
+    "b2m": [
+      "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/b2m"
+    ],
+    "base": [
+      "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/league3m"
+    ],
+    "lacoz": [
+      "code/arena/.venv-lacoz/bin/python",
+      "-B",
+      "-u",
+      "code/opponents/public/lacoz-7f190183/bot.py"
+    ],
+    "khoufou": [
+      "/tmp/tryangle-tools/jdk-17.0.21+9/Contents/Home/bin/java",
+      "-cp",
+      "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou",
+      "Player"
+    ],
+    "khoufou2": [
+      "/tmp/tryangle-tools/jdk-17.0.21+9/Contents/Home/bin/java",
+      "-cp",
+      "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2",
+      "Player"
+    ],
+    "narrow1": [
+      "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/verify/packaged"
+    ],
+    "broad1": [
+      "experiments/rl/2026-11-09-rl7/diversity/models/broad1/verify/packaged"
+    ],
+    "narrow2": [
+      "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/verify/packaged"
+    ],
+    "broad2": [
+      "experiments/rl/2026-11-09-rl7/diversity/models/broad2/verify/packaged"
+    ]
+  },
+  "sources": {
+    "code/rl/export/package.py": "f928b1ca82c6cb495522ce3bc2e324e33cc9d7ef4097d429680b9bebca416650",
+    "code/rl/train/bc.py": "b3a213b1a657cd590c93cd96cbee9a9fa7a7c394ac74f2502d353af452d18398",
+    "code/rl/v3/verify_package.py": "7fcc005ccbe8be033ef495c4c19f9db5011b1ea5907a75df645c70abf328c471",
+    "code/rl/v7/diversity/analyze.py": "4ad02085be88d627a212dec973d6890688352f554d1d21267b2154b5f8affd39",
+    "code/rl/v7/diversity/collect.py": "8ead8dfd13d6ee4a78b694c2531335f2e03499404a69f81edae4f4fc0a73b3c0",
+    "code/rl/v7/diversity/contracts.py": "5d5ff16c108816b77ce355fcfa65868fab30a5d1b920aa7008fb5872ed2c19bb",
+    "code/rl/v7/diversity/coverage_audit.py": "f13d15354f5d44bdb565befcdf87c42eb48367d2937ab775083e4851c93ba10c",
+    "code/rl/v7/diversity/finish_training.py": "12af149d9f64fbdefde309f1db8a0da48f1351786864c7c531b5c41c60aa6e5d",
+    "code/rl/v7/diversity/job.py": "c7091126770eef5a26186ed34f949a6ed3e0f66855ee5b5de3425b7b56ff9e04",
+    "code/rl/v7/diversity/stage.py": "da6d78fad03826c2d359ea2138fc480afeb1fd82e3efd98fc84d3477a2c0d7ec",
+    "code/rl/v7/diversity/support.py": "a4cabf5f46362d5735e99ae4ea112fc19010cc51f4abf9f96db4534f0f0bffed",
+    "code/rl/v7/diversity/test_a1.py": "c479e3e9331d8b89aa20cb7a8c0d049e8c877f3fb08b62a91693c19e91b47ae6",
+    "code/rl/v7/diversity/test_analyze.py": "8b15c8df4c2bbf979eb9179ec2413e8650fb2ecaf84b85ffb03530c9b763c951",
+    "code/rl/v7/diversity/train.py": "539a656c36a0688f8ea0abe8d08a717eb876810329f2395e2699dca0ce45fdc1",
+    "experiments/rl/2026-11-09-rl7/diversity/AMENDMENT_A1.md": "d78b30ba8e047610d79c119921453328a034ba3e4a443f8d2e90a8c3a362678a",
+    "experiments/rl/2026-11-09-rl7/diversity/PROTOCOL.md": "b5f6638e3219069592091c9b100ce00966ecd14d0d2f78a3edcca32e84f80f00"
+  },
+  "weights": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-04836947/weights.txt": "ca3a2d89183f9ce69391baca328f34c6719879a6348e614b622b4129c580c507",
+    "experiments/rl/2026-11-07-ppo-v3/search/frozen-critic/critic.txt": "91fd5a290dd4a015fade1abdfe8840e1b580b4480c50102b4f7a3fb14f1f6680",
+    "experiments/rl/2026-11-06-ppo-v2/control-long/step-03002813/weights.txt": "c02c08c67e17ab8bdbbb37fc77eafd646da40d96de306a94ef013778eb359094",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb"
+  },
+  "dependency_sha256": {
+    "code/build/BenchmarkMatch.class": "f99586779cbdc4a1882a488a7bb53d5e7519a053d6e3486a1faaf9ac9809e87d",
+    "code/build/Oracle.class": "b2ada86099dc3fdb500cc7cc452795ba2251fc14d53e9c523b36869f8ba03ec6",
+    "code/build/MapGenerator.class": "86b3faded93bbbf4ffed72e3ec4a2de520650551d822244d3a882859ac48827e",
+    "code/build/libtryangle.dylib": "eac240e557284539b3ee04bead546da5ea11e3d1697688ef3b5a0a408a86f63a",
+    "code/build/libtryangle_league.dylib": "84ae6dc5651969021fef05982f5fe916fee596dc6fd306f002d56b4d75e0f5cc"
+  },
+  "referee_commit": "b6913124a10de328316ff42906448a18cb948431",
+  "turn_ms": 50,
+  "first_turn_ms": 1000,
+  "parallel_games": 1,
+  "external_spend": 0,
+  "baseline": "Same executable and I/O; unchanged greedy league3m actor, no search/time cap.",
+  "timing_note": "Raw stderr parsed by turn, not output frame: stdout is intentionally flushed first."
+}

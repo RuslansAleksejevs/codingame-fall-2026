@@ -1,0 +1,2022 @@
+{
+  "as_of": "2026-11-09T00:39:15.688900+00:00",
+  "classification": "PROJECT_REPORTED",
+  "status": "STOPPED_INCOMPLETE_CONTROL_TIMEOUT",
+  "evidence_audit_passed": true,
+  "full_final_passed": false,
+  "planned_games": 1200,
+  "observed_games": 359,
+  "missing_games": 841,
+  "candidate_engine_failure_games": 0,
+  "candidate_emergency_turns": 0,
+  "counts": {
+    "candidate": {
+      "games": 119,
+      "raw_outcomes": {
+        "win": 94,
+        "loss": 25
+      },
+      "technical_adjusted_outcomes": {
+        "win": 94,
+        "loss": 25
+      },
+      "own_failure_games": 0,
+      "opponent_failure_games": 0,
+      "emergency_games": 0
+    },
+    "control": {
+      "games": 120,
+      "raw_outcomes": {
+        "win": 69,
+        "loss": 51
+      },
+      "technical_adjusted_outcomes": {
+        "win": 69,
+        "loss": 51
+      },
+      "own_failure_games": 1,
+      "opponent_failure_games": 0,
+      "emergency_games": 0
+    },
+    "teacher": {
+      "games": 120,
+      "raw_outcomes": {
+        "win": 102,
+        "loss": 18
+      },
+      "technical_adjusted_outcomes": {
+        "win": 102,
+        "loss": 18
+      },
+      "own_failure_games": 0,
+      "opponent_failure_games": 0,
+      "emergency_games": 0
+    }
+  },
+  "timing": {
+    "candidate": {
+      "outputs_with_timing": 3540,
+      "baseline_complete_turns": 3540,
+      "emergency_turns": 0,
+      "optional_stop_turns": 1499,
+      "changed_turns": 491,
+      "parse_us": {
+        "p50": 313.1255,
+        "p95": 493.04314999999997,
+        "p99": 614.9082500000002,
+        "max": 1944.67
+      },
+      "restore_us": {
+        "p50": 1.416,
+        "p95": 2.959,
+        "p99": 5.150010000000005,
+        "max": 27.5
+      },
+      "optional_us": {
+        "p50": 13316.95,
+        "p95": 15327.82,
+        "p99": 15461.532,
+        "max": 15713.3
+      },
+      "flush_us": {
+        "p50": 3.334,
+        "p95": 6.417,
+        "p99": 9.625,
+        "max": 2214
+      },
+      "through_flush_us": {
+        "p50": 14131.9,
+        "p95": 16069.705,
+        "p99": 16122.810000000001,
+        "max": 16241.6
+      },
+      "baseline_us": {
+        "p99": 1924.0718700000002,
+        "max": 4104.375
+      }
+    },
+    "control": {
+      "outputs_with_timing": 3797,
+      "baseline_complete_turns": 0,
+      "emergency_turns": 0,
+      "optional_stop_turns": 0,
+      "changed_turns": 0,
+      "parse_us": {
+        "p50": 324.542,
+        "p95": 500.733,
+        "p99": 603.9749999999998,
+        "max": 21484.8
+      },
+      "restore_us": {
+        "p50": 1.417,
+        "p95": 5.458,
+        "p99": 11.792679999999999,
+        "max": 59.209
+      },
+      "flush_us": {
+        "p50": 2.333,
+        "p95": 5.75,
+        "p99": 8.628319999999997,
+        "max": 38.75
+      },
+      "through_flush_us": {
+        "p50": 746.667,
+        "p95": 1636.3379999999997,
+        "p99": 2413.933199999999,
+        "max": 21914.7
+      },
+      "baseline_us": {
+        "p99": 1922.8799999999992,
+        "max": 3264.917
+      }
+    },
+    "teacher": {
+      "outputs_with_timing": 3544,
+      "baseline_complete_turns": 0,
+      "emergency_turns": 0,
+      "optional_stop_turns": 1579,
+      "changed_turns": 443,
+      "parse_us": {
+        "p50": 318.7505,
+        "p95": 487.56440000000003,
+        "p99": 587.1223700000003,
+        "max": 1263.08
+      },
+      "restore_us": {
+        "p50": 1.416,
+        "p95": 3.625,
+        "p99": 11.732370000000007,
+        "max": 396.291
+      },
+      "flush_us": {
+        "p50": 3.5,
+        "p95": 6.410699999999996,
+        "p99": 9.107370000000007,
+        "max": 100.958
+      },
+      "through_flush_us": {
+        "p50": 14422.900000000001,
+        "p95": 16076.085000000001,
+        "p99": 16125.371000000001,
+        "max": 22504.8
+      },
+      "baseline_us": {
+        "p99": 1870.9939300000053,
+        "max": 5001.042
+      }
+    }
+  },
+  "replay": {
+    "games": 358,
+    "states": 10970,
+    "transitions": 10612,
+    "excluded": [
+      "control-vs-lacoz-seed72112-seat0"
+    ]
+  },
+  "source_sha256": "aba2d6f2ae4bcd92eb79f38fd6bd643be9973b714b135c7b532a3e9fd9a80701",
+  "freeze_sha256": "0e6838e6601748d3ae9507be65018ed9d500e74e061562e3d6708f78b40079e5",
+  "raw_bindings": {
+    "experiments/rl/2026-11-09-rl7/d16/confirm1/matches.jsonl": "983be8968658e72fd0904bda5c7a22cf1657fa36b8fa6da943033954280030df",
+    "experiments/rl/2026-11-09-rl7/d16/confirm2/matches.jsonl": "38007ea6631e9692121e01c28ade40310678efb8f73a1f82f7b5984fea2d9ab7"
+  },
+  "original_v5_reference_identity_count": 56,
+  "original_v5_reference_mismatches": [],
+  "map_exposure": {
+    "generated": [
+      72101,
+      72102,
+      72103,
+      72104,
+      72105,
+      72106,
+      72107,
+      72108,
+      72109,
+      72110,
+      72111,
+      72112,
+      72113,
+      72114,
+      72115,
+      72116,
+      72117,
+      72118,
+      72119,
+      72120
+    ],
+    "played": [
+      72101,
+      72102,
+      72103,
+      72104,
+      72105,
+      72106,
+      72107,
+      72108,
+      72109,
+      72110,
+      72111,
+      72112
+    ],
+    "full_30game_maps": [
+      72101,
+      72102,
+      72103,
+      72104,
+      72105,
+      72106,
+      72107,
+      72108,
+      72109,
+      72110,
+      72111
+    ],
+    "unopened": [
+      72121,
+      72122,
+      72123,
+      72124,
+      72125,
+      72126,
+      72127,
+      72128,
+      72129,
+      72130,
+      72131,
+      72132,
+      72133,
+      72134,
+      72135,
+      72136,
+      72137,
+      72138,
+      72139,
+      72140
+    ]
+  },
+  "interpretation": "Descriptive partial paired estimates only, not a complete40-map final or passed historical/new gate. The stopped role is control, not D16. Early D16 technical readiness remains evidence; any authorized exploratory live decision must explicitly acknowledge this incomplete comparison and pass official tests.",
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20261109,
+    "unit": "whole map/both seats"
+  },
+  "versions": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "numpy": "2.5.4"
+  },
+  "seconds": 2.2901521250605583,
+  "budget": {
+    "as_of": "2026-11-09T00:39:15.689113+00:00",
+    "owner": "d16",
+    "completed_seconds": 732.7092427485622,
+    "cap_seconds": 5400,
+    "cutoff": "2026-11-09T06:00:00+00:00"
+  },
+  "all_games": {
+    "per_opponent": {
+      "lacoz": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 11,
+              "point_percent": 59.09090909090909,
+              "map_95_percent": [
+                31.818181818181817,
+                81.81818181818183
+              ]
+            },
+            "results": {
+              "win": 13,
+              "draw": 0,
+              "loss": 9
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 54.54545454545454,
+                "map_95_percent": [
+                  27.27272727272727,
+                  81.81818181818183
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 63.63636363636363,
+                "map_95_percent": [
+                  36.36363636363637,
+                  90.9090909090909
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 11,
+              "point_percent": 40.909090909090914,
+              "map_95_percent": [
+                18.181818181818183,
+                63.63636363636363
+              ]
+            },
+            "results": {
+              "win": 9,
+              "draw": 0,
+              "loss": 13
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 45.45454545454545,
+                "map_95_percent": [
+                  18.181818181818183,
+                  72.72727272727273
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 36.36363636363637,
+                "map_95_percent": [
+                  9.090909090909092,
+                  63.63636363636363
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 11,
+              "point_percent": 68.18181818181817,
+              "map_95_percent": [
+                40.909090909090914,
+                90.9090909090909
+              ]
+            },
+            "results": {
+              "win": 15,
+              "draw": 0,
+              "loss": 7
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 72.72727272727273,
+                "map_95_percent": [
+                  45.45454545454545,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 63.63636363636363,
+                "map_95_percent": [
+                  36.36363636363637,
+                  90.9090909090909
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 11,
+          "point_percent": 18.181818181818183,
+          "map_95_percent": [
+            -9.090909090909092,
+            45.45454545454545
+          ]
+        },
+        "retention": {
+          "maps": 11,
+          "point_percent": -9.090909090909092,
+          "map_95_percent": [
+            -27.27272727272727,
+            9.090909090909092
+          ]
+        }
+      },
+      "khoufou2": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 83.33333333333334,
+              "map_95_percent": [
+                58.333333333333336,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 20,
+              "draw": 0,
+              "loss": 4
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "khoufou": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "league3m": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 79.16666666666666,
+              "map_95_percent": [
+                54.166666666666664,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 19,
+              "draw": 0,
+              "loss": 5
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                50.0,
+                50.0
+              ]
+            },
+            "results": {
+              "win": 12,
+              "draw": 0,
+              "loss": 12
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 50.0,
+                "map_95_percent": [
+                  25.0,
+                  75.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 50.0,
+                "map_95_percent": [
+                  25.0,
+                  75.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 29.166666666666668,
+          "map_95_percent": [
+            4.166666666666666,
+            50.0
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": -16.666666666666664,
+          "map_95_percent": [
+            -37.5,
+            0.0
+          ]
+        }
+      },
+      "b2m": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 66.66666666666666,
+              "map_95_percent": [
+                45.83333333333333,
+                87.5
+              ]
+            },
+            "results": {
+              "win": 16,
+              "draw": 0,
+              "loss": 8
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 25.0,
+              "map_95_percent": [
+                4.166666666666666,
+                50.0
+              ]
+            },
+            "results": {
+              "win": 6,
+              "draw": 0,
+              "loss": 18
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 33.33333333333333,
+                "map_95_percent": [
+                  8.333333333333332,
+                  58.333333333333336
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 16.666666666666664,
+                "map_95_percent": [
+                  0.0,
+                  41.66666666666667
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 75.0,
+              "map_95_percent": [
+                54.166666666666664,
+                95.83333333333334
+              ]
+            },
+            "results": {
+              "win": 18,
+              "draw": 0,
+              "loss": 6
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 41.66666666666667,
+          "map_95_percent": [
+            8.333333333333332,
+            66.66666666666666
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": -8.333333333333332,
+          "map_95_percent": [
+            -33.33333333333333,
+            12.5
+          ]
+        }
+      }
+    },
+    "excluded_clusters": {
+      "lacoz": {
+        "72112": "incomplete",
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "khoufou2": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "khoufou": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "league3m": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "b2m": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      }
+    },
+    "external_seeds": [
+      72101,
+      72102,
+      72103,
+      72104,
+      72105,
+      72106,
+      72107,
+      72108,
+      72109,
+      72110,
+      72111
+    ],
+    "external_gain": {
+      "maps": 11,
+      "point_percent": 12.12121212121212,
+      "map_95_percent": [
+        2.523234146875356e-16,
+        24.24242424242424
+      ]
+    },
+    "teacher_retention": {
+      "maps": 11,
+      "point_percent": -3.0303030303030307,
+      "map_95_percent": [
+        -9.09090909090909,
+        3.03030303030303
+      ]
+    },
+    "direct_league3m": {
+      "maps": 12,
+      "point_percent": 79.16666666666666,
+      "map_95_percent": [
+        54.166666666666664,
+        100.0
+      ]
+    },
+    "direct_b2m": {
+      "maps": 12,
+      "point_percent": 66.66666666666666,
+      "map_95_percent": [
+        45.83333333333333,
+        87.5
+      ]
+    },
+    "exploratory_sanity": {
+      "external_point_at_least_minus5": true,
+      "teacher_point_at_least_minus10": true,
+      "direct_league3m_at_least50": true,
+      "direct_b2m_at_least40": true,
+      "external_opponent_regression_at_least_minus15": true
+    }
+  },
+  "clean_paired": {
+    "per_opponent": {
+      "lacoz": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 11,
+              "point_percent": 59.09090909090909,
+              "map_95_percent": [
+                31.818181818181817,
+                81.81818181818183
+              ]
+            },
+            "results": {
+              "win": 13,
+              "draw": 0,
+              "loss": 9
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 54.54545454545454,
+                "map_95_percent": [
+                  27.27272727272727,
+                  81.81818181818183
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 63.63636363636363,
+                "map_95_percent": [
+                  36.36363636363637,
+                  90.9090909090909
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 11,
+              "point_percent": 40.909090909090914,
+              "map_95_percent": [
+                18.181818181818183,
+                63.63636363636363
+              ]
+            },
+            "results": {
+              "win": 9,
+              "draw": 0,
+              "loss": 13
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 45.45454545454545,
+                "map_95_percent": [
+                  18.181818181818183,
+                  72.72727272727273
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 36.36363636363637,
+                "map_95_percent": [
+                  9.090909090909092,
+                  63.63636363636363
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 11,
+              "point_percent": 68.18181818181817,
+              "map_95_percent": [
+                40.909090909090914,
+                90.9090909090909
+              ]
+            },
+            "results": {
+              "win": 15,
+              "draw": 0,
+              "loss": 7
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 72.72727272727273,
+                "map_95_percent": [
+                  45.45454545454545,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 63.63636363636363,
+                "map_95_percent": [
+                  36.36363636363637,
+                  90.9090909090909
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 11,
+          "point_percent": 18.181818181818183,
+          "map_95_percent": [
+            -9.090909090909092,
+            45.45454545454545
+          ]
+        },
+        "retention": {
+          "maps": 11,
+          "point_percent": -9.090909090909092,
+          "map_95_percent": [
+            -27.27272727272727,
+            9.090909090909092
+          ]
+        }
+      },
+      "khoufou2": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 83.33333333333334,
+              "map_95_percent": [
+                58.333333333333336,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 20,
+              "draw": 0,
+              "loss": 4
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "khoufou": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "league3m": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 79.16666666666666,
+              "map_95_percent": [
+                54.166666666666664,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 19,
+              "draw": 0,
+              "loss": 5
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                50.0,
+                50.0
+              ]
+            },
+            "results": {
+              "win": 12,
+              "draw": 0,
+              "loss": 12
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 50.0,
+                "map_95_percent": [
+                  25.0,
+                  75.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 50.0,
+                "map_95_percent": [
+                  25.0,
+                  75.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 29.166666666666668,
+          "map_95_percent": [
+            4.166666666666666,
+            50.0
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": -16.666666666666664,
+          "map_95_percent": [
+            -37.5,
+            0.0
+          ]
+        }
+      },
+      "b2m": {
+        "seeds": [
+          72101,
+          72102,
+          72103,
+          72104,
+          72105,
+          72106,
+          72107,
+          72108,
+          72109,
+          72110,
+          72111,
+          72112
+        ],
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 66.66666666666666,
+              "map_95_percent": [
+                45.83333333333333,
+                87.5
+              ]
+            },
+            "results": {
+              "win": 16,
+              "draw": 0,
+              "loss": 8
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 25.0,
+              "map_95_percent": [
+                4.166666666666666,
+                50.0
+              ]
+            },
+            "results": {
+              "win": 6,
+              "draw": 0,
+              "loss": 18
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 33.33333333333333,
+                "map_95_percent": [
+                  8.333333333333332,
+                  58.333333333333336
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 16.666666666666664,
+                "map_95_percent": [
+                  0.0,
+                  41.66666666666667
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 75.0,
+              "map_95_percent": [
+                54.166666666666664,
+                95.83333333333334
+              ]
+            },
+            "results": {
+              "win": 18,
+              "draw": 0,
+              "loss": 6
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 41.66666666666667,
+          "map_95_percent": [
+            8.333333333333332,
+            66.66666666666666
+          ]
+        },
+        "retention": {
+          "maps": 12,
+          "point_percent": -8.333333333333332,
+          "map_95_percent": [
+            -33.33333333333333,
+            12.5
+          ]
+        }
+      }
+    },
+    "excluded_clusters": {
+      "lacoz": {
+        "72112": "incomplete",
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "khoufou2": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "khoufou": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "league3m": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      },
+      "b2m": {
+        "72113": "incomplete",
+        "72114": "incomplete",
+        "72115": "incomplete",
+        "72116": "incomplete",
+        "72117": "incomplete",
+        "72118": "incomplete",
+        "72119": "incomplete",
+        "72120": "incomplete",
+        "72121": "incomplete",
+        "72122": "incomplete",
+        "72123": "incomplete",
+        "72124": "incomplete",
+        "72125": "incomplete",
+        "72126": "incomplete",
+        "72127": "incomplete",
+        "72128": "incomplete",
+        "72129": "incomplete",
+        "72130": "incomplete",
+        "72131": "incomplete",
+        "72132": "incomplete",
+        "72133": "incomplete",
+        "72134": "incomplete",
+        "72135": "incomplete",
+        "72136": "incomplete",
+        "72137": "incomplete",
+        "72138": "incomplete",
+        "72139": "incomplete",
+        "72140": "incomplete"
+      }
+    },
+    "external_seeds": [
+      72101,
+      72102,
+      72103,
+      72104,
+      72105,
+      72106,
+      72107,
+      72108,
+      72109,
+      72110,
+      72111
+    ],
+    "external_gain": {
+      "maps": 11,
+      "point_percent": 12.12121212121212,
+      "map_95_percent": [
+        2.523234146875356e-16,
+        24.24242424242424
+      ]
+    },
+    "teacher_retention": {
+      "maps": 11,
+      "point_percent": -3.0303030303030307,
+      "map_95_percent": [
+        -9.09090909090909,
+        3.03030303030303
+      ]
+    },
+    "direct_league3m": {
+      "maps": 12,
+      "point_percent": 79.16666666666666,
+      "map_95_percent": [
+        54.166666666666664,
+        100.0
+      ]
+    },
+    "direct_b2m": {
+      "maps": 12,
+      "point_percent": 66.66666666666666,
+      "map_95_percent": [
+        45.83333333333333,
+        87.5
+      ]
+    },
+    "exploratory_sanity": {
+      "external_point_at_least_minus5": true,
+      "teacher_point_at_least_minus10": true,
+      "direct_league3m_at_least50": true,
+      "direct_b2m_at_least40": true,
+      "external_opponent_regression_at_least_minus15": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-11-09T00:18:14.147276+00:00",
+  "commands": [
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/stage.py",
+      "freeze-data-a1"
+    ],
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/collect.py",
+      "resume-train1"
+    ],
+    [
+      "code/arena/.venv-rl/bin/python",
+      "-B",
+      "code/rl/v7/diversity/collect.py",
+      "train2"
+    ]
+  ],
+  "budget": {
+    "completed_seconds": 92.21120983362198,
+    "cap_seconds": 7200,
+    "cutoff": "2026-11-09T06:00:00Z"
+  }
+}

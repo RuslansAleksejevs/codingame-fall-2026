@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-11-09T00:47:48.156991+00:00",
+  "passed": true,
+  "source": "experiments/rl/2026-11-09-rl7/d16/package-attempt2/bot.cpp",
+  "source_sha256": "d36aba4daa02580b1a20e5e1d000954cea330a852d8adbae1bb8f593572c9d15",
+  "source_utf16": 94468,
+  "source_bytes": 219328,
+  "old_source_sha256": "aba2d6f2ae4bcd92eb79f38fd6bd643be9973b714b135c7b532a3e9fd9a80701",
+  "body_exactly_equal": true,
+  "only_change": "Exact guarded GCC optimize O3 prelude copied from protected submitted league3m",
+  "prelude": "#if defined(__GNUC__) && !defined(__clang__)\n#pragma GCC optimize(\"O3\")\n#endif\n",
+  "decoded_bytes": 397328,
+  "decoded_sha256": "ac5532cfc76dbd05b3a6a493c4892d2206abb19d80a114d0fad8cd3bd78868e5",
+  "codec_exact": true,
+  "same_local_compiler_flags": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "fresh_unchanged_control_diagnostic_sha256": "4d81501d1083ca7ce8e83caad57abb83086efa0198962ed4223354b8786bb9da",
+  "binary_equal_to_candidate1": {
+    "candidate": true,
+    "diagnostic": true,
+    "dump": true,
+    "candidate.dylib": false
+  },
+  "binaries": {
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt2/candidate1-control-diagnostic": "4d81501d1083ca7ce8e83caad57abb83086efa0198962ed4223354b8786bb9da",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt2/candidate": "b125391868a465a99656d0c29755f8b511ff1e44ee5b121b5154a060cf04ce63",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt2/dump": "46221ecae3875b6edc424c888b71f9f228926f7d25a59a16fbb1aa195b6aebfa",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt2/diagnostic": "40b8f0e1701ada216270fc0a38356ed04df1133ba466b1016997ce526abb3acf",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt2/candidate.dylib": "478cfc5bfbc2fbe759e455c090f16ae2e10a3f3b650217f97fc2b0faef15b6b2"
+  },
+  "contracts": {
+    "saved_games": 20,
+    "both_seat_roots": 1156,
+    "stream_commands": 2312,
+    "forced_old_new_baseline_cases": 320,
+    "nonbaseline_partial_stop_cases": 20,
+    "hidden_restore_immutable_legal_prefix_pass": true
+  },
+  "source_and_protocol_bindings": {
+    "code/rl/v7/d16/candidate2.py": "366b9d269edc34df2f56c34af3e854bc36af11c3c1e48bcfe62b9bd66581b1f5",
+    "experiments/rl/2026-11-09-rl7/d16/AMENDMENT_A2.md": "cc420f39fa563de69a15411ab5b9b6c26bd43c23720fd7f4c9fc69acad48a6c2",
+    "experiments/rl/2026-11-09-rl7/d16/RUNTIME_DIAGNOSIS.md": "a0e2dc4c0951703daa8aa09acc50b90ae9756b33e459bbd769c47c6584498257",
+    "experiments/rl/2026-11-09-rl7/d16/final-freeze.json": "0e6838e6601748d3ae9507be65018ed9d500e74e061562e3d6708f78b40079e5",
+    "experiments/rl/2026-11-09-rl7/d16/poststop-decision.json": "607f3a347c12679b1784ba2a4e7ee20903ce58cc0a380ceac0897570dca5e9ed"
+  },
+  "seconds": 56.86028370866552,
+  "protected": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+    "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2/b9/bot.cpp": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9"
+  },
+  "budget": {
+    "as_of": "2026-11-09T00:47:48.166230+00:00",
+    "owner": "d16",
+    "completed_seconds": 735.3999507892877,
+    "cap_seconds": 5400,
+    "cutoff": "2026-11-09T06:00:00+00:00"
+  },
+  "platform_flags": "UNKNOWN; actual acceleration must be established by coordinator-only same-fixture official tests",
+  "new_strength_claim": false
+}

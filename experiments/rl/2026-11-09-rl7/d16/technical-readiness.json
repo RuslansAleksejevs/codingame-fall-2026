@@ -1,0 +1,74 @@
+{
+  "as_of": "2026-11-09T00:16:42.320816+00:00",
+  "technical_ready": true,
+  "scope": "Early official technical tests allowed; independent final strength NOT YET measured",
+  "source": "experiments/rl/2026-11-09-rl7/d16/package-attempt1/bot.cpp",
+  "source_sha256": "aba2d6f2ae4bcd92eb79f38fd6bd643be9973b714b135c7b532a3e9fd9a80701",
+  "source_utf16": 94389,
+  "package_sha256": "99acc0a26e859a3ab7194c3a18da715d205e889da040cc7fdcc2ca85d390797e",
+  "contracts_sha256": "ac3e7af8753b26a03abdc3a3743e6f2b1abbfd89efb22078d39c17f556045b2c",
+  "new_games": 78,
+  "old_map_regression_games": 6,
+  "fresh_technical_dev_games": 72,
+  "own_control_teacher_technical_failure_games": 0,
+  "opponent_failure_games": 0,
+  "candidate_outputs": 867,
+  "candidate_through_flush_us_max": 16630,
+  "candidate_baseline_us_max": 3163.417,
+  "candidate_emergency_turns": 0,
+  "replay": [
+    {
+      "path": "experiments/rl/2026-11-09-rl7/d16/regression-verification.json",
+      "sha256": "19ac33e5553573a020f7443c87c2e3cb6ee127d6b19fb3fd572e66aede9f423d",
+      "games": 6,
+      "states": 241,
+      "transitions": 235,
+      "excluded": []
+    },
+    {
+      "path": "experiments/rl/2026-11-09-rl7/d16/development-verification.json",
+      "sha256": "d2cda9d239ee30042c164bbc16673265a3cc868d02ef6da0e03c1b180701ec6e",
+      "games": 72,
+      "states": 1830,
+      "transitions": 1758,
+      "excluded": []
+    }
+  ],
+  "raw_bindings": {
+    "experiments/rl/2026-11-09-rl7/d16/regression/matches.jsonl": "7d0563d82e1a436d5315e340987278a24c54e38f48e834836afaf0cbb6d32ee8",
+    "experiments/rl/2026-11-09-rl7/d16/development/matches.jsonl": "cdc31007ed272070ac58525168fe2511a2e9653b1d6aaca8897c768906a70a38"
+  },
+  "official_requests": "experiments/rl/2026-11-09-rl7/d16/official-test-requests.json",
+  "official_requests_sha256": "87a08ffad2f25ef9645c1f31a76e511dc1f2a55a96e4da767f9c58989d8155eb",
+  "stderr_contract": {
+    "turn_record_prefix": "deadline=",
+    "parse": "Concatenate own-agent stderr frames in order, split lines, json.loads(line after deadline=).",
+    "baseline_complete": "search.baseline_complete == 1 for every own output",
+    "emergency": "search.emergency == 0; never erase or relabel this",
+    "budget_stop": "search.stopped == 1 means optional cooperative stop, not an error when baseline_complete == 1",
+    "through_flush": "through_flush_us includes post-first-score input, restore, baseline, optional work and stdout flush; <40000 local gate",
+    "components": [
+      "parse_us",
+      "restore_us",
+      "search.baseline_us",
+      "optional_us",
+      "flush_us"
+    ],
+    "postflush_marker": "post_flush_us=([0-9.]+)",
+    "non_additivity": "Nested search component counters overlap; do not sum them; pre-first-token/startup and final stderr write excluded."
+  },
+  "budget": {
+    "as_of": "2026-11-09T00:16:42.321692+00:00",
+    "owner": "d16",
+    "completed_seconds": 56.23474508197978,
+    "cap_seconds": 5400,
+    "cutoff": "2026-11-09T06:00:00+00:00"
+  },
+  "protected": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+    "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2/b9/bot.cpp": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9"
+  }
+}

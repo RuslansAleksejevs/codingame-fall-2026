@@ -1,0 +1,146 @@
+{
+  "as_of": "2026-11-08T20:02:16.522738+00:00",
+  "passed": true,
+  "selected_width": 9,
+  "selection": "Highest precision12..8 satisfying98000UTF16, compilation and exact decoder; no game results read",
+  "attempts": [
+    {
+      "width": 12,
+      "source_utf16": 113937,
+      "source_bytes": 278221,
+      "source_sha256": "4e5616d211604a408b96b425c52f24c849df7190a7cb249c91faba5c827e12c2",
+      "payload_bytes": 154016,
+      "fits": false,
+      "quantization_error": {
+        "maximum_weight_error": 0.001124061644077301,
+        "mean_weight_error": 0.00011880268411638442
+      },
+      "compiled": false,
+      "codec_exact": null,
+      "reason": "Full source exceeds the fixed98000UTF16 selection limit"
+    },
+    {
+      "width": 11,
+      "source_utf16": 107330,
+      "source_bytes": 258474,
+      "source_sha256": "dfdedeaa6dbf96ce4c8c70943bace18fcc2ccc579c6c4b98eabfb8e3e7db2fd7",
+      "payload_bytes": 141696,
+      "fits": false,
+      "quantization_error": {
+        "maximum_weight_error": 0.0022372007369995117,
+        "mean_weight_error": 0.00023753127621177933
+      },
+      "compiled": false,
+      "codec_exact": null,
+      "reason": "Full source exceeds the fixed98000UTF16 selection limit"
+    },
+    {
+      "width": 10,
+      "source_utf16": 100733,
+      "source_bytes": 238735,
+      "source_sha256": "19e97e26ea816d8a5b8113792173aeb2996c79162ee9f552138326c89cc765c6",
+      "payload_bytes": 129376,
+      "fits": false,
+      "quantization_error": {
+        "maximum_weight_error": 0.004487335681915283,
+        "mean_weight_error": 0.0004756760283124226
+      },
+      "compiled": false,
+      "codec_exact": null,
+      "reason": "Full source exceeds the fixed98000UTF16 selection limit"
+    },
+    {
+      "width": 9,
+      "source_utf16": 94123,
+      "source_bytes": 218983,
+      "source_sha256": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9",
+      "payload_bytes": 117056,
+      "fits": true,
+      "quantization_error": {
+        "maximum_weight_error": 0.009004764258861542,
+        "mean_weight_error": 0.0009525188407671853
+      },
+      "compiled": true,
+      "codec_exact": true
+    },
+    {
+      "width": 8,
+      "source_utf16": 87528,
+      "source_bytes": 199248,
+      "source_sha256": "c22c68193230ea3ff9b37c8ccec46778d30cc1911f832725687110ca341d4679",
+      "payload_bytes": 104736,
+      "fits": true,
+      "quantization_error": {
+        "maximum_weight_error": 0.017951691523194313,
+        "mean_weight_error": 0.0019164072152941035
+      },
+      "compiled": true,
+      "codec_exact": true
+    },
+    {
+      "width": 32,
+      "source_utf16": 244331,
+      "source_bytes": 668149,
+      "source_sha256": "7b62344e21a249d2049e366c4e76d995e1c065d160d5f8555e9d76ba93ea42ca",
+      "payload_bytes": 397328,
+      "fits": false,
+      "quantization_error": {
+        "maximum_weight_error": 0.0,
+        "mean_weight_error": 0.0
+      },
+      "compiled": true,
+      "codec_exact": true
+    }
+  ],
+  "source": "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2/b9/bot.cpp",
+  "source_sha256": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9",
+  "source_utf16": 94123,
+  "dependencies": {
+    "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "code/rl/export/inference.hpp": "6fbee4b154022df88a141f1702e81a29d1f5df0f99eea5e69ab7a4a5b5c809e9",
+    "code/rl/search/search.hpp": "723f5af35be6ed379da726bb31337412b068b23991d00dc6cb7f2774d2ffb72d",
+    "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+    "code/rl/v6/compact_d16/embedded.hpp": "9623042f4139bd415599111e9dd936c77269dddf064174ba8f430e7b682524a4",
+    "code/rl/v5/deadline_search/search.hpp": "e704f38b9656302d1621eb57aae65e1f987e5dbc29ea5d111e5cf558adfad019",
+    "code/rl/search/bot.cpp": "da6a29bf0c204d4add3a94eb26a0acebe6d0e15c3cc96595882a4befba364d1f",
+    "code/rl/v5/deadline_search/io.hpp": "470c285871cc4b14b24a2de42ecd0f27b9f57058c23caaf7dc2e7d12a3079eed",
+    "code/rl/v5/deadline_search/bot.cpp": "5a410c9212ea85b7fff14abe3aab8ae7a85544a83d4548c41c5d695f8d15fb86"
+  },
+  "sources": {
+    "code/rl/v6/compact_d16/codec.py": "cfdf90a0d3a42d435946a5a178860f2410d657291ccb3dab72135c6eabac7651",
+    "code/rl/v6/compact_d16/common.py": "2a7a5e3f75729fd48b4232cb3d1450283fb42c0d3dcafbad54f1444af4d31675",
+    "code/rl/v6/compact_d16/embedded.hpp": "9623042f4139bd415599111e9dd936c77269dddf064174ba8f430e7b682524a4",
+    "code/rl/v6/compact_d16/package.py": "014fcfb72d16be5c56e5d9575c07e2630fbedfaefc99cd480444a0691d948001"
+  },
+  "protected": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214"
+  },
+  "binaries": {
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/candidate": "4ce9303e48a51760590dfa879ebfe944d925ef08eb99006d64f99015cbdb91a2",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/fp32-diagnostic": "05fc98a7cf8dde00872117b844f4c71b742d0ea378232a9f343250f96fc9730c",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/dump-b9": "828f4b79bd10462011a7b0e25d0f6bbc3d336178025fb0423bcd3e756c16ccf1",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/dump-b8": "3ac184fe8110f6bf2d3483492ad4347e81c3f267b3013981ad5f6b38dccd3f1f",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/candidate-diagnostic": "cfe258fbebb002ba10f021f2614464840c08493f63ba2c0daa44b52e241b0dd0",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/dump-b32": "367aa91aec18bf83e3bb6fc4ac574808ef3bd0455507319592c064e969b8dc43"
+  },
+  "versions": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "numpy": "2.5.4",
+    "machine": "arm64",
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+  },
+  "budget": {
+    "as_of": "2026-11-08T20:02:16.542314+00:00",
+    "initial_owner_seconds": 4569.00871229358,
+    "owner_completed_seconds": 4576.630089751445,
+    "phase_completed_seconds": 7.6213774578645825,
+    "active_seconds": 7.203061,
+    "phase_remaining_seconds": 8985.175561542135,
+    "seconds_to_cutoff": 21463.457678
+  },
+  "external_spend": 0
+}

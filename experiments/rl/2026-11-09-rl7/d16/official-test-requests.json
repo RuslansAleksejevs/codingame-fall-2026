@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-11-09T00:11:00Z",
+  "purpose": "Coordinator-only early compatibility checks of the exact D16 source; not a leaderboard selection sweep",
+  "method": "POST",
+  "endpoint": "/challenges/fall-challenge-2026/test-games?wait=30&format=json",
+  "candidate_source": "experiments/rl/2026-11-09-rl7/d16/package-attempt1/bot.cpp",
+  "candidate_sha256": "aba2d6f2ae4bcd92eb79f38fd6bd643be9973b714b135c7b532a3e9fd9a80701",
+  "candidate_utf16": 94389,
+  "control_source": "submissions/ppo-v2-league3m.cpp",
+  "control_sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+  "defaults": {"language": "C++", "show_in_ide": false, "overwrite_ide_code": false, "overwrite_ide_game_parameters": false},
+  "tests": [
+    {"name": "goldboss", "source": "candidate", "opponents": ["boss"], "game_options": "seed=120008", "already_exposed_reference": "experiments/rl/2026-11-08-leaderboard-recheck/test-request.json"},
+    {"name": "historical-timeout-candidate", "source": "candidate", "opponents": [6844184], "game_options_from": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-timeout-replay.json:log.game_options"},
+    {"name": "historical-timeout-control", "source": "control", "opponents": [6844184], "game_options_from": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-timeout-replay.json:log.game_options"},
+    {"name": "historical-selfplay-candidate", "source": "candidate", "opponents": ["me"], "game_options_from": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-self-120003.json:log.game_options"},
+    {"name": "historical-selfplay-control", "source": "control", "opponents": ["me"], "game_options_from": "experiments/rl/2026-11-06-live-ppo-v2/test-fast-self-120003.json:log.game_options"}
+  ],
+  "qualification": "Old maps/technical stress only, not fresh strength. Coordinator validates current API opponent syntax and availability, records exact resolved body before execution; unavailable archived opponent may be replaced only by the protocol's predeclared archived-game fallback. No automatic retries, no duplicate submit.",
+  "submission": "Separately authorized single exploratory D16 ranking only after technical readiness, local final review and clean official tests; coordinator alone executes. No rollback."
+}

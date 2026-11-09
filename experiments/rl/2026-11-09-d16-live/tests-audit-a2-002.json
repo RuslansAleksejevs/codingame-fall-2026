@@ -1,0 +1,206 @@
+{
+  "as_of": "2026-11-09T00:53:33.896997+00:00",
+  "classification": "PROJECT_REPORTED",
+  "completed": 2,
+  "pending": [
+    8
+  ],
+  "planned": 3,
+  "all_requested_complete": false,
+  "issues": [],
+  "passed": true,
+  "games": [
+    {
+      "file": "experiments/rl/2026-11-09-d16-live/test-06-result.json",
+      "file_sha256": "07843e820d63a54b7b5151cdf3affab257e0566568d2f16461c7757f828841c0",
+      "game_id": 918849391,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Boss 3",
+          "agent_id": 6858290
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 29,
+          "commands": {
+            "MOVE": 276,
+            "SPAWN": 22,
+            "ATTACK": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 29,
+          "planning_us_max": 16416
+        },
+        "1": {
+          "own": false,
+          "turns": 30,
+          "commands": {
+            "MOVE": 532,
+            "SPAWN": 76,
+            "ATTACK": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        -1.0,
+        77.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "d40a3d8a6bfc6a705be01f89653a0472c95fa07ec75ec9a59154d03cf4eb30ee",
+      "game_options_sha256": "5fa71b7c17bb63fd3a03891fe5f483703ca098e24523648996057a4b561e4cc3",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0,
+      "test_number": 6,
+      "role": "candidate",
+      "map_options_match": true,
+      "d16": {
+        "seats": {
+          "0": {
+            "outputs": 29,
+            "records": 29,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 28,
+            "nonbaseline_selections": 0,
+            "turns_with_complete_search_evaluation": 4,
+            "complete_search_evaluations_total": 5,
+            "through_flush_us_max": 16500.5,
+            "baseline_us_max": 2794.75,
+            "post_flush_samples": 29
+          }
+        },
+        "issues": [],
+        "passed": true,
+        "caveat": "Internal post-first-token through-flush wall time, not full official CPU time"
+      },
+      "source_identity_matches": true
+    },
+    {
+      "file": "experiments/rl/2026-11-09-d16-live/test-07-result.json",
+      "file_sha256": "9160ecca22b283e55168acf5380e3e26a23975b4c43c0bdfad04e8d9329a08e6",
+      "game_id": 918849860,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Captainseb",
+          "agent_id": 6844184,
+          "rank": 935
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 14,
+          "commands": {
+            "MOVE": 284,
+            "SPAWN": 70
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 14,
+          "planning_us_max": 16035
+        },
+        "1": {
+          "own": false,
+          "turns": 13,
+          "commands": {
+            "MOVE": 11,
+            "SPAWN": 5,
+            "WAIT": 2
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        81.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "4066fa241ddeefe8112ab690ee37105b91a58495784ef7f1f4d990bde7b403be",
+      "game_options_sha256": "b25dfaf01a3ae8e068ccbf2835802f8fc5425552d1aebf1efdd277826b181a48",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0,
+      "test_number": 7,
+      "role": "candidate",
+      "map_options_match": true,
+      "d16": {
+        "seats": {
+          "0": {
+            "outputs": 14,
+            "records": 14,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 14,
+            "nonbaseline_selections": 0,
+            "turns_with_complete_search_evaluation": 3,
+            "complete_search_evaluations_total": 3,
+            "through_flush_us_max": 16107,
+            "baseline_us_max": 12202.159,
+            "post_flush_samples": 14
+          }
+        },
+        "issues": [],
+        "passed": true,
+        "caveat": "Internal post-first-token through-flush wall time, not full official CPU time"
+      },
+      "source_identity_matches": true
+    }
+  ],
+  "proof": {
+    "experiments/rl/2026-11-09-d16-live/audit_tests.py": "95c753f78b13bd0073ff31decf83f602615e08de3674cb682ec4fc0b7e381bf4",
+    "code/platform/analyze_v3_tests.py": "f750a859548093eee1055bfaeaf19e7b18a5a64652b9d80f91a82783997aad31",
+    "experiments/rl/2026-11-09-d16-live/test-requests-a2.json": "bf2445e18d8fc7d77899da1cad6edefbb41a19a5209ed71e5654a850a3186847"
+  },
+  "caveats": [
+    "Technical old-map tests, not independent strength or ranking",
+    "Selfplay compares same-source copies, not D16 against league3m",
+    "No source/time thresholds were retuned from these results"
+  ]
+}

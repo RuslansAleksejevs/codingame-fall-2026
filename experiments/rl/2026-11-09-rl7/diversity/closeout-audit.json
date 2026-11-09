@@ -1,0 +1,214 @@
+{
+  "as_of": "2026-11-09T01:08:30.642107+00:00",
+  "classification": "PROJECT_REPORTED",
+  "passed": true,
+  "outcome": "NO_GO_GAMEDEV_PROMISE",
+  "final_unopened": true,
+  "no_retraining": true,
+  "freezes": {
+    "data-freeze-a1.json": {
+      "sha256": "828dae9154f3ea7dff2e9bd11b44df8115fea067e927ab951022fab6e689d62a",
+      "identities_checked": 82
+    },
+    "candidate-freeze.json": {
+      "sha256": "015a8acc66524e346c6cc0f4282e742cc1c62db9f690408de8c6893bac355d54",
+      "identities_checked": 54
+    }
+  },
+  "protected": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214"
+  },
+  "teacher_identities_checked": 68,
+  "decision_sha256": "ef9b0e819c53b86f2e120aa91152caaa7789ffd81f4efb9e26b6cc9c0910db8a",
+  "decision_bindings_checked": 808,
+  "data_summary_sha256": "78c3aa2c240eee62b33deb38ee5491c9b8905d85b1df18eccd689fa3db130c6b",
+  "stages": {
+    "train1": {
+      "games": 64,
+      "maps": 32,
+      "raw_files": 64,
+      "portable_files": 64,
+      "clean_java_games": 63,
+      "states": 1862,
+      "transitions": 1799,
+      "own_error_games": 0,
+      "opponent_error_games": 1,
+      "matches_sha256": "ceb1ae6d4423c46af8b7eaf6fd90334ef52e17393c160238d51c72b4860543da"
+    },
+    "train2": {
+      "games": 64,
+      "maps": 32,
+      "raw_files": 64,
+      "portable_files": 64,
+      "clean_java_games": 64,
+      "states": 1830,
+      "transitions": 1766,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "matches_sha256": "56d75aee41e77efdb7bb2a0ae8fed7d2ac1a3f7d4cc5f6ef35ac86328da7b5a0"
+    },
+    "labeldev": {
+      "games": 32,
+      "maps": 16,
+      "raw_files": 32,
+      "portable_files": 32,
+      "clean_java_games": 32,
+      "states": 1020,
+      "transitions": 988,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "matches_sha256": "f8038805fc80f4fe8b23ad2a7913fd33cc4c29da066c60be427f9dab831d3c86"
+    },
+    "gamedev1": {
+      "games": 200,
+      "maps": 4,
+      "raw_files": 200,
+      "portable_files": 200,
+      "clean_java_games": 200,
+      "states": 5650,
+      "transitions": 5450,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "matches_sha256": "60b8c23b22482af6425b335c2f96a09d2ded99296cb0ec873059409ed5804306"
+    },
+    "gamedev2": {
+      "games": 200,
+      "maps": 4,
+      "raw_files": 200,
+      "portable_files": 200,
+      "clean_java_games": 200,
+      "states": 5643,
+      "transitions": 5443,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "matches_sha256": "18e53bf9fb495466587ae35a4c38c55a788f8b4879c92b6fcf724e3d1c073c0e"
+    },
+    "gamedev3": {
+      "games": 200,
+      "maps": 4,
+      "raw_files": 200,
+      "portable_files": 200,
+      "clean_java_games": 200,
+      "states": 6698,
+      "transitions": 6498,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "matches_sha256": "5bac9c9d72adcfc2e4ea4fac67eea1cd4fa720e76e9a37523594ee57b3cc5293"
+    },
+    "gamedev4": {
+      "games": 200,
+      "maps": 4,
+      "raw_files": 200,
+      "portable_files": 200,
+      "clean_java_games": 200,
+      "states": 5775,
+      "transitions": 5575,
+      "own_error_games": 0,
+      "opponent_error_games": 0,
+      "matches_sha256": "9bf7ecfbdc725d1105ad155253138f3f8892608efb65e460f327312839e30126"
+    }
+  },
+  "models": {
+    "narrow1": {
+      "updates": 800,
+      "root_exposures": 25600,
+      "distinct_roots": 205,
+      "distinct_groups": 4017,
+      "training_seconds": 1.2048206669278443,
+      "files": {
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/checkpoint.pt": "b9f8f6a2a6614f5635140dad402946757832b7fc334e7ba265e8f636ad2d6bf3",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/weights.txt": "527c7bef06d57457f7c4236822abf5186853b71d955bb3023a3aee55f2f1d15d",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/package/bot.cpp": "6551f992636c24f648a4a595d63d5bab0eb76ee1e7b81bc3251de8ada32b766c",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/verify/packaged": "cc355f16b0b6090a7b23d382bd57b3e008e1e65efa6203cee95662703aee50fa",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/exposures.npy": "55c34451326f15ddca5b2b5946426ebf48dba427c40b2f57a20b71e84e27c8d9"
+      }
+    },
+    "broad1": {
+      "updates": 800,
+      "root_exposures": 25600,
+      "distinct_roots": 2011,
+      "distinct_groups": 15406,
+      "training_seconds": 2.043339957948774,
+      "files": {
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad1/checkpoint.pt": "6f804a109b49da12d8f0efc1867d0d06098b964eb87842aedee373624a64309a",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad1/weights.txt": "24b12aa5edce0c0d9bd2b41fae7eb611e5990ff38c3525d3bd776c1d1c8ad62e",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad1/package/bot.cpp": "3bdfeb8fddaa58aa741422c2c32cb75823881de7944b8f85492d7d15a796146b",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad1/verify/packaged": "0980d475d19d28c121adb9ae5bda1839485f4e03790b15505f9e3ab7dfb583be",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad1/exposures.npy": "5c2046d3ba7c8abbaf787df4211b28673ce89744c5a325bace7c09ddbdac3a63"
+      }
+    },
+    "narrow2": {
+      "updates": 800,
+      "root_exposures": 25600,
+      "distinct_roots": 205,
+      "distinct_groups": 4029,
+      "training_seconds": 0.8457198748365045,
+      "files": {
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/checkpoint.pt": "0d0dd5b6c41c0638dfeb2ccf933a610c5ef836420280b389e53a907c0364265e",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/weights.txt": "8353e327bdef67e6e12dd323de76d7d0b78fe7cc84d66557ca44ec28bfd5792f",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/package/bot.cpp": "f0f5b14d22fa0bd6a955f26445e152267034bd556b2cc0f3cb3d1c077aa0d3d0",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/verify/packaged": "472581893e6f10b07cc198b45e0c880d894b0a6b88779715d28627fd418b9bc4",
+        "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/exposures.npy": "49fed2ff8e0242ca433e11bba28a0bc38a8126cd7ca750142140b914e1dfdb5e"
+      }
+    },
+    "broad2": {
+      "updates": 800,
+      "root_exposures": 25600,
+      "distinct_roots": 2011,
+      "distinct_groups": 15420,
+      "training_seconds": 0.9662909167818725,
+      "files": {
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad2/checkpoint.pt": "07aa973c6c34db72a60d126fcc58377445cdeaf407c6daa7c6073629950d10ac",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad2/weights.txt": "0ef43c74998a525370dabc3418f4c06edfa271d47e22072099397a948e404999",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad2/package/bot.cpp": "840364db9d7e6651a603fd0ed877152a8d5dc38cfb8c6d091dfc5df8c4c34e92",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad2/verify/packaged": "00a03d1771179e43d3d08e51eae82b9f907f9972ef28e6c3f186dc14b7476063",
+        "experiments/rl/2026-11-09-rl7/diversity/models/broad2/exposures.npy": "2a9e87a2d0af538e45d59a73002acdc61643de25ac9585cae54d1d4f22273cc8"
+      }
+    }
+  },
+  "banks": {
+    "narrow": {
+      "roots": 205,
+      "unique_states": 205,
+      "groups": 4403,
+      "candidate_rows": 30862,
+      "changed_roots": 44,
+      "dataset_sha256": "160da13a05d5a7ecc10acdce3dc909187efa3328c3506059df596702e8221056",
+      "maps": 12
+    },
+    "broad": {
+      "roots": 2011,
+      "unique_states": 2011,
+      "groups": 44386,
+      "candidate_rows": 307145,
+      "changed_roots": 293,
+      "dataset_sha256": "9b71bfa199c5330ef5c6ffcc8ee45f93e7ba81e6a7cab7aa56fe340bf6b2dd7c",
+      "maps": 63
+    },
+    "development": {
+      "roots": 509,
+      "unique_states": 509,
+      "groups": 10546,
+      "candidate_rows": 71726,
+      "changed_roots": 56,
+      "dataset_sha256": "3a364601ca00f68f6fb60b6a04ae4fdf856d78f060f032519180a03d47fca279",
+      "maps": 16
+    }
+  },
+  "new_full_games": 960,
+  "fresh_strength_games": 800,
+  "new_maps": 96,
+  "teacher_calls": 4529,
+  "total_updates": 3200,
+  "total_root_exposures": 102400,
+  "budget_at_audit_start": {
+    "completed_seconds": 1273.7507286272012,
+    "cap_seconds": 7200,
+    "cutoff": "2026-11-09T06:00:00Z"
+  },
+  "source_sha256": "0388b23227864cc23c9b13328ae4c05662f8023b2b455926ea6dfdd16868a44c",
+  "process_note": "Run under the finite shared wrapper, which terminates its own child process group on exit. Separate post-exit process/timer evidence belongs in REPORT."
+}

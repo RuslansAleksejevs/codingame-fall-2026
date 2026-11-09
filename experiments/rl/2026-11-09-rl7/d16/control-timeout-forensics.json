@@ -1,0 +1,71 @@
+{
+  "as_of": "2026-11-09T00:39:15.684167+00:00",
+  "game": {
+    "candidate": "control",
+    "opponent": "lacoz",
+    "seed": 72112,
+    "seat": 0
+  },
+  "failed_program": "Unchanged greedy league3m through pinned v5 I/O wrapper, NOT repaired D16",
+  "actual_engine_timeout": true,
+  "scores": [
+    -1,
+    4
+  ],
+  "own_action_errors": [
+    "timeout"
+  ],
+  "last_recorded_turn": {
+    "turn": 4,
+    "player": 0,
+    "parse_us": 21484.8,
+    "restore_us": 3.416,
+    "flush_us": 7.5,
+    "through_flush_us": 21914.7,
+    "search": {
+      "selected": 0,
+      "generated": 1,
+      "complete": 0,
+      "transitions": 0,
+      "stopped": 0,
+      "emergency": 0,
+      "forwards": 60,
+      "choices": 6,
+      "checks": 278,
+      "baseline_us": 416.834,
+      "response_us": 0,
+      "proposal_us": 0,
+      "future_us": 0,
+      "decoder_us": 103.917,
+      "choices_us": 21.749,
+      "feature_us": 41.289,
+      "forward_us": 228.337,
+      "clone_us": 0,
+      "simulation_us": 0,
+      "value_us": 0,
+      "atomic_max_us": 103.917,
+      "values": []
+    }
+  },
+  "accepted_outputs": [
+    "MOVE 17 12 1;MOVE 31 17 1;MOVE 37 31 1\n",
+    "MOVE 12 20 1;MOVE 17 12 1;MOVE 31 17 1\n",
+    "SPAWN 12 17 20;MOVE 12 33 1\n"
+  ],
+  "all_own_stderr": [
+    "turn=1 units=3 triangles=0 plan_us=252\ndeadline={\"turn\":1,\"player\":0,\"parse_us\":566.75,\"restore_us\":10.458,\"flush_us\":12.75,\"through_flush_us\":842.417,\"search\":{\"selected\":0,\"generated\":1,\"complete\":0,\"transitions\":0,\"stopped\":0,\"emergency\":0,\"forwards\":12,\"choices\":3,\"checks\":68,\"baseline_us\":248.166,\"response_us\":0,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":155.875,\"choices_us\":3.792,\"feature_us\":9.623,\"forward_us\":52.58,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":155.875,\"values\":[]}}\npost_flush_us=18.083\n",
+    "turn=2 units=3 triangles=0 plan_us=212\ndeadline={\"turn\":2,\"player\":0,\"parse_us\":563.333,\"restore_us\":2.5,\"flush_us\":11.041,\"through_flush_us\":789.708,\"search\":{\"selected\":0,\"generated\":1,\"complete\":0,\"transitions\":0,\"stopped\":0,\"emergency\":0,\"forwards\":14,\"choices\":3,\"checks\":76,\"baseline_us\":211.334,\"response_us\":0,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":109.166,\"choices_us\":2.624,\"feature_us\":13.625,\"forward_us\":71.583,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":109.166,\"values\":[]}}\npost_flush_us=23.000\n",
+    "turn=3 units=3 triangles=1 plan_us=361\ndeadline={\"turn\":3,\"player\":0,\"parse_us\":401.916,\"restore_us\":1.333,\"flush_us\":4.792,\"through_flush_us\":769.916,\"search\":{\"selected\":0,\"generated\":1,\"complete\":0,\"transitions\":0,\"stopped\":0,\"emergency\":0,\"forwards\":34,\"choices\":4,\"checks\":160,\"baseline_us\":360.791,\"response_us\":0,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":102.667,\"choices_us\":54.333,\"feature_us\":44.212,\"forward_us\":143.25,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":102.667,\"values\":[]}}\npost_flush_us=14.084\n",
+    "turn=4 units=4 triangles=2 plan_us=418\ndeadline={\"turn\":4,\"player\":0,\"parse_us\":21484.8,\"restore_us\":3.416,\"flush_us\":7.5,\"through_flush_us\":21914.7,\"search\":{\"selected\":0,\"generated\":1,\"complete\":0,\"transitions\":0,\"stopped\":0,\"emergency\":0,\"forwards\":60,\"choices\":6,\"checks\":278,\"baseline_us\":416.834,\"response_us\":0,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":103.917,\"choices_us\":21.749,\"feature_us\":41.289,\"forward_us\":228.337,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":103.917,\"values\":[]}}\npost_flush_us=30.042\n"
+  ],
+  "all_summaries": [
+    "$0 captured 1 triangle\n$1 captured 3 triangles\n",
+    "$0 spawned 1 unit\n$1 spawned 3 units\n",
+    "$0 captured 2 triangles\n$1 captured 1 triangle\n",
+    "$0: timeout\n"
+  ],
+  "accepted_output_count": 3,
+  "timing_record_count": 4,
+  "raw_sha256": "e9bd1fa1d37041ad315bc23108827b412579a3fb6c3e9e5a067aadddf41c493d",
+  "cause": "UNKNOWN. Last internal first-score-to-flush21.9147ms does not measure pre-first-score/scheduling/referee overhead. Do not infer parser/inference/OS blame. No rerun has been used to erase the actual timeout."
+}

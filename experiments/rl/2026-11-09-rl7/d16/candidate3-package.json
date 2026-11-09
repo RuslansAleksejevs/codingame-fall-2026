@@ -1,0 +1,149 @@
+{
+  "as_of": "2026-11-09T01:22:07.722674+00:00",
+  "passed": true,
+  "source": "experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp",
+  "source_sha256": "94f0d426de787f7ed29a0ce87fa03fd3e0bae2ebb27c7d76548f4624f67ab4f8",
+  "source_utf16": 95540,
+  "source_bytes": 220400,
+  "decoded_bytes": 397328,
+  "decoded_sha256": "ac5532cfc76dbd05b3a6a493c4892d2206abb19d80a114d0fad8cd3bd78868e5",
+  "reference_a2_sha256": "d36aba4daa02580b1a20e5e1d000954cea330a852d8adbae1bb8f593572c9d15",
+  "amendment": "experiments/rl/2026-11-09-d16-live/AMENDMENT_A3.md",
+  "amendment_sha256": "78d746d47cdba10ca5702572af62355947af81e81c49aa5a15fe110887fb1273",
+  "timed_policy_change": "Complete three-model depth1 incumbent then original depth2; same16ms cumulative origin and20000cap",
+  "contracts": {
+    "saved_games": 20,
+    "both_seat_roots": 1156,
+    "actual_stream_commands": 1156,
+    "forced_baseline_cases": 328,
+    "oracle_roots": 1156,
+    "interruption_cases": 542,
+    "coverage": {
+      "shallow_selected": 11,
+      "deep_selected": 15,
+      "deep_baseline_only": 70,
+      "incomplete_shallow": 206
+    },
+    "delayed_input": [
+      {
+        "delay_ms": 20.0,
+        "timing": {
+          "turn": 27,
+          "player": 1,
+          "parse_us": 22300.5,
+          "optional_us": 4.583,
+          "restore_us": 0.5,
+          "flush_us": 1.625,
+          "process_cpu_us": 868,
+          "through_flush_us": 22920.2,
+          "search": {
+            "selected": 0,
+            "generated": 1,
+            "shallow_complete": 0,
+            "selected_tier": 0,
+            "paired": 0,
+            "complete": 0,
+            "transitions": 0,
+            "stopped": 1,
+            "emergency": 0,
+            "forwards": 280,
+            "choices": 40,
+            "checks": 1357,
+            "baseline_complete": 1,
+            "baseline_us": 612.833,
+            "response_us": 4,
+            "proposal_us": 0,
+            "future_us": 0,
+            "decoder_us": 58.958,
+            "choices_us": 22.373,
+            "feature_us": 76.92,
+            "forward_us": 431.953,
+            "clone_us": 0,
+            "simulation_us": 0,
+            "value_us": 0,
+            "atomic_max_us": 58.958,
+            "values": [],
+            "shallow_values": []
+          }
+        },
+        "output": "SPAWN 1 2 38;SPAWN 11 21 22;SPAWN 33 14 45;SPAWN 17 21 31;SPAWN 33 43 45;MOVE 1 34 1;MOVE 1 34 1;MOVE 4 13 1;MOVE 5 27 1;MOVE 6 34 1;MOVE 10 20 1;MOVE 11 42 1;MOVE 13 10 1;MOVE 14 33 1;MOVE 15 39 1;MOVE 17 25 1;MOVE 21 22 1;MOVE 22 29 1;MOVE 26 7 1;MOVE 27 6 1;MOVE 27 47 1;MOVE 32 0 1;MOVE 32 6 1;MOVE 33 26 1;MOVE 33 26 1;MOVE 33 7 1;MOVE 33 7 1;MOVE 35 26 1;MOVE 38 1 1;MOVE 39 3 1;MOVE 39 0 1;MOVE 43 4 1;MOVE 45 43 1;MOVE 45 14 1",
+        "greedy": "SPAWN 1 2 38;SPAWN 11 21 22;SPAWN 33 14 45;SPAWN 17 21 31;SPAWN 33 43 45;MOVE 1 34 1;MOVE 1 34 1;MOVE 4 13 1;MOVE 5 27 1;MOVE 6 34 1;MOVE 10 20 1;MOVE 11 42 1;MOVE 13 10 1;MOVE 14 33 1;MOVE 15 39 1;MOVE 17 25 1;MOVE 21 22 1;MOVE 22 29 1;MOVE 26 7 1;MOVE 27 6 1;MOVE 27 47 1;MOVE 32 0 1;MOVE 32 6 1;MOVE 33 26 1;MOVE 33 26 1;MOVE 33 7 1;MOVE 33 7 1;MOVE 35 26 1;MOVE 38 1 1;MOVE 39 3 1;MOVE 39 0 1;MOVE 43 4 1;MOVE 45 43 1;MOVE 45 14 1"
+      },
+      {
+        "delay_ms": 30.0,
+        "timing": {
+          "turn": 27,
+          "player": 1,
+          "parse_us": 31091,
+          "optional_us": 4.333,
+          "restore_us": 0.417,
+          "flush_us": 1.417,
+          "process_cpu_us": 922,
+          "through_flush_us": 31755.9,
+          "search": {
+            "selected": 0,
+            "generated": 1,
+            "shallow_complete": 0,
+            "selected_tier": 0,
+            "paired": 0,
+            "complete": 0,
+            "transitions": 0,
+            "stopped": 1,
+            "emergency": 0,
+            "forwards": 280,
+            "choices": 40,
+            "checks": 1357,
+            "baseline_complete": 1,
+            "baseline_us": 658.667,
+            "response_us": 3.708,
+            "proposal_us": 0,
+            "future_us": 0,
+            "decoder_us": 65,
+            "choices_us": 24.003,
+            "feature_us": 89.665,
+            "forward_us": 460.207,
+            "clone_us": 0,
+            "simulation_us": 0,
+            "value_us": 0,
+            "atomic_max_us": 65,
+            "values": [],
+            "shallow_values": []
+          }
+        },
+        "output": "SPAWN 1 2 38;SPAWN 11 21 22;SPAWN 33 14 45;SPAWN 17 21 31;SPAWN 33 43 45;MOVE 1 34 1;MOVE 1 34 1;MOVE 4 13 1;MOVE 5 27 1;MOVE 6 34 1;MOVE 10 20 1;MOVE 11 42 1;MOVE 13 10 1;MOVE 14 33 1;MOVE 15 39 1;MOVE 17 25 1;MOVE 21 22 1;MOVE 22 29 1;MOVE 26 7 1;MOVE 27 6 1;MOVE 27 47 1;MOVE 32 0 1;MOVE 32 6 1;MOVE 33 26 1;MOVE 33 26 1;MOVE 33 7 1;MOVE 33 7 1;MOVE 35 26 1;MOVE 38 1 1;MOVE 39 3 1;MOVE 39 0 1;MOVE 43 4 1;MOVE 45 43 1;MOVE 45 14 1",
+        "greedy": "SPAWN 1 2 38;SPAWN 11 21 22;SPAWN 33 14 45;SPAWN 17 21 31;SPAWN 33 43 45;MOVE 1 34 1;MOVE 1 34 1;MOVE 4 13 1;MOVE 5 27 1;MOVE 6 34 1;MOVE 10 20 1;MOVE 11 42 1;MOVE 13 10 1;MOVE 14 33 1;MOVE 15 39 1;MOVE 17 25 1;MOVE 21 22 1;MOVE 22 29 1;MOVE 26 7 1;MOVE 27 6 1;MOVE 27 47 1;MOVE 32 0 1;MOVE 32 6 1;MOVE 33 26 1;MOVE 33 26 1;MOVE 33 7 1;MOVE 33 7 1;MOVE 35 26 1;MOVE 38 1 1;MOVE 39 3 1;MOVE 39 0 1;MOVE 43 4 1;MOVE 45 43 1;MOVE 45 14 1"
+      }
+    ]
+  },
+  "binaries": {
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt3/candidate": "a9ef55fb8b110131432b73eacbfd04fecc2b26780c7231b119e9312bdec81433",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt3/dump": "46221ecae3875b6edc424c888b71f9f228926f7d25a59a16fbb1aa195b6aebfa",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt3/diagnostic": "fc818f81a5b1712264ed12ebbece6c4305ad36cc9e01defc836d6fdae9ca9b62",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt3/candidate.dylib": "0b0dc539ad06f155a541ec93476410f73379c9bf27d01719565b62bed67ac824"
+  },
+  "implementation_bindings": {
+    "code/rl/v7/d16/candidate3.py": "f162b3bd3e4e2332be2436bcc66d9130a662de351517bf09c2260000e0e1b3fa",
+    "code/rl/v7/d16/act_a3.inc": "e9e8946c1800cab0a349ca08baae3f7997a0d0260b56b2876ce8615dc37845bb",
+    "code/rl/v7/d16/contracts_a3.cpp": "c7efca31ab9d35079a6e2f4b40e0931415664f304adf8e80ec83e745e69e0786",
+    "experiments/rl/2026-11-09-rl7/d16/package-attempt3/search-readable.hpp": "d7516f386e9419c0c9631eb137db9cefd873c74fdde9c1a2c571f8de9a87251e"
+  },
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "seconds": 46.18961320910603,
+  "budget": {
+    "as_of": "2026-11-09T01:22:07.745263+00:00",
+    "owner": "d16",
+    "completed_seconds": 796.5531006646343,
+    "cap_seconds": 5400,
+    "cutoff": "2026-11-09T06:00:00+00:00"
+  },
+  "protected": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+    "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2/b9/bot.cpp": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9"
+  },
+  "platform_ready_for_fixed_tests": true,
+  "local_96_game_guard_pending": true,
+  "process_cpu_scope": "std::clock from first score token through stdout flush; excludes startup/initial map/pre-first-token/final stderr, not official chargedCPU"
+}

@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-11-09T01:30:50.842088+00:00",
+  "authorization": "USER_CONFIRMED",
+  "authorization_scope": "Finish D16 and make one real leaderboard submission; no automatic rollback",
+  "selection": "A3 complete-ensemble anytime D1 then original D2, exact9-bit weights,16ms",
+  "code_file": "experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp",
+  "source_sha256": "94f0d426de787f7ed29a0ce87fa03fd3e0bae2ebb27c7d76548f4624f67ab4f8",
+  "previous_submission_id": 41671805,
+  "previous_source_sha256": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+  "previous_source_file": "previous-source-before-submit.json",
+  "previous_history_file": "submissions-before-submit.json",
+  "before_progress_file": "progress-before-submit.json",
+  "local_guard": "46/48 candidate versus41/48 control on8fresh maps; gain10.4167pp CI[0,27.0833]",
+  "platform_guard": "102clean outputs,17complete comparisons,1nonselfnonbaseline; no >20ms normal turn",
+  "caveats": [
+    "Exploratory ranked measurement, not an independently proved improvement",
+    "Platform search remains rare and mostly shallow; local full-depth capacity did not transfer",
+    "Moving rank snapshots are not paired causal comparisons",
+    "Old A2 failure and359/1200 STOP remain unchanged"
+  ],
+  "command": {
+    "method": "POST",
+    "path": "/challenges/fall-challenge-2026/submissions",
+    "code_file": "experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp",
+    "body": {
+      "language": "C++"
+    },
+    "save": "experiments/rl/2026-11-09-d16-live/submission-response.json",
+    "keys": [
+      "submission_id",
+      "progress_url",
+      "hint"
+    ]
+  },
+  "proof_sha256": {
+    "experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp": "94f0d426de787f7ed29a0ce87fa03fd3e0bae2ebb27c7d76548f4624f67ab4f8",
+    "experiments/rl/2026-11-09-rl7/coordinator/d16-a3-audit.json": "cbab2665dcc60831f5f50c3e0682460001c11fbf6dfd189da165f84fb636d433",
+    "experiments/rl/2026-11-09-d16-live/tests-audit-a3-final.json": "64c363d34d2734ab4eaad49dc653e295be5942163459a3bca21da0b6bdd5613e",
+    "experiments/rl/2026-11-09-d16-live/test-requests-a3.json": "a821b7180d5b42e07bdf13fe91f8cd3182b732b9b959cd168c7cdc4deb6267a1",
+    "experiments/rl/2026-11-09-d16-live/AMENDMENT_A3.md": "78d746d47cdba10ca5702572af62355947af81e81c49aa5a15fe110887fb1273",
+    "experiments/rl/2026-11-09-d16-live/challenge-before-submit.json": "6e97b70228b33c0ff1cff385d2ba2360cf73cbe7bf7c3ccaad804d7cfe7ac330",
+    "experiments/rl/2026-11-09-d16-live/progress-before-submit.json": "114e58b63ebd7dd629ea7669b75d98fdac60b191bbcd51a979a7b91ef49984d9",
+    "experiments/rl/2026-11-09-d16-live/previous-source-before-submit.json": "0f7e3d8c987330f712d7c8aef46495a5b85fd27c6ce4db12cd568e4d24e85d2e",
+    "experiments/rl/2026-11-09-d16-live/submissions-before-submit.json": "ac425a8f7af9e10c8c58316ea400b98258b824ac9a686cb1d5fdb69e2c34e24d",
+    "experiments/rl/2026-11-09-d16-live/limits-before-submit.json": "09fb177b7bc3443b28835ca4938b9948579f39031af5039e149f242c1f85bbef"
+  },
+  "external_spend": 0,
+  "git_commit_push": false,
+  "overwrite_ide": false
+}

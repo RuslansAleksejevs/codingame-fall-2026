@@ -1,0 +1,415 @@
+{
+  "as_of": "2026-11-09T01:32:36.432932+00:00",
+  "classification": "PROJECT_REPORTED",
+  "complete": true,
+  "pending": [],
+  "issues": [],
+  "technical_integrity_passed": true,
+  "functional_passed": true,
+  "timing_review_required": [],
+  "outputs": 102,
+  "complete_same_tier_comparison_turns": 17,
+  "nonself_nonbaseline_selections": 1,
+  "platform_admission_passed": true,
+  "games": [
+    {
+      "file": "experiments/rl/2026-11-09-d16-live/test-10-result.json",
+      "file_sha256": "2213b0730475cd53899ef54acf060e37728d85a63649e12074d0887379d18aec",
+      "game_id": 918858744,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Boss 3",
+          "agent_id": 6858290
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 28,
+          "commands": {
+            "MOVE": 260,
+            "SPAWN": 22
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 28,
+          "planning_us_max": 16326
+        },
+        "1": {
+          "own": false,
+          "turns": 29,
+          "commands": {
+            "MOVE": 530,
+            "SPAWN": 68,
+            "ATTACK": 3
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        -1.0,
+        71.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "d40a3d8a6bfc6a705be01f89653a0472c95fa07ec75ec9a59154d03cf4eb30ee",
+      "game_options_sha256": "5fa71b7c17bb63fd3a03891fe5f483703ca098e24523648996057a4b561e4cc3",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0,
+      "test_number": 10,
+      "d16_integrity": {
+        "seats": {
+          "0": {
+            "outputs": 28,
+            "records": 28,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 27,
+            "nonbaseline_selections": 0,
+            "turns_with_complete_search_evaluation": 2,
+            "complete_search_evaluations_total": 2,
+            "through_flush_us_max": 16399.4,
+            "baseline_us_max": 2642.953,
+            "post_flush_samples": 28,
+            "a3_records": 28,
+            "a3_tier_issue_turns": [],
+            "complete_shallow_search_evaluations_total": 38,
+            "paired_comparison_turns": 10,
+            "selected_tier_counts": {
+              "0": 18,
+              "1": 10
+            },
+            "nonbaseline_tier_counts": {},
+            "process_cpu_us_max": 16026,
+            "nonfirst_wall_over_20ms_turns": []
+          }
+        },
+        "issues": [],
+        "passed": true,
+        "caveat": "Internal post-first-token through-flush wall time, not full official CPU time"
+      },
+      "tiers": {
+        "0": {
+          "outputs": 28,
+          "paired_turns": 10,
+          "nonbaseline": 0,
+          "selected_tier_counts": {
+            "0": 18,
+            "1": 10,
+            "2": 0
+          },
+          "complete_shallow_evaluations": 38,
+          "complete_deep_evaluations": 2,
+          "wall_us_max": 16399.4,
+          "process_cpu_us_max": 16026
+        }
+      }
+    },
+    {
+      "file": "experiments/rl/2026-11-09-d16-live/test-11-result.json",
+      "file_sha256": "8fd6ba4e4a2a5684f333d9cbc16b88bc981156cbe86f840f8bfd61723f3df403",
+      "game_id": 918859067,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Captainseb",
+          "agent_id": 6844184,
+          "rank": 934
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 13,
+          "commands": {
+            "MOVE": 242,
+            "SPAWN": 56
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 13,
+          "planning_us_max": 16256
+        },
+        "1": {
+          "own": false,
+          "turns": 12,
+          "commands": {
+            "MOVE": 11,
+            "SPAWN": 5,
+            "WAIT": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        64.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "win",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "4066fa241ddeefe8112ab690ee37105b91a58495784ef7f1f4d990bde7b403be",
+      "game_options_sha256": "b25dfaf01a3ae8e068ccbf2835802f8fc5425552d1aebf1efdd277826b181a48",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0,
+      "test_number": 11,
+      "d16_integrity": {
+        "seats": {
+          "0": {
+            "outputs": 13,
+            "records": 13,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 13,
+            "nonbaseline_selections": 1,
+            "turns_with_complete_search_evaluation": 0,
+            "complete_search_evaluations_total": 0,
+            "through_flush_us_max": 16349.6,
+            "baseline_us_max": 14951.804,
+            "post_flush_samples": 13,
+            "a3_records": 13,
+            "a3_tier_issue_turns": [],
+            "complete_shallow_search_evaluations_total": 12,
+            "paired_comparison_turns": 3,
+            "selected_tier_counts": {
+              "1": 3,
+              "0": 10
+            },
+            "nonbaseline_tier_counts": {
+              "1": 1
+            },
+            "process_cpu_us_max": 16129,
+            "nonfirst_wall_over_20ms_turns": []
+          }
+        },
+        "issues": [],
+        "passed": true,
+        "caveat": "Internal post-first-token through-flush wall time, not full official CPU time"
+      },
+      "tiers": {
+        "0": {
+          "outputs": 13,
+          "paired_turns": 3,
+          "nonbaseline": 1,
+          "selected_tier_counts": {
+            "0": 10,
+            "1": 3,
+            "2": 0
+          },
+          "complete_shallow_evaluations": 12,
+          "complete_deep_evaluations": 0,
+          "wall_us_max": 16349.6,
+          "process_cpu_us_max": 16129
+        }
+      }
+    },
+    {
+      "file": "experiments/rl/2026-11-09-d16-live/test-12-result.json",
+      "file_sha256": "2f9ac486bd9f1d39ad902bb63870d36b23d1b4e879192ec730614c83e65da506",
+      "game_id": 918859399,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        }
+      ],
+      "own_seats": [
+        0,
+        1
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 31,
+          "commands": {
+            "MOVE": 923,
+            "SPAWN": 98,
+            "ATTACK": 6
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 31,
+          "planning_us_max": 16178
+        },
+        "1": {
+          "own": true,
+          "turns": 30,
+          "commands": {
+            "MOVE": 469,
+            "SPAWN": 42,
+            "ATTACK": 1
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 30,
+          "planning_us_max": 16314
+        }
+      },
+      "scores": [
+        107.0,
+        -1.0
+      ],
+      "ranking": [
+        0,
+        1
+      ],
+      "outcome": "selfplay",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "742d60f0e7c9f546f31d69fd78e169ce05f22feae6341f490bb7ab04d878d7f0",
+      "game_options_sha256": "fe6f8f2324008d2094e84508736bca9f095534f4498079d065a03db6528c791a",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0,
+      "test_number": 12,
+      "d16_integrity": {
+        "seats": {
+          "0": {
+            "outputs": 31,
+            "records": 31,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 30,
+            "nonbaseline_selections": 0,
+            "turns_with_complete_search_evaluation": 1,
+            "complete_search_evaluations_total": 1,
+            "through_flush_us_max": 16262.1,
+            "baseline_us_max": 11006.691,
+            "post_flush_samples": 31,
+            "a3_records": 31,
+            "a3_tier_issue_turns": [],
+            "complete_shallow_search_evaluations_total": 14,
+            "paired_comparison_turns": 1,
+            "selected_tier_counts": {
+              "0": 30,
+              "1": 1
+            },
+            "nonbaseline_tier_counts": {},
+            "process_cpu_us_max": 16202,
+            "nonfirst_wall_over_20ms_turns": []
+          },
+          "1": {
+            "outputs": 30,
+            "records": 30,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 30,
+            "nonbaseline_selections": 0,
+            "turns_with_complete_search_evaluation": 1,
+            "complete_search_evaluations_total": 1,
+            "through_flush_us_max": 16409.8,
+            "baseline_us_max": 5816.459,
+            "post_flush_samples": 30,
+            "a3_records": 30,
+            "a3_tier_issue_turns": [],
+            "complete_shallow_search_evaluations_total": 11,
+            "paired_comparison_turns": 3,
+            "selected_tier_counts": {
+              "1": 3,
+              "0": 27
+            },
+            "nonbaseline_tier_counts": {},
+            "process_cpu_us_max": 16077,
+            "nonfirst_wall_over_20ms_turns": []
+          }
+        },
+        "issues": [],
+        "passed": true,
+        "caveat": "Internal post-first-token through-flush wall time, not full official CPU time"
+      },
+      "tiers": {
+        "0": {
+          "outputs": 31,
+          "paired_turns": 1,
+          "nonbaseline": 0,
+          "selected_tier_counts": {
+            "0": 30,
+            "1": 1,
+            "2": 0
+          },
+          "complete_shallow_evaluations": 14,
+          "complete_deep_evaluations": 1,
+          "wall_us_max": 16262.1,
+          "process_cpu_us_max": 16202
+        },
+        "1": {
+          "outputs": 30,
+          "paired_turns": 3,
+          "nonbaseline": 0,
+          "selected_tier_counts": {
+            "0": 27,
+            "1": 3,
+            "2": 0
+          },
+          "complete_shallow_evaluations": 11,
+          "complete_deep_evaluations": 1,
+          "wall_us_max": 16409.8,
+          "process_cpu_us_max": 16077
+        }
+      }
+    }
+  ],
+  "result_bindings": {
+    "test-10-result.json": "2213b0730475cd53899ef54acf060e37728d85a63649e12074d0887379d18aec",
+    "test-11-result.json": "8fd6ba4e4a2a5684f333d9cbc16b88bc981156cbe86f840f8bfd61723f3df403",
+    "test-12-result.json": "2f9ac486bd9f1d39ad902bb63870d36b23d1b4e879192ec730614c83e65da506"
+  },
+  "plan_sha256": "a821b7180d5b42e07bdf13fe91f8cd3182b732b9b959cd168c7cdc4deb6267a1",
+  "script_sha256": "c3abf4fa8eb6bcef6056b760baad1959900bfd0f8c346f7d55d086140d2da065",
+  "caveats": [
+    "Old-map technical functionality, not independent strength or ranking",
+    "ProcessCPU and internal wall exclude startup/pre-first-token/final stderr; neither is official chargedCPU",
+    "Any >20ms normal non-first wall observation needs explicit investigation"
+  ]
+}

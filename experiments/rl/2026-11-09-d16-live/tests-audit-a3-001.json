@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-11-09T01:23:58.335153+00:00",
+  "classification": "PROJECT_REPORTED",
+  "complete": false,
+  "pending": [
+    11,
+    12
+  ],
+  "issues": [],
+  "technical_integrity_passed": true,
+  "functional_passed": false,
+  "timing_review_required": [],
+  "outputs": 28,
+  "complete_same_tier_comparison_turns": 10,
+  "nonself_nonbaseline_selections": 0,
+  "platform_admission_passed": false,
+  "games": [
+    {
+      "file": "experiments/rl/2026-11-09-d16-live/test-10-result.json",
+      "file_sha256": "2213b0730475cd53899ef54acf060e37728d85a63649e12074d0887379d18aec",
+      "game_id": 918858744,
+      "status": "done",
+      "agents": [
+        {
+          "index": 0,
+          "name": "Ruslans",
+          "agent_id": -1,
+          "me": true
+        },
+        {
+          "index": 1,
+          "name": "Boss 3",
+          "agent_id": 6858290
+        }
+      ],
+      "own_seats": [
+        0
+      ],
+      "seats": {
+        "0": {
+          "own": true,
+          "turns": 28,
+          "commands": {
+            "MOVE": 260,
+            "SPAWN": 22
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 28,
+          "planning_us_max": 16326
+        },
+        "1": {
+          "own": false,
+          "turns": 29,
+          "commands": {
+            "MOVE": 530,
+            "SPAWN": 68,
+            "ATTACK": 3
+          },
+          "warnings": [],
+          "errors": [],
+          "planning_samples": 0,
+          "planning_us_max": null
+        }
+      },
+      "scores": [
+        -1.0,
+        71.0
+      ],
+      "ranking": [
+        1,
+        0
+      ],
+      "outcome": "loss",
+      "global_errors": [],
+      "fail_cause": null,
+      "game_options_raw_sha256": "d40a3d8a6bfc6a705be01f89653a0472c95fa07ec75ec9a59154d03cf4eb30ee",
+      "game_options_sha256": "5fa71b7c17bb63fd3a03891fe5f483703ca098e24523648996057a4b561e4cc3",
+      "own_errors": 0,
+      "own_warnings": 0,
+      "opponent_errors": 0,
+      "test_number": 10,
+      "d16_integrity": {
+        "seats": {
+          "0": {
+            "outputs": 28,
+            "records": 28,
+            "malformed": [],
+            "incomplete_baseline_records": [],
+            "emergency_records": [],
+            "optional_stops": 27,
+            "nonbaseline_selections": 0,
+            "turns_with_complete_search_evaluation": 2,
+            "complete_search_evaluations_total": 2,
+            "through_flush_us_max": 16399.4,
+            "baseline_us_max": 2642.953,
+            "post_flush_samples": 28
+          }
+        },
+        "issues": [],
+        "passed": true,
+        "caveat": "Internal post-first-token through-flush wall time, not full official CPU time"
+      },
+      "tiers": {
+        "0": {
+          "outputs": 28,
+          "paired_turns": 10,
+          "nonbaseline": 0,
+          "selected_tier_counts": {
+            "0": 18,
+            "1": 10,
+            "2": 0
+          },
+          "complete_shallow_evaluations": 38,
+          "complete_deep_evaluations": 2,
+          "wall_us_max": 16399.4,
+          "process_cpu_us_max": 16026
+        }
+      }
+    }
+  ],
+  "result_bindings": {
+    "test-10-result.json": "2213b0730475cd53899ef54acf060e37728d85a63649e12074d0887379d18aec"
+  },
+  "plan_sha256": "a821b7180d5b42e07bdf13fe91f8cd3182b732b9b959cd168c7cdc4deb6267a1",
+  "script_sha256": "c3abf4fa8eb6bcef6056b760baad1959900bfd0f8c346f7d55d086140d2da065",
+  "caveats": [
+    "Old-map technical functionality, not independent strength or ranking",
+    "ProcessCPU and internal wall exclude startup/pre-first-token/final stderr; neither is official chargedCPU",
+    "Any >20ms normal non-first wall observation needs explicit investigation"
+  ]
+}

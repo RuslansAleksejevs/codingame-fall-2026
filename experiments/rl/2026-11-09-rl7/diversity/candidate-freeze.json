@@ -1,0 +1,4863 @@
+{
+  "as_of": "2026-11-09T00:38:02.150312+00:00",
+  "identities": {
+    "code/rl/export/package.py": "f928b1ca82c6cb495522ce3bc2e324e33cc9d7ef4097d429680b9bebca416650",
+    "code/rl/train/bc.py": "b3a213b1a657cd590c93cd96cbee9a9fa7a7c394ac74f2502d353af452d18398",
+    "code/rl/v3/verify_package.py": "7fcc005ccbe8be033ef495c4c19f9db5011b1ea5907a75df645c70abf328c471",
+    "code/rl/v7/diversity/analyze.py": "4ad02085be88d627a212dec973d6890688352f554d1d21267b2154b5f8affd39",
+    "code/rl/v7/diversity/collect.py": "8ead8dfd13d6ee4a78b694c2531335f2e03499404a69f81edae4f4fc0a73b3c0",
+    "code/rl/v7/diversity/complete_exports.py": "f3634d016d2fdbf364ee4378d22d6694cc37835c8e2f6ca884fe643b1eb8c10c",
+    "code/rl/v7/diversity/contracts.py": "5d5ff16c108816b77ce355fcfa65868fab30a5d1b920aa7008fb5872ed2c19bb",
+    "code/rl/v7/diversity/coverage_audit.py": "f13d15354f5d44bdb565befcdf87c42eb48367d2937ab775083e4851c93ba10c",
+    "code/rl/v7/diversity/finish_seed2.py": "f322db934374d46553fdf9847fb0502a5e376a9badf6851afcc31cfc060faf69",
+    "code/rl/v7/diversity/finish_training.py": "12af149d9f64fbdefde309f1db8a0da48f1351786864c7c531b5c41c60aa6e5d",
+    "code/rl/v7/diversity/job.py": "c7091126770eef5a26186ed34f949a6ed3e0f66855ee5b5de3425b7b56ff9e04",
+    "code/rl/v7/diversity/stage.py": "da6d78fad03826c2d359ea2138fc480afeb1fd82e3efd98fc84d3477a2c0d7ec",
+    "code/rl/v7/diversity/support.py": "a4cabf5f46362d5735e99ae4ea112fc19010cc51f4abf9f96db4534f0f0bffed",
+    "code/rl/v7/diversity/test_a1.py": "c479e3e9331d8b89aa20cb7a8c0d049e8c877f3fb08b62a91693c19e91b47ae6",
+    "code/rl/v7/diversity/test_analyze.py": "8b15c8df4c2bbf979eb9179ec2413e8650fb2ecaf84b85ffb03530c9b763c951",
+    "code/rl/v7/diversity/train.py": "539a656c36a0688f8ea0abe8d08a717eb876810329f2395e2699dca0ce45fdc1",
+    "experiments/rl/2026-11-09-rl7/diversity/AMENDMENT_A1.md": "d78b30ba8e047610d79c119921453328a034ba3e4a443f8d2e90a8c3a362678a",
+    "experiments/rl/2026-11-09-rl7/diversity/PROTOCOL.md": "b5f6638e3219069592091c9b100ce00966ecd14d0d2f78a3edcca32e84f80f00",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/checkpoint.pt": "b9f8f6a2a6614f5635140dad402946757832b7fc334e7ba265e8f636ad2d6bf3",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/weights.txt": "527c7bef06d57457f7c4236822abf5186853b71d955bb3023a3aee55f2f1d15d",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/config.json": "b99fcde29e80b3441e5092be0cb2a7c73fece21f8cdf303737dc03fe6e9a319d",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/summary.json": "9fdc6c1a40832e6364a2c176450ad3eadd6f45b5fc106ae335a80136a9b94e9e",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/native-parity.json": "35c47014cf9ced2fa577c479ee4b5daa75cf1a646af3cd1cec1e44c9e89dbcc9",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/package/bot.cpp": "6551f992636c24f648a4a595d63d5bab0eb76ee1e7b81bc3251de8ada32b766c",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/package/package.json": "459c894c42aae86f1388bc5ff5126a33140b1650f5bcf6e13e90a25bca51a297",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/verify/summary.json": "e0074efce5b47f8636a0b1ec710f35eb889f0811f12797662081904516c02f6e",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow1/verify/packaged": "cc355f16b0b6090a7b23d382bd57b3e008e1e65efa6203cee95662703aee50fa",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/checkpoint.pt": "6f804a109b49da12d8f0efc1867d0d06098b964eb87842aedee373624a64309a",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/weights.txt": "24b12aa5edce0c0d9bd2b41fae7eb611e5990ff38c3525d3bd776c1d1c8ad62e",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/config.json": "d3ca7edd748bf6c2017b8cf7e73c96799edc35b1ac2cf30c1493e155182c1255",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/summary.json": "ca7ece2d9fd4d18ef1ab93d120e06195fb6b5dc17d95b7502216abe378a780c5",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/native-parity.json": "b6e5c7f31111a551daff1bb4813d2bdf06221391e38f63a2818d7c299674e66b",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/package/bot.cpp": "3bdfeb8fddaa58aa741422c2c32cb75823881de7944b8f85492d7d15a796146b",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/package/package.json": "3478990895c9a6dba282430db1b663cdfad7cd133070b7a01cfb82789fafb29b",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/verify/summary.json": "65f81836305854481cbdcf883907f73915643215ab024542e10c4e1567de6f88",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad1/verify/packaged": "0980d475d19d28c121adb9ae5bda1839485f4e03790b15505f9e3ab7dfb583be",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/checkpoint.pt": "0d0dd5b6c41c0638dfeb2ccf933a610c5ef836420280b389e53a907c0364265e",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/weights.txt": "8353e327bdef67e6e12dd323de76d7d0b78fe7cc84d66557ca44ec28bfd5792f",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/config.json": "111538d77d44a27e6ba67c28431989a7c3389d8a979613eba3d8166129cc8d4c",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/summary.json": "c2cdbb19a08f391a96543a1e2c6b9c79e1b98f8ec26cda0ea0b038bc8f2b2bc2",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/native-parity.json": "35c47014cf9ced2fa577c479ee4b5daa75cf1a646af3cd1cec1e44c9e89dbcc9",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/package/bot.cpp": "f0f5b14d22fa0bd6a955f26445e152267034bd556b2cc0f3cb3d1c077aa0d3d0",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/package/package.json": "543250ff577ae83265b558992942e6f3ef04fd07419a77b60436a1b36f7ac413",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/verify/summary.json": "462cd8fd337ea18fa45958b710c60e28fe7e253ee76a48c3edd035a96efe82b0",
+    "experiments/rl/2026-11-09-rl7/diversity/models/narrow2/verify/packaged": "472581893e6f10b07cc198b45e0c880d894b0a6b88779715d28627fd418b9bc4",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/checkpoint.pt": "07aa973c6c34db72a60d126fcc58377445cdeaf407c6daa7c6073629950d10ac",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/weights.txt": "0ef43c74998a525370dabc3418f4c06edfa271d47e22072099397a948e404999",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/config.json": "b17b77ea2d6db677cc98ad774dc8e033b1b37d22d56e443b44d0684d562ee2ec",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/summary.json": "62a269103dd9526ec198de21772257b208f2717132e748ed5257bdcc5589217b",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/native-parity.json": "35c47014cf9ced2fa577c479ee4b5daa75cf1a646af3cd1cec1e44c9e89dbcc9",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/package/bot.cpp": "840364db9d7e6651a603fd0ed877152a8d5dc38cfb8c6d091dfc5df8c4c34e92",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/package/package.json": "27fd322685f2d14a63673d74a8079e132b4cc192999a47a25bac63f914c66065",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/verify/summary.json": "caa16bd24d208b984cdf417c8cc07f3083aedb24f26010e2be05d9bcd51169a6",
+    "experiments/rl/2026-11-09-rl7/diversity/models/broad2/verify/packaged": "00a03d1771179e43d3d08e51eae82b9f907f9972ef28e6c3f186dc14b7476063"
+  },
+  "designated_seed": 20261109,
+  "no_seed_selection": true,
+  "schedule": [
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73301,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73302,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73303,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73304,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73305,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73306,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73307,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73308,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73309,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73310,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73311,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73312,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73313,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73314,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73315,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "lacoz",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou2",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "khoufou",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "base",
+      "opponent": "league3m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 1
+    },
+    {
+      "candidate": "base",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad2",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow2",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "broad1",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 0
+    },
+    {
+      "candidate": "narrow1",
+      "opponent": "b2m",
+      "seed": 73316,
+      "seat": 0
+    }
+  ]
+}

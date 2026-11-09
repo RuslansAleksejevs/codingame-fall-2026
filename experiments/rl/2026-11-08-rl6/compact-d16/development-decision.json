@@ -1,0 +1,3389 @@
+{
+  "as_of": "2026-11-08T20:26:31.613732+00:00",
+  "stage": "development",
+  "classification": "PROJECT_REPORTED",
+  "gate_passed": true,
+  "checks": {
+    "complete_fixed_schedule": true,
+    "zero_own_control_teacher_errors": true,
+    "replay_pass": true,
+    "raw_pass": true,
+    "package_pass": true,
+    "clean_coverage": true,
+    "strength_pass": true,
+    "timing_coverage": true,
+    "internal_margin": true
+  },
+  "expected_games": 504,
+  "completed_games": 504,
+  "minimum_clean_maps": 11,
+  "own_control_teacher_error_games": 0,
+  "opponent_error_games": 1,
+  "missing_rows": [],
+  "bootstrap": {
+    "seed": 20261109,
+    "resamples": 10000,
+    "unit": "Whole map, both seats, six-row comparison clusters"
+  },
+  "all_games": {
+    "per_opponent": {
+      "lacoz": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 19,
+              "draw": 0,
+              "loss": 5,
+              "own_technical": 0,
+              "opponent_technical": 1
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 79.16666666666666,
+              "map_95_percent": [
+                54.166666666666664,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 1
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 9,
+                  "draw": 0,
+                  "loss": 3,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 75.0,
+                  "map_95_percent": [
+                    50.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 16,
+              "draw": 0,
+              "loss": 8,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 66.66666666666666,
+              "map_95_percent": [
+                41.66666666666667,
+                91.66666666666666
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 4,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 66.66666666666666,
+                  "map_95_percent": [
+                    41.66666666666667,
+                    91.66666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 4,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 66.66666666666666,
+                  "map_95_percent": [
+                    41.66666666666667,
+                    91.66666666666666
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 19,
+              "draw": 0,
+              "loss": 5,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 79.16666666666666,
+              "map_95_percent": [
+                58.333333333333336,
+                95.83333333333334
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 9,
+                  "draw": 0,
+                  "loss": 3,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 75.0,
+                  "map_95_percent": [
+                    50.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 12.5,
+          "map_95_percent": [
+            -8.333333333333332,
+            33.33333333333333
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            -16.666666666666664,
+            16.666666666666664
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 12.5,
+          "map_95_percent": [
+            -12.5,
+            37.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 16.666666666666664,
+            "map_95_percent": [
+              0.0,
+              41.66666666666667
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              -16.666666666666664,
+              33.33333333333333
+            ]
+          }
+        }
+      },
+      "khoufou2": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 21,
+              "draw": 0,
+              "loss": 3,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 21,
+              "draw": 0,
+              "loss": 3,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "khoufou": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 24,
+              "draw": 0,
+              "loss": 0,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 24,
+              "draw": 0,
+              "loss": 0,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              0.0,
+              25.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              0.0,
+              25.0
+            ]
+          }
+        }
+      },
+      "v6": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              0.0,
+              25.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bc": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "league3m": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 21,
+              "draw": 0,
+              "loss": 3,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 11,
+              "draw": 2,
+              "loss": 11,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                50.0,
+                50.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 6,
+                  "draw": 1,
+                  "loss": 5,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 54.166666666666664,
+                  "map_95_percent": [
+                    29.166666666666668,
+                    79.16666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 5,
+                  "draw": 1,
+                  "loss": 6,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 45.83333333333333,
+                  "map_95_percent": [
+                    20.833333333333336,
+                    70.83333333333334
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 37.5,
+          "map_95_percent": [
+            25.0,
+            50.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -8.333333333333332,
+          "map_95_percent": [
+            -25.0,
+            8.333333333333332
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 45.83333333333333,
+          "map_95_percent": [
+            37.5,
+            50.0
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 29.166666666666668,
+            "map_95_percent": [
+              -4.166666666666666,
+              62.5
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 45.83333333333333,
+            "map_95_percent": [
+              8.333333333333332,
+              79.16666666666666
+            ]
+          }
+        }
+      },
+      "b2m": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 13,
+              "draw": 0,
+              "loss": 11,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 54.166666666666664,
+              "map_95_percent": [
+                33.33333333333333,
+                75.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 5,
+                  "draw": 0,
+                  "loss": 7,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 41.66666666666667,
+                  "map_95_percent": [
+                    16.666666666666664,
+                    66.66666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 4,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 66.66666666666666,
+                  "map_95_percent": [
+                    41.66666666666667,
+                    91.66666666666666
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 7,
+              "draw": 0,
+              "loss": 17,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 29.166666666666668,
+              "map_95_percent": [
+                8.333333333333332,
+                54.166666666666664
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 3,
+                  "draw": 0,
+                  "loss": 9,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 25.0,
+                  "map_95_percent": [
+                    0.0,
+                    50.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 4,
+                  "draw": 0,
+                  "loss": 8,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 33.33333333333333,
+                  "map_95_percent": [
+                    8.333333333333332,
+                    58.333333333333336
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 12,
+              "draw": 0,
+              "loss": 12,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                33.33333333333333,
+                66.66666666666666
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 4,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 66.66666666666666,
+                  "map_95_percent": [
+                    41.66666666666667,
+                    91.66666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 4,
+                  "draw": 0,
+                  "loss": 8,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 33.33333333333333,
+                  "map_95_percent": [
+                    8.333333333333332,
+                    58.333333333333336
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 25.0,
+          "map_95_percent": [
+            -4.166666666666666,
+            54.166666666666664
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            -16.666666666666664,
+            25.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 20.833333333333336,
+          "map_95_percent": [
+            4.166666666666666,
+            37.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 16.666666666666664,
+            "map_95_percent": [
+              -16.666666666666664,
+              50.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 33.33333333333333,
+            "map_95_percent": [
+              0.0,
+              66.66666666666666
+            ]
+          }
+        }
+      }
+    },
+    "external_maps": [
+      71001,
+      71002,
+      71003,
+      71004,
+      71005,
+      71006,
+      71007,
+      71008,
+      71009,
+      71010,
+      71011,
+      71012
+    ],
+    "external_gain": {
+      "maps": 12,
+      "point_percent": 6.944444444444444,
+      "map_95_percent": [
+        -1.3888888888888888,
+        15.277777777777777
+      ]
+    },
+    "external_candidate_minus_teacher": {
+      "maps": 12,
+      "point_percent": -1.3888888888888888,
+      "map_95_percent": [
+        -6.944444444444444,
+        4.166666666666666
+      ]
+    },
+    "external_teacher_minus_control": {
+      "maps": 12,
+      "point_percent": 8.333333333333332,
+      "map_95_percent": [
+        -1.3888888888888888,
+        19.444444444444443
+      ]
+    },
+    "direct_league3m": {
+      "maps": 12,
+      "point_percent": 87.5,
+      "map_95_percent": [
+        75.0,
+        100.0
+      ]
+    },
+    "direct_b2m": {
+      "maps": 12,
+      "point_percent": 54.166666666666664,
+      "map_95_percent": [
+        33.33333333333333,
+        75.0
+      ]
+    },
+    "gates": {
+      "external_positive": true,
+      "league3m_majority": true,
+      "retention_minus5": true,
+      "regression_minus10": true
+    },
+    "strength_passed": true
+  },
+  "clean_paired": {
+    "per_opponent": {
+      "lacoz": {
+        "complete_maps": 11,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 22,
+              "win": 17,
+              "draw": 0,
+              "loss": 5,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 11,
+              "point_percent": 77.27272727272727,
+              "map_95_percent": [
+                54.54545454545454,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 11,
+                  "win": 9,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 11,
+                  "point_percent": 81.81818181818183,
+                  "map_95_percent": [
+                    54.54545454545454,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 11,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 3,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 11,
+                  "point_percent": 72.72727272727273,
+                  "map_95_percent": [
+                    45.45454545454545,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 22,
+              "win": 16,
+              "draw": 0,
+              "loss": 6,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 11,
+              "point_percent": 72.72727272727273,
+              "map_95_percent": [
+                50.0,
+                95.45454545454545
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 11,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 3,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 11,
+                  "point_percent": 72.72727272727273,
+                  "map_95_percent": [
+                    45.45454545454545,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 11,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 3,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 11,
+                  "point_percent": 72.72727272727273,
+                  "map_95_percent": [
+                    45.45454545454545,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 22,
+              "win": 17,
+              "draw": 0,
+              "loss": 5,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 11,
+              "point_percent": 77.27272727272727,
+              "map_95_percent": [
+                54.54545454545454,
+                95.45454545454545
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 11,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 3,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 11,
+                  "point_percent": 72.72727272727273,
+                  "map_95_percent": [
+                    45.45454545454545,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 11,
+                  "win": 9,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 11,
+                  "point_percent": 81.81818181818183,
+                  "map_95_percent": [
+                    54.54545454545454,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 11,
+          "point_percent": 4.545454545454546,
+          "map_95_percent": [
+            -9.090909090909092,
+            18.181818181818183
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 11,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            -18.181818181818183,
+            18.181818181818183
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 11,
+          "point_percent": 4.545454545454546,
+          "map_95_percent": [
+            -13.636363636363635,
+            22.727272727272727
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 11,
+            "point_percent": 9.090909090909092,
+            "map_95_percent": [
+              0.0,
+              27.27272727272727
+            ]
+          },
+          "1": {
+            "maps": 11,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              -27.27272727272727,
+              27.27272727272727
+            ]
+          }
+        }
+      },
+      "khoufou2": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 21,
+              "draw": 0,
+              "loss": 3,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 21,
+              "draw": 0,
+              "loss": 3,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "khoufou": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 24,
+              "draw": 0,
+              "loss": 0,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 24,
+              "draw": 0,
+              "loss": 0,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              0.0,
+              25.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              0.0,
+              25.0
+            ]
+          }
+        }
+      },
+      "v6": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 8.333333333333332,
+            "map_95_percent": [
+              0.0,
+              25.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bc": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 22,
+              "draw": 0,
+              "loss": 2,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 0.0,
+            "map_95_percent": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "league3m": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 21,
+              "draw": 0,
+              "loss": 3,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 10,
+                  "draw": 0,
+                  "loss": 2,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 83.33333333333334,
+                  "map_95_percent": [
+                    58.333333333333336,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 11,
+              "draw": 2,
+              "loss": 11,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                50.0,
+                50.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 6,
+                  "draw": 1,
+                  "loss": 5,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 54.166666666666664,
+                  "map_95_percent": [
+                    29.166666666666668,
+                    79.16666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 5,
+                  "draw": 1,
+                  "loss": 6,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 45.83333333333333,
+                  "map_95_percent": [
+                    20.833333333333336,
+                    70.83333333333334
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 23,
+              "draw": 0,
+              "loss": 1,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 12,
+                  "draw": 0,
+                  "loss": 0,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 100.0,
+                  "map_95_percent": [
+                    100.0,
+                    100.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 11,
+                  "draw": 0,
+                  "loss": 1,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 91.66666666666666,
+                  "map_95_percent": [
+                    75.0,
+                    100.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 37.5,
+          "map_95_percent": [
+            25.0,
+            50.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -8.333333333333332,
+          "map_95_percent": [
+            -25.0,
+            8.333333333333332
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 45.83333333333333,
+          "map_95_percent": [
+            37.5,
+            50.0
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 29.166666666666668,
+            "map_95_percent": [
+              -4.166666666666666,
+              62.5
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 45.83333333333333,
+            "map_95_percent": [
+              8.333333333333332,
+              79.16666666666666
+            ]
+          }
+        }
+      },
+      "b2m": {
+        "complete_maps": 12,
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "candidates": {
+          "candidate": {
+            "results": {
+              "games": 24,
+              "win": 13,
+              "draw": 0,
+              "loss": 11,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 54.166666666666664,
+              "map_95_percent": [
+                33.33333333333333,
+                75.0
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 5,
+                  "draw": 0,
+                  "loss": 7,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 41.66666666666667,
+                  "map_95_percent": [
+                    16.666666666666664,
+                    66.66666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 4,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 66.66666666666666,
+                  "map_95_percent": [
+                    41.66666666666667,
+                    91.66666666666666
+                  ]
+                }
+              }
+            }
+          },
+          "control": {
+            "results": {
+              "games": 24,
+              "win": 7,
+              "draw": 0,
+              "loss": 17,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 29.166666666666668,
+              "map_95_percent": [
+                8.333333333333332,
+                54.166666666666664
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 3,
+                  "draw": 0,
+                  "loss": 9,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 25.0,
+                  "map_95_percent": [
+                    0.0,
+                    50.0
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 4,
+                  "draw": 0,
+                  "loss": 8,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 33.33333333333333,
+                  "map_95_percent": [
+                    8.333333333333332,
+                    58.333333333333336
+                  ]
+                }
+              }
+            }
+          },
+          "teacher": {
+            "results": {
+              "games": 24,
+              "win": 12,
+              "draw": 0,
+              "loss": 12,
+              "own_technical": 0,
+              "opponent_technical": 0
+            },
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                33.33333333333333,
+                66.66666666666666
+              ]
+            },
+            "seats": {
+              "0": {
+                "results": {
+                  "games": 12,
+                  "win": 8,
+                  "draw": 0,
+                  "loss": 4,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 66.66666666666666,
+                  "map_95_percent": [
+                    41.66666666666667,
+                    91.66666666666666
+                  ]
+                }
+              },
+              "1": {
+                "results": {
+                  "games": 12,
+                  "win": 4,
+                  "draw": 0,
+                  "loss": 8,
+                  "own_technical": 0,
+                  "opponent_technical": 0
+                },
+                "score": {
+                  "maps": 12,
+                  "point_percent": 33.33333333333333,
+                  "map_95_percent": [
+                    8.333333333333332,
+                    58.333333333333336
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 25.0,
+          "map_95_percent": [
+            -4.166666666666666,
+            54.166666666666664
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            -16.666666666666664,
+            25.0
+          ]
+        },
+        "teacher_minus_control": {
+          "maps": 12,
+          "point_percent": 20.833333333333336,
+          "map_95_percent": [
+            4.166666666666666,
+            37.5
+          ]
+        },
+        "seat_gains": {
+          "0": {
+            "maps": 12,
+            "point_percent": 16.666666666666664,
+            "map_95_percent": [
+              -16.666666666666664,
+              50.0
+            ]
+          },
+          "1": {
+            "maps": 12,
+            "point_percent": 33.33333333333333,
+            "map_95_percent": [
+              0.0,
+              66.66666666666666
+            ]
+          }
+        }
+      }
+    },
+    "external_maps": [
+      71001,
+      71002,
+      71003,
+      71004,
+      71005,
+      71007,
+      71008,
+      71009,
+      71010,
+      71011,
+      71012
+    ],
+    "external_gain": {
+      "maps": 11,
+      "point_percent": 4.545454545454546,
+      "map_95_percent": [
+        -3.03030303030303,
+        12.12121212121212
+      ]
+    },
+    "external_candidate_minus_teacher": {
+      "maps": 11,
+      "point_percent": -1.515151515151515,
+      "map_95_percent": [
+        -7.575757575757574,
+        4.545454545454546
+      ]
+    },
+    "external_teacher_minus_control": {
+      "maps": 11,
+      "point_percent": 6.06060606060606,
+      "map_95_percent": [
+        -3.0303030303030307,
+        16.666666666666668
+      ]
+    },
+    "direct_league3m": {
+      "maps": 12,
+      "point_percent": 87.5,
+      "map_95_percent": [
+        75.0,
+        100.0
+      ]
+    },
+    "direct_b2m": {
+      "maps": 12,
+      "point_percent": 54.166666666666664,
+      "map_95_percent": [
+        33.33333333333333,
+        75.0
+      ]
+    },
+    "gates": {
+      "external_positive": true,
+      "league3m_majority": true,
+      "retention_minus5": true,
+      "regression_minus10": true
+    },
+    "strength_passed": true
+  },
+  "bindings": {
+    "experiments/rl/2026-11-08-rl6/compact-d16/development/matches.jsonl": "12a6e8cd93389a0163f47b8f38c783a0d056c58ac95870b80a953a4cc592794e",
+    "experiments/rl/2026-11-08-rl6/compact-d16/development-verification.json": "8ac07bdcf0c54b2684c32ebf40c6e066a271c841cc0d12e42315bb63c7570cf2"
+  },
+  "budget": {
+    "as_of": "2026-11-08T20:26:31.614411+00:00",
+    "initial_owner_seconds": 4569.00871229358,
+    "owner_completed_seconds": 5680.173736083787,
+    "phase_completed_seconds": 1111.1650237902068,
+    "active_seconds": 1.549334,
+    "phase_remaining_seconds": 7887.285642209793,
+    "seconds_to_cutoff": 20008.385585
+  },
+  "sources": {
+    "code/rl/v6/compact_d16/analyze.py": "d773b58386d8f8bd0596c016375e44652163be276f1c4981ba8959d20be869e9",
+    "code/rl/v6/compact_d16/codec.py": "cfdf90a0d3a42d435946a5a178860f2410d657291ccb3dab72135c6eabac7651",
+    "code/rl/v6/compact_d16/common.py": "2a7a5e3f75729fd48b4232cb3d1450283fb42c0d3dcafbad54f1444af4d31675",
+    "code/rl/v6/compact_d16/contracts.py": "0a1be3ad092cc79979a3494baf50f5c55625745cf0a794f8a2ba662a82cf7010",
+    "code/rl/v6/compact_d16/embedded.hpp": "9623042f4139bd415599111e9dd936c77269dddf064174ba8f430e7b682524a4",
+    "code/rl/v6/compact_d16/final_audit.py": "528c6c1e6638c495b1a86c6163f4f2160a8f8f2c16234a352200d64a89df0a9a",
+    "code/rl/v6/compact_d16/freeze.py": "eb41af5836639d1a0994fc44b06b1ab7492fdf8299159d47a8a3c689c4aacffe",
+    "code/rl/v6/compact_d16/maps.py": "21015ef0732ec902302eac39acd54ddb9806d3da7676430d977e8868e1b265a0",
+    "code/rl/v6/compact_d16/package.py": "014fcfb72d16be5c56e5d9575c07e2630fbedfaefc99cd480444a0691d948001",
+    "code/rl/v6/compact_d16/panel.py": "121be1b82e3dd96e45ca8bf0dd5695b8e95fd4192c7356ad38a1cb5536a4ed86",
+    "code/rl/v6/compact_d16/stage.py": "78af056867661a28ae26feffe8d9d9e88d06e95f96ad5ad64c1afb10fcd345f4",
+    "code/rl/v6/compact_d16/test_analyze.py": "3e0b1c8f59a28dc203a35e7b68fb4a81e848ea0580c468154a8b65ecb5737430"
+  }
+}

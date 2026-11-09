@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-09T00:31:32.230043+00:00",
+  "outcomes": [
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v7/diversity/train.py",
+        "train",
+        "narrow1"
+      ],
+      "returncode": 0,
+      "seconds": 4.902577832806855
+    },
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v7/diversity/train.py",
+        "train",
+        "broad1"
+      ],
+      "returncode": 0,
+      "seconds": 6.544482999946922
+    },
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v7/diversity/train.py",
+        "package",
+        "narrow1"
+      ],
+      "returncode": 1,
+      "seconds": 3.5553542906418443
+    }
+  ],
+  "seconds": 15.003511792048812,
+  "failure": "AssertionError(\"Failed stage ['code/arena/.venv-rl/bin/python', '-B', 'code/rl/v7/diversity/train.py', 'package', 'narrow1']\")",
+  "budget": {
+    "completed_seconds": 252.14267662586644,
+    "cap_seconds": 7200,
+    "cutoff": "2026-11-09T06:00:00Z"
+  }
+}

@@ -1,0 +1,3129 @@
+{
+  "as_of": "2026-11-08T20:14:41.861000+00:00",
+  "stage": "development",
+  "identities": {
+    "code/rl/v6/compact_d16/analyze.py": "d773b58386d8f8bd0596c016375e44652163be276f1c4981ba8959d20be869e9",
+    "code/rl/v6/compact_d16/codec.py": "cfdf90a0d3a42d435946a5a178860f2410d657291ccb3dab72135c6eabac7651",
+    "code/rl/v6/compact_d16/common.py": "2a7a5e3f75729fd48b4232cb3d1450283fb42c0d3dcafbad54f1444af4d31675",
+    "code/rl/v6/compact_d16/contracts.py": "0a1be3ad092cc79979a3494baf50f5c55625745cf0a794f8a2ba662a82cf7010",
+    "code/rl/v6/compact_d16/embedded.hpp": "9623042f4139bd415599111e9dd936c77269dddf064174ba8f430e7b682524a4",
+    "code/rl/v6/compact_d16/final_audit.py": "528c6c1e6638c495b1a86c6163f4f2160a8f8f2c16234a352200d64a89df0a9a",
+    "code/rl/v6/compact_d16/freeze.py": "eb41af5836639d1a0994fc44b06b1ab7492fdf8299159d47a8a3c689c4aacffe",
+    "code/rl/v6/compact_d16/maps.py": "21015ef0732ec902302eac39acd54ddb9806d3da7676430d977e8868e1b265a0",
+    "code/rl/v6/compact_d16/package.py": "014fcfb72d16be5c56e5d9575c07e2630fbedfaefc99cd480444a0691d948001",
+    "code/rl/v6/compact_d16/panel.py": "121be1b82e3dd96e45ca8bf0dd5695b8e95fd4192c7356ad38a1cb5536a4ed86",
+    "code/rl/v6/compact_d16/stage.py": "78af056867661a28ae26feffe8d9d9e88d06e95f96ad5ad64c1afb10fcd345f4",
+    "code/rl/v6/compact_d16/test_analyze.py": "3e0b1c8f59a28dc203a35e7b68fb4a81e848ea0580c468154a8b65ecb5737430",
+    "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2/b9/bot.cpp": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9",
+    "experiments/rl/2026-11-08-rl6/compact-d16/PROTOCOL.md": "8495f4b12a2061f9531d1d6125bfa401a0daffde6ed581f21a75869a978ce6e8",
+    "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2.json": "adc0cd8814f17f75e4fcef67acacc63b30bb92931d343fb0f1710ba9df4ef23f",
+    "experiments/rl/2026-11-08-rl5/deadline-search/freeze.json": "3a8a360441013efe735d7f2f3d27e4bdd11e66b84b83323938991bf36987f532",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/candidate": "4ce9303e48a51760590dfa879ebfe944d925ef08eb99006d64f99015cbdb91a2",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/fp32-diagnostic": "05fc98a7cf8dde00872117b844f4c71b742d0ea378232a9f343250f96fc9730c",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/dump-b9": "828f4b79bd10462011a7b0e25d0f6bbc3d336178025fb0423bcd3e756c16ccf1",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/dump-b8": "3ac184fe8110f6bf2d3483492ad4347e81c3f267b3013981ad5f6b38dccd3f1f",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/quantized.dylib": "8533aa75d680e20ecd07fe69eef16c2d7e7a89d04b054b3b7c1617af728e1c0f",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/reference.dylib": "400eed99b96f2632b0db73d271b9222a9694e0400840913be3ba8772e37dd0b2",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/candidate-diagnostic": "cfe258fbebb002ba10f021f2614464840c08493f63ba2c0daa44b52e241b0dd0",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/fp32.dylib": "a8c03dcd133e83926fc90288ffd125eee1dee77a94823296ebb8c13a65e1b72a",
+    "experiments/rl/2026-11-08-rl6/compact-d16/build/attempt2/dump-b32": "367aa91aec18bf83e3bb6fc4ac574808ef3bd0455507319592c064e969b8dc43",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/v6": "788ab6edf218abc928c0e8fafa98b350d8706b334c3db7821fa30228bc9fe792",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/contracts.dylib": "f677de19ad717434231cb00b02d62fe2d9d0cef92c54333da7900a9c1590d0ce",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/league3m": "bfa8e02e9115e36622048b87c607b044bb64d3eb304549b335f81af6e8beae18",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/bc": "b083e80e4912ae559a136b0667c9031fae6db6f91f702713be701f43e38eee4f",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/student-trace.dylib": "1020da08b1a15407d57836531c276ee5636d91281ab0587173d125a2907ad240",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/api.dylib": "7088b29f8d49ee046580fab9a0f38ab403137ef40b8beaa85fc841b61c40d3ea",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/b2m": "71a36ad4666f867a47111a7e91f022799bab25781df4f3f22d7d07c18a9933fc",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/bot": "f2817ded54d42f3ccf6f3beba1a606caeb95d44b2fc19b5687b7bb5587db25c5",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou/Player$Triangle.class": "de824cb19313509d4eab80651488544fd6201615dbb35a470c8d29a3f4d1bc54",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou/Player.class": "9894c57f9308829b0003ecc37998bf44bcffb26ea00d4a7c6d50af0f6889a0be",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou/Player$Plan.class": "7a274f687779dcf4a6051d7d6688adb7a623ef4c4595769b85157d39acaf6c3a",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2/Player$Triangle.class": "bf25abce302bccd02352d15b6737fe3012efc354c5a2749391fa131edec1ef79",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2/Player$State.class": "e67b4ef2ec2f531b29351bf5804d7c6925bbe195f7beec3c0d7b28dd45bf2500",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2/Player$Params.class": "cec22241170b969c742aaf9f297ab4e5e0267b5fe3aa1551ec086030466fbadd",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2/Player.class": "2f2c5ef2199833c764394ec45b142df61b00ffdaab3ed8842f071d232eddc3a2",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2/Player$Actions.class": "aef64adb90e8338543bf69774eda917fa3934ec0dc4b14e8f58abee9cbd509a4",
+    "experiments/rl/2026-11-08-rl5/deadline-search/build/attempt1/khoufou2/Player$Plan.class": "844e1109756dce571d3fee2b1dd9ed8f9d1ea56c1c243ae22a5de776ff6a2acf",
+    "code/rl/sim/simulator.hpp": "b6a883e09006b214d326708f51ebd3809857229e3fd5b5fb19f09b88f512e921",
+    "code/rl/models/policy.hpp": "842305bafd07ff829fd818a7a1f99f8c7f043d3ad99ce42fcbead56e01fb50dc",
+    "code/rl/export/inference.hpp": "6fbee4b154022df88a141f1702e81a29d1f5df0f99eea5e69ab7a4a5b5c809e9",
+    "code/rl/search/search.hpp": "723f5af35be6ed379da726bb31337412b068b23991d00dc6cb7f2774d2ffb72d",
+    "code/rl/league/rollout_league.cpp": "a4972f6c94fd37aec99c09db11f465f24cc5ae9a6c3fe7f87133f1f340961d30",
+    "code/rl/v5/deadline_search/search.hpp": "e704f38b9656302d1621eb57aae65e1f987e5dbc29ea5d111e5cf558adfad019",
+    "code/rl/search/bot.cpp": "da6a29bf0c204d4add3a94eb26a0acebe6d0e15c3cc96595882a4befba364d1f",
+    "code/rl/v5/deadline_search/io.hpp": "470c285871cc4b14b24a2de42ecd0f27b9f57058c23caaf7dc2e7d12a3079eed",
+    "code/rl/v5/deadline_search/bot.cpp": "5a410c9212ea85b7fff14abe3aab8ae7a85544a83d4548c41c5d695f8d15fb86",
+    "code/rl/v6/coordinator/audit_storage.py": "7713c9c0f3bd3ae705c90d48cef756757b2360fdb0fc1d2010260a6aefaf48a2",
+    "code/rl/v6/coordinator/raw.py": "2552d9ee69f1884c0ba005daf44e041d8e911d9055e20895c607b3ef7c88b46a",
+    "code/rl/v6/coordinator/test_paired.py": "b324a1f29904eebe7be088c7c786c202e09c61a8ca8c61f4ee20950d60b71bf9",
+    "code/rl/v6/coordinator/test_raw.py": "34cb790c9b79aadf0f406fa4698efd8c17494614faf406b1096d54cc52f2aff5",
+    "code/rl/v6/coordinator/audit_series.py": "82a4902bf97bebeef30d8b23d9bd492bfcfcd00cb9544c859ffc64f82b3fceab",
+    "code/rl/v6/coordinator/paired.py": "9df07993bcb39458c2c67b20761b98398367085083063cfd6289d2a347b1c6a4",
+    "code/rl/v5/deadline_search/panel.py": "314a7df8ba9c23ca3825d1c1dd8167fe523d73cb17344a582dc355509af5c799",
+    "code/rl/v5/deadline_search/verify.py": "370df1fb3a10294a8517f16630d2d4eac849db717c7fa4ef47cc511795dc2157",
+    "code/rl/v5/deadline_search/maps.py": "cdac7931a6632257be18ab275df2764a7c2d0bd91cb77cb487b1b62b153b5c9d"
+  },
+  "protocol_sha256": "8495f4b12a2061f9531d1d6125bfa401a0daffde6ed581f21a75869a978ce6e8",
+  "source_sha256": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9",
+  "source_utf16": 94123,
+  "selected_precision": 9,
+  "maps_generated": false,
+  "seeds": [
+    71001,
+    71002,
+    71003,
+    71004,
+    71005,
+    71006,
+    71007,
+    71008,
+    71009,
+    71010,
+    71011,
+    71012
+  ],
+  "schedule": [
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71001,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71001,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71002,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71002,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71003,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71003,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71004,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71004,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71005,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71005,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71006,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71006,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71007,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71007,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71008,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71008,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71009,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71009,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71010,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71010,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71011,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71011,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "bc",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "bc",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "bc",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "league3m",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "league3m",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "league3m",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "b2m",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "b2m",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "b2m",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "lacoz",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "lacoz",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "lacoz",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou2",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou2",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou2",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "khoufou",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "khoufou",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "khoufou",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71012,
+      "seat": 1
+    },
+    {
+      "candidate": "control",
+      "opponent": "v6",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "candidate",
+      "opponent": "v6",
+      "seed": 71012,
+      "seat": 0
+    },
+    {
+      "candidate": "teacher",
+      "opponent": "v6",
+      "seed": 71012,
+      "seat": 0
+    }
+  ],
+  "games": 504,
+  "bootstrap_seed": 20261109,
+  "technical_evidence": {
+    "experiments/rl/2026-11-08-rl6/compact-d16/contracts.json": "2ed022c478d15fb76f909eff8cfcfb834c261c449e20a9a081fa5c09ee7b7ede",
+    "experiments/rl/2026-11-08-rl6/compact-d16/regression-verification.json": "297be47b8be4b8c61700d0e1b6216294eee263ffce53bcf794cdf135cdf63eef",
+    "experiments/rl/2026-11-08-rl6/compact-d16/regression-raw-audit.json": "299cdc1be20ddc2ae8af5b000414938f48e2b7a0b6151bb91c1b99f2cd4e0faf"
+  },
+  "requires_coordinator_release_before_generation": false,
+  "reserve65001_65040": "CLOSED",
+  "budget": {
+    "as_of": "2026-11-08T20:14:41.870822+00:00",
+    "initial_owner_seconds": 4569.00871229358,
+    "owner_completed_seconds": 5110.098619167693,
+    "phase_completed_seconds": 541.0899068741128,
+    "active_seconds": 1.295899,
+    "phase_remaining_seconds": 8457.614194125887,
+    "seconds_to_cutoff": 20718.129175
+  }
+}

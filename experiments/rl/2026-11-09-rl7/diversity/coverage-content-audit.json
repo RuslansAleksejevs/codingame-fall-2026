@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-11-09T00:38:03.384572+00:00",
+  "banks": {
+    "narrow": {
+      "roots": 205,
+      "unique_states": 205,
+      "maps": 12,
+      "total_prefix_group_records": 4403,
+      "distinct_exact_feature_matrices": 4403,
+      "distinct_exact_feature_matrix_target_pairs": 4403,
+      "feature_matrices_with_multiple_targets": 0,
+      "candidate_rows": 30862,
+      "dataset_sha256": "160da13a05d5a7ecc10acdce3dc909187efa3328c3506059df596702e8221056",
+      "changed_by_phase": [
+        27,
+        17,
+        0
+      ]
+    },
+    "broad": {
+      "roots": 2011,
+      "unique_states": 2011,
+      "maps": 63,
+      "total_prefix_group_records": 44386,
+      "distinct_exact_feature_matrices": 44386,
+      "distinct_exact_feature_matrix_target_pairs": 44386,
+      "feature_matrices_with_multiple_targets": 0,
+      "candidate_rows": 307145,
+      "dataset_sha256": "9b71bfa199c5330ef5c6ffcc8ee45f93e7ba81e6a7cab7aa56fe340bf6b2dd7c",
+      "changed_by_phase": [
+        152,
+        122,
+        19
+      ]
+    },
+    "development": {
+      "roots": 509,
+      "unique_states": 509,
+      "maps": 16,
+      "total_prefix_group_records": 10546,
+      "distinct_exact_feature_matrices": 10546,
+      "distinct_exact_feature_matrix_target_pairs": 10546,
+      "feature_matrices_with_multiple_targets": 0,
+      "candidate_rows": 71726,
+      "dataset_sha256": "3a364601ca00f68f6fb60b6a04ae4fdf856d78f060f032519180a03d47fca279",
+      "changed_by_phase": [
+        31,
+        21,
+        4
+      ]
+    }
+  },
+  "model_exposures": {
+    "narrow1": {
+      "updates": 800,
+      "root_group_exposures": 25600,
+      "distinct_exposed_roots": 205,
+      "distinct_exposed_group_indices": 4017,
+      "candidate_rows_in_sampled_groups": 181850,
+      "padded_candidate_slots": 704256,
+      "exposures_sha256": "55c34451326f15ddca5b2b5946426ebf48dba427c40b2f57a20b71e84e27c8d9"
+    },
+    "broad1": {
+      "updates": 800,
+      "root_group_exposures": 25600,
+      "distinct_exposed_roots": 2011,
+      "distinct_exposed_group_indices": 15406,
+      "candidate_rows_in_sampled_groups": 181967,
+      "padded_candidate_slots": 695328,
+      "exposures_sha256": "5c2046d3ba7c8abbaf787df4211b28673ce89744c5a325bace7c09ddbdac3a63"
+    },
+    "narrow2": {
+      "updates": 800,
+      "root_group_exposures": 25600,
+      "distinct_exposed_roots": 205,
+      "distinct_exposed_group_indices": 4029,
+      "candidate_rows_in_sampled_groups": 181055,
+      "padded_candidate_slots": 699936,
+      "exposures_sha256": "49fed2ff8e0242ca433e11bba28a0bc38a8126cd7ca750142140b914e1dfdb5e"
+    },
+    "broad2": {
+      "updates": 800,
+      "root_group_exposures": 25600,
+      "distinct_exposed_roots": 2011,
+      "distinct_exposed_group_indices": 15420,
+      "candidate_rows_in_sampled_groups": 183053,
+      "padded_candidate_slots": 707168,
+      "exposures_sha256": "2a9e87a2d0af538e45d59a73002acdc61643de25ac9585cae54d1d4f22273cc8"
+    }
+  },
+  "matched_budget_definition": "800 updates and25,600 root/group exposures per model; variable candidate-set sizes mean FLOPs/walltime are not exactly matched.",
+  "definition": "Exact legal candidate feature-matrix bytes, optionally plus target index; not a new independent game count.",
+  "role": "Diagnostic only; no architecture/objective/seed/sample or gate selection.",
+  "source_sha256": "f13d15354f5d44bdb565befcdf87c42eb48367d2937ab775083e4851c93ba10c"
+}

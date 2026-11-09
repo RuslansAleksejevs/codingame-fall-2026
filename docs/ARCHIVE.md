@@ -31,7 +31,7 @@ The [snapshot manifest](../experiments/rl/2026-11-08-rl4/SNAPSHOT.json) binds fo
 
 ## RL-v5: split, byte-exact evidence
 
-The latest original `evidence.tar.gz` is 109,433,853 bytes, above GitHub's 100 MiB per-file limit. It remains unchanged locally. Its exact bytes are stored in three parts of at most 48 MiB, with individual and combined SHA256 in [the split manifest](../experiments/rl/2026-11-08-rl5/archive-parts/manifest.json).
+The RL-v5 original `evidence.tar.gz` is 109,433,853 bytes, above GitHub's 100 MiB per-file limit. It remains unchanged locally. Its exact bytes are stored in three parts of at most 48 MiB, with individual and combined SHA256 in [the split manifest](../experiments/rl/2026-11-08-rl5/archive-parts/manifest.json).
 
 ```sh
 python3 code/split_evidence.py verify experiments/rl/2026-11-08-rl5/archive-parts/manifest.json
@@ -43,3 +43,41 @@ The join operation refuses to overwrite any existing output. It reconstructs the
 The archive contains 12,244 repository-relative files, including all 2,918 original referee games, labels, both student checkpoints and frozen source identities. Reports, key summaries/models and independent audits also remain easy to browse as ordinary files. Large repeated raw game files are excluded from the Git tree because the archive covers them exactly. Compiled binaries, environments and caches are excluded entirely and rebuilt when needed.
 
 The archive is not extracted automatically. Inspect its member paths and use a separate empty directory for full extraction; never overwrite a working experiment tree. The late final resource ledger and completion metadata are retained alongside the archive inventory. See [completion](../experiments/rl/2026-11-08-rl5/deadline-search/COMPLETION.json) and [independent archive audit](../experiments/rl/2026-11-08-rl5/coordinator/archive-audit.json).
+
+## RL-v6/v7 preservation,9 November2026
+
+These are publication-only exports, not rerun experiments or changed decisions.
+All originals remain local. Browseable reports, protocols, code, packages,
+checkpoints and summary audits accompany the compact archive copies of repeated
+raw records, specifications, streams and training arrays. Some historical raw
+links require restoration into a fresh inspection directory. Historical frozen
+SHA values describe original bytes; each archive inventory maps original and
+export identities explicitly. Compiler/test failures remain scientific evidence;
+credential transport, private correspondence, permission-service transcripts,
+compiled executables, installed environments and caches are excluded.
+
+| Evidence | Full archive bytes / regular members | Git representation | Original archive SHA256 |
+|---|---:|---|---|
+| RL-v6 compact D16, closed negative final |67,506,438 /5,717|[Two exact parts](../experiments/rl/2026-11-08-rl6/archive-parts/manifest.json)|`9a01ea0cefad6f688fb4fee72d5183541aa9be85252e2a96b49641e9c76116ff`|
+| RL-v7 D16 A1/A2/A3,533raw+533portable games |26,691,339 /2,491|[Single archive](../experiments/rl/2026-11-09-rl7/d16/publication-2026-11-09/evidence.tar.gz)|`eb20a8efe42d4fc1da3de580bd1309ccc90de7eb5ab37ade886d4d896618e5a6`|
+| RL-v7 diversity,960raw+960portable games,4students/data |60,292,844 /4,227|[Two exact parts](../experiments/rl/2026-11-09-rl7/diversity/publication-2026-11-09/attempt2/archive-parts/manifest.json)|`1eb876975fa85572585c7585e46a636c01ea80e43af5a19aa1f74e51a2127691`|
+
+Thev6 archive was already closed; only byte-exact splitting is new. Onev6
+execution log has normalized host paths with its original/export ledger. Bothv7
+exports required zero normalization: every selected payload remains byte-identical.
+The pilot archive includes158collection teacher streams plus7old contract streams;
+the first publication preflight confused those counts and stopped before archive
+creation. That failure and exact first helper are retained. No stream was removed
+and no scientific result changed to make the archive pass.
+
+[D16 inventory](../experiments/rl/2026-11-09-rl7/d16/publication-2026-11-09/inventory.json) ·
+[Pilot inventory](../experiments/rl/2026-11-09-rl7/diversity/publication-2026-11-09/attempt2/inventory.json) ·
+[Independent full-byte/privacy audit](../experiments/rl/2026-11-09-repository-refresh/archive-audit-001.json).
+
+Use `code/split_evidence.py verify <manifest>` and `join <manifest> --out
+.context/<unique-name>.tar.gz` for the split archives. All members are safe
+repository-relative regular files. Inspect paths before extraction; never overlay
+differing frozen originals. Pickled checkpoints are evidence, not automatically
+executed content. Token/path pattern scans are safeguards, not proof against all
+possible secrets. The D16 platform report is explicitly incomplete at this
+publication cutoff; its presence in Git does not mean the ranking is finished.

@@ -1,0 +1,2234 @@
+{
+  "stage": "development",
+  "gate_passed": true,
+  "checks": {
+    "complete_fixed_schedule": true,
+    "zero_own_control_teacher_errors": true,
+    "raw_identity_pass": true,
+    "replay_pass": true,
+    "package_pass": true,
+    "clean_coverage_pass": true,
+    "prospective_strength_pass": true
+  },
+  "completed_games": 504,
+  "expected_games": 504,
+  "expected_maps": 12,
+  "minimum_clean_maps": 11,
+  "technical_error_game_counts": {
+    "own_error": 0,
+    "opponent_error": 1,
+    "own_invalid": 0,
+    "opponent_invalid": 0,
+    "emergency": 0,
+    "referee_error": 0
+  },
+  "own_control_teacher_error_games": 0,
+  "observed_counts": {
+    "candidate": {
+      "lacoz": {
+        "win": 19,
+        "loss": 5,
+        "draw": 0
+      },
+      "khoufou2": {
+        "win": 21,
+        "loss": 3,
+        "draw": 0
+      },
+      "khoufou": {
+        "win": 24,
+        "draw": 0,
+        "loss": 0
+      },
+      "v6": {
+        "win": 23,
+        "loss": 1,
+        "draw": 0
+      },
+      "bc": {
+        "win": 22,
+        "loss": 2,
+        "draw": 0
+      },
+      "league3m": {
+        "win": 21,
+        "loss": 3,
+        "draw": 0
+      },
+      "b2m": {
+        "win": 13,
+        "loss": 11,
+        "draw": 0
+      }
+    },
+    "control": {
+      "lacoz": {
+        "win": 16,
+        "loss": 8,
+        "draw": 0
+      },
+      "khoufou2": {
+        "win": 21,
+        "loss": 3,
+        "draw": 0
+      },
+      "khoufou": {
+        "win": 22,
+        "loss": 2,
+        "draw": 0
+      },
+      "v6": {
+        "win": 22,
+        "loss": 2,
+        "draw": 0
+      },
+      "bc": {
+        "win": 22,
+        "loss": 2,
+        "draw": 0
+      },
+      "league3m": {
+        "win": 11,
+        "draw": 2,
+        "loss": 11
+      },
+      "b2m": {
+        "win": 7,
+        "loss": 17,
+        "draw": 0
+      }
+    },
+    "teacher": {
+      "lacoz": {
+        "win": 19,
+        "loss": 5,
+        "draw": 0
+      },
+      "khoufou2": {
+        "win": 22,
+        "loss": 2,
+        "draw": 0
+      },
+      "khoufou": {
+        "win": 24,
+        "draw": 0,
+        "loss": 0
+      },
+      "v6": {
+        "win": 23,
+        "loss": 1,
+        "draw": 0
+      },
+      "bc": {
+        "win": 23,
+        "loss": 1,
+        "draw": 0
+      },
+      "league3m": {
+        "win": 23,
+        "loss": 1,
+        "draw": 0
+      },
+      "b2m": {
+        "win": 12,
+        "loss": 12,
+        "draw": 0
+      }
+    }
+  },
+  "missing_rows": [],
+  "bootstrap": {
+    "seed": 20261109,
+    "resamples": 10000,
+    "unit": "whole map, both seats"
+  },
+  "all_games": {
+    "per_opponent": {
+      "lacoz": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 79.16666666666666,
+              "map_95_percent": [
+                54.166666666666664,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 19,
+              "draw": 0,
+              "loss": 5
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 66.66666666666666,
+              "map_95_percent": [
+                41.66666666666667,
+                91.66666666666666
+              ]
+            },
+            "results": {
+              "win": 16,
+              "draw": 0,
+              "loss": 8
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 79.16666666666666,
+              "map_95_percent": [
+                58.333333333333336,
+                95.83333333333334
+              ]
+            },
+            "results": {
+              "win": 19,
+              "draw": 0,
+              "loss": 5
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 75.0,
+                "map_95_percent": [
+                  50.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 12.5,
+          "map_95_percent": [
+            -8.333333333333332,
+            33.33333333333333
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            -16.666666666666664,
+            16.666666666666664
+          ]
+        }
+      },
+      "khoufou2": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 21,
+              "draw": 0,
+              "loss": 3
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 21,
+              "draw": 0,
+              "loss": 3
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        }
+      },
+      "khoufou": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "v6": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "bc": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        }
+      },
+      "league3m": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 21,
+              "draw": 0,
+              "loss": 3
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                50.0,
+                50.0
+              ]
+            },
+            "results": {
+              "win": 11,
+              "draw": 2,
+              "loss": 11
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 54.166666666666664,
+                "map_95_percent": [
+                  29.166666666666668,
+                  79.16666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 45.83333333333333,
+                "map_95_percent": [
+                  20.833333333333336,
+                  70.83333333333334
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 37.5,
+          "map_95_percent": [
+            25.0,
+            50.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -8.333333333333332,
+          "map_95_percent": [
+            -25.0,
+            8.333333333333332
+          ]
+        }
+      },
+      "b2m": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 54.166666666666664,
+              "map_95_percent": [
+                33.33333333333333,
+                75.0
+              ]
+            },
+            "results": {
+              "win": 13,
+              "draw": 0,
+              "loss": 11
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 41.66666666666667,
+                "map_95_percent": [
+                  16.666666666666664,
+                  66.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 29.166666666666668,
+              "map_95_percent": [
+                8.333333333333332,
+                54.166666666666664
+              ]
+            },
+            "results": {
+              "win": 7,
+              "draw": 0,
+              "loss": 17
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 25.0,
+                "map_95_percent": [
+                  0.0,
+                  50.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 33.33333333333333,
+                "map_95_percent": [
+                  8.333333333333332,
+                  58.333333333333336
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                33.33333333333333,
+                66.66666666666666
+              ]
+            },
+            "results": {
+              "win": 12,
+              "draw": 0,
+              "loss": 12
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 33.33333333333333,
+                "map_95_percent": [
+                  8.333333333333332,
+                  58.333333333333336
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 25.0,
+          "map_95_percent": [
+            -4.166666666666666,
+            54.166666666666664
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            -16.666666666666664,
+            25.0
+          ]
+        }
+      }
+    },
+    "excluded_clusters": {
+      "lacoz": {},
+      "khoufou2": {},
+      "khoufou": {},
+      "v6": {},
+      "bc": {},
+      "league3m": {},
+      "b2m": {}
+    },
+    "external_maps": [
+      71001,
+      71002,
+      71003,
+      71004,
+      71005,
+      71006,
+      71007,
+      71008,
+      71009,
+      71010,
+      71011,
+      71012
+    ],
+    "external_gain": {
+      "maps": 12,
+      "point_percent": 6.944444444444444,
+      "map_95_percent": [
+        -1.3888888888888888,
+        15.277777777777777
+      ]
+    },
+    "external_candidate_minus_teacher": {
+      "maps": 12,
+      "point_percent": -1.3888888888888888,
+      "map_95_percent": [
+        -6.944444444444444,
+        4.166666666666666
+      ]
+    },
+    "direct_league3m": {
+      "maps": 12,
+      "point_percent": 87.5,
+      "map_95_percent": [
+        75.0,
+        100.0
+      ]
+    },
+    "direct_b2m": {
+      "maps": 12,
+      "point_percent": 54.166666666666664,
+      "map_95_percent": [
+        33.33333333333333,
+        75.0
+      ]
+    },
+    "gates": {
+      "external_positive": true,
+      "direct_league3m_majority": true,
+      "teacher_retention_point": true,
+      "no_opponent_regression_below_minus10": true
+    },
+    "strength_passed": true,
+    "external_teacher_minus_control": {
+      "maps": 12,
+      "point_percent": 8.333333333333332,
+      "map_95_percent": [
+        -1.3888888888888888,
+        19.444444444444443
+      ]
+    }
+  },
+  "clean_paired": {
+    "per_opponent": {
+      "lacoz": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 11,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 11,
+              "point_percent": 77.27272727272727,
+              "map_95_percent": [
+                54.54545454545454,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 17,
+              "draw": 0,
+              "loss": 5
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 81.81818181818183,
+                "map_95_percent": [
+                  54.54545454545454,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 72.72727272727273,
+                "map_95_percent": [
+                  45.45454545454545,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 11,
+              "point_percent": 72.72727272727273,
+              "map_95_percent": [
+                50.0,
+                95.45454545454545
+              ]
+            },
+            "results": {
+              "win": 16,
+              "draw": 0,
+              "loss": 6
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 72.72727272727273,
+                "map_95_percent": [
+                  45.45454545454545,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 72.72727272727273,
+                "map_95_percent": [
+                  45.45454545454545,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 11,
+              "point_percent": 77.27272727272727,
+              "map_95_percent": [
+                54.54545454545454,
+                95.45454545454545
+              ]
+            },
+            "results": {
+              "win": 17,
+              "draw": 0,
+              "loss": 5
+            },
+            "seats": {
+              "0": {
+                "maps": 11,
+                "point_percent": 72.72727272727273,
+                "map_95_percent": [
+                  45.45454545454545,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 11,
+                "point_percent": 81.81818181818183,
+                "map_95_percent": [
+                  54.54545454545454,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 11,
+          "point_percent": 4.545454545454546,
+          "map_95_percent": [
+            -9.090909090909092,
+            18.181818181818183
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 11,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            -18.181818181818183,
+            18.181818181818183
+          ]
+        }
+      },
+      "khoufou2": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 21,
+              "draw": 0,
+              "loss": 3
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                66.66666666666666,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 21,
+              "draw": 0,
+              "loss": 3
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        }
+      },
+      "khoufou": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 100.0,
+              "map_95_percent": [
+                100.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 24,
+              "draw": 0,
+              "loss": 0
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 8.333333333333332,
+          "map_95_percent": [
+            0.0,
+            25.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "v6": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            0.0,
+            12.5
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "bc": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 91.66666666666666,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 22,
+              "draw": 0,
+              "loss": 2
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 0.0,
+          "map_95_percent": [
+            0.0,
+            0.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -4.166666666666666,
+          "map_95_percent": [
+            -12.5,
+            0.0
+          ]
+        }
+      },
+      "league3m": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 87.5,
+              "map_95_percent": [
+                75.0,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 21,
+              "draw": 0,
+              "loss": 3
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 83.33333333333334,
+                "map_95_percent": [
+                  58.333333333333336,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                50.0,
+                50.0
+              ]
+            },
+            "results": {
+              "win": 11,
+              "draw": 2,
+              "loss": 11
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 54.166666666666664,
+                "map_95_percent": [
+                  29.166666666666668,
+                  79.16666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 45.83333333333333,
+                "map_95_percent": [
+                  20.833333333333336,
+                  70.83333333333334
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 95.83333333333334,
+              "map_95_percent": [
+                87.5,
+                100.0
+              ]
+            },
+            "results": {
+              "win": 23,
+              "draw": 0,
+              "loss": 1
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 100.0,
+                "map_95_percent": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 91.66666666666666,
+                "map_95_percent": [
+                  75.0,
+                  100.0
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 37.5,
+          "map_95_percent": [
+            25.0,
+            50.0
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": -8.333333333333332,
+          "map_95_percent": [
+            -25.0,
+            8.333333333333332
+          ]
+        }
+      },
+      "b2m": {
+        "retained_seeds": [
+          71001,
+          71002,
+          71003,
+          71004,
+          71005,
+          71006,
+          71007,
+          71008,
+          71009,
+          71010,
+          71011,
+          71012
+        ],
+        "complete_maps": 12,
+        "candidates": {
+          "candidate": {
+            "score": {
+              "maps": 12,
+              "point_percent": 54.166666666666664,
+              "map_95_percent": [
+                33.33333333333333,
+                75.0
+              ]
+            },
+            "results": {
+              "win": 13,
+              "draw": 0,
+              "loss": 11
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 41.66666666666667,
+                "map_95_percent": [
+                  16.666666666666664,
+                  66.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              }
+            }
+          },
+          "control": {
+            "score": {
+              "maps": 12,
+              "point_percent": 29.166666666666668,
+              "map_95_percent": [
+                8.333333333333332,
+                54.166666666666664
+              ]
+            },
+            "results": {
+              "win": 7,
+              "draw": 0,
+              "loss": 17
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 25.0,
+                "map_95_percent": [
+                  0.0,
+                  50.0
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 33.33333333333333,
+                "map_95_percent": [
+                  8.333333333333332,
+                  58.333333333333336
+                ]
+              }
+            }
+          },
+          "teacher": {
+            "score": {
+              "maps": 12,
+              "point_percent": 50.0,
+              "map_95_percent": [
+                33.33333333333333,
+                66.66666666666666
+              ]
+            },
+            "results": {
+              "win": 12,
+              "draw": 0,
+              "loss": 12
+            },
+            "seats": {
+              "0": {
+                "maps": 12,
+                "point_percent": 66.66666666666666,
+                "map_95_percent": [
+                  41.66666666666667,
+                  91.66666666666666
+                ]
+              },
+              "1": {
+                "maps": 12,
+                "point_percent": 33.33333333333333,
+                "map_95_percent": [
+                  8.333333333333332,
+                  58.333333333333336
+                ]
+              }
+            }
+          }
+        },
+        "gain": {
+          "maps": 12,
+          "point_percent": 25.0,
+          "map_95_percent": [
+            -4.166666666666666,
+            54.166666666666664
+          ]
+        },
+        "candidate_minus_teacher": {
+          "maps": 12,
+          "point_percent": 4.166666666666666,
+          "map_95_percent": [
+            -16.666666666666664,
+            25.0
+          ]
+        }
+      }
+    },
+    "excluded_clusters": {
+      "lacoz": {
+        "71006": [
+          [
+            "candidate",
+            "lacoz",
+            71006,
+            0
+          ]
+        ]
+      },
+      "khoufou2": {},
+      "khoufou": {},
+      "v6": {},
+      "bc": {},
+      "league3m": {},
+      "b2m": {}
+    },
+    "external_maps": [
+      71001,
+      71002,
+      71003,
+      71004,
+      71005,
+      71007,
+      71008,
+      71009,
+      71010,
+      71011,
+      71012
+    ],
+    "external_gain": {
+      "maps": 11,
+      "point_percent": 4.545454545454546,
+      "map_95_percent": [
+        -3.03030303030303,
+        12.12121212121212
+      ]
+    },
+    "external_candidate_minus_teacher": {
+      "maps": 11,
+      "point_percent": -1.515151515151515,
+      "map_95_percent": [
+        -7.575757575757574,
+        4.545454545454546
+      ]
+    },
+    "direct_league3m": {
+      "maps": 12,
+      "point_percent": 87.5,
+      "map_95_percent": [
+        75.0,
+        100.0
+      ]
+    },
+    "direct_b2m": {
+      "maps": 12,
+      "point_percent": 54.166666666666664,
+      "map_95_percent": [
+        33.33333333333333,
+        75.0
+      ]
+    },
+    "gates": {
+      "external_positive": true,
+      "direct_league3m_majority": true,
+      "teacher_retention_point": true,
+      "no_opponent_regression_below_minus10": true
+    },
+    "strength_passed": true,
+    "external_teacher_minus_control": {
+      "maps": 11,
+      "point_percent": 6.06060606060606,
+      "map_95_percent": [
+        -3.0303030303030307,
+        16.666666666666668
+      ]
+    }
+  },
+  "passed": true,
+  "classification": "PROJECT_REPORTED",
+  "evidence": {
+    "development": {
+      "matches_sha256": "12a6e8cd93389a0163f47b8f38c783a0d056c58ac95870b80a953a4cc592794e",
+      "manifest_sha256": "ca6e947b9a9385ca0d6751f304daa784e87ba2f155b66060a75b84396def4afb",
+      "verification_sha256": "8ac07bdcf0c54b2684c32ebf40c6e066a271c841cc0d12e42315bb63c7570cf2",
+      "novelty_sha256": "a44f9e94ac561545b016888e66e676ca27714911e74f5cc36d8ddea3716b01f9",
+      "raw_games": 504,
+      "replay_included": 503,
+      "replay_excluded": [
+        "candidate-vs-lacoz-seed71006-seat0"
+      ]
+    }
+  },
+  "frozen_identity_files_checked": 95,
+  "freeze_sha256": "995c788da47a9a8c3621cb62c756175eb3894d7304fd323f1be60ad0f660cbdf",
+  "package_source_sha256": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9",
+  "package_utf16": 94123,
+  "decision_sha256": "8f91f88254390568315205fef0d026d06b33f54d18325f652326f3ab2fc8495d",
+  "original_raw_portable_aggregate_sha256": "071b554b3c72b2b1b2663a7380ec0c62cc07958cc5b74f2ce9f31c2e6d305460",
+  "java_states_reported_and_hash_bound": 13951,
+  "java_transitions_reported_and_hash_bound": 13448,
+  "individual_replay_included": 503,
+  "individual_replay_excluded": 1,
+  "raw_outputs": {
+    "candidate": 4627,
+    "control": 4935,
+    "teacher": 4317
+  },
+  "raw_timing_records": {
+    "candidate": 4627,
+    "control": 4935,
+    "teacher": 4317
+  },
+  "maximum_through_flush_us": {
+    "candidate": 25631.5,
+    "control": 7498.67,
+    "teacher": 17616.6
+  },
+  "emergencies": {
+    "candidate": 0,
+    "control": 0,
+    "teacher": 0
+  },
+  "independently_checked_v5_exposed_map_hashes": 104,
+  "scope": "Independent all-raw outcome/telemetry/identity/schedule/novelty and whole-map bootstrap. Existing Java replay identity and exact inclusion/exclusion/transition coverage bound to the same raw files; Java was not rerun. No platform evidence.",
+  "as_of": "2026-11-08T20:26:45.443257+00:00",
+  "seconds": 1.4619653327390552,
+  "numpy_version": "2.5.4",
+  "audit_sources": {
+    "code/rl/v6/coordinator/audit_series.py": "82a4902bf97bebeef30d8b23d9bd492bfcfcd00cb9544c859ffc64f82b3fceab",
+    "code/rl/v6/coordinator/audit_storage.py": "7713c9c0f3bd3ae705c90d48cef756757b2360fdb0fc1d2010260a6aefaf48a2",
+    "code/rl/v6/coordinator/paired.py": "9df07993bcb39458c2c67b20761b98398367085083063cfd6289d2a347b1c6a4",
+    "code/rl/v6/coordinator/raw.py": "2552d9ee69f1884c0ba005daf44e041d8e911d9055e20895c607b3ef7c88b46a",
+    "code/rl/v6/coordinator/test_paired.py": "b324a1f29904eebe7be088c7c786c202e09c61a8ca8c61f4ee20950d60b71bf9",
+    "code/rl/v6/coordinator/test_raw.py": "34cb790c9b79aadf0f406fa4698efd8c17494614faf406b1096d54cc52f2aff5"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "as_of": "2026-11-09T02:01:11.995435+00:00",
+  "passed": true,
+  "tests": [
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/test_split_evidence.py"
+      ],
+      "source_sha256": "a7376098975895cb41e12cbb50229945b3cbcd2d4eb7ae00064d74b33493f1ea",
+      "returncode": 0,
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v6/coordinator/test_paired.py"
+      ],
+      "source_sha256": "b324a1f29904eebe7be088c7c786c202e09c61a8ca8c61f4ee20950d60b71bf9",
+      "returncode": 0,
+      "output": "test_bootstrap_constant_and_empty (__main__.IndependentPairedTests.test_bootstrap_constant_and_empty) ... ok\ntest_both_seats_are_one_map (__main__.IndependentPairedTests.test_both_seats_are_one_map) ... ok\ntest_clear_positive_series (__main__.IndependentPairedTests.test_clear_positive_series) ... ok\ntest_composite_coverage_uses_intersection (__main__.IndependentPairedTests.test_composite_coverage_uses_intersection) ... ok\ntest_duplicate_unknown_and_hash_collision_rejected (__main__.IndependentPairedTests.test_duplicate_unknown_and_hash_collision_rejected) ... ok\ntest_final_exact_95_percent_coverage (__main__.IndependentPairedTests.test_final_exact_95_percent_coverage) ... ok\ntest_final_requires_b2m_and_strict_lower_bounds (__main__.IndependentPairedTests.test_final_requires_b2m_and_strict_lower_bounds) ... ok\ntest_incomplete_is_not_promoted (__main__.IndependentPairedTests.test_incomplete_is_not_promoted) ... ok\ntest_one_error_drops_six_row_cluster_not_one_row (__main__.IndependentPairedTests.test_one_error_drops_six_row_cluster_not_one_row) ... ok\ntest_own_emergency_and_missing_evidence_reject (__main__.IndependentPairedTests.test_own_emergency_and_missing_evidence_reject) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.846s\n\nOK\n"
+    },
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v7/d16/test_analyze.py"
+      ],
+      "source_sha256": "39f79ce093e20f6d4d1ccc89036f63389542d76ed6bdf350801cab0b1de4ada4",
+      "returncode": 0,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.078s\n\nOK\n"
+    },
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v7/diversity/test_analyze.py"
+      ],
+      "source_sha256": "8b15c8df4c2bbf979eb9179ec2413e8650fb2ecaf84b85ffb03530c9b763c951",
+      "returncode": 0,
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.479s\n\nOK\n"
+    },
+    {
+      "command": [
+        "code/arena/.venv-rl/bin/python",
+        "-B",
+        "code/rl/v7/test_publication_snapshot.py"
+      ],
+      "source_sha256": "52ebfc454ac886d2e7fd56195bc42b73fa37efd5fd7e05b6fa1f0bbbc8a1c304",
+      "returncode": 0,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n"
+    }
+  ],
+  "scope": "Synthetic analyzer/security/archive tests only, no scientific games/training/platform requests."
+}

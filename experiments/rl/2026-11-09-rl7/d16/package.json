@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-11-09T00:05:11.500025+00:00",
+  "passed": true,
+  "source": "experiments/rl/2026-11-09-rl7/d16/package-attempt1/bot.cpp",
+  "source_sha256": "aba2d6f2ae4bcd92eb79f38fd6bd643be9973b714b135c7b532a3e9fd9a80701",
+  "source_utf16": 94389,
+  "source_bytes": 219249,
+  "precision_bits": 9,
+  "unique_networks": 4,
+  "decoded_bytes": 397328,
+  "decoded_sha256": "ac5532cfc76dbd05b3a6a493c4892d2206abb19d80a114d0fad8cd3bd78868e5",
+  "codec_exact": true,
+  "edits": [
+    [
+      "int emergency=0, forwards=0, choices=0, checks=0;",
+      "int emergency=0, forwards=0, choices=0, checks=0, baseline_complete=0;"
+    ],
+    [
+      "<<\",\\\"baseline_us\\\":\"<<baseline_us",
+      "<<\",\\\"baseline_complete\\\":\"<<baseline_complete<<\",\\\"baseline_us\\\":\"<<baseline_us"
+    ],
+    [
+      "Stats stats;",
+      "Stats stats;\n    bool completing_baseline=false;"
+    ],
+    [
+      "if((limit_ms>0 && us(origin)>=limit_ms*1000) ||\n           (forward_cap>0 && stats.forwards>=forward_cap))throw Stop{};",
+      "if(!completing_baseline && ((limit_ms>0 && us(origin)>=limit_ms*1000) ||\n           (forward_cap>0 && stats.forwards>=forward_cap)))throw Stop{};"
+    ],
+    [
+      "baseline=\"WAIT\";selected_plan=\"WAIT\";",
+      "baseline=\"WAIT\";selected_plan=\"WAIT\";completing_baseline=true;"
+    ],
+    [
+      "selected_plan=baseline;stats.generated=1;",
+      "completing_baseline=false;stats.baseline_complete=1;\n            selected_plan=baseline;stats.generated=1;"
+    ]
+  ],
+  "optional_limit_ms": 16,
+  "forward_cap": 20000,
+  "baseline_policy": "Mandatory completed greedy; same origin and cumulative forwards; optional-only stopping",
+  "sources": {
+    "code/rl/v7/d16/build.py": "88be9f0217e6f254b6aad513ca2bd708f4d327c9138088a5061984817b81d140",
+    "code/rl/v7/d16/common.py": "1e5d25bc55543e721cf0a14d4c8db6b71e627f26ab2285c2546eb77019dfdc89"
+  },
+  "protected": {
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/weights.txt": "dcc99a63778fcfe363c09b809461d34b34d99fa92d4dfa12574a8092ad1719eb",
+    "experiments/rl/2026-11-06-ppo-v2/league-a/step-03002173/checkpoint.pt": "9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663",
+    "submissions/ppo-v2-league3m.cpp": "199c6a2d2c0a7e9438351aad25e6eeda5816111b9fb672cdc0eb302052cd19c1",
+    "experiments/rl/2026-11-07-ppo-v3/handoff-b2m/bot.cpp": "b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a69276646ff214",
+    "experiments/rl/2026-11-08-rl6/compact-d16/package-attempt2/b9/bot.cpp": "22ccbbe3fedd8cdb7bae8c232b62269ee5b7cde838b23afb4405692b92e5a5c9"
+  },
+  "binaries": {
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt1/candidate": "b125391868a465a99656d0c29755f8b511ff1e44ee5b121b5154a060cf04ce63",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt1/dump": "46221ecae3875b6edc424c888b71f9f228926f7d25a59a16fbb1aa195b6aebfa",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt1/diagnostic": "40b8f0e1701ada216270fc0a38356ed04df1133ba466b1016997ce526abb3acf",
+    "experiments/rl/2026-11-09-rl7/d16/build/attempt1/candidate.dylib": "70bc0cb30c5b4682119ff443a18f7f45eca8bdf6a30edb05dd72aaee46a0c96a"
+  },
+  "versions": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "machine": "arm64",
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+  },
+  "budget": {
+    "as_of": "2026-11-09T00:05:11.519545+00:00",
+    "owner": "d16",
+    "completed_seconds": 0.734460623934865,
+    "cap_seconds": 5400,
+    "cutoff": "2026-11-09T06:00:00+00:00"
+  },
+  "external_spend": 0
+}
