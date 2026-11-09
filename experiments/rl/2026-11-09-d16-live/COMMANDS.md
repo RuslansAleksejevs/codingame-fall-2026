@@ -137,3 +137,35 @@ OAuth is closed, no scheduled controls remain. Withdrawal of the obsolete ask
 was requested twice; the tool still displayed its old timeout view, so UI removal
 is not independently confirmed. No new session is started. Final ranking/source/
 leaderboard/full-battle verification remains incomplete.
+
+## Resumed final review,04:46–05:03UTC
+
+- Started a fresh official client without `--allow-submit`. The short device flow
+  was not approved and later returned `expired_token`; exit-only cleanup ended
+  the client0. No authenticated GET, token persistence or submission occurred.
+  Obsolete input withdrawal requested; the UI still returned the old timeout
+  view, so its removal is not asserted. Its finite cleanup timer is delivered,
+  not a remaining future control.
+- Read official API, public contest FAQ and dynamically loaded general rules.
+  Public read-only RPC `Challenge/findWorldCupByPublicId` retrieved contest data.
+  `capture_rules.py` safely parses the public translation literal without running
+  downloaded JavaScript; `final-review/rules-snapshot.json` retains evidence.
+  General rules contain assistance restrictions inconsistent with the explicit
+  Fall Challenge/API invitation; the discrepancy is disclosed, not concealed.
+- `python3 -B experiments/rl/2026-11-09-d16-live/audit_ranking.py --snapshot 004
+  --out experiments/rl/2026-11-09-d16-live/final-review/audit-saved004.json`:
+  all26available logs clean15W/11L,802outputs,44D1changes,0emergencies. The old
+  snapshot still has31missing completed logs and1pending entry. No games rerun.
+- At04:58UTC, the anonymous website RPC
+  `Leaderboards/getFilteredChallengeLeaderboard` with keyword filter for the
+  existing participant returned365/1042,Gold,15.81,100%/notinprogress,agent6866403.
+  This is the same public read-only method used by the site, not private API
+  access. `summarize_public_rank.py` binds that agent to all26saved logs and
+  publishes only necessary fields. Raw unrelated profile fields stay local and
+  excluded by an exact gitignore entry. Server update04:26:37.705 is separate
+  from04:58retrieval. Source/history/full-final-log coverage remains incomplete.
+- Ordinary repository refresh updates current navigation/portfolio/delivery
+  rules and timeline.647untracked suffix copies were relocated reversibly on the
+  same filesystem to an ignored recovery directory, without deletion or byte
+  equivalence claims; [aggregate receipt](final-review/local-copy-relocation.json).
+  No original scientific record, bot source, model or archive was modified.

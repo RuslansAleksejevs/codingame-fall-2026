@@ -99,18 +99,21 @@ versions remain pinned; new khoufou `070bc128` is explicitly distinct from old
 | 9Nov01:17prospective amendment; contracts01:22; grossguard01:26 |D16A3 `94f0d426…`,95540UTF16: complete ensemble depth1 first, then original depth2; same weights/16ms/20k |1156old-state unlimited deep/action parity and1156shallow oracles;328forced baselines/542interruptions. One frozen96-game fresh guard on8maps72005–12,3public opponents,both seats,candidate+base. No training |All96clean,46/48 versus41/48;gain+10.4167pp [0,27.0833], small gross guard not strength proof. Local193changed decisions. Oracle-harness compile failure retained; only harness fixed, bot unchanged |Bounded delivery guardPASS; A1partial359STOP and A2functionalFAIL unchanged. No large new final/A4 |[A3 report](../experiments/rl/2026-11-09-rl7/d16/A3_REPORT.md), [prospective amendment](../experiments/rl/2026-11-09-d16-live/AMENDMENT_A3.md), [frozen decision](../experiments/rl/2026-11-09-rl7/d16/a3-gross-decision.json), [independent audit](../experiments/rl/2026-11-09-rl7/coordinator/d16-a3-audit.json) |
 | 9Nov01:27technical audit; POST01:31:03.050 |Same frozenD16A3, one exploratory ranking41672652 |Exactly3fixed official tests,102own outputs;12actual technical games across all attempts including wrong08. Freshbeforeleague3m380/1039/14.89 at01:29:34 |17paired comparisons/1nonselfD1changed move,0D2comparisons,0official errors. One acceptedPOST/sourceexact/history+1. Savedprogress00463%:374/1040,Gold220/429,15.47. Earlier20%-snapshot audit18clean/10W8L/543outputs/28D1changes;26logs actually saved |Final rankingUNKNOWN. FirstGETattempt failed review availability; exact retry succeeded. Later narrative incorrectly treated both as failures; corrected02:36 from already saved files. No duplicatePOST/rollback. Internal max22.097ms/2nonfirst>20ms, not officialtimeout |[Running report](../experiments/rl/2026-11-09-d16-live/REPORT.md), [A3 test audit](../experiments/rl/2026-11-09-d16-live/tests-audit-a3-final.json), [acceptance](../experiments/rl/2026-11-09-d16-live/submission-response.json), [saved progress004](../experiments/rl/2026-11-09-d16-live/progress-004.json), [partial battle audit](../experiments/rl/2026-11-09-d16-live/audit-002.json) |
 | 9Nov02:30cleanup;02:36status correction |Same D16A3; no bot/code change |Exit-only command closed OAuth with code0 and returned unread earlier responses. No new GET/authentication/submission/training. Saved004 files already byte-exact in publication5be3765; filesystem mtimes01:44:03UTC are not asserted API capture times |Battles004:58entries/57done/1pending,26full logs saved/31completed logs missing. The earlier18-game audit remains valid only for its own snapshot. Extra retry question was unnecessary |Final remains unverified; no pending scheduled control, no automatically reopened session. Correct status narrative and preserve original records/failed summaries |[Dated erratum](../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md), [file/count observation](../experiments/rl/2026-11-09-d16-live/cleanup-observation.json) |
+| 9Nov04:57offline audit;04:58public website check |Finish assessment of the existing A3; no resubmission or research |Reanalyzed all26already saved logs, no new games. Fresh anonymous public leaderboard query filtered to the existing participant;agent6866403matches saved A3 |Public365/1042,Gold,15.81,100%/notinprogress. Available26logs15W/11L,802outputs,44D1changed moves,0errors/warnings/emergency. Public row server-update04:26:37.705,distinct from04:58retrieval |Ranking completion verified publicly;fullfinal private logs/source/history still pending authentication. No causal superiority claim or final-contest-result claim |[Public evidence](../experiments/rl/2026-11-09-d16-live/final-review/public-ranking.json), [26-log audit](../experiments/rl/2026-11-09-d16-live/final-review/audit-saved004.json), [delivery rules](CONTEST_DELIVERY.md) |
 
 ## Current interpretation and preservation
 
 New phase started9November00:00UTC: [bounded D16 delivery and controlled
-position-diversity pilot](rl/v7/PLAN.md). Corrected02:36UTC from saved evidence: the pilot is complete,
-NO-GO; D16A3 was submitted once, with final ranking not yet verified.
+position-diversity pilot](rl/v7/PLAN.md). Updated9Nov04:58UTC: the pilot is complete,
+NO-GO; D16A3 was submitted once and is now publicly100%ranked365/1042.
+Its complete final private battle audit remains unfinished;26available logs are clean.
 Neither revises any closed gate above. Fresh maps, new code and resource ledgers
 are kept separate.
 
 The strongest independently confirmed **ready policy** remains league3m. The
 original D16 teacher has a useful local result; the new A3package is actually
-submitted, but no completed live comparison establishes a stronger replacement.
+submitted, but its better moving public snapshot does not causally establish a
+stronger replacement; full final log coverage is still missing.
 B2M's historical moving rank comparison does not establish a causal
 algorithm ranking. Rejected student/compact variants do not become acceptable
 merely because their direction has potential.
@@ -126,11 +129,11 @@ calendar elapsed time; later shared compute leases also include generation,
 verification and archiving. v5 used3,189.412 heavy seconds in its new phase;
 v6 used2,036.618, not a new training run. See their completion/command ledgers.
 
-Git history is a preservation timeline, **not experiment timing**. The last
-verified published integration is `531c59385ec7370ed6f44c4ab923c2144de71221`
-on main and rl/research, throughv5, before the separately authorized9November
-repository refresh. This current dated snapshot includes completedv6/v7 and
-honest incomplete D16live evidence; publication is not another experiment.
+Git history is a preservation timeline, **not experiment timing**. The earlier
+v5 integration was `531c59385ec7370ed6f44c4ab923c2144de71221`. The9November
+publication addedv6/v7 as5be3765 and the reporting correction as58975a1 on main.
+This refresh adds the public completed rating, actual log-audit coverage and
+delivery rules; publication and branch synchronization are not new experiments.
 Archive original/export hashes preserve provenance when personal paths are
 normalized in portable copies. Git commit times must not replace event times.
 

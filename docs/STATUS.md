@@ -1,14 +1,16 @@
 # Current project status
 
-Corrected9 November2026,02:36UTC using saved evidence, not a new live query.
+Updated9 November2026 using a fresh public leaderboard read at04:58UTC and a
+new audit of all26previously downloaded game logs.
 Scientific results are PROJECT_REPORTED; deployment facts come from saved official
 responses. The repository is private.
 
 **Diversity pilot completed, NO-GO:**800 clean fresh-map games; broader data did
 not improve on unchanged league3m. **D16 A3 is submitted once as41672652:**
-source94f0d426… verified. Last saved ranking63%, not final. The earlier account
-of two failed GET attempts was incorrect; the first retry succeeded. A3 has passed
-its bounded functional checks; A1/A2 failed gates remain preserved.
+source94f0d426… verified on acceptance. Public ranking is now100% complete:
+365/1042,Gold,score15.81,sameagent6866403. Full final battle-log coverage still
+needs authenticated access. A3 has passed its bounded functional checks;
+A1/A2 failed gates and the dated earlier reporting correction remain preserved.
 [Finite scope and resource plan](rl/v7/PLAN.md). Old failures remain unchanged.
 
 [Detailed experiment timeline](EXPERIMENT_TIMELINE.md) separates training,
@@ -19,7 +21,7 @@ publication preserves evidence; it does not establish a new experimental result.
 
 | Role | Exact artifact | Status |
 |---|---|---|
-| Current submitted, final ranking unverified | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Accepted01:31UTC; saved63%,374/1040,Gold220/429,score15.47. Not a final result |
+| Current submitted, public ranking complete | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Public04:58UTC365/1042,Gold,score15.81,100%/notinprogress.26available logs clean;fullfinalaudit pending |
 | Immediate preceding fully ranked bot | [PPO-v2 league3m](../submissions/ppo-v2-league3m.cpp), submission `41671805` | Fresh9Nov01:29:34UTC380/1039,Gold228/428,score14.89,100%; unchanged exact source |
 | Preserved local reference | [Selected league3m policy](../code/rl/configs/selected-policy.json) | Best independently confirmed PPO-v2 checkpoint, not `final.pt` |
 | Preserved league3m package | [ppo-v2-league3m.cpp](../submissions/ppo-v2-league3m.cpp) | Preserved byte-for-byte; the earlier recheck completed before the new D16 request |
@@ -33,6 +35,24 @@ The protected league3m checkpoint is `step-03002173/checkpoint.pt`, SHA256 `9ba3
 
 ## Latest live evidence
 
+Fresh **public** website query at9Nov04:58UTC:365/1042,Gold,score15.81,
+percentage100,inProgressfalse. Agent6866403 matches all26saved D16 logs; the
+server row update timestamp is04:26:37.705UTC, not the retrieval time.
+[Minimal public evidence](../experiments/rl/2026-11-09-d16-live/final-review/public-ranking.json).
+This supersedes the old63%progress for ranking completion, but does not provide
+fresh authenticated source/history or missing private battle logs.
+
+The new offline audit covers all26available logs:15W/11L,802own outputs,
+44nonbaseline choices (allD1),274paired-comparison turns,0official errors,
+warnings or emergency records. Internal wall maximum22.097ms and2ordinary
+turns above20ms remain; this is not charged official CPU.
+[26-log audit](../experiments/rl/2026-11-09-d16-live/final-review/audit-saved004.json).
+The saved old battle list has57done/1pending and31missing full logs; the total
+number of games in the later completed ranking has not yet been read.
+**Ranking completion is verified; complete final technical evaluation is not.**
+
+### Earlier saved snapshots and reporting correction
+
 The one D16 A3 POST was accepted01:31:03.050UTC as41672652; exact source/history
 checks passed. Fresh league3m immediately before it was380/1039,Gold228/428,
 score14.89,100% complete. Saved A3progress004 is63%,374/1040,score15.47.
@@ -43,10 +63,10 @@ at02:30 returned the remaining unread responses and closed the OAuth process.
 No new HTTP request, authentication, submission or rollback occurred in cleanup.
 [Dated erratum and file identities](../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 
-There are26saved full logs; battles004 lists57completed and1pending game, leaving
-31completed-snapshot logs missing. Final source/progress/leaderboard/full-battle
-audit remains unverified. A later resumed check needs fresh authentication;
-none is started by this correction.
+At the02:36correction there were26saved full logs and only18had been audited.
+The04:57offline audit above now covers all26. The full final log/source/history
+check remains pending authenticated access; the old snapshot is not the current
+public ranking.
 
 The saved audit002 covers18completed games in the previous20%-snapshot:
 10W/8L,0official errors/warnings/emergencies,543outputs,167paired comparison
@@ -108,7 +128,9 @@ in that phase. [Full report](../experiments/rl/2026-11-08-rl6/compact-d16/REPORT
 
 ## Deadline and boundaries
 
-Saved official deadline: **2026-11-09T09:00:00Z**, confirmed before the D16 POST.
+Official deadline: **2026-11-09T09:00:00Z**, confirmed before the D16 POST and
+again in the current public contest FAQ. [Final delivery checklist and rules
+caveats](CONTEST_DELIVERY.md) · [Candidate portfolio](BOT_PORTFOLIO.md).
 The new finite v7 phase has a06UTC local research cutoff; older02UTC guards remain
 historical and unchanged. Both v7 experimental lanes are now closed; publication
 and the already-requested ranking audit do not start more research.

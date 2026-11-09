@@ -1,15 +1,15 @@
 # Reinforcement learning: results and evidence
 
-Corrected **9 November2026,02:36UTC** from already saved evidence, not a new live check. The branch name does not identify the deployed bot. See [current status](../STATUS.md).
+Updated **9 November2026,04:58UTC public ranking**; all26available D16 logs were audited separately. The branch name does not identify the deployed bot. See [current status](../STATUS.md), [portfolio](../BOT_PORTFOLIO.md) and [delivery rules](../CONTEST_DELIVERY.md).
 
 [Detailed experiment timeline](../EXPERIMENT_TIMELINE.md) covers the heuristic,
 learning and platform stages, including failures and corrections, through the
-closed v7 pilot and the dated, incomplete D16 ranking check.
+closed v7 pilot, completed public D16 ranking and incomplete final battle audit.
 
 ## Current conclusions
 
 - **Reference policy:** PPO-v2 league3m, 24,833 parameters. Its independent 100-map test produced 139/200 wins against Lacoz, versus 74/200 for PPO-v1; paired gain +32.5pp, 95% interval [+22.5, +42.5].
-- **Current submission:** D16 A3 `94f0d426…`,41672652, accepted9Nov01:31UTC. Saved63%,374/1040,score15.47; **final ranking unverified**. Earlier28%/failed-retry narrative corrected; OAuth now closed. Immediate beforeleague3m:380/1039,Gold228/428,14.89. [Running report](../../experiments/rl/2026-11-09-d16-live/REPORT.md) · [Erratum](../../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
+- **Current submission:** D16 A3 `94f0d426…`,41672652, accepted9Nov01:31UTC. Fresh public04:58UTC:365/1042,Gold,15.81,100%/notinprogress,sameagent.26available logs15W/11L clean; **full final battle audit pending authentication**. Immediate beforeleague3m:380/1039,14.89. [Report](../../experiments/rl/2026-11-09-d16-live/REPORT.md) · [Earlier erratum](../../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 - **Useful offline teacher:** D16 search, +5.42pp external-panel gain in 1,120 fresh games, with no technical errors. Its multi-network implementation is not a valid unchanged-rule single-file package.
 - **Rejected compact student:** the 1,680-game independent test did not preserve the teacher's advantage. Export correctness is not playing strength.
 - **Rejected compact D16:** RL-v6 fits in94,123UTF16 units, but its final stopped at656/4200 after one emergency WAIT before baseline generation. No official timeout in that game; strength inconclusive.
@@ -35,7 +35,7 @@ snapshot; this is not a paired causal comparison. The new v7 request is separate
 | Compact multi-network search | [RL-v6 report](../../experiments/rl/2026-11-08-rl6/compact-d16/REPORT.md) | [Protocol](../../experiments/rl/2026-11-08-rl6/compact-d16/PROTOCOL.md) · [Stop audit](../../experiments/rl/2026-11-08-rl6/compact-d16/coordinator/final-stop-audit-attempt2.json) |
 | Requested league3m recheck | [New live report](../../experiments/rl/2026-11-08-leaderboard-recheck/REPORT.md) | [Complete92-game audit](../../experiments/rl/2026-11-08-leaderboard-recheck/audit-final.json) |
 | Matched position-diversity pilot | [RL-v7 report](../../experiments/rl/2026-11-09-rl7/diversity/REPORT.md) | [Frozen decision](../../experiments/rl/2026-11-09-rl7/diversity/gamedev-decision.json) · [Independent audit](../../experiments/rl/2026-11-09-rl7/coordinator/pilot-audit.json) |
-| Useful-baseline and shallow-first D16 delivery | [A3 report](../../experiments/rl/2026-11-09-rl7/d16/A3_REPORT.md) | [Independent96-game audit](../../experiments/rl/2026-11-09-rl7/coordinator/d16-a3-audit.json) · [Incomplete live check](../../experiments/rl/2026-11-09-d16-live/REPORT.md) |
+| Useful-baseline and shallow-first D16 delivery | [A3 report](../../experiments/rl/2026-11-09-rl7/d16/A3_REPORT.md) | [Independent96-game audit](../../experiments/rl/2026-11-09-rl7/coordinator/d16-a3-audit.json) · [Public rank and partial log audit](../../experiments/rl/2026-11-09-d16-live/REPORT.md) |
 
 ## Evaluation discipline
 

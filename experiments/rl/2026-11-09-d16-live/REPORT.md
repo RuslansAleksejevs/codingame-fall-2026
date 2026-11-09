@@ -1,18 +1,22 @@
-# Compact D16: one accepted submission, final ranking not yet verified
+# Compact D16: public ranking complete, full battle audit pending
 
-Corrected **9 November2026,02:36UTC**, from saved files, not a new live query.
-A3 was submitted exactly once as
-**41672652** at01:31:03.050UTC. The accepted source matches the frozen package.
-The last saved progress response is63%, not a completed ranking. The first
-GET-batch attempt failed review availability, but its exact retry succeeded.
-The later summary claiming two failures was incorrect. Exit-only cleanup02:30
-returned unread responses and closed the client without new HTTP requests.
-No additional submission, rollback, source change or stored credential.
-[Full erratum](ERRATUM_2026-11-09.md).
+Updated **9 November2026**, with a fresh public leaderboard read at04:58UTC:
+**365/1042 overall, Gold, score15.81,100%,notinprogress**. Public agent6866403
+matches the accepted A3's saved logs. A3 was submitted exactly once as41672652
+at01:31:03.050UTC; no source change, new submission or rollback followed.
+[Public evidence](final-review/public-ranking.json).
 
-This is a dated incomplete report, not a final leaderboard result. Saved official
-responses are SOURCE_VERIFIED; local analyses are PROJECT_REPORTED. The official
-deadline was freshly confirmed before submission as2026-11-09T09:00:00Z.
+All26available full logs have now been audited:15W/11L,802own outputs,
+0official errors/warnings/emergencies. **This is not a complete final battle
+audit**: additional logs and fresh authenticated source/history remain missing.
+The new login flow expired without approval and was closed; no token was stored.
+Public ranking completion is not the eventual final contest result.
+Official responses are SOURCE_VERIFIED; analyses are PROJECT_REPORTED.
+Deadline09November09:00UTC was reconfirmed in the official public FAQ.
+[Rules/deliverables](../../../docs/CONTEST_DELIVERY.md).
+
+The earlier two-failed-GET narrative was wrong: the exact first retry succeeded.
+Its [dated erratum](ERRATUM_2026-11-09.md) and all raw records remain unchanged.
 
 ## Exact source and before/after snapshots
 
@@ -26,12 +30,17 @@ explicit timed-policy change, not a claim of identical A2 timed behavior.
 | Snapshot | Source / submission | Overall | Gold | Score | Completion |
 |---|---|---:|---:|---:|---|
 | Immediate before,9Nov01:29:34UTC | league3m `199c6a2d…` /41671805 |380/1039|228/428|14.89|100%, `in_progress=false`|
-| Last saved D16 response, not final | A3 `94f0d426…` /41672652 |374/1040|220/429|15.47|63%, `in_progress=true`|
+| Public website9Nov04:58UTC | A3 agent6866403, prior accepted41672652 |365/1042|Gold; website localRank201|15.81|100%, `inProgress=false`;full-log audit pending|
+| Earlier saved private response004 | A3 `94f0d426…` /41672652 |374/1040|220/429|15.47|63%, `in_progress=true`,historical|
 | Earlier league3m recheck,8Nov23:25UTC | same league3m /41671805 |368/1036|221/428|15.11|100%,92clean audited games|
 
 The first row is the appropriate immediate baseline, not the older368snapshot.
 Even completed sequential rankings would be moving, unpaired comparisons.
-The partial D16 rank must not be interpreted as its final strength or percentile.
+The completed public snapshot is15places/+0.92score above the immediate
+before-snapshot, with a changing field; no causal superiority is established.
+It corresponds to approximately top35.0% (65.0%below), not a final-contest percentile.
+The server row update time04:26:37.705UTC differs from the04:58retrieval time.
+Website localRank/divisionAgentsCount are not silently mapped to API league fields.
 
 Evidence: [fresh before](progress-before-submit.json), [last saved progress](progress-004.json),
 [submission request](submission-request.json), [accepted response](submission-response.json),
@@ -56,7 +65,21 @@ did not overwrite the IDE. No further POST is authorized by this running report.
 [official A3 audit](tests-audit-a3-final.json),
 [command and error ledger](COMMANDS.md).
 
-## Incomplete battle-log audit
+## Current available-log audit and its missing coverage
+
+[audit-saved004.json](final-review/audit-saved004.json), generated04:57:10UTC,
+reanalyses all26existing logs without new games or downloads:15W/11L,0own/
+opponent/global errors or own warnings,802outputs,0emergencies,274complete
+paired-comparison turns,65completedD2 evaluations and920shallow evaluations.
+There are44nonbaseline selections, allD1. Maximum internal wall22.097ms,
+processCPU22.026ms,2ordinaryturns above20ms. No official timeout observed.
+
+The old saved battle-list004 contains57done/1pending and lacks31completed logs;
+its outcomes36W/21L are list-only, not57fully audited games. The later completed
+ranking's entire battle list has not been read. Public completion cannot certify
+these missing logs or all later games as clean.
+
+### Earlier18-game audit, retained for its own historical snapshot
 
 [audit-002.json](audit-002.json), generated01:42:19UTC, covers the **previous
 20%-progress snapshot**, not all completed games visible in progress004/battles004:
@@ -73,10 +96,9 @@ did not overwrite the IDE. No further POST is authorized by this running report.
 | Maximum internal through-flush wall / processCPU |22.097ms /22.026ms|
 | Non-first turns exceeding20ms internal wall |2|
 
-There are26saved full logs, already present in the previous publication;
-battles004 lists57completed/1pending, with31completed-snapshot logs missing.
-The table above remains the earlier18-game audit, not a new26-game audit. No final audit,
-final source readback or final leaderboard/progress agreement is claimed.
+The table above remains the earlier18-game audit. The separate new26-game audit
+is described above; neither is a complete final audit. No fresh authenticated
+source/history/progress readback is claimed.
 Counts above come from the saved audit, not from interim narrative summaries.
 
 Cooperative16ms is not a hard response-time guarantee. In game918861381,
@@ -87,15 +109,13 @@ startup/pre-first-token/final stderr and is not official charged CPU.
 
 ## Remaining bounded work
 
-The prior extra-retry permission question was unnecessary and is obsolete;
-withdrawal was requested. OAuth is closed and no scheduled controls remain.
-A later resumed authenticated GET-only check would obtain missing completed logs,
-wait for100% and
-`in_progress=false`, save final source/history/progress/leaderboard/battles,
-and run `audit_ranking.py --snapshot final --require-complete` to a new receipt.
-Never duplicate the already successful POST. No new authenticated session is
-started by this correction. No training, A4, extra technical games or rollback.
-
-The separate repository-publication request may preserve this honest running
-snapshot now. It does not imply a completed ranking or any additional platform
-authority. All old failures and original local evidence remain retained.
+The old extra-retry question is obsolete. The newly requested04:46login flow
+expired without approval; the client exited normally and withdrawal of its
+obsolete question was requested. UI removal was not confirmed. No active OAuth
+or future scheduled control is retained.
+Public ranking is complete, but a new authenticated GET-only session is still
+needed for final source/history/progress/battles and all missing logs, followed
+by `audit_ranking.py --snapshot final --require-complete` to a new receipt.
+Never duplicate the already successful POST. No training, A4, extra technical
+games or rollback. The private repository refresh preserves this exact partial
+audit status rather than claiming full closure.
