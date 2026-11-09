@@ -31,7 +31,7 @@ in the checked public sources; those details remain UNKNOWN.
 ## Deadline and deliverables
 
 The current contest FAQ states9November10:00CET, which is
-**2026-11-09T09:00:00Z**. The fresh authenticated challenge read at05:28UTC
+**2026-11-09T09:00:00Z**. The fresh authenticated challenge read at06:41UTC
 reconfirmed ongoing status and this deadline. Source delivery must be to
 the Fall Challenge arena, not the permanent TryAngle Catch puzzle.
 
@@ -73,18 +73,19 @@ Sources: [contest](https://www.codingame.com/contests/fall-challenge-2026),
 
 ## Final operational checklist
 
-As of9November06:15UTC, D16 A3 is explicitly selected; a new login is needed
-before its final replacement. Until acceptance is verified, the last current
-bot is league3m41673756. [Delivery status](../experiments/rl/2026-11-09-final-delivery/REPORT.md).
+As of9November06:42UTC, **D16 A3 is explicitly selected, accepted and current
+as41673944**, source94f0d426 verified. Authentication is already complete;
+the participant need not approve another replacement or resubmit an IDE buffer.
+[Delivery result and remaining verification](../experiments/rl/2026-11-09-final-delivery/REPORT.md).
 
 1. D16's98-log and fresh league3m's93-log/source/history/ranking audits are
-   complete. Review their dated, unpaired results before choosing the final bot.
-2. Choose exactly one final candidate. Preserved D16 A3 and currently active
-   league3m are the realistic options; B2M is a reserve, rejected students are
-   not finalists. See the [current comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md).
-3. If a different source is chosen, obtain explicit authorization for that
-   replacement, recheck time/limits, submit once and verify acceptance/completion.
-   No new submission is required simply to keep an already accepted current bot.
+   complete and informed the explicit D16 choice; they are unpaired snapshots.
+2. The one final candidate is D16 A3. B2M and rejected students were not submitted
+   in this final assessment. See the [completed comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md).
+3. Exact D16 was submitted once after fresh deadline/limits/current-source checks.
+   Its100%ranking and all90final-snapshot logs are now verified in the linked
+   delivery report. One-place cross-endpoint rank disagreement is disclosed.
+   No new submission is required to keep this accepted current bot.
 4. Preserve the exact source hash, submission ID and dated ranking evidence.
    Keep post-deadline contest standings separate from a100%-completed submission.
 5. Keep the repository private. No automatic rollback, further training or public

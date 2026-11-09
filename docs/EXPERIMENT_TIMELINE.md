@@ -4,11 +4,16 @@ Prepared 8 November 2026 from the preserved reports, protocols, manifests and
 official API records. This is a retrospective index, **not a rerun** of those
 experiments. The current requested live check has its own final section.
 
-Latest update9November06:00UTC: the [full D16 audit and fresh final-choice
+Latest update9November06:42UTC: **selected unchanged D16 A3 accepted as the final
+entry41673944**; see its separate delivery section below. The [full D16 audit and fresh final-choice
 comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md) supersede the
 earlier public-ranking/partial-log status. D16's98-game and league3m's93-game
-snapshots are complete. Recommend D16; league3m41673756 remains active, no final
-restoration or training.
+snapshots are complete and informed the explicit D16 choice. No further training
+or automatic replacement follows from this delivery.
+
+Final-delivery audit completed07:08UTC:90logs51W39L/zero own errors,100%/false,
+345progress versus346leaderboard out of1043,Gold,16.84. The one-place concurrent
+endpoint disagreement is disclosed, not normalized away.
 
 ## How to read the evidence
 
@@ -114,6 +119,13 @@ versions remain pinned; new khoufou `070bc128` is explicitly distinct from old
 | 9Nov05:27–05:38 |Finish existing D16 A3 evaluation41672652,source94f0d426 |No resubmission/training. Fresh authenticated source/history/progress/leaderboard and98-game list;72missing logs downloaded,26reused |371/1042,Gold207/422,15.77,100%/false;55W43L,0official errors. Frozen parser flagged5joined stderr JSON objects; additive decoder/syntheticchecks verifies3209complete turns/0emergency,143D1changes,940paired turns,3418D1/247D2. Raw/oldreceipt unchanged |Full snapshot audit complete, not causal strength proof or final contest standings. [Audit](../experiments/rl/2026-11-09-d16-live/audit-final.json), [supplement](../experiments/rl/2026-11-09-final-choice/d16-telemetry-supplement.json), [ledger](../experiments/rl/2026-11-09-final-choice/COMMANDS.md) |
 | 9Nov05:39:45 accepted;05:59rank;06:00audit |Fresh unchanged league3m199c6a2d control,41673756 |One new ranked POST; no bot edits/training/test-game rerun. Reused exact-source Gold compatibility. CurrentbeforeD16370/1042/15.77; all6oldhistoryIDs retained |433/1042,Gold269/422,13.37,100%/false.93/93logs49W44L;0ownerrors/warnings,1opponenttimeout,clean48W44L.3514outputs/maxinternal11.101ms,notofficialCPU. Final source/history/leaderboard exact |RecommendD16(full-audit371/1042/15.77),unpaired notcausalproof. Actualactiveleague3m; noB2M/student sweep or automatic final restoration. OAuthclosed/controlcancelled. [Request](../experiments/rl/2026-11-09-final-choice/league3m/submission-request.json), [full audit](../experiments/rl/2026-11-09-final-choice/league3m/audit-final.json), [comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md) |
 
+## 8. Explicitly selected final D16 delivery
+
+| UTC date | Exact version and scope | New versus reused work | Result / limitations | Evidence |
+|---|---|---|---|---|
+| 9Nov06:42:44.501 accepted | D16 A3,source94f0d426,95540UTF16; final submission41673944 | One explicitly selected final replacement; unchanged source, no learning or technical-game rerun. Reused Gold98-game compatibility; fresh official deadline/limits/current/source/history | HTTP201/current/sourceexact/history8=7old+1. Immediate league3m before430/1043,Gold265/421,13.56. New submission's ranking/audit is separate from old D16371/1042; see report for its completed snapshot, not final contest standings | [Request](../experiments/rl/2026-11-09-final-delivery/submission-request.json), [acceptance](../experiments/rl/2026-11-09-final-delivery/submission-response.json), [report and audit](../experiments/rl/2026-11-09-final-delivery/REPORT.md), [commands](../experiments/rl/2026-11-09-final-delivery/COMMANDS.md) |
+| 9Nov07:05–07:06 completed state;07:08:37audit | Same final D16 A341673944 | All90completed saved logs; no replay/newtraining/sourcechange |100%/false,345progress/346leaderboard out of1043,Gold180/421,16.84; rank mismatch retained.51W39L,0ownerrors/warnings/global failures,3opponent-warning losses(1commanderror).2976complete telemetry/0emergency,128changed actions(126D1/2D2),maxinternalwall19.8011ms,not officialCPU | Exact final source/current/history and full snapshot coverage PASS; strict cross-endpoint rank equality FALSE. OAuth exited0,no further change; no extra participant deliverable found. [Full audit](../experiments/rl/2026-11-09-final-delivery/audit-final.json), [completion](../experiments/rl/2026-11-09-final-delivery/COMPLETION.json), [report](../experiments/rl/2026-11-09-final-delivery/REPORT.md) |
+
 ## Current interpretation and preservation
 
 New phase started9November00:00UTC: [bounded D16 delivery and controlled
@@ -126,8 +138,9 @@ are kept separate.
 The strongest independently confirmed **ready policy** remains league3m. The
 original D16 teacher has a useful local result; A3 has a completed platform
 snapshot, but the moving rank does not causally establish a stronger replacement.
-Both full saved-snapshot audits are complete. Recommend D16; league3m remains
-active pending the final choice, with no automatic restoration.
+Both full comparison-snapshot audits are complete. D16 was recommended and then
+explicitly selected/submitted as41673944; league3m is preserved, no longer current.
+The final delivery is not an automatic restoration and does not change old gates.
 B2M's historical moving rank comparison does not establish a causal
 algorithm ranking. Rejected student/compact variants do not become acceptable
 merely because their direction has potential.

@@ -1,9 +1,13 @@
 # Reinforcement learning: results and evidence
 
-Final choice06:15UTC: D16 A3 selected; replacement awaits official login and has
-not yet been sent. No new training. [Final-delivery status](../../experiments/rl/2026-11-09-final-delivery/REPORT.md).
+Final delivery06:42UTC: **D16 A3 accepted and current41673944**, exact94f0d426.
+No new training. [Final-delivery result and audit](../../experiments/rl/2026-11-09-final-delivery/REPORT.md).
 
-Updated **9 November2026,06:00UTC**: D16 and fresh league3m assessments complete. Recommend D16; league3m remains active pending final choice. The branch name does not identify the deployed bot. See [completed comparison](../../experiments/rl/2026-11-09-final-choice/REPORT.md), [status](../STATUS.md), [portfolio](../BOT_PORTFOLIO.md) and [delivery rules](../CONTEST_DELIVERY.md).
+Completed audit07:08UTC:100%/false,345progress/346leaderboard out of1043,16.84;
+90logs51W39L,zero own errors/emergency. The live one-place disagreement and
+opponent events are explicit; this is not the final contest result.
+
+Earlier **9November06:00UTC**: D16 and fresh league3m assessments completed and recommended D16. The subsequent explicit final choice was delivered above. The branch name does not identify the deployed bot. See [completed comparison](../../experiments/rl/2026-11-09-final-choice/REPORT.md), [status](../STATUS.md), [portfolio](../BOT_PORTFOLIO.md) and [delivery rules](../CONTEST_DELIVERY.md).
 
 [Detailed experiment timeline](../EXPERIMENT_TIMELINE.md) covers the heuristic,
 learning and platform stages, including failures and corrections, through the
@@ -12,7 +16,7 @@ closed v7 pilot, completed98-game D16 audit and93-game final-choice control.
 ## Current conclusions
 
 - **Reference policy:** PPO-v2 league3m, 24,833 parameters. Its independent 100-map test produced 139/200 wins against Lacoz, versus 74/200 for PPO-v1; paired gain +32.5pp, 95% interval [+22.5, +42.5].
-- **Current submission:** unchanged league3m `199c6a2d…`,41673756; completed433/1042,Gold269/422,13.37,93logs49W44L,0ownerrors/1opponenttimeout. **Recommended preserved D16 A3:**371/1042,Gold207/422,15.77;98logs55W43L,0official errors,3209complete telemetry/0emergency. Both100%/notinprogress; unpaired snapshots, no automatic final switch. [Comparison](../../experiments/rl/2026-11-09-final-choice/REPORT.md) · [D16](../../experiments/rl/2026-11-09-d16-live/REPORT.md) · [Earlier erratum](../../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
+- **Current final submission:** unchanged D16 A3 `94f0d426…`,41673944; [new delivery result](../../experiments/rl/2026-11-09-final-delivery/REPORT.md). Prior comparison: D1641672652 completed371/1042/15.77 with98clean logs; league3m41673756 completed433/1042/13.37 with93logs/0ownerrors/1opponenttimeout. Both prior snapshots100%/notinprogress, unpaired and not causal proof. [Comparison](../../experiments/rl/2026-11-09-final-choice/REPORT.md) · [Earlier D16](../../experiments/rl/2026-11-09-d16-live/REPORT.md) · [Earlier erratum](../../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 - **Useful offline teacher:** D16 search, +5.42pp external-panel gain in 1,120 fresh games, with no technical errors. Its multi-network implementation is not a valid unchanged-rule single-file package.
 - **Rejected compact student:** the 1,680-game independent test did not preserve the teacher's advantage. Export correctness is not playing strength.
 - **Rejected compact D16:** RL-v6 fits in94,123UTF16 units, but its final stopped at656/4200 after one emergency WAIT before baseline generation. No official timeout in that game; strength inconclusive.
@@ -40,6 +44,7 @@ snapshot; this is not a paired causal comparison. The new v7 request is separate
 | Matched position-diversity pilot | [RL-v7 report](../../experiments/rl/2026-11-09-rl7/diversity/REPORT.md) | [Frozen decision](../../experiments/rl/2026-11-09-rl7/diversity/gamedev-decision.json) · [Independent audit](../../experiments/rl/2026-11-09-rl7/coordinator/pilot-audit.json) |
 | Useful-baseline and shallow-first D16 delivery | [A3 report](../../experiments/rl/2026-11-09-rl7/d16/A3_REPORT.md) | [Independent96-game audit](../../experiments/rl/2026-11-09-rl7/coordinator/d16-a3-audit.json) · [Completed ranking and98-log audit](../../experiments/rl/2026-11-09-d16-live/REPORT.md) |
 | Completed final-choice control | [Assessment and recommendation](../../experiments/rl/2026-11-09-final-choice/REPORT.md) | [Full93-game audit](../../experiments/rl/2026-11-09-final-choice/league3m/audit-final.json) |
+| Explicit final D16 submission | [Final delivery](../../experiments/rl/2026-11-09-final-delivery/REPORT.md) | [Full90-game audit](../../experiments/rl/2026-11-09-final-delivery/audit-final.json) · [Exact authorized request](../../experiments/rl/2026-11-09-final-delivery/submission-request.json) |
 
 ## Evaluation discipline
 

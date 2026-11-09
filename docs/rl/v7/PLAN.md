@@ -1,13 +1,22 @@
 # RL-v7: bounded D16 delivery and diversity pilot
 
-## Current closure status — 9 November2026,06:00UTC
+## Current closure status — 9 November2026,06:42UTC
+
+The later explicit final choice is now delivered: unchanged D16 A3 accepted
+41673944, downloaded source94f0d426 exact/current. This does not reopen either
+research lane. [Final-delivery result and audit](../../../experiments/rl/2026-11-09-final-delivery/REPORT.md).
+
+By07:08UTC the final entry completed100%/false and all90logs:51W39L,zero own
+errors/emergency;345progress/346leaderboard out of1043,16.84. The small ordinal
+disagreement is retained. OAuth closed; no additional campaign or bot change.
 
 Both research lanes are closed. Diversity remains NO-GO. D16 A3 full authenticated
 audit is complete:371/1042,Gold207/422,15.77;98logs55W43L,zero official errors,
 3209complete telemetry records/zero emergency. A separately requested unchanged
 league3m control41673756 completed433/1042/13.37 with93audited logs,zero own
-errors/one opponent timeout. No new training or bot source. Recommend D16, but
-league3m remains active; no automatic final restoration. OAuth/control closed.
+errors/one opponent timeout. No new training or bot source. At the06:00comparison
+close D16 was recommended but league3m remained active; that OAuth/control closed.
+The subsequently authorized final replacement is separate, as recorded above.
 [Completed comparison](../../../experiments/rl/2026-11-09-final-choice/REPORT.md) ·
 [D16 report](../../../experiments/rl/2026-11-09-d16-live/REPORT.md) ·
 [Final-entry rules](../../CONTEST_DELIVERY.md).

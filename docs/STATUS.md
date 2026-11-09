@@ -1,21 +1,27 @@
 # Current project status
 
-Final-delivery update9November06:15UTC: D16 A3 is explicitly selected. New OAuth
-confirmation is pending; no final replacement has been sent. Last verified
-active entry remains league3m41673756. GitHub PRIVATE/main/research e5cd7b4
-was freshly confirmed before this checked refresh of completed evaluations.
-[Current delivery status](../experiments/rl/2026-11-09-final-delivery/REPORT.md).
+Final-delivery update9November06:42UTC: **D16 A3 accepted and current41673944**.
+One explicitly authorized final replacement; downloaded source94f0d426 exact,
+history retains all seven earlier entries. No new weights/source/training.
+GitHub PRIVATE/main/research526ffee was verified after the preceding publication.
+[Final-delivery result and audit](../experiments/rl/2026-11-09-final-delivery/REPORT.md).
 
-Updated9 November2026,06:00UTC: full D16 and fresh unchanged league3m assessments
-complete. Recommend D16 A3; actual active entry remains league3m pending final choice.
+Final audit07:08UTC complete: **100%/notinprogress,345progress versus346leaderboard
+out of1043,Gold180/421,score16.84**. All90logs51W39L,zero own errors/warnings/
+emergency. All2976outputs verified. Three opponent-warning losses, one also a
+command-error game, remain in gross results. Separate live ordinal ranks differ
+by one; exact rank equality is not asserted. OAuth closed after the full audit.
+
+Earlier9November06:00UTC: full D16 and fresh unchanged league3m assessments
+completed and recommended D16 A3. The explicit final choice was subsequently delivered above.
 Scientific results are PROJECT_REPORTED; deployment facts come from saved official
 responses. The repository is private.
 
 **Diversity pilot completed, NO-GO:**800 clean fresh-map games; broader data did
 not improve on unchanged league3m. **D16 A3's original41672652 is fully audited:**
 source94f0d426… exact,371/1042,Gold207/422,score15.77,100%complete;98logs55W43L,
-zero official errors. **Current active entry is league3m41673756**, an explicitly
-requested fresh control, not an automatic rollback. A3 passed its bounded checks;
+zero official errors. league3m41673756 was the explicitly requested fresh control;
+it is now replaced by the chosen final D16, not an automatic rollback. A3 passed its bounded checks;
 A1/A2 failed gates and the dated earlier reporting correction remain preserved.
 [Finite scope and resource plan](rl/v7/PLAN.md). Old failures remain unchanged.
 
@@ -27,8 +33,9 @@ publication preserves evidence; it does not establish a new experimental result.
 
 | Role | Exact artifact | Status |
 |---|---|---|
-| Current control, fully ranked/audited | [PPO-v2 league3m](../submissions/ppo-v2-league3m.cpp), submission `41673756` |433/1042,Gold269/422,13.37;93logs49W44L,0ownerrors/1opponenttimeout. Exact199c6a2d; no final restoration |
-| Immediate preceding fully audited bot | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Full audit371/1042,Gold207/422,15.77,98logs55W43L,zero official errors; separate immediately-before read370/1042 |
+| Current selected final entry | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41673944` |100%/false,345–346/1043,16.84;90audited51W39L,0ownerrors; [full result and caveats](../experiments/rl/2026-11-09-final-delivery/REPORT.md) |
+| Previous control, fully ranked/audited | [PPO-v2 league3m](../submissions/ppo-v2-league3m.cpp), submission `41673756` |433/1042,Gold269/422,13.37;93logs49W44L,0ownerrors/1opponenttimeout. Exact199c6a2d; preserved, no longer current |
+| Earlier D16 evaluation | D16 A3, submission `41672652` | Full audit371/1042,Gold207/422,15.77,98logs55W43L,zero official errors; separate immediately-before read370/1042 |
 | Preserved local reference | [Selected league3m policy](../code/rl/configs/selected-policy.json) | Best independently confirmed PPO-v2 checkpoint, not `final.pt` |
 | Preserved league3m package | [ppo-v2-league3m.cpp](../submissions/ppo-v2-league3m.cpp) | Preserved byte-for-byte; the earlier recheck completed before the new D16 request |
 | Strong recent offline teacher | [D16 report](../experiments/rl/2026-11-08-rl5/deadline-search/REPORT.md) | Independent local gate passed; no deployable unchanged-rule package |
@@ -40,6 +47,13 @@ The B2M source SHA256 is `b87388adc48e8806edca275a589f5fe036f8e837ff1ebcd7e4a692
 The protected league3m checkpoint is `step-03002173/checkpoint.pt`, SHA256 `9ba362b28947b126df6b97e006d53d2ae860d37f5736d89f3e3c65c595ee8663`.
 
 ## Latest live evidence
+
+The explicitly chosen final source was accepted once as41673944 at06:42:44.501UTC.
+Immediate league3m before-snapshot:430/1043,Gold265/421,13.56,100%/notinprogress;
+this does not replace its earlier full-audit433/1042snapshot. Source/current flag,
+history and fresh Gold rules/deadline were checked. See the
+[final-delivery report](../experiments/rl/2026-11-09-final-delivery/REPORT.md)
+for this new entry's own ranking/log audit, separate from both evaluations below.
 
 Fresh authenticated D16 progress/leaderboard agree at05:37:371/1042,Gold207/422,
 15.77,100%/notinprogress. All98final-snapshot logs are audited:55W43L,zero own,
@@ -58,9 +72,10 @@ All93logs audited49W44L,0own errors/warnings/global failures,1opponent timeout;
 clean-only48W44L,3514outputs. Exact final source/history/leaderboard agree.
 MODEL_INFERENCE: recommend D16, whose full-audit snapshot is62places/+2.40score
 above the control. Moving unpaired results do not prove causal superiority.
-Actual active bot remains league3m; no automatic final restoration. OAuth closed,
-pending control cancelled. [Completed comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md).
-The assessment evidence is included in the new private refresh; preceding main/research were e5cd7b4.
+At that comparison's completion league3m remained active and its OAuth/control
+closed; no automatic switch occurred. The subsequent explicit final choice was
+submitted separately above. [Completed comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md).
+That assessment evidence was published in the private526ffeerefresh.
 
 ### Earlier saved snapshots and reporting correction
 
