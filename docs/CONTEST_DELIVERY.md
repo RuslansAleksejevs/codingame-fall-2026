@@ -31,8 +31,8 @@ in the checked public sources; those details remain UNKNOWN.
 ## Deadline and deliverables
 
 The current contest FAQ states9November10:00CET, which is
-**2026-11-09T09:00:00Z**. Fresh public contest metadata still says ongoing.
-The earlier authenticated challenge response agrees. Source delivery must be to
+**2026-11-09T09:00:00Z**. The fresh authenticated challenge read at05:28UTC
+reconfirmed ongoing status and this deadline. Source delivery must be to
 the Fall Challenge arena, not the permanent TryAngle Catch puzzle.
 
 No requirement to upload a separate paper, write-up, video, slides, model file,
@@ -73,9 +73,15 @@ Sources: [contest](https://www.codingame.com/contests/fall-challenge-2026),
 
 ## Final operational checklist
 
-1. Inspect the completed current D16 rating, accepted source and full battle audit.
-2. Choose exactly one final candidate. Current D16 A3 and preserved league3m are
-   the realistic options; B2M is a reserve, rejected students are not finalists.
+As of9November06:15UTC, D16 A3 is explicitly selected; a new login is needed
+before its final replacement. Until acceptance is verified, the last current
+bot is league3m41673756. [Delivery status](../experiments/rl/2026-11-09-final-delivery/REPORT.md).
+
+1. D16's98-log and fresh league3m's93-log/source/history/ranking audits are
+   complete. Review their dated, unpaired results before choosing the final bot.
+2. Choose exactly one final candidate. Preserved D16 A3 and currently active
+   league3m are the realistic options; B2M is a reserve, rejected students are
+   not finalists. See the [current comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md).
 3. If a different source is chosen, obtain explicit authorization for that
    replacement, recheck time/limits, submit once and verify acceptance/completion.
    No new submission is required simply to keep an already accepted current bot.

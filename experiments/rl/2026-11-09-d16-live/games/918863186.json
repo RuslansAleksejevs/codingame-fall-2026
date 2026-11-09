@@ -1,0 +1,944 @@
+{
+  "game_id": 918863186,
+  "game_options": "seed=5331223383336250000\nunits=0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_1,0_0,1_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,1_1,0_0,0_0,0_0,1_1,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0_0,0\nedges=0,2_0,5_0,18_0,24_0,33_0,37_0,40_1,3_1,4_1,19_1,25_1,32_1,36_1,41_2,18_2,28_2,34_2,37_3,19_3,29_3,35_3,36_4,25_4,32_5,24_5,33_6,18_6,27_6,40_7,19_7,26_7,41_8,37_8,42_8,43_9,36_9,42_9,43_10,15_10,31_10,33_11,14_11,30_11,32_12,15_12,17_12,22_12,37_12,39_13,14_13,16_13,23_13,36_13,38_14,16_14,32_15,17_15,33_16,36_17,37_18,28_18,40_19,29_19,41_20,23_20,34_20,43_21,22_21,35_21,42_22,39_23,38_24,31_25,30_26,41_27,40_42,43\nnodes=451,498_1468,461_688,647_1231,312_1652,593_267,366_287,851_1632,108_756,461_1163,498_167,159_1752,800_717,84_1202,875_1501,857_418,102_1332,709_587,250_451,726_1468,233_858,747_1061,212_905,199_1014,760_185,563_1734,396_1830,139_89,820_508,873_1411,86_1821,598_98,361_1525,692_394,267_765,852_1154,107_1288,567_631,392_929,886_990,73_312,686_1607,273_894,427_1025,532",
+  "agents": [
+    {
+      "index": 0,
+      "name": "Ruslans",
+      "agent_id": 6866403,
+      "rank": 371,
+      "me": true
+    },
+    {
+      "index": 1,
+      "name": "FREELOADER",
+      "agent_id": 6865362,
+      "rank": 397
+    }
+  ],
+  "frames": [
+    {
+      "frame": 0
+    },
+    {
+      "frame": 1,
+      "agent": 0,
+      "stderr": "turn=1 units=3 triangles=0 plan_us=12724\ndeadline={\"turn\":1,\"player\":0,\"parse_us\":69.138,\"optional_us\":12343.8,\"restore_us\":21.028,\"flush_us\":21.636,\"process_cpu_us\":12829,\"through_flush_us\":12837.3,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":2,\"selected_tier\":2,\"paired\":1,\"complete\":2,\"transitions\":18,\"stopped\":0,\"emergency\":0,\"forwards\":243,\"choices\":57,\"checks\":1436,\"baseline_complete\":1,\"baseline_us\":380.422,\"response_us\":910.96,\"proposal_us\":839.428,\"future_us\":3663.727,\"decoder_us\":6492.12,\"choices_us\":34.741,\"feature_us\":1124.051,\"forward_us\":1670.034,\"clone_us\":71.139,\"simulation_us\":909.428,\"value_us\":5841.791,\"atomic_max_us\":526.471,\"values\":[0.09897002011,0.06962153334],\"shallow_values\":[0.06351729052,0.01686991962]}}\npost_flush_us=64.163",
+      "stdout": "MOVE 10 31 1;MOVE 27 40 1;MOVE 31 24 1"
+    },
+    {
+      "frame": 2,
+      "agent": 1,
+      "stdout": "MOVE 11 32 1;MOVE 26 41 1;MOVE 30 11 1"
+    },
+    {
+      "frame": 3,
+      "agent": 0,
+      "stderr": "turn=2 units=3 triangles=0 plan_us=8162\ndeadline={\"turn\":2,\"player\":0,\"parse_us\":49.442,\"optional_us\":7801.05,\"restore_us\":6.618,\"flush_us\":9.488,\"process_cpu_us\":8218,\"through_flush_us\":8229.34,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":1,\"transitions\":9,\"stopped\":0,\"emergency\":0,\"forwards\":213,\"choices\":39,\"checks\":1149,\"baseline_complete\":1,\"baseline_us\":361.308,\"response_us\":1100.104,\"proposal_us\":916.566,\"future_us\":2295.029,\"decoder_us\":3851.553,\"choices_us\":31.026,\"feature_us\":1057.184,\"forward_us\":1446.899,\"clone_us\":37.717,\"simulation_us\":421.988,\"value_us\":2963.249,\"atomic_max_us\":511.314,\"values\":[0.08717184361],\"shallow_values\":[0.08365637098]}}\npost_flush_us=38.523",
+      "stdout": "MOVE 24 0 1;MOVE 31 24 1;MOVE 40 18 1"
+    },
+    {
+      "frame": 4,
+      "agent": 1,
+      "stdout": "MOVE 11 30 1;MOVE 32 4 1;MOVE 41 1 1"
+    },
+    {
+      "frame": 5,
+      "agent": 0,
+      "summary": "$1 captured 1 triangle"
+    },
+    {
+      "frame": 6,
+      "agent": 0,
+      "stderr": "turn=3 units=3 triangles=0 plan_us=10336\ndeadline={\"turn\":3,\"player\":0,\"parse_us\":46.719,\"optional_us\":9923.27,\"restore_us\":6.687,\"flush_us\":9.034,\"process_cpu_us\":10243,\"through_flush_us\":10400.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":1,\"transitions\":9,\"stopped\":0,\"emergency\":0,\"forwards\":345,\"choices\":48,\"checks\":1730,\"baseline_complete\":1,\"baseline_us\":413.309,\"response_us\":1223.625,\"proposal_us\":1133.265,\"future_us\":3780.53,\"decoder_us\":3975.246,\"choices_us\":114.193,\"feature_us\":2067.612,\"forward_us\":2258.677,\"clone_us\":37.413,\"simulation_us\":546.827,\"value_us\":3136.435,\"atomic_max_us\":688.979,\"values\":[-0.84241149],\"shallow_values\":[-0.6865446007]}}\npost_flush_us=35.233",
+      "stdout": "MOVE 0 2 1;MOVE 18 0 1;MOVE 24 5 1"
+    },
+    {
+      "frame": 7,
+      "agent": 1,
+      "stdout": "MOVE 1 19 1;MOVE 4 32 1;MOVE 30 25 1;SPAWN 1 4 25"
+    },
+    {
+      "frame": 8,
+      "agent": 0,
+      "summary": "$1 spawned 1 unit"
+    },
+    {
+      "frame": 9,
+      "agent": 0,
+      "summary": "$1 captured 1 triangle"
+    },
+    {
+      "frame": 10,
+      "agent": 0,
+      "stderr": "turn=4 units=3 triangles=0 plan_us=11213\ndeadline={\"turn\":4,\"player\":0,\"parse_us\":407.852,\"optional_us\":10796.5,\"restore_us\":8.721,\"flush_us\":9.445,\"process_cpu_us\":11328,\"through_flush_us\":11640.8,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":1,\"transitions\":9,\"stopped\":0,\"emergency\":0,\"forwards\":423,\"choices\":57,\"checks\":2083,\"baseline_complete\":1,\"baseline_us\":416.935,\"response_us\":1554.458,\"proposal_us\":1128.76,\"future_us\":4600.975,\"decoder_us\":3758.503,\"choices_us\":122.463,\"feature_us\":2571.715,\"forward_us\":2862.453,\"clone_us\":37.22,\"simulation_us\":491.898,\"value_us\":2918.5,\"atomic_max_us\":495.296,\"values\":[-0.8554670688],\"shallow_values\":[-0.8684934904]}}\npost_flush_us=37.496",
+      "stdout": "MOVE 2 18 1"
+    },
+    {
+      "frame": 11,
+      "agent": 1,
+      "stdout": "MOVE 1 3 1;MOVE 25 1 1;MOVE 32 14 1;SPAWN 32 1 4"
+    },
+    {
+      "frame": 12,
+      "agent": 0,
+      "summary": "$1 spawned 1 unit"
+    },
+    {
+      "frame": 13,
+      "agent": 0,
+      "summary": "$1 captured 2 triangles"
+    },
+    {
+      "frame": 14,
+      "agent": 0,
+      "stderr": "turn=5 units=3 triangles=0 plan_us=16072\ndeadline={\"turn\":5,\"player\":0,\"parse_us\":47.46,\"optional_us\":15668,\"restore_us\":6.52,\"flush_us\":8.61,\"process_cpu_us\":15514,\"through_flush_us\":16137,\"search\":{\"selected\":2,\"generated\":3,\"shallow_complete\":3,\"selected_tier\":1,\"paired\":1,\"complete\":0,\"transitions\":13,\"stopped\":1,\"emergency\":0,\"forwards\":534,\"choices\":57,\"checks\":2546,\"baseline_complete\":1,\"baseline_us\":404.986,\"response_us\":3346.038,\"proposal_us\":1272.601,\"future_us\":4775.509,\"decoder_us\":5122.935,\"choices_us\":224.611,\"feature_us\":3541.898,\"forward_us\":4040.048,\"clone_us\":66.097,\"simulation_us\":720.558,\"value_us\":5400.41,\"atomic_max_us\":572.497,\"values\":[],\"shallow_values\":[-0.8754940143,-0.8757437249,-0.8003184235]}}\npost_flush_us=38.500",
+      "stdout": "MOVE 0 2 1;MOVE 5 0 1"
+    },
+    {
+      "frame": 15,
+      "agent": 1,
+      "stdout": "MOVE 1 41 1;MOVE 3 36 1;MOVE 14 13 1;MOVE 19 7 1;MOVE 32 14 1;SPAWN 1 3 19;SPAWN 19 3 29"
+    },
+    {
+      "frame": 16,
+      "agent": 0,
+      "summary": "$1 spawned 2 units"
+    },
+    {
+      "frame": 17,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 5 triangles"
+    },
+    {
+      "frame": 18,
+      "agent": 0,
+      "stderr": "turn=6 units=3 triangles=2 plan_us=15971\ndeadline={\"turn\":6,\"player\":0,\"parse_us\":48.256,\"optional_us\":14681.2,\"restore_us\":7.155,\"flush_us\":9.733,\"process_cpu_us\":15788,\"through_flush_us\":16038.2,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":2,\"selected_tier\":1,\"paired\":1,\"complete\":0,\"transitions\":7,\"stopped\":1,\"emergency\":0,\"forwards\":717,\"choices\":71,\"checks\":3346,\"baseline_complete\":1,\"baseline_us\":1290.46,\"response_us\":4812.115,\"proposal_us\":3006.095,\"future_us\":3153.56,\"decoder_us\":3205.337,\"choices_us\":345.683,\"feature_us\":5575.505,\"forward_us\":4600.577,\"clone_us\":44.071,\"simulation_us\":660.34,\"value_us\":2931.776,\"atomic_max_us\":506.964,\"values\":[],\"shallow_values\":[-0.8087137206,-0.8087137206]}}\npost_flush_us=35.101",
+      "stdout": "SPAWN 0 2 18;SPAWN 2 18 28;MOVE 0 37 1;MOVE 2 18 1;MOVE 18 40 1"
+    },
+    {
+      "frame": 19,
+      "agent": 1,
+      "stdout": "MOVE 1 32 1;MOVE 7 41 1;MOVE 13 23 1;MOVE 14 11 1;MOVE 19 3 1;MOVE 36 16 1;MOVE 41 1 1;SPAWN 1 19 41;SPAWN 41 7 19;SPAWN 41 7 26;SPAWN 13 14 16;SPAWN 36 13 16"
+    },
+    {
+      "frame": 20,
+      "agent": 0,
+      "summary": "$0 spawned 2 units\n$1 spawned 5 units"
+    },
+    {
+      "frame": 21,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 3 triangles"
+    },
+    {
+      "frame": 22,
+      "agent": 0,
+      "stderr": "turn=7 units=5 triangles=2 plan_us=16057\ndeadline={\"turn\":7,\"player\":0,\"parse_us\":60.561,\"optional_us\":14416.7,\"restore_us\":7.626,\"flush_us\":9.798,\"process_cpu_us\":15537,\"through_flush_us\":16136.4,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":6,\"stopped\":1,\"emergency\":0,\"forwards\":727,\"choices\":73,\"checks\":3391,\"baseline_complete\":1,\"baseline_us\":1640.441,\"response_us\":5170.257,\"proposal_us\":5362.653,\"future_us\":0,\"decoder_us\":2953.254,\"choices_us\":355.66,\"feature_us\":5473.654,\"forward_us\":4931.878,\"clone_us\":41.062,\"simulation_us\":680.677,\"value_us\":3092.41,\"atomic_max_us\":767.728,\"values\":[],\"shallow_values\":[-0.8542316712]}}\npost_flush_us=35.832",
+      "stdout": "SPAWN 37 0 2;SPAWN 40 0 18;MOVE 0 5 1;MOVE 2 0 1;MOVE 18 6 1;MOVE 37 12 1;MOVE 40 27 1"
+    },
+    {
+      "frame": 23,
+      "agent": 1,
+      "stdout": "MOVE 1 36 2;MOVE 3 35 1;MOVE 11 30 1;MOVE 13 23 1;MOVE 16 36 1;MOVE 23 20 1;MOVE 32 11 1;MOVE 36 9 1;MOVE 41 7 3;SPAWN 36 1 3;SPAWN 11 14 32;SPAWN 23 13 38"
+    },
+    {
+      "frame": 24,
+      "agent": 0,
+      "summary": "$0 spawned 2 units\n$1 spawned 3 units"
+    },
+    {
+      "frame": 25,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle"
+    },
+    {
+      "frame": 26,
+      "agent": 0,
+      "stderr": "turn=8 units=7 triangles=1 plan_us=15977\ndeadline={\"turn\":8,\"player\":0,\"parse_us\":48.984,\"optional_us\":15075.2,\"restore_us\":6.929,\"flush_us\":9.623,\"process_cpu_us\":15717,\"through_flush_us\":16044.6,\"search\":{\"selected\":1,\"generated\":3,\"shallow_complete\":3,\"selected_tier\":1,\"paired\":1,\"complete\":0,\"transitions\":10,\"stopped\":1,\"emergency\":0,\"forwards\":606,\"choices\":93,\"checks\":3048,\"baseline_complete\":1,\"baseline_us\":902.654,\"response_us\":2939.382,\"proposal_us\":2619.946,\"future_us\":3545.395,\"decoder_us\":3997.119,\"choices_us\":248.582,\"feature_us\":3986.307,\"forward_us\":4126.795,\"clone_us\":73.087,\"simulation_us\":1395.687,\"value_us\":4424.239,\"atomic_max_us\":616.398,\"values\":[],\"shallow_values\":[-0.7951490805,-0.7734103273,-0.8251439974]}}\npost_flush_us=37.015",
+      "stdout": "SPAWN 6 27 40;MOVE 0 33 1;MOVE 5 24 1;MOVE 6 18 1;MOVE 12 17 1;MOVE 27 40 1;MOVE 37 12 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 27,
+      "agent": 1,
+      "stdout": "MOVE 7 19 2;MOVE 7 41 1;MOVE 9 42 1;MOVE 11 14 1;MOVE 11 32 1;MOVE 20 43 1;MOVE 23 13 1;MOVE 23 20 1;MOVE 30 25 1;MOVE 35 21 1;MOVE 36 1 1;MOVE 36 3 1;MOVE 36 9 1;MOVE 36 16 1"
+    },
+    {
+      "frame": 28,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 29,
+      "agent": 0,
+      "summary": "$0 captured 3 triangles\n$1 captured 7 triangles"
+    },
+    {
+      "frame": 30,
+      "agent": 0,
+      "stderr": "turn=9 units=8 triangles=3 plan_us=15984\ndeadline={\"turn\":9,\"player\":0,\"parse_us\":58.599,\"optional_us\":14785.2,\"restore_us\":7.963,\"flush_us\":17.792,\"process_cpu_us\":15909,\"through_flush_us\":16070,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":854,\"choices\":103,\"checks\":4057,\"baseline_complete\":1,\"baseline_us\":1199.317,\"response_us\":9735.349,\"proposal_us\":2967.434,\"future_us\":0,\"decoder_us\":2003.852,\"choices_us\":458.154,\"feature_us\":5957.8,\"forward_us\":5887.99,\"clone_us\":20.788,\"simulation_us\":503.843,\"value_us\":1488.717,\"atomic_max_us\":536.182,\"values\":[],\"shallow_values\":[-0.7787992037]}}\npost_flush_us=57.530",
+      "stdout": "SPAWN 24 0 5;SPAWN 33 0 5;SPAWN 18 6 40;MOVE 0 37 1;MOVE 6 18 1;MOVE 18 2 1;MOVE 24 31 1;MOVE 33 15 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 31,
+      "agent": 1,
+      "stdout": "MOVE 1 32 1;MOVE 3 35 1;MOVE 9 42 1;MOVE 13 14 1;MOVE 14 32 1;MOVE 16 14 1;MOVE 19 1 1;MOVE 19 3 1;MOVE 20 34 1;MOVE 21 22 1;MOVE 25 30 1;MOVE 32 1 1;MOVE 41 1 1;MOVE 42 8 1;MOVE 43 20 1;SPAWN 3 1 19;SPAWN 1 4 25;SPAWN 32 1 4;SPAWN 1 19 41;SPAWN 3 19 29;SPAWN 43 9 42;SPAWN 14 13 16"
+    },
+    {
+      "frame": 32,
+      "agent": 0,
+      "summary": "$0 spawned 3 units\n$1 spawned 7 units"
+    },
+    {
+      "frame": 33,
+      "agent": 0,
+      "summary": "$0 captured 4 triangles\n$1 captured 1 triangle"
+    },
+    {
+      "frame": 34,
+      "agent": 0,
+      "stderr": "turn=10 units=11 triangles=4 plan_us=15983\ndeadline={\"turn\":10,\"player\":0,\"parse_us\":46.999,\"optional_us\":14116.3,\"restore_us\":6.724,\"flush_us\":9.002,\"process_cpu_us\":15604,\"through_flush_us\":16047.3,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":5,\"stopped\":1,\"emergency\":0,\"forwards\":813,\"choices\":114,\"checks\":3980,\"baseline_complete\":1,\"baseline_us\":1866.757,\"response_us\":6479.541,\"proposal_us\":3981.799,\"future_us\":0,\"decoder_us\":2447.989,\"choices_us\":374.895,\"feature_us\":4920.806,\"forward_us\":5689.301,\"clone_us\":34.472,\"simulation_us\":1037.754,\"value_us\":2505.511,\"atomic_max_us\":515.356,\"values\":[],\"shallow_values\":[-0.8420671814]}}\npost_flush_us=37.720",
+      "stdout": "SPAWN 2 18 28;SPAWN 33 10 15;SPAWN 12 15 17;SPAWN 12 17 37;MOVE 0 40 1;MOVE 2 37 1;MOVE 12 22 1;MOVE 15 12 1;MOVE 17 37 1;MOVE 18 6 1;MOVE 18 40 1;MOVE 24 31 1;MOVE 31 10 1;MOVE 33 15 1;MOVE 37 8 1"
+    },
+    {
+      "frame": 35,
+      "agent": 1,
+      "stdout": "MOVE 1 36 1;MOVE 1 41 4;MOVE 3 35 2;MOVE 3 36 1;MOVE 14 13 2;MOVE 20 23 1;MOVE 32 14 3;MOVE 34 20 1;MOVE 35 21 1;MOVE 42 21 1;MOVE 43 20 1;SPAWN 8 42 43"
+    },
+    {
+      "frame": 36,
+      "agent": 0,
+      "summary": "$0 spawned 4 units\n$1 spawned 1 unit"
+    },
+    {
+      "frame": 37,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 2 triangles"
+    },
+    {
+      "frame": 38,
+      "agent": 0,
+      "stderr": "turn=11 units=15 triangles=1 plan_us=16042\ndeadline={\"turn\":11,\"player\":0,\"parse_us\":47.259,\"optional_us\":14885.4,\"restore_us\":6.58,\"flush_us\":10.518,\"process_cpu_us\":15804,\"through_flush_us\":16107.8,\"search\":{\"selected\":0,\"generated\":3,\"shallow_complete\":2,\"selected_tier\":1,\"paired\":1,\"complete\":0,\"transitions\":9,\"stopped\":1,\"emergency\":0,\"forwards\":672,\"choices\":139,\"checks\":3580,\"baseline_complete\":1,\"baseline_us\":1156.989,\"response_us\":4761.009,\"proposal_us\":3732.919,\"future_us\":0,\"decoder_us\":3770.84,\"choices_us\":94.407,\"feature_us\":3753.051,\"forward_us\":4350.419,\"clone_us\":56.244,\"simulation_us\":1838.71,\"value_us\":4419.434,\"atomic_max_us\":515.003,\"values\":[],\"shallow_values\":[-0.8426099309,-0.8404949925]}}\npost_flush_us=41.297",
+      "stdout": "SPAWN 40 6 27;MOVE 2 34 1;MOVE 6 40 1;MOVE 8 42 1;MOVE 10 31 1;MOVE 12 39 1;MOVE 12 22 1;MOVE 15 12 1;MOVE 31 24 1;MOVE 33 5 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 40 0 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 39,
+      "agent": 1,
+      "stdout": "MOVE 13 23 1;MOVE 13 36 1;MOVE 14 32 4;MOVE 20 23 1;MOVE 20 43 1;MOVE 21 22 2;MOVE 23 20 1;MOVE 30 25 1;MOVE 35 21 2;MOVE 36 3 1;MOVE 36 9 1;MOVE 41 1 1;MOVE 41 7 1;MOVE 41 19 1;MOVE 41 26 1;SPAWN 36 13 16;SPAWN 23 13 38"
+    },
+    {
+      "frame": 40,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit\n$1 spawned 2 units"
+    },
+    {
+      "frame": 41,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 6 triangles"
+    },
+    {
+      "frame": 42,
+      "agent": 0,
+      "stderr": "turn=12 units=16 triangles=1 plan_us=15966\ndeadline={\"turn\":12,\"player\":0,\"parse_us\":49.069,\"optional_us\":14430,\"restore_us\":7.451,\"flush_us\":9.289,\"process_cpu_us\":15645,\"through_flush_us\":16033,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":5,\"stopped\":1,\"emergency\":0,\"forwards\":817,\"choices\":144,\"checks\":4169,\"baseline_complete\":1,\"baseline_us\":1536.06,\"response_us\":7462.853,\"proposal_us\":3207.465,\"future_us\":0,\"decoder_us\":2393.664,\"choices_us\":237.107,\"feature_us\":5057.933,\"forward_us\":5533.532,\"clone_us\":37.882,\"simulation_us\":1165.337,\"value_us\":2474.868,\"atomic_max_us\":511.544,\"values\":[],\"shallow_values\":[-0.8624124958]}}\npost_flush_us=38.778",
+      "stdout": "SPAWN 0 5 24;MOVE 0 2 1;MOVE 0 33 1;MOVE 5 33 1;MOVE 8 43 1;MOVE 8 43 1;MOVE 12 15 1;MOVE 12 39 1;MOVE 22 12 1;MOVE 24 0 1;MOVE 31 10 1;MOVE 34 20 1;MOVE 39 22 1;MOVE 40 18 1;MOVE 40 18 1"
+    },
+    {
+      "frame": 43,
+      "agent": 1,
+      "stdout": "MOVE 1 3 1;MOVE 3 35 1;MOVE 8 42 2;MOVE 19 3 1;MOVE 20 43 1;MOVE 21 22 1;MOVE 23 13 1;MOVE 23 20 2;MOVE 25 30 1;MOVE 26 7 1;MOVE 32 14 2;MOVE 36 9 1;MOVE 36 16 1;MOVE 43 8 1;SPAWN 3 1 19;SPAWN 25 1 4;SPAWN 32 1 4;SPAWN 3 19 29;SPAWN 7 19 41;SPAWN 7 26 41"
+    },
+    {
+      "frame": 44,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit\n$1 spawned 6 units"
+    },
+    {
+      "frame": 45,
+      "agent": 0,
+      "summary": "$1 surrounded 2 units"
+    },
+    {
+      "frame": 46,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 2 triangles"
+    },
+    {
+      "frame": 47,
+      "agent": 0,
+      "stderr": "turn=13 units=15 triangles=2 plan_us=16020\ndeadline={\"turn\":13,\"player\":0,\"parse_us\":49.026,\"optional_us\":14438.2,\"restore_us\":7.311,\"flush_us\":10.002,\"process_cpu_us\":15633,\"through_flush_us\":16087.5,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":6,\"stopped\":1,\"emergency\":0,\"forwards\":804,\"choices\":133,\"checks\":4052,\"baseline_complete\":1,\"baseline_us\":1581.846,\"response_us\":8811.454,\"proposal_us\":1584.083,\"future_us\":0,\"decoder_us\":2280.556,\"choices_us\":336.002,\"feature_us\":4617.777,\"forward_us\":5831.609,\"clone_us\":38.317,\"simulation_us\":1460.566,\"value_us\":2465.164,\"atomic_max_us\":524.243,\"values\":[],\"shallow_values\":[-0.8797595689]}}\npost_flush_us=37.703",
+      "stdout": "SPAWN 2 18 28;SPAWN 33 10 15;MOVE 0 40 1;MOVE 0 37 1;MOVE 2 37 1;MOVE 10 33 1;MOVE 15 12 1;MOVE 18 6 1;MOVE 18 40 1;MOVE 20 43 1;MOVE 22 21 1;MOVE 22 21 1;MOVE 33 15 1;MOVE 33 15 1;MOVE 39 22 1;MOVE 42 8 1"
+    },
+    {
+      "frame": 48,
+      "agent": 1,
+      "stdout": "MOVE 3 19 2;MOVE 3 35 2;MOVE 7 19 1;MOVE 7 41 3;MOVE 8 37 1;MOVE 9 42 1;MOVE 9 43 1;MOVE 13 14 1;MOVE 14 32 1;MOVE 16 14 1;MOVE 20 43 2;MOVE 21 22 1;MOVE 22 12 2;MOVE 22 39 2;MOVE 25 30 1;MOVE 32 1 3;MOVE 42 21 1;MOVE 42 43 1;MOVE 43 42 1;SPAWN 42 9 43;SPAWN 14 13 16"
+    },
+    {
+      "frame": 49,
+      "agent": 0,
+      "summary": "$0 spawned 2 units\n$1 spawned 2 units"
+    },
+    {
+      "frame": 50,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 1 triangle"
+    },
+    {
+      "frame": 51,
+      "agent": 0,
+      "stderr": "turn=14 units=17 triangles=1 plan_us=15970\ndeadline={\"turn\":14,\"player\":0,\"parse_us\":47.829,\"optional_us\":14698,\"restore_us\":7.859,\"flush_us\":11.031,\"process_cpu_us\":15719,\"through_flush_us\":16038.3,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":2,\"selected_tier\":1,\"paired\":1,\"complete\":0,\"transitions\":6,\"stopped\":1,\"emergency\":0,\"forwards\":815,\"choices\":149,\"checks\":4180,\"baseline_complete\":1,\"baseline_us\":1272.311,\"response_us\":8158.14,\"proposal_us\":2046.997,\"future_us\":0,\"decoder_us\":2669.26,\"choices_us\":159.337,\"feature_us\":4300.124,\"forward_us\":5609.666,\"clone_us\":39.351,\"simulation_us\":1501.731,\"value_us\":2888.017,\"atomic_max_us\":513.934,\"values\":[],\"shallow_values\":[-0.9145570224,-0.9086293552]}}\npost_flush_us=39.681",
+      "stdout": "SPAWN 40 6 27;MOVE 2 0 1;MOVE 6 40 1;MOVE 8 42 1;MOVE 12 39 1;MOVE 12 39 1;MOVE 15 12 1;MOVE 15 12 1;MOVE 21 42 1;MOVE 21 42 1;MOVE 22 21 1;MOVE 33 0 1;MOVE 33 5 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 40 0 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 52,
+      "agent": 1,
+      "stdout": "MOVE 1 36 3;MOVE 14 13 2;MOVE 14 16 2;MOVE 19 1 3;MOVE 22 12 1;MOVE 32 1 1;MOVE 35 21 3;MOVE 37 12 1;MOVE 39 22 1;MOVE 41 1 3;MOVE 42 9 3;MOVE 43 9 1;MOVE 43 20 3;SPAWN 1 19 41"
+    },
+    {
+      "frame": 53,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit\n$1 spawned 1 unit"
+    },
+    {
+      "frame": 54,
+      "agent": 0,
+      "summary": "$1 surrounded 2 units"
+    },
+    {
+      "frame": 55,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 2 triangles"
+    },
+    {
+      "frame": 56,
+      "agent": 0,
+      "stderr": "turn=15 units=16 triangles=1 plan_us=16104\ndeadline={\"turn\":15,\"player\":0,\"parse_us\":60.776,\"optional_us\":14237,\"restore_us\":8.031,\"flush_us\":11.063,\"process_cpu_us\":16026,\"through_flush_us\":16185.9,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":4,\"stopped\":1,\"emergency\":0,\"forwards\":948,\"choices\":142,\"checks\":4663,\"baseline_complete\":1,\"baseline_us\":1867.805,\"response_us\":9871.123,\"proposal_us\":1760.136,\"future_us\":0,\"decoder_us\":1664.403,\"choices_us\":396.455,\"feature_us\":5672.437,\"forward_us\":6108.42,\"clone_us\":30.26,\"simulation_us\":1029.832,\"value_us\":1468.264,\"atomic_max_us\":500.41,\"values\":[],\"shallow_values\":[-0.8958177016]}}\npost_flush_us=38.559",
+      "stdout": "SPAWN 43 8 42;MOVE 0 24 1;MOVE 0 2 1;MOVE 0 18 1;MOVE 8 42 1;MOVE 8 43 1;MOVE 12 15 1;MOVE 12 15 1;MOVE 21 22 1;MOVE 40 0 1;MOVE 40 0 1;MOVE 42 9 1;MOVE 42 9 1;MOVE 42 9 1;MOVE 43 9 1"
+    },
+    {
+      "frame": 57,
+      "agent": 1,
+      "stdout": "MOVE 1 19 2;MOVE 1 32 5;MOVE 1 41 1;MOVE 9 42 1;MOVE 9 43 1;MOVE 12 17 1;MOVE 12 37 1;MOVE 13 23 1;MOVE 13 38 1;MOVE 16 14 2;MOVE 20 43 2;MOVE 21 42 3;MOVE 22 12 1;MOVE 30 11 1;MOVE 36 3 1;MOVE 36 13 1;MOVE 39 22 1;SPAWN 12 22 39;SPAWN 36 13 16"
+    },
+    {
+      "frame": 58,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit\n$1 spawned 2 units"
+    },
+    {
+      "frame": 59,
+      "agent": 0,
+      "summary": "$1 surrounded 4 units"
+    },
+    {
+      "frame": 60,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 5 triangles"
+    },
+    {
+      "frame": 61,
+      "agent": 0,
+      "stderr": "turn=16 units=13 triangles=2 plan_us=15950\ndeadline={\"turn\":16,\"player\":0,\"parse_us\":63.706,\"optional_us\":14378.5,\"restore_us\":10.502,\"flush_us\":10.247,\"process_cpu_us\":15878,\"through_flush_us\":16036.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":937,\"choices\":142,\"checks\":4614,\"baseline_complete\":1,\"baseline_us\":1572.036,\"response_us\":11238.482,\"proposal_us\":835.788,\"future_us\":0,\"decoder_us\":1646.396,\"choices_us\":379.3,\"feature_us\":5742.029,\"forward_us\":6214.081,\"clone_us\":21.072,\"simulation_us\":784.394,\"value_us\":1443.94,\"atomic_max_us\":490.127,\"values\":[],\"shallow_values\":[-0.9195285482]}}\npost_flush_us=38.041",
+      "stdout": "SPAWN 0 5 24;SPAWN 2 18 28;MOVE 0 33 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 2 37 1;MOVE 5 33 1;MOVE 15 10 1;MOVE 18 0 1;MOVE 22 12 1;MOVE 24 0 1;MOVE 42 8 1;MOVE 43 42 1;MOVE 43 42 1"
+    },
+    {
+      "frame": 62,
+      "agent": 1,
+      "stdout": "MOVE 3 35 1;MOVE 9 43 1;MOVE 11 30 1;MOVE 12 15 4;MOVE 13 38 1;MOVE 14 32 2;MOVE 19 7 1;MOVE 22 39 1;MOVE 30 25 1;MOVE 32 1 1;MOVE 36 1 2;MOVE 38 23 1;MOVE 41 26 1;SPAWN 19 3 29;SPAWN 8 42 43;SPAWN 32 11 14;SPAWN 12 17 37;SPAWN 23 13 38"
+    },
+    {
+      "frame": 63,
+      "agent": 0,
+      "summary": "$0 spawned 2 units\n$1 spawned 5 units"
+    },
+    {
+      "frame": 64,
+      "agent": 0,
+      "summary": "$1 captured 3 triangles"
+    },
+    {
+      "frame": 65,
+      "agent": 0,
+      "stderr": "turn=17 units=15 triangles=0 plan_us=15991\ndeadline={\"turn\":17,\"player\":0,\"parse_us\":47.966,\"optional_us\":14744.5,\"restore_us\":7.315,\"flush_us\":10.262,\"process_cpu_us\":15534,\"through_flush_us\":16058.1,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":6,\"stopped\":1,\"emergency\":0,\"forwards\":814,\"choices\":162,\"checks\":4257,\"baseline_complete\":1,\"baseline_us\":1246.682,\"response_us\":8288.255,\"proposal_us\":1220.901,\"future_us\":0,\"decoder_us\":2771.383,\"choices_us\":110.982,\"feature_us\":4094.203,\"forward_us\":5312.575,\"clone_us\":41.683,\"simulation_us\":1649.404,\"value_us\":3474.867,\"atomic_max_us\":754.217,\"values\":[],\"shallow_values\":[-0.934515035]}}\npost_flush_us=38.688",
+      "stdout": "MOVE 0 40 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 2 37 1;MOVE 8 43 1;MOVE 10 15 1;MOVE 15 12 1;MOVE 33 15 1;MOVE 33 15 1;MOVE 37 17 1;MOVE 37 17 1;MOVE 37 12 1;MOVE 42 43 1;MOVE 42 43 1"
+    },
+    {
+      "frame": 66,
+      "agent": 1,
+      "stdout": "MOVE 1 25 3;MOVE 8 37 1;MOVE 9 36 1;MOVE 12 17 1;MOVE 15 12 1;MOVE 15 33 1;MOVE 19 41 2;MOVE 21 35 1;MOVE 23 13 1;MOVE 23 20 2;MOVE 25 30 1;MOVE 26 7 1;MOVE 30 25 1;MOVE 32 14 7;MOVE 37 12 1;MOVE 38 13 1;MOVE 39 12 1;MOVE 42 21 4;MOVE 43 20 4;SPAWN 25 1 4;SPAWN 7 19 41;SPAWN 41 7 26"
+    },
+    {
+      "frame": 67,
+      "agent": 0,
+      "summary": "$1 spawned 3 units"
+    },
+    {
+      "frame": 68,
+      "agent": 0,
+      "summary": "$1 captured 2 triangles"
+    },
+    {
+      "frame": 69,
+      "agent": 0,
+      "stderr": "turn=18 units=15 triangles=0 plan_us=16148\ndeadline={\"turn\":18,\"player\":0,\"parse_us\":47.665,\"optional_us\":15045.5,\"restore_us\":6.351,\"flush_us\":10.305,\"process_cpu_us\":15943,\"through_flush_us\":16214.7,\"search\":{\"selected\":0,\"generated\":2,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":6,\"stopped\":1,\"emergency\":0,\"forwards\":871,\"choices\":183,\"checks\":4608,\"baseline_complete\":1,\"baseline_us\":1103.377,\"response_us\":8102.741,\"proposal_us\":2545.312,\"future_us\":0,\"decoder_us\":2415.572,\"choices_us\":116.82,\"feature_us\":4315.305,\"forward_us\":5902.729,\"clone_us\":42.466,\"simulation_us\":1734.099,\"value_us\":2536.282,\"atomic_max_us\":555.213,\"values\":[],\"shallow_values\":[-0.9417163316]}}\npost_flush_us=38.708",
+      "stdout": "MOVE 12 22 1;MOVE 12 39 1;MOVE 12 15 1;MOVE 15 33 1;MOVE 15 33 1;MOVE 15 10 1;MOVE 17 15 1;MOVE 17 15 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 40 18 1;MOVE 43 8 1;MOVE 43 42 1"
+    },
+    {
+      "frame": 70,
+      "agent": 1,
+      "stdout": "MOVE 7 19 3;MOVE 12 15 3;MOVE 13 16 1;MOVE 13 36 1;MOVE 14 16 2;MOVE 14 32 5;MOVE 15 10 1;MOVE 15 33 1;MOVE 17 15 2;MOVE 20 43 7;MOVE 21 42 4;MOVE 25 30 2;MOVE 30 25 1;MOVE 33 5 1;MOVE 35 3 1;MOVE 35 21 1;MOVE 36 3 1;MOVE 37 0 1;MOVE 41 1 3"
+    },
+    {
+      "frame": 71,
+      "agent": 0,
+      "summary": "$1 captured 4 triangles"
+    },
+    {
+      "frame": 72,
+      "agent": 0,
+      "stderr": "turn=19 units=15 triangles=0 plan_us=15970\ndeadline={\"turn\":19,\"player\":0,\"parse_us\":47.42,\"optional_us\":14823.6,\"restore_us\":7.596,\"flush_us\":10.71,\"process_cpu_us\":15588,\"through_flush_us\":16037.7,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":953,\"choices\":172,\"checks\":4831,\"baseline_complete\":1,\"baseline_us\":1147.211,\"response_us\":11377.066,\"proposal_us\":1101.053,\"future_us\":0,\"decoder_us\":1707.717,\"choices_us\":214.014,\"feature_us\":5618.428,\"forward_us\":6370.52,\"clone_us\":21.787,\"simulation_us\":772.615,\"value_us\":1494.826,\"atomic_max_us\":516.234,\"values\":[],\"shallow_values\":[-0.9465216259]}}\npost_flush_us=38.050",
+      "stdout": "MOVE 0 2 1;MOVE 8 37 1;MOVE 10 33 1;MOVE 15 12 1;MOVE 15 17 1;MOVE 15 33 1;MOVE 33 5 1;MOVE 33 5 1;MOVE 42 8 1;MOVE 43 8 1"
+    },
+    {
+      "frame": 73,
+      "agent": 1,
+      "stdout": "MOVE 0 37 1;MOVE 1 41 3;MOVE 3 35 2;MOVE 10 15 1;MOVE 15 12 2;MOVE 15 17 1;MOVE 15 33 2;MOVE 16 13 3;MOVE 19 7 2;MOVE 19 29 1;MOVE 25 30 4;MOVE 32 4 5;MOVE 36 9 1;MOVE 42 8 1;MOVE 42 9 1;MOVE 43 8 1;MOVE 43 9 1;MOVE 43 20 1"
+    },
+    {
+      "frame": 74,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 1 triangle"
+    },
+    {
+      "frame": 75,
+      "agent": 0,
+      "stdout": "SPAWN 0 2 18;SPAWN 18 2 28;MOVE 0 24 1;MOVE 0 40 1;MOVE 2 0 1;MOVE 8 37 1;MOVE 8 37 1;MOVE 17 12 1;MOVE 18 6 1;MOVE 22 12 1;MOVE 33 15 1;MOVE 37 17 1;MOVE 39 22 1"
+    },
+    {
+      "frame": 76,
+      "agent": 1,
+      "stdout": "MOVE 4 1 1;MOVE 4 32 4;MOVE 5 0 1;MOVE 7 26 2;MOVE 8 37 2;MOVE 9 43 2;MOVE 12 22 1;MOVE 12 37 1;MOVE 13 16 1;MOVE 13 38 1;MOVE 17 12 1;MOVE 20 23 1;MOVE 21 22 1;MOVE 30 11 6;MOVE 33 0 2;MOVE 33 10 1;MOVE 35 3 1;MOVE 35 21 1;MOVE 37 12 1;MOVE 41 1 3;MOVE 42 21 1;MOVE 42 43 1;MOVE 43 8 2;MOVE 43 20 1;MOVE 43 42 1"
+    },
+    {
+      "frame": 77,
+      "agent": 0,
+      "summary": "$0 spawned 2 units",
+      "stderr": "turn=20 units=15 triangles=2 plan_us=15963\ndeadline={\"turn\":20,\"player\":0,\"parse_us\":48.401,\"optional_us\":14205.1,\"restore_us\":7.873,\"flush_us\":8.284,\"process_cpu_us\":15682,\"through_flush_us\":16028.8,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":907,\"choices\":174,\"checks\":4671,\"baseline_complete\":1,\"baseline_us\":1758.029,\"response_us\":10382.099,\"proposal_us\":956.918,\"future_us\":0,\"decoder_us\":1771.862,\"choices_us\":328.636,\"feature_us\":5466.873,\"forward_us\":5953.661,\"clone_us\":20.16,\"simulation_us\":1152.024,\"value_us\":1637.724,\"atomic_max_us\":602.953,\"values\":[],\"shallow_values\":[-0.9423992276]}}\npost_flush_us=41.443"
+    },
+    {
+      "frame": 78,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 4 triangles"
+    },
+    {
+      "frame": 79,
+      "agent": 0,
+      "stderr": "turn=21 units=17 triangles=2 plan_us=15973\ndeadline={\"turn\":21,\"player\":0,\"parse_us\":47.513,\"optional_us\":14271,\"restore_us\":6.7,\"flush_us\":11.142,\"process_cpu_us\":15583,\"through_flush_us\":16039.7,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1072,\"choices\":173,\"checks\":5270,\"baseline_complete\":1,\"baseline_us\":1702.137,\"response_us\":14265.68,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":609.55,\"choices_us\":498.5,\"feature_us\":6677.786,\"forward_us\":7066.358,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":156.113,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=37.033",
+      "stdout": "SPAWN 18 6 40;SPAWN 40 6 27;MOVE 5 0 1;MOVE 5 33 1;MOVE 6 18 1;MOVE 12 39 1;MOVE 12 37 1;MOVE 15 12 1;MOVE 17 37 1;MOVE 18 0 1;MOVE 22 12 1;MOVE 24 5 1;MOVE 33 15 1;MOVE 37 17 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 80,
+      "agent": 1,
+      "stdout": "MOVE 0 2 1;MOVE 1 19 1;MOVE 1 32 2;MOVE 1 41 1;MOVE 3 35 1;MOVE 8 37 2;MOVE 10 15 1;MOVE 11 30 6;MOVE 12 37 1;MOVE 16 36 1;MOVE 20 34 1;MOVE 22 39 1;MOVE 26 7 1;MOVE 26 41 1;MOVE 29 19 1;MOVE 37 12 3;MOVE 38 13 1;MOVE 42 8 1;MOVE 43 8 3;SPAWN 3 1 19;SPAWN 36 1 3;SPAWN 32 1 4;SPAWN 3 19 29;SPAWN 7 26 41;SPAWN 8 42 43;SPAWN 9 42 43;SPAWN 32 11 14;SPAWN 16 13 14;SPAWN 16 13 36;SPAWN 23 13 38"
+    },
+    {
+      "frame": 81,
+      "agent": 0,
+      "summary": "$0 spawned 2 units\n$1 spawned 11 units"
+    },
+    {
+      "frame": 82,
+      "agent": 0,
+      "summary": "$1 surrounded 1 unit"
+    },
+    {
+      "frame": 83,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 2 triangles"
+    },
+    {
+      "frame": 84,
+      "agent": 0,
+      "stderr": "turn=22 units=18 triangles=1 plan_us=15991\ndeadline={\"turn\":22,\"player\":0,\"parse_us\":69.901,\"optional_us\":13777.1,\"restore_us\":8.752,\"flush_us\":10.833,\"process_cpu_us\":15364,\"through_flush_us\":16081.9,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":1,\"stopped\":1,\"emergency\":0,\"forwards\":1056,\"choices\":190,\"checks\":5359,\"baseline_complete\":1,\"baseline_us\":2213.925,\"response_us\":12783.174,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":948.975,\"choices_us\":292.039,\"feature_us\":6324.106,\"forward_us\":7125.943,\"clone_us\":9.917,\"simulation_us\":368.131,\"value_us\":553.329,\"atomic_max_us\":609.57,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=39.424",
+      "stdout": "SPAWN 33 0 5;MOVE 0 24 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 12 15 1;MOVE 12 15 1;MOVE 12 37 1;MOVE 15 10 1;MOVE 17 15 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 37 12 1;MOVE 37 12 1;MOVE 37 12 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 85,
+      "agent": 1,
+      "stdout": "MOVE 0 18 1;MOVE 3 35 2;MOVE 7 41 2;MOVE 8 37 5;MOVE 9 36 2;MOVE 12 17 1;MOVE 12 22 1;MOVE 13 23 2;MOVE 16 36 2;MOVE 19 41 2;MOVE 22 21 1;MOVE 23 20 2;MOVE 30 25 4;MOVE 32 1 4;MOVE 32 4 4;MOVE 36 1 2;MOVE 37 2 1;MOVE 37 17 2;MOVE 41 1 2"
+    },
+    {
+      "frame": 86,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 87,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 2 triangles"
+    },
+    {
+      "frame": 88,
+      "agent": 0,
+      "stderr": "turn=23 units=19 triangles=2 plan_us=15975\ndeadline={\"turn\":23,\"player\":0,\"parse_us\":47.636,\"optional_us\":13757.2,\"restore_us\":7.055,\"flush_us\":10.282,\"process_cpu_us\":15783,\"through_flush_us\":16041.5,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1126,\"choices\":188,\"checks\":5576,\"baseline_complete\":1,\"baseline_us\":2218.001,\"response_us\":13751.25,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":662.959,\"choices_us\":366.322,\"feature_us\":6831.852,\"forward_us\":7359.077,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":234.748,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=39.523",
+      "stdout": "ATTACK 0 5 24 37;SPAWN 33 10 15;MOVE 0 40 1;MOVE 0 18 1;MOVE 0 18 1;MOVE 0 2 1;MOVE 10 15 1;MOVE 12 17 1;MOVE 12 17 1;MOVE 12 17 1;MOVE 15 12 1;MOVE 15 12 1;MOVE 15 17 1;MOVE 33 0 1;MOVE 33 0 1;MOVE 37 2 1;MOVE 37 8 1;MOVE 37 2 1"
+    },
+    {
+      "frame": 89,
+      "agent": 1,
+      "stdout": "MOVE 0 40 1;MOVE 1 3 6;MOVE 1 32 2;MOVE 2 18 1;MOVE 4 1 4;MOVE 12 15 2;MOVE 17 12 2;MOVE 18 6 1;MOVE 20 43 1;MOVE 21 42 1;MOVE 22 39 1;MOVE 23 13 1;MOVE 23 20 1;MOVE 25 30 1;MOVE 30 11 1;MOVE 35 3 1;MOVE 36 13 1;MOVE 36 16 1;MOVE 37 12 1;MOVE 39 22 1;MOVE 41 1 2;MOVE 41 19 2"
+    },
+    {
+      "frame": 90,
+      "agent": 0
+    },
+    {
+      "frame": 91,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit\n$0 attacked 5 units"
+    },
+    {
+      "frame": 92,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 4 triangles"
+    },
+    {
+      "frame": 93,
+      "agent": 0,
+      "stderr": "turn=24 units=17 triangles=1 plan_us=16009\ndeadline={\"turn\":24,\"player\":0,\"parse_us\":47.165,\"optional_us\":14657.5,\"restore_us\":7.536,\"flush_us\":10.3,\"process_cpu_us\":16040,\"through_flush_us\":16075.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":1025,\"choices\":189,\"checks\":5247,\"baseline_complete\":1,\"baseline_us\":1351.475,\"response_us\":12205.279,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":1505.675,\"choices_us\":225.625,\"feature_us\":5497.277,\"forward_us\":6627.994,\"clone_us\":21.883,\"simulation_us\":1052.306,\"value_us\":1321.113,\"atomic_max_us\":502.353,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=38.677",
+      "stdout": "SPAWN 18 2 28;MOVE 0 40 1;MOVE 0 40 1;MOVE 2 37 1;MOVE 2 18 1;MOVE 2 37 1;MOVE 8 42 1;MOVE 15 12 1;MOVE 17 15 1;MOVE 17 37 1;MOVE 18 6 1;MOVE 18 6 1;MOVE 33 15 1;MOVE 40 27 1"
+    },
+    {
+      "frame": 94,
+      "agent": 1,
+      "stdout": "MOVE 1 25 4;MOVE 1 41 2;MOVE 2 0 1;MOVE 3 29 7;MOVE 11 14 1;MOVE 12 37 1;MOVE 13 14 2;MOVE 15 10 1;MOVE 15 33 1;MOVE 16 14 1;MOVE 17 37 1;MOVE 18 40 1;MOVE 19 7 2;MOVE 20 43 1;MOVE 21 42 1;MOVE 22 12 1;MOVE 25 30 2;MOVE 30 11 2;MOVE 32 14 2;MOVE 35 21 1;MOVE 36 9 2;MOVE 39 12 1"
+    },
+    {
+      "frame": 95,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 96,
+      "agent": 0,
+      "summary": "$1 captured 1 triangle"
+    },
+    {
+      "frame": 97,
+      "agent": 0,
+      "stderr": "turn=25 units=18 triangles=0 plan_us=15973\ndeadline={\"turn\":25,\"player\":0,\"parse_us\":49.836,\"optional_us\":14629.1,\"restore_us\":7.76,\"flush_us\":11.132,\"process_cpu_us\":16016,\"through_flush_us\":16043.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":1,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":964,\"choices\":199,\"checks\":5027,\"baseline_complete\":1,\"baseline_us\":1344.264,\"response_us\":11598.91,\"proposal_us\":640.748,\"future_us\":0,\"decoder_us\":1723.173,\"choices_us\":282.673,\"feature_us\":5589.477,\"forward_us\":6248.559,\"clone_us\":22.593,\"simulation_us\":823.412,\"value_us\":1488.521,\"atomic_max_us\":516.213,\"values\":[],\"shallow_values\":[-0.9587560482]}}\npost_flush_us=39.887",
+      "stdout": "MOVE 6 40 1;MOVE 15 12 1;MOVE 15 33 1;MOVE 17 37 1;MOVE 18 6 1;MOVE 18 40 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 40 18 1;MOVE 42 8 1"
+    },
+    {
+      "frame": 98,
+      "agent": 1,
+      "stdout": "MOVE 6 18 1;MOVE 7 26 1;MOVE 9 43 1;MOVE 10 33 1;MOVE 11 32 2;MOVE 12 37 3;MOVE 14 13 3;MOVE 14 16 1;MOVE 15 17 2;MOVE 20 23 1;MOVE 25 4 1;MOVE 25 30 2;MOVE 29 3 2;MOVE 29 19 1;MOVE 30 11 2;MOVE 33 5 1;MOVE 34 2 1;MOVE 37 17 1;MOVE 40 18 2;MOVE 41 1 2;MOVE 43 8 1"
+    },
+    {
+      "frame": 99,
+      "agent": 0,
+      "summary": "$1 surrounded 1 unit"
+    },
+    {
+      "frame": 100,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 7 triangles"
+    },
+    {
+      "frame": 101,
+      "agent": 0,
+      "stderr": "turn=26 units=17 triangles=1 plan_us=15968\ndeadline={\"turn\":26,\"player\":0,\"parse_us\":46.192,\"optional_us\":14232.4,\"restore_us\":7.365,\"flush_us\":10.225,\"process_cpu_us\":16023,\"through_flush_us\":16033.4,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1055,\"choices\":143,\"checks\":5060,\"baseline_complete\":1,\"baseline_us\":1735.99,\"response_us\":14215.515,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":644.838,\"choices_us\":596.513,\"feature_us\":7143.595,\"forward_us\":6914.306,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":172.211,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=35.881",
+      "stdout": "SPAWN 6 27 40;MOVE 0 5 1;MOVE 0 5 1;MOVE 6 18 1;MOVE 6 18 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 17 37 1;MOVE 27 40 1;MOVE 33 0 1;MOVE 37 2 1;MOVE 40 18 1;MOVE 40 0 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 102,
+      "agent": 1,
+      "stdout": "MOVE 0 24 1;MOVE 1 36 2;MOVE 2 0 1;MOVE 5 33 1;MOVE 8 37 1;MOVE 9 42 1;MOVE 13 38 1;MOVE 14 16 2;MOVE 17 15 1;MOVE 18 0 3;MOVE 19 7 1;MOVE 21 22 1;MOVE 25 4 1;MOVE 29 3 1;MOVE 37 2 3;MOVE 42 43 1;MOVE 43 9 1;MOVE 43 20 1"
+    },
+    {
+      "frame": 103,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 104,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle"
+    },
+    {
+      "frame": 105,
+      "agent": 0,
+      "stderr": "turn=27 units=18 triangles=1 plan_us=15957\ndeadline={\"turn\":27,\"player\":0,\"parse_us\":59.622,\"optional_us\":14142.5,\"restore_us\":6.837,\"flush_us\":9.079,\"process_cpu_us\":15707,\"through_flush_us\":16034.4,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1071,\"choices\":177,\"checks\":5301,\"baseline_complete\":1,\"baseline_us\":1815.212,\"response_us\":14135.903,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":619.351,\"choices_us\":496.423,\"feature_us\":7124.407,\"forward_us\":7021.034,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":319.244,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=37.045",
+      "stdout": "SPAWN 18 6 40;MOVE 0 33 1;MOVE 0 33 1;MOVE 0 33 1;MOVE 0 24 1;MOVE 2 0 1;MOVE 5 24 1;MOVE 6 18 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 37 12 1;MOVE 37 17 1;MOVE 37 17 1;MOVE 37 12 1;MOVE 37 17 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 106,
+      "agent": 1,
+      "stdout": "MOVE 2 18 1;MOVE 3 1 1;MOVE 3 19 1;MOVE 4 25 1;MOVE 7 41 1;MOVE 9 42 1;MOVE 11 30 1;MOVE 16 14 1;MOVE 17 12 1;MOVE 20 34 1;MOVE 21 22 1;MOVE 22 12 1;MOVE 23 20 1;MOVE 25 4 1;MOVE 29 3 1;MOVE 33 0 1;MOVE 36 1 1;MOVE 37 8 1;MOVE 42 9 1;MOVE 42 21 1"
+    },
+    {
+      "frame": 107,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 108,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 1 triangle"
+    },
+    {
+      "frame": 109,
+      "agent": 0,
+      "stderr": "turn=28 units=19 triangles=2 plan_us=15976\ndeadline={\"turn\":28,\"player\":0,\"parse_us\":44.263,\"optional_us\":14155.8,\"restore_us\":6.619,\"flush_us\":10.515,\"process_cpu_us\":16012,\"through_flush_us\":16039.1,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1041,\"choices\":98,\"checks\":4729,\"baseline_complete\":1,\"baseline_us\":1820.646,\"response_us\":14150.59,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":451.653,\"choices_us\":700.235,\"feature_us\":7559.409,\"forward_us\":6662.713,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":155.973,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=35.642",
+      "stdout": "ATTACK 0 5 24 0;SPAWN 33 0 5;MOVE 0 37 1;MOVE 0 40 1;MOVE 0 37 1;MOVE 0 2 1;MOVE 0 2 1;MOVE 12 15 1;MOVE 17 12 1;MOVE 17 12 1;MOVE 17 15 1;MOVE 18 2 1;MOVE 24 0 1;MOVE 33 10 1;MOVE 33 0 1"
+    },
+    {
+      "frame": 110,
+      "agent": 1,
+      "stdout": "MOVE 0 18 3;MOVE 0 40 1;MOVE 2 0 1;MOVE 3 35 1;MOVE 4 25 2;MOVE 9 36 1;MOVE 13 23 1;MOVE 15 12 1;MOVE 17 12 1;MOVE 18 6 1;MOVE 24 0 1;MOVE 25 4 1;MOVE 29 19 1;MOVE 30 11 1;MOVE 30 25 1;MOVE 32 11 1;MOVE 33 15 1;MOVE 36 9 1"
+    },
+    {
+      "frame": 111,
+      "agent": 0
+    },
+    {
+      "frame": 112,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit\n$0 attacked 5 units"
+    },
+    {
+      "frame": 113,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles"
+    },
+    {
+      "frame": 114,
+      "agent": 0,
+      "stderr": "turn=29 units=17 triangles=2 plan_us=15973\ndeadline={\"turn\":29,\"player\":0,\"parse_us\":45.951,\"optional_us\":14133.3,\"restore_us\":7.27,\"flush_us\":6.614,\"process_cpu_us\":15834,\"through_flush_us\":16034,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1007,\"choices\":91,\"checks\":4561,\"baseline_complete\":1,\"baseline_us\":1839.717,\"response_us\":14126.936,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":477.205,\"choices_us\":689.575,\"feature_us\":7679.45,\"forward_us\":6627.578,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":187.694,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=32.601",
+      "stdout": "SPAWN 2 18 28;SPAWN 15 10 33;MOVE 0 37 1;MOVE 0 37 1;MOVE 2 37 1;MOVE 2 37 1;MOVE 2 37 1;MOVE 10 15 1;MOVE 12 22 1;MOVE 12 17 1;MOVE 15 12 1;MOVE 15 12 1;MOVE 18 40 1;MOVE 33 15 1;MOVE 33 15 1;MOVE 37 12 1;MOVE 37 12 1;MOVE 40 18 1"
+    },
+    {
+      "frame": 115,
+      "agent": 1,
+      "stdout": "MOVE 0 40 2;MOVE 2 18 1;MOVE 8 42 1;MOVE 11 14 1;MOVE 12 39 1;MOVE 15 12 1;MOVE 25 4 1;MOVE 34 20 1;MOVE 37 0 1"
+    },
+    {
+      "frame": 116,
+      "agent": 0,
+      "summary": "$0 spawned 2 units"
+    },
+    {
+      "frame": 117,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles\n$1 captured 1 triangle"
+    },
+    {
+      "frame": 118,
+      "agent": 0,
+      "stderr": "turn=30 units=19 triangles=2 plan_us=15972\ndeadline={\"turn\":30,\"player\":0,\"parse_us\":45.517,\"optional_us\":13675.2,\"restore_us\":7.027,\"flush_us\":6.386,\"process_cpu_us\":15772,\"through_flush_us\":16033,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1011,\"choices\":92,\"checks\":4578,\"baseline_complete\":1,\"baseline_us\":2297.723,\"response_us\":13669.999,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":464.942,\"choices_us\":716.846,\"feature_us\":7841.852,\"forward_us\":6452.604,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":186.381,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=34.273",
+      "stdout": "SPAWN 12 15 17;SPAWN 12 17 37;MOVE 2 0 1;MOVE 12 39 1;MOVE 12 39 1;MOVE 12 22 1;MOVE 12 22 1;MOVE 15 33 1;MOVE 15 33 1;MOVE 15 33 1;MOVE 15 33 1;MOVE 17 12 1;MOVE 18 0 1;MOVE 22 12 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 37 0 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 119,
+      "agent": 1,
+      "stdout": "MOVE 4 32 2;MOVE 6 18 1;MOVE 11 30 1;MOVE 12 37 4;MOVE 14 11 2;MOVE 16 36 2;MOVE 18 2 1;MOVE 19 41 2;MOVE 21 42 1;MOVE 23 20 1;MOVE 25 30 2;MOVE 26 7 1;MOVE 29 3 1;MOVE 30 11 1;MOVE 35 21 1;MOVE 36 13 1;MOVE 38 13 1;MOVE 39 22 1;MOVE 40 18 2;MOVE 42 21 2;SPAWN 3 1 19;SPAWN 36 1 3;SPAWN 1 4 25;SPAWN 32 1 4;SPAWN 1 19 41;SPAWN 3 19 29;SPAWN 6 27 40;SPAWN 41 7 19;SPAWN 7 26 41;SPAWN 42 8 43;SPAWN 9 42 43;SPAWN 11 14 32;SPAWN 22 12 39;SPAWN 13 14 16;SPAWN 36 13 16;SPAWN 23 13 38"
+    },
+    {
+      "frame": 120,
+      "agent": 0,
+      "summary": "$0 spawned 2 units\n$1 spawned 16 units"
+    },
+    {
+      "frame": 121,
+      "agent": 0,
+      "summary": "$1 captured 1 triangle"
+    },
+    {
+      "frame": 122,
+      "agent": 0,
+      "stderr": "turn=31 units=21 triangles=0 plan_us=16015\ndeadline={\"turn\":31,\"player\":0,\"parse_us\":48.483,\"optional_us\":14244.5,\"restore_us\":7.539,\"flush_us\":8.211,\"process_cpu_us\":16057,\"through_flush_us\":16081.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":1077,\"choices\":207,\"checks\":5536,\"baseline_complete\":1,\"baseline_us\":1771.34,\"response_us\":12139.284,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":1223.115,\"choices_us\":141.69,\"feature_us\":5188.096,\"forward_us\":7358.04,\"clone_us\":22.15,\"simulation_us\":1017.011,\"value_us\":997.37,\"atomic_max_us\":510.52,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=35.835",
+      "stdout": "MOVE 0 5 1;MOVE 0 24 1;MOVE 0 40 1;MOVE 0 18 1;MOVE 0 18 1;MOVE 0 18 1;MOVE 12 22 1;MOVE 12 22 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 33 0 1;MOVE 33 0 1;MOVE 39 12 1"
+    },
+    {
+      "frame": 123,
+      "agent": 1,
+      "stdout": "MOVE 0 37 1;MOVE 1 41 4;MOVE 3 35 4;MOVE 6 40 1;MOVE 7 41 3;MOVE 9 36 2;MOVE 13 23 2;MOVE 13 36 2;MOVE 18 6 1;MOVE 18 40 1;MOVE 20 34 2;MOVE 21 22 3;MOVE 22 12 3;MOVE 23 20 1;MOVE 30 11 1;MOVE 32 11 4;MOVE 37 12 3;MOVE 37 17 1;MOVE 42 9 2;MOVE 43 20 1"
+    },
+    {
+      "frame": 124,
+      "agent": 0,
+      "summary": "$0 captured 2 triangles"
+    },
+    {
+      "frame": 125,
+      "agent": 0,
+      "stderr": "turn=32 units=21 triangles=2 plan_us=15997\ndeadline={\"turn\":32,\"player\":0,\"parse_us\":48.649,\"optional_us\":13429.6,\"restore_us\":7.276,\"flush_us\":6.997,\"process_cpu_us\":16036,\"through_flush_us\":16061.1,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":1033,\"choices\":209,\"checks\":5386,\"baseline_complete\":1,\"baseline_us\":2567.384,\"response_us\":10896.236,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":1535.687,\"choices_us\":181.545,\"feature_us\":5316.598,\"forward_us\":6755.672,\"clone_us\":20.799,\"simulation_us\":1141.333,\"value_us\":1314.614,\"atomic_max_us\":510.248,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=36.707",
+      "stdout": "SPAWN 0 5 24;SPAWN 0 5 33;MOVE 0 40 1;MOVE 0 40 1;MOVE 0 2 1;MOVE 0 2 1;MOVE 5 0 1;MOVE 12 17 1;MOVE 18 6 1;MOVE 18 6 1;MOVE 18 28 1;MOVE 22 12 1;MOVE 22 12 1;MOVE 22 12 1;MOVE 22 12 1;MOVE 24 0 1;MOVE 33 15 1;MOVE 33 0 1;MOVE 37 12 1;MOVE 37 2 1;MOVE 39 12 1;MOVE 40 18 1"
+    },
+    {
+      "frame": 126,
+      "agent": 1,
+      "stdout": "MOVE 2 18 1;MOVE 9 42 2;MOVE 11 14 3;MOVE 11 30 3;MOVE 11 32 4;MOVE 12 15 2;MOVE 12 17 1;MOVE 17 37 1;MOVE 20 34 1;MOVE 20 43 1;MOVE 22 21 1;MOVE 22 39 2;MOVE 23 13 2;MOVE 30 25 2;MOVE 34 2 2;MOVE 35 21 4;MOVE 36 3 1;MOVE 36 13 3;MOVE 36 16 4;MOVE 37 8 1;MOVE 40 18 2;MOVE 41 1 3;MOVE 41 19 8"
+    },
+    {
+      "frame": 127,
+      "agent": 0,
+      "summary": "$0 spawned 2 units"
+    },
+    {
+      "frame": 128,
+      "agent": 0,
+      "summary": "$0 surrounded 4 units"
+    },
+    {
+      "frame": 129,
+      "agent": 0,
+      "summary": "$0 captured 3 triangles\n$1 captured 6 triangles"
+    },
+    {
+      "frame": 130,
+      "agent": 0,
+      "stderr": "turn=33 units=23 triangles=3 plan_us=15974\ndeadline={\"turn\":33,\"player\":0,\"parse_us\":47.556,\"optional_us\":13478.3,\"restore_us\":7.306,\"flush_us\":20.589,\"process_cpu_us\":16027,\"through_flush_us\":16050.8,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1128,\"choices\":172,\"checks\":5516,\"baseline_complete\":1,\"baseline_us\":2495.935,\"response_us\":13472.954,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":642.099,\"choices_us\":453.381,\"feature_us\":6872.756,\"forward_us\":7339.671,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":165.773,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=35.933",
+      "stdout": "SPAWN 2 18 28;SPAWN 18 6 40;SPAWN 40 6 27;MOVE 0 37 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 2 34 1;MOVE 2 34 1;MOVE 2 37 1;MOVE 6 18 1;MOVE 6 18 1;MOVE 12 22 1;MOVE 12 39 1;MOVE 12 39 1;MOVE 12 39 1;MOVE 12 37 1;MOVE 15 12 1;MOVE 17 12 1;MOVE 18 2 1;MOVE 28 2 1;MOVE 40 18 1;MOVE 40 18 1"
+    },
+    {
+      "frame": 131,
+      "agent": 1,
+      "stdout": "MOVE 1 25 1;MOVE 1 41 2;MOVE 2 0 1;MOVE 2 37 1;MOVE 3 29 1;MOVE 6 40 1;MOVE 12 17 2;MOVE 12 22 1;MOVE 13 14 5;MOVE 15 33 1;MOVE 16 14 4;MOVE 17 15 1;MOVE 19 7 2;MOVE 21 35 1;MOVE 25 30 1;MOVE 32 4 4;MOVE 34 20 1;MOVE 37 17 1;MOVE 39 22 1;MOVE 42 8 1;MOVE 42 21 1;MOVE 43 8 1"
+    },
+    {
+      "frame": 132,
+      "agent": 0,
+      "summary": "$0 spawned 3 units"
+    },
+    {
+      "frame": 133,
+      "agent": 0,
+      "summary": "$1 captured 1 triangle"
+    },
+    {
+      "frame": 134,
+      "agent": 0,
+      "stderr": "turn=34 units=26 triangles=0 plan_us=15990\ndeadline={\"turn\":34,\"player\":0,\"parse_us\":48.16,\"optional_us\":14157.3,\"restore_us\":7.767,\"flush_us\":8.229,\"process_cpu_us\":15764,\"through_flush_us\":16056.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":3,\"stopped\":1,\"emergency\":0,\"forwards\":994,\"choices\":218,\"checks\":5289,\"baseline_complete\":1,\"baseline_us\":1833.207,\"response_us\":11152.341,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":1552.75,\"choices_us\":138.263,\"feature_us\":5214.619,\"forward_us\":6404.421,\"clone_us\":22.277,\"simulation_us\":1497.111,\"value_us\":1426.724,\"atomic_max_us\":699.354,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=34.882",
+      "stdout": "MOVE 2 0 1;MOVE 2 0 1;MOVE 2 0 1;MOVE 12 15 1;MOVE 12 15 1;MOVE 12 15 1;MOVE 12 22 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 22 21 1;MOVE 34 20 1;MOVE 34 20 1;MOVE 37 12 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 37 8 1;MOVE 39 22 1;MOVE 39 22 1;MOVE 39 12 1;MOVE 40 0 1"
+    },
+    {
+      "frame": 135,
+      "agent": 1,
+      "stdout": "MOVE 0 24 1;MOVE 4 1 4;MOVE 8 42 2;MOVE 8 43 1;MOVE 14 13 3;MOVE 14 16 9;MOVE 15 33 2;MOVE 17 15 1;MOVE 17 37 1;MOVE 19 1 3;MOVE 19 7 3;MOVE 20 23 1;MOVE 20 43 1;MOVE 21 42 2;MOVE 22 21 2;MOVE 25 1 2;MOVE 29 3 1;MOVE 33 10 1;MOVE 37 0 1;MOVE 39 22 1;MOVE 40 18 1;MOVE 41 1 2;SPAWN 3 1 19;SPAWN 1 4 25;SPAWN 1 4 32;SPAWN 3 19 29;SPAWN 7 26 41;SPAWN 43 8 42;SPAWN 13 14 16"
+    },
+    {
+      "frame": 136,
+      "agent": 0,
+      "summary": "$1 spawned 7 units"
+    },
+    {
+      "frame": 137,
+      "agent": 0,
+      "summary": "$1 surrounded 6 units"
+    },
+    {
+      "frame": 138,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 1 triangle"
+    },
+    {
+      "frame": 139,
+      "agent": 0,
+      "stderr": "turn=35 units=20 triangles=1 plan_us=16228\ndeadline={\"turn\":35,\"player\":0,\"parse_us\":46.789,\"optional_us\":14528,\"restore_us\":7.397,\"flush_us\":8.682,\"process_cpu_us\":15872,\"through_flush_us\":16292.4,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":2,\"stopped\":1,\"emergency\":0,\"forwards\":1143,\"choices\":216,\"checks\":5825,\"baseline_complete\":1,\"baseline_us\":1700.404,\"response_us\":13219.382,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":964.63,\"choices_us\":144.084,\"feature_us\":5900.008,\"forward_us\":7579.641,\"clone_us\":16.394,\"simulation_us\":694.968,\"value_us\":529.676,\"atomic_max_us\":529.676,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=36.207",
+      "stdout": "SPAWN 12 22 39;MOVE 0 5 1;MOVE 0 33 1;MOVE 0 33 1;MOVE 0 33 1;MOVE 0 24 1;MOVE 0 24 1;MOVE 12 37 1;MOVE 12 15 1;MOVE 15 10 1;MOVE 15 10 1;MOVE 20 43 1;MOVE 20 43 1;MOVE 21 42 1;MOVE 22 21 1;MOVE 22 21 1;MOVE 22 21 1"
+    },
+    {
+      "frame": 140,
+      "agent": 1,
+      "stdout": "MOVE 0 2 1;MOVE 1 3 2;MOVE 1 32 9;MOVE 1 36 2;MOVE 3 1 3;MOVE 7 19 6;MOVE 13 36 1;MOVE 13 38 1;MOVE 15 12 1;MOVE 21 22 4;MOVE 21 42 1;MOVE 22 12 1;MOVE 23 20 1;MOVE 24 5 1;MOVE 30 11 2;MOVE 33 15 1;MOVE 37 12 1;MOVE 42 9 1"
+    },
+    {
+      "frame": 141,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 142,
+      "agent": 0,
+      "summary": "$1 surrounded 3 units\n$0 surrounded 1 unit"
+    },
+    {
+      "frame": 143,
+      "agent": 0,
+      "summary": "$0 captured 3 triangles\n$1 captured 6 triangles"
+    },
+    {
+      "frame": 144,
+      "agent": 0,
+      "stderr": "turn=36 units=18 triangles=3 plan_us=15982\ndeadline={\"turn\":36,\"player\":0,\"parse_us\":46.32,\"optional_us\":13204.5,\"restore_us\":7.812,\"flush_us\":8.843,\"process_cpu_us\":15895,\"through_flush_us\":16047.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":986,\"choices\":154,\"checks\":4798,\"baseline_complete\":1,\"baseline_us\":2778.287,\"response_us\":13198.872,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":470.049,\"choices_us\":405.64,\"feature_us\":6864.757,\"forward_us\":7573.654,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":177.143,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=46.787",
+      "stdout": "SPAWN 0 5 24;SPAWN 0 5 33;SPAWN 15 10 33;MOVE 0 40 1;MOVE 0 18 1;MOVE 0 18 1;MOVE 5 0 1;MOVE 10 31 1;MOVE 10 15 1;MOVE 12 37 1;MOVE 15 12 1;MOVE 15 12 1;MOVE 24 0 1;MOVE 24 0 1;MOVE 33 10 1;MOVE 33 0 1;MOVE 33 0 1;MOVE 37 2 1;MOVE 42 8 1;MOVE 43 42 1;MOVE 43 42 1"
+    },
+    {
+      "frame": 145,
+      "agent": 1,
+      "stdout": "MOVE 1 41 3;MOVE 2 37 1;MOVE 3 35 2;MOVE 9 43 1;MOVE 10 15 1;MOVE 11 30 1;MOVE 12 37 1;MOVE 13 23 2;MOVE 15 12 1;MOVE 16 36 9;MOVE 18 2 1;MOVE 19 7 5;MOVE 19 41 1;MOVE 22 21 1;MOVE 32 11 9;MOVE 33 0 1;MOVE 35 21 2;MOVE 36 9 1;MOVE 38 23 1;MOVE 42 8 1;MOVE 42 21 1;MOVE 43 8 1"
+    },
+    {
+      "frame": 146,
+      "agent": 0,
+      "summary": "$0 spawned 3 units"
+    },
+    {
+      "frame": 147,
+      "agent": 0,
+      "summary": "$1 surrounded 2 units"
+    },
+    {
+      "frame": 148,
+      "agent": 0,
+      "summary": "$1 captured 2 triangles"
+    },
+    {
+      "frame": 149,
+      "agent": 0,
+      "stderr": "turn=37 units=19 triangles=0 plan_us=15973\ndeadline={\"turn\":37,\"player\":0,\"parse_us\":43.618,\"optional_us\":14454.5,\"restore_us\":6.858,\"flush_us\":6.846,\"process_cpu_us\":15567,\"through_flush_us\":16032.2,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1155,\"choices\":215,\"checks\":5835,\"baseline_complete\":1,\"baseline_us\":1519.195,\"response_us\":14449.242,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":590.682,\"choices_us\":361.071,\"feature_us\":6936.702,\"forward_us\":7344.841,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":385.054,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=29.380",
+      "stdout": "MOVE 0 40 1;MOVE 0 40 1;MOVE 0 37 1;MOVE 0 40 1;MOVE 0 18 1;MOVE 0 37 1;MOVE 0 37 1;MOVE 8 43 1;MOVE 10 15 1;MOVE 12 17 1;MOVE 12 17 1;MOVE 15 12 1;MOVE 15 12 1;MOVE 18 6 1;MOVE 18 2 1;MOVE 31 10 1;MOVE 37 12 1;MOVE 40 27 1"
+    },
+    {
+      "frame": 150,
+      "agent": 1,
+      "stdout": "ATTACK 12 17 37 0;MOVE 0 24 1;MOVE 2 0 1;MOVE 7 19 2;MOVE 7 26 3;MOVE 8 37 2;MOVE 11 14 2;MOVE 11 30 2;MOVE 11 32 3;MOVE 12 15 1;MOVE 15 33 1;MOVE 20 34 1;MOVE 21 22 3;MOVE 21 35 1;MOVE 22 12 3;MOVE 23 20 1;MOVE 30 25 2;MOVE 35 21 1;MOVE 36 3 2;MOVE 36 13 3;MOVE 36 16 3;MOVE 37 2 1;MOVE 41 1 4;MOVE 42 9 1;MOVE 42 21 1;MOVE 43 9 2;MOVE 43 20 1"
+    },
+    {
+      "frame": 151,
+      "agent": 0,
+      "summary": "$1 attacked 7 units"
+    },
+    {
+      "frame": 152,
+      "agent": 0,
+      "summary": "$1 captured 7 triangles"
+    },
+    {
+      "frame": 153,
+      "agent": 0,
+      "stderr": "turn=38 units=12 triangles=0 plan_us=15971\ndeadline={\"turn\":38,\"player\":0,\"parse_us\":45.589,\"optional_us\":15044.8,\"restore_us\":7.273,\"flush_us\":6.828,\"process_cpu_us\":15943,\"through_flush_us\":16032.5,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1116,\"choices\":170,\"checks\":5422,\"baseline_complete\":1,\"baseline_us\":926.494,\"response_us\":15039.959,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":620.347,\"choices_us\":445.326,\"feature_us\":7182.05,\"forward_us\":7064.036,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":166.528,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=32.702",
+      "stdout": "MOVE 2 18 1;MOVE 2 18 1;MOVE 6 40 1;MOVE 10 33 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 15 12 1;MOVE 17 12 1;MOVE 17 12 1;MOVE 27 6 1;MOVE 43 8 1"
+    },
+    {
+      "frame": 154,
+      "agent": 1,
+      "stdout": "MOVE 0 40 1;MOVE 1 3 2;MOVE 1 4 1;MOVE 1 36 1;MOVE 2 18 1;MOVE 3 36 2;MOVE 9 42 1;MOVE 9 43 2;MOVE 11 14 1;MOVE 12 15 1;MOVE 13 16 1;MOVE 13 23 1;MOVE 13 38 1;MOVE 14 16 2;MOVE 16 13 2;MOVE 16 14 1;MOVE 19 29 2;MOVE 20 43 1;MOVE 21 42 1;MOVE 22 12 1;MOVE 22 21 1;MOVE 22 39 1;MOVE 23 13 1;MOVE 23 38 1;MOVE 24 0 1;MOVE 25 4 1;MOVE 25 30 1;MOVE 30 25 2;MOVE 32 14 1;MOVE 34 20 1;MOVE 36 9 1;MOVE 37 8 1"
+    },
+    {
+      "frame": 155,
+      "agent": 0,
+      "stderr": "turn=39 units=12 triangles=0 plan_us=15972\ndeadline={\"turn\":39,\"player\":0,\"parse_us\":45.197,\"optional_us\":14935.1,\"restore_us\":6.852,\"flush_us\":6.111,\"process_cpu_us\":16000,\"through_flush_us\":16032.6,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1096,\"choices\":171,\"checks\":5360,\"baseline_complete\":1,\"baseline_us\":1037.808,\"response_us\":14929.018,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":621.965,\"choices_us\":534.457,\"feature_us\":7163.687,\"forward_us\":7018.36,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":161.457,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=31.576",
+      "stdout": "MOVE 6 40 1;MOVE 8 43 1;MOVE 12 17 1;MOVE 12 37 1;MOVE 12 37 1;MOVE 18 0 1;MOVE 18 0 1;MOVE 33 0 1;MOVE 37 2 1;MOVE 37 12 1;MOVE 37 12 1;MOVE 40 18 1"
+    },
+    {
+      "frame": 156,
+      "agent": 1,
+      "stdout": "MOVE 3 19 1;MOVE 3 29 1;MOVE 8 37 1;MOVE 9 42 1;MOVE 11 14 1;MOVE 11 30 1;MOVE 12 37 2;MOVE 13 16 1;MOVE 13 23 1;MOVE 14 11 1;MOVE 14 13 1;MOVE 14 32 1;MOVE 15 17 1;MOVE 16 36 2;MOVE 18 2 1;MOVE 20 34 1;MOVE 21 22 1;MOVE 21 42 1;MOVE 26 7 1;MOVE 26 41 1;MOVE 29 3 2;MOVE 30 11 1;MOVE 32 14 1;MOVE 33 10 1;MOVE 35 21 1;MOVE 36 1 3;MOVE 36 9 2;MOVE 40 18 1;MOVE 42 8 2;MOVE 43 8 1"
+    },
+    {
+      "frame": 157,
+      "agent": 0,
+      "summary": "$1 surrounded 1 unit"
+    },
+    {
+      "frame": 158,
+      "agent": 0,
+      "summary": "$1 captured 3 triangles"
+    },
+    {
+      "frame": 159,
+      "agent": 0,
+      "stderr": "turn=40 units=11 triangles=0 plan_us=15974\ndeadline={\"turn\":40,\"player\":0,\"parse_us\":46.397,\"optional_us\":14933.5,\"restore_us\":8.05,\"flush_us\":9.695,\"process_cpu_us\":15645,\"through_flush_us\":16039.6,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1010,\"choices\":99,\"checks\":4601,\"baseline_complete\":1,\"baseline_us\":1040.846,\"response_us\":14927.872,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":467.197,\"choices_us\":691.151,\"feature_us\":7576.017,\"forward_us\":6711.692,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":248.379,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=33.758",
+      "stdout": "MOVE 0 18 1;MOVE 2 18 1;MOVE 12 15 1;MOVE 12 15 1;MOVE 17 12 1;MOVE 18 6 1;MOVE 37 0 1;MOVE 37 0 1"
+    },
+    {
+      "frame": 160,
+      "agent": 1,
+      "stdout": "MOVE 0 18 1;MOVE 1 19 1;MOVE 1 41 1;MOVE 8 37 3;MOVE 9 36 1;MOVE 11 32 1;MOVE 14 11 1;MOVE 15 33 1;MOVE 17 15 1;MOVE 19 41 1;MOVE 22 21 1;MOVE 23 38 1;MOVE 32 1 1;MOVE 34 2 1;MOVE 37 0 4;MOVE 38 23 1;MOVE 39 12 1;MOVE 41 7 1;MOVE 43 20 1"
+    },
+    {
+      "frame": 161,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle"
+    },
+    {
+      "frame": 162,
+      "agent": 0,
+      "stderr": "turn=41 units=11 triangles=1 plan_us=15968\ndeadline={\"turn\":41,\"player\":0,\"parse_us\":47.438,\"optional_us\":14883.8,\"restore_us\":6.934,\"flush_us\":8.291,\"process_cpu_us\":15591,\"through_flush_us\":16032.6,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1049,\"choices\":136,\"checks\":4928,\"baseline_complete\":1,\"baseline_us\":1084.81,\"response_us\":14878.236,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":468.941,\"choices_us\":558.243,\"feature_us\":7588.679,\"forward_us\":6760.55,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":273.517,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=32.644",
+      "stdout": "SPAWN 40 6 27;MOVE 0 18 1;MOVE 0 2 1;MOVE 0 2 1;MOVE 0 2 1;MOVE 12 37 1;MOVE 15 33 1;MOVE 15 33 1"
+    },
+    {
+      "frame": 163,
+      "agent": 1,
+      "stdout": "MOVE 0 40 3;MOVE 1 4 1;MOVE 1 32 1;MOVE 2 28 1;MOVE 3 29 2;MOVE 4 25 2;MOVE 7 26 1;MOVE 9 43 2;MOVE 11 30 1;MOVE 12 15 1;MOVE 12 39 1;MOVE 13 16 1;MOVE 13 36 1;MOVE 14 16 1;MOVE 15 17 1;MOVE 16 13 1;MOVE 16 14 1;MOVE 18 6 2;MOVE 19 1 1;MOVE 20 34 1;MOVE 21 42 2;MOVE 23 20 1;MOVE 25 30 1;MOVE 26 41 1;MOVE 29 19 1;MOVE 30 11 1;MOVE 32 1 1;MOVE 36 3 1;MOVE 36 9 1;MOVE 37 12 1;MOVE 41 26 1;MOVE 42 8 1;MOVE 42 21 1;MOVE 43 9 1"
+    },
+    {
+      "frame": 164,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 165,
+      "agent": 0,
+      "summary": "$0 surrounded 1 unit"
+    },
+    {
+      "frame": 166,
+      "agent": 0,
+      "summary": "$0 captured 1 triangle\n$1 captured 2 triangles"
+    },
+    {
+      "frame": 167,
+      "agent": 0,
+      "stderr": "turn=42 units=12 triangles=1 plan_us=15975\ndeadline={\"turn\":42,\"player\":0,\"parse_us\":46.573,\"optional_us\":14918.1,\"restore_us\":7.504,\"flush_us\":8.538,\"process_cpu_us\":15830,\"through_flush_us\":16038.9,\"search\":{\"selected\":0,\"generated\":1,\"shallow_complete\":0,\"selected_tier\":0,\"paired\":0,\"complete\":0,\"transitions\":0,\"stopped\":1,\"emergency\":0,\"forwards\":1030,\"choices\":108,\"checks\":4735,\"baseline_complete\":1,\"baseline_us\":1057.069,\"response_us\":14912.151,\"proposal_us\":0,\"future_us\":0,\"decoder_us\":468.174,\"choices_us\":695.509,\"feature_us\":7438.624,\"forward_us\":6829.522,\"clone_us\":0,\"simulation_us\":0,\"value_us\":0,\"atomic_max_us\":211.498,\"values\":[],\"shallow_values\":[]}}\npost_flush_us=32.574",
+      "stdout": "SPAWN 18 2 28;MOVE 2 0 1;MOVE 2 0 1;MOVE 2 0 1;MOVE 6 40 1;MOVE 18 40 1;MOVE 18 40 1;MOVE 33 5 1;MOVE 33 0 1;MOVE 37 0 1;MOVE 40 27 1"
+    },
+    {
+      "frame": 168,
+      "agent": 1,
+      "stdout": "MOVE 3 29 1;MOVE 6 18 2;MOVE 8 37 1;MOVE 9 36 1;MOVE 10 33 1;MOVE 12 37 1;MOVE 13 14 1;MOVE 15 10 1;MOVE 17 15 1;MOVE 19 3 1;MOVE 20 23 1;MOVE 21 22 1;MOVE 23 20 1;MOVE 25 4 1;MOVE 26 7 1;MOVE 33 5 1;MOVE 34 2 1;MOVE 36 16 1;MOVE 37 2 2;MOVE 38 13 1;MOVE 39 12 1;MOVE 40 18 2;MOVE 41 19 1;MOVE 42 21 1"
+    },
+    {
+      "frame": 169,
+      "agent": 0,
+      "summary": "$0 spawned 1 unit"
+    },
+    {
+      "frame": 170,
+      "agent": 0,
+      "summary": "$1 captured 2 triangles"
+    },
+    {
+      "frame": 171,
+      "agent": 1,
+      "summary": "$0: is dominated",
+      "stdout": "MOVE 1 3 1;MOVE 1 41 1;MOVE 2 0 3;MOVE 3 36 1;MOVE 4 32 1;MOVE 5 0 1;MOVE 7 26 1;MOVE 9 42 1;MOVE 10 31 1;MOVE 12 22 1;MOVE 12 39 1;MOVE 13 23 1;MOVE 14 13 1;MOVE 16 14 1;MOVE 18 0 1;MOVE 20 34 1;MOVE 20 43 1;MOVE 21 22 1;MOVE 22 21 1;MOVE 23 20 1;MOVE 25 1 2;MOVE 29 3 1;MOVE 29 19 1;MOVE 30 25 2;MOVE 32 4 1;MOVE 33 5 1;MOVE 36 9 1;MOVE 37 8 1;MOVE 41 7 1;MOVE 42 43 1;MOVE 43 8 1;MOVE 43 9 1"
+    }
+  ],
+  "scores": [
+    -1.0,
+    303.0
+  ],
+  "ranking": [
+    1,
+    0
+  ],
+  "tooltips": [
+    {
+      "frame": 171,
+      "text": "$0 is dominated!"
+    }
+  ],
+  "limits": {
+    "requests": {
+      "name": "requests_1m",
+      "limit": 120,
+      "used": 31,
+      "remaining": 89,
+      "window_seconds": 60,
+      "resets_in_seconds": 13
+    }
+  }
+}

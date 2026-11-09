@@ -1,18 +1,22 @@
-# Compact D16: public ranking complete, full battle audit pending
+# Compact D16: completed ranking and full snapshot audit
 
-Updated **9 November2026**, with a fresh public leaderboard read at04:58UTC:
-**365/1042 overall, Gold, score15.81,100%,notinprogress**. Public agent6866403
-matches the accepted A3's saved logs. A3 was submitted exactly once as41672652
-at01:31:03.050UTC; no source change, new submission or rollback followed.
-[Public evidence](final-review/public-ranking.json).
+Updated **9 November2026,05:38UTC**. Fresh authenticated final progress and
+leaderboard agree: **371/1042 overall, Gold207/422,score15.77,100%,notinprogress**.
+Source94f0d426 matches the frozen A3; all six history IDs are preserved, with
+exactly one original A3 submission41672652 at01:31:03.050UTC.
 
-All26available full logs have now been audited:15W/11L,802own outputs,
-0official errors/warnings/emergencies. **This is not a complete final battle
-audit**: additional logs and fresh authenticated source/history remain missing.
-The new login flow expired without approval and was closed; no token was stored.
-Public ranking completion is not the eventual final contest result.
+**All98completed battles in the final snapshot are audited:55W/43L, zero
+official technical errors/warnings.** All3209outputs have complete mandatory
+baselines and no emergencies. A supplemental parser recovered five complete
+JSON telemetry objects joined to subsequent stderr fragments without newlines;
+the original flagged audit and all raw bytes are preserved. This is a parser
+correction, not a bot repair or game replay. Coverage is the saved snapshot,
+not future passive games or the eventual final contest result.
+
+At05:39 a separately authorized fresh league3m control replaced D16; see the
+[current comparison](../2026-11-09-final-choice/REPORT.md). D16 was not resubmitted.
 Official responses are SOURCE_VERIFIED; analyses are PROJECT_REPORTED.
-Deadline09November09:00UTC was reconfirmed in the official public FAQ.
+Deadline09November09:00UTC was reconfirmed by the authenticated challenge read.
 [Rules/deliverables](../../../docs/CONTEST_DELIVERY.md).
 
 The earlier two-failed-GET narrative was wrong: the exact first retry succeeded.
@@ -30,15 +34,18 @@ explicit timed-policy change, not a claim of identical A2 timed behavior.
 | Snapshot | Source / submission | Overall | Gold | Score | Completion |
 |---|---|---:|---:|---:|---|
 | Immediate before,9Nov01:29:34UTC | league3m `199c6a2d…` /41671805 |380/1039|228/428|14.89|100%, `in_progress=false`|
+| Authenticated full-audit snapshot,9Nov05:37UTC | A3 `94f0d426…` /41672652 |371/1042|207/422|15.77|100%, `in_progress=false`;98/98logs audited|
+| Immediately before new league3m control,9Nov05:39UTC | Same A3 /41672652 |370/1042|206/422|15.77|Separate moving snapshot; source unchanged|
 | Public website9Nov04:58UTC | A3 agent6866403, prior accepted41672652 |365/1042|Gold; website localRank201|15.81|100%, `inProgress=false`;full-log audit pending|
 | Earlier saved private response004 | A3 `94f0d426…` /41672652 |374/1040|220/429|15.47|63%, `in_progress=true`,historical|
 | Earlier league3m recheck,8Nov23:25UTC | same league3m /41671805 |368/1036|221/428|15.11|100%,92clean audited games|
 
-The first row is the appropriate immediate baseline, not the older368snapshot.
-Even completed sequential rankings would be moving, unpaired comparisons.
-The completed public snapshot is15places/+0.92score above the immediate
-before-snapshot, with a changing field; no causal superiority is established.
-It corresponds to approximately top35.0% (65.0%below), not a final-contest percentile.
+The first row is the appropriate immediate deployment baseline, not the older368
+snapshot. The05:37full-audit rank is9places/+0.88score above it, with a changing
+field; no causal superiority is established. It corresponds to top35.6%
+(approximately64.4th percentile by players below), not final-contest standing.
+The earlier public365snapshot is retained as dated history, not today's final
+private rank.
 The server row update time04:26:37.705UTC differs from the04:58retrieval time.
 Website localRank/divisionAgentsCount are not silently mapped to API league fields.
 
@@ -46,7 +53,8 @@ Evidence: [fresh before](progress-before-submit.json), [last saved progress](pro
 [submission request](submission-request.json), [accepted response](submission-response.json),
 [source readback](accepted-source.json), [history after](submissions-after.json).
 History retains all five earlier IDs and adds exactly one new ID. Test requests
-did not overwrite the IDE. No further POST is authorized by this running report.
+did not overwrite the IDE. The later league3m control has its own new scope;
+this report does not itself authorize any further POST.
 
 ## Why A3 was admitted for this exploratory ranking
 
@@ -65,7 +73,35 @@ did not overwrite the IDE. No further POST is authorized by this running report.
 [official A3 audit](tests-audit-a3-final.json),
 [command and error ledger](COMMANDS.md).
 
-## Current available-log audit and its missing coverage
+## Complete authenticated snapshot audit
+
+[Full audit](audit-final.json) verifies all98battle identities/outcomes, exact
+accepted source, preserved history,100%/notinprogress and matching independent
+leaderboard.55W43L, own/opponent/global errors and own warnings0. No pending
+games or further battle pages; all98logs saved. Earlier snapshots remain intact.
+
+The original line-based telemetry parser flagged five concatenated records.
+[Supplemental audit](../2026-11-09-final-choice/d16-telemetry-supplement.json)
+decodes exact JSON boundaries and verifies all3209contiguous turns. It preserves
+every formerly parsed record, checks original post-flush marker coverage and
+reuses the frozen safety/tier checks on normalized in-memory boundaries. Five
+synthetic parser checks passed; no source/raw/old-auditor edit occurred.
+
+| Measurement | Full snapshot |
+|---|---:|
+| Outputs / complete telemetry / emergency records |3209/3209/0|
+| Nonbaseline choices |143, allD1|
+| Same-tier paired-comparison turns |940|
+| Complete shallow / depth2 evaluations |3418/247|
+| Turns choosing through a completeD2comparison |17;0nonbaseline|
+| Maximum internal through-flush wall / processCPU |22.097ms/22.026ms|
+| Non-first turns>20ms internal wall |2;0official timeouts|
+
+The earlier3204record/3415D1/246D2counts in the frozen audit are superseded only
+for telemetry by this additive correction. Outcomes, official errors,143changed
+actions and940paired turns are unchanged.
+
+## Earlier26-log audit and its then-missing coverage
 
 [audit-saved004.json](final-review/audit-saved004.json), generated04:57:10UTC,
 reanalyses all26existing logs without new games or downloads:15W/11L,0own/
@@ -74,10 +110,9 @@ paired-comparison turns,65completedD2 evaluations and920shallow evaluations.
 There are44nonbaseline selections, allD1. Maximum internal wall22.097ms,
 processCPU22.026ms,2ordinaryturns above20ms. No official timeout observed.
 
-The old saved battle-list004 contains57done/1pending and lacks31completed logs;
-its outcomes36W/21L are list-only, not57fully audited games. The later completed
-ranking's entire battle list has not been read. Public completion cannot certify
-these missing logs or all later games as clean.
+The old saved battle-list004 contained57done/1pending and lacked31completed
+logs at that time; its36W/21L were list-only then. The later98-log audit above
+closes this coverage gap without relabeling the earlier26-log audit.
 
 ### Earlier18-game audit, retained for its own historical snapshot
 
@@ -96,9 +131,9 @@ these missing logs or all later games as clean.
 | Maximum internal through-flush wall / processCPU |22.097ms /22.026ms|
 | Non-first turns exceeding20ms internal wall |2|
 
-The table above remains the earlier18-game audit. The separate new26-game audit
-is described above; neither is a complete final audit. No fresh authenticated
-source/history/progress readback is claimed.
+The table above remains the earlier18-game audit. Neither it nor the historical
+26-game audit is the later complete98-game audit. Fresh authenticated readback
+is claimed only in the dated completed section above.
 Counts above come from the saved audit, not from interim narrative summaries.
 
 Cooperative16ms is not a hard response-time guarantee. In game918861381,
@@ -107,15 +142,11 @@ seat1/turn18, the maximum measured atomic interval was7.538665ms, baseline
 cause is UNKNOWN. Official errors were zero. Internal processCPU excludes
 startup/pre-first-token/final stderr and is not official charged CPU.
 
-## Remaining bounded work
+## Closure and separate current assessment
 
-The old extra-retry question is obsolete. The newly requested04:46login flow
-expired without approval; the client exited normally and withdrawal of its
-obsolete question was requested. UI removal was not confirmed. No active OAuth
-or future scheduled control is retained.
-Public ranking is complete, but a new authenticated GET-only session is still
-needed for final source/history/progress/battles and all missing logs, followed
-by `audit_ranking.py --snapshot final --require-complete` to a new receipt.
-Never duplicate the already successful POST. No training, A4, extra technical
-games or rollback. The private repository refresh preserves this exact partial
-audit status rather than claiming full closure.
+The expired04:46login and obsolete retry question remain historical. A newly
+confirmed session completed this audit05:37–05:38. No A4/training/extra technical
+game or repeated D16POST occurred. The same current assessment then made one
+separately requested league3m control submission; its result and session cleanup
+belong to the [final-choice report](../2026-11-09-final-choice/REPORT.md).
+New final-log evidence and this update are local, not yet a new Git publication.

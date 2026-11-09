@@ -1,15 +1,21 @@
 # Current project status
 
-Updated9 November2026 using a fresh public leaderboard read at04:58UTC and a
-new audit of all26previously downloaded game logs.
+Final-delivery update9November06:15UTC: D16 A3 is explicitly selected. New OAuth
+confirmation is pending; no final replacement has been sent. Last verified
+active entry remains league3m41673756. GitHub PRIVATE/main/research e5cd7b4
+was freshly confirmed before this checked refresh of completed evaluations.
+[Current delivery status](../experiments/rl/2026-11-09-final-delivery/REPORT.md).
+
+Updated9 November2026,06:00UTC: full D16 and fresh unchanged league3m assessments
+complete. Recommend D16 A3; actual active entry remains league3m pending final choice.
 Scientific results are PROJECT_REPORTED; deployment facts come from saved official
 responses. The repository is private.
 
 **Diversity pilot completed, NO-GO:**800 clean fresh-map games; broader data did
-not improve on unchanged league3m. **D16 A3 is submitted once as41672652:**
-source94f0d426… verified on acceptance. Public ranking is now100% complete:
-365/1042,Gold,score15.81,sameagent6866403. Full final battle-log coverage still
-needs authenticated access. A3 has passed its bounded functional checks;
+not improve on unchanged league3m. **D16 A3's original41672652 is fully audited:**
+source94f0d426… exact,371/1042,Gold207/422,score15.77,100%complete;98logs55W43L,
+zero official errors. **Current active entry is league3m41673756**, an explicitly
+requested fresh control, not an automatic rollback. A3 passed its bounded checks;
 A1/A2 failed gates and the dated earlier reporting correction remain preserved.
 [Finite scope and resource plan](rl/v7/PLAN.md). Old failures remain unchanged.
 
@@ -21,8 +27,8 @@ publication preserves evidence; it does not establish a new experimental result.
 
 | Role | Exact artifact | Status |
 |---|---|---|
-| Current submitted, public ranking complete | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Public04:58UTC365/1042,Gold,score15.81,100%/notinprogress.26available logs clean;fullfinalaudit pending |
-| Immediate preceding fully ranked bot | [PPO-v2 league3m](../submissions/ppo-v2-league3m.cpp), submission `41671805` | Fresh9Nov01:29:34UTC380/1039,Gold228/428,score14.89,100%; unchanged exact source |
+| Current control, fully ranked/audited | [PPO-v2 league3m](../submissions/ppo-v2-league3m.cpp), submission `41673756` |433/1042,Gold269/422,13.37;93logs49W44L,0ownerrors/1opponenttimeout. Exact199c6a2d; no final restoration |
+| Immediate preceding fully audited bot | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Full audit371/1042,Gold207/422,15.77,98logs55W43L,zero official errors; separate immediately-before read370/1042 |
 | Preserved local reference | [Selected league3m policy](../code/rl/configs/selected-policy.json) | Best independently confirmed PPO-v2 checkpoint, not `final.pt` |
 | Preserved league3m package | [ppo-v2-league3m.cpp](../submissions/ppo-v2-league3m.cpp) | Preserved byte-for-byte; the earlier recheck completed before the new D16 request |
 | Strong recent offline teacher | [D16 report](../experiments/rl/2026-11-08-rl5/deadline-search/REPORT.md) | Independent local gate passed; no deployable unchanged-rule package |
@@ -35,21 +41,26 @@ The protected league3m checkpoint is `step-03002173/checkpoint.pt`, SHA256 `9ba3
 
 ## Latest live evidence
 
-Fresh **public** website query at9Nov04:58UTC:365/1042,Gold,score15.81,
-percentage100,inProgressfalse. Agent6866403 matches all26saved D16 logs; the
-server row update timestamp is04:26:37.705UTC, not the retrieval time.
-[Minimal public evidence](../experiments/rl/2026-11-09-d16-live/final-review/public-ranking.json).
-This supersedes the old63%progress for ranking completion, but does not provide
-fresh authenticated source/history or missing private battle logs.
+Fresh authenticated D16 progress/leaderboard agree at05:37:371/1042,Gold207/422,
+15.77,100%/notinprogress. All98final-snapshot logs are audited:55W43L,zero own,
+opponent or global technical errors/warnings. Exactsource/history verified.
+[Full audit](../experiments/rl/2026-11-09-d16-live/audit-final.json).
 
-The new offline audit covers all26available logs:15W/11L,802own outputs,
-44nonbaseline choices (allD1),274paired-comparison turns,0official errors,
-warnings or emergency records. Internal wall maximum22.097ms and2ordinary
-turns above20ms remain; this is not charged official CPU.
-[26-log audit](../experiments/rl/2026-11-09-d16-live/final-review/audit-saved004.json).
-The saved old battle list has57done/1pending and31missing full logs; the total
-number of games in the later completed ranking has not yet been read.
-**Ranking completion is verified; complete final technical evaluation is not.**
+Five complete JSON records were joined to later stderr fragments without
+newlines. An additive parser correction preserves old raw/receipts and verifies
+all3209outputs/complete baselines,0emergency,143D1changed moves,940paired turns,
+3418D1/247D2evaluations. Internal wall maximum22.097ms/2ordinary>20ms is not
+official charged CPU; zero official timeouts observed.
+[Telemetry supplement](../experiments/rl/2026-11-09-final-choice/d16-telemetry-supplement.json).
+
+The fresh league3m control completed05:59:433/1042,Gold269/422,13.37,100%/false.
+All93logs audited49W44L,0own errors/warnings/global failures,1opponent timeout;
+clean-only48W44L,3514outputs. Exact final source/history/leaderboard agree.
+MODEL_INFERENCE: recommend D16, whose full-audit snapshot is62places/+2.40score
+above the control. Moving unpaired results do not prove causal superiority.
+Actual active bot remains league3m; no automatic final restoration. OAuth closed,
+pending control cancelled. [Completed comparison](../experiments/rl/2026-11-09-final-choice/REPORT.md).
+The assessment evidence is included in the new private refresh; preceding main/research were e5cd7b4.
 
 ### Earlier saved snapshots and reporting correction
 
@@ -64,9 +75,9 @@ No new HTTP request, authentication, submission or rollback occurred in cleanup.
 [Dated erratum and file identities](../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 
 At the02:36correction there were26saved full logs and only18had been audited.
-The04:57offline audit above now covers all26. The full final log/source/history
-check remains pending authenticated access; the old snapshot is not the current
-public ranking.
+The04:57offline audit covered all26then-available logs. The05:37full audit above
+subsequently closed the missing-log/source/history gap. Neither old snapshot is
+silently rewritten as the final98-game audit.
 
 The saved audit002 covers18completed games in the previous20%-snapshot:
 10W/8L,0official errors/warnings/emergencies,543outputs,167paired comparison
