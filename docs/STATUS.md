@@ -1,11 +1,13 @@
 # Current project status
 
-Updated 9 November 2026,01:50UTC. Scientific results are PROJECT_REPORTED; deployment facts are sourced from the saved official API responses. The repository is private.
+Corrected9 November2026,02:36UTC using saved evidence, not a new live query.
+Scientific results are PROJECT_REPORTED; deployment facts come from saved official
+responses. The repository is private.
 
 **Diversity pilot completed, NO-GO:**800 clean fresh-map games; broader data did
 not improve on unchanged league3m. **D16 A3 is submitted once as41672652:**
-source94f0d426… verified. Last saved ranking28%, not final; live refresh is
-temporarily blocked by an unavailable execution-review service. A3 has passed
+source94f0d426… verified. Last saved ranking63%, not final. The earlier account
+of two failed GET attempts was incorrect; the first retry succeeded. A3 has passed
 its bounded functional checks; A1/A2 failed gates remain preserved.
 [Finite scope and resource plan](rl/v7/PLAN.md). Old failures remain unchanged.
 
@@ -17,7 +19,7 @@ publication preserves evidence; it does not establish a new experimental result.
 
 | Role | Exact artifact | Status |
 |---|---|---|
-| Current submitted, final ranking unverified | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Accepted01:31UTC; last saved28%,444/1040,Gold282/428,score12.37. Not a final result |
+| Current submitted, final ranking unverified | [D16 A3 source](../experiments/rl/2026-11-09-rl7/d16/package-attempt3/bot.cpp), submission `41672652` | Accepted01:31UTC; saved63%,374/1040,Gold220/429,score15.47. Not a final result |
 | Immediate preceding fully ranked bot | [PPO-v2 league3m](../submissions/ppo-v2-league3m.cpp), submission `41671805` | Fresh9Nov01:29:34UTC380/1039,Gold228/428,score14.89,100%; unchanged exact source |
 | Preserved local reference | [Selected league3m policy](../code/rl/configs/selected-policy.json) | Best independently confirmed PPO-v2 checkpoint, not `final.pt` |
 | Preserved league3m package | [ppo-v2-league3m.cpp](../submissions/ppo-v2-league3m.cpp) | Preserved byte-for-byte; the earlier recheck completed before the new D16 request |
@@ -33,10 +35,18 @@ The protected league3m checkpoint is `step-03002173/checkpoint.pt`, SHA256 `9ba3
 
 The one D16 A3 POST was accepted01:31:03.050UTC as41672652; exact source/history
 checks passed. Fresh league3m immediately before it was380/1039,Gold228/428,
-score14.89,100% complete. Last saved A3progress003 is28%,444/1040,score12.37.
-Final progress/source/leaderboard/full-battle audit remains unverified because
-the next GET batch and its one retry were not executed during a review-service
-outage. No third retry, alternate route, resubmission or rollback.
+score14.89,100% complete. Saved A3progress004 is63%,374/1040,score15.47.
+It and its additional logs were already present in the previous publication.
+The first GET-batch attempt could not pass unavailable review; its exact retry
+succeeded. A later status-summary error overlooked that result. Exit-only cleanup
+at02:30 returned the remaining unread responses and closed the OAuth process.
+No new HTTP request, authentication, submission or rollback occurred in cleanup.
+[Dated erratum and file identities](../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
+
+There are26saved full logs; battles004 lists57completed and1pending game, leaving
+31completed-snapshot logs missing. Final source/progress/leaderboard/full-battle
+audit remains unverified. A later resumed check needs fresh authentication;
+none is started by this correction.
 
 The saved audit002 covers18completed games in the previous20%-snapshot:
 10W/8L,0official errors/warnings/emergencies,543outputs,167paired comparison

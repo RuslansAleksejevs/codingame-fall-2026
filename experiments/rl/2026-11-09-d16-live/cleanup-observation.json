@@ -1,0 +1,62 @@
+{
+  "observed_at": "2026-11-09T02:35:44Z",
+  "classification": "SOURCE_VERIFIED",
+  "scope": "Read-only reconciliation of already saved/published files after exit-only OAuth cleanup; not a new live query",
+  "previous_publication_commit": "5be37651c3d93cac9c673a2346478a1f1bf40869",
+  "first_get_batch_attempt": "execution-review unavailable",
+  "exact_retry": "successful; recorded HTTP200 responses and continuing session",
+  "status_reconstruction_error": "The subsequent summary incorrectly treated both attempts as unexecuted and overlooked saved004/unread output",
+  "cleanup_command": {"op": "exit"},
+  "cleanup_process_exit_code": 0,
+  "new_http_requests_during_cleanup": 0,
+  "new_submissions_or_rollback": 0,
+  "oauth_process_closed": true,
+  "obsolete_ask_withdrawal": "requested twice; tool still showed its prior timeout view, UI removal not confirmed",
+  "pending_scheduled_messages": 0,
+  "progress": {
+    "submission_id": 41672652,
+    "percentage": 63,
+    "in_progress": true,
+    "rank": 374,
+    "total": 1040,
+    "league": "Gold",
+    "league_rank": 220,
+    "league_total": 429,
+    "score": 15.47
+  },
+  "files": {
+    "progress-004.json": {
+      "bytes": 1239,
+      "sha256": "2500a4d6f1e8684136fa03eef42ce5dd49e2c63b6e0447474fa74d4e9ed48407",
+      "filesystem_mtime_utc": "2026-11-09T01:44:03.594869+00:00",
+      "matches_previous_published_commit": true
+    },
+    "battles-004.json": {
+      "bytes": 23231,
+      "sha256": "4fe0ffee4d7f3e3cfe2d81c104254e38c5747edf3f02a9c2d44fbc0f1ffe2853",
+      "filesystem_mtime_utc": "2026-11-09T01:44:03.870021+00:00",
+      "matches_previous_published_commit": true
+    }
+  },
+  "timestamp_caveat": "Filesystem mtimes are not asserted API capture times; observed_at is local reconciliation time, not a new live snapshot",
+  "snapshot_battles": 58,
+  "snapshot_completed": 57,
+  "snapshot_pending": 1,
+  "next_before": null,
+  "most_recent_completed_ended_at": "2026-11-09T01:43:52.849Z",
+  "saved_game_logs": 26,
+  "missing_completed_snapshot_logs": 31,
+  "earlier_audit_002_games": 18,
+  "final_ranking_verified": false,
+  "new_authentication_started": false,
+  "correction_validation": {
+    "changed_existing_documents": 8,
+    "new_evidence_files": 2,
+    "unchanged_previous_checksum_entries": 4158,
+    "all_raw_code_models_archives_preserved": true,
+    "local_markdown_links_checked": 263,
+    "privacy_findings": 0,
+    "whitespace_check": "PASS",
+    "new_experiments_or_platform_requests": 0
+  }
+}

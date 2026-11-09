@@ -6,19 +6,21 @@ A private C++17 bot project with a local referee, reinforcement-learning experim
 
 ## Where things stand
 
-As of **9 November 2026, 01:50 UTC**. The contest deadline recorded from the official API is **9 November, 09:00 UTC**.
+Status corrected **9 November 2026, 02:36 UTC**, using already saved responses,
+not a new live check. Official contest deadline: **9 November, 09:00 UTC**.
 
 The controlled position-diversity pilot completed800 clean games and failed its
 continuation gate: broader data slightly beat narrow data but not unchanged
 league3m. Repaired **compact D16 A3 is now submitted once**. Its search passed
 the bounded functional checks, but the final ranking is not yet verified:
-last saved progress28%, with live refresh temporarily blocked by the execution-
-review service. This snapshot does not claim a completed leaderboard result.
+last saved progress63%. The earlier28%/two-failed-attempts summary was incorrect:
+the first retry had succeeded. The OAuth process is now closed; no later live
+result has been read. [Dated correction](experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 [Scope and limits](docs/rl/v7/PLAN.md).
 
 | Role | Version | What the evidence says |
 |---|---|---|
-| Current submitted bot | **Compact D16 A3**, submission `41672652` | Accepted9Nov01:31UTC, exact source94f0d426… verified. Last saved28%:444/1040,Gold282/428,score12.37; **not final**.18audited logs clean. |
+| Current submitted bot | **Compact D16 A3**, submission `41672652` | Accepted9Nov01:31UTC, exact source94f0d426… verified. Saved63%:374/1040,Gold220/429,score15.47; **not final**.26logs saved; earlier18-game audit clean. |
 | Immediate previous deployment | **PPO-v2 league3m**, submission `41671805` | Fresh9Nov01:29:34UTC:380/1039,Gold228/428,score14.89,100% ranked. Preserved unchanged. |
 | Preserved local reference | **PPO-v2 league3m** | 139/200 wins against Lacoz on 100 fresh maps; 1,800 clean final games across the panel. |
 | Strongest recent research result | **D16 bounded search** | +5.42 percentage points against the external panel, 95% paired interval [+1.25, +9.58], in a 1,120-game independent series. Not a deployable single-file package. |

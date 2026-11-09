@@ -110,3 +110,30 @@ ranking submissions0. External compute spend0; subscription/electricity unmeasur
   are not part of the published evidence.
 - Running summary: [REPORT](REPORT.md). Final100%/source/leaderboard/full-log
   audit remains pending; do not promote a partial snapshot to a final result.
+
+## Correction and exit-only cleanup,02:30–02:36UTC
+
+The preceding entry's statement that both GET attempts were unexecuted is wrong.
+Targeted execution-history review establishes: first batch attempt failed review
+availability; the exact retry succeeded, returning five HTTP200 game responses
+while the client continued. The subsequent summary failed to reconcile that
+successful result, unread output and the saved files. The extra permission
+question and waiting period were unnecessary; this is a status-reporting error,
+not a continuing platform or authentication failure.
+
+At02:30 the only new client input was `{"op":"exit"}`. Remaining unread output
+contained three HTTP200 game downloads plus progress004/battles004, then the
+process exited0. The exit branch makes no HTTP call. No new GET, authentication,
+contest POST, IDE change, source change or rollback occurred in cleanup.
+
+Read-only reconciliation:004already exists byte-for-byte in published5be3765.
+Saved progress63%,374/1040,Gold220/429,score15.47,stillin_progress. Full logs26,
+battles58entries/57done/1pending,31completed logs missing. The18-game audit002
+is unchanged and is not a26-game or final audit. Filesystem mtimes01:44:03UTC
+are not substituted for an API event time. [Erratum](ERRATUM_2026-11-09.md) and
+[exact observation](cleanup-observation.json) preserve the correction separately.
+
+OAuth is closed, no scheduled controls remain. Withdrawal of the obsolete ask
+was requested twice; the tool still displayed its old timeout view, so UI removal
+is not independently confirmed. No new session is started. Final ranking/source/
+leaderboard/full-battle verification remains incomplete.

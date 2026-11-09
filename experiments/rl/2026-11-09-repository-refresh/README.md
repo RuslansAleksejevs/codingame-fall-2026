@@ -47,11 +47,13 @@ from the earlier scientific resource ledgers and decisions.
 
 ## Ranking is not complete merely because it is preserved
 
-D16A3 was accepted once as41672652 at01:31UTC. Last saved progress003 is28%,
-444/1040,score12.37; final source/progress/leaderboard/full-log audit is unverified.
-The next GET-only batch and its one exact retry were explicitly unexecuted during
-an execution-review outage. The user already authenticated. No credential or
-review transcript is exported; no alternate route or duplicate POST follows.
+Dated correction02:36UTC: D16A3 was accepted once as41672652 at01:31UTC.
+Progress004 was already saved and published:63%,374/1040,score15.47. There were
+26saved logs, while the earlier audit covered18. Final source/progress/leaderboard/
+full-log audit is unverified. The first GET-batch attempt failed review availability;
+the exact retry succeeded. The prior summary incorrectly treated both as failures.
+Exit-only cleanup02:30 closed OAuth without new HTTP requests. No credential or
+review transcript is exported. [Full erratum](../2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 [Running platform report](../2026-11-09-d16-live/REPORT.md).
 
 Git commit/push success is reported only after a fresh remote comparison, not

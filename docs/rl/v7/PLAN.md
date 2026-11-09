@@ -3,9 +3,11 @@
 Started9 November2026,00:00UTC. This is new authorized work, not a reopened
 v4/v5/v6 experiment. Old failures, protocols, gates and archives stay unchanged.
 No stronger deployable policy or completed D16 ranked result has been established.
-Update01:50UTC: diversity completed with NO-GO. Repaired D16A3 passed its bounded
-delivery checks and was submitted exactly once; last saved ranking28%, with live
-refresh temporarily blocked. Old protocols and negative decisions remain unchanged.
+Correction02:36UTC: diversity completed with NO-GO. Repaired D16A3 passed its
+bounded delivery checks and was submitted once. Saved ranking63%, not final;
+the first GET retry succeeded despite the later erroneous status summary.
+OAuth is now closed; no new live check or experiment is started. Old protocols
+and negative decisions remain unchanged.
 
 | Lane | Question | Controlled scope | Output |
 |---|---|---|---|
@@ -74,12 +76,14 @@ Exact unlimited-depth2/forced-stop contracts, one frozen96-game fresh guard on
 authorized exploratory ranking. This paragraph records the01:17 prospective
 plan, not a command to repeat those completed checks.
 
-Update01:50UTC: A3source94f0d426…/95540UTF16 passed all fixed contracts,
+Updated02:36UTC from preserved evidence: A3source94f0d426…/95540UTF16 passed all fixed contracts,
 96clean fresh gross-guard games (46/48 versus41/48;gainCI[0,27.0833]pp) and
 exactly3official checks (102outputs/17paired/1nonselfdepth1change). One POST
 accepted41672652 at01:31:03UTC; accepted-source/history verified. Last saved
-progress00328%,444/1040/score12.37; final remainsUNKNOWN. An unavailable review
-service prevented the next GET-only batch and its one exact retry, both
-unexecuted. No third retry or alternative route. The dated running snapshot may
-be published independently. [Current platform report](../../../experiments/rl/2026-11-09-d16-live/REPORT.md).
+progress00463%,374/1040/score15.47; final remainsUNKNOWN. Only the first GET-batch
+attempt failed review availability; the exact retry succeeded. The later summary
+was wrong. Exit-only cleanup02:30 closed OAuth without new HTTP requests.
+26logs are saved,31completed-snapshot logs missing; no final audit claimed.
+[Current platform report](../../../experiments/rl/2026-11-09-d16-live/REPORT.md) ·
+[Dated correction](../../../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 No A4, further training/tests, automatic rollback or duplicate POST.

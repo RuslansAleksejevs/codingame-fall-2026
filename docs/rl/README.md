@@ -1,6 +1,6 @@
 # Reinforcement learning: results and evidence
 
-As of **9 November 2026,01:50UTC**. The branch name does not identify the deployed bot. See [current status](../STATUS.md).
+Corrected **9 November2026,02:36UTC** from already saved evidence, not a new live check. The branch name does not identify the deployed bot. See [current status](../STATUS.md).
 
 [Detailed experiment timeline](../EXPERIMENT_TIMELINE.md) covers the heuristic,
 learning and platform stages, including failures and corrections, through the
@@ -9,7 +9,7 @@ closed v7 pilot and the dated, incomplete D16 ranking check.
 ## Current conclusions
 
 - **Reference policy:** PPO-v2 league3m, 24,833 parameters. Its independent 100-map test produced 139/200 wins against Lacoz, versus 74/200 for PPO-v1; paired gain +32.5pp, 95% interval [+22.5, +42.5].
-- **Current submission:** D16 A3 `94f0d426…`,41672652, accepted9Nov01:31UTC. Last saved28%,444/1040,score12.37; **final ranking unverified**, live refresh temporarily blocked. Immediate beforeleague3m:380/1039,Gold228/428,14.89. [Running report](../../experiments/rl/2026-11-09-d16-live/REPORT.md).
+- **Current submission:** D16 A3 `94f0d426…`,41672652, accepted9Nov01:31UTC. Saved63%,374/1040,score15.47; **final ranking unverified**. Earlier28%/failed-retry narrative corrected; OAuth now closed. Immediate beforeleague3m:380/1039,Gold228/428,14.89. [Running report](../../experiments/rl/2026-11-09-d16-live/REPORT.md) · [Erratum](../../experiments/rl/2026-11-09-d16-live/ERRATUM_2026-11-09.md).
 - **Useful offline teacher:** D16 search, +5.42pp external-panel gain in 1,120 fresh games, with no technical errors. Its multi-network implementation is not a valid unchanged-rule single-file package.
 - **Rejected compact student:** the 1,680-game independent test did not preserve the teacher's advantage. Export correctness is not playing strength.
 - **Rejected compact D16:** RL-v6 fits in94,123UTF16 units, but its final stopped at656/4200 after one emergency WAIT before baseline generation. No official timeout in that game; strength inconclusive.
